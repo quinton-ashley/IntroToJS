@@ -1,0 +1,17 @@
+let x = 10;
+let y = 5;
+let z = 3;
+
+function sum(a, b) {
+	if (a % 2 == 0) {
+		a = a * 4;
+	} else if (a % 3 == 0) {
+		a = a + 20;
+	} else {
+		a = a * b;
+	}
+	return a + b;
+}
+
+console.log(sum(x, y));
+console.log(sum(z, y));

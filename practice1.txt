@@ -1,0 +1,7 @@
+let names = ['Charles', 'Jennifer', 'Ashley', 'Dave', 'John'];
+
+let yourName = names[0];
+
+let theFirstLetter = yourName[0];
+
+console.log(theFirstLetter);
