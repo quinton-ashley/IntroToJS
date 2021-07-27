@@ -116,7 +116,7 @@ imgBg.rect(40, 320, 560, 40); // bottom
 
 let imgNet = spriteArt('w.\n.w\n'.repeat(80));
 
-let centerLine = spriteArt('w'.repeat(5) + '.'.repeat(55) + 'w'.repeat(160) + '.'.repeat(55) + 'w'.repeat(5));
+let centerLine = spriteArt('w'.repeat(5) + '.'.repeat(55) + 'w'.repeat(160) + '.'.repeat(55) + 'w'.repeat(5) + '\n');
 
 function draw() {
 	image(imgBg, 0, 0);

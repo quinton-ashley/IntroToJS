@@ -2,9 +2,8 @@
 dist
 dev
 usr
-node_modules
 *.log
-PC/load.js
+load.js
 GAMES/*
 !GAMES/_
 DATA/*/preload.js
