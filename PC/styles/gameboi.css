@@ -1,0 +1,303 @@
+.gameboi h1 {
+	margin: 0;
+}
+
+.gameboi #container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	text-transform: uppercase;
+	font-family: "VT323", monospace;
+	/* perspective: 1000px; */
+}
+
+.gameboi #container #bitmap-container,
+.gameboi #container #bitmapBG-container {
+	border-radius: 8px;
+	margin: 20px;
+	padding: 20px 20px 10px 20px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+	background-color: white;
+	background-image: radial-gradient(farthest-corner at 10px 10px, #7ca256 0%, #799f54 100%);
+	transform: rotateX(0deg);
+	transform-style: preserve-3d;
+}
+
+.gameboi #container #bitmap-container {
+	background: transparent;
+	box-shadow: none;
+}
+
+.gameboi #container #bitmap-container #bitmap {
+	/*! border-radius: 5px; */
+	/*! border: solid 1px #212121; */
+	transform: translateZ(30px);
+}
+
+.gameboi #container #bitmapBG-container .shine-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.gameboi #container #bitmapBG-container .shine-container .shine {
+	position: absolute;
+	top: -40px;
+	left: -40px;
+	right: -40px;
+	bottom: -40px;
+	background: linear-gradient(45deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0) 60%);
+}
+
+.gameboi #container #bitmapBG-container .info-container {
+	height: 100%;
+	width: 100%;
+	min-height: 50px;
+	margin-top: 5px;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: space-between;
+	transform: translateZ(20px);
+}
+
+.gameboi #container #bitmapBG-container .info-container .label {
+	margin: 5px 5px 0 0;
+}
+
+.gameboi #container #bitmapBG-container .info-container #screen0 {
+	font-size: 3em;
+	font-weight: 300;
+	padding: 10px 20px;
+}
+
+.gameboi #container #bitmapBG-container .info-container .flex {
+	flex: 1;
+}
+
+.gameboi #container.PLAYING #bitmap-container {
+	box-shadow: 0 45px 100px rgba(0, 0, 0, 0.3);
+	transform: translateZ(40px);
+}
+
+.gameboi #container #start-button {
+	font-family: inherit;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	background-color: transparent;
+	color: #212121;
+	padding: 10px 20px;
+	border: 0;
+	border-radius: 2px;
+	cursor: pointer;
+	outline: none;
+}
+
+.gameboi #container #start-button:hover {
+	color: white;
+	border-color: #7ca256;
+}
+
+.gameboi #container .state-driven {
+	display: none;
+}
+
+.gameboi #container.READY #start-button {
+	display: block;
+}
+
+.gameboi #container.ENDED #start-button {
+	display: block;
+}
+
+.gameboi #container.ENDED .re {
+	display: inline;
+}
+
+.gameboi #container .controls .keyboard {
+	display: inline;
+}
+
+.gameboi #container .controls .touch {
+	display: none;
+}
+
+.gameboi @media (any-hover: none) and (any-pointer: coarse) {
+	.gameboi #container .controls .keyboard {
+		display: none;
+	}
+
+	.gameboi #container .controls .touch {
+		display: inline;
+	}
+}
+
+.gameboi @-webkit-keyframes flash {
+	.gameboi 0% {
+		opacity: 1;
+	}
+
+	.gameboi 50% {
+		opacity: 0;
+	}
+}
+
+.gameboi @keyframes flash {
+	.gameboi 0% {
+		opacity: 1;
+	}
+
+	.gameboi 50% {
+		opacity: 0;
+	}
+}
+
+.gameboi #bitmapBG,
+.gameboi #bitmap {
+	--grid-columns: 0;
+	--grid-rows: 0;
+	--grid-size: 0;
+	width: calc(var(--grid-size) * var(--grid-columns) * 1px);
+	height: calc(var(--grid-size) * var(--grid-rows) * 1px);
+	display: grid;
+	grid-template-columns: repeat(var(--grid-columns), 1fr);
+	grid-template-rows: repeat(var(--grid-rows), 1fr);
+	font-family: serif;
+	border: solid;
+}
+
+.gameboi #bitmap-container {
+	position: absolute;
+	top: 0;
+}
+
+.gameboi #bitmapBG {
+	opacity: .2;
+}
+
+.gameboi #bitmap div,
+.gameboi #bitmapBG div {
+	background-color: transparent;
+	height: 20px;
+	width: 20px;
+	font-size: 20px;
+	/*! margin-left: 1px; */
+}
+
+.gameboi #bitmapBG div {
+	letter-spacing: -20px;
+}
+
+/* .gameboi #bitmap .snake.head.up {
+	transform: translate(3px, 0px);
+}
+
+.gameboi #bitmap .snake.head.right {
+	transform: rotateZ(90deg) translate(11px, -6px);
+}
+
+.gameboi #bitmap .snake.head.down {
+	transform: rotateZ(180deg) translate(5px, -14px);
+}
+
+.gameboi #bitmap .snake.head.left {
+	transform: rotateZ(270deg) translate(-3px, -8px);
+} */
+.gameboi #bitmap div.food, #bitmap div.snake {
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.gameboi #bitmap div.food {
+	background-color: #212121;
+	border-radius: 50%;
+	margin: 1px;
+}
+
+.gameboi #bitmap div.snake {
+	background-color: #212121;
+}
+
+.gameboi #bitmap div.snake.head.up {
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+}
+
+.gameboi #bitmap div.snake.head.down {
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+
+.gameboi #bitmap div.snake.head.left {
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+
+.gameboi #bitmap div.snake.head.right {
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+
+.gameboi #bitmap div.snake.tail.up {
+	border-bottom-left-radius: 50% 100%;
+	border-bottom-right-radius: 50% 100%;
+}
+
+.gameboi #bitmap div.snake.tail.down {
+	border-top-left-radius: 50% 100%;
+	border-top-right-radius: 50% 100%;
+}
+
+.gameboi #bitmap div.snake.tail.right {
+	border-bottom-left-radius: 100% 50%;
+	border-top-left-radius: 100% 50%;
+}
+
+.gameboi #bitmap div.snake.tail.left {
+	border-bottom-right-radius: 100% 50%;
+	border-top-right-radius: 100% 50%;
+}
+
+.gameboi #bitmap div.snake.turn-left.up {
+	border-top-right-radius: 50%;
+}
+
+.gameboi #bitmap div.snake.turn-left.down {
+	border-bottom-right-radius: 50%;
+}
+
+.gameboi #bitmap div.snake.turn-right.up {
+	border-top-left-radius: 50%;
+}
+
+.gameboi #bitmap div.snake.turn-right.down {
+	border-bottom-left-radius: 50%;
+}
+
+.gameboi #bitmap div.snake.turn-up.left {
+	border-bottom-left-radius: 50%;
+}
+
+.gameboi #bitmap div.snake.turn-up.right {
+	border-bottom-right-radius: 50%;
+}
+
+.gameboi #bitmap div.snake.turn-down.left {
+	border-top-left-radius: 50%;
+}
+
+.gameboi #bitmap div.snake.turn-down.right {
+	border-top-right-radius: 50%;
+}
+
+.gameboi #bitmap div.food, #bitmap div.snake {
+	box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.1);
+}

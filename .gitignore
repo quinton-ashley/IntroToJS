@@ -1,0 +1,10 @@
+.DS_Store
+dist
+dev
+usr
+node_modules
+*.log
+PC/load.js
+GAMES/*
+!GAMES/_
+DATA/*/preload.js

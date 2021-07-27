@@ -1,0 +1,23 @@
+{
+	"author": "quinton-ashley",
+	"bugs": {
+		"url": "https://github.com/quinton-ashley/IntroToJS/issues"
+	},
+	"description": "Introduction to Javascript by making games!",
+	"homepage": "https://github.com/quinton-ashley/IntroToJS#readme",
+	"license": "GPLv3",
+	"main": "",
+	"name": "introtojs",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/quinton-ashley/IntroToJS.git"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"v": "npm version patch --force",
+		"V": "npm version minor --force",
+		"version": "git add -A",
+		"postversion": "git push"
+	},
+	"version": "1.6.48"
+}
