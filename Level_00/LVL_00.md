@@ -4,12 +4,12 @@
 
 - install Google Chrome or Firefox
 - install Git for Windows (only if you're using Windows)
-- install the [Atom code editor](https://atom.io/) to write Javascript with
-- [join the QuintOS Discord server to chat with other students](https://discord.gg/5pcyKWRwSB)
+- install the [Visual Studio Code editor](https://code.visualstudio.com/) to write Javascript with
+- install [node.js and npm](https://www.npmjs.com/)
 
 ## What is Computer Science?
 
-Why is this field of study called "Computer Science" and not "Program Writing" or "Code Mathematics"? It's because like in Science class, writing code will often require testing and experimentation for you to learn how things work. These lessons will teach you how to code in JavaScript, which is the most popular modern programming language (and my personal favorite). Since you are just starting out, you will have to memorize some vocabulary, "grammar", and syntax to learn this language. Fortunately, this isn't what coding is all about, just like playing a musical instrument is not just about playing scales. Having the technical skills required to play an instrument is merely the foundational knowledge needed to express yourself through the art of music.
+Why is this field of study called "Computer Science" and not "Program Writing" or "Code Mathematics"? It's because like in Science class, writing code will often require testing and experimentation for you to learn how things work. These lessons will teach you how to code in JavaScript, which is the most popular modern programming language and my personal favorite! Since you're just starting out, you will have to memorize some vocabulary, "grammar", and syntax to learn this new language. Fortunately, this isn't what coding is all about, just like playing a musical instrument is not just learning to play scales. Having the technical skills required to play an instrument is merely the foundational knowledge needed to express yourself through the art of music.
 
 As you may expect, coding will be really fun and interesting for you if you like abstract problem solving, in this way it is also similar to Math. Coding has a language arts aspect too. You will not only strive to write efficient code but also code that is aesthetically pleasing and easy for other programmers to understand.
 
@@ -24,6 +24,8 @@ Open Git Bash on Windows or Terminal on macOS and copy/paste these commands.
 ```sh
 cd ~/Documents
 git clone https://github.com/quinton-ashley/IntroToJS.git
+cd IntroToJS
+npm i
 ```
 
 The first command `cd`, change directory (aka folder), opens your Documents folder inside the terminal. The second command downloads the `IntroToJS` folder into your Documents folder. After it finishes downloading you can move the folder any where you'd like, it doesn't have to be in your Documents folder to work.
@@ -36,31 +38,25 @@ QuintOS.level = 0;
 
 Open the `QuintOS.html` file with Google Chrome or Firefox, don't use Safari. You should see the calculator. 😄
 
-## Install JSBeautify for Atom
+## Install Beautify for VSCode
 
-- open the Atom code editor application
-- click on Atom in the top menu bar
-- go to "Preferences..."
-- a settings page will open, in the sidebar select "Install"
-- search for "JSBeautify"
-- when it finishes installing go to "Packages" in the sidebar
-- in the JSBeautify package box, click the settings button
-- scroll down to JavaScript
-- turn on "Beautify on Save"
-- turn on "End with Newline"
-- done! close the settings tab
+Use these settings in `settings.json`
 
-This extension will automatically format your code for you when you save it so you won't have to worry about doing proper indentation yourself!
+```json
+"editor.tabSize": 2,
+"editor.insertSpaces": false,
+"editor.formatOnSave": true,
+```
+
+This extension will automatically format your code for you when you save it so you won't have to worry about doing proper indentation and styling yourself!
 
 ## Setup
 
-Like other programming languages, JavaScript code conveys instructions that computers interpret and perform. Like any language, it has grammatical structures and syntax. Yet when writing an essay, if you put a comma in the wrong pl,ace or spell a werd wrong, it usually won't make your sentences unreadable. Making syntax and spelling mistakes in your code will make it unreadable for your computer though! Luckily for us, Atom's autocomplete and your web browser's console and debugger are even better than spellcheck.
+Like other programming languages, JavaScript code conveys instructions that computers interpret and perform. Like any language, it has grammatical structures and syntax. Yet when writing an essay, if you put a comma in the wrong pl,ace or spell a werd wrong, it usually won't make your sentences unreadable. Making syntax and spelling mistakes in your code will make it unreadable for your computer though! Luckily for us, VSCode's autocomplete and your web browser's console and debugger are even better than spellcheck.
 
-The console can be opened in your web browser by right clicking anywhere on a web page and choosing "Inspect" or by using the shortcut `ctrl+shift+i` on Windows/Linux or `cmd+shift+i` on macOS. When it first opens you'll see the "Elements" tab, this is the structure of the website, its guts. Go to the "Console" tab. You'll use the console to print messages and errors. I'll explain how to use the debugger later on.
+The console can be opened in your web browser by right clicking anywhere on a web page and choosing "Inspect" or by using the shortcut `ctrl+shift+i` on Windows/Linux or `cmd+shift+i` on macOS. When it first opens you'll see the "Elements" tab, this is the HTML structure of the website. As you move your mouse over an element you can see it will be highlighted on the screen. Cool huh?! Now go to the "Console" tab. You'll use the console to print messages and errors in Javascript. I'll explain how to use the debugger in the "Sources" tab later on.
 
-You've also got the Atom code editor, which will help you write code with its advanced autocomplete for syntax, variable names, and more.
-
-This first lesson will require you to learn a lot of information before we can even make a simple game. It may be a bit overwhelming for you but don't worry, you'll get a lot of practice with these concepts so that you will understand them. Remember that everyone starts somewhere, even the greatest programmers in history started out just like you: as beginners! 😌
+This first lesson will require you to learn a lot of information before we can even make a simple game. It may be a bit overwhelming for you but don't worry, you'll get a lot of practice with these concepts so that you will understand them. Remember that everyone starts somewhere, even the greatest programmers in history started out just like you: as a beginner! 🥳
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen0.jpg)
 
