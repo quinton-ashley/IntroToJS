@@ -29,7 +29,7 @@ Congratulations you've completed my IntroToJS course!
 
 [Article: More about JavaScript](https://github.com/MarcoWorms/learn.js)  
 [Video: How spritesheet animation works](https://www.youtube.com/watch?v=CY0HE277IBM)  
-[Interactive Demo: Learn about DOM events](https://domevents.dev/)  
-[Course: freeCodeCamp](https://github.com/mcturner1995/freeCodeCamp)
-[Video: Explanation of what .exe files are and how computer processors execute assembly](https://www.youtube.com/watch?v=hhgxsrAFyz8)
-[Video: AI Sudoku solver in python](https://www.youtube.com/watch?v=G_UYXzGuqvM)
+[Tutorials: Make 3D games with Babylon](https://doc.babylonjs.com/start)  
+[Course: freeCodeCamp](https://github.com/mcturner1995/freeCodeCamp)  
+[Video: Explanation of what .exe files are and how computer processors execute assembly](https://www.youtube.com/watch?v=hhgxsrAFyz8)  
+[Video: AI Sudoku solver in python](https://www.youtube.com/watch?v=G_UYXzGuqvM)  

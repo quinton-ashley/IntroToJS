@@ -7,7 +7,11 @@ QuintOS.level = 3;
 QuintOS.gameSelect = "PickAPath";
 ```
 
-After that you can upgrade to level 4! 🥳
+Before you can start working on the `TicTacToe` game, you'll have to prove your skills in Javascript. You should be able to complete the first few test sections quite quickly. Stop when you get to the challenge titled "Golf Code".
+
+<https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-javascript>
+
+After you complete those challenges you can upgrade to level 4! 🥳
 
 ```js
 QuintOS.level = 4;

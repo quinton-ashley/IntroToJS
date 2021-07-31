@@ -1,6 +1,6 @@
 # Level 01 A
 
-Before we can start working on `PickAPath` we have to upgrade our PC! Edit the `load.js` file in the `PC` folder, set your level to 1! 🥳
+Congrats, you completed level 0! Upgrade your PC by editing the `load.js` file in the `PC` folder. Set your level to 1! 🥳
 
 ```js
 QuintOS.level = 1;
