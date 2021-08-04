@@ -4,30 +4,30 @@
 
 Make a new file in the `GAMES` folder, with the same name as the template file `_guessTheNumber.js` without the \_ (underscore) in the beginning. Copy the code from the template file `_guessTheNumber.js` into your new `guessTheNumber.js` file.
 
-## Instructions
-
 I want you to create a simple guess the number type game! It should choose a random number between 1 and 100, then challenge the player to guess the number.
 
-After each turn the player should be told if they are right or wrong. If they are wrong, whether the guess was too low or too high. The game ends when the player guesses correctly.
+## Instructions for PART A
 
-When you start writing this program don't make the number random yet.
+When you start writing this program don't make the number random yet. Choose the number yourself for testing purposes.
 
-After you write the code for one turn of the game look at the tips section below and make the number random, then go back to the `README.md` in the `IntroToJS` folder and read [Level 00 B](https://github.com/quinton-ashley/IntroToJS#level-00-b).
-
-## Tips for PART A
+After each turn the player should be told if they are right or wrong. If they are wrong, the player should be told whether their guess was too high or too low. They should also be told when they guess the number correctly.
 
 At this point you should also know about the global object [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math), which has many useful functions. You will use `.random()` and `.ceil()` to make this game.
 
 ```js
 // returns a random value between 0 and 1 (not including 1)
-// could be .2364 or .928279 or 0.45398, it's random!
-Math.random();
+let x = Math.random();
+// x could be .2364 or .928279 or 0.45398, it's random!
 
-// returns x rounded up to a whole integer (ceil for ceiling)
-let x = 25.2;
-x = Math.ceil(x);
-// x -> 26 (x is now 26)
+let y = 25.2;
+y = Math.ceil(y);
+// returns y rounded up to a whole integer (ceil for ceiling)
+// y -> 26 (y is now 26)
 ```
+
+Use these `Math` functions to have the computer pick a random whole number between 1 and 100.
+
+After you write the code for one turn of the game look at the tips section below and make the number random, then go back to the `README.md` in the `IntroToJS` folder and read [Level 00 B](https://github.com/quinton-ashley/IntroToJS#level-00-b).
 
 ## Instructions for PART B
 

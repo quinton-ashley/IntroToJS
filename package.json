@@ -1,29 +1,29 @@
 {
-	"author": "quinton-ashley",
-	"bugs": {
-		"url": "https://github.com/quinton-ashley/IntroToJS/issues"
-	},
-	"description": "Introduction to Javascript by making games!",
-	"homepage": "https://github.com/quinton-ashley/IntroToJS#readme",
-	"license": "GPL-3.0-only",
-	"main": "",
-	"name": "introtojs",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/quinton-ashley/IntroToJS.git"
-	},
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"v": "npm version patch --force",
-		"V": "npm version minor --force",
-		"version": "git add -A",
-		"postversion": "git push"
-	},
-	"version": "1.7.3",
-	"dependencies": {
-		"@code-dot-org/p5.play": "^1.3.18-cdo",
-		"jquery": "^3.6.0",
-		"p5": "^1.4.0",
-		"quintos": "^1.6.51"
-	}
+  "author": "quinton-ashley",
+  "bugs": {
+    "url": "https://github.com/quinton-ashley/IntroToJS/issues"
+  },
+  "description": "Introduction to Javascript by making games!",
+  "homepage": "https://github.com/quinton-ashley/IntroToJS#readme",
+  "license": "GPL-3.0-only",
+  "main": "",
+  "name": "introtojs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quinton-ashley/IntroToJS.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "v": "npm version patch --force",
+    "V": "npm version minor --force",
+    "version": "git add -A",
+    "postversion": "git push"
+  },
+  "version": "1.7.4",
+  "dependencies": {
+    "@code-dot-org/p5.play": "^1.3.18-cdo",
+    "jquery": "^3.6.0",
+    "p5": "^1.4.0",
+    "quintos": "^1.6.53"
+  }
 }
