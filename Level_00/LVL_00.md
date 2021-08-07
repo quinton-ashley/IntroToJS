@@ -1,12 +1,5 @@
 # Level 00 A
 
-## Pre-requisites
-
-- install Google Chrome or Firefox
-- install Git for Windows (only if you're using Windows)
-- install the [Visual Studio Code editor](https://code.visualstudio.com/)
-- install [node.js](https://nodejs.org/en/)
-
 ## What is Computer Science?
 
 Why is this field of study called "Computer Science" and not "Program Writing" or "Code Mathematics"? It's because like in Science class, writing code will often require testing and experimentation for you to learn how things work. These lessons will teach you how to code in JavaScript, which is the most popular modern programming language and my personal favorite! Since you're just starting out, you will have to memorize some vocabulary, "grammar", and syntax to learn this new language. Fortunately, this isn't what coding is all about, just like playing a musical instrument is not just learning to play scales. Having the technical skills required to play an instrument is merely the foundational knowledge needed to express yourself through the art of music.
@@ -17,45 +10,38 @@ Issac Newton once said, "we stand on the shoulders of giants". To understand how
 
 During each lesson you'll develop a game that will run right in your web browser (Google Chrome or Firefox), which will display a vintage virtual computer that uses QuintOS, a graphics system I created. As you level up your coding skills, your virtual computer will get upgraded. The first game you make will be for... a programmable calculator. 😜
 
-## Install the IntroToJS Lessons
+## Pre-requisites for Javascript Development
 
-Open Git Bash on Windows or Terminal on macOS and copy/paste these commands.
+- install Google Chrome or Firefox
+- if you're using Windows, install [Git for Windows](https://gitforwindows.org/)
+- install the [Visual Studio Code editor](https://code.visualstudio.com/)
+- install [node.js](https://nodejs.org/en/)
+- create an account on [Github](https://github.com/)
+
+## Setup
+
+Open the [quintos-template](https://github.com/quinton-ashley/quintos-template) project on Github. Press the big green button that says "Use this template". Name your project "quintos-games".
+
+Now open Git Bash on Windows or Terminal on macOS and copy/paste these commands. Replace `{your username!}` with your github username. Don't worry I'm not hacking your computer! The first command `cd`, changes directory (aka folder), which opens your Documents folder inside the terminal. The second command downloads your `quintos-games` project into your Documents folder, third command opens that folder. The last command, `npm i`, installs all the other code needed for this project.
 
 ```sh
 cd ~/Documents
-git clone https://github.com/quinton-ashley/IntroToJS.git
-cd IntroToJS
+git clone https://github.com/{your username!}/quintos-games.git
+cd quintos-games
 npm i
 ```
 
-The first command `cd`, change directory (aka folder), opens your Documents folder inside the terminal. The second command downloads the `IntroToJS` folder into your Documents folder. After it finishes downloading you can move the folder any where you'd like, it doesn't have to be in your Documents folder to work.
+Open Visual Studio Code (VSCode) and that `quintos-games` folder to the workspace.
 
-Make a new file called `load.js` in the `IntroToJS` folder and set your level to 0.
+## Loading QuintOS
+
+Edit the `load.js` in the `quintos-games` folder and set your level to 0.
 
 ```js
 QuintOS.level = 0;
 ```
 
 Open the `QuintOS.html` file with Google Chrome or Firefox, don't use Safari. You should see the calculator. 😄
-
-## Install Prettier for VSCode
-
-Prettier is an extension that will automatically format your code for you when you save it so you won't have to worry about doing proper indentation and styling yourself! Install it in VSCode.
-
-Use these settings in `settings.json`
-
-```json
-"editor.defaultFormatter": "esbenp.prettier-vscode",
-"editor.tabSize": 2,
-"editor.insertSpaces": false,
-"editor.formatOnSave": true,
-```
-
-## Setup
-
-Like other programming languages, JavaScript code conveys instructions that computers interpret and perform. Like any language, it has grammatical structures and syntax. Yet when writing an essay, if you put a comma in the wrong pl,ace or spell a werd wrong, it usually won't make your sentences unreadable. Making syntax and spelling mistakes in your code will make it unreadable for your computer though! Luckily for us, we have really great tools to help us code.
-
-The console can be opened in your web browser by right clicking anywhere on a web page and choosing "Inspect" or by using the shortcut `ctrl+shift+i` on Windows/Linux or `cmd+shift+i` on macOS. When it first opens you'll see the "Elements" tab, this is the HTML structure of the website. As you move your mouse over an element you can see it will be highlighted on the screen. Cool huh?! Now go to the "Console" tab. You'll use the console to print messages and errors in Javascript.
 
 This first lesson will require you to learn a lot of information before we can even make a simple game. It may be a bit overwhelming for you but don't worry, you'll get a lot of practice with these concepts so that you will understand them. Remember that everyone starts somewhere, even the greatest programmers in history started out just like you: as a beginner! 🥳
 
@@ -78,7 +64,7 @@ Double slash `//` is for making a comment, any text behind it on the same line w
 
 ### Changing a variable's value
 
-Don't declare variables twice!
+Don't create variables twice!
 
 ```js
 let x = 10;
@@ -98,8 +84,8 @@ x = 5; // good :)
 
 ```js
 let x = 2;
-let y = -49.82;
-let z = 950415;
+let y = -49;
+let z = 9504.15;
 ```
 
 ### Boolean
@@ -192,6 +178,19 @@ if (fruit == "banana") {
 }
 ```
 
+## Boolean operators 🐰
+
+```txt
+Equivalence:              ==
+Not equal:                !=
+Less than:                <
+Less than or equal to:    <=
+Greater than:             >
+Greater than or equal to: >=
+```
+
+Use boolean (true/false) operators in the boolean conditions (inside the parenthesis) of `if` and `else if` statements.
+
 ## Globals 🌐
 
 Globals are special variables that are already available for you to use. You can also create global variables yourself but we'll learn how to do that later.
@@ -206,25 +205,18 @@ let favColor = await prompt("What is your favorite color?"); // get user input
 await alert("That's my favorite color too!"); // show message to user
 ```
 
-You can also print a message to the console to help you develop your app.
+## Javascript Console
+
+Like other programming languages, JavaScript code conveys instructions that computers interpret and perform. Like any language, it has grammatical structures and syntax. Yet when writing an essay, if you put a comma in the wrong pl,ace or spell a werd wrong, it usually won't make your sentences unreadable. Making syntax and spelling mistakes in your code will make it unreadable for your computer though! Luckily for us, we have really great tools to help us code.
+
+The console can be opened in your web browser by right clicking anywhere on a web page and choosing "Inspect" or by using the shortcut `ctrl+shift+i` on Windows/Linux or `cmd+shift+i` on macOS. When it first opens you'll see the "Elements" tab, this is the HTML structure of the website. As you move your mouse over an element you can see it will be highlighted on the screen. Cool huh?! Now go to the "Console" tab. You'll use the console to print messages and errors in Javascript.
+
+`console.log` prints to the JS console in your web browser.
 
 ```js
 // prints the favorite color the user entered to the console
 console.log(favColor);
 ```
-
-## Boolean operators 🐰
-
-```txt
-Equivalence:              ==
-Not equal:                !=
-Less than:                <
-Less than or equal to:    <=
-Greater than:             >
-Greater than or equal to: >=
-```
-
-Use boolean (true/false) operators in the boolean conditions (inside the parenthesis) of `if` and `else if` statements.
 
 ## End of Level 00 A
 
@@ -241,6 +233,19 @@ Now you're ready to start making your first game! 🥳 Go into the `GuessTheNumb
 # Level 00 B
 
 Did you complete part A and are ready to learn more? Before we can finish `GuessTheNumber` game we have to learn a bit more stuff.
+
+## Install Prettier for VSCode
+
+Prettier is an extension that will automatically format your code for you when you save it so you won't have to worry about doing proper indentation and styling yourself! Install it in VSCode from the Extension section.
+
+Use these settings in VSCode's `settings.json` file.
+
+```json
+"editor.defaultFormatter": "esbenp.prettier-vscode",
+"editor.tabSize": 2,
+"editor.insertSpaces": false,
+"editor.formatOnSave": true,
+```
 
 ## while loops
 
