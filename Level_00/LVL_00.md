@@ -10,6 +10,8 @@ Issac Newton once said, "we stand on the shoulders of giants". To understand how
 
 During each lesson you'll develop a game that will run right in your web browser (Google Chrome or Firefox), which will display a vintage virtual computer that uses QuintOS, a graphics system I created. As you level up your coding skills, your virtual computer will get upgraded. The first game you make will be for... a programmable calculator. 😜
 
+![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen0.jpg)
+
 ## Pre-requisites for Javascript Development
 
 - install Google Chrome or Firefox
@@ -26,6 +28,7 @@ Now open Git Bash on Windows or Terminal on macOS and copy/paste these commands.
 
 ```sh
 cd ~/Documents
+git clone https://github.com/quinton-ashley/IntroToJS.git
 git clone https://github.com/{your username!}/quintos-games.git
 cd quintos-games
 npm i
@@ -44,8 +47,6 @@ QuintOS.level = 0;
 Open the `QuintOS.html` file with Google Chrome or Firefox, don't use Safari. You should see the calculator. 😄
 
 This first lesson will require you to learn a lot of information before we can even make a simple game. It may be a bit overwhelming for you but don't worry, you'll get a lot of practice with these concepts so that you will understand them. Remember that everyone starts somewhere, even the greatest programmers in history started out just like you: as a beginner! 🥳
-
-![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen0.jpg)
 
 ## Creating Variables 🔡
 
@@ -198,8 +199,9 @@ Globals are special variables that are already available for you to use. You can
 Check out the `alert` and `prompt` global functions for user interaction. The word `await` is used to wait for the user to interact with the prompt or alert window.
 
 ```js
-// waits for user input returned by prompt when the user presses enter
-let favColor = await prompt("What is your favorite color?"); // get user input
+// waits for the user to type something and press enter
+let favColor = await prompt("What is your favorite color?");
+// favColor is assigned to the user's response
 
 // waits for user to read the message in the alert and press okay
 await alert("That's my favorite color too!"); // show message to user
@@ -228,7 +230,7 @@ That was a LOT of information! Here's a summary of everything we learned about:
 - `if`, `else if`, and `else` statements
 - globals functions `alert`, `prompt`, and `console.log`
 
-Now you're ready to start making your first game! 🥳 Go into the `GuessTheNumber` folder and look at the `README.md` file for instructions!
+Now you're ready to start making your first game! 🥳 [Click here for the GuessTheNumber instructions.](https://github.com/quinton-ashley/IntroToJS/blob/main/Level_00/GuessTheNumber.md)
 
 # Level 00 B
 

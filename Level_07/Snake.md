@@ -25,17 +25,3 @@ Create the snake, add each body part object to a linked list called `snake`. The
 Figure out how to iterate through the list forwards (from head to tail) and backwards (from tail to head). Use a `while` loop or `for` loop. The snake head is moved used the arrow keys, the rest of the snake should follow it.
 
 If the snake is about to run into itself, the whole snake should stop moving and blink to show it is dead.
-
-## Instructions for PART C
-
-Make an `Iterator` class. The constructor for this class should take a doubly Linked List as an input parameter `new Iterator(list)`. The goal of this iterator will be to iterate through the list it is given one node at a time. Use two class variables `this.list` and `this.cur`, which will store the current element the user has navigated to. This class should have functions `hasNext()`, `hasPrev()`, `next()`, and `prev()`. In the beginning `this.cur` should be `null`, `hasNext()` and `hasPrev()` should return true. If the user uses `next()` first, `this.cur` should be assigned the head of the list. Using `next()` at any other point in the iteration should assign `this.cur` to `this.cur.next` and return it. If the user uses `prev()` first, `this.cur` should be assigned the tail of the list. Using `prev()` at any other point in the iteration should assign `this.cur` to `this.cur.prev` and return it.
-
-```js
-// example use of the Iterator class to loop through all the parts in the snake
-let itr = new Iterator(snake);
-
-while (itr.hasNext()) {
-  let s = itr.next();
-  console.log(s);
-}
-```

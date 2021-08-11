@@ -1,37 +1,43 @@
 # GuessTheNumber
 
-![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen0.jpg)
+A simple guess the number game! The computer chooses a random number between 1 and 100, then challenges the player to guess the number.
 
-Make a new file in the `GAMES` folder, with the same name as the template file `_guessTheNumber.js` without the \_ (underscore) in the beginning. Copy the code from the template file `_guessTheNumber.js` into your new `guessTheNumber.js` file.
+Make a file called `guessTheNumber.js` in your `quintos-games` folder, copy paste the template code into that file.
 
-I want you to create a simple guess the number type game! It should choose a random number between 1 and 100, then challenge the player to guess the number.
+https://raw.githubusercontent.com/quinton-ashley/IntroToJS/main/Level_00/guessTheNumber.js
 
 ## Instructions for PART A
 
-When you start writing this program don't make the number random yet. Choose the number yourself for testing purposes.
+Since you're just starting to write this program, don't make the number random yet. Create a varible called `num` using `let` and choose the number yourself to make the rest of your program easier to test.
 
-After each turn the player should be told if they are right or wrong. If they are wrong, the player should be told whether their guess was too high or too low. They should also be told when they guess the number correctly.
+Tell the player to guess a number using `await prompt()` put your message (string) inside the parenthesis of the `prompt` function. Create the variable `guess` using `let`, assign it to the user's response to the `prompt`.
+
+After each guess, the player should be told if their guess was right or wrong. If they were wrong, the player should be told whether their guess was too high or too low. They should also be told when they guess the number correctly. Use the `alert` function inside the code blocks `{}` of `if` and `else if` statements!
 
 At this point you should also know about the global object [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math), which has many useful functions. You will use `.random()` and `.ceil()` to make this game.
 
 ```js
-// returns a random value between 0 and 1 (not including 1)
-let x = Math.random();
-// x could be .2364 or .928279 or 0.45398, it's random!
+// Math.random() returns a random decimal number between 0 and 1 (not including 1)
+let x = Math.random(); // x could be .2364 or .928279 or 0.45398, it's random!
 
-let y = 25.2;
-y = Math.ceil(y);
-// returns y rounded up to a whole integer (ceil for ceiling)
-// y -> 26 (y is now 26)
+Math.round(30.1); // -> 30
+Math.round(30.7); // -> 31
+// Math.round() rounds the number to the nearest integer
+
+let y = Math.floor(22.9); // y -> 22 (y gets assigned the value 22)
+// Math.floor() always rounds down
+
+let z = Math.ceil(15.3); // z -> 16
+// Math.ceil() always rounds up (ceil for ceiling)
 ```
 
 Use these `Math` functions to have the computer pick a random whole number between 1 and 100.
 
-After you write the code for one turn of the game look at the tips section below and make the number random, then go back to the `README.md` in the `IntroToJS` folder and read [Level 00 B](https://github.com/quinton-ashley/IntroToJS#level-00-b).
+[Now you can click here to move onto Level 00 B](https://github.com/quinton-ashley/IntroToJS#level-00-b).
 
 ## Instructions for PART B
 
-_Read all of `LVL_00.md` before doing PART B_
+_Make sure you read all of `LVL_00.md` before doing PART B_
 
 Make the game loop by using a while loop.
 

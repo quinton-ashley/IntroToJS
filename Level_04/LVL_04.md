@@ -50,31 +50,41 @@ A two dimensional array (aka 2D array) is an array of arrays.
 
 ```js
 // red and black checkers on a checkerboard
-let checkerBoard = [
-  ["r", "r", " ", " ", " ", "B", " ", " "],
+let board = [
+  [" ", " ", "r", " ", " ", "B", " ", " "],
   [" ", " ", " ", " ", " ", " ", " ", " "],
   [" ", " ", " ", " ", " ", " ", " ", "r"],
   [" ", " ", " ", " ", "r", " ", " ", " "],
   [" ", "B", " ", " ", " ", " ", " ", "b"],
   [" ", " ", "b", " ", " ", " ", "b", " "],
   [" ", " ", " ", " ", " ", " ", " ", " "],
-  [" ", " ", " ", " ", "b", " ", "b", " "]
+  [" ", " ", " ", " ", "b", " ", "b", " "],
 ];
 ```
 
 Two dimensional data, such as checker board piece positions, can be stored in two dimensional arrays. In the example `"r"` represents a single red piece, uppercase `"R"` represents a king (two stacked red pieces).
+
+How could we access the red piece on the top row?
+
+```js
+board[0][2];
+```
+
+`board[0]` gets the first row in board array and the `[2]` after that gets us the piece at column 3 in that row array. How could we access the red peice in the middle of the board?
 
 ## Nested for loops
 
 A for loop inside a for loop? FORLOOPCEPTION! 😮
 
 ```js
-for (let i = 0; i < limit; i++) {
-  for (let j = 0; j < height; i++) {
+for (let i = 0; i < rows; i++) {
+  for (let j = 0; j < columns; j++) {
     // nested for loop
   }
 }
 ```
+
+How could we use a nested for loop to clear the board of all the pieces by assigning a blank space " " to every element in the `board` array?
 
 ## Coding Philosophy: Part 1
 
@@ -91,18 +101,18 @@ Try not to rewrite the same exact lines of code in different places, put that co
 
 # Level 04 B
 
+## Coding Philosophy: Part 2
+
+Solve complex problems by thinking algorithmically! That means breaking problems down step by step. "A journey of a thousand miles begins with a single step". If you get stuck on a problem you may be overcomplicating it, keep things simple. Attempt to find a decent solution to a problem before concerning yourself with what the best solution could be. "Writing is rewriting" this is true for most people when writing essays, music, and often code too. No one can write code like the classical composer Mozart wrote music, by creating flawless first drafts that would sound exactly as he hoped. "Put something on the page!", start by thinking of the program logically, then draw it out on paper, then start writing code, test, rewrite, test, rewrite, and more tests! Remember "Computer Science" is a science, it's all about experimentation, and unlike most research science we can get pretty immediate results by running our programs! Getting things wrong is a big part of the process, having the program not do what you expect is an opportunity to learn. Keep trying but if you get really stuck take a long break and come back to it. Taking a break to do something else can really help give you a new headspace and perspective on what you're trying to code.
+
 ## Artificial Intelligence in Games
 
 Making an AI for a game, even for TicTacToe, might sound daunting but you already know enough about programming to do it! AI is just code that reacts to a game environment with an action.
 
 Have you ever played Connect Four? Try to think of the simplest method of making a move in Connect Four. Note it's not the same as the worst method, which would be deliberately making moves to help your opponent win.
 
-The simplest method of making a valid move would be to go column by column and drop your tile in the first column that isn't full of tiles yet.
+You may think the simplest method then is to drop a tile in a random column, however that might not be a valid move if that column of tiles is full. So therefore, the simplest method of making a valid move in Connect Four would be to go column by column and drop your tile in the first column that isn't full of tiles yet.
 
-In TicTacToe the simplest method is to look at each space and place one's X or O mark in the first available space.
-
-## Coding Philosophy: Part 2
-
-Solve complex problems by thinking algorithmically! That means breaking problems down step by step. "A journey of a thousand miles begins with a single step". If you get stuck on a problem you may be overcomplicating it, keep things simple. Attempt to find a decent solution to a problem before concerning yourself with what the best solution could be. "Writing is rewriting" this is true for most people when writing essays, music, and often code too. Very few people are like the classical composer Mozart, who wrote first drafts of music that would sound exactly as he hoped, so he would make no changes to them. "Put something on the page!", start by thinking of the program logically, then draw it out on paper, then start writing code, test, rewrite, test, rewrite, and more tests. Remember "Computer Science" is a science, it's all about experimentation! Getting things wrong is a big part of the process, having the program not do what you expect is an opportunity to learn. Keep trying but if you get really stuck take a break and come back to it. Taking a break to do something else can really help give you a new headspace and perspective on what you're trying to code.
+In TicTacToe the simplest method to make a valid move is to look at each space and place one's X or O mark in the first available space. Available spaces are spaces that are not already occupied by an X or O. This will be how your first AI player makes moves.
 
 ## End of Level 04 B

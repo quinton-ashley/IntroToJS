@@ -4,8 +4,6 @@ dev
 usr
 *.log
 load.js
-GAMES/*
-!GAMES/_
 DATA/*/preload.js
 node_modules
 students
