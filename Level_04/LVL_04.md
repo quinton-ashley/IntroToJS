@@ -19,6 +19,14 @@ QuintOS.level = 4;
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen4.jpg)
 
+## Coding Philosophy: Part 1
+
+Good code should be easy for other programmers (humans) to read and efficient for your computer to run. Here are some guidelines for how to write good code!
+
+Above all, it's important to put effort into thinking of GOOD names for your variables. Good variable names in Javascript are short and concise descriptors. Write sufficiently detailed comments in your code too.
+
+Try not to rewrite the same exact lines of code in different places, put that code chunk in a function and use that function instead. Likewise if you have a chunk of code and you want to do something only slightly different at another point in your program, make a function with input parameters for the thing(s) that make it different. If you have a code chunk inside a function that is unrelated to the name/description you gave that function, move that code into its own function.
+
 ## Return variables from a function
 
 functions can return a variable (only one). What will the value of `upHigh` be?
@@ -51,7 +59,7 @@ A two dimensional array (aka 2D array) is an array of arrays.
 ```js
 // red and black checkers on a checkerboard
 let board = [
-  [" ", " ", "r", " ", " ", "B", " ", " "],
+  [" ", " ", " ", "r", " ", "B", " ", " "],
   [" ", " ", " ", " ", " ", " ", " ", " "],
   [" ", " ", " ", " ", " ", " ", " ", "r"],
   [" ", " ", " ", " ", "r", " ", " ", " "],
@@ -67,10 +75,10 @@ Two dimensional data, such as checker board piece positions, can be stored in tw
 How could we access the red piece on the top row?
 
 ```js
-board[0][2];
+board[0][3]; // row is 0, column is 3
 ```
 
-`board[0]` gets the first row in board array and the `[2]` after that gets us the piece at column 3 in that row array. How could we access the red peice in the middle of the board?
+`board[0]` gets the first row in board array and the `[3]` after that gets us the piece at column 3 in that row array. How could we access the red peice in the middle of the board?
 
 ## Nested for loops
 
@@ -85,14 +93,6 @@ for (let i = 0; i < rows; i++) {
 ```
 
 How could we use a nested for loop to clear the board of all the pieces by assigning a blank space " " to every element in the `board` array?
-
-## Coding Philosophy: Part 1
-
-Good code should be easy for other programmers (humans) to read and efficient for your computer to run. Here are some guidelines for how to write good code!
-
-Above all, it's important to put effort into thinking of GOOD names for your variables. Good variable names in Javascript are short and concise descriptors. Write sufficiently detailed comments in your code too.
-
-Try not to rewrite the same exact lines of code in different places, put that code chunk in a function and use that function instead. Likewise if you have a chunk of code and you want to do something only slightly different at another point in your program, make a function with input parameters for the thing(s) that make it different. If you have a code chunk inside a function that is unrelated to the name/description you gave that function, move that code into its own function.
 
 ## End of Level 04 A
 
