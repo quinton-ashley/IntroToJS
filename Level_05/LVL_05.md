@@ -1,13 +1,13 @@
 # Level 05 A
 
-Complete the bonus game, Wheel Of Fortune, before continuing to level 4. Edit your `load.js` file in the `GAMES` folder.
+Complete the bonus game, Wheel Of Fortune, before continuing to level 4. Edit your `load.js` file:
 
 ```js
 QuintOS.level = 2;
-QuintOS.gameSelect = "WheelOfFortune";
+QuintOS.gameSelect = 'WheelOfFortune';
 ```
 
-If you've got this far congratulations! You've reached Intermediate Level Javascript! Edit the `load.js` file in the `PC` folder, upgrade to level 5 🥳
+If you've got this far congratulations! You've reached Intermediate Level Javascript! 🥳 Edit your `load.js` file:
 
 ```js
 QuintOS.level = 5;
@@ -31,9 +31,9 @@ I already did the setup function for you. So in your `pong.js` file just make th
 
 ```js
 function setup() {
-  createCanvas(640, 400); // creates canvas with width of 640 and height of 400
-  frameRate(60); // 60 frames per second
-  noStroke(); // no stroke line around shapes
+	createCanvas(640, 400); // creates canvas with width of 640 and height of 400
+	frameRate(60); // 60 frames per second
+	noStroke(); // no stroke line around shapes
 }
 ```
 
@@ -46,7 +46,7 @@ p5.js has it's own `createImage` function, but it's a bit complicated. I created
 The first parameter to `spriteArt` is a string representing the color values of pixels.
 
 ```js
-let img = spriteArt("w.w");
+let img = spriteArt('w.w');
 ```
 
 This example code would create an image with one white pixel, followed by a transparent pixel, and then another white pixel. You can also use spaces to indicate transparent pixels.
@@ -55,24 +55,24 @@ Here's the full color palette you can use, same colors as the real Commodore 64!
 
 ```js
 let palette = {
-  " ": "", // transparent 🔲
-  ".": "", // transparent 🔳
-  k: "#000000", // blacK ⬛
-  d: "#626252", // Dark-gray ⚫
-  m: "#898989", // Mid-gray 🔘
-  l: "#adadad", // Light-gray ⚪
-  w: "#ffffff", // White ⬜
-  c: "#cb7e75", // Coral 🔴
-  r: "#9f4e44", // Red 🟥
-  n: "#6d5412", // browN 🟫
-  o: "#a1683c", // Orange 🟧
-  y: "#c9d487", // Yellow 🟨
-  e: "#9ae29b", // light grEEn 🟢
-  g: "#5cab5e", // Green 🟩
-  t: "#6abfc6", // Teal 🔵
-  b: "#50459b", // Blue 🟦
-  i: "#887ecb", // Indigo 🟣
-  p: "#a057a3" // Purple 🟪
+	' ': '', // transparent 🔲
+	'.': '', // transparent 🔳
+	k: '#000000', // blacK ⬛
+	d: '#626252', // Dark-gray ⚫
+	m: '#898989', // Mid-gray 🔘
+	l: '#adadad', // Light-gray ⚪
+	w: '#ffffff', // White ⬜
+	c: '#cb7e75', // Coral 🔴
+	r: '#9f4e44', // Red 🟥
+	n: '#6d5412', // browN 🟫
+	o: '#a1683c', // Orange 🟧
+	y: '#c9d487', // Yellow 🟨
+	e: '#9ae29b', // light grEEn 🟢
+	g: '#5cab5e', // Green 🟩
+	t: '#6abfc6', // Teal 🔵
+	b: '#50459b', // Blue 🟦
+	i: '#887ecb', // Indigo 🟣
+	p: '#a057a3' // Purple 🟪
 };
 ```
 
@@ -92,7 +92,7 @@ yykyyyykyy
 smiley = spriteArt(smiley); // create sprite image outside draw loop
 
 function draw() {
-  image(smiley, 0, 0);
+	image(smiley, 0, 0);
 }
 ```
 
@@ -121,12 +121,12 @@ Let's take a look at how we could use an object to store attributes about Gumbal
 
 ```js
 let gumball = {
-  name: ["Gumball", "Tristopher", "Watterson"],
-  species: "cat",
-  age: 12,
-  grade: 7,
-  studentID: "000029083",
-  teacher: "Ms. Simian"
+	name: ['Gumball', 'Tristopher', 'Watterson'],
+	species: 'cat',
+	age: 12,
+	grade: 7,
+	studentID: '000029083',
+	teacher: 'Ms. Simian'
 };
 ```
 
@@ -134,14 +134,14 @@ Properties can be accessed using the dot syntax or with the `[]` square brackets
 
 ```js
 gumball.age; // -> 12
-gumball["age"]; // same thing
+gumball['age']; // same thing
 
 gumball.name[2]; // -> 'Watterson'
 
 // editing the animal for property 'c'
 gumball.grade = 8;
 // adding new content to the object
-gumball.brother = "Darwin";
+gumball.brother = 'Darwin';
 ```
 
 What does the `gumball` object look like after these changes?
@@ -174,32 +174,32 @@ Classes in JavaScript are blueprints for objects. They're useful for creating mo
 
 ```js
 class Rectangle {
-  constructor(width, height) {
-    this.w = width;
-    this.h = height;
-  }
+	constructor(width, height) {
+		this.w = width;
+		this.h = height;
+	}
 }
 
 let rect = new Rectangle(5, 4);
-console.log("The area is " + rect.w * rect.h);
+console.log('The area is ' + rect.w * rect.h);
 ```
 
 What will the area be? How could you make a function that calculates the area?
 
 ```js
 class Rectangle {
-  constructor(width, height) {
-    this.w = width;
-    this.h = height;
-  }
+	constructor(width, height) {
+		this.w = width;
+		this.h = height;
+	}
 
-  area() {
-    return this.w * this.h;
-  }
+	area() {
+		return this.w * this.h;
+	}
 }
 
 let rect = new Rectangle(5, 4);
-console.log("The area is " + rect.area());
+console.log('The area is ' + rect.area());
 ```
 
 You can probably see how this would be useful to create multiple objects that have the same variables (properties) and behaviors (functions). This kind of programming is called object-oriented programming. Since this mode of thinking is similar to how us humans perceive objects in real life it makes programming them easier.
@@ -214,8 +214,8 @@ In 2D (two dimensional) games, a sprite's vector can be stored as the velocity, 
 
 ```js
 this.velocity = {
-  x: 1,
-  y: 1
+	x: 1,
+	y: 1
 };
 ```
 

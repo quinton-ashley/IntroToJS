@@ -1,10 +1,10 @@
 # Level 06 A
 
-Complete the bonus game, Contain, before continuing to level 6. Edit your `load.js` file in the `GAMES` folder.
+Complete the bonus game, Contain, before continuing to level 6. Edit your `load.js` file:
 
 ```js
 QuintOS.level = 5;
-QuintOS.gameSelect = "Contain";
+QuintOS.gameSelect = 'Contain';
 ```
 
 Now you're on level 6! 🥳
@@ -23,7 +23,7 @@ returns the `Input` object created
 - `onSubmit` called when the user presses the enter key
 - `onChange` called when the user types any key that changes the input's value
 
-## JavaScript Eval Calculator
+## The JavaScript eval Function
 
 Take a look at `calculator.js` it already contains all the code necessary to do basic calculations.
 
@@ -31,7 +31,7 @@ Doesn't it look rather simple? That's cause the JavaScript `eval()` function is 
 
 ```js
 QuintOS.level = 0;
-QuintOS.gameSelect = "Calculator";
+QuintOS.gameSelect = 'Calculator';
 ```
 
 ## Loading Sounds
@@ -49,12 +49,12 @@ sound0.play();
 sound1.play();
 ```
 
-Both sounds will be played at the same time! You have to use the `onended` function to be able to tell when they're done. `.onended(callback)` takes a callback function, the function is run aka "called" when the sound file stops playing.
+Both sounds will be played at the same time! You have to use the `onended` function to be able to tell when the first sound has finished playing. `.onended(callback)` takes a callback function, the function is run aka "called" when the sound file stops playing.
 
 ```js
 sound0.play();
 sound0.onended(() => {
-  sound1.play();
+	sound1.play();
 });
 ```
 
@@ -67,16 +67,16 @@ If you have to use callbacks to play five sounds this is what it might look like
 ```js
 sound0.play();
 sound0.onended(() => {
-  sound1.play();
-  sound1.onended(() => {
-    sound2.play();
-    sound2.onended(() => {
-      sound3.play();
-      sound3.onended(() => {
-        sound4.play();
-      });
-    });
-  });
+	sound1.play();
+	sound1.onended(() => {
+		sound2.play();
+		sound2.onended(() => {
+			sound3.play();
+			sound3.onended(() => {
+				sound4.play();
+			});
+		});
+	});
 });
 ```
 
@@ -96,7 +96,7 @@ To make a play function that we can `await`, we have to wrap it in a Promise.
 
 Back in my day... when I was a young lad first learning JavaScript in 2017... async/await and Promises were not part of JavaScript yet! We had to use callbacks for everything asynchronous and it was awful. You kids don't know how good you have it!
 
-I may sound like a grumpy old man but it really is true. Promises made JavaScript so much better. Let's learn how to make one. Here's setTimeout wrapped in a promise.
+I may sound like a grumpy old man but it really is true. Promises made JavaScript so much better. Let's learn how to make one. Here's `setTimeout()` wrapped in a promise.
 
 ```js
 function delay(time) => {
@@ -114,7 +114,7 @@ Some devs call this "promisify-ing". Read more about promises here:
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
 
-A Promise is in one of these states:
+A Promise will be in one of these states:
 
     pending: initial state, neither fulfilled nor rejected.
     fulfilled: meaning that the operation was completed successfully.
@@ -124,12 +124,12 @@ A Promise is in one of these states:
 
 ```js
 function play(sound) {
-  return new Promise((resolve, reject) => {
-    sound.play();
-    sound.onended(() => {
-      resolve();
-    });
-  });
+	return new Promise((resolve, reject) => {
+		sound.play();
+		sound.onended(() => {
+			resolve();
+		});
+	});
 }
 ```
 
@@ -137,11 +137,11 @@ Now we could even use a for loop to play a lot of sounds!
 
 ```js
 async function playAllLetters() {
-  let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  for (let i = 0; i < 26; i++) {
-    let letter = alphabet[i];
-    await play(letterSounds[letter]);
-  }
+	let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	for (let i = 0; i < 26; i++) {
+		let letter = alphabet[i];
+		await play(letterSounds[letter]);
+	}
 }
 ```
 

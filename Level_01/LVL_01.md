@@ -1,6 +1,6 @@
 # Level 01 A
 
-Congrats, you completed level 0! Upgrade your PC by editing the `load.js` file in the `PC` folder. Set your level to 1! 🥳
+Congrats, you completed level 0! Upgrade your PC by editing your `load.js` file in your `quintos-games` project. Set your level to 1! 🥳
 
 ```js
 QuintOS.level = 1;
@@ -104,7 +104,7 @@ something"; // ERROR!
 To put part of a string on a newline use `\n` the newline character.
 
 ```js
-let example = "I want to put something on a new line:\nsomething";
+let example = 'I want to put something on a new line:\nsomething';
 ```
 
 ```txt
@@ -115,7 +115,7 @@ something
 The tab character `\t`, note that the `+` operator is used to add another string to the list on a new line.
 
 ```js
-let list = "Grocery list:\n\n\tApples\n\tOranges\n\tBananas";
+let list = 'Grocery list:\n\n\tApples\n\tOranges\n\tBananas';
 ```
 
 ```txt
@@ -142,7 +142,7 @@ What did we learn?
 [Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) are lists of variables with numbered indexes.
 
 ```js
-let names = ["Amy", "Ellie", "Max"];
+let names = ['Amy', 'Ellie', 'Max'];
 let nums = [50, 21, 42, 83];
 ```
 
@@ -156,7 +156,7 @@ nums[1]; // is 21
 Items in an array can also be edited using `[]` (aka sub).
 
 ```js
-names[2] = "Ben";
+names[2] = 'Ben';
 // edits the list: ['Amy', 'Ellie', 'Ben'];
 nums[1] = 36;
 // edits the list: [50, 36, 42, 83]
@@ -167,7 +167,7 @@ nums[1] = 36;
 length is a property of Array accessed using a period `.`
 
 ```js
-console.log("The names array has " + names.length + " names");
+console.log('The names array has ' + names.length + ' names');
 ```
 
 This example code would print "The names array has 3 names" to the console.
@@ -187,7 +187,7 @@ That's cause in JavaScript the double equals `==` actually only checks for loose
 Another useful Array function is `.includes()`, it checks if the input "Ellie" is included in the array. Requires exact equivalence!
 
 ```js
-names.includes("Ellie"); // returns true
+names.includes('Ellie'); // returns true
 ```
 
 ## Converting from String to Number
@@ -195,7 +195,7 @@ names.includes("Ellie"); // returns true
 If you have a number inside a string you can convert it to a number by using the `Number()` global function.
 
 ```js
-let num = Number("23");
+let num = Number('23');
 // num -> 23
 ```
 

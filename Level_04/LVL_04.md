@@ -1,13 +1,13 @@
 # Level 04 A
 
-Before you level up to level 3, complete the Pick a Path PART C challenge section. Edit your `load.js` file in the `GAMES` folder.
+Before you level up to level 3, complete the Pick a Path PART C challenge section. Edit your `load.js` file:
 
 ```js
 QuintOS.level = 3;
-QuintOS.gameSelect = "PickAPath";
+QuintOS.gameSelect = 'PickAPath';
 ```
 
-Before you can start working on the `TicTacToe` game, you'll have to prove your skills in Javascript. You should be able to complete the first few test sections quite quickly. Stop when you get to the challenge titled "Golf Code".
+Before you can start working on the `TicTacToe` game, you'll have to prove your skills in Javascript. You should be able to complete the first few test sections quite quickly. Stop when you complete the challenge titled "Golf Code".
 
 <https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-javascript>
 
@@ -33,7 +33,7 @@ functions can return a variable (only one). What will the value of `upHigh` be?
 
 ```js
 function gimmeFive() {
-  return 5;
+	return 5;
 }
 
 let upHigh = gimmeFive() + gimmeFive();
@@ -45,7 +45,7 @@ function with input parameters x and y, returns the value of x^2 \* y^2
 
 ```js
 function doMyMathHomework(x, y) {
-  return x * x * y * y;
+	return x * x * y * y;
 }
 
 doMyMathHomework(1, 3); // returns 9
@@ -59,14 +59,14 @@ A two dimensional array (aka 2D array) is an array of arrays.
 ```js
 // red and black checkers on a checkerboard
 let board = [
-  [" ", " ", " ", "r", " ", "B", " ", " "],
-  [" ", " ", " ", " ", " ", " ", " ", " "],
-  [" ", " ", " ", " ", " ", " ", " ", "r"],
-  [" ", " ", " ", " ", "r", " ", " ", " "],
-  [" ", "B", " ", " ", " ", " ", " ", "b"],
-  [" ", " ", "b", " ", " ", " ", "b", " "],
-  [" ", " ", " ", " ", " ", " ", " ", " "],
-  [" ", " ", " ", " ", "b", " ", "b", " "],
+	[' ', ' ', ' ', 'r', ' ', 'B', ' ', ' '],
+	[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+	[' ', ' ', ' ', ' ', ' ', ' ', ' ', 'r'],
+	[' ', ' ', ' ', ' ', 'r', ' ', ' ', ' '],
+	[' ', 'B', ' ', ' ', ' ', ' ', ' ', 'b'],
+	[' ', ' ', 'b', ' ', ' ', ' ', 'b', ' '],
+	[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+	[' ', ' ', ' ', ' ', 'b', ' ', 'b', ' ']
 ];
 ```
 
@@ -86,9 +86,9 @@ A for loop inside a for loop? FORLOOPCEPTION! 😮
 
 ```js
 for (let i = 0; i < rows; i++) {
-  for (let j = 0; j < columns; j++) {
-    // nested for loop
-  }
+	for (let j = 0; j < columns; j++) {
+		// nested for loop
+	}
 }
 ```
 

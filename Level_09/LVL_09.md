@@ -1,10 +1,10 @@
 # Level 09 A
 
-Complete the bonus game, Sokoban, before continuing to level 8. Edit your `load.js` file in the `GAMES` folder.
+Complete the bonus game, Sokoban, before continuing to level 8. Edit your `load.js` file:
 
 ```js
 QuintOS.level = 7;
-QuintOS.gameSelect = "Sokoban";
+QuintOS.gameSelect = 'Sokoban';
 ```
 
 After that you can upgrade to level 9! 🥳
@@ -32,4 +32,4 @@ Congratulations you've completed my IntroToJS course!
 [Tutorials: Make 3D games with Babylon](https://doc.babylonjs.com/start)  
 [Course: freeCodeCamp](https://github.com/mcturner1995/freeCodeCamp)  
 [Video: Explanation of what .exe files are and how computer processors execute assembly](https://www.youtube.com/watch?v=hhgxsrAFyz8)  
-[Video: AI Sudoku solver in python](https://www.youtube.com/watch?v=G_UYXzGuqvM)  
+[Video: AI Sudoku solver in python](https://www.youtube.com/watch?v=G_UYXzGuqvM)

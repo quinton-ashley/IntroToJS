@@ -1,6 +1,6 @@
 # Level 02 A
 
-Before we can start working on `PickAPath` we have to upgrade our PC! Edit the `load.js` file in the `PC` folder, set your level to 2! 🥳
+Before we can start working on `PickAPath` we have to upgrade our PC! Edit your `load.js` file, set your level to 2! 🥳
 
 ```js
 QuintOS.level = 2;
@@ -13,16 +13,16 @@ QuintOS.level = 2;
 The number of loops a while loop does can be counted with a variable.
 
 ```js
-let names = ["Jake", "Ali", "Ben"];
+let names = ['Jake', 'Ali', 'Ben'];
 
 let i = 0; // initialize i to 0
 
 // loop while i is less than names.length which is 3
 while (i < names.length) {
-  // print the next name in the list
-  console.log(i + ". " + names[i]);
+	// print the next name in the list
+	console.log(i + '. ' + names[i]);
 
-  i++; // shortcut for i = i + 1;
+	i++; // shortcut for i = i + 1;
 } // in this loop i goes up from 0 to 1 to 2
 ```
 
@@ -39,9 +39,9 @@ The code above prints out a numbered list of names in the JS console.
 To access characters in a string you can use `[]` but note that you can't edit them like you can with arrays.
 
 ```js
-let fox = "the red fox";
+let fox = 'the red fox';
 fox[4]; // is 'r'
-fox[8] = "b"; // error
+fox[8] = 'b'; // error
 // will not change fox string to 'the red box'
 ```
 
@@ -50,11 +50,11 @@ fox[8] = "b"; // error
 So how do we add to arrays? By using the `.push()` function.
 
 ```js
-let names = ["Amy", "Ellie", "Ben"];
+let names = ['Amy', 'Ellie', 'Ben'];
 
 names.pop(); // returns and removes the last element from the array
 // names -> ['Amy', 'Ellie']
-names.push("Jake"); // adds "Jake" to names array
+names.push('Jake'); // adds "Jake" to names array
 // names -> ['Amy', 'Ellie', 'Jake']
 ```
 
@@ -68,7 +68,7 @@ Strings have a lot of useful functions we can use. MDN, the Mozilla Developer Ne
 
 ```js
 // split by ' ' to get an array of words
-"the red fox".split(" ");
+'the red fox'.split(' ');
 // -> ['the', 'red', 'fox']
 ```
 
@@ -77,7 +77,7 @@ Strings have a lot of useful functions we can use. MDN, the Mozilla Developer Ne
 The `join()` function kind of does the opposite of the string `split()` function. `join()` makes a string by joining each element in the array together, adding a character in between them.
 
 ```js
-["the", "red", "fox"].join(" ");
+['the', 'red', 'fox'].join(' ');
 // -> 'the red fox'
 ```
 
@@ -96,18 +96,18 @@ We learned how to:
 You can use the `break` keyword to break out of a while loop early.
 
 ```js
-let names = ["Jake", "Ali", "Ben"];
+let names = ['Jake', 'Ali', 'Ben'];
 let i = 0; // i is the number of loops
 // loop while i is less than names.length which is 3
 while (i < names.length) {
-  // find "Ali"
-  if (names[i] == "Ali") {
-    break; // then break out of the while loop
-  }
-  i++; // shortcut for i = i + 1;
+	// find "Ali"
+	if (names[i] == 'Ali') {
+		break; // then break out of the while loop
+	}
+	i++; // shortcut for i = i + 1;
 } // i counts up from 0 to 1 to 2
 
-console.log("Ali is at position: " + i);
+console.log('Ali is at position: ' + i);
 // -> "Ali is at position: 1"
 ```
 
@@ -118,10 +118,10 @@ Note that the value of `i` will be 1, even though the loop range is from `i` 0-2
 `for` loops are like `while` loops but they make counting the number of loops way more convenient. This code does the same thing as the previous example with the `while` loop.
 
 ```js
-let names = ["Jake", "Ali", "Ben"];
+let names = ['Jake', 'Ali', 'Ben'];
 // INITIALIZE; CONDITION; INCREMENT;
 for (let i = 0; i < names.length; i++) {
-  console.log(i + ". " + names[i]);
+	console.log(i + '. ' + names[i]);
 }
 ```
 
@@ -141,7 +141,7 @@ Makes this list of names.
 
 ```js
 for (let i in names) {
-  console.log(i + ". " + names[i]);
+	console.log(i + '. ' + names[i]);
 }
 ```
 
@@ -149,7 +149,7 @@ for (let i in names) {
 
 ```js
 for (let name of names) {
-  console.log("Hello " + name);
+	console.log('Hello ' + name);
 }
 ```
 

@@ -1,6 +1,6 @@
 # Level 03 A
 
-Before you level up to level 2, complete the Guess the Number PART C challenge section. Edit your `load.js` file in the `GAMES` folder.
+Before you level up to level 2, complete the Guess the Number PART C challenge section. Edit your `load.js` file:
 
 ```js
 QuintOS.level = 0;
@@ -22,7 +22,7 @@ QuintOS.level = 3;
 let x = 10;
 let y = 12;
 
-pc.text("Hello World!", x, y);
+pc.text('Hello World!', x, y);
 ```
 
 ## Creating functions 👷
@@ -31,8 +31,8 @@ How do we create our own functions? Using the `function` keyword!
 
 ```js
 function sayHello() {
-  // creates the function
-  console.log("hello!");
+	// creates the function
+	console.log('hello!');
 }
 
 sayHello(); // runs the function
@@ -44,10 +44,10 @@ Let's learn how to add a button. The function is just like `pc.text` but the fou
 
 ```js
 function btnClick() {
-  console.log("You clicked the button!");
+	console.log('You clicked the button!');
 }
 //                 (text       , x, y, function)
-let btn = pc.button("Click me!", 5, 5, btnClick);
+let btn = pc.button('Click me!', 5, 5, btnClick);
 ```
 
 Remove the button from the screen by using the erase function of the `btn` object.
@@ -70,7 +70,7 @@ Recursion is when a function calls itself. It's another way to loop code in addi
 
 ```js
 function doRecursion() {
-  doRecursion(); // infinite loop! OH NO!
+	doRecursion(); // infinite loop! OH NO!
 }
 ```
 
@@ -79,10 +79,10 @@ function doRecursion() {
 This code will print "Hello!" to the console's log successfully but how?
 
 ```js
-let txt = "Hello!";
+let txt = 'Hello!';
 if (txt) {
-  // that's not a boolean expression... or is it??
-  console.log(txt);
+	// that's not a boolean expression... or is it??
+	console.log(txt);
 }
 ```
 
@@ -96,8 +96,8 @@ let x = 109; // true (any number besides 0 is true)
 let y = -20; // true (any number besides 0 is true)
 let z = 0; // false (the number is 0)
 
-let txt0 = "hello"; // true (any string with chars is true)
-let txt1 = ""; // false (any empty string is false)
+let txt0 = 'hello'; // true (any string with chars is true)
+let txt1 = ''; // false (any empty string is false)
 
 let arr0 = []; // true (array is empty but still exists)
 ```
@@ -133,7 +133,7 @@ To use `await` inside a function you must make it an `async` function. When you 
 
 ```js
 async function sayHello() {
-  await pc.alert("Hello!");
+	await pc.alert('Hello!');
 }
 ```
 

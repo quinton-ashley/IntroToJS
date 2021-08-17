@@ -8,11 +8,11 @@ Edit your `load.js` file to start on SpeakAndSpell, set the preload option to tr
 
 ```js
 QuintOS.level = 0;
-QuintOS.gameSelect = "SpeakAndSpell";
+QuintOS.gameSelect = 'SpeakAndSpell';
 QuintOS.preload = true;
 ```
 
-Take a look at the `DATA/SpeakAndSpell` folder. These are all the sound files we will be using. Make a new file `speakAndSpell-preload.js` in your `GAMES` folder, copy paste from the template file.
+Take a look at the `SpeakAndSpell` data folder. These are all the sound files we will be using. Copy this folder to a new folder called `DATA` in your `quintos-games` project. Also copy the template files `speakAndSpell-preload.js` and `speakAndSpell.js` to your `GAMES` folder.
 
 First work on the preload file that will load all the sound files before `speakAndSpell.js` is started. Load all the letter sounds into an array `letterSounds`.
 
@@ -28,12 +28,12 @@ Change your program to use the "promisified" play function to play sounds using 
 
 ```js
 function play(sound) {
-  return new Promise((resolve, reject) => {
-    sound.play();
-    sound.onended(() => {
-      resolve();
-    });
-  });
+	return new Promise((resolve, reject) => {
+		sound.play();
+		sound.onended(() => {
+			resolve();
+		});
+	});
 }
 ```
 

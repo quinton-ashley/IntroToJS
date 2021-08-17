@@ -38,7 +38,7 @@ Open Visual Studio Code (VSCode) and that `quintos-games` folder to the workspac
 
 ## Loading QuintOS
 
-Edit the `load.js` in the `quintos-games` folder and set your level to 0.
+Edit the `load.js` in the `quintos-games` project folder and set your level to 0.
 
 ```js
 QuintOS.level = 0;
@@ -102,7 +102,7 @@ let codingIsFun = true;
 Strings are text, stored as lists of characters. You can think of them like lettered beads on a charm bracelet string. They are defined using quotes, apostrophes, or backticks: " " ' ' \`\`
 
 ```js
-let story = "The dog went to the dog park on 3rd Avenue.";
+let story = 'The dog went to the dog park on 3rd Avenue.';
 ```
 
 If you don't use quotes, JavaScript will think the words are variables!
@@ -117,9 +117,9 @@ functions are a reference to other sections of code which you can run using the 
 
 ```js
 powerOn();
-turn("left");
+turn('left');
 moveForward(10);
-turn("right");
+turn('right');
 moveForward(2);
 ```
 
@@ -130,9 +130,9 @@ This code for a robot remote control makes the robot power on, turn to the left,
 Variables in JS can't have spaces, 🙅‍♂️ so for variables that have multiple words, the first letter of the words after the first word are capitalized. This naming convention is called camel case because the capitalized letters are like the humps on a camel.
 
 ```js
-let apple = "🍎";
-let applePie = "🍎 π";
-let applePieIceCream = "🍎 π 🍨";
+let apple = '🍎';
+let applePie = '🍎 π';
+let applePieIceCream = '🍎 π 🍨';
 ```
 
 ## Mathematical operators 🔢
@@ -162,20 +162,20 @@ Single equals `=` is for assigning values to variables. Double equals `==` is a 
 let fruitColor;
 
 // if the fruit is a banana
-if (fruit == "banana") {
-  // set the fruitColor to yellow
-  fruitColor = "yellow";
-} else if (fruit == "pear") {
-  // else if the fruit is a pear, set the fruitColor to green
-  fruitColor = "green";
-} else if (fruit == "orange") {
-  fruitColor = "orange";
-} else if (fruit == "grape") {
-  fruitColor = "purple";
+if (fruit == 'banana') {
+	// set the fruitColor to yellow
+	fruitColor = 'yellow';
+} else if (fruit == 'pear') {
+	// else if the fruit is a pear, set the fruitColor to green
+	fruitColor = 'green';
+} else if (fruit == 'orange') {
+	fruitColor = 'orange';
+} else if (fruit == 'grape') {
+	fruitColor = 'purple';
 } else {
-  // else the fruit was not a banana, pear, orange, or grape
-  // the fruitColor is unknown
-  fruitColor = "unknown";
+	// else the fruit was not a banana, pear, orange, or grape
+	// the fruitColor is unknown
+	fruitColor = 'unknown';
 }
 ```
 
@@ -200,7 +200,7 @@ Check out the `alert` and `prompt` global functions for user interaction. The wo
 
 ```js
 // waits for the user to type something and press enter
-let favColor = await prompt("What is your favorite color?");
+let favColor = await prompt('What is your favorite color?');
 // favColor is assigned to the user's response
 
 // waits for user to read the message in the alert and press okay
@@ -260,17 +260,17 @@ let toastLevel = 70; // default amount before toasting
 
 // more heat is required to toast frozen bread
 if (defrost == true) {
-  toastLevel = 0;
+	toastLevel = 0;
 }
 
 turnToasterOn();
 // loops while toastLevel is below 1000
 while (toastLevel < 1000) {
-  let heat = getTemperature();
-  toastLevel = toastLevel + heat; // add additional heat to toastLevel
+	let heat = getTemperature();
+	toastLevel = toastLevel + heat; // add additional heat to toastLevel
 }
 
-console.log("Toast is ready!");
+console.log('Toast is ready!');
 turnToasterOff();
 ```
 
@@ -279,8 +279,8 @@ turnToasterOff();
 Not equals `!=` checks if something is not equal to something else.
 
 ```js
-if (message != "") {
-  // check to see if string message is not empty
+if (message != '') {
+	// check to see if string message is not empty
 }
 ```
 
@@ -289,8 +289,8 @@ if (message != "") {
 Note that if you declare a variable in a code block it will only be available from the beginning to the end of the block. This is the scope of a variable.
 
 ```js
-if (name == "Bob") {
-  let message = "Hi Bob!";
+if (name == 'Bob') {
+	let message = 'Hi Bob!';
 }
 
 console.log(message); // ERROR: message is not defined
@@ -300,8 +300,8 @@ Fix this by initializing `message` outside of the if statement.
 
 ```js
 let message;
-if (name == "Bob") {
-  message = "Hi Bob!";
+if (name == 'Bob') {
+	message = 'Hi Bob!';
 }
 
 console.log(message); // good!

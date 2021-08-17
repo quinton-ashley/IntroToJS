@@ -56,16 +56,12 @@ for (let y = gridY; y < gridY + 23; y++) {
 // board stores the game data
 // in a two dimensional array of spaces
 let board = [
-	[" ", " ", " "],
-	[" ", " ", " "],
-	[" ", " ", " "]
+	[' ', ' ', ' '],
+	[' ', ' ', ' '],
+	[' ', ' ', ' ']
 ];
 // btns stores the buttons
-let btns = [
-	[],
-	[],
-	[]
-];
+let btns = [[], [], []];
 
 /* PART A: Make the buttons in the grid */
 
