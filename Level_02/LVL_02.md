@@ -91,28 +91,6 @@ We learned how to:
 
 # Level 02 B
 
-## Breaking out of a loop early
-
-You can use the `break` keyword to break out of a while loop early.
-
-```js
-let names = ['Jake', 'Ali', 'Ben'];
-let i = 0; // i is the number of loops
-// loop while i is less than names.length which is 3
-while (i < names.length) {
-	// find "Ali"
-	if (names[i] == 'Ali') {
-		break; // then break out of the while loop
-	}
-	i++; // shortcut for i = i + 1;
-} // i counts up from 0 to 1 to 2
-
-console.log('Ali is at position: ' + i);
-// -> "Ali is at position: 1"
-```
-
-Note that the value of `i` will be 1, even though the loop range is from `i` 0-2, because `break` exits the loop early.
-
 ## for loops
 
 `for` loops are like `while` loops but they make counting the number of loops way more convenient. This code does the same thing as the previous example with the `while` loop.
@@ -135,38 +113,41 @@ Makes this list of names.
 
 `for` loops have three different sections. The first section inside the parenthesis is for incrementing variables. The next section is the while condition, the loop loops while this is true. The last section is for incrementing the counter variable, which happens at the end of each loop. Conventionally `i` (i for index) is used as the counter variable.
 
-## More types of for loop
+## Debugger
 
-`for in` loop iterates through the indexes/keys of an array or object.
+To better understand how `for` loops work you'll need to use the debugger. In the Chrome developer panel it can be found in the "Sources" tab.
 
-```js
-for (let i in names) {
-	console.log(i + '. ' + names[i]);
-}
-```
+As you may know a "bug" in computer science terminology refers to code that is not working the way its author intended. Why is this? You may think it's because problems in your code can be annoying, like bugs. The actual origin of the term is much better though!
 
-`for of` loops iterate through the values of an array or object.
-
-```js
-for (let name of names) {
-	console.log('Hello ' + name);
-}
-```
-
-Says hello to everyone.
-
-```txt
-Hello Jake
-Hello Ali
-Hello Ben
-```
+Back when computers took up a whole Manhattan city block and were made from glowing hot vacuum tubes, bugs would fly inside these computers and die in them. Debugging literally referred to the act of removing dead bugs from a computer! This was done to solve problems that the dead bugs would cause by conducting electricity over wires that weren't supposed to connect among other issues. The name stuck among programmers ever since!
 
 ## End of Level 02 B
 
-What'd we learn?
+# Level 02 C
 
-- using `break`
-- all about `for` loops
+## Breaking out of a loop early
+
+You can use the `break` keyword to break out of a while loop early.
+
+```js
+let names = ['Jake', 'Ali', 'Ben'];
+let i = 0; // i is the number of loops
+// loop while i is less than names.length which is 3
+while (i < names.length) {
+	// find "Ali"
+	if (names[i] == 'Ali') {
+		break; // then break out of the while loop
+	}
+	i++; // shortcut for i = i + 1;
+} // i counts up from 0 to 1 to 2
+
+console.log('Ali is at position: ' + i);
+// -> "Ali is at position: 1"
+```
+
+Note that the value of `i` will be 1, even though the loop range is from `i` 0-2, because `break` exits the loop early.
+
+## End of Level 02 C
 
 ## History Info
 

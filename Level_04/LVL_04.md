@@ -52,6 +52,17 @@ doMyMathHomework(1, 3); // returns 9
 doMyMathHomework(2, 5); // what does this return?
 ```
 
+## arrow function syntax
+
+You can also create function using the arrow syntax.
+
+```js
+//       (   text    , x, y, action)
+pc.button('click me!', 0, 0, () => {
+	console.log('button clicked!');
+});
+```
+
 ## Two Dimensional Arrays
 
 A two dimensional array (aka 2D array) is an array of arrays.
@@ -100,6 +111,32 @@ How could we use a nested for loop to clear the board of all the pieces by assig
 - nested for loops
 
 # Level 04 B
+
+## More types of for loop
+
+`for in` loop iterates through the indexes/keys of an array or object.
+
+```js
+for (let i in names) {
+	console.log(i + '. ' + names[i]);
+}
+```
+
+`for of` loops iterate through the values of an array or object.
+
+```js
+for (let name of names) {
+	console.log('Hello ' + name);
+}
+```
+
+Says hello to everyone.
+
+```txt
+Hello Jake
+Hello Ali
+Hello Ben
+```
 
 ## Coding Philosophy: Part 2
 
