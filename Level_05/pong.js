@@ -22,5 +22,6 @@ let imgPaddle = spriteArt(
 
 /* PART A0: create a ball and two paddles on each end of the screen */
 
-/* PART A1: draw the ball and paddles inside the p5 main draw function */
-function draw() {}
+function draw() {
+	/* PART A1: draw the ball and paddles inside the p5 main draw function */
+}

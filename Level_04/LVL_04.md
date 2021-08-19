@@ -150,6 +150,6 @@ Have you ever played Connect Four? Try to think of the simplest method of making
 
 You may think the simplest method then is to drop a tile in a random column, however that might not be a valid move if that column of tiles is full. So therefore, the simplest method of making a valid move in Connect Four would be to go column by column and drop your tile in the first column that isn't full of tiles yet.
 
-In TicTacToe the simplest method to make a valid move is to look at each space and place one's X or O mark in the first available space. Available spaces are spaces that are not already occupied by an X or O. This will be how your first AI player makes moves.
+In TicTacToe the simplest method to make a valid move is to look at each space and place one's X or O mark in the first available space. Available spaces are spaces that are not already occupied by an X or O. This will be how your easy level AI player makes moves.
 
 ## End of Level 04 B

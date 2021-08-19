@@ -48,10 +48,8 @@ const gridY = 3;
 pc.text('─'.repeat(26), gridX, gridY + 7);
 // pc.text('─'.repeat(26), ?, ?); // draw another horizontal line
 
-for (let y = gridY; y < gridY + 23; y++) {
-	pc.text('│', gridX + 8, y);
-	// pc.text('│', ?, ?); // draw another vertical line
-}
+pc.text('│\n'.repeat(23), gridX + 8, gridY);
+// pc.text('│\n'.repeat(23), ?, ?); // draw another vertical line
 
 // board stores the game data
 // in a two dimensional array of spaces
@@ -60,11 +58,8 @@ let board = [
 	[' ', ' ', ' '],
 	[' ', ' ', ' ']
 ];
-// btns stores the buttons
-let btns = [[], [], []];
 
 /* PART A: Make the buttons in the grid */
-
 // test code, delete after reading
 // note the intervals! x += 9 and y += 8
 // use these in the increment sections of nested for loops
