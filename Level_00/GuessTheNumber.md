@@ -39,7 +39,7 @@ Use these `Math` functions to have the computer pick a random whole number betwe
 
 _Make sure you read all of `LVL_00.md` before doing PART B_
 
-Make the game loop by using a while loop.
+Make the game loop by using a while loop. Think about what condition must remain true for the player to keep playing the game.
 
 ## Instructions for PART C
 
