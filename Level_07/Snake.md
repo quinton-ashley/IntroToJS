@@ -24,7 +24,7 @@ Each time the snake eats a pellet make it move a bit faster unless it is already
 
 ## Instructions for PART B
 
-Pick three modes from the Google's online snake game to implement in your snake game.
+Pick three modes from the Google's online snake game to implement in your snake game!
 
 ## Instructions for PART C
 
