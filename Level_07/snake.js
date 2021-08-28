@@ -5,12 +5,14 @@ let score = 0;
 pc.text('SNAKE', 0, 0);
 pc.text(score, 0, 1);
 
-let snake = {
-	block: 'snake head',
-	direction: 'right',
-	x: 5,
-	y: 10
-};
+let snake = [
+	{
+		block: 'snake head',
+		direction: 'right',
+		x: 5,
+		y: 10
+	}
+];
 
 let speed = 10; // increment snake position every ten frames
 
@@ -20,8 +22,8 @@ function draw() {
 	if (frameCount % speed != 0) return;
 
 	// set lcd segment to null
-	pc.lcd(null, snake.x, snake.y);
+	pc.lcd(null, snake[0].x, snake[0].y);
 
-	snake.x++; // move snake head
-	pc.lcd(snake.block, snake.x, snake.y, snake.direction);
+	snake[0].x++; // move snake head
+	pc.lcd(snake[0].block, snake[0].x, snake[0].y, snake[0].direction);
 }

@@ -40,6 +40,48 @@ To make the Speak and Spell game we'll be loading sounds using the p5.js sound l
 
 https://p5js.org/examples/sound-load-and-play-sound.html
 
+## More types of for loop
+
+`for of` loops iterate through the values of an array or object.
+
+```js
+let names = ['Jake', 'Ali', 'Max'];
+for (let name of names) {
+	console.log('Hello ' + name);
+}
+```
+
+Result:
+
+```txt
+Hello Jake
+Hello Ali
+Hello Ben
+```
+
+`for in` loop iterates through the indexes/keys of an array or object.
+
+```js
+let list = {
+	apples: 2,
+	bananas: 10,
+	pears: 4
+};
+for (let item in list) {
+	console.log('I need to get ' + list[item] + ' ' + item + '!');
+}
+```
+
+Result:
+
+```txt
+I need to get 2 apples!
+I need to get 10 bananas!
+I need to get 4 pears!
+```
+
+## Level 06 B
+
 ## Callback Chaining
 
 If you try playing two sounds, one after the other like this it will not work!
@@ -60,7 +102,7 @@ sound0.onended(() => {
 
 Inside `onended` you can either put the name of a function to call or an anonymous function. In this example an anonymous function, a function that isn't given a name is used. Note that it uses the arrow `=>` syntax instead of the `function` keyword.
 
-## Level 06 B
+## Level 06 C
 
 If you have to use callbacks to play five sounds this is what it might look like. It's awful!
 

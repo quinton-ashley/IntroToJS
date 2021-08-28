@@ -15,11 +15,54 @@ QuintOS.level = 5;
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen5.jpg)
 
+## Creating Objects
+
+Objects have properties, aka key/value pairs. Everything in Javascript (Number, String, Array, etc.) is actually an Object too! You've already used some properties that these objects have such as `.length` for strings.
+
+Let's take a look at how we could use an object to store attributes about Gumball, a character from the Cartoon Network show The Amazing World of Gumball.
+
+```js
+let gumball = {
+	name: ['Gumball', 'Tristopher', 'Watterson'],
+	species: 'cat',
+	age: 12,
+	grade: 7,
+	studentID: '000029083',
+	teacher: 'Ms. Simian'
+};
+```
+
+Properties can be accessed using the dot syntax or with the `[]` square brackets.
+
+```js
+gumball.age; // -> 12
+gumball['age']; // same thing
+
+gumball.name[2]; // -> 'Watterson'
+
+// editing the animal for property 'c'
+gumball.grade = 8;
+// adding new content to the object
+gumball.brother = 'Darwin';
+```
+
+What does the `gumball` object look like after these changes?
+
+```js
+let gumball = {
+	name: ['Gumball', 'Tristopher', 'Watterson'],
+	species: 'cat',
+	age: 12,
+	grade: 8,
+	studentID: '000029083',
+	teacher: 'Ms. Simian',
+	brother: 'Darwin'
+};
+```
+
 ## What is p5.js?
 
-p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else!
-
-You're going to use it to make Pong!
+To make Pong we're going to use 2D graphics instead of text based graphics. p5.js is a JavaScript graphics library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else!
 
 ## p5.js Basics
 
@@ -111,51 +154,6 @@ let smiley = `
 🟨🟨⬛🟨🟨🟨🟨⬛🟨🟨
 🔳🟨🟨⬛⬛⬛⬛🟨🟨
 🔳🔳🔳🟨🟨🟨🟨`;
-```
-
-## Creating Objects
-
-Objects have properties, aka key/value pairs. Everything in Javascript (Number, String, Array, etc.) is actually an Object too! You've already used some properties that these objects have such as `.length` for strings.
-
-Let's take a look at how we could use an object to store attributes about Gumball, a character from the Cartoon Network show The Amazing World of Gumball.
-
-```js
-let gumball = {
-	name: ['Gumball', 'Tristopher', 'Watterson'],
-	species: 'cat',
-	age: 12,
-	grade: 7,
-	studentID: '000029083',
-	teacher: 'Ms. Simian'
-};
-```
-
-Properties can be accessed using the dot syntax or with the `[]` square brackets.
-
-```js
-gumball.age; // -> 12
-gumball['age']; // same thing
-
-gumball.name[2]; // -> 'Watterson'
-
-// editing the animal for property 'c'
-gumball.grade = 8;
-// adding new content to the object
-gumball.brother = 'Darwin';
-```
-
-What does the `gumball` object look like after these changes?
-
-```js
-{
-  name: ["Gumball", "Tristopher", "Watterson"],
-	species: "cat",
-	age: 12,
-  grade: 8,
-	studentID: "000029083",
-	teacher: "Ms. Simian",
-	brother: "Darwin"
-}
 ```
 
 ## End of Level 05 A

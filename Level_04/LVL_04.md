@@ -112,35 +112,9 @@ How could we use a nested for loop to clear the board of all the pieces by assig
 
 # Level 04 B
 
-## More types of for loop
-
-`for in` loop iterates through the indexes/keys of an array or object.
-
-```js
-for (let i in names) {
-	console.log(i + '. ' + names[i]);
-}
-```
-
-`for of` loops iterate through the values of an array or object.
-
-```js
-for (let name of names) {
-	console.log('Hello ' + name);
-}
-```
-
-Says hello to everyone.
-
-```txt
-Hello Jake
-Hello Ali
-Hello Ben
-```
-
 ## Coding Philosophy: Part 2
 
-Solve complex problems by thinking algorithmically! That means breaking problems down step by step. "A journey of a thousand miles begins with a single step". If you get stuck on a problem you may be overcomplicating it, keep things simple. Attempt to find a decent solution to a problem before concerning yourself with what the best solution could be. "Writing is rewriting" this is true for most people when writing essays, music, and often code too. No one can write code like the classical composer Mozart wrote music, by creating flawless first drafts that would sound exactly as he hoped. "Put something on the page!", start by thinking of the program logically, then draw it out on paper, then start writing code, test, rewrite, test, rewrite, and more tests! Remember "Computer Science" is a science, it's all about experimentation, and unlike most research science we can get pretty immediate results by running our programs! Getting things wrong is a big part of the process, having the program not do what you expect is an opportunity to learn. Keep trying but if you get really stuck take a long break and come back to it. Taking a break to do something else can really help give you a new headspace and perspective on what you're trying to code.
+Solve complex problems by thinking algorithmically! That means breaking problems down step by step. "A journey of a thousand miles begins with a single step". If you get stuck on a problem you may be overcomplicating it. Keep things as simple as possible at first and test often after adding new code! Doing this will help prevent you from getting stuck.
 
 ## Artificial Intelligence in Games
 
