@@ -139,6 +139,8 @@ while (!name) {
 		await pc.alert('ERROR: You did not type anything!');
 	}
 }
+
+await pc.alert('Hello ' + name + '!');
 ```
 
 The while loop will repeat until `name` is defined by the user. Neat!
