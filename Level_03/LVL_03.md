@@ -16,7 +16,7 @@ QuintOS.level = 3;
 
 ## Drawing text to the screen
 
-`pc` is a global object that I made. In the past you've been using `prompt()`. Behind the scenes this function calls `pc.prompt()` which creates a rectangle, text, an input, and two buttons. On level 03 you can use `pc` yourself to draw text, rectangles, and buttons to the screen!
+`pc` is a global object that I made. In the past you've been using `prompt()`. Behind the scenes this function calls `pc.prompt()` which creates a rectangle, text, an input, and two buttons. On level 03 you'll use `pc` to draw text and buttons to the screen!
 
 ```js
 let x = 10;
@@ -74,49 +74,84 @@ function doRecursion() {
 }
 ```
 
-## truth-y or false-y?
-
-This code will print "Hello!" to the console's log successfully but how?
+Example of a recursion loop that ends when the player's score reaches 20.
 
 ```js
-let txt = 'Hello!';
-if (txt) {
-	// that's not a boolean expression... or is it??
-	console.log(txt);
+let score = 0;
+
+function doRecursion() {
+	//
+	// ... game code here ...
+	score++;
+	//
+	if (score < 20) {
+		doRecursion();
+	}
 }
 ```
 
-JavaScript has a way of assessing the truthiness of numbers, strings, arrays, and objects when they're evaluated as a boolean expression.
+## Using boolean variables
 
 ```js
-let q0; // false (q0 is undefined, not given a value)
-let q1 = null; // false (null means nothing)
-
-let x = 109; // true (any number besides 0 is true)
-let y = -20; // true (any number besides 0 is true)
-let z = 0; // false (the number is 0)
-
-let txt0 = 'hello'; // true (any string with chars is true)
-let txt1 = ''; // false (any empty string is false)
-
-let arr0 = []; // true (array is empty but still exists)
+let playerIsDead = false;
 ```
 
-So `if (txt)` is checking if `txt` is truth-y. This is equalvalent to explicitly checking:
+If `playerIsDead` gets set to `true`, then tell the user "Game Over!".
 
 ```js
-if (typeof x != 'undefined' && x != false && x != null && x != 0 && x != '')
+if (playerIsDead == true) {
+	await pc.alert('Game Over!');
+}
 ```
 
-What a long line of code! Good thing JavaScript makes it easy to test truthiness.
-
-This feature of JS is useful for easily checking if variables are undefined.
+In Javascript you don't have to use `== true`. You can just put the variable in a boolean condition on it's own.
 
 ```js
-let btn;
+if (playerIsDead) {
+	await pc.alert('Game Over!');
+}
+```
 
-// if the button exists, erase it from the screen
-if (btn) btn.erase();
+## How to check if a variable is defined
+
+Sometimes you'll need to check if a variable is defined before you do something with it. If you put a variable that doesn't have a boolean value in a boolean condition by itself, Javascript will evaluate its "truthiness".
+
+```js
+let robot;
+
+// if the robot exists, have it shoot lasers!
+if (robot) {
+	robot.shootLasers();
+}
+```
+
+You can check if a variable is undefined, by putting a negation operator `!` in front of the variable name in the boolean condition. Variables are undefined if they were created but not assigned a value.
+
+Remember that the prompt function will return a string with the text the user entered or `null` if the user cancelled out of the prompt. In this example, if `name` is set to any string of text it will be considered truthy. If `name` is `null` or an empty string it will be considered falsy and the user will be asked for their name again.
+
+```js
+let name;
+
+while (!name) {
+	name = await pc.prompt("What's your name?");
+
+	if (!name) {
+		await pc.alert('ERROR: You did not type anything!');
+	}
+}
+```
+
+The while loop will repeat until `name` is defined by the user. Neat!
+
+## truthy or falsy?
+
+Any value that is not falsy is truthy. Variables are falsy if they are:
+
+```js
+undefined;
+null;
+0; // the number 0
+(''); // an empty string
 ```
 
 # Level 03 C

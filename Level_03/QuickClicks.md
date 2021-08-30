@@ -4,13 +4,15 @@ Test your reflexes with the Quick Click game!
 
 ## Instructions for PART A
 
-Put a button in a random position on the screen.
+Put the button in a random position on the screen.
 
 Tip! Remember `Math.random()` returns a value between 0 and 1 (not including 1)
 
 ## Instructions for PART B
 
-When you click the button place another button in a random position on the screen.
+When the player clicks the button place another button in a random position on the screen. Use recursion to acheive this!
+
+After the player clicks a button it should get erased. Do not attempt to erase a button if it doesn't exist!
 
 ## Instructions for PART C
 
