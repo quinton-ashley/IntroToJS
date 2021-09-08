@@ -10,11 +10,11 @@ Make a `btnClicked` function with row and column input parameters. Use an anonym
 
 If a player tries to place their 'x' or 'o' on a space that is not empty, do not let them overwrite that space. Show the player an alert window that explains they can't put their mark there because the space is not empty. Show the alerts on the bottom right of the screen, don't let them overlap with the Tic Tac Toe grid or it will get erased when the alert window gets erased.
 
-Create a function called `checkWinner` that should take a mark ('x' or 'o') as an input parameter. Check for winners (three Xs or three Os in a row) on all horizontal and vertical rows using a single for loop. Also check for the two diagonals, no loop required.
+Create a function called `checkForWinner` that should take a mark ('x' or 'o') as an input parameter. Check for winners (three Xs or three Os in a row) on all horizontal and vertical rows using a single for loop. Also check for the two diagonals, no loop required.
 
 Create a function called `checkForDraw` that checks for a draw.
 
-After a game is complete, start a new game. Keep track of the score, how many times each player has won, and display the tally at all times in the top right corner of the screen.
+After a game is complete, start a new game. Always show whose turn it is and a tally of the score in the top right corner.
 
 ## Instructions for PART B
 
@@ -22,16 +22,16 @@ Make buttons to let the user pick between starting a two player game or one play
 
 Make three levels of AI player:
 
-- easy : picks the first available space
-- medium : picks any available space randomly
-- hard : picks a winning move if available, blocks opponent's winning moves if they have any, otherwise it picks any available space
+- Easy : picks the first available space
+- Medium : picks any available space randomly
+- Hard : picks a winning move if available, blocks opponent's winning moves if they have any, otherwise it picks any available space
 
-In single player mode either let the player pick the AI difficulty or make it progressive, meaning the player has to beat easy AI, then medium AI, before they play against hard AI.
+Also make a "Challenge Mode" option for the AI difficulty. Make it progressive, so the player has to beat easy AI, then medium AI, before they play against hard AI.
 
 ## Instructions for PART C
 
 TicTacToe is a solved game, meaning that if both players always play their best moves, the game will end in a forced draw.
 
-Implement an unbeatable AI player that will also use strategies to beat unskilled players most of the time.
+Try implementing a Very Hard AI player that's unbeatable and uses tricky strategies to beat unskilled players.
 
-Make a 0 player mode and watch two of your AI players play against each other. Have a limit to the number of matches that will be played and use `await delay(ms)` between matches and/or turns so the results can actually be viewed by the user.
+First make a 0 player mode to test your Very Hard AI against your Hard AI. Have a limit to the number of matches that will be played. You should be able to view the results of each match.

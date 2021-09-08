@@ -141,7 +141,7 @@ function draw() {
 
 Creates a simple yellow and black smiley face 😃 and draws it on every frame at (0, 0) on the p5.js canvas.
 
-Note that you don't have to complete the width of each line with transparent pixels. Also note that these sprite art images are scaled by a factor of 2, so if you make a smiley that's 10 characters wide the image will actually have a width of 20 pixels when drawn on the p5.js canvas.
+Note that you don't have to complete the width of each line with transparent pixels. Also note that by default these sprite art images are scaled by a factor of 2, so if you make a smiley that's 10 characters wide the image will actually have a width of 20 pixels when drawn on the p5.js canvas.
 
 You can also use emoji squares and circles:
 🔲🔳⬛⚫🔘⚪⬜🔴🟥🟫🟧🟨🟢🟩🔵🟦🟣🟪
@@ -206,9 +206,9 @@ You can probably see how this would be useful to create multiple objects that ha
 
 To make Pong, we'll have to use Math "in real life"! How exciting! 😄
 
-In Physics a vector is a direction in which something is moving and the magnitude of how fast it's moving there.
+In Physics a vector is a direction in which something is moving and the magnitude of how fast it's moving there at a given interval of time.
 
-In 2D (two dimensional) games, a sprite's vector can be stored as the velocity, aka speed, at which a sprite is moving along the x-axis and the velocity it's moving along the y-axis.
+In 2D (two dimensional) games, a sprite's vector can be stored as the velocity, aka speed, at which a sprite is moving along the x-axis and the velocity it's moving along the y-axis per frame.
 
 ```js
 this.velocity = {

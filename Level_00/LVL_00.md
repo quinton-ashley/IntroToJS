@@ -8,13 +8,13 @@ As you may expect, coding will be really fun and interesting for you if you like
 
 Issac Newton once said, "we stand on the shoulders of giants". To understand how software is developed today it's important to learn a bit about the history of how computer hardware and software has progressed. Video games are an incredible art form that combine programming, storytelling, visual art, music, and sound design. If you signed up for this course you might want to know how video games work and how to make your own! If not, making games will hopefully be a fun way for you to learn how to code.
 
-During each lesson you'll develop a game that will run right in your web browser (Google Chrome or Firefox), which will display a vintage virtual computer that uses QuintOS, a graphics system I created. As you level up your coding skills, your virtual computer will get upgraded. The first game you make will be for... a programmable calculator. 😜
+During each lesson you'll develop a game that will run right in your web browser (Google Chrome or Firefox or Opera), which will display a vintage virtual computer that uses QuintOS, a graphics system I created. As you level up your coding skills, your virtual computer will get upgraded. So since you're just starting out, the first game you make will be for... a programmable calculator. 😜
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen0.jpg)
 
 ## Pre-requisites for Javascript Development
 
-- install Google Chrome or Firefox
+- install Google Chrome (Firefox, Edge, and Opera are good too, just don't use Safari)
 - if you're using Windows, install [Git for Windows](https://gitforwindows.org/)
 - install the [Visual Studio Code editor](https://code.visualstudio.com/)
 - install [node.js](https://nodejs.org/en/)
@@ -24,17 +24,17 @@ During each lesson you'll develop a game that will run right in your web browser
 
 Open the [quintos-template](https://github.com/quinton-ashley/quintos-template) project on Github. Press the big green button that says "Use this template". Name your project "quintos-games".
 
-Now open Git Bash on Windows or Terminal on macOS and copy/paste these commands. Replace `{your username!}` with your github username. Don't worry I'm not hacking your computer! The first command `cd`, changes directory (aka folder), which opens your Documents folder inside the terminal. The second command downloads your `quintos-games` project into your Documents folder, third command opens that folder. The last command, `npm i`, installs all the other code needed for this project.
+Now open Git Bash on Windows or Terminal on macOS and copy/paste these commands. Replace `!!!your username!!!` with your github username. Don't worry I'm not hacking your computer! The first command `cd`, changes directory (aka folder), which opens your Documents folder inside the terminal. The second command downloads your `quintos-games` project into your Documents folder, third command opens that folder. The last command, `npm i`, installs all the other code needed for this project.
 
 ```sh
 cd ~/Documents
 git clone https://github.com/quinton-ashley/IntroToJS.git
-git clone https://github.com/{your username!}/quintos-games.git
+git clone https://github.com/!!!your username!!!/quintos-games.git
 cd quintos-games
 npm i
 ```
 
-Open Visual Studio Code (VSCode) and that `quintos-games` folder to the workspace.
+Open Visual Studio Code (aka VSCode) and add your `quintos-games` folder to the workspace.
 
 ## Loading QuintOS
 
@@ -44,13 +44,13 @@ Edit the `load.js` in the `quintos-games` project folder and set your level to 0
 QuintOS.level = 0;
 ```
 
-Open the `QuintOS.html` file with Google Chrome or Firefox, don't use Safari. You should see the calculator. 😄
+Open the `QuintOS.html` file with Chrome. You should see the calculator. 😄
 
-This first lesson will require you to learn a lot of information before we can even make a simple game. It may be a bit overwhelming for you but don't worry, you'll get a lot of practice with these concepts so that you will understand them. Remember that everyone starts somewhere, even the greatest programmers in history started out just like you: as a beginner! 🥳
+This first lesson will require you to learn a lot of information before we can even make a simple game. It may be a bit overwhelming for you but don't worry, you'll get a lot of practice with these concepts so that you will understand them. Remember that everyone starts somewhere, even the greatest programmers in history started out as beginners! Let's get started. 🥳
 
 ## Creating Variables 🔡
 
-Let's get started! First of all, what is a variable? Variables in JavaScript are references to data in your computer's memory.
+First of all, what is a variable? Variables in JavaScript store data in your computer's memory.
 
 ```js
 let a = 0; // let is for variables that can change

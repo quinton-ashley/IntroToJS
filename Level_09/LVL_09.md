@@ -83,6 +83,7 @@ Electron
 
 [Article: More about JavaScript](https://github.com/MarcoWorms/learn.js)  
 [Video: How spritesheet animation works](https://www.youtube.com/watch?v=CY0HE277IBM)  
+[Video: Aseprite Animation Beginner Tutorial](https://www.youtube.com/watch?v=N4Z4MdZ1KWY)  
 [Tutorials: Make 3D games with Babylon](https://doc.babylonjs.com/start)  
 [Course: freeCodeCamp](https://github.com/mcturner1995/freeCodeCamp)  
 [Video: Explanation of what .exe files are and how computer processors execute assembly](https://www.youtube.com/watch?v=hhgxsrAFyz8)  

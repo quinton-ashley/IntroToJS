@@ -3,7 +3,7 @@
 Complete the bonus game, SuperJump, before continuing to level 8. Edit your `load.js` file:
 
 ```js
-QuintOS.level = 5;
+QuintOS.level = 8;
 QuintOS.gameSelect = 'SuperJump';
 ```
 
@@ -34,6 +34,12 @@ explode_animation.frameDelay = 8;
 ```
 
 The default `frameDelay` is 4, the sketch runs at 60fps so the framerate of animations by default is 15fps.
+
+## Making Sprites with multiple animations
+
+The sprites in your game will have different animations. Check out this example:
+
+https://molleindustria.github.io/p5.play/examples/index.html?fileName=sprites_with_sheet.js
 
 ## p5.play documentation
 
