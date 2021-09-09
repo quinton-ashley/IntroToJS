@@ -174,7 +174,7 @@ CosmicDebris : navigate two spaceships through dangerous cosmic debris fields
   - [Callback Chaining](https://github.com/quinton-ashley/IntroToJS/blob/main/Level_06/LVL_06.md#callback-chaining)
 - [Level 06 C](https://github.com/quinton-ashley/IntroToJS/blob/main/Level_06/LVL_06.md#level-06-c)
   - [Promises](https://github.com/quinton-ashley/IntroToJS/blob/main/Level_06/LVL_06.md#promises)
-  - [Promisfied p5.js play](https://github.com/quinton-ashley/IntroToJS/blob/main/Level_06/LVL_06.md#promisfied-p5js-play)
+  - [Promisfied p5.js Sound](https://github.com/quinton-ashley/IntroToJS/blob/main/Level_06/LVL_06.md#promisfied-p5js-sound)
   - [Computer History: Speak and Spell](https://github.com/quinton-ashley/IntroToJS/blob/main/Level_06/LVL_06.md#computer-history-speak-and-spell)
 - [Level 07 A](https://github.com/quinton-ashley/IntroToJS/blob/main/Level_07/LVL_07.md#level-07-a)
   - [Coding Philosophy: Part 3](https://github.com/quinton-ashley/IntroToJS/blob/main/Level_07/LVL_07.md#coding-philosophy-part-3)

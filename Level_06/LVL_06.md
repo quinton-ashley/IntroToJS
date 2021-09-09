@@ -164,7 +164,7 @@ A Promise will be in one of these states:
     fulfilled: meaning that the operation was completed successfully.
     rejected: meaning that the operation failed.
 
-## Promisfied p5.js play
+## Promisfied p5.js Sound
 
 ```js
 function play(sound) {
@@ -203,5 +203,5 @@ This level's computer is based on the classic children's toy from the 1980s, the
 	- [Callback Chaining](#callback-chaining)
 - [Level 06 C](#level-06-c)
 	- [Promises](#promises)
-	- [Promisfied p5.js play](#promisfied-p5js-play)
+	- [Promisfied p5.js Sound](#promisfied-p5js-sound)
 	- [Computer History: Speak and Spell](#computer-history-speak-and-spell)
