@@ -258,6 +258,20 @@ Since rectangles can be defined by their top left point and the bottom right cor
 - vectors
 - a 2D rectangle collision detection algorithm
 
-## Computer History
+## Computer History: Commodore 64
 
 This level's computer is based on the Commodore 64
+
+- [Level 05 A](#level-05-a)
+	- [Creating Objects](#creating-objects)
+	- [What is p5.js?](#what-is-p5js)
+	- [p5.js Basics](#p5js-basics)
+	- [spriteArt](#spriteart)
+	- [Drawing Images in p5.js](#drawing-images-in-p5js)
+	- [End of Level 05 A](#end-of-level-05-a)
+- [Level 05 B](#level-05-b)
+	- [Classes](#classes)
+	- [Vectors](#vectors)
+	- [Collision Detection](#collision-detection)
+	- [End of Level 05 B](#end-of-level-05-b)
+	- [Computer History: Commodore 64](#computer-history-commodore-64)

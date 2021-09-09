@@ -174,6 +174,21 @@ async function sayHello() {
 }
 ```
 
-## Info
+## Computer History: GRiD Compass
 
 Based on the GRiD Compass
+
+- [Level 03 A](#level-03-a)
+	- [Drawing text to the screen](#drawing-text-to-the-screen)
+	- [Creating functions 👷](#creating-functions-)
+	- [Creating a Button](#creating-a-button)
+	- [End of Level 03 A](#end-of-level-03-a)
+- [Level 03 B](#level-03-b)
+	- [Recursion](#recursion)
+	- [Using boolean variables](#using-boolean-variables)
+	- [How to check if a variable is defined](#how-to-check-if-a-variable-is-defined)
+	- [truthy or falsy?](#truthy-or-falsy)
+- [Level 03 C](#level-03-c)
+	- [Date](#date)
+	- [asynchronous functions](#asynchronous-functions)
+	- [Computer History: GRiD Compass](#computer-history-grid-compass)

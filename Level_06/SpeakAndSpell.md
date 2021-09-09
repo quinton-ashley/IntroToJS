@@ -1,6 +1,6 @@
 # SpeakAndSpell
 
-Speak and Spell
+Based on the classic children's toy from the 1980s, the electronic [Speak and Spell](<https://en.wikipedia.org/wiki/Speak_%26_Spell_(toy)>) by Texas Instruments.
 
 ## Instructions for PART A
 

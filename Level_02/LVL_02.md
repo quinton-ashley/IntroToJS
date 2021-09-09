@@ -113,7 +113,7 @@ Makes this list of names.
 
 `for` loops have three different sections. The first section inside the parenthesis is for incrementing variables. The next section is the while condition, the loop loops while this is true. The last section is for incrementing the counter variable, which happens at the end of each loop. Conventionally `i` (i for index) is used as the counter variable.
 
-## Debugger
+## Using the Debugger
 
 To better understand how `for` loops work you'll need to use the debugger. In the Chrome developer panel it can be found in the "Sources" tab.
 
@@ -147,8 +147,21 @@ console.log('Ali is at position: ' + i);
 
 Note that the value of `i` will be 1, even though the loop range is from `i` 0-2, because `break` exits the loop early.
 
-## End of Level 02 C
-
-## History Info
+## Computer History: Apple II
 
 This level's computer was inspired by the [Apple II](https://www.youtube.com/watch?v=CxJwy8NsXFs)
+
+- [Level 02 A](#level-02-a)
+	- [Counting with while loops](#counting-with-while-loops)
+	- [Accessing characters in a String](#accessing-characters-in-a-string)
+- [Adding to Arrays](#adding-to-arrays)
+	- [String split()](#string-split)
+	- [Array join()](#array-join)
+	- [End of Level 02 A](#end-of-level-02-a)
+- [Level 02 B](#level-02-b)
+	- [for loops](#for-loops)
+	- [Using the Debugger](#using-the-debugger)
+	- [End of Level 02 B](#end-of-level-02-b)
+- [Level 02 C](#level-02-c)
+	- [Breaking out of a loop early](#breaking-out-of-a-loop-early)
+	- [Computer History: Apple II](#computer-history-apple-ii)

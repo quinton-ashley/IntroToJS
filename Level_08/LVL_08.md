@@ -37,7 +37,7 @@ The default `frameDelay` is 4, the sketch runs at 60fps so the framerate of anim
 
 ## Making Sprites with multiple animations
 
-The sprites in your game will have different animations. Check out this example:
+The sprites in your game will have different animations. Please look at all of the other p5.play examples preceding this example in the dropdown list before looking at this one titled "Sprites with Sheets".
 
 https://molleindustria.github.io/p5.play/examples/index.html?fileName=sprites_with_sheet.js
 
@@ -49,6 +49,48 @@ https://molleindustria.github.io/p5.play/docs/classes/p5.play.html
 
 # Level 08 B
 
+## JSON
+
+JSON stands for JavaScript Object Notation. JSON files are just a JS object in a file, but unlike in JS where quotes for the properties/keys are optional, for JSON they are required.
+
+```json
+{
+	"name": "Quinton Ashley",
+	"job": "Computer Science Teacher"
+}
+```
+
+## Using fetch
+
+`fetch` is a global function that can be used to load data from other files.
+
+```js
+let file = 'yourFileName.txt'; // file name
+let req = await fetch(file); // returns a request object
+let txt = await req.text(); // returns a string with the text from the file
+```
+
+Here's what the same code looks like in one line. Note that the parenthesis around await fetch are necessary to indicate that the fetch function should be done first.
+
+```js
+let txt = await (await fetch('yourFileName.txt')).text();
+```
+
+For JSON, use the `.json()` function on the request object.
+
+# Level 08 C
+
 ## Inheritance
 
-...
+...coming soon
+
+- [Level 08 A](#level-08-a)
+	- [p5.play](#p5play)
+	- [Spritesheets](#spritesheets)
+	- [Making Sprites with multiple animations](#making-sprites-with-multiple-animations)
+	- [p5.play documentation](#p5play-documentation)
+- [Level 08 B](#level-08-b)
+	- [JSON](#json)
+	- [Using fetch](#using-fetch)
+- [Level 08 C](#level-08-c)
+	- [Inheritance](#inheritance)

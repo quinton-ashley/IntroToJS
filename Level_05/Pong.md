@@ -6,7 +6,7 @@ Pong is a table tennis–themed arcade game, featuring simple two-dimensional gr
 
 Make objects to store the position and geometry data for the ball and two paddles. The ball should start in the center of the screen and one paddle should be on each side.
 
-Make the `draw()` function and draw the ball and paddles.
+Make the p5.js `draw()` function and draw the ball and paddles.
 
 Make the ball move to the right. Then try moving it to the left. Then try moving the ball in a diagonal. Get a sense of how changing the ball's x and y values will affect its trajectory.
 
@@ -40,7 +40,7 @@ Here's some example code for making an image the size of the screen with a red b
 
 ```js
 let imgBg = createGraphics(320, 200);
-imgBg.background(color16("r"));
+imgBg.background(color16('r'));
 ```
 
 `color16(colorChar)` gets one of the 16 colors in the Commodore 64 color palette. Use it inside `background()`, `fill()`, and `stroke()`.

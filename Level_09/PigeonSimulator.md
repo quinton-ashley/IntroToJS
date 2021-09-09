@@ -1,3 +1,0 @@
-# Pigeon Simulator
-
-coming soon...

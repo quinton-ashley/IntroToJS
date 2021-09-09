@@ -1,12 +1,5 @@
 # Level 09 A
 
-Complete the bonus game, Sokoban, before continuing to level 8. Edit your `load.js` file:
-
-```js
-QuintOS.level = 7;
-QuintOS.gameSelect = 'Sokoban';
-```
-
 After that you can upgrade to level 9! 🥳
 
 ```js
@@ -43,48 +36,20 @@ If you are interested in web design check out [Behance](https://www.behance.net/
 
 Most courses that teach web development actually start by teaching HTML and CSS since they are the primary languages for creating the visuals of most websites. But I don't because HTML is not a programming language and neither is basic level CSS. I teach Javascript first to give students an understanding of what programming is.
 
-## Node.js and npm
-
-Node.js is a Javascript runtime based on Chrome's V8 Javascript engine that lets you interact with your computer's file system, among other things that you can't do with Javascript inside a web browser due to the security risk these features pose.
-
-npm is the nodejs package manager. Javascript developers have posted a lot of Javascript packages on there.
-
 # Level 09 B
-
-There remains only a few more notable bits of Javascript syntax you should learn about this point!
-
-## The Ternary Operator
 
 ## Assigning default values to undefined input parameters
 
-## Switch statements
+## The Ternary Operator
 
-## Javascript's memory
+## Regular Expressions
 
-https://codeburst.io/explaining-value-vs-reference-in-javascript-647a975e12a0
-
-## End of Level 09 B
-
-# End of IntroToJS
-
-Congratulations you've completed my IntroToJS course! Yet there are a few more things I think you should know about before you start coding on your own.
-
-## Google's zx
-
-[zx](https://github.com/google/zx) which makes node.js scripting on your computer easier.
-
-## Electron
-
-Electron
-
-## ReactJS
-
-## Other
-
-[Article: More about JavaScript](https://github.com/MarcoWorms/learn.js)  
-[Video: How spritesheet animation works](https://www.youtube.com/watch?v=CY0HE277IBM)  
-[Video: Aseprite Animation Beginner Tutorial](https://www.youtube.com/watch?v=N4Z4MdZ1KWY)  
-[Tutorials: Make 3D games with Babylon](https://doc.babylonjs.com/start)  
-[Course: freeCodeCamp](https://github.com/mcturner1995/freeCodeCamp)  
-[Video: Explanation of what .exe files are and how computer processors execute assembly](https://www.youtube.com/watch?v=hhgxsrAFyz8)  
-[Video: AI Sudoku solver in python](https://www.youtube.com/watch?v=G_UYXzGuqvM)
+- [Level 09 A](#level-09-a)
+	- [Web Development](#web-development)
+	- [HTML](#html)
+	- [CSS](#css)
+	- [Aside](#aside)
+- [Level 09 B](#level-09-b)
+	- [Assigning default values to undefined input parameters](#assigning-default-values-to-undefined-input-parameters)
+	- [The Ternary Operator](#the-ternary-operator)
+	- [Regular Expressions](#regular-expressions)

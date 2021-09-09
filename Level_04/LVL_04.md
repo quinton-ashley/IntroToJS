@@ -52,7 +52,7 @@ doMyMathHomework(1, 3); // returns 9
 doMyMathHomework(2, 5); // what does this return?
 ```
 
-## arrow function syntax
+## Arrow function syntax
 
 You can also create function using the arrow syntax.
 
@@ -125,3 +125,16 @@ Try to think of the simplest method of making a move in Tic Tac Toe. Note it's n
 In TicTacToe the simplest method to make a valid move is to look at each space and place one's X or O mark in the first available space. Available spaces are spaces that are not already occupied by an X or O. This will be how your easy level AI player will make moves!
 
 ## End of Level 04 B
+
+- [Level 04 A](#level-04-a)
+	- [Coding Philosophy: Part 1](#coding-philosophy-part-1)
+	- [Return variables from a function](#return-variables-from-a-function)
+	- [Creating functions with input parameters](#creating-functions-with-input-parameters)
+	- [Arrow function syntax](#arrow-function-syntax)
+	- [Two Dimensional Arrays](#two-dimensional-arrays)
+	- [Nested for loops](#nested-for-loops)
+	- [End of Level 04 A](#end-of-level-04-a)
+- [Level 04 B](#level-04-b)
+	- [Coding Philosophy: Part 2](#coding-philosophy-part-2)
+	- [Artificial Intelligence in Games](#artificial-intelligence-in-games)
+	- [End of Level 04 B](#end-of-level-04-b)

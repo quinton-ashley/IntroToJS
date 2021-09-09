@@ -74,9 +74,9 @@ x y
 1 1 = 0
 ```
 
-## Try it out!
+## Compound Operations
 
-What is the solution to this truth table?
+Try it out! What is the solution to this truth table?
 
 ```txt
 (x || y) && z; // true if x or y is true and z is true
@@ -206,8 +206,28 @@ let num = Number('23');
 - how to check if something is included in an array
 - converting from string to number
 
-## History Info
+## Computer History: Commodore PET
 
 This level's computer was inspired by the [1977 Commodore PET 2001 Series](https://www.youtube.com/watch?v=eP9y_7it3ZM). These computers were some of the first commerically successful personal computers that did not require any assembly by the user.
 
 PETSCII character set: <https://style64.org/petscii/>
+
+- [Level 01 A](#level-01-a)
+	- [Boolean Operators](#boolean-operators)
+		- [NOT (aka negation)](#not-aka-negation)
+		- [OR](#or)
+		- [NOR](#nor)
+		- [AND](#and)
+		- [NAND](#nand)
+	- [Compound Operations](#compound-operations)
+	- [Special characters](#special-characters)
+	- [End of Level 01 A](#end-of-level-01-a)
+- [Level 01 B](#level-01-b)
+		- [Array](#array)
+	- [Array length](#array-length)
+	- [More about prompt](#more-about-prompt)
+	- [Checking equivalence](#checking-equivalence)
+	- [Array includes](#array-includes)
+	- [Converting from String to Number](#converting-from-string-to-number)
+	- [End of Level 01 B](#end-of-level-01-b)
+	- [Computer History: Commodore PET](#computer-history-commodore-pet)

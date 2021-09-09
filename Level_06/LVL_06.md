@@ -23,7 +23,7 @@ returns the `Input` object created
 - `onSubmit` called when the user presses the enter key
 - `onChange` called when the user types any key that changes the input's value
 
-## The JavaScript eval Function
+## The JavaScript eval function
 
 Take a look at `calculator.js` it already contains all the code necessary to do basic calculations.
 
@@ -40,7 +40,7 @@ To make the Speak and Spell game we'll be loading sounds using the p5.js sound l
 
 https://p5js.org/examples/sound-load-and-play-sound.html
 
-## More types of for loop
+## for of loops
 
 `for of` loops iterate through the values of an array or object.
 
@@ -58,6 +58,8 @@ Hello Jake
 Hello Ali
 Hello Ben
 ```
+
+## for in loops
 
 `for in` loop iterates through the indexes/keys of an array or object.
 
@@ -80,7 +82,7 @@ I need to get 10 bananas!
 I need to get 4 pears!
 ```
 
-## Level 06 B
+# Level 06 B
 
 ## Callback Chaining
 
@@ -102,7 +104,7 @@ sound0.onended(() => {
 
 Inside `onended` you can either put the name of a function to call or an anonymous function. In this example an anonymous function, a function that isn't given a name is used. Note that it uses the arrow `=>` syntax instead of the `function` keyword.
 
-## Level 06 C
+# Level 06 C
 
 If you have to use callbacks to play five sounds this is what it might look like. It's awful!
 
@@ -187,4 +189,19 @@ async function playAllLetters() {
 }
 ```
 
-## End of Level 06 B
+## Computer History: Speak and Spell
+
+This level's computer is based on the classic children's toy from the 1980s, the electronic [Speak and Spell](<https://en.wikipedia.org/wiki/Speak_%26_Spell_(toy)>) made by Texas Instruments.
+
+- [Level 06 A](#level-06-a)
+	- [Working with Inputs directly](#working-with-inputs-directly)
+	- [The JavaScript eval function](#the-javascript-eval-function)
+	- [Loading Sounds](#loading-sounds)
+	- [for of loops](#for-of-loops)
+	- [for in loops](#for-in-loops)
+- [Level 06 B](#level-06-b)
+	- [Callback Chaining](#callback-chaining)
+- [Level 06 C](#level-06-c)
+	- [Promises](#promises)
+	- [Promisfied p5.js play](#promisfied-p5js-play)
+	- [Computer History: Speak and Spell](#computer-history-speak-and-spell)

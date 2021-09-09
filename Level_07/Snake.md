@@ -28,6 +28,16 @@ Pick three modes from the Google's online snake game to implement in your snake 
 
 ## Instructions for PART C
 
+In Level 09 B you learned that Javascript arrays are stored as objects, the properties/keys of that object are just numbers instead of strings. Arrays in other languages are stored in a contiguous section of memory. When you use an index to retreive or edit data in an array, that index represents the distance in memory from the start of the array. This is why array indexes start at 0 in JS and many other programming languages, because the first item in an array is right at the start of the array, a distance of 0.
+
+Linked Lists are a data structure for storing lists of objects. They are different from how arrays are stored in low level languages because they do not store items in the list in a contiguous section of memory. Instead they use variables to point at the next objects in the list, which can be anywhere in the computer's memory. Check out this website which has great visuals of Linked Lists:
+
+https://javascript.plainenglish.io/linked-list-data-structure-in-javascript-daab76c6f6de
+
+So what's the point? What are the benefits of using a Linked List instead of an Array? Linked Lists are useful if you have a HUGE list of data you need to store and if your program will often add objects to the beginning and middle of the list. Why is that? (hint: think of how arrays are stored vs linked lists and what adding objects to an array must entail)
+
+Adding objects to an large array near the beginning or middle is slower than adding to a linked list. This is because arrays are stored in a contiguous chunk of memory so when a new item is added all the other items after it in the list must be moved back by one element wide chunk of memory.
+
 Create a `LinkedList` class and create a doubly linked list. Each node/element in the list should should have two links, a link to the element in ahead of it in the list and a link to the element after it. Call these links `prev` (previous) and `next`. Store the first node in the list in a class variable `this.head` and the last node as `this.tail`. Store the size of the list in `this.size`. When you create a list using `new LinkedList()` it should be empty. Create a `push(node)` function that will add nodes to the end of the list just like the array push function.
 
 When you add the first node to the list, only one node is in the list, that node should be both the head and tail node. When you add two nodes the first node is the head the second is the tail. When you have three nodes the first node is the head and third node is the tail.

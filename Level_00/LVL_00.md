@@ -274,7 +274,7 @@ console.log('Toast is ready!');
 turnToasterOff();
 ```
 
-## Checking for unquivalence
+## Checking for Inequivalence
 
 Not equals `!=` checks if something is not equal to something else.
 
@@ -314,8 +314,35 @@ Here's a summary of everything we learned about:
 - while loops
 - more about code blocks/scopes `{}`
 
-## Computer History
+## Computer History: Casio FX-720P
 
 This level's computer was inspired by the Casio FX-720P, which could run programs in a programming language called BASIC. Portable programmable calculators were limited by their small button keyboards and display limitations, but when slotted into a dock that had little printer, they could be used to print out graphs and many lines of text. The calculator could also load programs from tape cassettes.
 
 <https://youtu.be/d3NIe1jTZMc?t=760>
+
+- [Level 00 A](#level-00-a)
+	- [What is Computer Science?](#what-is-computer-science)
+	- [Pre-requisites for Javascript Development](#pre-requisites-for-javascript-development)
+	- [Setup](#setup)
+	- [Loading QuintOS](#loading-quintos)
+	- [Creating Variables 🔡](#creating-variables-)
+		- [Changing a variable's value](#changing-a-variables-value)
+	- [Types of Variables 🔡](#types-of-variables-)
+		- [Number](#number)
+		- [Boolean](#boolean)
+		- [String](#string)
+		- [function](#function)
+	- [Camel Case 🐫](#camel-case-)
+	- [Mathematical operators 🔢](#mathematical-operators-)
+	- [Checking Equivalence ✅](#checking-equivalence-)
+	- [Boolean operators 🐰](#boolean-operators-)
+	- [Globals 🌐](#globals-)
+	- [Javascript Console](#javascript-console)
+	- [End of Level 00 A](#end-of-level-00-a)
+- [Level 00 B](#level-00-b)
+	- [Install Prettier for VSCode](#install-prettier-for-vscode)
+	- [while loops](#while-loops)
+	- [Checking for Inequivalence](#checking-for-inequivalence)
+	- [Scopes](#scopes)
+	- [End of Level 00 B](#end-of-level-00-b)
+	- [Computer History: Casio FX-720P](#computer-history-casio-fx-720p)
