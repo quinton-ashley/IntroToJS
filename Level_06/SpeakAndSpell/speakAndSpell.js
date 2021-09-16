@@ -15,5 +15,9 @@ async function nextWord() {
 	inp = pc.input('', 0, 0, onSubmit, onChange);
 }
 
-pc.text('Press enter to start', 0, 0); // text on row 0
-pc.input('', 0, 1, nextWord); // input on row 1
+async function startGame() {
+	await pc.alert('Press enter to start');
+	pc.input('', 0, 1, nextWord); // input on row 1
+}
+
+startGame();

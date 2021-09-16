@@ -30,7 +30,7 @@ On the right side of the example viewer you should see a little purple inky guy 
 Try adjusting the speed of the animation by changing the `frameDelay` of the `explode_animation`.
 
 ```js
-explode_animation.frameDelay = 8;
+explode_animation.frameDelay = 10;
 ```
 
 The default `frameDelay` is 4, the sketch runs at 60fps so the framerate of animations by default is 15fps.

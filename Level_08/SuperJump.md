@@ -41,4 +41,8 @@ Create an array of platforms. Use a `for` loop to create new platforms to add to
 
 When the ball bounces on a platform, move all the platforms and the ball downwards. This makes it seem like a camera is moving up to follow the ball.
 
-The ball should be able to jump from one side of the screen to the other. For example, when the ball is crossing the edge of the screen on the right side, it should appear to cross onto the left side. To create this illusion you will need to swap between two balls.
+In Papi Jump, the ball is able to jump from one side of the screen to the other. For example, when the ball is crossing the edge of the screen on the right side, it can appear to cross onto the left side. Consider how this could be done, however don't implement this feature since your SuperJump game uses mouse cursor controls instead of phone gyroscope tilt controls.
+
+## Extra Feature
+
+Add one additional feature to your SuperJump game that was not included in Papi Jump. If the player does a mouse click right when the ball bounces it should perform a super jump that gives it extra height! If the player's timing is perfect or near perfect they should get a slightly higher super jump. If the player clicks too early or too late they should get less height than a super jump. To make the game more difficult you could even make mistimed super jumps have less height than a normal bounce! Use different animations and sound effects to give the user feedback regarding their jump timing.
