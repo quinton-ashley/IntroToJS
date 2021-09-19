@@ -1,81 +1,101 @@
 const log = console.log;
 
-player.action = () => {
-	// the state of the player
-	player.ani = player.getAnimationLabel();
-
-	function walk(direction) {
-		let ani = 'walk-lr';
-		if (direction == 'up') ani = 'walk-up';
-		if (direction == 'down') ani = 'walk-down';
-
-		if (player.ani == ani || player.ani == 'idle-turn') return;
-		if (direction != 'up') {
-			player.changeAnimation(ani);
-		} else {
-			player.changeAnimation('idle-turn');
-			player.animation.onComplete = () => {
-				player.changeAnimation('walk-up');
-			};
-		}
-		if (direction == 'left') {
-			player.mirrorX(-1); // flip the character left
-		} else {
-			player.mirrorX(1);
-		}
+player.walk = function (direction) {
+	let aniName = 'walk-lr';
+	if (direction == 'up') {
+		this.velocity.x = 0;
+		this.velocity.y = -1.5;
+		aniName = 'walk-up';
+	} else if (direction == 'down') {
+		this.velocity.x = 0;
+		this.velocity.y = 1.5;
+		aniName = 'walk-down';
+	} else if (direction == 'left') {
+		this.velocity.x = -1.5;
+		this.velocity.y = 0;
+	} else if (direction == 'right') {
+		this.velocity.x = 1.5;
+		this.velocity.y = 0;
 	}
 
-	function idle() {
-		let rand = Math.random();
-		if (rand > 0.5) {
-			player.changeAnimation('idle-stand');
-		} else if (rand > 0.3) {
-			player.changeAnimation('idle-blink');
-		} else if (rand > 0.1) {
-			player.changeAnimation('idle-think');
-		} else if (rand > 0.05) {
-			player.changeAnimation('idle-scratch');
-		} else {
-			player.changeAnimation('idle-yawn');
-		}
-		player.animation.onComplete = idle;
-	}
+	// the name of the current animation being used
+	let curAniName = this.getAnimationLabel();
 
-	if (keyDown('up')) {
-		player.velocity.x = 0;
-		player.velocity.y = -1.5;
-		walk('up');
-	} else if (keyDown('down')) {
-		player.velocity.x = 0;
-		player.velocity.y = 1.5;
-		walk('down');
-	} else if (keyDown('left')) {
-		player.velocity.x = -1.5;
-		player.velocity.y = 0;
-		walk('left');
-	} else if (keyDown('right')) {
-		player.velocity.x = 1.5;
-		player.velocity.y = 0;
-		walk('right');
+	// player is already walking that way or turning
+	// no need to change animation
+	if (curAniName == aniName || curAniName == 'idle-turn') return;
+
+	// have the player turn before walking upwards
+	if (direction != 'up') {
+		this.changeAnimation(aniName);
 	} else {
-		// player is not moving
-		player.velocity.x = 0;
-		player.velocity.y = 0;
+		this.changeAnimation('idle-turn');
+		this.animation.onComplete = () => {
+			this.changeAnimation('walk-up');
+		};
+	}
 
-		if (player.ani == 'walk-up') {
-			player.changeAnimation('idle-turn');
-			player.animation.changeFrame(2);
-			player.animation.goToFrame(0);
-			player.animation.onComplete = () => {
-				player.changeAnimation('idle-stand');
-				player.animation.onComplete = idle;
-			};
-		} else if (!player.ani.includes('idle')) {
-			player.changeAnimation('idle-stand');
-			player.animation.onComplete = idle;
+	if (direction == 'left') {
+		this.mirrorX(-1); // flip the character left
+	} else {
+		this.mirrorX(1);
+	}
+};
+
+player.idle = function () {
+	// stop player from moving
+	this.velocity.x = 0;
+	this.velocity.y = 0;
+
+	let _this = this;
+
+	function _idle() {
+		let chance = Math.random();
+
+		if (chance > 0.4) {
+			_this.changeAnimation('idle-stand');
+		} else if (chance > 0.2) {
+			_this.changeAnimation('idle-blink');
+		} else if (chance > 0.1) {
+			_this.changeAnimation('idle-think');
+		} else if (chance > 0.05) {
+			_this.changeAnimation('idle-scratch');
 		} else {
-			player.animation.onComplete = idle;
+			_this.changeAnimation('idle-yawn');
 		}
+		_this.animation.onComplete = _idle;
+	}
+
+	// the name of the current animation being used
+	let curAniName = this.getAnimationLabel();
+
+	if (curAniName == 'walk-up') {
+		this.changeAnimation('idle-turn');
+		this.animation.changeFrame(2);
+		this.animation.goToFrame(0);
+		this.animation.onComplete = () => {
+			this.changeAnimation('idle-stand');
+			this.animation.onComplete = _idle;
+		};
+	} else if (!curAniName.includes('idle')) {
+		this.changeAnimation('idle-stand');
+		this.animation.onComplete = _idle;
+	} else {
+		this.animation.onComplete = _idle;
+	}
+};
+
+player.action = function () {
+	if (keyDown('up')) {
+		this.walk('up');
+	} else if (keyDown('down')) {
+		this.walk('down');
+	} else if (keyDown('left')) {
+		this.walk('left');
+	} else if (keyDown('right')) {
+		this.walk('right');
+	} else {
+		this.idle();
 	}
 };
 
@@ -83,10 +103,15 @@ function draw() {
 	clear();
 	background(0);
 
-	// // Draw the ground tiles
-	// for (var x = 0; x < 840; x += 70) {
-	//   tile_sprite_sheet.drawFrame('snow.png', x, 330);
-	// }
+	for (let row = 0; row < 24; row++) {
+		for (let col = 0; col < 16; col++) {
+			tiles.drawFrame(
+				row * 16 + col, // tile number
+				64 + col * tileSize, // x
+				32 + row * tileSize // y
+			);
+		}
+	}
 
 	player.action();
 
