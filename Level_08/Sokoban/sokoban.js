@@ -80,8 +80,6 @@ player.idle = function () {
 	} else if (!curAniName.includes('idle')) {
 		this.changeAnimation('idle-stand');
 		this.animation.onComplete = _idle;
-	} else {
-		this.animation.onComplete = _idle;
 	}
 };
 

@@ -6,7 +6,7 @@ After that you can upgrade to level 9! 🥳
 QuintOS.level = 9;
 ```
 
-Congratulations you've almost completed my IntroToJS course! In this section you'll learn more about the broader Javascript ecosystem, web development, and how to use p5.js and QuintOS in your own project.
+Congratulations you've almost completed my IntroToJS course! In this section you'll learn more about the broader Javascript ecosystem, web development, and how to use p5.js and QuintOS in your own projects.
 
 ## Web Development
 
@@ -34,7 +34,7 @@ If you are interested in web design check out [Behance](https://www.behance.net/
 
 ## Aside
 
-Most courses that teach web development actually start by teaching HTML and CSS since they are the primary languages for creating the visuals of most websites. But I don't because HTML is not a programming language and neither is basic level CSS. I teach Javascript first to give students an understanding of what programming is.
+Most courses that teach web development actually start by teaching HTML and CSS, since they are the primary languages for creating the visuals of most websites. I don't do that because HTML is not a programming language and neither is basic level CSS. I teach Javascript first to give students an understanding of what programming is.
 
 # Level 09 B
 
@@ -45,11 +45,11 @@ Most courses that teach web development actually start by teaching HTML and CSS 
 ## Regular Expressions
 
 - [Level 09 A](#level-09-a)
-	- [Web Development](#web-development)
-	- [HTML](#html)
-	- [CSS](#css)
-	- [Aside](#aside)
+  - [Web Development](#web-development)
+  - [HTML](#html)
+  - [CSS](#css)
+  - [Aside](#aside)
 - [Level 09 B](#level-09-b)
-	- [Assigning default values to undefined input parameters](#assigning-default-values-to-undefined-input-parameters)
-	- [The Ternary Operator](#the-ternary-operator)
-	- [Regular Expressions](#regular-expressions)
+  - [Assigning default values to undefined input parameters](#assigning-default-values-to-undefined-input-parameters)
+  - [The Ternary Operator](#the-ternary-operator)
+  - [Regular Expressions](#regular-expressions)
