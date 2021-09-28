@@ -176,19 +176,29 @@ async function sayHello() {
 
 ## Computer History: GRiD Compass
 
-Based on the GRiD Compass
+This level's computer is based on the GRiD Compass 1101. The following description is from http://oldcomputers.net/grid1101.html
+
+![](http://oldcomputers.net/pics/grid1101-right.jpg)
+
+Designed to be the ultimate portable computer, the clamshell-style GRiD Compass 1101 is the grand-daddy of all present-day laptop computers.
+
+The Compass is very high-tech, with its flat-black, die-cast magnesium-alloy case, and bright, sharp electroluminescent display (ELD). No other system packed so much speed and power in as small a case, and none had such a unique and large, easy-to-read screen, allowing full 80x24 text.
+
+Of course, all of these great features raised the price significantly. At $8150, the GRiD Compass 1101 was the most expensive personal computer you could buy.
+
+Originally developed for business executives, GRiDs were also used by the U.S. military 'in the field', and by NASA on the Space Shuttles during the 1980's and 90's. It's even been said that the US President's "nuclear football" at one time included a GRiD computer.
 
 - [Level 03 A](#level-03-a)
-	- [Drawing text to the screen](#drawing-text-to-the-screen)
-	- [Creating functions 👷](#creating-functions-)
-	- [Creating a Button](#creating-a-button)
-	- [End of Level 03 A](#end-of-level-03-a)
+  - [Drawing text to the screen](#drawing-text-to-the-screen)
+  - [Creating functions 👷](#creating-functions-)
+  - [Creating a Button](#creating-a-button)
+  - [End of Level 03 A](#end-of-level-03-a)
 - [Level 03 B](#level-03-b)
-	- [Recursion](#recursion)
-	- [Using boolean variables](#using-boolean-variables)
-	- [How to check if a variable is defined](#how-to-check-if-a-variable-is-defined)
-	- [truthy or falsy?](#truthy-or-falsy)
+  - [Recursion](#recursion)
+  - [Using boolean variables](#using-boolean-variables)
+  - [How to check if a variable is defined](#how-to-check-if-a-variable-is-defined)
+  - [truthy or falsy?](#truthy-or-falsy)
 - [Level 03 C](#level-03-c)
-	- [Date](#date)
-	- [asynchronous functions](#asynchronous-functions)
-	- [Computer History: GRiD Compass](#computer-history-grid-compass)
+  - [Date](#date)
+  - [asynchronous functions](#asynchronous-functions)
+  - [Computer History: GRiD Compass](#computer-history-grid-compass)

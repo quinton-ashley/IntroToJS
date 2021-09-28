@@ -30,7 +30,7 @@ OO    OO
 OO    OO
 OO    OO
 OO    OO
- OOOOOO`.slice(1); // slice off the first newline character
+ OOOOOO`.slice(1);
 
 const bigX = `
 XX    XX

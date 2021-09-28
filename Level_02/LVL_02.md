@@ -1,6 +1,6 @@
 # Level 02 A
 
-Before we can start working on `PickAPath` we have to upgrade our PC! Edit your `load.js` file, set your level to 2! 🥳
+Before we can start working on `Hangman` we have to upgrade our PC! Edit your `load.js` file, set your level to 2! 🥳
 
 ```js
 QuintOS.level = 2;
@@ -8,55 +8,7 @@ QuintOS.level = 2;
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen2.jpg)
 
-## Counting with while loops
-
-The number of loops a while loop does can be counted with a variable.
-
-```js
-let names = ['Jake', 'Ali', 'Ben'];
-
-let i = 0; // initialize i to 0
-
-// loop while i is less than names.length which is 3
-while (i < names.length) {
-	// print the next name in the list
-	console.log(i + '. ' + names[i]);
-
-	i++; // shortcut for i = i + 1;
-} // in this loop i goes up from 0 to 1 to 2
-```
-
-The code above prints out a numbered list of names in the JS console.
-
-```txt
-0. Jake
-1. Ali
-2. Ben
-```
-
-## Accessing characters in a String
-
-To access characters in a string you can use `[]` but note that you can't edit them like you can with arrays.
-
-```js
-let fox = 'the red fox';
-fox[4]; // is 'r'
-fox[8] = 'b'; // error
-// will not change fox string to 'the red box'
-```
-
-# Adding to Arrays
-
-So how do we add to arrays? By using the `.push()` function.
-
-```js
-let names = ['Amy', 'Ellie', 'Ben'];
-
-names.pop(); // returns and removes the last element from the array
-// names -> ['Amy', 'Ellie']
-names.push('Jake'); // adds "Jake" to names array
-// names -> ['Amy', 'Ellie', 'Jake']
-```
+Don't read all the sections in the Level 2 A lesson at once. Read a section, then work on Hangman, then read another section, work on Hangman. The information in each section is sequenced to correspond directly to what you need to learn to complete each step in making the Hangman game.
 
 ## String split()
 
@@ -72,6 +24,45 @@ Strings have a lot of useful functions we can use. MDN, the Mozilla Developer Ne
 // -> ['the', 'red', 'fox']
 ```
 
+## Counting with while loops
+
+The number of loops a while loop does can be counted with a variable.
+
+```js
+let names = ['Jake', 'Ali', 'Ben'];
+
+let i = 0; // initialize i to 0
+
+// loop while i is less than names.length which is 3
+while (i < names.length) {
+	// print the next name in the list
+	console.log(i + '. ' + names[i]);
+
+	i = i + 1;
+} // in this loop i goes up from 0 to 1 to 2
+```
+
+The code above prints out a numbered list of names in the JS console.
+
+```txt
+0. Jake
+1. Ali
+2. Ben
+```
+
+## Adding to Arrays
+
+So how do we add to arrays? By using the `.push()` function.
+
+```js
+let names = ['Amy', 'Ellie', 'Ben'];
+
+names.pop(); // returns and removes the last element from the array
+// names -> ['Amy', 'Ellie']
+names.push('Jake'); // adds "Jake" to names array
+// names -> ['Amy', 'Ellie', 'Jake']
+```
+
 ## Array join()
 
 The `join()` function kind of does the opposite of the string `split()` function. `join()` makes a string by joining each element in the array together, adding a character in between them.
@@ -80,6 +71,19 @@ The `join()` function kind of does the opposite of the string `split()` function
 ['the', 'red', 'fox'].join(' ');
 // -> 'the red fox'
 ```
+
+## Accessing characters in a String
+
+To access characters in a string you can use `[]` but note that you can't edit them like you can with arrays.
+
+```js
+let fox = 'the red fox';
+fox[4]; // is 'r'
+fox[8] = 'b'; // error
+// will not change fox string to 'the red box'
+```
+
+Strings are immutable, meaning individual characters in the string can not be changed.
 
 ## End of Level 02 A
 
@@ -121,47 +125,30 @@ As you may know a "bug" in computer science terminology refers to code that is n
 
 Back when computers took up a whole Manhattan city block and were made from glowing hot vacuum tubes, bugs would fly inside these computers and die in them. Debugging literally referred to the act of removing dead bugs from a computer! This was done to solve problems that the dead bugs would cause by conducting electricity over wires that weren't supposed to connect among other issues. The name stuck among programmers ever since!
 
-## End of Level 02 B
-
-# Level 02 C
-
 ## Breaking out of a loop early
 
-You can use the `break` keyword to break out of a while loop early.
+If you need to exit a while loop or for loop early, use the `break` keyword.
 
 ```js
-let names = ['Jake', 'Ali', 'Ben'];
-let i = 0; // i is the number of loops
-// loop while i is less than names.length which is 3
-while (i < names.length) {
-	// find "Ali"
-	if (names[i] == 'Ali') {
-		break; // then break out of the while loop
-	}
-	i++; // shortcut for i = i + 1;
-} // i counts up from 0 to 1 to 2
-
-console.log('Ali is at position: ' + i);
-// -> "Ali is at position: 1"
+break;
 ```
 
-Note that the value of `i` will be 1, even though the loop range is from `i` 0-2, because `break` exits the loop early.
+## End of Level 02 B
 
 ## Computer History: Apple II
 
 This level's computer was inspired by the [Apple II](https://www.youtube.com/watch?v=CxJwy8NsXFs)
 
 - [Level 02 A](#level-02-a)
-	- [Counting with while loops](#counting-with-while-loops)
-	- [Accessing characters in a String](#accessing-characters-in-a-string)
-- [Adding to Arrays](#adding-to-arrays)
-	- [String split()](#string-split)
-	- [Array join()](#array-join)
-	- [End of Level 02 A](#end-of-level-02-a)
+  - [String split()](#string-split)
+  - [Counting with while loops](#counting-with-while-loops)
+  - [Adding to Arrays](#adding-to-arrays)
+  - [Array join()](#array-join)
+  - [Accessing characters in a String](#accessing-characters-in-a-string)
+  - [End of Level 02 A](#end-of-level-02-a)
 - [Level 02 B](#level-02-b)
-	- [for loops](#for-loops)
-	- [Using the Debugger](#using-the-debugger)
-	- [End of Level 02 B](#end-of-level-02-b)
-- [Level 02 C](#level-02-c)
-	- [Breaking out of a loop early](#breaking-out-of-a-loop-early)
-	- [Computer History: Apple II](#computer-history-apple-ii)
+  - [for loops](#for-loops)
+  - [Using the Debugger](#using-the-debugger)
+  - [Breaking out of a loop early](#breaking-out-of-a-loop-early)
+  - [End of Level 02 B](#end-of-level-02-b)
+  - [Computer History: Apple II](#computer-history-apple-ii)

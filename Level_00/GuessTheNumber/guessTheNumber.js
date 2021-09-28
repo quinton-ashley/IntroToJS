@@ -1,5 +1,6 @@
+// start of wrapper (I will explain how this works later)
 (async () => {
-	// start your code below this line!
+	// your code goes here! below this line
 
 	exit(); // this function exits the game
 })(); // end

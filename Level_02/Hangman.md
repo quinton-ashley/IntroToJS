@@ -2,13 +2,15 @@
 
 ## Instructions for PART A
 
-[Hangman](<https://en.wikipedia.org/wiki/Hangman_(game)>) is a paper and pencil guessing game for two or more players. One player thinks of a word, phrase or sentence and the other(s) tries to guess it by suggesting letters within a certain number of guesses.
+[Hangman](<https://en.wikipedia.org/wiki/Hangman_(game)>) is a word guessing game for two or more players. One player thinks of a word and the other(s) try to guess it by suggesting letters. The word to guess is represented by underscores, representing each letter of the word. If the player(s) guess a correct letter in the word it is written in all the correct positions.
 
-The word to guess is represented by a row of dashes, representing each letter of the word. For example if the word was "quiz" you should display four dashes: `_ _ _ _`
+Use .split() to split the `words` string into an array of words, assign the array to the `words` variables. Then pick a random word from that array. Reference your use of `Math.random()` in the GuessTheNumber game.
 
-Tell the player whether their guess was correct or incorrect. If they guessed a letter which occurs in the word, writes it in all its correct positions. You will implement this game logic in PART A.
+Create a `lines` array with the same amount of underscores as the choosen word. For example, if the word is "quiz" the `lines` array should have four dashes: `['_', '_', '_', '_']`
 
-For example if the word is "avenue" and the player has guessed "e", "x", "b", "r", "v" your prompt should display: `_ v e _ _ e`
+Display the `lines` array like this `_ _ _ _` in the prompt on a new line below the hangman text drawing.
+
+Tell the player whether their guess was correct or incorrect. If they guessed a letter which occurs in the word, edit the `lines` array so it will be displayed in all its correct positions. For example if the word is "avenue" and the player has guessed "e", "x", "b", "r", "v" your prompt should display: `_ v e _ _ e`
 
 ## Instructions for PART B
 

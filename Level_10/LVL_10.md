@@ -28,7 +28,7 @@ https://codeburst.io/explaining-value-vs-reference-in-javascript-647a975e12a0
 
 # End of IntroToJS
 
-Congratulations you've completed my IntroToJS course! There are a few more things I think you should know about before
+Congratulations you've completed my IntroToJS course! There are a few more things I think you should know about before you continue on to learn more advanced stuff.
 
 ## Google's zx
 
@@ -53,13 +53,13 @@ With ReactJS you can create mobile apps using HTML+CSS+JS.
 [Video: AI Sudoku solver in python](https://www.youtube.com/watch?v=G_UYXzGuqvM)
 
 - [Level 10 A](#level-10-a)
-	- [Node.js and npm](#nodejs-and-npm)
-	- [Creating your own QuintOS project!](#creating-your-own-quintos-project)
+  - [Node.js and npm](#nodejs-and-npm)
+  - [Creating your own QuintOS project!](#creating-your-own-quintos-project)
 - [Level 10 B](#level-10-b)
-	- [Switch statements](#switch-statements)
-	- [Javascript's memory](#javascripts-memory)
+  - [Switch statements](#switch-statements)
+  - [Javascript's memory](#javascripts-memory)
 - [End of IntroToJS](#end-of-introtojs)
-	- [Google's zx](#googles-zx)
-	- [Electron](#electron)
-	- [ReactJS](#reactjs)
-	- [Other resources of potential interest](#other-resources-of-potential-interest)
+  - [Google's zx](#googles-zx)
+  - [Electron](#electron)
+  - [ReactJS](#reactjs)
+  - [Other resources of potential interest](#other-resources-of-potential-interest)

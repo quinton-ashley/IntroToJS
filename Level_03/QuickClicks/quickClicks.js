@@ -1,10 +1,14 @@
-const target =
-	' .d88b. \n' +
-	'.8P  Y8.\n' +
-	'88    88\n' +
-	'88    88\n' +
-	"'8b  d8'\n" +
-	" 'Y88P' ";
+const target = `
+ .d88b. 
+.8P  Y8.
+88    88
+88    88
+ 8b  d8 
+ 'Y88P' `.slice(1);
+// slice removes the first character from the string
+// in this case I remove the new line at the beginning
+// so the first line of the button will be at the proper
+// y value
 
 /* PART A: change the values of x and y to be random */
 // screen size is 80w x 30h
