@@ -36,6 +36,6 @@ async function takeFive() {
 
 Just like in TicTacToe, you should keep track of which letters have been placed on the board using the `board` 2d array. Reference the AI level 1 code in TicTacToe for choosing available spaces. Use the same method to find a random space to add a letter.
 
-If your player guesses wrong or press cancel in the prompt, the game should keep going and they should have the opportunity to guess again.
+If the player guesses the phrase correctly their score should be increased by the number of blank spaces left.
 
-When the player guesses the phrase correctly their score should be increased by the number of blank spaces left.
+If the player guesses wrong or press cancel in the prompt, their score should be decreased by some amount but the game should then keep going and they should have the opportunity to guess again.
