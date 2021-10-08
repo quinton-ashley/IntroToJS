@@ -43,23 +43,17 @@ Make the game loop by using a while loop. Think about what condition must remain
 
 ## Instructions for PART C
 
-_Complete PickAPath (A and B) first!_
+_Complete Hangman (A and B) first!_
 
-If you haven't already, figure out the best way to play this game. Then calculate the maximum amount of guesses that would ever be required to guess the number using that method. Limit the number of guesses a player can make to that amount.
+If you haven't already, figure out the best strategy to use when playing this game.
 
-Use a `for` loop to count the turns but keep the same condition: `guess != num`. Tell the user when they run out of attempts to guess the number. Use `break;` to exit the `for` loop.
-
-If the user enters a number outside the range of 1 to 100, tell them "Invalid guess" but don't count it against them. They should still have the same amount of valid guess attempts no matter how many invalid guess attempts they make.
-
-When you're done move on to Level 03!
-
-## Hints for PART C
+In this section you'll learn how to calculate the maximum amount of guesses required for players to correctly guess a number between 1 and 100. You'll limit the player to only be able to make that amount of guesses.
 
 In this game the best strategy for the player is to perform a binary search. If the number was between 1 to 7 it should only take a maximum of 3 attempts to guess the number.
 
-Using the binary search method, on attempt 1 the player should always guess 4, the midpoint of 1 to 7. Then if the number was higher they should guess 6, the midpoint between 4 and 7. Then if the number was lower they'd guess 5.
+Using the binary search method, on attempt 1 the player should always guess 4, the midpoint of 1 to 7. Then if their guess was too low, they should guess 6, the midpoint between 4 and 7. Then if their guess was too high, they should guess 5.
 
-If you make a diagram of all the possible guesses and decision branches using this binary search method, you would create a binary search tree. Each branch of the tree is a choice the player takes if the number they guessed was too low or too high. Each number is a node.
+If you make a diagram of all the possible numbers and decisions using this binary search method, you would create a binary search tree. Each branch of the tree is a choice the player takes, based on if their guess was too high or low. Each possible guess is a node in the tree.
 
 ```txt
 guess 1:     4      2^0 = 1 node (root of the tree)
@@ -74,3 +68,11 @@ guess 3:  1 3 5 7   2^2 = 4 nodes (leaves of the tree)
 If the player had to guess between 1 to 10, sometimes it would take more than 3 attempts to guess it correctly. 2^4 is 16, so no more than 4 attempts are needed to guess a number between 1 to 10.
 
 Now that you know how the binary search method works it should be easy to figure out how many guesses are required to guess any number between 1 to 100.
+
+Use a `for` loop to count the turns but keep the same condition: `guess != num`. Tell the user when they run out of attempts to guess the number. Use `break;` to exit the `for` loop.
+
+If the user enters a number outside the range of 1 to 100, tell them "Invalid guess" but don't count it against them. They should still have the same amount of valid guess attempts no matter how many invalid guess attempts they make.
+
+When you're done move on to Level 03!
+
+## Hints for PART C

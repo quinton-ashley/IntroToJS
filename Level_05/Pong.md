@@ -4,11 +4,13 @@ Pong is a table tennis–themed arcade game, featuring simple two-dimensional gr
 
 ## Instructions for PART A
 
-Make objects to store the position and geometry data for the ball and two paddles. The ball should start in the center of the screen and one paddle should be on each side.
+In the p5.js `draw()` function, use `image(img, x, y)` to draw the ball and paddles on the screen. The ball should start in the center and place the paddles on each side of the screen.
 
-Make the p5.js `draw()` function and draw the ball and paddles.
+Make objects to store the position and geometry data for the ball and two paddles.
 
 Make the ball move to the right. Then try moving it to the left. Then try moving the ball in a diagonal. Get a sense of how changing the ball's x and y values will affect its trajectory.
+
+Figure out how to move the paddles using your mouse. Look for this information in the p5.js documentation! https://p5js.org/reference/
 
 ## Instructions for PART B
 

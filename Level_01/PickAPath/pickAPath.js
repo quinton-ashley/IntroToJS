@@ -10,10 +10,10 @@
 		if (choice == -1) {
 			/* PART A: Start your story! */
 			msg =
-				"Will your players walk onto a pirate ship or step into outer space? Your story starts here and it's up to your players to choose where the story goes. What should you do? \n\n\t" +
-				'1: write about pirates\n\t' +
-				'2: write about astronauts\n\t' +
-				'3: write about pirates in space!';
+				"It's a dark October night. You're staying up late coding but suddenly you hear a knock at your door!\n\n\t" +
+				'1: Ask "Who is it?"\n\t' +
+				'2: Ignore it and keep coding\n\t' +
+				'3: Try to go to sleep';
 		} else if (choice == 1) {
 			/* PART A: continue the story */
 			msg =

@@ -238,15 +238,27 @@ Did you complete part A and are ready to learn more? Before we can finish `Guess
 
 ## Install Prettier for VSCode
 
-Prettier is an extension that will automatically format your code for you when you save it so you won't have to worry about doing proper indentation and styling yourself! Install it in VSCode from the Extension section.
+Prettier is an extension that will automatically format your code for you when you save it so you won't have to worry about doing proper indentation and formatting yourself! Install it in VSCode from the Extension section.
 
-Use these settings in VSCode's `settings.json` file.
+Use these settings in VSCode's `settings.json` file. Press F1 on your keyboard (Fn+F1 on macOS).
 
 ```json
 "editor.defaultFormatter": "esbenp.prettier-vscode",
+"editor.bracketPairColorization.enabled": true,
+"editor.formatOnPaste": true,
+"editor.minimap.enabled": false,
 "editor.tabSize": 2,
 "editor.insertSpaces": false,
 "editor.formatOnSave": true,
+"explorer.confirmDelete": false,
+"explorer.confirmDragAndDrop": false,
+"files.insertFinalNewline": true,
+"files.trimFinalNewlines": true,
+"prettier.jsxSingleQuote": true,
+"prettier.singleQuote": true,
+"prettier.trailingComma": "none",
+"prettier.useTabs": true,
+"prettier.printWidth": 120
 ```
 
 ## while loops

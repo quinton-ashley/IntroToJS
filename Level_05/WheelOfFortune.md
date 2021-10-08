@@ -38,4 +38,6 @@ Just like in TicTacToe, you should keep track of which letters have been placed 
 
 If the player guesses the phrase correctly their score should be increased by the number of blank spaces left.
 
-If the player guesses wrong or press cancel in the prompt, their score should be decreased by some amount but the game should then keep going and they should have the opportunity to guess again.
+If the player guesses wrong or press cancel in the prompt, their score should be decreased by 1 but the game should then keep going and they should have the opportunity to guess again.
+
+If the player is too slow and all the letters in the phrase are shown, they lose that round and their score should be decreased by 3.

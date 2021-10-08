@@ -112,10 +112,11 @@ I want to put something on a new line:
 something
 ```
 
-The tab character `\t`, note that the `+` operator is used to add another string to the list on a new line.
+The tab character `\t`, note that the `+` operator is used to add another string to the list on a new line in the JavaScript code.
 
 ```js
-let list = 'Grocery list:\n\n\tApples\n\tOranges\n\tBananas';
+let list = 'Grocery list:\n\n\t'
+	+ "Apples\n\tOranges\n\tBananas';
 ```
 
 ```txt
@@ -125,8 +126,6 @@ Grocery list:
 	Oranges
 	Bananas
 ```
-
-If you want to have a string on multiple lines of your js file then use the `+` operator to add one string to the end of another.
 
 ## End of Level 01 A
 
@@ -213,21 +212,20 @@ This level's computer was inspired by the [1977 Commodore PET 2001 Series](https
 PETSCII character set: <https://style64.org/petscii/>
 
 - [Level 01 A](#level-01-a)
-	- [Boolean Operators](#boolean-operators)
-		- [NOT (aka negation)](#not-aka-negation)
-		- [OR](#or)
-		- [NOR](#nor)
-		- [AND](#and)
-		- [NAND](#nand)
-	- [Compound Operations](#compound-operations)
-	- [Special characters](#special-characters)
-	- [End of Level 01 A](#end-of-level-01-a)
-- [Level 01 B](#level-01-b)
-		- [Array](#array)
-	- [Array length](#array-length)
-	- [More about prompt](#more-about-prompt)
-	- [Checking equivalence](#checking-equivalence)
-	- [Array includes](#array-includes)
-	- [Converting from String to Number](#converting-from-string-to-number)
-	- [End of Level 01 B](#end-of-level-01-b)
-	- [Computer History: Commodore PET](#computer-history-commodore-pet)
+  - [Boolean Operators](#boolean-operators)
+    - [NOT (aka negation)](#not-aka-negation)
+    - [OR](#or)
+    - [NOR](#nor)
+    - [AND](#and)
+    - [NAND](#nand)
+  - [Compound Operations](#compound-operations)
+  - [Special characters](#special-characters)
+  - [End of Level 01 A](#end-of-level-01-a)
+- [Level 01 B](#level-01-b) - [Array](#array)
+  - [Array length](#array-length)
+  - [More about prompt](#more-about-prompt)
+  - [Checking equivalence](#checking-equivalence)
+  - [Array includes](#array-includes)
+  - [Converting from String to Number](#converting-from-string-to-number)
+  - [End of Level 01 B](#end-of-level-01-b)
+  - [Computer History: Commodore PET](#computer-history-commodore-pet)
