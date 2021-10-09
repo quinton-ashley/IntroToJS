@@ -160,7 +160,7 @@ let smiley = `
 
 Here's what you learned about in Level 5:
 
-- classes: `class`, `this`, and `new`
+- objects `{ key: 'value' }`
 - p5.js basics
 - `spriteArt()` function
 
@@ -254,8 +254,8 @@ Since rectangles can be defined by their top left point and the bottom right cor
 
 ## End of Level 05 B
 
-- Classes
-- vectors
+- classes: `class`, `this`, and `new`
+- vectors (x and y velocities)
 - a 2D rectangle collision detection algorithm
 
 ## Computer History: Commodore 64
@@ -263,15 +263,15 @@ Since rectangles can be defined by their top left point and the bottom right cor
 This level's computer is based on the Commodore 64
 
 - [Level 05 A](#level-05-a)
-	- [Creating Objects](#creating-objects)
-	- [What is p5.js?](#what-is-p5js)
-	- [p5.js Basics](#p5js-basics)
-	- [spriteArt](#spriteart)
-	- [Drawing Images in p5.js](#drawing-images-in-p5js)
-	- [End of Level 05 A](#end-of-level-05-a)
+  - [Creating Objects](#creating-objects)
+  - [What is p5.js?](#what-is-p5js)
+  - [p5.js Basics](#p5js-basics)
+  - [spriteArt](#spriteart)
+  - [Drawing Images in p5.js](#drawing-images-in-p5js)
+  - [End of Level 05 A](#end-of-level-05-a)
 - [Level 05 B](#level-05-b)
-	- [Classes](#classes)
-	- [Vectors](#vectors)
-	- [Collision Detection](#collision-detection)
-	- [End of Level 05 B](#end-of-level-05-b)
-	- [Computer History: Commodore 64](#computer-history-commodore-64)
+  - [Classes](#classes)
+  - [Vectors](#vectors)
+  - [Collision Detection](#collision-detection)
+  - [End of Level 05 B](#end-of-level-05-b)
+  - [Computer History: Commodore 64](#computer-history-commodore-64)

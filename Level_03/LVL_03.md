@@ -19,11 +19,11 @@ QuintOS.level = 3;
 `pc` is a global object that I made. In the past you've been using `prompt()`. Behind the scenes this function calls `pc.prompt()` which creates a rectangle, text, an input, and two buttons. On level 03 you'll use `pc` to draw text and buttons to the screen!
 
 ```js
-let x = 10;
-let y = 12;
-
-pc.text('Hello World!', x, y);
+//     (text          , x , y )
+pc.text('Hello World!', 10, 12);
 ```
+
+`pc.text` expects at least three input arguments/parameters seperated by commas. The first input paramter is the string to display and the 2nd and 3rd are the x and y coordinates to display it on.
 
 ## Creating functions 👷
 
@@ -40,20 +40,16 @@ sayHello(); // runs the function
 
 ## Creating a Button
 
-Let's learn how to add a button. The function is just like `pc.text` but the fourth input parameter is a function that gets run when the button is clicked.
+Let's learn how to add a button. The `pc.button` function is just like `pc.text` but it also expects a fourth input parameter, a callback function that gets run when the button is clicked.
+
+A callback function is a function passed as an input argument to a function that will run the callback function. We'll talk more about callbacks in Level 06, they used to be used for nearly everything asynchronous in JavaScript. These days callbacks are mainly just used for events, like button clicks.
 
 ```js
 function btnClick() {
 	console.log('You clicked the button!');
 }
-//                 (text       , x, y, function)
-let btn = pc.button('Click me!', 5, 5, btnClick);
-```
-
-Remove the button from the screen by using the erase function of the `btn` object.
-
-```js
-btn.erase();
+//       (text       , x, y, function)
+pc.button('Click me!', 5, 5, btnClick);
 ```
 
 ## End of Level 03 A
@@ -88,6 +84,15 @@ function doRecursion() {
 		doRecursion();
 	}
 }
+```
+
+## Erasing a button
+
+Remove buttons from the screen by using the erase function on them. You must store the button returned by `pc.button` to use the `erase` function on it.
+
+```js
+let btn = pc.button('Click this!', 10, 10, clickResponse);
+btn.erase();
 ```
 
 ## Using boolean variables
