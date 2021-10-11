@@ -136,7 +136,7 @@ What did we learn?
 
 # Level 01 B
 
-### Array
+## Arrays
 
 [Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) are lists of variables with numbered indexes.
 
@@ -221,7 +221,8 @@ PETSCII character set: <https://style64.org/petscii/>
   - [Compound Operations](#compound-operations)
   - [Special characters](#special-characters)
   - [End of Level 01 A](#end-of-level-01-a)
-- [Level 01 B](#level-01-b) - [Array](#array)
+- [Level 01 B](#level-01-b)
+  - [Arrays](#arrays)
   - [Array length](#array-length)
   - [More about prompt](#more-about-prompt)
   - [Checking equivalence](#checking-equivalence)

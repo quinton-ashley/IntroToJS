@@ -95,13 +95,15 @@ let btn = pc.button('Click this!', 10, 10, clickResponse);
 btn.erase();
 ```
 
-## Using boolean variables
+## Implied boolean conditions
+
+In this example, `playerIsDead` is a boolean varible.
 
 ```js
 let playerIsDead = false;
 ```
 
-If `playerIsDead` gets set to `true`, then tell the user "Game Over!".
+If `playerIsDead` gets set to `true` while the user is playing a game, then tell the user "Game Over!".
 
 ```js
 if (playerIsDead == true) {
@@ -109,7 +111,7 @@ if (playerIsDead == true) {
 }
 ```
 
-In Javascript you don't have to use `== true`. You can just put the variable in a boolean condition on it's own.
+In Javascript you don't have to use `== true` in boolean conditions because checking for equivalence to `true` is implied. You can just put the variable in a boolean condition on it's own.
 
 ```js
 if (playerIsDead) {
@@ -122,15 +124,15 @@ if (playerIsDead) {
 Sometimes you'll need to check if a variable is defined before you do something with it. If you put a variable that doesn't have a boolean value in a boolean condition by itself, Javascript will evaluate its "truthiness".
 
 ```js
-let robot;
+let robot; // robot created but not defined
 
-// if the robot exists, have it shoot lasers!
+// only have the robot shoot lasers if it is defined!
 if (robot) {
 	robot.shootLasers();
 }
 ```
 
-You can check if a variable is undefined, by putting a negation operator `!` in front of the variable name in the boolean condition. Variables are undefined if they were created but not assigned a value.
+You can check if a variable exists by putting it on it's own in a boolean condition. To check if it's undefined (falsy), put a negation operator `!` in front of the variable name in the boolean condition. Variables are considered undefined if they were not assigned a value.
 
 Remember that the prompt function will return a string with the text the user entered or `null` if the user cancelled out of the prompt. In this example, if `name` is set to any string of text it will be considered truthy. If `name` is `null` or an empty string it will be considered falsy and the user will be asked for their name again.
 
@@ -194,16 +196,17 @@ Of course, all of these great features raised the price significantly. At $8150,
 Originally developed for business executives, GRiDs were also used by the U.S. military 'in the field', and by NASA on the Space Shuttles during the 1980's and 90's. It's even been said that the US President's "nuclear football" at one time included a GRiD computer.
 
 - [Level 03 A](#level-03-a)
-  - [Drawing text to the screen](#drawing-text-to-the-screen)
-  - [Creating functions 👷](#creating-functions-)
-  - [Creating a Button](#creating-a-button)
-  - [End of Level 03 A](#end-of-level-03-a)
+	- [Drawing text to the screen](#drawing-text-to-the-screen)
+	- [Creating functions 👷](#creating-functions-)
+	- [Creating a Button](#creating-a-button)
+	- [End of Level 03 A](#end-of-level-03-a)
 - [Level 03 B](#level-03-b)
-  - [Recursion](#recursion)
-  - [Using boolean variables](#using-boolean-variables)
-  - [How to check if a variable is defined](#how-to-check-if-a-variable-is-defined)
-  - [truthy or falsy?](#truthy-or-falsy)
+	- [Recursion](#recursion)
+	- [Erasing a button](#erasing-a-button)
+	- [Implied boolean conditions](#implied-boolean-conditions)
+	- [How to check if a variable is defined](#how-to-check-if-a-variable-is-defined)
+	- [truthy or falsy?](#truthy-or-falsy)
 - [Level 03 C](#level-03-c)
-  - [Date](#date)
-  - [asynchronous functions](#asynchronous-functions)
-  - [Computer History: GRiD Compass](#computer-history-grid-compass)
+	- [Date](#date)
+	- [asynchronous functions](#asynchronous-functions)
+	- [Computer History: GRiD Compass](#computer-history-grid-compass)
