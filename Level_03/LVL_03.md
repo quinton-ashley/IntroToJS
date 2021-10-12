@@ -173,13 +173,18 @@ Take a look at the MDN documentation for [Date.now()](https://developer.mozilla.
 
 ## asynchronous functions
 
-To use `await` inside a function you must make it an `async` function. When you use the `pc.alert` function `await` waits for the user to press enter.
+To use `await` inside a function you must make it an `async` function. Remember that `await` is used to wait for user interaction.
 
 ```js
 async function sayHello() {
-	await pc.alert('Hello!');
+	let name = await pc.prompt("What's your name?");
+	await pc.alert('Hello ' + name + '!');
 }
 ```
+
+Async functions and callbacks are the two main forms of asynchronous programming in JavaScript. Async functions were created so that asynchronous code could be written linearly like synchronous code, one line after the other.
+
+Chaining callbacks together to form a sequence is more complicated than using them in a simple recursion loop. It can get messy! You'll experience this problem yourself in Level 6 and will gain a new appreciation for async functions.
 
 ## Computer History: GRiD Compass
 

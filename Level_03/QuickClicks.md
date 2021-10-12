@@ -20,7 +20,7 @@ Before the game starts be sure to tell the user how to play!
 
 Tip! Remember alert windows `await pc.alert(msg)`
 
-Track how fast it takes the player to click the button using [Date.now()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).
+After 10 clicks of the button you'll show the user some results regarding how fast they clicked the buttons. To find the speed at which they click between buttons you'll first need to create an array of times. Track how fast it takes the player to click the button using [Date.now()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date). Each time they click the button add the current time in milliseconds to the array of times.
 
 Tip! Remember the `push()` function for adding to arrays.
 
@@ -30,9 +30,7 @@ arr.push(21); // arr -> [4, 17, 21]
 arr.push(35); // arr -> [4, 17, 21, 35]
 ```
 
-After 10 clicks calculate the user's average, slowest, and fastest response times. Display these statistics using an alert window.
-
-Create a `speeds` array that stores time in milliseconds it took the player to click each button. Each number in this array should represent the difference between the time a button was clicked and the time the next button was click.
+Create an array of speeds that stores time in milliseconds it took the player to click each button. Each number in this array should represent the difference between the time a button was clicked and the time the next button was click.
 
 Tip! Remember `for` loops with a counter variable.
 
@@ -41,6 +39,8 @@ for (let i = 0; i < loopAmount; i++) {
 	// code
 }
 ```
+
+After 10 clicks calculate the user's average, slowest, and fastest response times. Display these statistics using an alert window.
 
 Add a background pattern to the game that should cover the entire space within the frame. Create this pattern yourself using for loops by drawing with `pc.text(txt, x, y)`
 
