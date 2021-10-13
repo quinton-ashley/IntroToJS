@@ -4,7 +4,7 @@ Complete the bonus game, Wheel Of Fortune, before continuing to level 4. Edit yo
 
 ```js
 QuintOS.level = 2;
-QuintOS.gameSelect = 'WheelOfFortune';
+QuintOS.gameSelect = "WheelOfFortune";
 ```
 
 If you've got this far congratulations! You've reached Intermediate Level Javascript! 🥳 Edit your `load.js` file:
@@ -23,12 +23,12 @@ Let's take a look at how we could use an object to store attributes about Gumbal
 
 ```js
 let gumball = {
-	name: ['Gumball', 'Tristopher', 'Watterson'],
-	species: 'cat',
-	age: 12,
-	grade: 7,
-	studentID: '000029083',
-	teacher: 'Ms. Simian'
+  name: ["Gumball", "Tristopher", "Watterson"],
+  species: "cat",
+  age: 12,
+  grade: 7,
+  studentID: "000029083",
+  teacher: "Ms. Simian",
 };
 ```
 
@@ -36,27 +36,27 @@ Properties can be accessed using the dot syntax or with the `[]` square brackets
 
 ```js
 gumball.age; // -> 12
-gumball['age']; // same thing
+gumball["age"]; // same thing
 
 gumball.name[2]; // -> 'Watterson'
 
 // editing the animal for property 'c'
 gumball.grade = 8;
 // adding new content to the object
-gumball.brother = 'Darwin';
+gumball.brother = "Darwin";
 ```
 
 What does the `gumball` object look like after these changes?
 
 ```js
 let gumball = {
-	name: ['Gumball', 'Tristopher', 'Watterson'],
-	species: 'cat',
-	age: 12,
-	grade: 8,
-	studentID: '000029083',
-	teacher: 'Ms. Simian',
-	brother: 'Darwin'
+  name: ["Gumball", "Tristopher", "Watterson"],
+  species: "cat",
+  age: 12,
+  grade: 8,
+  studentID: "000029083",
+  teacher: "Ms. Simian",
+  brother: "Darwin",
 };
 ```
 
@@ -74,9 +74,9 @@ I already did the setup function for you. So in your `pong.js` file just make th
 
 ```js
 function setup() {
-	createCanvas(640, 400); // creates canvas with width of 640 and height of 400
-	frameRate(60); // 60 frames per second
-	noStroke(); // no stroke line around shapes
+  createCanvas(640, 400); // creates canvas with width of 640 and height of 400
+  frameRate(60); // 60 frames per second
+  noStroke(); // no stroke line around shapes
 }
 ```
 
@@ -89,7 +89,7 @@ p5.js has it's own `createImage` function, but it's a bit complicated. I created
 The first parameter to `spriteArt` is a string representing the color values of pixels.
 
 ```js
-let img = spriteArt('w.w');
+let img = spriteArt("w.w");
 ```
 
 This example code would create an image with one white pixel, followed by a transparent pixel, and then another white pixel. You can also use spaces to indicate transparent pixels.
@@ -98,24 +98,24 @@ Here's the full color palette you can use, same colors as the real Commodore 64!
 
 ```js
 let palette = {
-	' ': '', // transparent 🔲
-	'.': '', // transparent 🔳
-	k: '#000000', // blacK ⬛
-	d: '#626252', // Dark-gray ⚫
-	m: '#898989', // Mid-gray 🔘
-	l: '#adadad', // Light-gray ⚪
-	w: '#ffffff', // White ⬜
-	c: '#cb7e75', // Coral 🔴
-	r: '#9f4e44', // Red 🟥
-	n: '#6d5412', // browN 🟫
-	o: '#a1683c', // Orange 🟧
-	y: '#c9d487', // Yellow 🟨
-	e: '#9ae29b', // light grEEn 🟢
-	g: '#5cab5e', // Green 🟩
-	t: '#6abfc6', // Teal 🔵
-	b: '#50459b', // Blue 🟦
-	i: '#887ecb', // Indigo 🟣
-	p: '#a057a3' // Purple 🟪
+  " ": "", // transparent 🔲
+  ".": "", // transparent 🔳
+  k: "#000000", // blacK ⬛
+  d: "#626252", // Dark-gray ⚫
+  m: "#898989", // Mid-gray 🔘
+  l: "#adadad", // Light-gray ⚪
+  w: "#ffffff", // White ⬜
+  c: "#cb7e75", // Coral 🔴
+  r: "#9f4e44", // Red 🟥
+  n: "#6d5412", // browN 🟫
+  o: "#a1683c", // Orange 🟧
+  y: "#c9d487", // Yellow 🟨
+  e: "#9ae29b", // light grEEn 🟢
+  g: "#5cab5e", // Green 🟩
+  t: "#6abfc6", // Teal 🔵
+  b: "#50459b", // Blue 🟦
+  i: "#887ecb", // Indigo 🟣
+  p: "#a057a3", // Purple 🟪
 };
 ```
 
@@ -135,7 +135,7 @@ yykyyyykyy
 smiley = spriteArt(smiley); // create sprite image outside draw loop
 
 function draw() {
-	image(smiley, 0, 0);
+  image(smiley, 0, 0);
 }
 ```
 
@@ -168,39 +168,66 @@ Here's what you learned about in Level 5:
 
 ## Classes
 
-Classes in JavaScript are blueprints for objects. They're useful for creating more complex objects. To declare a class, you use the class keyword with the name of the class ("Rectangle" here). The class blueprint goes inside the `{}` squiggly brackets. All classes must have a `constructor` function which is used to create the object.
+Classes in JavaScript are blueprints for objects. They're useful for creating multiple objects that have the same variables (properties) and behaviors (functions). To declare a class, you use the class keyword with the name of the class ("Rectangle" here). The class blueprint goes inside the `{}` squiggly brackets. All classes must have a `constructor` function which is used to create the object.
 
 ```js
 class Rectangle {
-	constructor(width, height) {
-		this.w = width;
-		this.h = height;
-	}
+  constructor(width, height) {
+    this.x = 0;
+    this.y = 0;
+    this.w = width;
+    this.h = height;
+  }
+
+  draw() {
+    rect(this.x, this.y, this.w, this.h);
+  }
 }
 
-let rect = new Rectangle(5, 4);
-console.log('The area is ' + rect.w * rect.h);
+let box0 = new Rectangle(2, 4);
+let box1 = new Rectangle(3, 2);
+let box2 = new Rectangle(5, 6);
 ```
 
-What will the area be? How could you make a function that calculates the area?
+This kind of programming is called object-oriented programming. Since this mode of thinking is similar to how us humans perceive objects in real life it makes it easier to use them when coding.
+
+Note that you shouldn't use the keyword `function` when defining functions in a class.
+
+## Getters
+
+Let's say you wanted to make a calculated property like area that could change if the box changes size.
+
+```js
+console.log("The area of box 0 is " + box0.w * box0.h); // 20!
+```
+
+To get a calculated property like area, you can use a getter.
 
 ```js
 class Rectangle {
-	constructor(width, height) {
-		this.w = width;
-		this.h = height;
-	}
+  constructor(width, height) {
+    this.x = 0;
+    this.y = 0;
+    this.w = width;
+    this.h = height;
+  }
 
-	area() {
-		return this.w * this.h;
-	}
+  draw() {
+    rect(this.x, this.y, this.w, this.h);
+  }
+
+  get area() {
+    return this.w * this.h;
+  }
 }
 
-let rect = new Rectangle(5, 4);
-console.log('The area is ' + rect.area());
+let box0 = new Rectangle(5, 4);
+console.log("The area is " + box0.area); // 20
+box0.w = 6; // change width to 6
+console.log("Now the area is " + box0.area); // 24
 ```
 
-You can probably see how this would be useful to create multiple objects that have the same variables (properties) and behaviors (functions). This kind of programming is called object-oriented programming. Since this mode of thinking is similar to how us humans perceive objects in real life it makes programming them easier.
+This example shows how the area will still be calculated correctly even after the width of the box changes.
 
 ## Vectors
 
@@ -212,51 +239,17 @@ In 2D (two dimensional) games, a sprite's vector can be stored as the velocity, 
 
 ```js
 this.velocity = {
-	x: 1,
-	y: 1
+  x: 1,
+  y: 1,
 };
 ```
 
 To make the ball bounce off the paddles and walls, we'll have to change its vector. When the ball touches the paddles we will invert its x velocity. When the ball touches the wall we will invert its y velocity.
 
-## Collision Detection
-
-How do you write "is ball touching the paddle" in code though? Mathematically what we need to know is when the ball's rectangle intersects the rectangle of the paddles or wall. Yes, the ball is a circle but for now we'll use a rectangle for our collision detection calculations.
-
-In this diagram are numbered rectangles. It is easy for us humans to see visually why the numbered rectangles are not intersecting the middle rectangle, number 4.
-
-```txt
-┌───┐┌───┐┌───┐
-│ 0 ││ 1 ││ 2 │
-└───┘└───┘└───┘
-┌───┐┌───┐┌───┐
-│ 3 ││ 4 ││ 5 │
-└───┘└───┘└───┘
-┌───┐┌───┐┌───┐
-│ 6 ││ 7 ││ 8 │
-└───┘└───┘└───┘
-```
-
-Stop and try to make one sentence that logically explains what must be true if two rectangles are NOT intersecting.
-
-Here's the answer: two rectangles are NOT intersecting if the rectangle is either fully above or below and/or fully to the left or to the right of the other rectangle.
-
-Since rectangles can be defined by their top left point and the bottom right corners, we only need to check those against the other rectangles top left and bottom right corners.
-
-```txt
-(x, y)
- ┌─────────────┐
- │             │
- │             │
- └─────────────┘
-            (x+w, y+h)
-```
-
 ## End of Level 05 B
 
-- classes: `class`, `this`, and `new`
+- classes: `class`, `get`, `this`, and `new`
 - vectors (x and y velocities)
-- a 2D rectangle collision detection algorithm
 
 ## Computer History: Commodore 64
 

@@ -10,6 +10,37 @@ Copy and paste your code from Pong into your `GAMES/contain.js` file.
 
 Remove the walls and add horizontal paddles to the top and bottom of the screen. You will have to make new sprite art for the horizontal paddles using the `spriteArt()` function. Make them look like the other paddles just turned 90 degrees.
 
+How do you write "is ball touching the paddle" in code? Mathematically what we need to know is when the ball's rectangle intersects the rectangle of the paddles or wall. Yes, the ball is a circle but for now we'll use a rectangle for our collision detection calculations.
+
+In this diagram are numbered rectangles. It is easy for us humans to see visually why the numbered rectangles are not intersecting the middle rectangle, number 4.
+
+```txt
+┌───┐┌───┐┌───┐
+│ 0 ││ 1 ││ 2 │
+└───┘└───┘└───┘
+┌───┐┌───┐┌───┐
+│ 3 ││ 4 ││ 5 │
+└───┘└───┘└───┘
+┌───┐┌───┐┌───┐
+│ 6 ││ 7 ││ 8 │
+└───┘└───┘└───┘
+```
+
+Stop and try to make one sentence that logically explains what must be true if two rectangles are NOT intersecting.
+
+Here's the answer: two rectangles are NOT intersecting if the rectangle is either fully above or below and/or fully to the left or to the right of the other rectangle.
+
+Since rectangles can be defined by their top left point and the bottom right corners, we only need to check those against the other rectangles top left and bottom right corners.
+
+```txt
+(x, y)
+ ┌─────────────┐
+ │             │
+ │             │
+ └─────────────┘
+            (x+w, y+h)
+```
+
 How do we change the angle of the ball's vector to be a bit random each time a new ball is "served" without changing the ball's total speed? Take a look at this website for the math you'll need to do this:
 
 <https://setosa.io/ev/sine-and-cosine/>

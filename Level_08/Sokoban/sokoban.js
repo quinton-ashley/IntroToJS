@@ -1,118 +1,119 @@
 const log = console.log;
 
+let loading = true;
+
+function keyPressed() {
+  if (keyCode === UP_ARROW) {
+    player.walk("up");
+  } else if (keyCode === DOWN_ARROW) {
+    player.walk("down");
+  } else if (keyCode === LEFT_ARROW) {
+    player.walk("left");
+  } else if (keyCode === RIGHT_ARROW) {
+    player.walk("right");
+  }
+}
+
 player.walk = function (direction) {
-	let aniName = 'walk-lr';
-	if (direction == 'up') {
-		this.velocity.x = 0;
-		this.velocity.y = -1.5;
-		aniName = 'walk-up';
-	} else if (direction == 'down') {
-		this.velocity.x = 0;
-		this.velocity.y = 1.5;
-		aniName = 'walk-down';
-	} else if (direction == 'left') {
-		this.velocity.x = -1.5;
-		this.velocity.y = 0;
-	} else if (direction == 'right') {
-		this.velocity.x = 1.5;
-		this.velocity.y = 0;
-	}
+  let aniName = "walk-lr";
+  if (direction == "up") {
+    aniName = "walk-up";
+  } else if (direction == "down") {
+    aniName = "walk-down";
+  }
 
-	// the name of the current animation being used
-	let curAniName = this.getAnimationLabel();
+  world.move(player, 1.5, direction);
 
-	// player is already walking that way or turning
-	// no need to change animation
-	if (curAniName == aniName || curAniName == 'idle-turn') return;
+  // the name of the current animation being used
+  let curAniName = this.getAnimationLabel();
 
-	// have the player turn before walking upwards
-	if (direction != 'up') {
-		this.changeAnimation(aniName);
-	} else {
-		this.changeAnimation('idle-turn');
-		this.animation.onComplete = () => {
-			this.changeAnimation('walk-up');
-		};
-	}
+  // player is already walking that way or turning
+  // no need to change animation
+  if (curAniName == aniName || curAniName == "idle-turn") return;
 
-	if (direction == 'left') {
-		this.mirrorX(-1); // flip the character left
-	} else {
-		this.mirrorX(1);
-	}
+  // have the player turn before walking upwards
+  if (direction != "up") {
+    this.changeAnimation(aniName);
+  } else {
+    this.changeAnimation("idle-turn");
+    this.animation.onComplete = () => {
+      this.changeAnimation("walk-up");
+    };
+  }
+
+  if (direction == "left") {
+    this.mirrorX(-1); // flip the character left
+  } else {
+    this.mirrorX(1);
+  }
 };
 
 player.idle = function () {
-	// stop player from moving
-	this.velocity.x = 0;
-	this.velocity.y = 0;
+  let _this = this;
+  // switch between idle animations
+  // some have a higher probability of occurring than others
+  function _idle() {
+    let chance = Math.random();
 
-	let _this = this;
+    if (chance > 0.4) {
+      _this.changeAnimation("idle-stand");
+    } else if (chance > 0.2) {
+      _this.changeAnimation("idle-blink");
+    } else if (chance > 0.1) {
+      _this.changeAnimation("idle-think");
+    } else if (chance > 0.05) {
+      _this.changeAnimation("idle-scratch");
+    } else {
+      _this.changeAnimation("idle-yawn");
+    }
+    _this.animation.onComplete = _idle;
+  }
 
-	function _idle() {
-		let chance = Math.random();
+  // the name of the current animation being used
+  let curAniName = this.getAnimationLabel();
 
-		if (chance > 0.4) {
-			_this.changeAnimation('idle-stand');
-		} else if (chance > 0.2) {
-			_this.changeAnimation('idle-blink');
-		} else if (chance > 0.1) {
-			_this.changeAnimation('idle-think');
-		} else if (chance > 0.05) {
-			_this.changeAnimation('idle-scratch');
-		} else {
-			_this.changeAnimation('idle-yawn');
-		}
-		_this.animation.onComplete = _idle;
-	}
-
-	// the name of the current animation being used
-	let curAniName = this.getAnimationLabel();
-
-	if (curAniName == 'walk-up') {
-		this.changeAnimation('idle-turn');
-		this.animation.changeFrame(2);
-		this.animation.goToFrame(0);
-		this.animation.onComplete = () => {
-			this.changeAnimation('idle-stand');
-			this.animation.onComplete = _idle;
-		};
-	} else if (!curAniName.includes('idle')) {
-		this.changeAnimation('idle-stand');
-		this.animation.onComplete = _idle;
-	}
+  if (curAniName == "walk-up") {
+    this.changeAnimation("idle-turn");
+    this.animation.changeFrame(2);
+    this.animation.goToFrame(0);
+    this.animation.onComplete = () => {
+      this.changeAnimation("idle-stand");
+      this.animation.onComplete = _idle;
+    };
+  } else if (!curAniName.includes("idle")) {
+    this.changeAnimation("idle-stand");
+    this.animation.onComplete = _idle;
+  }
 };
 
-player.action = function () {
-	if (keyDown('up')) {
-		this.walk('up');
-	} else if (keyDown('down')) {
-		this.walk('down');
-	} else if (keyDown('left')) {
-		this.walk('left');
-	} else if (keyDown('right')) {
-		this.walk('right');
-	} else {
-		this.idle();
-	}
-};
+let walls = new Group();
+
+let row = 0;
+let col = 0;
+for (let i = 0; i < 10; i++) {
+  world.add(row, col + 1 + i, 0, wallUp, walls);
+  world.add(row + 11, col + 1 + i, 0, wallDown, walls);
+  world.add(row + 1 + i, col, 0, wallLeft, walls);
+  world.add(row + 1 + i, col + 11, 0, wallRight, walls);
+}
+
+let boxes = new Group();
+world.add(2, 2, 1, box, boxes);
+
+loading = false;
 
 function draw() {
-	clear();
-	background(0);
+  if (loading) return;
+  clear();
+  background(0);
 
-	for (let row = 0; row < 24; row++) {
-		for (let col = 0; col < 16; col++) {
-			tiles.drawFrame(
-				row * 16 + col, // tile number
-				64 + col * tileSize, // x
-				32 + row * tileSize // y
-			);
-		}
-	}
+  player.collide(walls); // handles player collisions with walls
+  player.displace(boxes); // player move boxes by displacing them
+  boxes.collide(walls);
 
-	player.action();
+  if (!player.isMoving) player.idle();
 
-	// p5.play function for drawing all sprites
-	drawSprites();
+  world.update();
+  // p5.play function for drawing all sprites
+  drawSprites();
 }

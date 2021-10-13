@@ -14,24 +14,38 @@ Now you're on level 6! 🥳
 Up to this point whenever we worked with inputs we used `prompt()`, now we're going to be using inputs directly.
 
 ```js
-input(value, x, y, onSubmit, onChange);
+let inp = input(value, x, y, onSubmit, onChange);
 ```
 
-returns the `Input` object created
+`inp` is the the `Input` object created, cursor blinking on the screen at position (x, y).
 
-- `value` is the initial text in the input, set to an empty string by default
-- `onSubmit` called when the user presses the enter key
-- `onChange` called when the user types any key that changes the input's value
+`value` is the initial text in the input, set to an empty string by default.
 
-## The JavaScript eval function
+`onSubmit` called when the user presses the enter key.
 
-Take a look at `calculator.js` it already contains all the code necessary to do basic calculations.
+`onChange` called when the user types any key that changes the input's value.
 
-Doesn't it look rather simple? That's cause the JavaScript `eval()` function is doing all the hard work for us. It parses the math formulas the user enters. In fact it can run any text the user enters as JavaScript code, try it out! You can even make variables: `x=2` then do `2+x`, it should print `4`! Edit your `load.js` file:
+## Example use of Inputs
+
+Here's the code for the Calculator that runs after you exit the GuessTheNumber game.
 
 ```js
-QuintOS.level = 0;
-QuintOS.gameSelect = 'Calculator';
+let inp;
+
+// value is the text the user entered in the input
+function calculate(value) {
+	// eval() is a global function that evaluates the string input value as
+	// JavaScript code, for example if value is "5+3", result will be the number 8
+	let result = eval(value); // evaluate what the user entered
+
+	inp.erase(); // erase the old input
+
+	// create new input with it's initial value set to result
+	inp = pc.input(result, 0, 0, calculate);
+}
+
+// create the input
+inp = pc.input('', 0, 0, calculate);
 ```
 
 ## Loading Sounds
@@ -138,9 +152,16 @@ To make a play function that we can `await`, we have to wrap it in a Promise.
 
 ## Promises
 
-Back in my day... when I was a young lad first learning JavaScript in 2017... async/await and Promises were not part of JavaScript yet! We had to use callbacks for everything asynchronous and it was awful. You kids don't know how good you have it!
+Back in my day... when I was a young lad first learning JavaScript in 2017... async/await and Promises were not part of JavaScript yet! We had to use callbacks for everything asynchronous and it was awful. Check out what you'd have to do to delay some code:
 
-I may sound like a grumpy old man but it really is true. Promises made JavaScript so much better. Let's learn how to make one. Here's `setTimeout()` wrapped in a promise.
+```js
+console.log('start timer');
+setTimeout(() => {
+	console.log('2 seconds passed');
+}, 2000);
+```
+
+I may sound like a grumpy old man but it really is true. Promises made JavaScript so much better. Let's learn how to make one! Here's `setTimeout()` wrapped in a promise.
 
 ```js
 function delay(time) => {
@@ -151,8 +172,14 @@ function delay(time) => {
   });
 };
 
-await delay(2000); // delay program execution asynchronously for two seconds
+async function timer() {
+	console.log('start timer');
+	await delay(2000); // delay program execution asynchronously for two seconds
+	console.log('2 seconds passed');
+}
 ```
+
+`await` is used to wait until a Promise resolves or is rejected.
 
 Some devs call this "promisify-ing". Read more about promises here:
 
@@ -194,14 +221,14 @@ async function playAllLetters() {
 This level's computer is based on the classic children's toy from the 1980s, the electronic [Speak and Spell](<https://en.wikipedia.org/wiki/Speak_%26_Spell_(toy)>) made by Texas Instruments.
 
 - [Level 06 A](#level-06-a)
-	- [Working with Inputs directly](#working-with-inputs-directly)
-	- [The JavaScript eval function](#the-javascript-eval-function)
-	- [Loading Sounds](#loading-sounds)
-	- [for of loops](#for-of-loops)
-	- [for in loops](#for-in-loops)
+  - [Working with Inputs directly](#working-with-inputs-directly)
+  - [The JavaScript eval function](#the-javascript-eval-function)
+  - [Loading Sounds](#loading-sounds)
+  - [for of loops](#for-of-loops)
+  - [for in loops](#for-in-loops)
 - [Level 06 B](#level-06-b)
-	- [Callback Chaining](#callback-chaining)
+  - [Callback Chaining](#callback-chaining)
 - [Level 06 C](#level-06-c)
-	- [Promises](#promises)
-	- [Promisfied p5.js Sound](#promisfied-p5js-sound)
-	- [Computer History: Speak and Spell](#computer-history-speak-and-spell)
+  - [Promises](#promises)
+  - [Promisfied p5.js Sound](#promisfied-p5js-sound)
+  - [Computer History: Speak and Spell](#computer-history-speak-and-spell)

@@ -1,34 +1,36 @@
-let player = createSprite(314, 80, 32, 32);
+//    new Tiles(rows, cols, layers, tileSize, x, y)
+let world = new Tiles(40, 12, 2, 32, 120, 55);
+
+/* PLAYER */
+
+let player = world.add(5, 5, 1);
+// scale by .5 because the player frames are 64x64
+// but the world tiles are 32x32
 player.scale = 0.5;
-player.autoResetAnimations = true;
-let imgDir = QuintOS.dir + '/img/8bit';
-let playerImg = imgDir + '/player16.png';
+let imgDir = QuintOS.dir + "/img/8bit";
+let playerImg = imgDir + "/player16.png";
 
-// loadAni(sprite, img, name, width, height, frameCount, line, frameDelay)
-loadAni(player, playerImg, 'idle-stand', 64, 64, 4, 0, 20);
-loadAni(player, playerImg, 'idle-blink', 64, 64, 4, 1, 10);
-loadAni(player, playerImg, 'idle-think', 64, 64, 8, 20, 20);
-loadAni(player, playerImg, 'idle-scratch', 64, 64, 14, 21, 10);
-loadAni(player, playerImg, 'idle-yawn', 64, 64, 2, 22, 60);
-loadAni(player, playerImg, 'idle-turn', 64, 64, 3, 17);
-loadAni(player, playerImg, 'walk-lr', 64, 64, 5, 3, 5);
-loadAni(player, playerImg, 'walk-up', 64, 64, 6, 18);
-loadAni(player, playerImg, 'walk-down', 64, 64, 6, 16);
+// loadAni(spriteSheetImg, size, pos, frameCount, frameDelay)
+player.addAnimation("idle-stand", loadAni(playerImg, 64, 0, 4, 20));
+player.addAnimation("idle-blink", loadAni(playerImg, 64, 1, 4, 10));
+player.addAnimation("idle-think", loadAni(playerImg, 64, 20, 8, 20));
+player.addAnimation("idle-scratch", loadAni(playerImg, 64, 21, 14, 10));
+player.addAnimation("idle-yawn", loadAni(playerImg, 64, 22, 2, 60));
+player.addAnimation("idle-turn", loadAni(playerImg, 64, 17, 3));
+player.addAnimation("walk-lr", loadAni(playerImg, 64, 3, 5, 5));
+player.addAnimation("walk-up", loadAni(playerImg, 64, 18, 6));
+player.addAnimation("walk-down", loadAni(playerImg, 64, 16, 6));
 
+/* TILES */
+
+let tilesImg = imgDir + "/world.png";
 let tileSize = 32;
-let tileFrames = [];
 
-for (let row = 0; row < 24; row++) {
-	for (let col = 0; col < 16; col++) {
-		tileFrames.push({
-			frame: {
-				x: col * tileSize,
-				y: row * tileSize,
-				width: tileSize,
-				height: tileSize
-			}
-		});
-	}
-}
+// loadAni(spriteSheetImg, size, pos, frameCount, frameDelay)
+// pos array is a [row, column] pair
+let wallUp = loadAni(tilesImg, tileSize, [0, 1]);
+let wallLeft = loadAni(tilesImg, tileSize, [1, 0]);
+let wallRight = loadAni(tilesImg, tileSize, [1, 2]);
+let wallDown = loadAni(tilesImg, tileSize, [2, 1]);
 
-let tiles = loadSpriteSheet(imgDir + '/world.png', tileFrames);
+let box = loadAni(tilesImg, tileSize, [5, 0]);

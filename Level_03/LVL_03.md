@@ -42,7 +42,7 @@ sayHello(); // runs the function
 
 Let's learn how to add a button. The `pc.button` function is just like `pc.text` but it also expects a fourth input parameter, a callback function that gets run when the button is clicked.
 
-A callback function is a function passed as an input argument to a function that will run the callback function. We'll talk more about callbacks in Level 06, they used to be used for nearly everything asynchronous in JavaScript. These days callbacks are mainly just used for events, like button clicks.
+A callback function is a function passed as an input argument to a function that will run the callback function. They used to be used for nearly everything asynchronous in JavaScript. These days callbacks are mainly just used for events, like button clicks.
 
 ```js
 function btnClick() {
@@ -184,8 +184,6 @@ async function sayHello() {
 
 Async functions and callbacks are the two main forms of asynchronous programming in JavaScript. Async functions were created so that asynchronous code could be written linearly like synchronous code, one line after the other.
 
-Chaining callbacks together to form a sequence is more complicated than using them in a simple recursion loop. It can get messy! You'll experience this problem yourself in Level 6 and will gain a new appreciation for async functions.
-
 ## Computer History: GRiD Compass
 
 This level's computer is based on the GRiD Compass 1101. The following description is from http://oldcomputers.net/grid1101.html
@@ -201,17 +199,17 @@ Of course, all of these great features raised the price significantly. At $8150,
 Originally developed for business executives, GRiDs were also used by the U.S. military 'in the field', and by NASA on the Space Shuttles during the 1980's and 90's. It's even been said that the US President's "nuclear football" at one time included a GRiD computer.
 
 - [Level 03 A](#level-03-a)
-	- [Drawing text to the screen](#drawing-text-to-the-screen)
-	- [Creating functions 👷](#creating-functions-)
-	- [Creating a Button](#creating-a-button)
-	- [End of Level 03 A](#end-of-level-03-a)
+  - [Drawing text to the screen](#drawing-text-to-the-screen)
+  - [Creating functions 👷](#creating-functions-)
+  - [Creating a Button](#creating-a-button)
+  - [End of Level 03 A](#end-of-level-03-a)
 - [Level 03 B](#level-03-b)
-	- [Recursion](#recursion)
-	- [Erasing a button](#erasing-a-button)
-	- [Implied boolean conditions](#implied-boolean-conditions)
-	- [How to check if a variable is defined](#how-to-check-if-a-variable-is-defined)
-	- [truthy or falsy?](#truthy-or-falsy)
+  - [Recursion](#recursion)
+  - [Erasing a button](#erasing-a-button)
+  - [Implied boolean conditions](#implied-boolean-conditions)
+  - [How to check if a variable is defined](#how-to-check-if-a-variable-is-defined)
+  - [truthy or falsy?](#truthy-or-falsy)
 - [Level 03 C](#level-03-c)
-	- [Date](#date)
-	- [asynchronous functions](#asynchronous-functions)
-	- [Computer History: GRiD Compass](#computer-history-grid-compass)
+  - [Date](#date)
+  - [asynchronous functions](#asynchronous-functions)
+  - [Computer History: GRiD Compass](#computer-history-grid-compass)

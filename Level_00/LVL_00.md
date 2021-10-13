@@ -53,15 +53,13 @@ This first lesson will require you to learn a lot of information before we can e
 First of all, what is a variable? Variables in JavaScript store data in your computer's memory.
 
 ```js
-let a = 0; // let is for variables that can change
-const b = 1; // const is for variables that have a constant value
+let a = 0;
+const b = 1;
 ```
 
 Use `let` or `const` to create variables. In the example code `a` and `b` are the names of the variables. `a` is assigned the number `0` and `b` is assigned the number `1`. The value of `b` can not be changed because it was declared with `const`.
 
 Use a semicolon `;` to end each line of code. Though it's not required for your computer to run JavaScript, knowing where each line ends makes it easier for other humans to read your code. 👁👅👁
-
-Double slash `//` is for making a comment, any text behind it on the same line will not be considered part of the code's instructions.
 
 ### Changing a variable's value
 
@@ -78,6 +76,8 @@ Here's how to change the value of the variable `x`
 let x = 10;
 x = 5; // good :)
 ```
+
+Double slash `//` is for making a comment, any text behind it on the same line will not be considered part of the code's instructions.
 
 ## Types of Variables 🔡
 
@@ -111,20 +111,6 @@ If you don't use quotes, JavaScript will think the words are variables!
 let story = The dog went to the dog park on 3rd Avenue.; // ERROR!
 ```
 
-### function
-
-functions are a reference to other sections of code which you can run using the parenthesis. Input parameters to a function go in the parenthesis.
-
-```js
-powerOn();
-turn('left');
-moveForward(10);
-turn('right');
-moveForward(2);
-```
-
-This code for a robot remote control makes the robot power on, turn to the left, then move forward ten steps, turn to the right, then move forward two steps.
-
 ## Camel Case 🐫
 
 Variables in JS can't have spaces, 🙅‍♂️ so for variables that have multiple words, the first letter of the words after the first word are capitalized. This naming convention is called camel case because the capitalized letters are like the humps on a camel.
@@ -154,12 +140,14 @@ let x = 5 * 8; // x -> 40
 
 Single equals `=` is for assigning values to variables. Double equals `==` is a boolean operator used for checking equivalence.
 
-`if` statements use a boolean condition, which goes in parenthesis after the keyword `if`. If the boolean condition is `true`, the code in the block `{}`, whatever's inside the squiggly brackets, is run.
+`if` statements use a boolean condition, which goes in parenthesis after the keyword `if`. If the boolean condition is `true`, the code block `{}`, whatever's inside the squiggly brackets, is run.
 
-`else` is used to create another "branch" of code. Take a look at the example below which assigns a color to the variable `fruitColor` based on the name of the `fruit`.
+`else if` and `else` are used after if statements, they form a chain of different paths the code can take if the previous if statements were false.
+
+Take a look at the example below which assigns a color to the variable `fruitColor` based on the name of the `fruit`.
 
 ```js
-let fruitColor;
+let fruitColor; // variables can be created without a value assigned to them
 
 // if the fruit is a banana
 if (fruit == 'banana') {
@@ -192,6 +180,20 @@ Greater than or equal to: >=
 
 Use boolean (true/false) operators in the boolean conditions (inside the parenthesis) of `if` and `else if` statements.
 
+### functions
+
+functions are a reference to other sections of code which you can run using the parenthesis. Input parameters to a function go in the parenthesis.
+
+```js
+powerOn();
+turn('left');
+moveForward(10);
+turn('right');
+moveForward(2);
+```
+
+This code for a robot remote control makes the robot power on, turn to the left, then move forward ten steps, turn to the right, then move forward two steps.
+
 ## Globals 🌐
 
 Globals are special variables that are already available for you to use. You can also create global variables yourself but we'll learn how to do that later.
@@ -201,7 +203,7 @@ Check out the `alert` and `prompt` global functions for user interaction. The wo
 ```js
 // waits for the user to type something and press enter
 let favColor = await prompt('What is your favorite color?');
-// favColor is assigned to the user's response
+// the user's response to the prompt is assigned to favColor
 
 // waits for user to read the message in the alert and press okay
 await alert("That's my favorite color too!"); // show message to user
@@ -244,6 +246,7 @@ Use these settings in VSCode's `settings.json` file. Press F1 on your keyboard (
 
 ```json
 "editor.defaultFormatter": "esbenp.prettier-vscode",
+"editor.guides.bracketPairs": true,
 "editor.bracketPairColorization.enabled": true,
 "editor.formatOnPaste": true,
 "editor.minimap.enabled": false,
