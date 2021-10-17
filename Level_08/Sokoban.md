@@ -12,8 +12,16 @@ For starters, make a 10x10 area of wall tile sprites.
 
 Add a box sprite on the floor of this area. Animate the character pushing the box up, down, left, and right. Don't let the player or the box move past the walled area.
 
+Display the number of moves the player has made.
+
 ## Instructions for Part B
+
+Read about the Sokoban level format standardization:
 
 http://sokobano.de/wiki/index.php?title=Level_format
 
-... coming soon
+You'll need to edit this text file to make it into a JSON with all the levels in an array that we can use in JavaScript, but how?
+
+http://leehaywood.org/games/crossoban/p/sokevo.txt
+
+Edit the text file using find replace in VSCode using ctrl+f (cmd+f on macOS). You'll need to learn about regular expressions first!

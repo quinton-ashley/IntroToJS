@@ -12,7 +12,8 @@ ww....ww
 .ww..ww.
 ..wwww..`);
 
-let imgPaddle = spriteArt('.wwwwww.\nwwwwwwww\n' + 'www..www\nww.ww.ww\n'.repeat(21) + 'wwwwwwww\n.wwwwww.');
+// the \n means new line
+let imgPaddle = spriteArt('wwwwwwww\n'.repeat(46));
 
 /* PART A: Make image for the wall */
 

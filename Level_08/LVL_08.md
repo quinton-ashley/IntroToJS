@@ -60,6 +60,14 @@ JSON stands for JavaScript Object Notation. JSON files are just a JS object in a
 }
 ```
 
+## Regular Expressions (RegEx)
+
+To better manipulate data, simple find and replace using strings often won't cut it. You'll need to learn about Regular Expressions, a powerful pattern matching tool.
+
+https://regex101.com/
+
+# Level 08 C
+
 ## Using fetch
 
 `fetch` is a global function that can be used to load data from other files.
@@ -78,19 +86,13 @@ let txt = await (await fetch('yourFileName.txt')).text();
 
 For JSON, use the `.json()` function on the request object.
 
-# Level 08 C
-
-## Inheritance
-
-...coming soon
-
 - [Level 08 A](#level-08-a)
-	- [p5.play](#p5play)
-	- [Spritesheets](#spritesheets)
-	- [Making Sprites with multiple animations](#making-sprites-with-multiple-animations)
-	- [p5.play documentation](#p5play-documentation)
+  - [p5.play](#p5play)
+  - [Spritesheets](#spritesheets)
+  - [Making Sprites with multiple animations](#making-sprites-with-multiple-animations)
+  - [p5.play documentation](#p5play-documentation)
 - [Level 08 B](#level-08-b)
-	- [JSON](#json)
-	- [Using fetch](#using-fetch)
+  - [JSON](#json)
+  - [Using fetch](#using-fetch)
 - [Level 08 C](#level-08-c)
-	- [Inheritance](#inheritance)
+  - [Inheritance](#inheritance)
