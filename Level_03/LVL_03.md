@@ -171,6 +171,21 @@ Take a look at the MDN documentation for [Date.now()](https://developer.mozilla.
 
 `Date.now()` returns the current date in milliseconds.
 
+## Adding to Arrays
+
+So how do we add to arrays? By using the `.push()` function.
+
+```js
+let names = ['Amy', 'Ellie', 'Max'];
+let nums = [50, 21, 46, 83];
+
+names.push('Jake'); // adds "Jake" to names array
+// names -> ['Amy', 'Ellie', 'Max', 'Jake']
+
+nums.push(97); // adds 97 to the nums array
+// nums -> [50, 21, 46, 83, 97]
+```
+
 ## asynchronous functions
 
 To use `await` inside a function you must make it an `async` function. Remember that `await` is used to wait for user interaction.

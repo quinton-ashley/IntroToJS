@@ -142,23 +142,16 @@ What did we learn?
 
 ```js
 let names = ['Amy', 'Ellie', 'Max'];
-let nums = [50, 21, 42, 83];
+let nums = [50, 21, 46, 83];
 ```
 
-The `[]` square brackets are used to create arrays and are also used to access items in an array.
+## array.includes(item)
+
+Another useful Array function is `includes`, it checks if the input "Ellie" is included in the array.
 
 ```js
-names[0]; // is 'Amy'
-nums[1]; // is 21
-```
-
-Items in an array can also be edited using `[]` (aka sub).
-
-```js
-names[2] = 'Ben';
-// edits the list: ['Amy', 'Ellie', 'Ben'];
-nums[1] = 36;
-// edits the list: [50, 36, 42, 83]
+names.includes('Ellie'); // returns true
+names.includes('James'); // returns false
 ```
 
 ## Array length
@@ -171,39 +164,13 @@ console.log('The names array has ' + names.length + ' names');
 
 This example code would print "The names array has 3 names" to the console.
 
-## More about prompt
-
-When the user inputs something and presses enter, `prompt` returns the string the user entered, yes `string`! It doesn't return a `number` even if the user only entered number characters.
-
-## Checking equivalence
-
-You may be wondering wait... why does `(choice == 1)` return true if `choice` is actually a string with the character `"1"` in it and not the number `1`?
-
-That's cause in JavaScript the double equals `==` actually only checks for loose equivalence regardless of the type of each variable being compared. If you want to ensure the types match too use triple equals `("1" === 1)` would be false. Usually it is fine to just use double equals `==` though.
-
-## Array includes
-
-Another useful Array function is `.includes()`, it checks if the input "Ellie" is included in the array. Requires exact equivalence!
-
-```js
-names.includes('Ellie'); // returns true
-```
-
-## Converting from String to Number
-
-If you have a number inside a string you can convert it to a number by using the `Number()` global function.
-
-```js
-let num = Number('23');
-// num -> 23
-```
-
 ## End of Level 01 B
 
-- Arrays
-- the prompt returns a string or `null` if the user presses cancel
+You learned how to:
+
+- create Arrays
+- get the amount of items in an array using `.length`
 - how to check if something is included in an array
-- converting from string to number
 
 ## Computer History: Commodore PET
 

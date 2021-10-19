@@ -10,7 +10,7 @@ QuintOS.level = 2;
 
 Don't read all the sections in the Level 2 A lesson at once. Read a section, then work on Hangman, then read another section, work on Hangman. The information in each section is sequenced to correspond directly to what you need to learn to complete each step in making the Hangman game.
 
-## String split()
+## string.split(seperator)
 
 Strings have a lot of useful functions we can use. MDN, the Mozilla Developer Network, is a really great resource for learning JS. Documentation for the String class can be found here:
 
@@ -23,6 +23,65 @@ Strings have a lot of useful functions we can use. MDN, the Mozilla Developer Ne
 'the red fox'.split(' ');
 // -> ['the', 'red', 'fox']
 ```
+
+# string.repeat(amount)
+
+You can also use a String function called [repeat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
+
+```js
+let pattern = '><'.repeat(4);
+// pattern -> '><><><><';
+```
+
+## array.join(separator)
+
+The Array `join` function creates a string by joining each element in the array together, inserting an optional seperator string between each item.
+
+```js
+names.join(' ~ ');
+// -> 'Amy ~ Ellie ~ Max'
+```
+
+## End of Level 02 A
+
+We learned how to:
+
+- make while loops with a counter variable
+- split strings
+- get a character at a specific index in a string
+
+# Level 02 B
+
+## Accessing items in an Array
+
+The `[]` square brackets are used to create arrays and are also used to access items in an array.
+
+```js
+names[0]; // is 'Amy'
+nums[1]; // is 21
+```
+
+Items in an array can also be edited using `[]` (aka sub).
+
+```js
+names[2] = 'Ben';
+// edits the list: ['Amy', 'Ellie', 'Ben'];
+nums[1] = 36;
+// edits the list: [50, 36, 42, 83]
+```
+
+## Accessing characters in a String
+
+To access characters in a string you can use `[]` but note that you can't edit them like you can with arrays.
+
+```js
+let fox = 'the red fox';
+fox[4]; // is 'r'
+fox[8] = 'b'; // error
+// will not change fox string to 'the red box'
+```
+
+Strings are immutable, meaning individual characters in the string can not be changed.
 
 ## Counting with while loops
 
@@ -50,84 +109,9 @@ The code above prints out a numbered list of names in the JS console.
 2. Ben
 ```
 
-## Adding to Arrays
-
-So how do we add to arrays? By using the `.push()` function.
-
-```js
-let names = ['Amy', 'Ellie', 'Ben'];
-
-names.pop(); // returns and removes the last element from the array
-// names -> ['Amy', 'Ellie']
-names.push('Jake'); // adds "Jake" to names array
-// names -> ['Amy', 'Ellie', 'Jake']
-```
-
-## Array join()
-
-The `join()` function kind of does the opposite of the string `split()` function. `join()` makes a string by joining each element in the array together, adding a character in between them.
-
-```js
-['the', 'red', 'fox'].join(' ');
-// -> 'the red fox'
-```
-
-## Accessing characters in a String
-
-To access characters in a string you can use `[]` but note that you can't edit them like you can with arrays.
-
-```js
-let fox = 'the red fox';
-fox[4]; // is 'r'
-fox[8] = 'b'; // error
-// will not change fox string to 'the red box'
-```
-
-Strings are immutable, meaning individual characters in the string can not be changed.
-
-## End of Level 02 A
-
-We learned how to:
-
-- make while loops with a counter variable
-- split strings
-- get a character at a specific index in a string
-
-# Level 02 B
-
-## for loops
-
-`for` loops are like `while` loops but they make counting the number of loops way more convenient. This code does the same thing as the previous example with the `while` loop.
-
-```js
-let names = ['Jake', 'Ali', 'Ben'];
-// INITIALIZE; CONDITION; INCREMENT;
-for (let i = 0; i < names.length; i++) {
-	console.log(i + '. ' + names[i]);
-}
-```
-
-Makes this list of names.
-
-```txt
-0. Jake
-1. Ali
-2. Ben
-```
-
-`for` loops have three different sections. The first section inside the parenthesis is for incrementing variables. The next section is the while condition, the loop loops while this is true. The last section is for incrementing the counter variable, which happens at the end of each loop. Conventionally `i` (i for index) is used as the counter variable.
-
-## Using the Debugger
-
-To better understand how `for` loops work you'll need to use the debugger. In the Chrome developer panel it can be found in the "Sources" tab.
-
-As you may know a "bug" in computer science terminology refers to code that is not working the way its author intended. Why is this? You may think it's because problems in your code can be annoying, like bugs. The actual origin of the term is much better though!
-
-Back when computers took up a whole Manhattan city block and were made from glowing hot vacuum tubes, bugs would fly inside these computers and die in them. Debugging literally referred to the act of removing dead bugs from a computer! This was done to solve problems that the dead bugs would cause by conducting electricity over wires that weren't supposed to connect among other issues. The name stuck among programmers ever since!
-
 ## Breaking out of a loop early
 
-If you need to exit a while loop or for loop early, use the `break` keyword.
+If you need to exit a while loop early, use the `break` keyword.
 
 ```js
 break;
