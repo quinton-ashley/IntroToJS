@@ -24,7 +24,159 @@ Locate the index.html file in your `quintos-games` project folder. Make a new pe
 
 _Complete QuickClicks (A and B) first!_
 
-Make at least the first "page" of the story illustrated and interactive using the mouse cursor. Instead of using `pc.prompt` to ask the user to make choices, use `pc.text`. Instead of getting player's choices via the string returned from `pc.prompt`, make buttons using `pc.button`. Use text based art (ascii art) from <https://www.asciiart.eu/> to illustrate your story! Use at least three different text artworks.
+Make at least the first "page" of the story illustrated and interactive using the mouse cursor. Instead of using `pc.prompt` to ask the user to make choices, use `pc.text`. Instead of getting player's choices via the string returned from `pc.prompt`, make buttons using `pc.button`. Search for "ascii art" (text based art) to illustrate your story! Use at least three different text artworks.
+
+```
+                /||\
+                ||||
+                ||||
+           /|\  |||| /|\
+           |||  |||| d||
+           |||  |||||||/
+           ||b._||||~~'
+           \||||||||
+            `~~~||||
+                ||||
+                ||||
+~~~~~~~~~~~~~~~~||||~~~~~~~~~~~~~~
+  \/..__..--  . |||| \/  .  ..
+\/         \/ \/    \/
+        .  \/              \/    .
+. \/             .   \/     .
+
+------------------------------------------------
+Thank you for visiting https://asciiart.website/
+This ASCII pic can be found at
+https://asciiart.website/index.php?art=plants/cactus
+
+    ____________________________
+  /|............................|
+ | |:    Mixmastermeatbeaters  :|
+ | |:         "Move It"        :|
+ | |:     ,-.   _____   ,-.    :|
+ | |:    ( `)) [_____] ( `))   :|
+ |v|:     `-`   ' ' '   `-`    :|
+ |||:     ,______________.     :|
+ |||...../::::o::::::o::::\.....|
+ |^|..../:::O::::::::::O:::\....|
+ |/`---/--------------------`---|
+ `.___/ /====/ /=//=/ /====/____/
+      `--------------------'
+
+------------------------------------------------
+Thank you for visiting https://asciiart.website/
+This ASCII pic can be found at
+https://asciiart.website/index.php?art=objects/audio%20equipment
+
+*                             |>>>                    +
++          *                      |                   *       +
+                    |>>>      _  _|_  _   *     |>>>
+           *        |        |;| |;| |;|        |                 *
+     +          _  _|_  _    \\.    .  /    _  _|_  _       +
+ *             |;|_|;|_|;|    \\: +   /    |;|_|;|_|;|
+               \\..      /    ||:+++. |    \\.    .  /           *
+      +         \\.  ,  /     ||:+++  |     \\:  .  /
+                 ||:+  |_   _ ||_ . _ | _   _||:+  |       *
+          *      ||+++.|||_|;|_|;|_|;|_|;|_|;||+++ |          +
+                 ||+++ ||.    .     .      . ||+++.|   *
++   *            ||: . ||:.     . .   .  ,   ||:   |               *
+         *       ||:   ||:  ,     +       .  ||: , |      +
+  *              ||:   ||:.     +++++      . ||:   |         *
+     +           ||:   ||.     +++++++  .    ||: . |    +
+           +     ||: . ||: ,   +++++++ .  .  ||:   |             +
+                 ||: . ||: ,   +++++++ .  .  ||:   |        *
+                 ||: . ||: ,   +++++++ .  .  ||:   |
+
+   `,.      .   .        *   .    .      .  _    ..          .
+     \,~-.         *           .    .       ))       *    .
+          \ *          .   .   |    *  . .  ~    .      .  .  ,
+ ,           `-.  .            :               *           ,-
+  -             `-.        *._/_\_.       .       .   ,-'
+  -                 `-_.,     |n|     .      .       ;
+    -                    \ ._/_,_\_.  .          . ,'         ,
+     -                    `-.|.n.|      .   ,-.__,'         -
+      -                   ._/_,_,_\_.    ,-'              -
+      -                     |..n..|-`'-'                -
+       -                 ._/_,_,_,_\_.                 -
+         -               ,-|...n...|                  -
+           -         ,-'._/_,_,_,_,_\_.              -
+             -  ,-=-'     |....n....|              -
+              -;       ._/_,_,_,_,_,_\_.         -
+             ,-          |.....n.....|          -
+           ,;         ._/_,_,_,_,_,_,_\_.         -
+  `,  '.  `.  ".  `,  '.| n   ,-.   n |  ",  `.  `,  '.  `,  ',
+,.:;..;;..;;.,:;,.;:,o__|__o !.|.! o__|__o;,.:;.,;;,,:;,.:;,;;:
+ ][  ][  ][  ][  ][  |_i_i_H_|_|_|_H_i_i_|  ][  ][  ][  ][  ][
+                     |     //=====\\     |
+                     |____//=======\\____|
+ gpyy                    //=========\\
+
+------------------------------------------------
+Thank you for visiting https://asciiart.website/
+This ASCII pic can be found at
+https://asciiart.website/index.php?art=objects/buildings
+
+                     _
+               (____/@\____)
+                \\\\_V_////
+             (__|_H_|I|_H_|__)
+              \\\\\\_V_//////
+           (___|_H_|III|_H__|__)
+            \\\\\\\\_V_////////
+         (___|_H__|IIIII|__H__|__)
+  .:.     \\\\\\\\\\_V_//////////     .:.
+.:.|' (____|__H__|IIIIIII|__H__|____) '|.:.
+'|'|   \\\\\\\\\\\\\\V//////////////   |'|'
+ |      |_H__H__|III   III|__H__H_|      |
+Sher^
+
+------------------------------------------------
+Thank you for visiting https://asciiart.website/
+This ASCII pic can be found at
+https://asciiart.website/index.php?art=objects/buildings
+
+                                  _
+                        .-.      / \        _
+            ^^         /   \    /^./\__   _/ \
+          _        .--'\/\_ \__/.      \ /    \  ^^  ___
+         / \_    _/ ^      \/  __  :'   /\/\  /\  __/   \
+        /    \  /    .'   _/  /  \   ^ /    \/  \/ .`'\_/\
+       /\/\  /\/ :' __  ^/  ^/    `--./.'  ^  `-.\ _    _:\ _
+      /    \/  \  _/  \-' __/.' ^ _   \_   .'\   _/ \ .  __/ \
+    /\  .-   `. \/     \ / -.   _/ \ -. `_/   \ /    `._/  ^  \
+   /  `-.__ ^   / .-'.--'    . /    `--./ .-'  `-.  `-. `.  -  `.
+ @/        `.  / /      `-.   /  .-'   / .   .'   \    \  \  .-  \%
+ @(88%@)@%% @)&@&(88&@.-_=_-=_-=_-=_-=_.8@% &@&&8(8%@%8)(8@%8 8%@)%
+ @88:::&(&8&&8::JGS:&`.~-_~~-~~_~-~_~-~~=.'@(&%::::%@8&8)::&#@8::::
+ `::::::8%@@%:::::@%&8:`.=~~-.~~-.~~=..~'8::::::::&@8:::::&8::::::'
+  `::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::'
+
+------------------------------------------------
+Thank you for visiting https://asciiart.website/
+This ASCII pic can be found at
+https://asciiart.website/index.php?art=nature/mountains
+
+          _
+      /b_,dM\__,_
+    _/MMMMMMMMMMMm,
+   _YMMMMMMMMMMMM(
+  `MMMMMM/   /   \   _   ,
+   MMM|  __  / __/  ( |_|
+   YMM/_/# \__/# \    | |_)arry
+   (.   \__/  \__/     ___
+     )       _,  |    '_|_)
+_____/\     _   /       | otter
+    \  `._____,'
+     `..___(__
+              ``-.
+                  \
+              gnv  )
+
+------------------------------------------------
+Thank you for visiting https://asciiart.website/
+This ASCII pic can be found at
+https://asciiart.website/index.php?art=books/harry%20potter
+```
 
 This challenge section requires you to make a lot of changes to your existing `pickAPath.js` file. Save a copy of it `pickAPath_v1.js` in case you need to look at the original version again once you start making changes!
 

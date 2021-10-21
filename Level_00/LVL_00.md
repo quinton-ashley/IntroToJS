@@ -2,51 +2,25 @@
 
 ## What is Computer Science?
 
-Why is this field of study called "Computer Science" and not "Program Writing" or "Code Mathematics"? It's because like in Science class, writing code will often require testing and experimentation for you to learn how things work. These lessons will teach you how to code in JavaScript, which is the most popular modern programming language and my personal favorite! Since you're just starting out, you will have to memorize some vocabulary, "grammar", and syntax to learn this new language. Fortunately, this isn't what coding is all about, just like playing a musical instrument is not just learning to play scales. Having the technical skills required to play an instrument is merely the foundational knowledge needed to express yourself through the art of music.
+Why is this field of study called "Computer Science" and not "Program Writing" or "Code Mathematics"? It's because coding, the process of writing code, requires experimentation! Every time you add code to your program and test it out it's like doing a mini science experiment. Coding also requires research. Even professional programmers learn new things every day.
 
-As you may expect, coding will be really fun and interesting for you if you like abstract problem solving, in this way it is also similar to Math. Coding has a language arts aspect too. You will not only strive to write efficient code but also code that is aesthetically pleasing and easy for other programmers to understand.
+These lessons will teach you how to code in JavaScript, which is the most popular modern programming language and my personal favorite!
 
-Issac Newton once said, "we stand on the shoulders of giants". To understand how software is developed today it's important to learn a bit about the history of how computer hardware and software has progressed. Video games are an incredible art form that combine programming, storytelling, visual art, music, and sound design. If you signed up for this course you might want to know how video games work and how to make your own! If not, making games will hopefully be a fun way for you to learn how to code.
+Since you're just starting out, you will have to memorize some vocabulary, "grammar", and syntax to learn this new language. Learning to code isn't what programming is all about though, just like learning to play scales isn't what being a musician is, putting on a costume and memorizing lines isn't what acting is. In these lessons you will learn to code and I will also try to teach you programming, which is a skill you can develop over the course of your whole life.
 
-During each lesson you'll develop a game that will run right in your web browser (Google Chrome or Firefox or Opera), which will display a vintage virtual computer that uses QuintOS, a graphics system I created. As you level up your coding skills, your virtual computer will get upgraded. So since you're just starting out, the first game you make will be for... a programmable calculator. 😜
+As you may expect, programming will be really fun and interesting for you if you like abstract problem solving, in this way it is also similar to Math. Programming has a language arts aspect too. You will not only strive to write efficient code but also code that is easily understood by other programmers.
+
+## What is QuintOS?
+
+Issac Newton once said, "we stand on the shoulders of giants". To understand how software is developed today it's important to learn a bit about the history of how computer hardware and software has progressed.
+
+Video games are an incredible art form that combine programming, storytelling, visual art, music, and sound design. If you signed up for this course you might want to know how video games work and how to make your own! If not, making games will hopefully be a fun way for you to learn how to code.
+
+During each lesson you'll develop a QuintOS game that runs on virtual computers displayed in your web browser: Google Chrome, Firefox, or Opera. QuintOS is a retro game engine I created for this course and also for my own games. As you level up your coding skills, your virtual computer will get upgraded. So since you're just starting out, the first game you make will be for... a programmable calculator. 😜
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen0.jpg)
 
-## Pre-requisites for Javascript Development
-
-- install Google Chrome (Firefox, Edge, and Opera are good too, just don't use Safari)
-- only Windows users need to install [Git](https://gitforwindows.org/) (macOS and most Linux distros come with git pre-installed)
-- install the [Visual Studio Code editor](https://code.visualstudio.com/)
-- install [node.js](https://nodejs.org/en/) (includes [npm](https://www.npmjs.com/))
-- create an account on [github.com](https://github.com/)
-
-## Setup
-
-Open the [quintos-template](https://github.com/quinton-ashley/quintos-template) project on Github. Press the big green button that says "Use this template". Name your project "quintos-games".
-
-Now open Git Bash on Windows or Terminal on macOS and copy/paste these commands. Replace `!!!your username!!!` with your github username. Don't worry I'm not hacking your computer! The first command `cd`, changes directory (aka folder), which opens your Documents folder inside the terminal. The second command downloads your `quintos-games` project into your Documents folder, third command opens that folder. The last command, `npm i`, installs all the other code needed for this project.
-
-```sh
-cd ~/Documents
-git clone https://github.com/quinton-ashley/IntroToJS.git
-git clone https://github.com/!!!your username!!!/quintos-games.git
-cd quintos-games
-npm i
-```
-
-Open Visual Studio Code (aka VSCode) and add your `quintos-games` folder to the workspace.
-
-## Loading QuintOS
-
-Edit the `load.js` in the `quintos-games` project folder and set your level to 0.
-
-```js
-QuintOS.level = 0;
-```
-
-Open the `QuintOS.html` file with Chrome. You should see the calculator. 😄
-
-This first lesson will require you to learn a lot of information before we can even make a simple game. It may be a bit overwhelming for you but don't worry, you'll get a lot of practice with these concepts so that you will understand them. Remember that everyone starts somewhere, even the greatest programmers in history started out as beginners! Let's get started. 🥳
+This first lesson will require you to learn a lot of information before we can even make a simple game. It may be a bit overwhelming for you but don't worry! You'll get a lot of practice with these concepts so that you will fully understand them. Let's get started! 🥳
 
 ## Creating Variables 🔡
 
@@ -238,32 +212,6 @@ Now you're ready to start making your first game! 🥳 [Click here for the Guess
 
 Did you complete part A and are ready to learn more? Before we can finish `GuessTheNumber` game we have to learn a bit more stuff.
 
-## Install Prettier for VSCode
-
-Prettier is an extension that will automatically format your code for you when you save it so you won't have to worry about doing proper indentation and formatting yourself! Install it in VSCode from the Extension section.
-
-Use these settings in VSCode's `settings.json` file. Press F1 on your keyboard (Fn+F1 on macOS).
-
-```json
-"editor.defaultFormatter": "esbenp.prettier-vscode",
-"editor.guides.bracketPairs": true,
-"editor.bracketPairColorization.enabled": true,
-"editor.formatOnPaste": true,
-"editor.minimap.enabled": false,
-"editor.tabSize": 2,
-"editor.insertSpaces": false,
-"editor.formatOnSave": true,
-"explorer.confirmDelete": false,
-"explorer.confirmDragAndDrop": false,
-"files.insertFinalNewline": true,
-"files.trimFinalNewlines": true,
-"prettier.jsxSingleQuote": true,
-"prettier.singleQuote": true,
-"prettier.trailingComma": "none",
-"prettier.useTabs": true,
-"prettier.printWidth": 120
-```
-
 ## while loops
 
 Need to loop some code? Use a while loop! The code in the code block `{}` will be looped as long as the while loop condition remains true.
@@ -337,25 +285,22 @@ This level's computer was inspired by the Casio FX-720P, which could run program
 
 - [Level 00 A](#level-00-a)
   - [What is Computer Science?](#what-is-computer-science)
-  - [Pre-requisites for Javascript Development](#pre-requisites-for-javascript-development)
-  - [Setup](#setup)
-  - [Loading QuintOS](#loading-quintos)
+  - [What is QuintOS?](#what-is-quintos)
   - [Creating Variables 🔡](#creating-variables-)
     - [Changing a variable's value](#changing-a-variables-value)
   - [Types of Variables 🔡](#types-of-variables-)
     - [Number](#number)
     - [Boolean](#boolean)
     - [String](#string)
-    - [function](#function)
   - [Camel Case 🐫](#camel-case-)
   - [Mathematical operators 🔢](#mathematical-operators-)
   - [Checking Equivalence ✅](#checking-equivalence-)
   - [Boolean operators 🐰](#boolean-operators-)
+    - [functions](#functions)
   - [Globals 🌐](#globals-)
   - [Javascript Console](#javascript-console)
   - [End of Level 00 A](#end-of-level-00-a)
 - [Level 00 B](#level-00-b)
-  - [Install Prettier for VSCode](#install-prettier-for-vscode)
   - [while loops](#while-loops)
   - [Checking for Inequivalence](#checking-for-inequivalence)
   - [Scopes](#scopes)

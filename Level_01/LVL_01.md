@@ -1,9 +1,74 @@
 # Level 01 A
 
-Congrats, you completed level 0! Upgrade your PC by editing your `load.js` file in your `quintos-games` project. Set your level to 1! 🥳
+Congrats, you completed level 0! Before you can work on the next game, let's get you setup for JavaScript development on your computer.
+
+## Pre-requisites for Javascript Development
+
+- install Google Chrome (Firefox, Edge, and Opera are good too, just don't use Safari)
+- only Windows users need to install [Git](https://gitforwindows.org/) (macOS and most Linux distros come with git pre-installed)
+- install the [Visual Studio Code editor](https://code.visualstudio.com/)
+- install [node.js](https://nodejs.org/en/) (includes [npm](https://www.npmjs.com/))
+- create an account on [github.com](https://github.com/)
+
+## Setup
+
+Open the [quintos-template](https://github.com/quinton-ashley/quintos-template) project on Github. Press the big green button that says "Use this template". Name your project "quintos-games".
+
+Now open Git Bash on Windows or Terminal on macOS and copy/paste these commands. Replace `!!!your username!!!` with your github username. Don't worry I'm not hacking your computer! The first command `cd`, changes directory (aka folder), which opens your Documents folder inside the terminal. The second command downloads your `quintos-games` project into your Documents folder, third command opens that folder. The last command, `npm i`, installs all the other code needed for this project.
+
+```sh
+cd ~/Documents
+git clone https://github.com/quinton-ashley/IntroToJS.git
+git clone https://github.com/!!!your username!!!/quintos-games.git
+cd quintos-games
+npm i
+```
+
+Open Visual Studio Code (aka VSCode) and add your `quintos-games` folder to the workspace.
+
+## Loading QuintOS
+
+Edit the `load.js` in the `quintos-games` project folder and set your level to 0.
 
 ```js
-QuintOS.level = 1;
+QuintOS.level = 0;
+```
+
+Open the `QuintOS.html` file with Chrome. You should see the calculator. 😄
+
+## Install Prettier for VSCode
+
+Prettier is an extension that will automatically format your code for you when you save it so you won't have to worry about doing proper indentation and formatting yourself! Install it in VSCode from the Extension section.
+
+Use these settings in VSCode's `settings.json` file. Press F1 on your keyboard (Fn+F1 on macOS).
+
+```json
+"editor.defaultFormatter": "esbenp.prettier-vscode",
+"editor.guides.bracketPairs": true,
+"editor.bracketPairColorization.enabled": true,
+"editor.formatOnPaste": true,
+"editor.minimap.enabled": false,
+"editor.tabSize": 2,
+"editor.insertSpaces": false,
+"editor.formatOnSave": true,
+"editor.wordWrap": "on",
+"explorer.confirmDelete": false,
+"explorer.confirmDragAndDrop": false,
+"files.insertFinalNewline": true,
+"files.trimFinalNewlines": true,
+"prettier.jsxSingleQuote": true,
+"prettier.singleQuote": true,
+"prettier.trailingComma": "none",
+"prettier.useTabs": true,
+"prettier.printWidth": 120
+```
+
+## Loading Games
+
+Upgrade your PC by editing your `load.js` file in your `quintos-games` project. 🥳
+
+```js
+QuintOS.game = 'PickAPath';
 ```
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen1.jpg)
@@ -179,6 +244,11 @@ This level's computer was inspired by the [1977 Commodore PET 2001 Series](https
 PETSCII character set: <https://style64.org/petscii/>
 
 - [Level 01 A](#level-01-a)
+  - [Pre-requisites for Javascript Development](#pre-requisites-for-javascript-development)
+  - [Setup](#setup)
+  - [Loading QuintOS](#loading-quintos)
+  - [Install Prettier for VSCode](#install-prettier-for-vscode)
+  - [Loading Games](#loading-games)
   - [Boolean Operators](#boolean-operators)
     - [NOT (aka negation)](#not-aka-negation)
     - [OR](#or)
@@ -190,10 +260,7 @@ PETSCII character set: <https://style64.org/petscii/>
   - [End of Level 01 A](#end-of-level-01-a)
 - [Level 01 B](#level-01-b)
   - [Arrays](#arrays)
+  - [array.includes(item)](#arrayincludesitem)
   - [Array length](#array-length)
-  - [More about prompt](#more-about-prompt)
-  - [Checking equivalence](#checking-equivalence)
-  - [Array includes](#array-includes)
-  - [Converting from String to Number](#converting-from-string-to-number)
   - [End of Level 01 B](#end-of-level-01-b)
   - [Computer History: Commodore PET](#computer-history-commodore-pet)
