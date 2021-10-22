@@ -2,13 +2,17 @@
 
 A simple guess the number game! The computer chooses a random number between 1 and 100, then challenges the player to guess the number.
 
-Make a file called `guessTheNumber.js` in your `quintos-games` folder, copy paste the template code into that file.
+## Setup
 
-https://raw.githubusercontent.com/quinton-ashley/IntroToJS/main/Level_00/guessTheNumber.js
+Just to get you started coding as quick as possible, use the online editor CodePen for your first game! For the next game you'll learn how to setup your own computer for development.
+
+Create an account on Github. Then create an account on CodePen, link it to your GitHub. Open this pen:
+
+https://codepen.io/qashto/pen/porNBjX?editors=0010
 
 ## Instructions for PART A
 
-Since you're just starting to write this program, don't make the number random yet. Create a varible called `num` using `let` and choose the number yourself to make the rest of your program easier to test.
+Since you're just starting to write this program, don't make the number random yet so you can test it out more easily. Create a varible called `num` using `let` and choose the number yourself.
 
 Tell the player to guess a number using `await prompt()` put your message (string) inside the parenthesis of the `prompt` function. Create the variable `guess` using `let`, assign it to the user's response to the `prompt`.
 
