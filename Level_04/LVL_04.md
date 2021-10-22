@@ -1,140 +1,230 @@
-# Level 04 A
+# Level 03 A
 
-Before you level up to level 3, complete the Pick a Path PART C challenge section. Edit your `load.js` file:
+Before you level up to level 2, complete the Guess the Number PART C challenge section. Edit your `load.js` file:
+
+```js
+QuintOS.level = 0;
+```
+
+After that you can upgrade to level 3! 🥳
 
 ```js
 QuintOS.level = 3;
-QuintOS.gameSelect = 'PickAPath';
 ```
 
-Before you can start working on the `TicTacToe` game, you'll have to prove your skills in Javascript. You should be able to complete the first few test sections quite quickly. Stop when you complete the challenge titled "Golf Code".
+![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen3.jpg)
 
-<https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-javascript>
+## Drawing text to the screen
 
-After you complete those challenges you can upgrade to level 4! 🥳
+`pc` is a global object that I made. In the past you've been using `prompt()`. Behind the scenes this function calls `pc.prompt()` which creates a rectangle, text, an input, and two buttons. On level 03 you'll use `pc` to draw text and buttons to the screen!
 
 ```js
-QuintOS.level = 4;
+//     (text          , x , y )
+pc.text('Hello World!', 10, 12);
 ```
 
-![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen4.jpg)
+`pc.text` expects at least three input arguments/parameters seperated by commas. The first input paramter is the string to display and the 2nd and 3rd are the x and y coordinates to display it on.
 
-## Coding Philosophy: Part 1
+## Creating functions 👷
 
-Good code should be easy for other programmers (humans) to read and efficient for your computer to run. Here are some guidelines for how to write good code!
-
-Above all, it's important to put effort into thinking of GOOD names for your variables. Good variable names in Javascript are short and concise descriptors. Write sufficiently detailed comments in your code too.
-
-Try not to rewrite the same exact lines of code in different places, put that code chunk in a function and use that function instead. Likewise if you have a chunk of code and you want to do something only slightly different at another point in your program, make a function with input parameters for the thing(s) that make it different. If you have a code chunk inside a function that is unrelated to the name/description you gave that function, move that code into its own function.
-
-## Return variables from a function
-
-functions can return a variable (only one). What will the value of `upHigh` be?
+How do we create our own functions? Using the `function` keyword!
 
 ```js
-function gimmeFive() {
-	return 5;
+function sayHello() {
+	// creates the function
+	console.log('hello!');
 }
 
-let upHigh = gimmeFive() + gimmeFive();
+sayHello(); // runs the function
 ```
 
-## Creating functions with input parameters
+## Creating a Button
 
-function with input parameters x and y, returns the value of x^2 \* y^2
+Let's learn how to add a button. The `pc.button` function is just like `pc.text` but it also expects a fourth input parameter, a callback function that gets run when the button is clicked.
+
+A callback function is a function passed as an input argument to a function that will run the callback function. They used to be used for nearly everything asynchronous in JavaScript. These days callbacks are mainly just used for events, like button clicks.
 
 ```js
-function doMyMathHomework(x, y) {
-	return x * x * y * y;
+function btnClick() {
+	console.log('You clicked the button!');
 }
-
-doMyMathHomework(1, 3); // returns 9
-doMyMathHomework(2, 5); // what does this return?
+//       (text       , x, y, function)
+pc.button('Click me!', 5, 5, btnClick);
 ```
 
-## Arrow function syntax
+## End of Level 03 A
 
-You can also create function using the arrow syntax.
+- `pc` object
+- how to create functions
+- `pc.button(txt, x, y, func)`
+
+# Level 03 B
+
+## Recursion
+
+Recursion is when a function calls itself. It's another way to loop code in addition to for loops and while loops.
 
 ```js
-//       (   text    , x, y, action)
-pc.button('click me!', 0, 0, () => {
-	console.log('button clicked!');
-});
+function doRecursion() {
+	doRecursion(); // infinite loop! OH NO!
+}
 ```
 
-## Two Dimensional Arrays
-
-A two dimensional array (aka 2D array) is an array of arrays.
+Example of a recursion loop that ends when the player's score reaches 20.
 
 ```js
-// red and black checkers on a checkerboard
-let board = [
-	[' ', ' ', ' ', 'r', ' ', 'B', ' ', ' '],
-	[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
-	[' ', ' ', ' ', ' ', ' ', ' ', ' ', 'r'],
-	[' ', ' ', ' ', ' ', 'r', ' ', ' ', ' '],
-	[' ', 'B', ' ', ' ', ' ', ' ', ' ', 'b'],
-	[' ', ' ', 'b', ' ', ' ', ' ', 'b', ' '],
-	[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
-	[' ', ' ', ' ', ' ', 'b', ' ', 'b', ' ']
-];
-```
+let score = 0;
 
-Two dimensional data, such as checker board piece positions, can be stored in two dimensional arrays. In the example `"r"` represents a single red piece, uppercase `"R"` represents a king (two stacked red pieces).
-
-How could we access the red piece on the top row?
-
-```js
-board[0][3]; // row is 0, column is 3
-```
-
-`board[0]` gets the first row in board array and the `[3]` after that gets us the piece at column 3 in that row array. How could we access the red peice in the middle of the board?
-
-## Nested for loops
-
-A for loop inside a for loop? FORLOOPCEPTION! 😮
-
-```js
-for (let i = 0; i < rows; i++) {
-	for (let j = 0; j < columns; j++) {
-		// nested for loop
+function doRecursion() {
+	//
+	// ... game code here ...
+	score++;
+	//
+	if (score < 20) {
+		doRecursion();
 	}
 }
 ```
 
-How could we use a nested for loop to clear the board of all the pieces by assigning a blank space " " to every element in the `board` array?
+## Erasing a button
 
-## End of Level 04 A
+Remove buttons from the screen by using the erase function on them. You must store the button returned by `pc.button` to use the `erase` function on it.
 
-- 2d Arrays
-- nested for loops
+```js
+let btn = pc.button('Click this!', 10, 10, clickResponse);
+btn.erase();
+```
 
-# Level 04 B
+## Implied boolean conditions
 
-## Coding Philosophy: Part 2
+In this example, `playerIsDead` is a boolean varible.
 
-Solve complex problems by thinking algorithmically! That means breaking problems down step by step. "A journey of a thousand miles begins with a single step". If you get stuck on a problem you may be overcomplicating it. Keep things as simple as possible at first and test often after adding new code! Doing this will help prevent you from getting stuck.
+```js
+let playerIsDead = false;
+```
 
-## Artificial Intelligence in Games
+If `playerIsDead` gets set to `true` while the user is playing a game, then tell the user "Game Over!".
 
-Making an AI for a game, even for TicTacToe, might sound daunting but you already know enough about programming to do it! AI is just code that reacts to a game environment with an action.
+```js
+if (playerIsDead == true) {
+	await pc.alert('Game Over!');
+}
+```
 
-Try to think of the simplest method of making a move in Tic Tac Toe. Note it's not the same as the worst method, which would be deliberately making moves to help your opponent win.
+In Javascript you don't have to use `== true` in boolean conditions because checking for equivalence to `true` is implied. You can just put the variable in a boolean condition on it's own.
 
-In TicTacToe the simplest method to make a valid move is to look at each space and place one's X or O mark in the first available space. Available spaces are spaces that are not already occupied by an X or O. This will be how your easy level AI player will make moves!
+```js
+if (playerIsDead) {
+	await pc.alert('Game Over!');
+}
+```
 
-## End of Level 04 B
+## How to check if a variable is defined
 
-- [Level 04 A](#level-04-a)
-	- [Coding Philosophy: Part 1](#coding-philosophy-part-1)
-	- [Return variables from a function](#return-variables-from-a-function)
-	- [Creating functions with input parameters](#creating-functions-with-input-parameters)
-	- [Arrow function syntax](#arrow-function-syntax)
-	- [Two Dimensional Arrays](#two-dimensional-arrays)
-	- [Nested for loops](#nested-for-loops)
-	- [End of Level 04 A](#end-of-level-04-a)
-- [Level 04 B](#level-04-b)
-	- [Coding Philosophy: Part 2](#coding-philosophy-part-2)
-	- [Artificial Intelligence in Games](#artificial-intelligence-in-games)
-	- [End of Level 04 B](#end-of-level-04-b)
+Sometimes you'll need to check if a variable is defined before you do something with it. If you put a variable that doesn't have a boolean value in a boolean condition by itself, Javascript will evaluate its "truthiness".
+
+```js
+let robot; // robot created but not defined
+
+// only have the robot shoot lasers if it is defined!
+if (robot) {
+	robot.shootLasers();
+}
+```
+
+You can check if a variable exists by putting it on it's own in a boolean condition. To check if it's undefined (falsy), put a negation operator `!` in front of the variable name in the boolean condition. Variables are considered undefined if they were not assigned a value.
+
+Remember that the prompt function will return a string with the text the user entered or `null` if the user cancelled out of the prompt. In this example, if `name` is set to any string of text it will be considered truthy. If `name` is `null` or an empty string it will be considered falsy and the user will be asked for their name again.
+
+```js
+let name;
+
+while (!name) {
+	name = await pc.prompt("What's your name?");
+
+	if (!name) {
+		await pc.alert('ERROR: You did not type anything!');
+	}
+}
+
+await pc.alert('Hello ' + name + '!');
+```
+
+The while loop will repeat until `name` is defined by the user. Neat!
+
+## truthy or falsy?
+
+Any value that is not falsy is truthy. Variables are falsy if they are:
+
+```js
+undefined;
+null;
+0; // the number 0
+(''); // an empty string
+```
+
+# Level 03 C
+
+## Date
+
+Take a look at the MDN documentation for [Date.now()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now) and run the JavaScript demo.
+
+`Date.now()` returns the current date in milliseconds.
+
+## Adding to Arrays
+
+So how do we add to arrays? By using the `.push()` function.
+
+```js
+let names = ['Amy', 'Ellie', 'Max'];
+let nums = [50, 21, 46, 83];
+
+names.push('Jake'); // adds "Jake" to names array
+// names -> ['Amy', 'Ellie', 'Max', 'Jake']
+
+nums.push(97); // adds 97 to the nums array
+// nums -> [50, 21, 46, 83, 97]
+```
+
+## asynchronous functions
+
+To use `await` inside a function you must make it an `async` function. Remember that `await` is used to wait for user interaction.
+
+```js
+async function sayHello() {
+	let name = await pc.prompt("What's your name?");
+	await pc.alert('Hello ' + name + '!');
+}
+```
+
+Async functions and callbacks are the two main forms of asynchronous programming in JavaScript. Async functions were created so that asynchronous code could be written linearly like synchronous code, one line after the other.
+
+## Computer History: GRiD Compass
+
+This level's computer is based on the GRiD Compass 1101. The following description is from http://oldcomputers.net/grid1101.html
+
+![](http://oldcomputers.net/pics/grid1101-right.jpg)
+
+Designed to be the ultimate portable computer, the clamshell-style GRiD Compass 1101 is the grand-daddy of all present-day laptop computers.
+
+The Compass is very high-tech, with its flat-black, die-cast magnesium-alloy case, and bright, sharp electroluminescent display (ELD). No other system packed so much speed and power in as small a case, and none had such a unique and large, easy-to-read screen, allowing full 80x24 text.
+
+Of course, all of these great features raised the price significantly. At $8150, the GRiD Compass 1101 was the most expensive personal computer you could buy.
+
+Originally developed for business executives, GRiDs were also used by the U.S. military 'in the field', and by NASA on the Space Shuttles during the 1980's and 90's. It's even been said that the US President's "nuclear football" at one time included a GRiD computer.
+
+- [Level 03 A](#level-03-a)
+  - [Drawing text to the screen](#drawing-text-to-the-screen)
+  - [Creating functions 👷](#creating-functions-)
+  - [Creating a Button](#creating-a-button)
+  - [End of Level 03 A](#end-of-level-03-a)
+- [Level 03 B](#level-03-b)
+  - [Recursion](#recursion)
+  - [Erasing a button](#erasing-a-button)
+  - [Implied boolean conditions](#implied-boolean-conditions)
+  - [How to check if a variable is defined](#how-to-check-if-a-variable-is-defined)
+  - [truthy or falsy?](#truthy-or-falsy)
+- [Level 03 C](#level-03-c)
+  - [Date](#date)
+  - [asynchronous functions](#asynchronous-functions)
+  - [Computer History: GRiD Compass](#computer-history-grid-compass)

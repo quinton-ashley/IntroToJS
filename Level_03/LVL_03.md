@@ -1,230 +1,138 @@
-# Level 03 A
+# Level 02 A
 
-Before you level up to level 2, complete the Guess the Number PART C challenge section. Edit your `load.js` file:
-
-```js
-QuintOS.level = 0;
-```
-
-After that you can upgrade to level 3! 🥳
+Before we can start working on `Hangman` we have to upgrade our PC! Edit your `load.js` file, set your level to 2! 🥳
 
 ```js
-QuintOS.level = 3;
+QuintOS.level = 2;
 ```
 
-![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen3.jpg)
+![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen2.jpg)
 
-## Drawing text to the screen
+Don't read all the sections in the Level 2 A lesson at once. Read a section, then work on Hangman, then read another section, work on Hangman. The information in each section is sequenced to correspond directly to what you need to learn to complete each step in making the Hangman game.
 
-`pc` is a global object that I made. In the past you've been using `prompt()`. Behind the scenes this function calls `pc.prompt()` which creates a rectangle, text, an input, and two buttons. On level 03 you'll use `pc` to draw text and buttons to the screen!
+## string.split(seperator)
+
+Strings have a lot of useful functions we can use. MDN, the Mozilla Developer Network, is a really great resource for learning JS. Documentation for the String class can be found here:
+
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String>
+
+`.split(char)` splits a string by a pattern creating an array of strings
 
 ```js
-//     (text          , x , y )
-pc.text('Hello World!', 10, 12);
+// split by ' ' to get an array of words
+'the red fox'.split(' ');
+// -> ['the', 'red', 'fox']
 ```
 
-`pc.text` expects at least three input arguments/parameters seperated by commas. The first input paramter is the string to display and the 2nd and 3rd are the x and y coordinates to display it on.
+# string.repeat(amount)
 
-## Creating functions 👷
-
-How do we create our own functions? Using the `function` keyword!
+You can also use a String function called [repeat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
 
 ```js
-function sayHello() {
-	// creates the function
-	console.log('hello!');
-}
-
-sayHello(); // runs the function
+let pattern = '><'.repeat(4);
+// pattern -> '><><><><';
 ```
 
-## Creating a Button
+## array.join(separator)
 
-Let's learn how to add a button. The `pc.button` function is just like `pc.text` but it also expects a fourth input parameter, a callback function that gets run when the button is clicked.
-
-A callback function is a function passed as an input argument to a function that will run the callback function. They used to be used for nearly everything asynchronous in JavaScript. These days callbacks are mainly just used for events, like button clicks.
+The Array `join` function creates a string by joining each element in the array together, inserting an optional seperator string between each item.
 
 ```js
-function btnClick() {
-	console.log('You clicked the button!');
-}
-//       (text       , x, y, function)
-pc.button('Click me!', 5, 5, btnClick);
+names.join(' ~ ');
+// -> 'Amy ~ Ellie ~ Max'
 ```
 
-## End of Level 03 A
+## End of Level 02 A
 
-- `pc` object
-- how to create functions
-- `pc.button(txt, x, y, func)`
+We learned how to:
 
-# Level 03 B
+- make while loops with a counter variable
+- split strings
+- get a character at a specific index in a string
 
-## Recursion
+# Level 02 B
 
-Recursion is when a function calls itself. It's another way to loop code in addition to for loops and while loops.
+## Accessing items in an Array
+
+The `[]` square brackets are used to create arrays and are also used to access items in an array.
 
 ```js
-function doRecursion() {
-	doRecursion(); // infinite loop! OH NO!
-}
+names[0]; // is 'Amy'
+nums[1]; // is 21
 ```
 
-Example of a recursion loop that ends when the player's score reaches 20.
+Items in an array can also be edited using `[]` (aka sub).
 
 ```js
-let score = 0;
-
-function doRecursion() {
-	//
-	// ... game code here ...
-	score++;
-	//
-	if (score < 20) {
-		doRecursion();
-	}
-}
+names[2] = 'Ben';
+// edits the list: ['Amy', 'Ellie', 'Ben'];
+nums[1] = 36;
+// edits the list: [50, 36, 42, 83]
 ```
 
-## Erasing a button
+## Accessing characters in a String
 
-Remove buttons from the screen by using the erase function on them. You must store the button returned by `pc.button` to use the `erase` function on it.
+To access characters in a string you can use `[]` but note that you can't edit them like you can with arrays.
 
 ```js
-let btn = pc.button('Click this!', 10, 10, clickResponse);
-btn.erase();
+let fox = 'the red fox';
+fox[4]; // is 'r'
+fox[8] = 'b'; // error
+// will not change fox string to 'the red box'
 ```
 
-## Implied boolean conditions
+Strings are immutable, meaning individual characters in the string can not be changed.
 
-In this example, `playerIsDead` is a boolean varible.
+## Counting with while loops
+
+The number of loops a while loop does can be counted with a variable.
 
 ```js
-let playerIsDead = false;
+let names = ['Jake', 'Ali', 'Ben'];
+
+let i = 0; // initialize i to 0
+
+// loop while i is less than names.length which is 3
+while (i < names.length) {
+	// print the next name in the list
+	console.log(i + '. ' + names[i]);
+
+	i = i + 1;
+} // in this loop i goes up from 0 to 1 to 2
 ```
 
-If `playerIsDead` gets set to `true` while the user is playing a game, then tell the user "Game Over!".
+The code above prints out a numbered list of names in the JS console.
+
+```txt
+0. Jake
+1. Ali
+2. Ben
+```
+
+## Breaking out of a loop early
+
+If you need to exit a while loop early, use the `break` keyword.
 
 ```js
-if (playerIsDead == true) {
-	await pc.alert('Game Over!');
-}
+break;
 ```
 
-In Javascript you don't have to use `== true` in boolean conditions because checking for equivalence to `true` is implied. You can just put the variable in a boolean condition on it's own.
+## End of Level 02 B
 
-```js
-if (playerIsDead) {
-	await pc.alert('Game Over!');
-}
-```
+## Computer History: Apple II
 
-## How to check if a variable is defined
+This level's computer was inspired by the [Apple II](https://www.youtube.com/watch?v=CxJwy8NsXFs)
 
-Sometimes you'll need to check if a variable is defined before you do something with it. If you put a variable that doesn't have a boolean value in a boolean condition by itself, Javascript will evaluate its "truthiness".
-
-```js
-let robot; // robot created but not defined
-
-// only have the robot shoot lasers if it is defined!
-if (robot) {
-	robot.shootLasers();
-}
-```
-
-You can check if a variable exists by putting it on it's own in a boolean condition. To check if it's undefined (falsy), put a negation operator `!` in front of the variable name in the boolean condition. Variables are considered undefined if they were not assigned a value.
-
-Remember that the prompt function will return a string with the text the user entered or `null` if the user cancelled out of the prompt. In this example, if `name` is set to any string of text it will be considered truthy. If `name` is `null` or an empty string it will be considered falsy and the user will be asked for their name again.
-
-```js
-let name;
-
-while (!name) {
-	name = await pc.prompt("What's your name?");
-
-	if (!name) {
-		await pc.alert('ERROR: You did not type anything!');
-	}
-}
-
-await pc.alert('Hello ' + name + '!');
-```
-
-The while loop will repeat until `name` is defined by the user. Neat!
-
-## truthy or falsy?
-
-Any value that is not falsy is truthy. Variables are falsy if they are:
-
-```js
-undefined;
-null;
-0; // the number 0
-(''); // an empty string
-```
-
-# Level 03 C
-
-## Date
-
-Take a look at the MDN documentation for [Date.now()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now) and run the JavaScript demo.
-
-`Date.now()` returns the current date in milliseconds.
-
-## Adding to Arrays
-
-So how do we add to arrays? By using the `.push()` function.
-
-```js
-let names = ['Amy', 'Ellie', 'Max'];
-let nums = [50, 21, 46, 83];
-
-names.push('Jake'); // adds "Jake" to names array
-// names -> ['Amy', 'Ellie', 'Max', 'Jake']
-
-nums.push(97); // adds 97 to the nums array
-// nums -> [50, 21, 46, 83, 97]
-```
-
-## asynchronous functions
-
-To use `await` inside a function you must make it an `async` function. Remember that `await` is used to wait for user interaction.
-
-```js
-async function sayHello() {
-	let name = await pc.prompt("What's your name?");
-	await pc.alert('Hello ' + name + '!');
-}
-```
-
-Async functions and callbacks are the two main forms of asynchronous programming in JavaScript. Async functions were created so that asynchronous code could be written linearly like synchronous code, one line after the other.
-
-## Computer History: GRiD Compass
-
-This level's computer is based on the GRiD Compass 1101. The following description is from http://oldcomputers.net/grid1101.html
-
-![](http://oldcomputers.net/pics/grid1101-right.jpg)
-
-Designed to be the ultimate portable computer, the clamshell-style GRiD Compass 1101 is the grand-daddy of all present-day laptop computers.
-
-The Compass is very high-tech, with its flat-black, die-cast magnesium-alloy case, and bright, sharp electroluminescent display (ELD). No other system packed so much speed and power in as small a case, and none had such a unique and large, easy-to-read screen, allowing full 80x24 text.
-
-Of course, all of these great features raised the price significantly. At $8150, the GRiD Compass 1101 was the most expensive personal computer you could buy.
-
-Originally developed for business executives, GRiDs were also used by the U.S. military 'in the field', and by NASA on the Space Shuttles during the 1980's and 90's. It's even been said that the US President's "nuclear football" at one time included a GRiD computer.
-
-- [Level 03 A](#level-03-a)
-  - [Drawing text to the screen](#drawing-text-to-the-screen)
-  - [Creating functions 👷](#creating-functions-)
-  - [Creating a Button](#creating-a-button)
-  - [End of Level 03 A](#end-of-level-03-a)
-- [Level 03 B](#level-03-b)
-  - [Recursion](#recursion)
-  - [Erasing a button](#erasing-a-button)
-  - [Implied boolean conditions](#implied-boolean-conditions)
-  - [How to check if a variable is defined](#how-to-check-if-a-variable-is-defined)
-  - [truthy or falsy?](#truthy-or-falsy)
-- [Level 03 C](#level-03-c)
-  - [Date](#date)
-  - [asynchronous functions](#asynchronous-functions)
-  - [Computer History: GRiD Compass](#computer-history-grid-compass)
+- [Level 02 A](#level-02-a)
+  - [String split()](#string-split)
+  - [Counting with while loops](#counting-with-while-loops)
+  - [Adding to Arrays](#adding-to-arrays)
+  - [Array join()](#array-join)
+  - [Accessing characters in a String](#accessing-characters-in-a-string)
+  - [End of Level 02 A](#end-of-level-02-a)
+- [Level 02 B](#level-02-b)
+  - [for loops](#for-loops)
+  - [Using the Debugger](#using-the-debugger)
+  - [Breaking out of a loop early](#breaking-out-of-a-loop-early)
+  - [End of Level 02 B](#end-of-level-02-b)
+  - [Computer History: Apple II](#computer-history-apple-ii)

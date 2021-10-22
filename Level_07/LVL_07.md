@@ -1,55 +1,55 @@
-# Level 07 A
+# Level 09 A
 
-Complete the bonus game, QuickTyping, before continuing to level 7. Edit your `load.js` file:
-
-```js
-QuintOS.level = 5;
-QuintOS.gameSelect = 'Sketchbook';
-```
-
-After that you can upgrade to level 7! 🥳
+After that you can upgrade to level 9! 🥳
 
 ```js
-QuintOS.level = 7;
+QuintOS.level = 9;
 ```
 
-## Coding Philosophy: Part 3
+Congratulations you've almost completed my IntroToJS course! In this section you'll learn more about the broader Javascript ecosystem, web development, and how to use p5.js and QuintOS in your own projects.
 
-Attempt to find a decent solution to a problem before concerning yourself with what the best solution could be. "Writing is rewriting", this is true for most people when writing essays, music, and often code too. No one can write code like the classical composer Mozart wrote music, by creating flawless first drafts that would sound exactly as he hoped. Start by thinking of the basic logic flow of complex problems, you might find it helpful to work things out on paper before you start coding. Then test and retest! Remember "Computer Science" is a science, it's all about experimentation, and lucky for us, unlike most research science, we can get pretty immediate results by running our programs! Getting things wrong is a big part of the process, having the program not do what you expect is an opportunity to learn. Often if you just keep trying and learning more you'll get it but if you get really stuck take a long break and come back to your code later. Taking a break to do something else can really help give you a new headspace and perspective on what you're trying to code.
+## Web Development
 
-## LCD
+Web development is primarily done with three languages HTML, CSS, and Javascript.
 
-LCDs, liquid-crystal displays, were commonly found on early handheld videogame systems due to their energy efficiency. For the Snake game you will use an 28w x 20h LCD with three programmable blocks named `snake head`, `snake body`, and `snake tail`.
+## HTML
 
-```js
-pc.lcd(block, x, y, direction);
-```
+HTML (HyperText Markup Language) is the standard markup language for documents designed to be displayed in a web browser. Unlike Javascript, [HTML is not a programming language](https://ischool.syr.edu/why-html-is-not-a-programming-language/). HTML forms the skeleton of the website, it denotes structural semantics for text such as headings, paragraphs, lists, links, quotes and other items.
 
-## Events
+The syntax of HTML is actually quite clunky by today's standards, each element is a written as a tag. `<body>` for example is called an opening tag which denotes the start of the body element. Opening tags have the name of the element surrounded with greater than and less than symbols. Closing tags use a slash before the name of the element `</body>`.
 
-Take a look at the p5.js way of getting input from the user's keyboard.
+The elements inside the opening and closing tags of an element are called child elements. The element that the child elements are inside are called it's parent element.
 
-https://p5js.org/reference/#/p5/keyCode
+https://codepen.io/qashto/pen/LYxJzJv
 
-How does this work? Let's take a look at the pure JavaScript that p5.js is using behind the scenes.
+## CSS
 
-https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+CSS (Cascading Style Sheet)
 
-https://developer.mozilla.org/en-US/docs/Web/API/Document/keydown_event
+CSS has variables, functions, it can do math, has it's own kind of if statements and switch statements, [it is considered to be a programming language by many developers](https://css-tricks.com/is-css-a-programming-language/). Professional front end developers that have advanced knowledge of CSS3, the latest edition of CSS, have created many incredible showcases of CSS on [CODEPEN](https://codepen.io).
 
-# Level 07 B
+A lot of web design work is done with sites like SquareSpace and Canva. Web designers also use Adobe XD.
 
-## Google's Snake Game
+If you are interested in web design check out [Behance](https://www.behance.net/) and [dribbble](https://dribbble.com/) as well.
 
-Check out Google's online snake game:
+## Aside
 
-https://www.google.com/fbx?fbx=snake_arcade
+Most courses that teach web development actually start by teaching HTML and CSS, since they are the primary languages for creating the visuals of most websites. I don't do that because HTML is not a programming language and neither is basic level CSS. I teach Javascript first to give students an understanding of what programming is.
 
-After losing a game the score window will show up, click on the settings icon in the bottom right corner. There are a few different game modes you can select between. Try all of them out and pick 3 that you'd like to implement yourself! :)
+# Level 09 B
 
-- [Level 07 A](#level-07-a)
-	- [Coding Philosophy: Part 3](#coding-philosophy-part-3)
-	- [LCD](#lcd)
-	- [Events](#events)
-- [Level 07 B](#level-07-b)
-	- [Google's Snake Game](#googles-snake-game)
+## Assigning default values to undefined input parameters
+
+## The Ternary Operator
+
+## Regular Expressions
+
+- [Level 09 A](#level-09-a)
+  - [Web Development](#web-development)
+  - [HTML](#html)
+  - [CSS](#css)
+  - [Aside](#aside)
+- [Level 09 B](#level-09-b)
+  - [Assigning default values to undefined input parameters](#assigning-default-values-to-undefined-input-parameters)
+  - [The Ternary Operator](#the-ternary-operator)
+  - [Regular Expressions](#regular-expressions)

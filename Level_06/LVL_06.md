@@ -1,234 +1,140 @@
-# Level 06 A
+# Level 04 A
 
-Complete the bonus game, Contain, before continuing to level 6. Edit your `load.js` file:
+Before you level up to level 3, complete the Pick a Path PART C challenge section. Edit your `load.js` file:
 
 ```js
-QuintOS.level = 5;
-QuintOS.gameSelect = 'Contain';
+QuintOS.level = 3;
+QuintOS.gameSelect = 'PickAPath';
 ```
 
-Now you're on level 6! 🥳
+Before you can start working on the `TicTacToe` game, you'll have to prove your skills in Javascript. You should be able to complete the first few test sections quite quickly. Stop when you complete the challenge titled "Golf Code".
 
-## Working with Inputs directly
+<https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-javascript>
 
-Up to this point whenever we worked with inputs we used `prompt()`, now we're going to be using inputs directly.
+After you complete those challenges you can upgrade to level 4! 🥳
 
 ```js
-let inp = input(value, x, y, onSubmit, onChange);
+QuintOS.level = 4;
 ```
 
-`inp` is the the `Input` object created, cursor blinking on the screen at position (x, y).
+![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen4.jpg)
 
-`value` is the initial text in the input, set to an empty string by default.
+## Coding Philosophy: Part 1
 
-`onSubmit` called when the user presses the enter key.
+Good code should be easy for other programmers (humans) to read and efficient for your computer to run. Here are some guidelines for how to write good code!
 
-`onChange` called when the user types any key that changes the input's value.
+Above all, it's important to put effort into thinking of GOOD names for your variables. Good variable names in Javascript are short and concise descriptors. Write sufficiently detailed comments in your code too.
 
-## Example use of Inputs
+Try not to rewrite the same exact lines of code in different places, put that code chunk in a function and use that function instead. Likewise if you have a chunk of code and you want to do something only slightly different at another point in your program, make a function with input parameters for the thing(s) that make it different. If you have a code chunk inside a function that is unrelated to the name/description you gave that function, move that code into its own function.
 
-Here's the code for the Calculator that runs after you exit the GuessTheNumber game.
+## Return variables from a function
+
+functions can return a variable (only one). What will the value of `upHigh` be?
 
 ```js
-let inp;
-
-// value is the text the user entered in the input
-function calculate(value) {
-	// eval() is a global function that evaluates the string input value as
-	// JavaScript code, for example if value is "5+3", result will be the number 8
-	let result = eval(value); // evaluate what the user entered
-
-	inp.erase(); // erase the old input
-
-	// create new input with it's initial value set to result
-	inp = pc.input(result, 0, 0, calculate);
+function gimmeFive() {
+	return 5;
 }
 
-// create the input
-inp = pc.input('', 0, 0, calculate);
+let upHigh = gimmeFive() + gimmeFive();
 ```
 
-## Loading Sounds
+## Creating functions with input parameters
 
-To make the Speak and Spell game we'll be loading sounds using the p5.js sound library (a core add-on to p5.js that I've added for you).
-
-https://p5js.org/examples/sound-load-and-play-sound.html
-
-## for of loops
-
-`for of` loops iterate through the values of an array or object.
+function with input parameters x and y, returns the value of x^2 \* y^2
 
 ```js
-let names = ['Jake', 'Ali', 'Max'];
-for (let name of names) {
-	console.log('Hello ' + name);
+function doMyMathHomework(x, y) {
+	return x * x * y * y;
 }
+
+doMyMathHomework(1, 3); // returns 9
+doMyMathHomework(2, 5); // what does this return?
 ```
 
-Result:
+## Arrow function syntax
 
-```txt
-Hello Jake
-Hello Ali
-Hello Ben
-```
-
-## for in loops
-
-`for in` loop iterates through the indexes/keys of an array or object.
+You can also create function using the arrow syntax.
 
 ```js
-let list = {
-	apples: 2,
-	bananas: 10,
-	pears: 4
-};
-for (let item in list) {
-	console.log('I need to get ' + list[item] + ' ' + item + '!');
-}
-```
-
-Result:
-
-```txt
-I need to get 2 apples!
-I need to get 10 bananas!
-I need to get 4 pears!
-```
-
-# Level 06 B
-
-## Callback Chaining
-
-If you try playing two sounds, one after the other like this it will not work!
-
-```js
-sound0.play();
-sound1.play();
-```
-
-Both sounds will be played at the same time! You have to use the `onended` function to be able to tell when the first sound has finished playing. `.onended(callback)` takes a callback function, the function is run aka "called" when the sound file stops playing.
-
-```js
-sound0.play();
-sound0.onended(() => {
-	sound1.play();
+//       (   text    , x, y, action)
+pc.button('click me!', 0, 0, () => {
+	console.log('button clicked!');
 });
 ```
 
-Inside `onended` you can either put the name of a function to call or an anonymous function. In this example an anonymous function, a function that isn't given a name is used. Note that it uses the arrow `=>` syntax instead of the `function` keyword.
+## Two Dimensional Arrays
 
-# Level 06 C
-
-If you have to use callbacks to play five sounds this is what it might look like. It's awful!
+A two dimensional array (aka 2D array) is an array of arrays.
 
 ```js
-sound0.play();
-sound0.onended(() => {
-	sound1.play();
-	sound1.onended(() => {
-		sound2.play();
-		sound2.onended(() => {
-			sound3.play();
-			sound3.onended(() => {
-				sound4.play();
-			});
-		});
-	});
-});
+// red and black checkers on a checkerboard
+let board = [
+	[' ', ' ', ' ', 'r', ' ', 'B', ' ', ' '],
+	[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+	[' ', ' ', ' ', ' ', ' ', ' ', ' ', 'r'],
+	[' ', ' ', ' ', ' ', 'r', ' ', ' ', ' '],
+	[' ', 'B', ' ', ' ', ' ', ' ', ' ', 'b'],
+	[' ', ' ', 'b', ' ', ' ', ' ', 'b', ' '],
+	[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+	[' ', ' ', ' ', ' ', 'b', ' ', 'b', ' ']
+];
 ```
 
-You might be thinking that callback chaining is not as neat and simple as using async and await like we did with other asynchronous code like prompts and alerts. Wouldn't it be great if we could do this instead?
+Two dimensional data, such as checker board piece positions, can be stored in two dimensional arrays. In the example `"r"` represents a single red piece, uppercase `"R"` represents a king (two stacked red pieces).
+
+How could we access the red piece on the top row?
 
 ```js
-await play(sound0);
-await play(sound1);
-await play(sound2);
-await play(sound3);
-await play(sound4);
+board[0][3]; // row is 0, column is 3
 ```
 
-To make a play function that we can `await`, we have to wrap it in a Promise.
+`board[0]` gets the first row in board array and the `[3]` after that gets us the piece at column 3 in that row array. How could we access the red peice in the middle of the board?
 
-## Promises
+## Nested for loops
 
-Back in my day... when I was a young lad first learning JavaScript in 2017... async/await and Promises were not part of JavaScript yet! We had to use callbacks for everything asynchronous and it was awful. Check out what you'd have to do to delay some code:
-
-```js
-console.log('start timer');
-setTimeout(() => {
-	console.log('2 seconds passed');
-}, 2000);
-```
-
-I may sound like a grumpy old man but it really is true. Promises made JavaScript so much better. Let's learn how to make one! Here's `setTimeout()` wrapped in a promise.
+A for loop inside a for loop? FORLOOPCEPTION! 😮
 
 ```js
-function delay(time) => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve();
-    }, time);
-  });
-};
-
-async function timer() {
-	console.log('start timer');
-	await delay(2000); // delay program execution asynchronously for two seconds
-	console.log('2 seconds passed');
-}
-```
-
-`await` is used to wait until a Promise resolves or is rejected.
-
-Some devs call this "promisify-ing". Read more about promises here:
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
-
-A Promise will be in one of these states:
-
-    pending: initial state, neither fulfilled nor rejected.
-    fulfilled: meaning that the operation was completed successfully.
-    rejected: meaning that the operation failed.
-
-## Promisfied p5.js Sound
-
-```js
-function play(sound) {
-	return new Promise((resolve, reject) => {
-		sound.play();
-		sound.onended(() => {
-			resolve();
-		});
-	});
-}
-```
-
-Now we could even use a for loop to play a lot of sounds!
-
-```js
-async function playAllLetters() {
-	let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-	for (let i = 0; i < 26; i++) {
-		let letter = alphabet[i];
-		await play(letterSounds[letter]);
+for (let i = 0; i < rows; i++) {
+	for (let j = 0; j < columns; j++) {
+		// nested for loop
 	}
 }
 ```
 
-## Computer History: Speak and Spell
+How could we use a nested for loop to clear the board of all the pieces by assigning a blank space " " to every element in the `board` array?
 
-This level's computer is based on the classic children's toy from the 1980s, the electronic [Speak and Spell](<https://en.wikipedia.org/wiki/Speak_%26_Spell_(toy)>) made by Texas Instruments.
+## End of Level 04 A
 
-- [Level 06 A](#level-06-a)
-  - [Working with Inputs directly](#working-with-inputs-directly)
-  - [The JavaScript eval function](#the-javascript-eval-function)
-  - [Loading Sounds](#loading-sounds)
-  - [for of loops](#for-of-loops)
-  - [for in loops](#for-in-loops)
-- [Level 06 B](#level-06-b)
-  - [Callback Chaining](#callback-chaining)
-- [Level 06 C](#level-06-c)
-  - [Promises](#promises)
-  - [Promisfied p5.js Sound](#promisfied-p5js-sound)
-  - [Computer History: Speak and Spell](#computer-history-speak-and-spell)
+- 2d Arrays
+- nested for loops
+
+# Level 04 B
+
+## Coding Philosophy: Part 2
+
+Solve complex problems by thinking algorithmically! That means breaking problems down step by step. "A journey of a thousand miles begins with a single step". If you get stuck on a problem you may be overcomplicating it. Keep things as simple as possible at first and test often after adding new code! Doing this will help prevent you from getting stuck.
+
+## Artificial Intelligence in Games
+
+Making an AI for a game, even for TicTacToe, might sound daunting but you already know enough about programming to do it! AI is just code that reacts to a game environment with an action.
+
+Try to think of the simplest method of making a move in Tic Tac Toe. Note it's not the same as the worst method, which would be deliberately making moves to help your opponent win.
+
+In TicTacToe the simplest method to make a valid move is to look at each space and place one's X or O mark in the first available space. Available spaces are spaces that are not already occupied by an X or O. This will be how your easy level AI player will make moves!
+
+## End of Level 04 B
+
+- [Level 04 A](#level-04-a)
+	- [Coding Philosophy: Part 1](#coding-philosophy-part-1)
+	- [Return variables from a function](#return-variables-from-a-function)
+	- [Creating functions with input parameters](#creating-functions-with-input-parameters)
+	- [Arrow function syntax](#arrow-function-syntax)
+	- [Two Dimensional Arrays](#two-dimensional-arrays)
+	- [Nested for loops](#nested-for-loops)
+	- [End of Level 04 A](#end-of-level-04-a)
+- [Level 04 B](#level-04-b)
+	- [Coding Philosophy: Part 2](#coding-philosophy-part-2)
+	- [Artificial Intelligence in Games](#artificial-intelligence-in-games)
+	- [End of Level 04 B](#end-of-level-04-b)

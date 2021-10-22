@@ -1,8 +1,10 @@
 # Level 01 A
 
-Congrats, you completed level 0! Before you can work on the next game, let's get you setup for JavaScript development on your computer.
+Congratulations, you completed level 0! 🥳
 
-## Pre-requisites for Javascript Development
+Before you can work on the next game, let's get you setup so you can write JavaScript on your own computer without using an online code editor.
+
+## Requirements for Offline Development
 
 - install Google Chrome (Firefox, Edge, and Opera are good too, just don't use Safari)
 - only Windows users need to install [Git](https://gitforwindows.org/) (macOS and most Linux distros come with git pre-installed)
@@ -244,7 +246,7 @@ This level's computer was inspired by the [1977 Commodore PET 2001 Series](https
 PETSCII character set: <https://style64.org/petscii/>
 
 - [Level 01 A](#level-01-a)
-  - [Pre-requisites for Javascript Development](#pre-requisites-for-javascript-development)
+  - [Requirements for Offline Development](#requirements-for-offline-development)
   - [Setup](#setup)
   - [Loading QuintOS](#loading-quintos)
   - [Install Prettier for VSCode](#install-prettier-for-vscode)
