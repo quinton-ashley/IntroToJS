@@ -1,5 +1,3 @@
-const log = console.log;
-
 // space and period are transparent
 let palette = {
 	k: '#000000', // blacK
@@ -44,7 +42,6 @@ let brushColor = 'k'; // black
 
 function draw() {
 	background(50);
-
 
 	image(paletteBoxes, 0, 0);
 	image(brushImg, mouseX, mouseY);

@@ -1,5 +1,4 @@
-// screen width is 640, height is 400
-const log = console.log;
+// screen width is 320, height is 200
 
 // sprites are scaled x2 by default
 let imgBall = spriteArt(`

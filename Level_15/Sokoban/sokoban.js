@@ -1,5 +1,3 @@
-const log = console.log;
-
 let loading = true;
 
 function keyPressed() {

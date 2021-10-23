@@ -98,15 +98,15 @@ let smiley = `
 🔳🔳🔳🟨🟨🟨🟨`;
 ```
 
-## End of Level 05 A
+## End of Level 02 A
 
-Here's what you learned about in Level 5:
+Here's what you learned about in Level 2:
 
 - objects `{ key: 'value' }`
 - p5.js basics
 - `spriteArt()` function
 
-# Level 05 B
+# Level 02 B
 
 ## Vectors
 
@@ -117,17 +117,14 @@ In Physics a vector is a direction in which something is moving and the magnitud
 In 2D (two dimensional) games, a sprite's vector can be stored as the velocity, aka speed, at which a sprite is moving along the x-axis and the velocity it's moving along the y-axis per frame.
 
 ```js
-this.velocity = {
-	x: 1,
-	y: 1
-};
+ball.velocity.x = 1;
+ball.velocity.y = 1;
 ```
 
 To make the ball bounce off the paddles and walls, we'll have to change its vector. When the ball touches the paddles we will invert its x velocity. When the ball touches the wall we will invert its y velocity.
 
 ## End of Level 05 B
 
-- classes: `class`, `get`, `this`, and `new`
 - vectors (x and y velocities)
 
 ## Computer History: Commodore 64
@@ -139,8 +136,8 @@ This level's computer is based on the Commodore 64
   - [p5.js Basics](#p5js-basics)
   - [spriteArt](#spriteart)
   - [Drawing Images in p5.js](#drawing-images-in-p5js)
-  - [End of Level 05 A](#end-of-level-05-a)
-- [Level 05 B](#level-05-b)
+  - [End of Level 02 A](#end-of-level-02-a)
+- [Level 02 B](#level-02-b)
   - [Vectors](#vectors)
   - [End of Level 05 B](#end-of-level-05-b)
   - [Computer History: Commodore 64](#computer-history-commodore-64)

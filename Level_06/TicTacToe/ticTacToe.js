@@ -1,5 +1,3 @@
-const log = console.log; // shortcut for console.log
-
 const title = `
 TTTTT IIIII   CCC
 	T     I    C
