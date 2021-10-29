@@ -8,10 +8,10 @@ For this challenge section you'll make a hangman inspired mini-game from Wheel o
 
 Implement the first mini-game mode in Wheel of Fortune. In this mini-game letters should gradually appear in their correct positions in the phrase until the player presses a buzzer indicating they want to guess the whole phrase. You can watch Wheel of Fortune on YouTube to see the game in action!
 
-Make boxes using `pc.rect(x, y, w, h)` around the blank spaces and letters just like in the Wheel of Fortune TV show.
+Make boxes using `textRect(x, y, w, h)` around the blank spaces and letters just like in the Wheel of Fortune TV show.
 
 ```js
-pc.rect(5, 5, 3, 3); // make a 3x3 rect at row 5 column 5 (5,5)
+textRect(5, 5, 3, 3); // make a 3x3 rect at row 5 column 5 (5,5)
 pc.text('w', 6, 6); // make letter 'w' at row 6 column 6 (6,6)
 ```
 

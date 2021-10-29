@@ -36,30 +36,26 @@ let img = spriteArt('w.w');
 
 This example code would create an image with one white pixel, followed by a transparent pixel, and then another white pixel. You can also use spaces to indicate transparent pixels.
 
-Here's the full color palette you can use, same colors as the real Commodore 64! The keys are the letters (and emoji in the comments) and the values are the html hexadecimal color values.
+Here's the full color palette you can use, same colors as the real ZX Spectrum! The keys are the letters and the values are the html hexadecimal color values.
 
 ```js
 let palette = {
 	' ': '', // transparent 🔲
 	'.': '', // transparent 🔳
-	k: '#000000', // blacK ⬛
-	d: '#626252', // Dark-gray ⚫
-	m: '#898989', // Mid-gray 🔘
-	l: '#adadad', // Light-gray ⚪
-	w: '#ffffff', // White ⬜
-	c: '#cb7e75', // Coral 🔴
-	r: '#9f4e44', // Red 🟥
-	n: '#6d5412', // browN 🟫
-	o: '#a1683c', // Orange 🟧
-	y: '#c9d487', // Yellow 🟨
-	e: '#9ae29b', // light grEEn 🟢
-	g: '#5cab5e', // Green 🟩
-	t: '#6abfc6', // Teal 🔵
-	b: '#50459b', // Blue 🟦
-	i: '#887ecb', // Indigo 🟣
-	p: '#a057a3' // Purple 🟪
+	b: '#000000', // Black ⬛
+	u: '#0000d8', // blUe 🟦
+	r: '#d80000', // Red 🟥
+	m: '#d800d8', // Magenta 🔴
+	g: '#00d800', // Green 🟩
+	c: '#00d8d8', // Cyan 🔵
+	y: '#d8d800', // Yellow 🟨
+	w: '#ffffff' // White ⬜
 };
 ```
+
+|--|--|
+|letter|color|
+|b|black|
 
 I will explain how this function works in the level 8 lesson.
 
@@ -84,19 +80,6 @@ function draw() {
 Creates a simple yellow and black smiley face 😃 and draws it on every frame at (0, 0) on the p5.js canvas.
 
 Note that you don't have to complete the width of each line with transparent pixels. Also note that by default these sprite art images are scaled by a factor of 2, so if you make a smiley that's 10 characters wide the image will actually have a width of 20 pixels when drawn on the p5.js canvas.
-
-You can also use emoji squares and circles:
-🔲🔳⬛⚫🔘⚪⬜🔴🟥🟫🟧🟨🟢🟩🔵🟦🟣🟪
-
-```js
-let smiley = `
-🔳🔳🔳🟨🟨🟨🟨
-🔳🟨🟨⬛🟨🟨⬛🟨🟨
-🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨
-🟨🟨⬛🟨🟨🟨🟨⬛🟨🟨
-🔳🟨🟨⬛⬛⬛⬛🟨🟨
-🔳🔳🔳🟨🟨🟨🟨`;
-```
 
 ## End of Level 02 A
 
@@ -132,12 +115,12 @@ To make the ball bounce off the paddles and walls, we'll have to change its vect
 This level's computer is based on the Commodore 64
 
 - [Level 02 A](#level-02-a)
-  - [What is p5.js?](#what-is-p5js)
-  - [p5.js Basics](#p5js-basics)
-  - [spriteArt](#spriteart)
-  - [Drawing Images in p5.js](#drawing-images-in-p5js)
-  - [End of Level 02 A](#end-of-level-02-a)
+	- [What is p5.js?](#what-is-p5js)
+	- [p5.js Basics](#p5js-basics)
+	- [spriteArt](#spriteart)
+	- [Drawing Images in p5.js](#drawing-images-in-p5js)
+	- [End of Level 02 A](#end-of-level-02-a)
 - [Level 02 B](#level-02-b)
-  - [Vectors](#vectors)
-  - [End of Level 05 B](#end-of-level-05-b)
-  - [Computer History: Commodore 64](#computer-history-commodore-64)
+	- [Vectors](#vectors)
+	- [End of Level 05 B](#end-of-level-05-b)
+	- [Computer History: Commodore 64](#computer-history-commodore-64)

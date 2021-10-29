@@ -6,7 +6,9 @@ Learn to code by making games in JavaScript using [QuintOS](https://github.com/q
 
 In this course, students level up their coding skills by making games using the most popular modern programming language: JavaScript! No prior coding experience is required. This course was primarily designed for students ages 13-16 but anyone ages 12+ can join.
 
-Students will run the JavaScript games they develop right in their Google Chrome web browser, which will display a vintage virtual computer that uses QuintOS, a graphics system I created. As students level up their coding skills, their virtual computer will get upgraded. The virtual computers are modeled after the CASIO FX-702P, Commodore PET, Apple II, GRiD Compass, Commodore 64, and the Nintendo GameBoy. Students will also learn how to share their code online using GitHub and Replit.
+Students develop these games using QuintOS, a graphics system I created to make learning to program easier and more fun. The games run on vintage virtual computers displayed in their web browser. As students level up their coding skills, their virtual computer will get upgraded. The virtual computers are modeled after the CASIO FX-702P, Commodore PET, ZX Spectrum, Apple II, GRiD Compass, Commodore 64, Speak and Spell, classic arcade cabinets, and the Nintendo GameBoy.
+
+Students will also learn how to share their games online using GitHub and CodePen.
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/QuintOS_promo.jpg)
 
@@ -24,7 +26,7 @@ Students will run the JavaScript games they develop right in their Google Chrome
 | "Quinton helped me on an assignment I was stuck on for almost a week that involved the implementation of airplane runways. Such a good teacher and explained certain imperfections and improvements to my code! I've never had any tutor help me so much while being an encouraging and uplifting teacher!" | [Read more reviews](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/Quinton_Ashley_Student_Reviews.pdf) |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 
-2021 Summer camps have been cancelled, if you'd like to sign up for private lessons contact me: qashto@gmail.com
+If you'd like to sign up for private lessons contact me: qashto@gmail.com
 
 Join the [QuintOS Discord server](https://discord.gg/5pcyKWRwSB) to chat with other students taking this course!
 
