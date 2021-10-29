@@ -58,7 +58,7 @@ You can also create function using the arrow syntax.
 
 ```js
 //       (   text    , x, y, action)
-pc.button('click me!', 0, 0, () => {
+button('click me!', 0, 0, () => {
 	console.log('button clicked!');
 });
 ```
@@ -127,14 +127,14 @@ In TicTacToe the simplest method to make a valid move is to look at each space a
 ## End of Level 04 B
 
 - [Level 04 A](#level-04-a)
-	- [Coding Philosophy: Part 1](#coding-philosophy-part-1)
-	- [Return variables from a function](#return-variables-from-a-function)
-	- [Creating functions with input parameters](#creating-functions-with-input-parameters)
-	- [Arrow function syntax](#arrow-function-syntax)
-	- [Two Dimensional Arrays](#two-dimensional-arrays)
-	- [Nested for loops](#nested-for-loops)
-	- [End of Level 04 A](#end-of-level-04-a)
+  - [Coding Philosophy: Part 1](#coding-philosophy-part-1)
+  - [Return variables from a function](#return-variables-from-a-function)
+  - [Creating functions with input parameters](#creating-functions-with-input-parameters)
+  - [Arrow function syntax](#arrow-function-syntax)
+  - [Two Dimensional Arrays](#two-dimensional-arrays)
+  - [Nested for loops](#nested-for-loops)
+  - [End of Level 04 A](#end-of-level-04-a)
 - [Level 04 B](#level-04-b)
-	- [Coding Philosophy: Part 2](#coding-philosophy-part-2)
-	- [Artificial Intelligence in Games](#artificial-intelligence-in-games)
-	- [End of Level 04 B](#end-of-level-04-b)
+  - [Coding Philosophy: Part 2](#coding-philosophy-part-2)
+  - [Artificial Intelligence in Games](#artificial-intelligence-in-games)
+  - [End of Level 04 B](#end-of-level-04-b)

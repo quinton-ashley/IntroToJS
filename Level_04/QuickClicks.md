@@ -18,7 +18,7 @@ After the player clicks a button it should get erased. Do not attempt to erase a
 
 Before the game starts be sure to tell the user how to play!
 
-Tip! Remember alert windows `await pc.alert(msg)`
+Tip! Remember alert windows `await alert(msg)`
 
 After 10 clicks of the button you'll show the user some results regarding how fast they clicked the buttons. To find the speed at which they click between buttons you'll first need to create an array of times. Track how fast it takes the player to click the button using [Date.now()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date). Each time they click the button add the current time in milliseconds to the array of times.
 
@@ -42,7 +42,7 @@ for (let i = 0; i < loopAmount; i++) {
 
 After 10 clicks calculate the user's average, slowest, and fastest response times. Display these statistics using an alert window.
 
-Add a background pattern to the game that should cover the entire space within the frame. Create this pattern yourself using for loops by drawing with `pc.text(txt, x, y)`
+Add a background pattern to the game that should cover the entire space within the frame. Create this pattern yourself using for loops by drawing with `text(txt, row, col)`
 
 You can also use a String function called [repeat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
 

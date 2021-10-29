@@ -9,15 +9,15 @@ function onChange(value) {
 }
 
 async function nextWord() {
-	await pc.erase(); // erase the screen
+	await erase(); // erase the screen
 
 	// create the input for letters
-	inp = pc.input('', 0, 0, onSubmit, onChange);
+	inp = input('', 0, 0, onSubmit, onChange);
 }
 
 async function startGame() {
-	await pc.alert('Press enter to start');
-	pc.input('', 0, 1, nextWord); // input on row 1
+	await alert('Press enter to start');
+	input('', 0, 1, nextWord); // input on row 1
 }
 
 startGame();

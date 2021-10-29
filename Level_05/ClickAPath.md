@@ -8,7 +8,7 @@ In your `GAMES` directory make a new folder `ClickAPath` and new file `clickAPat
 
 ## Instructions
 
-Make at least the first "page" of the story illustrated and interactive using the mouse cursor. Instead of using `pc.prompt` to ask the user to make choices, use `pc.text`. Instead of getting player's choices via the string returned from `pc.prompt`, make buttons using `pc.button`.
+Make at least the first "page" of the story illustrated and interactive using the mouse cursor. Instead of using `prompt` to ask the user to make choices, use `text`. Instead of getting player's choices via the string returned from `prompt`, make buttons using `button`.
 
 To use the text based art in your code you will store the text art as strings. Use a backtick character (the key to the left of the number 1 key on your keyboard) to store the art. Note that if the art includes a backtick character it must be "escaped" using a backslash in front of it. "escaped" in this context means that the backtick will not be interpreted as the end of the string if their is a backslash in front of it. Because backslash is a special character also used for newlines `\n` and tabs `\t`, if you want to include an actual backslash in your text art string you must escape it as well with a backslash. This means to have one backslash show up in your text art you have to use two. You saw an example of this in the hangman text art.
 

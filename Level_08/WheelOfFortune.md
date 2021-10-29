@@ -12,7 +12,7 @@ Make boxes using `textRect(x, y, w, h)` around the blank spaces and letters just
 
 ```js
 textRect(5, 5, 3, 3); // make a 3x3 rect at row 5 column 5 (5,5)
-pc.text('w', 6, 6); // make letter 'w' at row 6 column 6 (6,6)
+text('w', 6, 6); // make letter 'w' at row 6 column 6 (6,6)
 ```
 
 Use `for` loops to make all the boxes for the phrase!

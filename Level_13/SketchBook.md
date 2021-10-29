@@ -18,9 +18,9 @@ Start by making a 20x10 grid of gray squares with a black border. The squares wi
 
 When the user clicks on a square the color should change to the color on the user's brush. Convert mouseX and mouseY to their equivalent (i, j) coordinates in the `pixels` 2D array. You will need `Math.floor()` (which always rounds down).
 
-When the program starts, use `pc.prompt()` to ask the user how big the image should be in this format: `widthxheight` (example: `20x10`)
+When the program starts, use `prompt()` to ask the user how big the image should be in this format: `widthxheight` (example: `20x10`)
 
-Next ask the user to pick a background color using `pc.text()`, after they choose a color use `await pc.erase()`
+Next ask the user to pick a background color using `text()`, after they choose a color use `await erase()`
 
 Make a "Save Image" button, when the user presses it, your program should create their image using `spriteArt()` and use the `save()` function of that p5 Image object to save it.
 

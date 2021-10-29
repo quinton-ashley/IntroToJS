@@ -17,7 +17,7 @@ Copy the `SpeakAndSpell` folder into your `quintos-games` project `GAMES` folder
 
 First work on the preload file that will load all the sound files before `speakAndSpell.js` is started. Load all the letter sounds into an array `letterSounds`.
 
-Due to browser restrictions that improved everyone's internet browsing experience by preventing websites from playing unwanted music or ads when you visit them, you must get user input before playing any sounds. If you try to play a sound without the user interacting with a web page the browser throws this error: "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page.". That gesture on the page can be as simple as the user pressing enter on the keyboard or clicking a button. This is why in the template code I use `pc.alert()` to get one of those user interactions before starting the game.
+Due to browser restrictions that improved everyone's internet browsing experience by preventing websites from playing unwanted music or ads when you visit them, you must get user input before playing any sounds. If you try to play a sound without the user interacting with a web page the browser throws this error: "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page.". That gesture on the page can be as simple as the user pressing enter on the keyboard or clicking a button. This is why in the template code I use `alert()` to get one of those user interactions before starting the game.
 
 Make the Speak and Spell say any letter you type in the input using the onChange callback function.
 

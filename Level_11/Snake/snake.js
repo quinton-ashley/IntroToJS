@@ -2,8 +2,8 @@
 
 let score = 0;
 
-pc.text('SNAKE', 0, 0);
-pc.text(score, 0, 1);
+text('SNAKE', 0, 0);
+text(score, 0, 1);
 
 let snake = [
 	{
@@ -22,8 +22,8 @@ function draw() {
 	if (frameCount % speed != 0) return;
 
 	// set lcd segment to null
-	pc.lcd(null, snake[0].x, snake[0].y);
+	lcd(null, snake[0].x, snake[0].y);
 
 	snake[0].x++; // move snake head
-	pc.lcd(snake[0].block, snake[0].x, snake[0].y, snake[0].direction);
+	lcd(snake[0].block, snake[0].x, snake[0].y, snake[0].direction);
 }

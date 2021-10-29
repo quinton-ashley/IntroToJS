@@ -63,6 +63,6 @@ distance = (x2-x1)²+(y2-y1)²
 
 Make the total speed of the ball increase as the game goes on.
 
-Use `pc.text()` to display the player's score, it can be based on the number of bounces they've gotten on their paddles and/or the amount of time they contained at least two balls.
+Use `text()` to display the player's score, it can be based on the number of bounces they've gotten on their paddles and/or the amount of time they contained at least two balls.
 
-The game ends when the player runs out of balls! Show them a "Game Over" screen and then let them try again. Use `await pc.alert()`
+The game ends when the player runs out of balls! Show them a "Game Over" screen and then let them try again. Use `await alert()`

@@ -41,11 +41,11 @@ function calculate(value) {
 	inp.erase(); // erase the old input
 
 	// create new input with it's initial value set to result
-	inp = pc.input(result, 0, 0, calculate);
+	inp = input(result, 0, 0, calculate);
 }
 
 // create the input
-inp = pc.input('', 0, 0, calculate);
+inp = input('', 0, 0, calculate);
 ```
 
 ## Loading Sounds
