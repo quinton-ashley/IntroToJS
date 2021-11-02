@@ -2,11 +2,11 @@
 
 ## What is Computer Science?
 
-Why is this field of study called "Computer Science" and not "Program Writing" or "Code Mathematics"? It's because coding, the process of writing code, requires experimentation! Every time you add code to your program and test it out it's like doing a mini science experiment. Coding also requires research. Even professional programmers learn new things every day.
+Why is this field of study called "Computer Science" and not "Program Writing" or "Code Mathematics"? It's because coding requires experimentation! Every time you change your code and test it out it's like doing a mini science experiment. Coding also requires research. Even professional programmers learn new things every day.
 
 These lessons will teach you how to code in JavaScript, which is the most popular modern programming language and my personal favorite!
 
-Since you're just starting out, you will have to memorize some vocabulary, "grammar", and syntax to learn this new language. Learning to code isn't what programming is all about though, just like learning to play scales isn't what being a musician is, putting on a costume and memorizing lines isn't what acting is. In these lessons you will learn to code and I will also try to teach you programming, which is a skill you can develop over the course of your whole life.
+Since you're just starting out, you will have to memorize some vocabulary, "grammar", and syntax to learn this new language. Learning to code isn't what programming is all about though, just like learning to play scales isn't what being a musician is, putting on a costume and memorizing lines isn't what acting is. In these lessons you will learn to code and how to think like a programmer. Programming is a skill you can develop over the course of your whole life!
 
 As you may expect, programming will be really fun and interesting for you if you like abstract problem solving, in this way it is also similar to Math. Programming has a language arts aspect too. You will not only strive to write efficient code but also code that is easily understood by other programmers.
 
