@@ -4,34 +4,20 @@ Tic-tac-toe (also known as noughts and crosses, Xs and Os, or X'y O'sies) is a p
 
 ## Instructions for PART A
 
-Implement TicTacToe between two human players. Start by finishing the template code, create all the big buttons using a nested for loop. Use `bigSpace` as the text for the initial state of the buttons.
+Implement TicTacToe between two human players. Start by finishing the grid lines.
 
-Make a `btnClicked` function with row and column input parameters. Use an anonymous function to call `btnClicked` for all the buttons in the loop. When the first player clicks a button, record their move on the two dimensional `board` array with an 'x' and use `text` to draw a `bigX` on the button. After the first player makes their move, change turns so that when the second player clicks the button record their move as an 'o' and draw a `bigO` on the button.
+Create 9 buttons for all the empty spaces on the grid. Use `bigSpace` for the text of these buttons. Start with the top row, then middle row, and then do the last row.
 
-If a player tries to place their 'x' or 'o' on a space that is not empty, do not let them overwrite that space. Show the player an alert window that explains they can't put their mark there because the space is not empty. Show the alerts on the bottom right of the screen, don't let them overlap with the Tic Tac Toe grid or it will get erased when the alert window gets erased. Note that the alert function also accepts an optional width limit as a 4th input parameter: `alert(text, x, y, w)`
+Now create all the buttons using a nested for loop instead of doing them one by one. Pay attention to the intervals at which the buttons are placed.
+
+Make a `takeTurn` function with row and column input parameters. The click callback function for all the buttons should be an anonymous function. Inside the anonymous function call `takeTurn(row, col)`. For now try drawing a `bigX` on the clicked button using the `text` function.
+
+When the first player clicks a button, record their move on the two dimensional `board` array with an 'x' and use the `text` function to draw a `bigX` on the button. After the first player makes their move, change turns so that when the second player clicks the button record their move as an 'o' and draw a `bigO` on the button.
+
+If a player tries to place their 'x' or 'o' on a space that is not empty, do not let them overwrite that space. Show the player an alert window that explains they can't put their mark there because the space is not empty. Show the alerts on the bottom right of the screen, don't let them overlap with the Tic Tac Toe grid or it will get erased when the alert window gets erased. Note that the alert function also accepts an optional width limit as a 4th input parameter: `alert(text, row, col, w)`
 
 Create a function called `checkForWinner` that should take a mark ('x' or 'o') as an input parameter. Check for winners (three Xs or three Os in a row) on all horizontal and vertical rows using a single for loop. Also check for the two diagonals, no loop required.
 
 Create a function called `checkForDraw` that checks for a draw.
 
 After a game is complete, start a new game. Always show whose turn it is and a tally of the score in the top right corner.
-
-## Instructions for PART B
-
-Make buttons to let the user pick between starting a two player game or one player game against your AI player.
-
-Make three levels of AI player:
-
-- Easy : picks the first available space
-- Medium : picks any available space randomly
-- Hard : picks a winning move if available, blocks opponent's winning moves if they have any, otherwise it picks any available space
-
-Also make a "Challenge Mode" option for the AI difficulty. Make it progressive, so the player has to beat easy AI, then medium AI, before they play against hard AI.
-
-## Instructions for PART C
-
-TicTacToe is a solved game, meaning that if both players always play their best moves, the game will end in a forced draw.
-
-Try implementing a Very Hard AI player that's unbeatable and uses tricky strategies to beat unskilled players.
-
-First make a 0 player mode to test your Very Hard AI against your Hard AI. Have a limit to the number of matches that will be played. You should be able to view the results of each match.

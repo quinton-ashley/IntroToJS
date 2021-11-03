@@ -20,4 +20,6 @@ let imgPaddle = spriteArt('wwwwwwww\n'.repeat(46));
 
 function draw() {
 	/* PART A1: draw the ball and paddles inside the p5 main draw function */
+	// the `width` and `height` variables are the width and height of the screen
+	image(imgBall, width / 2, height / 2);
 }

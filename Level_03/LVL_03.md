@@ -1,9 +1,9 @@
-# Level 02 A
+# Level 03 A
 
-Before we can start working on `Hangman` we have to upgrade our PC! Edit your `load.js` file, set your level to 2! 🥳
+Before we can start working on `Hangman` we have to upgrade our PC! Edit your `load.js` file, set your level to 3! 🥳
 
 ```js
-QuintOS.level = 2;
+QuintOS.level = 3;
 ```
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen2.jpg)
@@ -24,15 +24,6 @@ Strings have a lot of useful functions we can use. MDN, the Mozilla Developer Ne
 // -> ['the', 'red', 'fox']
 ```
 
-# string.repeat(amount)
-
-You can also use a String function called [repeat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
-
-```js
-let pattern = '><'.repeat(4);
-// pattern -> '><><><><';
-```
-
 ## array.join(separator)
 
 The Array `join` function creates a string by joining each element in the array together, inserting an optional seperator string between each item.
@@ -42,7 +33,7 @@ names.join(' ~ ');
 // -> 'Amy ~ Ellie ~ Max'
 ```
 
-## End of Level 02 A
+## End of Level 03 A
 
 We learned how to:
 
@@ -117,22 +108,20 @@ If you need to exit a while loop early, use the `break` keyword.
 break;
 ```
 
-## End of Level 02 B
+## End of Level 03 B
 
 ## Computer History: Apple II
 
 This level's computer was inspired by the [Apple II](https://www.youtube.com/watch?v=CxJwy8NsXFs)
 
-- [Level 02 A](#level-02-a)
-  - [String split()](#string-split)
-  - [Counting with while loops](#counting-with-while-loops)
-  - [Adding to Arrays](#adding-to-arrays)
-  - [Array join()](#array-join)
-  - [Accessing characters in a String](#accessing-characters-in-a-string)
-  - [End of Level 02 A](#end-of-level-02-a)
+- [Level 03 A](#level-03-a)
+  - [string.split(seperator)](#stringsplitseperator)
+  - [array.join(separator)](#arrayjoinseparator)
+  - [End of Level 03 A](#end-of-level-03-a)
 - [Level 02 B](#level-02-b)
-  - [for loops](#for-loops)
-  - [Using the Debugger](#using-the-debugger)
+  - [Accessing items in an Array](#accessing-items-in-an-array)
+  - [Accessing characters in a String](#accessing-characters-in-a-string)
+  - [Counting with while loops](#counting-with-while-loops)
   - [Breaking out of a loop early](#breaking-out-of-a-loop-early)
-  - [End of Level 02 B](#end-of-level-02-b)
+  - [End of Level 03 B](#end-of-level-03-b)
   - [Computer History: Apple II](#computer-history-apple-ii)

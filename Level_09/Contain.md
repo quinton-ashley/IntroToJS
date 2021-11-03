@@ -1,7 +1,5 @@
 # Contain
 
-_This is a BONUS program, the main game for this level is SpeakAndSpell_
-
 Contain is a 1 player or 2-4 player co-op variant of Pong, with the goal being to keep multiple balls within a square surrounded by four small paddles. Contain at least two balls or it's game over!
 
 ## Instructions for PART A

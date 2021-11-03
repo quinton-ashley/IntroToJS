@@ -10,23 +10,13 @@ To make Pong we're going to use 2D graphics instead of text based graphics. p5.j
 
 https://p5js.org/get-started/
 
-p5.js puts a lot of functions into the global scope so you can use them without having to reference the p5 canvas object `p5.instance` first.
+p5.js uses a `setup` function for setting up your programs. I've already done the setup function for you though. So in your `pong.js` file you will just be working on the draw function.
 
-I already did the setup function for you. So in your `pong.js` file just make the draw function.
-
-```js
-function setup() {
-	createCanvas(320, 200); // creates canvas with width of 640 and height of 400
-	frameRate(60); // 60 frames per second
-	noStroke(); // no stroke line around shapes
-}
-```
-
-Your `draw` function will contain code for drawing a new frame. It will be looped 60 times per second, this is called the frame rate.
+The p5.js `draw` function should contain code for drawing an image (frame). It will be looped 60 times per second, this is called the frame rate. To animate objects on screen simply change their position everytime the draw function is run.
 
 ## spriteArt
 
-p5.js has it's own `createImage` function, but it's a bit complicated. I created a simple `spriteArt` function that we can use to make sprites for our games very easily!
+p5.js has it's own `createImage` function, but it's a bit complicated. I created a simple `spriteArt` function for QuintOS that we can use to make sprites for our games very easily!
 
 The first parameter to `spriteArt` is a string representing the color values of pixels.
 
@@ -36,28 +26,19 @@ let img = spriteArt('w.w');
 
 This example code would create an image with one white pixel, followed by a transparent pixel, and then another white pixel. You can also use spaces to indicate transparent pixels.
 
-Here's the full color palette you can use, same colors as the real ZX Spectrum! The keys are the letters and the values are the html hexadecimal color values.
+Here's the full color palette you can use for this game. They are the same colors as the real ZX Spectrum, which this level's computer is based on.
 
-```js
-let palette = {
-	' ': '', // transparent 🔲
-	'.': '', // transparent 🔳
-	b: '#000000', // Black ⬛
-	u: '#0000d8', // blUe 🟦
-	r: '#d80000', // Red 🟥
-	m: '#d800d8', // Magenta 🔴
-	g: '#00d800', // Green 🟩
-	c: '#00d8d8', // Cyan 🔵
-	y: '#d8d800', // Yellow 🟨
-	w: '#ffffff' // White ⬜
-};
-```
-
-|--|--|
-|letter|color|
-|b|black|
-
-I will explain how this function works in the level 8 lesson.
+| letter |     color      |
+| :----: | :------------: |
+|   .    | transparent 🔳 |
+|   b    |    Black ⬛    |
+|   u    |    blUe 🟦     |
+|   r    |     Red 🟥     |
+|   m    |   Magenta 🔴   |
+|   g    |    Green 🟩    |
+|   c    |    Cyan 🔵     |
+|   y    |   Yellow 🟨    |
+|   w    |    White ⬜    |
 
 ## Drawing Images in p5.js
 
@@ -77,19 +58,34 @@ function draw() {
 }
 ```
 
-Creates a simple yellow and black smiley face 😃 and draws it on every frame at (0, 0) on the p5.js canvas.
+Creates a simple yellow and black smiley face 😃 and draws it on every frame at (x = 0, y = 0) on the p5.js canvas.
 
-Note that you don't have to complete the width of each line with transparent pixels. Also note that by default these sprite art images are scaled by a factor of 2, so if you make a smiley that's 10 characters wide the image will actually have a width of 20 pixels when drawn on the p5.js canvas.
+Note that you don't have to complete the width of each line with transparent pixels, you can just leave it blank.
+
+## string.repeat(amount)
+
+To more easily create large spirte art images you can use a String function called [repeat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
+
+```js
+let pattern = '><'.repeat(4);
+// pattern -> '><><><><';
+```
+
+## p5.js documentation
+
+To learn more about p5.js you will have to reference the p5.js documentation. https://p5js.org/reference/
 
 ## End of Level 02 A
 
 Here's what you learned about in Level 2:
 
-- objects `{ key: 'value' }`
 - p5.js basics
-- `spriteArt()` function
+- the `spriteArt` function
+- the `repeat` string function
 
 # Level 02 B
+
+## Sprites
 
 ## Vectors
 
@@ -106,7 +102,7 @@ ball.velocity.y = 1;
 
 To make the ball bounce off the paddles and walls, we'll have to change its vector. When the ball touches the paddles we will invert its x velocity. When the ball touches the wall we will invert its y velocity.
 
-## End of Level 05 B
+## End of Level 02 B
 
 - vectors (x and y velocities)
 
@@ -119,8 +115,11 @@ This level's computer is based on the Commodore 64
 	- [p5.js Basics](#p5js-basics)
 	- [spriteArt](#spriteart)
 	- [Drawing Images in p5.js](#drawing-images-in-p5js)
+	- [string.repeat(amount)](#stringrepeatamount)
+	- [p5.js documentation](#p5js-documentation)
 	- [End of Level 02 A](#end-of-level-02-a)
 - [Level 02 B](#level-02-b)
+	- [Sprites](#sprites)
 	- [Vectors](#vectors)
-	- [End of Level 05 B](#end-of-level-05-b)
+	- [End of Level 02 B](#end-of-level-02-b)
 	- [Computer History: Commodore 64](#computer-history-commodore-64)
