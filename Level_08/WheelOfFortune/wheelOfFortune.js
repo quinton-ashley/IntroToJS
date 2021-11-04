@@ -15,13 +15,15 @@ let phrases =
 function displayBoxes() {}
 
 let bigBuzzer = `
- _
-| |__  _   _ ___________ _ __
+|⎺|__  _   _ ___________ _ __
 | '_ \\| | | |_  /_  / _ \\ '__|
 | |_) | |_| |/ / / /  __/ |
-|_.__/ \\__,_/___/___\\___|_|
-                              `;
+|_.__/ \\__,_/___/___\\___|_|`.slice(1);
+
+function buzz() {}
+
 /* Create the buzzer button */
+button(bigBuzzer, 18, 5, buzz);
 
 /* Add a letter to a random empty box */
 async function addLetter() {}

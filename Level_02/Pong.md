@@ -28,9 +28,9 @@ Make `ball` and `paddle` sprites. Instead of changing the ball's x and y positio
 
 Make a wall image `imgWall` with `spriteArt`. Place two walls at the top and bottom of the screen. You can make the `imgWall` one color or patterned or anything if you'd like (besides transparent haha).
 
-For now, try simply making the ball move straight down and then bounce off the bottom and top walls. When you get that to work have the ball go in a diagonal. When the ball touches either wall invert its y velocity.
+For now, try simply making the ball move straight down and then bounce off the bottom and top walls. When the ball touches either wall invert its y velocity. When you get that to work have the ball go in a diagonal.
 
-Checking for intersections between the ball and paddle is harder because they are both moving objects.
+Checking for intersections between the ball and paddle is harder because they are both moving objects. Use the p5.play Sprite bounce function in your p5.js draw function.
 
 Place the ball back in the middle of the screen when it goes off the edge of the screen. Make it go in any diagonal direction.
 
