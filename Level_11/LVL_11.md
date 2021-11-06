@@ -1,57 +1,225 @@
-# Level 07 A
+# Level 11 A
 
-Complete the bonus game, QuickTyping, before continuing to level 7. Edit your `load.js` file:
+## Working with Inputs directly
 
-```js
-QuintOS.level = 5;
-QuintOS.gameSelect = 'Sketchbook';
-```
-
-After that you can upgrade to level 7! 🥳
+Up to this point whenever we worked with inputs we used `prompt()`, now we're going to be using inputs directly.
 
 ```js
-QuintOS.level = 7;
+let inp = input(value, x, y, onSubmit, onChange);
 ```
 
-## Coding Philosophy: Part 3
+`inp` is the the `Input` object created, cursor blinking on the screen at position (x, y).
 
-Attempt to find a decent solution to a problem before concerning yourself with what the best solution could be. "Writing is rewriting", this is true for most people when writing essays, music, and often code too. No one can write code like the classical composer Mozart wrote music, by creating flawless first drafts that would sound exactly as he hoped. Start by thinking of the basic logic flow of complex problems, you might find it helpful to work things out on paper before you start coding. Then test and retest! Remember "Computer Science" is a science, it's all about experimentation, and lucky for us, unlike most research science, we can get pretty immediate results by running our programs! Getting things wrong is a big part of the process, having the program not do what you expect is an opportunity to learn. Often if you just keep trying and learning more you'll get it but if you get really stuck take a long break and come back to your code later. Taking a break to do something else can really help give you a new headspace and perspective on what you're trying to code.
+`value` is the initial text in the input, set to an empty string by default.
 
-## Events
+`onSubmit` called when the user presses the enter key.
 
-Take a look at the p5.js way of getting input from the user's keyboard.
+`onChange` called when the user types any key that changes the input's value.
 
-https://p5js.org/reference/#/p5/keyCode
+## Example use of Inputs
 
-How does this work? Let's take a look at the pure JavaScript that p5.js is using behind the scenes.
-
-https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
-
-https://developer.mozilla.org/en-US/docs/Web/API/Document/keydown_event
-
-## Tiles
+Here's the code for the Calculator that runs after you exit the GuessTheNumber game.
 
 ```js
-let world = new Tiles(rows, cols, layers, tileSize, x, y);
+let inp;
 
-let tile;
+// value is the text the user entered in the input
+function calculate(value) {
+	// eval() is a global function that evaluates the string input value as
+	// JavaScript code, for example if value is "5+3", result will be the number 8
+	let result = eval(value); // evaluate what the user entered
 
-world.move(tile, speed, direction);
+	inp.erase(); // erase the old input
+
+	// create new input with it's initial value set to result
+	inp = input(result, 0, 0, calculate);
+}
+
+// create the input
+inp = input('', 0, 0, calculate);
 ```
 
-# Level 07 B
+## Loading Sounds
 
-## Google's Snake Game
+To make the Speak and Spell game we'll be loading sounds using the p5.js sound library (a core add-on to p5.js that I've added for you).
 
-Check out Google's online snake game:
+https://p5js.org/examples/sound-load-and-play-sound.html
 
-https://www.google.com/fbx?fbx=snake_arcade
+## for of loops
 
-After losing a game the score window will show up, click on the settings icon in the bottom right corner. There are a few different game modes you can select between. Try all of them out and pick 3 that you'd like to implement yourself! :)
+`for of` loops iterate through the values of an array or object.
 
-- [Level 07 A](#level-07-a)
-	- [Coding Philosophy: Part 3](#coding-philosophy-part-3)
-	- [Events](#events)
-	- [Tiles](#tiles)
-- [Level 07 B](#level-07-b)
-	- [Google's Snake Game](#googles-snake-game)
+```js
+let names = ['Jake', 'Ali', 'Max'];
+for (let name of names) {
+	console.log('Hello ' + name);
+}
+```
+
+Result:
+
+```txt
+Hello Jake
+Hello Ali
+Hello Ben
+```
+
+## for in loops
+
+`for in` loop iterates through the indexes/keys of an array or object.
+
+```js
+let list = {
+	apples: 2,
+	bananas: 10,
+	pears: 4
+};
+for (let item in list) {
+	console.log('I need to get ' + list[item] + ' ' + item + '!');
+}
+```
+
+Result:
+
+```txt
+I need to get 2 apples!
+I need to get 10 bananas!
+I need to get 4 pears!
+```
+
+# Level 11 B
+
+## Callback Chaining
+
+If you try playing two sounds, one after the other like this it will not work!
+
+```js
+sound0.play();
+sound1.play();
+```
+
+Both sounds will be played at the same time! You have to use the `onended` function to be able to tell when the first sound has finished playing. `.onended(callback)` takes a callback function, the function is run aka "called" when the sound file stops playing.
+
+```js
+sound0.play();
+sound0.onended(() => {
+	sound1.play();
+});
+```
+
+Inside `onended` you can either put the name of a function to call or an anonymous function. In this example an anonymous function, a function that isn't given a name is used. Note that it uses the arrow `=>` syntax instead of the `function` keyword.
+
+# Level 06 C
+
+If you have to use callbacks to play five sounds this is what it might look like. It's awful!
+
+```js
+sound0.play();
+sound0.onended(() => {
+	sound1.play();
+	sound1.onended(() => {
+		sound2.play();
+		sound2.onended(() => {
+			sound3.play();
+			sound3.onended(() => {
+				sound4.play();
+			});
+		});
+	});
+});
+```
+
+You might be thinking that callback chaining is not as neat and simple as using async and await like we did with other asynchronous code like prompts and alerts. Wouldn't it be great if we could do this instead?
+
+```js
+await play(sound0);
+await play(sound1);
+await play(sound2);
+await play(sound3);
+await play(sound4);
+```
+
+To make a play function that we can `await`, we have to wrap it in a Promise.
+
+## Promises
+
+Back in my day... when I was a young lad first learning JavaScript in 2017... async/await and Promises were not part of JavaScript yet! We had to use callbacks for everything asynchronous and it was awful. Check out what you'd have to do to delay some code:
+
+```js
+console.log('start timer');
+setTimeout(() => {
+	console.log('2 seconds passed');
+}, 2000);
+```
+
+I may sound like a grumpy old man but it really is true. Promises made JavaScript so much better. Let's learn how to make one! Here's `setTimeout()` wrapped in a promise.
+
+```js
+function delay(time) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve();
+    }, time);
+  });
+};
+
+async function timer() {
+	console.log('start timer');
+	await delay(2000); // delay program execution asynchronously for two seconds
+	console.log('2 seconds passed');
+}
+```
+
+`await` is used to wait until a Promise resolves or is rejected.
+
+Some devs call this "promisify-ing". Read more about promises here:
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+A Promise will be in one of these states:
+
+    pending: initial state, neither fulfilled nor rejected.
+    fulfilled: meaning that the operation was completed successfully.
+    rejected: meaning that the operation failed.
+
+## Promisfied p5.js Sound
+
+```js
+function play(sound) {
+	return new Promise((resolve, reject) => {
+		sound.play();
+		sound.onended(() => {
+			resolve();
+		});
+	});
+}
+```
+
+Now we could even use a for loop to play a lot of sounds!
+
+```js
+async function playAllLetters() {
+	let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	for (let i = 0; i < 26; i++) {
+		let letter = alphabet[i];
+		await play(letterSounds[letter]);
+	}
+}
+```
+
+## Computer History: Speak and Spell
+
+This level's computer is based on the classic children's toy from the 1980s, the electronic [Speak and Spell](<https://en.wikipedia.org/wiki/Speak_%26_Spell_(toy)>) made by Texas Instruments.
+
+- [Level 11 A](#level-11-a)
+	- [Working with Inputs directly](#working-with-inputs-directly)
+	- [Example use of Inputs](#example-use-of-inputs)
+	- [Loading Sounds](#loading-sounds)
+	- [for of loops](#for-of-loops)
+	- [for in loops](#for-in-loops)
+- [Level 11 B](#level-11-b)
+	- [Callback Chaining](#callback-chaining)
+- [Level 06 C](#level-06-c)
+	- [Promises](#promises)
+	- [Promisfied p5.js Sound](#promisfied-p5js-sound)
+	- [Computer History: Speak and Spell](#computer-history-speak-and-spell)
