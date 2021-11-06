@@ -17,7 +17,7 @@ async function nextWord() {
 
 async function startGame() {
 	await alert('Press enter to start');
-	input('', 0, 1, nextWord); // input on row 1
+	nextWord();
 }
 
 startGame();

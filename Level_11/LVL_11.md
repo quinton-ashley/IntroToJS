@@ -64,29 +64,6 @@ Hello Ali
 Hello Ben
 ```
 
-## for in loops
-
-`for in` loop iterates through the indexes/keys of an array or object.
-
-```js
-let list = {
-	apples: 2,
-	bananas: 10,
-	pears: 4
-};
-for (let item in list) {
-	console.log('I need to get ' + list[item] + ' ' + item + '!');
-}
-```
-
-Result:
-
-```txt
-I need to get 2 apples!
-I need to get 10 bananas!
-I need to get 4 pears!
-```
-
 # Level 11 B
 
 ## Callback Chaining
@@ -216,7 +193,6 @@ This level's computer is based on the classic children's toy from the 1980s, the
 	- [Example use of Inputs](#example-use-of-inputs)
 	- [Loading Sounds](#loading-sounds)
 	- [for of loops](#for-of-loops)
-	- [for in loops](#for-in-loops)
 - [Level 11 B](#level-11-b)
 	- [Callback Chaining](#callback-chaining)
 - [Level 06 C](#level-06-c)

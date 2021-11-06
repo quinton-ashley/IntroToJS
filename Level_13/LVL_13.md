@@ -43,6 +43,29 @@ let gumball = {
 };
 ```
 
+## for in loops
+
+`for in` loop iterates through the indexes/keys of an array or object.
+
+```js
+let list = {
+	apples: 2,
+	bananas: 10,
+	pears: 4
+};
+for (let item in list) {
+	console.log('I need to get ' + list[item] + ' ' + item + '!');
+}
+```
+
+Result:
+
+```txt
+I need to get 2 apples!
+I need to get 10 bananas!
+I need to get 4 pears!
+```
+
 ## Classes
 
 Classes in JavaScript are blueprints for objects. They're useful for creating multiple objects that have the same variables (properties) and behaviors (functions). To declare a class, you use the class keyword with the name of the class ("Rectangle" here). The class blueprint goes inside the `{}` squiggly brackets. All classes must have a `constructor` function which is used to create the object.

@@ -1,6 +1,3 @@
-// the data folder
-const data = 'DATA/SpeakAndSpell';
-
 // words that are easier to spell
 let words = [
 	'I',
@@ -425,4 +422,4 @@ let speech = [
 /* PART A0: Load all the letter sounds and apostrophe */
 
 // example loading the "spell" sound
-let letterSoundA = loadSound(data + '/letters/A.mp3');
+let letterSoundA = loadSound(QuintOS.dir + '/sounds/letters/A.mp3');
