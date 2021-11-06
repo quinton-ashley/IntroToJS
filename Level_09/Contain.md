@@ -8,17 +8,19 @@ Copy and paste your code from Pong into your `GAMES/contain.js` file.
 
 Remove the walls and add horizontal paddles to the top and bottom of the screen. You will have to make new sprite art for the horizontal paddles using the `spriteArt()` function. Make them look like the other paddles just turned 90 degrees.
 
-Make four balls on the screen at once! Make an array of balls and adjust the game loop to loop through all of them.
+Make four balls on the screen at once! Make an array of balls and make a for loop in the p5.js `draw` function to loop through all of them.
 
-Now since we don't want all the balls to be served at one time, make an `async` function to serve a ball from the center every 4 seconds using `await delay(4000)`.
+Now since we don't want all the balls to be served at one time, Make a new property `active` of the ball class, a boolean to store whether the ball is actively on the screen or not. By default set this property to false.
 
-Use a variable to store the number of balls served and the number of balls actively on the screen. Make a new property of the ball class, a boolean to store whether it is actively on the screen or not. Don't check for collisions with the paddles for balls that are offscreen.
+In the balls for loop in the p5.js `draw` function, skip the iteration of the loop using `continue` if the ball is inactive. The program doesn't need to check for collisions between the paddles and the balls that are offscreen.
 
-Make the total speed of the ball increase as the game goes on.
+Make a new function called `serve`, and have it serve the balls one by one with a delay.
+
+The goal of this game is to contain at least two of the four balls. Make the total speed of the ball increase as the game goes on.
 
 Use `text()` to display the player's score, it can be based on the number of bounces they've gotten on their paddles and/or the amount of time they contained at least two balls.
 
-The game ends when the player runs out of balls! Show them a "Game Over" screen and then let them try again. Use `await alert()`
+Use a variable to store the number of balls served and the number of balls actively on the screen. If the number of balls is 1 or less then the game should end! Show them a "Game Over" screen and then let them try again. Use `await alert()`
 
 ## CHALLENGE SECTION
 
