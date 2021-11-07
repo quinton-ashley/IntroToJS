@@ -100,8 +100,6 @@ Here's what you learned about in Level 2:
 
 # Level 02 B
 
-## Sprites
-
 ## Vectors
 
 To make Pong, we'll have to use Math "in real life"! How exciting! 😄
@@ -141,7 +139,6 @@ This level's computer is based on the Commodore 64
 	- [p5.play Sprites](#p5play-sprites)
 	- [End of Level 02 A](#end-of-level-02-a)
 - [Level 02 B](#level-02-b)
-	- [Sprites](#sprites)
 	- [Vectors](#vectors)
 	- [Bounces](#bounces)
 	- [End of Level 02 B](#end-of-level-02-b)

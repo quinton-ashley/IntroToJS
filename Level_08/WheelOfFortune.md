@@ -1,12 +1,8 @@
 # WheelOfFortune
 
-![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen2.jpg)
+The TV show, "Wheel of Fortune", features many different mini-games that contestants play. You'll make one of the hangman inspired mini-games. In this mini-game blank boxes representing all the letters in a phrase are presented to the player. Letters are revealed to the player slowly, one by one, in their correct positions. The sooner the player presses the buzzer and correctly guesses the phrase, the more points they win!
 
-_This is a BONUS program, the main game for this level is Pong_
-
-For this challenge section you'll make a hangman inspired mini-game from Wheel of Fortune! Hangman only uses one word, Wheel of Fortune also uses multi-word phrases.
-
-Implement the first mini-game mode in Wheel of Fortune. In this mini-game letters should gradually appear in their correct positions in the phrase until the player presses a buzzer indicating they want to guess the whole phrase. You can watch Wheel of Fortune on YouTube to see the game in action!
+## Instructions
 
 Make boxes using `textRect(x, y, w, h)` around the blank spaces and letters just like in the Wheel of Fortune TV show.
 

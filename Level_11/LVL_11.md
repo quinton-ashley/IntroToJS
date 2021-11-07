@@ -39,6 +39,8 @@ function calculate(value) {
 inp = input('', 0, 0, calculate);
 ```
 
+You can see this program run by exiting a game on the calculator.
+
 ## Loading Sounds
 
 To make the Speak and Spell game we'll be loading sounds using the p5.js sound library (a core add-on to p5.js that I've added for you).
@@ -86,7 +88,7 @@ sound0.onended(() => {
 
 Inside `onended` you can either put the name of a function to call or an anonymous function. In this example an anonymous function, a function that isn't given a name is used. Note that it uses the arrow `=>` syntax instead of the `function` keyword.
 
-# Level 06 C
+# Level 11 C
 
 If you have to use callbacks to play five sounds this is what it might look like. It's awful!
 
@@ -195,7 +197,7 @@ This level's computer is based on the classic children's toy from the 1980s, the
 	- [for of loops](#for-of-loops)
 - [Level 11 B](#level-11-b)
 	- [Callback Chaining](#callback-chaining)
-- [Level 06 C](#level-06-c)
+- [Level 11 C](#level-11-c)
 	- [Promises](#promises)
 	- [Promisfied p5.js Sound](#promisfied-p5js-sound)
 	- [Computer History: Speak and Spell](#computer-history-speak-and-spell)

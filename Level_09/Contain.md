@@ -14,7 +14,7 @@ Now since we don't want all the balls to be served at one time, Make a new prope
 
 In the balls for loop in the p5.js `draw` function, skip the iteration of the loop using `continue` if the ball is inactive. The program doesn't need to check for collisions between the paddles and the balls that are offscreen.
 
-Make a new function called `serve`, and have it serve the balls one by one with a delay.
+Make a new function called `serve`, and have it serve the balls one by one with a delay. Before it serves the first ball make a countdown using `text()`.
 
 The goal of this game is to contain at least two of the four balls. Make the total speed of the ball increase as the game goes on.
 

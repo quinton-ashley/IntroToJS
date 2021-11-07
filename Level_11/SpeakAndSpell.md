@@ -7,10 +7,8 @@ Based on the classic children's toy from the 1980s, the electronic [Speak and Sp
 Edit your `load.js` file to start on SpeakAndSpell, set the preload option to true.
 
 ```js
-QuintOS.level = 0;
 QuintOS.dir = 'GAMES';
-QuintOS.gameSelect = 'SpeakAndSpell';
-QuintOS.preload = true;
+QuintOS.gameTitle = 'SpeakAndSpell';
 ```
 
 Copy the `SpeakAndSpell` folder into your `quintos-games` project `GAMES` folder. This folder contains all the sounds you'll need and two template files.
