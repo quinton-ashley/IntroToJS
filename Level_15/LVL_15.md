@@ -19,7 +19,7 @@ To better manipulate data, simple find and replace using strings often won't cut
 
 https://regex101.com/
 
-# Level 08 B
+# Level 15 B
 
 ## Using fetch
 
@@ -39,13 +39,8 @@ let txt = await (await fetch('yourFileName.txt')).text();
 
 For JSON, use the `.json()` function on the request object.
 
-- [Level 08 A](#level-08-a)
-  - [p5.play](#p5play)
-  - [Spritesheets](#spritesheets)
-  - [Making Sprites with multiple animations](#making-sprites-with-multiple-animations)
-  - [p5.play documentation](#p5play-documentation)
-- [Level 08 B](#level-08-b)
+- [Level 15 A](#level-15-a)
   - [JSON](#json)
+  - [Regular Expressions (RegEx)](#regular-expressions-regex)
+- [Level 15 B](#level-15-b)
   - [Using fetch](#using-fetch)
-- [Level 08 C](#level-08-c)
-  - [Inheritance](#inheritance)

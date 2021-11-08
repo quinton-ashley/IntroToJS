@@ -1,11 +1,5 @@
 # Level 03 A
 
-Before we can start working on `Hangman` we have to upgrade our PC! Edit your `load.js` file, set your level to 3! 🥳
-
-```js
-QuintOS.level = 3;
-```
-
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen2.jpg)
 
 Don't read all the sections in the Level 2 A lesson at once. Read a section, then work on Hangman, then read another section, work on Hangman. The information in each section is sequenced to correspond directly to what you need to learn to complete each step in making the Hangman game.

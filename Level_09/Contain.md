@@ -24,6 +24,12 @@ Use a variable to store the number of balls served and the number of balls activ
 
 ## CHALLENGE SECTION
 
+How do we change the angle of the ball's vector to be a bit random each time a new ball is "served" without changing the ball's total speed? Take a look at this website for the math you'll need to do this:
+
+<https://setosa.io/ev/sine-and-cosine/>
+
+Start by figuring out where the ball will go depending on what theta is. Theta should be in the range 0 to 2π. Use `Math.PI` for π. Then make theta randomly a bit lower or higher from a perfect diagonal.
+
 Interested in learning how the p5.play sprite bounce function works? Try implementing your own methods for checking for bounces.
 
 How do you write "is ball touching the paddle" in code? Mathematically what we need to know is when the ball's rectangle intersects the rectangle of the paddles or wall. Yes, the ball is a circle but for now we'll use a rectangle for our collision detection calculations.
@@ -56,12 +62,6 @@ Since rectangles can be defined by their top left point and the bottom right cor
  └─────────────┘
             (x+w, y+h)
 ```
-
-How do we change the angle of the ball's vector to be a bit random each time a new ball is "served" without changing the ball's total speed? Take a look at this website for the math you'll need to do this:
-
-<https://setosa.io/ev/sine-and-cosine/>
-
-Start by figuring out where the ball will go depending on what theta is. Theta should be in the range 0 to 2π. Use `Math.PI` for π. Then make theta randomly a bit lower or higher from a perfect diagonal.
 
 Check for collisions between balls. Make a different collision detection method for collisions between circles. Circles intersect if the distance between their centers is less than the sum of their radius (plural).
 

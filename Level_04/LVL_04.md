@@ -1,29 +1,17 @@
-# Level 03 A
-
-Before you level up to level 2, complete the Guess the Number PART C challenge section. Edit your `load.js` file:
-
-```js
-QuintOS.level = 0;
-```
-
-After that you can upgrade to level 3! 🥳
-
-```js
-QuintOS.level = 3;
-```
+# Level 04 A
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen3.jpg)
 
 ## Drawing text to the screen
 
-`pc` is a global object that I made. In the past you've been using `prompt()`. Behind the scenes this function calls `prompt()` which creates a rectangle, text, an input, and two buttons. On level 03 you'll use `pc` to draw text and buttons to the screen!
+In the past you've been using `prompt()` which creates a rectangle, text, an input, and two buttons. In this level you'll learn how to draw text and buttons to the screen on their own!
 
 ```js
 //  (text         , row, col)
 text('Hello World!', 10, 12);
 ```
 
-`text` expects at least three input arguments/parameters seperated by commas. The first input paramter is the string to display and the 2nd and 3rd are the row and column to display it on.
+`text` expects at least three input arguments/parameters seperated by commas. The first input parameter is the string to display and the second and third inputs parameters are the row and column to display it on.
 
 ## Creating functions 👷
 
@@ -48,17 +36,17 @@ A callback function is a function passed as an input argument to a function that
 function btnClick() {
 	console.log('You clicked the button!');
 }
-//       (text       , row, col, function)
+//    (text,     row, col, function)
 button('Click me!', 5, 5, btnClick);
 ```
 
-## End of Level 03 A
+## End of Level 04 A
 
-- `pc` object
+- drawing text to the screen
 - how to create functions
-- `button(txt, row, col, func)`
+- creating buttons
 
-# Level 03 B
+# Level 04 B
 
 ## Recursion
 
@@ -163,7 +151,7 @@ null;
 (''); // an empty string
 ```
 
-# Level 03 C
+# Level 04 C
 
 ## Date
 
@@ -213,18 +201,18 @@ Of course, all of these great features raised the price significantly. At $8150,
 
 Originally developed for business executives, GRiDs were also used by the U.S. military 'in the field', and by NASA on the Space Shuttles during the 1980's and 90's. It's even been said that the US President's "nuclear football" at one time included a GRiD computer.
 
-- [Level 03 A](#level-03-a)
+- [Level 04 A](#level-04-a)
 	- [Drawing text to the screen](#drawing-text-to-the-screen)
 	- [Creating functions 👷](#creating-functions-)
 	- [Creating a Button](#creating-a-button)
-	- [End of Level 03 A](#end-of-level-03-a)
-- [Level 03 B](#level-03-b)
+	- [End of Level 04 A](#end-of-level-04-a)
+- [Level 04 B](#level-04-b)
 	- [Recursion](#recursion)
 	- [Erasing a button](#erasing-a-button)
 	- [Implied boolean conditions](#implied-boolean-conditions)
 	- [How to check if a variable is defined](#how-to-check-if-a-variable-is-defined)
 	- [truthy or falsy?](#truthy-or-falsy)
-- [Level 03 C](#level-03-c)
+- [Level 04 C](#level-04-c)
 	- [Date](#date)
 	- [Adding to Arrays](#adding-to-arrays)
 	- [asynchronous functions](#asynchronous-functions)

@@ -1,4 +1,4 @@
-# Level 10 A
+# Level 16 A
 
 ## Node.js and npm
 
@@ -14,7 +14,7 @@ Check out the games I've made with QuintOS: PigeonSimulator and CosmicDebris.
 
 Your game doesn't need to be super complex or have a lot of artwork or a massive story, but it does need to be unique and fun!
 
-# Level 10 B
+# Level 16 B
 
 There remains only a few more notable bits of Javascript syntax you should learn about this point!
 
@@ -52,10 +52,10 @@ With ReactJS you can create mobile apps using HTML+CSS+JS.
 [Video: Explanation of what .exe files are and how computer processors execute assembly](https://www.youtube.com/watch?v=hhgxsrAFyz8)  
 [Video: AI Sudoku solver in python](https://www.youtube.com/watch?v=G_UYXzGuqvM)
 
-- [Level 10 A](#level-10-a)
+- [Level 16 A](#level-16-a)
   - [Node.js and npm](#nodejs-and-npm)
   - [Creating your own QuintOS project!](#creating-your-own-quintos-project)
-- [Level 10 B](#level-10-b)
+- [Level 16 B](#level-16-b)
   - [Switch statements](#switch-statements)
   - [Javascript's memory](#javascripts-memory)
 - [End of IntroToJS](#end-of-introtojs)

@@ -2,7 +2,7 @@
 
 Congratulations, you completed level 0! 🥳
 
-Before you can work on the next game, let's get you setup so you can write JavaScript on your own computer without using an online code editor.
+Before you can work on the next game, let's get you setup so you can write JavaScript on your own computer without having to only use CodePen, which an online code editor.
 
 ## Requirements for Offline Development
 

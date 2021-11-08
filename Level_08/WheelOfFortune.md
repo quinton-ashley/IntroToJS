@@ -4,14 +4,7 @@ The TV show, "Wheel of Fortune", features many different mini-games that contest
 
 ## Instructions
 
-Make boxes using `textRect(x, y, w, h)` around the blank spaces and letters just like in the Wheel of Fortune TV show.
-
-```js
-textRect(5, 5, 3, 3); // make a 3x3 rect at row 5 column 5 (5,5)
-text('w', 6, 6); // make letter 'w' at row 6 column 6 (6,6)
-```
-
-Use `for` loops to make all the boxes for the phrase!
+Make boxes using `textRect` around the blank spaces and letters just like in the Wheel of Fortune TV show. Use `for` loops to make all the boxes for the phrase!
 
 ```txt
 ┌─┐┌─┐┌─┐┌─┐┌─┐
@@ -20,15 +13,6 @@ Use `for` loops to make all the boxes for the phrase!
 ```
 
 Use the `delay` function to delay the rate at which letters are displayed.
-
-```js
-// you need to make the function asynchronous to use await
-async function takeFive() {
-	log('wait 5 seconds...');
-	await delay(5000); // waits for a delay of 5000ms aka 5 seconds
-	log('5 seconds passed');
-}
-```
 
 Just like in TicTacToe, you should keep track of which letters have been placed on the board using the `board` 2d array. Reference the AI level 1 code in TicTacToe for choosing available spaces. Use the same method to find a random space to add a letter.
 

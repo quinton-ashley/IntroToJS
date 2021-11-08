@@ -1,7 +1,5 @@
 # SuperJump
 
-_This is a BONUS program, the main game for this level is BubbleBlasters_
-
 Watch this video of Papi Jump one of the most popular games for iPhone when it was released back in 2008:
 https://www.youtube.com/watch?v=O-EuA_g1wWY
 

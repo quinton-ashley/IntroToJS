@@ -1,51 +1,78 @@
 # Level 11 A
 
-## Working with Inputs directly
-
-Up to this point whenever we worked with inputs we used `prompt()`, now we're going to be using inputs directly.
-
-```js
-let inp = input(value, x, y, onSubmit, onChange);
-```
-
-`inp` is the the `Input` object created, cursor blinking on the screen at position (x, y).
-
-`value` is the initial text in the input, set to an empty string by default.
-
-`onSubmit` called when the user presses the enter key.
-
-`onChange` called when the user types any key that changes the input's value.
-
-## Example use of Inputs
-
-Here's the code for the Calculator that runs after you exit the GuessTheNumber game.
-
-```js
-let inp;
-
-// value is the text the user entered in the input
-function calculate(value) {
-	// eval() is a global function that evaluates the string input value as
-	// JavaScript code, for example if value is "5+3", result will be the number 8
-	let result = eval(value); // evaluate what the user entered
-
-	inp.erase(); // erase the old input
-
-	// create new input with it's initial value set to result
-	inp = input(result, 0, 0, calculate);
-}
-
-// create the input
-inp = input('', 0, 0, calculate);
-```
-
-You can see this program run by exiting a game on the calculator.
-
 ## Loading Sounds
 
 To make the Speak and Spell game we'll be loading sounds using the p5.js sound library (a core add-on to p5.js that I've added for you).
 
 https://p5js.org/examples/sound-load-and-play-sound.html
+
+## Creating Objects
+
+Objects have properties, aka key/value pairs. Everything in Javascript (Number, String, Array, etc.) is actually an Object too! You've already used some properties that these objects have such as `.length` for strings.
+
+Let's take a look at how we could use an object to store attributes about Gumball, a character from the Cartoon Network show The Amazing World of Gumball.
+
+```js
+let gumball = {
+	name: ['Gumball', 'Tristopher', 'Watterson'],
+	species: 'cat',
+	age: 12,
+	grade: 7,
+	studentID: '000029083',
+	teacher: 'Ms. Simian'
+};
+```
+
+Properties can be accessed using the dot syntax or with the `[]` square brackets.
+
+```js
+gumball.age; // -> 12
+gumball['age']; // same thing
+
+gumball.name[2]; // -> 'Watterson'
+
+// editing the animal for property 'c'
+gumball.grade = 8;
+// adding new content to the object
+gumball.brother = 'Darwin';
+```
+
+What does the `gumball` object look like after these changes?
+
+```js
+let gumball = {
+	name: ['Gumball', 'Tristopher', 'Watterson'],
+	species: 'cat',
+	age: 12,
+	grade: 8,
+	studentID: '000029083',
+	teacher: 'Ms. Simian',
+	brother: 'Darwin'
+};
+```
+
+## for in loops
+
+`for in` loop iterates through the indexes/keys of an array or object.
+
+```js
+let list = {
+	apples: 2,
+	bananas: 10,
+	pears: 4
+};
+for (let item in list) {
+	console.log('I need to get ' + list[item] + ' ' + item + '!');
+}
+```
+
+Result:
+
+```txt
+I need to get 2 apples!
+I need to get 10 bananas!
+I need to get 4 pears!
+```
 
 ## for of loops
 
@@ -68,6 +95,47 @@ Hello Ben
 
 # Level 11 B
 
+## Working with Inputs directly
+
+Up to this point whenever we worked with inputs we used `prompt()`, now we're going to be using inputs directly.
+
+```js
+let inp = input(value, x, y, onSubmit, onChange);
+```
+
+`inp` is the the `Input` object created, cursor blinking on the screen at position (x, y).
+
+`value` is the initial text in the input, set to an empty string by default.
+
+`onSubmit` called when the user presses the enter key.
+
+`onChange` called when the user types any key that changes the input's value.
+
+## Example use of Inputs
+
+Here's the code for the Calculator that runs after you exit the GuessTheNumber game. Load the calculator and check it out.
+
+```js
+let inp;
+
+// value is the text the user entered in the input
+function calculate(value) {
+	// eval() is a global function that evaluates the string input value as
+	// JavaScript code, for example if value is "5+3", result will be the number 8
+	let result = eval(value); // evaluate what the user entered
+
+	inp.erase(); // erase the old input
+
+	// create new input with it's initial value set to result
+	inp = input(result, 0, 0, calculate);
+}
+
+// create the input
+inp = input('', 0, 0, calculate);
+```
+
+# Level 11 C
+
 ## Callback Chaining
 
 If you try playing two sounds, one after the other like this it will not work!
@@ -88,7 +156,7 @@ sound0.onended(() => {
 
 Inside `onended` you can either put the name of a function to call or an anonymous function. In this example an anonymous function, a function that isn't given a name is used. Note that it uses the arrow `=>` syntax instead of the `function` keyword.
 
-# Level 11 C
+# Level 11 D
 
 If you have to use callbacks to play five sounds this is what it might look like. It's awful!
 
@@ -191,13 +259,16 @@ async function playAllLetters() {
 This level's computer is based on the classic children's toy from the 1980s, the electronic [Speak and Spell](<https://en.wikipedia.org/wiki/Speak_%26_Spell_(toy)>) made by Texas Instruments.
 
 - [Level 11 A](#level-11-a)
-	- [Working with Inputs directly](#working-with-inputs-directly)
-	- [Example use of Inputs](#example-use-of-inputs)
 	- [Loading Sounds](#loading-sounds)
+	- [Creating Objects](#creating-objects)
+	- [for in loops](#for-in-loops)
 	- [for of loops](#for-of-loops)
 - [Level 11 B](#level-11-b)
-	- [Callback Chaining](#callback-chaining)
+	- [Working with Inputs directly](#working-with-inputs-directly)
+	- [Example use of Inputs](#example-use-of-inputs)
 - [Level 11 C](#level-11-c)
+	- [Callback Chaining](#callback-chaining)
+- [Level 11 D](#level-11-d)
 	- [Promises](#promises)
 	- [Promisfied p5.js Sound](#promisfied-p5js-sound)
 	- [Computer History: Speak and Spell](#computer-history-speak-and-spell)

@@ -26,7 +26,7 @@ let tile;
 world.move(tile, speed, direction);
 ```
 
-# Level 07 B
+# Level 12 B
 
 ## Google's Snake Game
 
@@ -40,5 +40,5 @@ After losing a game the score window will show up, click on the settings icon in
 	- [Coding Philosophy: Part 3](#coding-philosophy-part-3)
 	- [Events](#events)
 	- [Tiles](#tiles)
-- [Level 07 B](#level-07-b)
+- [Level 12 B](#level-12-b)
 	- [Google's Snake Game](#googles-snake-game)

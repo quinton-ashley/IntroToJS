@@ -1,21 +1,10 @@
-# Level 04 A
-
-Before you level up to level 3, complete the Pick a Path PART C challenge section. Edit your `load.js` file:
-
-```js
-QuintOS.level = 3;
-QuintOS.gameSelect = 'PickAPath';
-```
+# Level 06 A
 
 Before you can start working on the `TicTacToe` game, you'll have to prove your skills in Javascript. You should be able to complete the first few test sections quite quickly. Stop when you complete the challenge titled "Golf Code".
 
 <https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-javascript>
 
-After you complete those challenges you can upgrade to level 4! 🥳
-
-```js
-QuintOS.level = 4;
-```
+After you complete those challenges you can upgrade to level 6! 🥳
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen4.jpg)
 
@@ -105,36 +94,16 @@ for (let i = 0; i < rows; i++) {
 
 How could we use a nested for loop to clear the board of all the pieces by assigning a blank space " " to every element in the `board` array?
 
-## End of Level 04 A
+## End of Level 06 A
 
 - 2d Arrays
 - nested for loops
 
-# Level 04 B
-
-## Coding Philosophy: Part 2
-
-Solve complex problems by thinking algorithmically! That means breaking problems down step by step. "A journey of a thousand miles begins with a single step". If you get stuck on a problem you may be overcomplicating it. Keep things as simple as possible at first and test often after adding new code! Doing this will help prevent you from getting stuck.
-
-## Artificial Intelligence in Games
-
-Making an AI for a game, even for TicTacToe, might sound daunting but you already know enough about programming to do it! AI is just code that reacts to a game environment with an action.
-
-Try to think of the simplest method of making a move in Tic Tac Toe. Note it's not the same as the worst method, which would be deliberately making moves to help your opponent win.
-
-In TicTacToe the simplest method to make a valid move is to look at each space and place one's X or O mark in the first available space. Available spaces are spaces that are not already occupied by an X or O. This will be how your easy level AI player will make moves!
-
-## End of Level 04 B
-
-- [Level 04 A](#level-04-a)
-  - [Coding Philosophy: Part 1](#coding-philosophy-part-1)
-  - [Return variables from a function](#return-variables-from-a-function)
-  - [Creating functions with input parameters](#creating-functions-with-input-parameters)
-  - [Arrow function syntax](#arrow-function-syntax)
-  - [Two Dimensional Arrays](#two-dimensional-arrays)
-  - [Nested for loops](#nested-for-loops)
-  - [End of Level 04 A](#end-of-level-04-a)
-- [Level 04 B](#level-04-b)
-  - [Coding Philosophy: Part 2](#coding-philosophy-part-2)
-  - [Artificial Intelligence in Games](#artificial-intelligence-in-games)
-  - [End of Level 04 B](#end-of-level-04-b)
+- [Level 06 A](#level-06-a)
+	- [Coding Philosophy: Part 1](#coding-philosophy-part-1)
+	- [Return variables from a function](#return-variables-from-a-function)
+	- [Creating functions with input parameters](#creating-functions-with-input-parameters)
+	- [Arrow function syntax](#arrow-function-syntax)
+	- [Two Dimensional Arrays](#two-dimensional-arrays)
+	- [Nested for loops](#nested-for-loops)
+	- [End of Level 06 A](#end-of-level-06-a)
