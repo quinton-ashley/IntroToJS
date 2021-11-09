@@ -2,19 +2,19 @@
 
 ## What is Computer Science?
 
-Why is this field of study called "Computer Science" and not "Program Writing" or "Code Mathematics"? It's because coding requires experimentation! Every time you change your code and test it out it's like doing a mini science experiment. Coding also requires research. Even professional programmers learn new things every day.
+Why is this field of study called "Computer Science" and not "Program Writing" or "Code Mathematics"? It's because coding requires experimentation! You'll often need to test your code, learn from unexpected problems, and make changes to get the results you want. Coding often requires research too, even professional programmers learn new things every day.
 
 These lessons will teach you how to code in JavaScript, which is the most popular modern programming language and my personal favorite!
 
-Since you're just starting out, you will have to memorize some vocabulary, "grammar", and syntax to learn this new language. Learning to code isn't what programming is all about though, just like learning to play scales isn't what being a musician is, putting on a costume and memorizing lines isn't what acting is. In these lessons you will learn to code and how to think like a programmer. Programming is a skill you can develop over the course of your whole life!
+Since you're just starting out, you will have to memorize some vocabulary, "grammar", and syntax to learn this new language. Learning to code isn't what programming is all about though, just like learning to play scales isn't what being a musician is, putting on a costume and memorizing lines isn't what acting is. In these lessons you will not just learn to code but also how to think like a programmer! Programming is a skill you can develop over the course of your whole life.
 
 As you may expect, programming will be really fun and interesting for you if you like abstract problem solving, in this way it is also similar to Math. Programming has a language arts aspect too. You will not only strive to write efficient code but also code that is easily understood by other programmers.
 
 ## What is QuintOS?
 
-Issac Newton once said, "we stand on the shoulders of giants". To understand how software is developed today it's important to learn a bit about the history of how computer hardware and software has progressed.
+Issac Newton once said, "we stand on the shoulders of giants". To understand how software is developed today it's important to learn a bit about the history of computers.
 
-Video games are an incredible art form that combine programming, storytelling, visual art, music, and sound design. If you signed up for this course you might want to know how video games work and how to make your own! If not, making games will hopefully be a fun way for you to learn how to code.
+If you signed up for this course you might want to know how video games work and how to make your own! If not, making games will hopefully be a fun way for you to learn how to code.
 
 During each lesson you'll develop a QuintOS game that runs on virtual computers displayed in your web browser: Google Chrome, Firefox, or Opera. QuintOS is a retro game engine I created for this course and also for my own games. As you level up your coding skills, your virtual computer will get upgraded. So since you're just starting out, the first game you make will be for... a programmable calculator. 😜
 
