@@ -12,7 +12,13 @@ Note that prompt will return `null` instead of what the user enters if they pres
 
 Use formatting characters tab `\t` and newline `\n`
 
+After you get your story started, read part B in the `LVL_01.md` lesson file.
+
 ## Instructions for PART B
+
+Continue writing your story! Use boolean OR at least once to make two or more choices have the same result.
+
+## Instructions for PART C
 
 Reject invalid choices by the user! No skipping ahead!
 

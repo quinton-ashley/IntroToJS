@@ -2,8 +2,6 @@
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen2.jpg)
 
-Don't read all the sections in the Level 2 A lesson at once. Read a section, then work on Hangman, then read another section, work on Hangman. The information in each section is sequenced to correspond directly to what you need to learn to complete each step in making the Hangman game.
-
 ## string.split(seperator)
 
 Strings have a lot of useful functions we can use. MDN, the Mozilla Developer Network, is a really great resource for learning JS. Documentation for the String class can be found here:
