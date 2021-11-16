@@ -6,13 +6,28 @@
 
 To make Pong we're going to use 2D graphics instead of text based graphics. p5.js is a JavaScript graphics library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else!
 
+## Creating functions 👷
+
+How do we create our own functions? Using the `function` keyword!
+
+```js
+// create the function
+function sayHello() {
+	console.log('hello!');
+}
+
+sayHello(); // run the function
+```
+
 ## p5.js Basics
 
 https://p5js.org/get-started/
 
-p5.js uses a `setup` function for setting up your programs. I've already done the setup function for you though. So in your `pong.js` file you will just be working on the draw function.
+You need to make two functions, `setup` and `draw`, in your p5.js programs.
 
-The p5.js `draw` function should contain code for drawing an image (frame). It will be looped 60 times per second, this is called the frame rate. To animate objects on screen simply change their position everytime the draw function is run.
+The p5.js `setup` function is run once at the start of the game and should contain code for setting up the game, such as setting the inital positions of everything in the game.
+
+The p5.js `draw` function should contain code for drawing an image (frame). It will be run 60 times per second, this is called the frame rate. To animate objects on screen simply change their position everytime the draw function is run.
 
 ## spriteArt
 
@@ -132,6 +147,7 @@ This level's computer is based on the Commodore 64
 
 - [Level 02 A](#level-02-a)
 	- [What is p5.js?](#what-is-p5js)
+	- [Creating functions 👷](#creating-functions-)
 	- [p5.js Basics](#p5js-basics)
 	- [spriteArt](#spriteart)
 	- [Making Strings with Backticks](#making-strings-with-backticks)
