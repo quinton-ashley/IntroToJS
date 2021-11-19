@@ -115,9 +115,11 @@ Here's what you learned about in Level 2:
 
 # Level 02 B
 
+Checking for intersections between the ball and paddle is harder because they are both moving objects.
+
 ## Vectors
 
-To make Pong, we'll have to use Math "in real life"! How exciting! 😄
+To finish Pong, we'll have to use Math "in real life"! How exciting! 😄
 
 In Physics a vector is a direction in which something is moving and the magnitude of how fast it's moving there at a given interval of time.
 
@@ -130,10 +132,26 @@ ball.velocity.y = 1;
 
 ## Bounces
 
-You can check for bounces using the sprite bounce function.
+You can easily check for bounces between sprites using the p5.play sprite bounce function.
 
 ```js
 ball.bounce(paddle);
+```
+
+## Immovable objects
+
+By default when sprites bounce of each other both objects will move. To prevent this, set the sprite to be immovable when another sprite bounces on it.
+
+```js
+paddle.immovable = true;
+```
+
+## colorPal
+
+`colorPal` retreives the color associated with the given letter from the retro computer's color palette. Here's some example code for making a red background:
+
+```js
+background(colorPal('r'));
 ```
 
 ## End of Level 02 B
@@ -157,5 +175,7 @@ This level's computer is based on the Commodore 64
 - [Level 02 B](#level-02-b)
 	- [Vectors](#vectors)
 	- [Bounces](#bounces)
+	- [Immovable objects](#immovable-objects)
+	- [colorPal](#colorpal)
 	- [End of Level 02 B](#end-of-level-02-b)
 	- [Computer History: Commodore 64](#computer-history-commodore-64)

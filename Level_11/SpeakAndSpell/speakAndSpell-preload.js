@@ -397,6 +397,8 @@ let longWords = [
 	'stranger'
 ];
 
+/* PART B1: Load all the word sounds */
+
 let speech = [
 	'as_in',
 	'here_is_your_score',
@@ -419,7 +421,9 @@ let speech = [
 	'you_win'
 ];
 
+/* PART B0: Load all the speech sounds */
+
 /* PART A0: Load all the letter sounds and apostrophe */
 
-// example loading the "spell" sound
+// example loading the letter A sound
 let letterSoundA = loadSound(QuintOS.dir + '/sounds/letters/A.mp3');

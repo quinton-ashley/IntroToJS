@@ -66,7 +66,6 @@
 	/* PART A0: split the words string into an array, choose a random word */
 
 	/* PART A1: make an array with a line for each letter in the word */
-	/* PART B: use a for loop instead of a while loop */
 	// Example word: 'quiz'
 	// lines -> ['_', '_', '_', '_']
 

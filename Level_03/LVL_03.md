@@ -21,6 +21,7 @@ Strings have a lot of useful functions we can use. MDN, the Mozilla Developer Ne
 The Array `join` function creates a string by joining each element in the array together, inserting an optional seperator string between each item.
 
 ```js
+let names = ['Amy', 'Ellie', 'Max'];
 names.join(' ~ ');
 // -> 'Amy ~ Ellie ~ Max'
 ```
@@ -40,15 +41,18 @@ We learned how to:
 The `[]` square brackets are used to create arrays and are also used to access items in an array.
 
 ```js
-names[0]; // is 'Amy'
-nums[1]; // is 21
+let names = ['Amy', 'Ellie', 'Max'];
+let nums = [50, 21, 46, 83];
+
+console.log(names[0]); // prints 'Amy'
+console.log(nums[1]); // prints 21
 ```
 
 Items in an array can also be edited using `[]` (aka sub).
 
 ```js
 names[2] = 'Ben';
-// edits the list: ['Amy', 'Ellie', 'Ben'];
+// edits the list: ['Amy', 'Ellie', 'Ben']
 nums[1] = 36;
 // edits the list: [50, 36, 42, 83]
 ```
@@ -58,9 +62,9 @@ nums[1] = 36;
 To access characters in a string you can use `[]` but note that you can't edit them like you can with arrays.
 
 ```js
-let fox = 'the red fox';
-fox[4]; // is 'r'
-fox[8] = 'b'; // error
+let animal = 'the red fox';
+console.log(animal[4]); // prints 'r'
+animal[8] = 'b'; // error
 // will not change fox string to 'the red box'
 ```
 
@@ -71,17 +75,17 @@ Strings are immutable, meaning individual characters in the string can not be ch
 The number of loops a while loop does can be counted with a variable.
 
 ```js
-let names = ['Jake', 'Ali', 'Ben'];
+let names = ['Jake', 'Ali', 'Ben', 'Cam'];
 
 let i = 0; // initialize i to 0
 
-// loop while i is less than names.length which is 3
+// loop while i is less than names.length which is 4
 while (i < names.length) {
 	// print the next name in the list
 	console.log(i + '. ' + names[i]);
 
 	i = i + 1;
-} // in this loop i goes up from 0 to 1 to 2
+} // in this loop i goes up from 0 to 1 to 3
 ```
 
 The code above prints out a numbered list of names in the JS console.
@@ -90,7 +94,12 @@ The code above prints out a numbered list of names in the JS console.
 0. Jake
 1. Ali
 2. Ben
+3. Cam
 ```
+
+## End of Level 03 B
+
+# Level 03 C
 
 ## Breaking out of a loop early
 
@@ -99,8 +108,6 @@ If you need to exit a while loop early, use the `break` keyword.
 ```js
 break;
 ```
-
-## End of Level 03 B
 
 ## Computer History: Apple II
 
@@ -114,6 +121,7 @@ This level's computer was inspired by the [Apple II](https://www.youtube.com/wat
   - [Accessing items in an Array](#accessing-items-in-an-array)
   - [Accessing characters in a String](#accessing-characters-in-a-string)
   - [Counting with while loops](#counting-with-while-loops)
-  - [Breaking out of a loop early](#breaking-out-of-a-loop-early)
   - [End of Level 03 B](#end-of-level-03-b)
+- [Level 03 C](#level-03-c)
+  - [Breaking out of a loop early](#breaking-out-of-a-loop-early)
   - [Computer History: Apple II](#computer-history-apple-ii)

@@ -20,9 +20,153 @@ There remains only a few more notable bits of Javascript syntax you should learn
 
 ## Switch statements
 
-You will rarely need to use a switch statement instead of an if + else if chain but you should know what switch statements are so that if you encounter them in other's code.
+You will rarely need to use a switch statement instead of an if + else if chain, but in some cases they are useful.
+
+Let's take a look at some different ways to make a chunk of code that will go inside a `buttonPressed` function. The `lbl` variable has the name of the button that was pressed. If the button was directional it will call the `move` function, else if the button should do an action it calls `doAction`, else say the button does nothing.
+
+```js
+if (lbl == 'up' || lbl == 'down' || lbl == 'left' || lbl == 'right') {
+	await this.move(lbl);
+} else if (
+	lbl == 'a' ||
+	lbl == 'b' ||
+	lbl == 'x' ||
+	lbl == 'y' ||
+	lbl == 'l' ||
+	lbl == 'r' ||
+	lbl == 'lt' ||
+	lbl == 'rt' ||
+	lbl == 'select' ||
+	lbl == 'start'
+) {
+	await this.doAction(lbl);
+} else {
+	log('cui: button does nothing');
+	return;
+}
+```
+
+This looks horrible! It's also a lot to type: 19 lines and 364 characters.
+
+The example below will give the same results as the code above but uses a switch statement instead. Using a switch statement requires a few less characters: 333. However, in my opinion, they take up too much space vertically, a whooping 22 lines.
+
+```js
+switch (lbl) {
+	case 'up':
+	case 'down':
+	case 'left':
+	case 'right':
+		await this.move(lbl);
+		break;
+	case 'a':
+	case 'b':
+	case 'x':
+	case 'y':
+	case 'l':
+	case 'r':
+	case 'lt':
+	case 'rt':
+	case 'select':
+	case 'start':
+		await this.doAction(lbl);
+		break;
+	default:
+		log('cui: button does nothing');
+}
+```
+
+The version below uses arrays instead of a switch statement, it is nice and compact at 7 lines, 262 characters!
+
+```js
+if (['up', 'down', 'left', 'right'].includes(lbl)) {
+	await this.move(lbl);
+} else if (['a', 'b', 'x', 'y', 'l', 'r', 'lt', 'rt', 'select', 'start'].includes(lbl)) {
+	await this.doAction(lbl);
+} else {
+	log('cui: button does nothing');
+}
+```
+
+You may think it would be nicer to make a variable for the longer array or even for both arrays so the boolean conditions aren't so long.
+
+```js
+let otherBtns = ['a', 'b', 'x', 'y', 'l', 'r', 'lt', 'rt', 'select', 'start'];
+
+if (['up', 'down', 'left', 'right'].includes(lbl)) {
+	await this.move(lbl);
+} else if (otherBtns.includes(lbl)) {
+	await this.doAction(lbl);
+} else {
+	log('cui: button does nothing');
+}
+```
+
+This version uses regex. It is the most compact, using 222 characters.
+
+```js
+if (/^(up|down|left|right)$/.test(lbl)) {
+	await this.move(lbl);
+} else if (/^(a|b|x|y|l|r|lt|rt|select|start)$/.test(lbl)) {
+	await this.doAction(lbl);
+} else {
+	log('cui: button does nothing');
+	return;
+}
+```
+
+The time difference in execution on a modern computer between all of these versions is so insignificant it is neglible in practice. In this particular situation using a switch statment is not a bad idea and you could reasonably use either the switch, array, or regex version depending on your personal preference.
+
+However, this is a rare case in my opinion. Most of the time I don't use switch statements, they just take up too much space.
+
+Consider this set of examples:
+
+```js
+// Version 0
+if (QuintOS.language == 'js') {
+	await QuintOS.runJS(src, file);
+} else if (QuintOS.language == 'java' || QuintOS.language == 'pde') {
+	await QuintOS.runJava(src, file);
+}
+```
+
+```js
+// Version 1
+let ext = QuintOS.language;
+
+if (ext == 'js') {
+	await QuintOS.runJS(src, file);
+} else if (ext == 'java' || ext == 'pde') {
+	await QuintOS.runJava(src, file);
+}
+```
+
+```js
+// Version 2
+if (QuintOS.language == 'js') {
+	await QuintOS.runJS(src, file);
+} else if (/(java|pde)/.test(QuintOS.language)) {
+	await QuintOS.runJava(src, file);
+}
+```
+
+```js
+// Version 3
+switch (QuintOS.language) {
+	case 'js':
+		await QuintOS.runJS(src, file);
+		break;
+	case 'java':
+	case 'pde':
+		await QuintOS.runJava(src, file);
+		break;
+}
+```
+
+The switch statement is overkill here, if/else is definitely preferrable.
 
 ## Javascript's memory
+
+Let's take a look at how variables are stored in Javascript.
 
 https://codeburst.io/explaining-value-vs-reference-in-javascript-647a975e12a0
 
