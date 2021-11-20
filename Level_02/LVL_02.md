@@ -4,7 +4,7 @@
 
 ## What is p5.js?
 
-To make Pong we're going to use 2D graphics instead of text based graphics. p5.js is a JavaScript graphics library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else!
+To make Pong we're going to use 2D graphics instead of text based graphics. p5.js is a JavaScript graphics library for creative coding.
 
 ## Creating functions 👷
 
@@ -25,9 +25,9 @@ https://p5js.org/get-started/
 
 You need to make two functions, `setup` and `draw`, in your p5.js programs.
 
-The p5.js `setup` function is run once at the start of the game and should contain code for setting up the game, such as setting the inital positions of everything in the game.
+The p5.js `setup` function is run by p5.js once at the start of the game and should contain code for setting up the game, such as setting the inital positions of everything in the game.
 
-The p5.js `draw` function should contain code for drawing an image (frame). It will be run 60 times per second, this is called the frame rate. To animate objects on screen simply change their position everytime the draw function is run.
+The p5.js `draw` function should contain code for drawing an image (frame). p5.js will run it 60 times per second, this is called the frame rate. To animate objects on screen simply change their position everytime the draw function is run.
 
 ## spriteArt
 
@@ -102,7 +102,11 @@ ball.y = height / 2;
 
 Note that `width` and `height` refer to the size of the screen in pixels.
 
-When you create a sprite using an image the width and height of the sprite is automatically assigned to the sprite based on the size of the image.
+When you create a sprite using an image the width and height of the sprite is automatically assigned to the sprite based on the size of the image. They can be accessed using `.w` and `.h`
+
+```js
+console.log('size of the ball: ' + ball.w + 'x' + ball.h);
+```
 
 ## End of Level 02 A
 

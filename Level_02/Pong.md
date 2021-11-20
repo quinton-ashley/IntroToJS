@@ -10,11 +10,11 @@ Make the ball move to the right. Then try moving it to the left. Then try moving
 
 You will notice that when the ball moves it leaves a trail of ball images behind it. That's because everything drawn to the p5.js canvas stays there, it doesn't become a blank slate everytime the draw function is used to make a new frame. To clear the screen draw a background using the background function with `0` as the input argument `background(0)` (0 is black 255 is white)
 
-`mouseX` and `mouseY` store the position of the mouse at all times. For testing this game on your own use `mouseY` to change the positions of the paddles.
+To easily test the game you can change the position of both paddles using your mouse. `mouseX` and `mouseY` store the position of the mouse at all times. Use `mouseY` to change the positions of the paddles.
 
 Personalize your game of Pong by choosing a sport or something else to theme it on. Give the ball a new design, it's pretty small so you can keep it simple.
 
-Make a wall image (or two) with the `spriteArt` function. Place two walls at the top and bottom of the screen. You can make the walls one color or patterned or anything if you'd like, besides transparent lol.
+Make a wall image (or two) with the `spriteArt` function. Place two walls at the top and bottom of the screen. You can make the walls one color or patterned or anything if you'd like, besides transparent lol. The second input parameter to the `spriteArt` function is a number value for scale, you can use it to make the wall big without having to type such a long string.
 
 Make the ball bounce off the walls. To easily test your code for this, make the ball move straight down and then when it bounces have it go straight up. HINT: store the y velocity of the ball (the direction it is moving vertically) in a seperate variable.
 
