@@ -25,3 +25,7 @@ You'll need to edit this text file to make it into a JSON with all the levels in
 http://leehaywood.org/games/crossoban/p/sokevo.txt
 
 Edit the text file using find replace in VSCode using ctrl+f (cmd+f on macOS). You'll need to learn about regular expressions first!
+
+Try displaying a simple level of your own design.
+
+Next try making that level a string

@@ -10,7 +10,7 @@ Make the ball move to the right. Then try moving it to the left. Then try moving
 
 You will notice that when the ball moves it leaves a trail of ball images behind it. That's because everything drawn to the p5.js canvas stays there, it doesn't become a blank slate everytime the draw function is used to make a new frame. To clear the screen draw a background using the background function with `0` as the input argument `background(0)` (0 is black 255 is white)
 
-To easily test the game you can change the position of both paddles using your mouse. `mouseX` and `mouseY` store the position of the mouse at all times. Use `mouseY` to change the positions of the paddles.
+Usually Pong is a two player game but to easily test the game you can change the position of both paddles using your mouse. `mouseX` and `mouseY` store the position of the mouse at all times. Use `mouseY` to change the positions of the paddles.
 
 Personalize your game of Pong by choosing a sport or something else to theme it on. Give the ball a new design, it's pretty small so you can keep it simple.
 
@@ -26,6 +26,6 @@ Place the ball back in the middle of the screen when it goes off the edge of the
 
 When the ball is served make it go in any pure diagonal direction randomly. In level 9 you'll learn how to make the ball move at different angles, other than pure diagonal, without changing its total speed.
 
-Make the ball speed up a little bit each time it hits the walls.
+Make the ball speed up a little bit each time it hits the walls. Have the ball's speed get reset each time it goes off screen.
 
 Reference the [p5.js documentation](https://p5js.org/reference/) to learn how to make simple shapes like rectangles, circles, ovals, and triangles. The background of your Pong game should incorporate a few different shapes. The `colorPal` function can be use it inside p5.js functions like `background`, `fill`, and `stroke` that expect a color. You can also make some images with `spriteArt` if you'd like. Be creative!
