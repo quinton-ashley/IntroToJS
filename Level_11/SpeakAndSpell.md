@@ -16,9 +16,9 @@ Make the Speak and Spell say any letter you type in the input using the `onChang
 
 At the start of the game choose a random word from words array from the preload file. Have it say "spell" and then the word.
 
-Then have the player enter the letters and when they press enter your program should check if their spelling was correct. If their spelling was correct, use the phrase `that_is_correct_now_spell` HINT: Only have the Speak and Spell say "spell" in the beginning of the game, then have `nextWord` just say the word.
+Let the player spell out the word, when they press enter your program should check if their spelling was correct. If their spelling was correct, use the phrase `that_is_correct_now_spell` and tell them the next word they should spell. HINT: Only have the Speak and Spell say "spell" in the beginning of the game, then have `nextWord` just say the word.
 
-If the player spelled the word incorrectly then have the Speak and Spell tell them how to correctly spell the word. Have it spell out the word letter by letter. Here is an example of what it should say: "the correct spelling of worth is w o r t h". HINT: This part is tricky because you can't use a for loop cause the program must wait till each letter sound ends before playing the next letter, you must use a recursion loop.
+If the player spelled the word incorrectly then have the Speak and Spell tell them how to correctly spell the word. Have it spell out the word letter by letter. Here is an example of what it should say: "that is incorrect the correct spelling of worth is w o r t h". HINT: This part is tricky because you can't use a for loop cause the program must wait till each letter sound ends before playing the next letter, you must use a recursion loop.
 
 ## Instructions for PART C
 
@@ -26,11 +26,11 @@ Change your program to use the "promisified" play function to play sounds using 
 
 Use the other interchangeable instructions to add some variety. Such as: "you_are_correct_next_spell" and "you_are_right_try".
 
-Give the player another chance to get the spelling right before telling them how the word is spelled.
+Give the player another chance to spell words right before telling them how the word is spelled. HINT: Say "wrong try again".
 
 Tell the player their score (how many words they got right) after they try to spell 10 words.
 
-Have the player be able to select between two modes at the start of the game. If they type A they get the small words. If they type B they get the long words.
+At the start of the game, the player should be able to select between two modes. If they type "A" for mode A they get the small words. If they type "B" for mode B they get the long words.
 
 ## History of Speech Synthesis
 
@@ -38,6 +38,6 @@ https://www.youtube.com/watch?v=XsMRxNSDccc
 
 You may already know that since the 1980s computer scientists have been creating programs that can say nearly any word in a language using allophones.
 
-Computer scientists at Google have developed Google translate, which uses advanced text to speech synthesis.
+Nowadays, computer scientists at Google have developed Google translate, which uses advanced text to speech synthesis.
 
 https://www.npmjs.com/package/google-tts-api

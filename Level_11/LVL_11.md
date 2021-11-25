@@ -132,8 +132,6 @@ function calculate(value) {
 inp = input('', 0, 0, calculate);
 ```
 
-# Level 11 C
-
 ## Callback Chaining
 
 If you try playing two sounds, one after the other like this it will not work!
@@ -154,7 +152,7 @@ sound0.onended(() => {
 
 Inside `onended` you can either put the name of a function to call or an anonymous function. In this example an anonymous function, a function that isn't given a name is used. Note that it uses the arrow `=>` syntax instead of the `function` keyword.
 
-# Level 11 D
+# Level 11 C
 
 If you have to use callbacks to play five sounds this is what it might look like. It's awful!
 
@@ -200,13 +198,13 @@ setTimeout(() => {
 I may sound like a grumpy old man but it really is true. Promises made JavaScript so much better. Let's learn how to make one! Here's `setTimeout()` wrapped in a promise.
 
 ```js
-function delay(time) => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve();
-    }, time);
-  });
-};
+function delay(time) {
+	return new Promise((resolve, reject) => {
+		setTimeout(() => {
+			resolve();
+		}, time);
+	});
+}
 
 async function timer() {
 	console.log('start timer');
@@ -263,9 +261,8 @@ This level's computer is based on the classic children's toy from the 1980s, the
 - [Level 11 B](#level-11-b)
 	- [Working with Inputs directly](#working-with-inputs-directly)
 	- [Example use of Inputs](#example-use-of-inputs)
-- [Level 11 C](#level-11-c)
 	- [Callback Chaining](#callback-chaining)
-- [Level 11 D](#level-11-d)
+- [Level 11 C](#level-11-c)
 	- [Promises](#promises)
 	- [Promisfied p5.js Sound](#promisfied-p5js-sound)
 	- [Computer History: Speak and Spell](#computer-history-speak-and-spell)
