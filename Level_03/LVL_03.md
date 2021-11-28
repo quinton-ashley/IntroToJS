@@ -101,6 +101,22 @@ The code above prints out a numbered list of names in the JS console.
 
 # Level 03 C
 
+## for loops
+
+Scroll up and take another look at the example of the while loop with a counter variable, then check out this for loop! It does the same thing but all the steps related to the index variable are written as one line. The order of their operation is still the same.
+
+```java
+String[] names = new String[]{"Jake", "Ali", "Ben", "Cam"};
+
+// (INITIALIZER; CONDITION; INCREMENATION)
+for (int i = 0; i < names.length; i++) {
+	// print the next name in the list
+	System.out.println(i + '. ' + names[i]);
+}
+```
+
+When the for loop starts `i` is set to 0, then is check the condtion. If the condition is true the for loop runs for the first time, this is called an iteration. When the for loop ends, the incrementor section of the for loop is run, in this case `i++` which increases the value of `i` by 1. The condition is checked again, if true the for loop will repeat again, doing another iteration. Until the condition is false the for loop will continue to repeat.
+
 ## Breaking out of a loop early
 
 If you need to exit a while loop early, use the `break` keyword.
@@ -123,5 +139,6 @@ This level's computer was inspired by the [Apple II](https://www.youtube.com/wat
   - [Counting with while loops](#counting-with-while-loops)
   - [End of Level 03 B](#end-of-level-03-b)
 - [Level 03 C](#level-03-c)
+  - [for loops](#for-loops)
   - [Breaking out of a loop early](#breaking-out-of-a-loop-early)
   - [Computer History: Apple II](#computer-history-apple-ii)
