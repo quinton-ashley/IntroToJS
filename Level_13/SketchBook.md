@@ -6,7 +6,7 @@ The pixel art sketchbook program will let users create and save pixel art images
 
 ## Instructions
 
-There's a color palette on the left side of the screen. It was created by using `spriteArt()` with an array of the palette's keys. Each string in the array is a line.
+There's a color palette on the left side of the screen. It was created by using `spriteArt()` with an array of the palette's keys. Each String in the array is a line.
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
 

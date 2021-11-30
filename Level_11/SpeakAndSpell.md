@@ -8,7 +8,7 @@ Copy the `SpeakAndSpell` folder into your `quintos-games` project `GAMES` folder
 
 You may be too young to remember this but websites used to be able to just immediately start playing unwanted music or ads when you visited them. Nowadays due to restrictions that improved everyone's internet browsing experience, modern browsers must get user input before playing any sounds. If you try to play a sound without the user interacting with a web page the browser will throw this error: "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page.". That gesture on the page can be as simple as the user pressing enter on the keyboard or clicking a button. This is why in the starter code for this project I use `alert('Press enter to start.')` to get user input before starting the game and playing sounds.
 
-First work on the preload file that will load all the sound files before `speakAndSpell.js` is started. Load all the letter sounds into an object called `letterSounds`. HINT: the letters should be the keys and the sounds should be the values in the `letterSounds` object. HINT: put the alphabet in a string and use the `split` function to get an array of all the letters in the alphabet. Also try using a "for of" loop.
+First work on the preload file that will load all the sound files before `speakAndSpell.js` is started. Load all the letter sounds into an object called `letterSounds`. HINT: the letters should be the keys and the sounds should be the values in the `letterSounds` object. HINT: put the alphabet in a String and use the `split` function to get an array of all the letters in the alphabet. Also try using a "for of" loop.
 
 ## Instructions for PART B
 

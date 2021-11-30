@@ -4,11 +4,11 @@
 
 You may know that computers store all data in binary, just 0s and 1s. How is that possible?
 
-If there are only 0 and 1 how do computers even store the number 2?
+If there are only 0s and 1s how do computers even store the number 2?
 
 ## Base 10
 
-We humans have ten fingers so our number system is based on the number 10. We use ten arabic numerals to represent the values 0-9, called digits. We don't have a seperate symbol for ten so we use two digits
+We humans have ten fingers so our number system is based on the number 10. We use ten symbols (arabic numerals) to represent these values 0,1,2,3,4,5,6,7,8,9 that are called digits. We don't have a seperate symbol for the value ten so we use two digits
 
 ```base10
 10
@@ -18,49 +18,83 @@ The 1 is in the tens place which is how we know it's ten. We know `40` is forty 
 
 ## Base 2
 
-Computers have switches that can either be on or off, so their number system is based on 2. Bits can either be 0 or 1, so to represent the number two they need two bits.
+Computers have switches that can either be on or off, so their number system is based on 2. Bits can either be 0 or 1, there is no single symbol for the value two, so to represent the number two they need two bits.
 
 ```base2
 10
 ```
 
-What?! But 10 is ten! Well in our usual base 10 number system the 1 would be in the tens place but in base 2 its in the twos place so 10 has a value of two!
+What?! But 10 is ten! Well in our usual base 10 number system the 1 would be in the tens place but in base 2 the 1 is in the twos place so 10 has a value of two!
 
 ## Counting in Binary
 
 | Base 10 | Base 2 |
 | ------: | -----: |
-|       0 |      0 |
-|       1 |      1 |
-|       2 |     10 |
-|       3 |     11 |
-|       4 |    100 |
-|       5 |    101 |
-|       6 |    110 |
-|       7 |    111 |
+|       0 |   0000 |
+|       1 |   0001 |
+|       2 |   0010 |
+|       3 |   0011 |
+|       4 |   0100 |
+|       5 |   0101 |
+|       6 |   0110 |
+|       7 |   0111 |
 |       8 |   1000 |
 |       9 |   1001 |
 |      10 |   1010 |
+|      11 |   1011 |
+|      12 |   1100 |
+|      13 |   1101 |
+|      14 |   1110 |
+|      15 |   1111 |
 
 When counting in binary you can think of the 1 being like a 9 in decimal. When you get to 1, 11, and 111 another bit must be added to represent the next value.
 
+4 bits can be used to create 16 different possible combinations, so 4 bits can only store 16 different values, 0-15. Note that the number of values that can be stored value in a given number of bits can be calculated by doing 2 to the power of the number of bits. 2^4, two to the power of 4, (aka `2*2*2*2`) is 16!
+
+## Converting from Binary to Decimal
+
+Note that 0010 in binary is 2 in decimal, 0100 is 4, and 1000 is 8. We can therefore calculate the decimal value of binary numbers by finding the sum of 2 to the power of the place value for all the places with a 1 in it.
+
+```
+1111
+
+2^3 + 2^2 + 2^1 + 2^0 =
+ 8  +  4  +  2  +  1  = 15
+```
+
 ## Byte
 
-A byte is a group of 8 bits.
+A byte is a group of 8 bits. How many different values can be stored using 8 bits? Remember we can calculate this by doing 2 to the power of the number of bits 2^8 is... uhh. Well 2^4 is 16, so 2^5 must be 32, then 2^6 is 64, 2^7 is 128, so finally 2^8 is 256. One byte (8 bits) can store 256 different values, 0-255!
 
 ## ASCII
 
-To store text, letters, digits, and symbols, computers assign them a numerical value that is of course stored in binary.
+Computers have to store everything as binary numbers, so symbols (including letters and digits) need to be assigned a numerical value that corresponds to that symbol.
 
-ASCII only used 7 bits to encode a single character of text.
+Before ASCII was created, computer manufactures all devised their own methods for assigning numbers to symbols. Because of this, if you created a text file on one computer and tried to load it on a computer from a different company, it could be an indecipherable mess! ASCII was created to solve this problem.
+
+ASCII (American Standard Code for Information Interchange) was developed during the 1960s. The purpose of ASCII is right in the name, its creators wanted ASCII to become a standard code for computers to exchange information.
+
+ASCII only used 7 bits to encode a single character of text. This allowed for 128 different symbols and control characters (like tab/ident and escape) to be represented.
+
+Since early personal computers used bytes (8 bits) to store characters this allowed computer companies to make extensions to ASCII that could add symbols specific to that system.
+
+Take a look at the ASCII table:
+
+https://www.asciitable.com/
+
+Note that many of the control characters in ASCII were used for sending telegraphs via teleprinters and also for typing on teletype machines, making them obsolete now.
 
 ## Unicode
 
-Today all computers share a new encoding standard called unicode, which still includes all the ASCII symbols but has many, many more.
+Today all modern computers share a new encoding standard called Unicode, which still includes all the ASCII symbols in the beginning but has also standardized its extension to include hundreds of thousands of additional symbols encompassing practically all forms of written communication in every language. There are also tons of niche mathematical and engineering symbols, icons, and every emoji!
+
+Take a look at the unicode table:
+
+https://unicode-table.com/en/
 
 ## ASCII art
 
-ASCII art is text based art made exclusively from symbols in the ASCII character set. Here are a few example:
+ASCII art is text based art made exclusively from symbols in the original ASCII 128 character set or extended ASCII 256 character sets. Here are a few example:
 
 ```
 

@@ -11,7 +11,7 @@ In the past you've been using `prompt()` which creates a rectangle, text, an inp
 text('Hello World!', 10, 12);
 ```
 
-`text` expects at least three input arguments/parameters seperated by commas. The first input parameter is the string to display and the second and third inputs parameters are the row and column to display it on.
+`text` expects at least three input arguments/parameters seperated by commas. The first input parameter is the String to display and the second and third inputs parameters are the row and column to display it on.
 
 ## Creating a Button
 
@@ -109,7 +109,7 @@ if (robot) {
 
 You can check if a variable exists by putting it on it's own in a boolean condition. To check if it's undefined (falsy), put a negation operator `!` in front of the variable name in the boolean condition. Variables are considered undefined if they were not assigned a value.
 
-Remember that the prompt function will return a string with the text the user entered or `null` if the user cancelled out of the prompt. In this example, if `name` is set to any string of text it will be considered truthy. If `name` is `null` or an empty string it will be considered falsy and the user will be asked for their name again.
+Remember that the prompt function will return a String with the text the user entered or `null` if the user cancelled out of the prompt. In this example, if `name` is set to any String of text it will be considered truthy. If `name` is `null` or an empty String it will be considered falsy and the user will be asked for their name again.
 
 ```js
 let name;
@@ -135,7 +135,7 @@ Any value that is not falsy is truthy. Variables are falsy if they are:
 undefined;
 null;
 0; // the number 0
-(''); // an empty string
+(''); // an empty String
 ```
 
 # Level 04 C
@@ -189,17 +189,17 @@ Of course, all of these great features raised the price significantly. At $8150,
 Originally developed for business executives, GRiDs were also used by the U.S. military 'in the field', and by NASA on the Space Shuttles during the 1980's and 90's. It's even been said that the US President's "nuclear football" at one time included a GRiD computer.
 
 - [Level 04 A](#level-04-a)
-	- [Drawing text to the screen](#drawing-text-to-the-screen)
-	- [Creating a Button](#creating-a-button)
-	- [End of Level 04 A](#end-of-level-04-a)
+  - [Drawing text to the screen](#drawing-text-to-the-screen)
+  - [Creating a Button](#creating-a-button)
+  - [End of Level 04 A](#end-of-level-04-a)
 - [Level 04 B](#level-04-b)
-	- [Recursion](#recursion)
-	- [Erasing a button](#erasing-a-button)
-	- [Implied boolean conditions](#implied-boolean-conditions)
-	- [How to check if a variable is defined](#how-to-check-if-a-variable-is-defined)
-	- [truthy or falsy?](#truthy-or-falsy)
+  - [Recursion](#recursion)
+  - [Erasing a button](#erasing-a-button)
+  - [Implied boolean conditions](#implied-boolean-conditions)
+  - [How to check if a variable is defined](#how-to-check-if-a-variable-is-defined)
+  - [truthy or falsy?](#truthy-or-falsy)
 - [Level 04 C](#level-04-c)
-	- [Date](#date)
-	- [Adding to Arrays](#adding-to-arrays)
-	- [asynchronous functions](#asynchronous-functions)
-	- [Computer History: GRiD Compass](#computer-history-grid-compass)
+  - [Date](#date)
+  - [Adding to Arrays](#adding-to-arrays)
+  - [asynchronous functions](#asynchronous-functions)
+  - [Computer History: GRiD Compass](#computer-history-grid-compass)

@@ -28,4 +28,4 @@ Edit the text file using find replace in VSCode using ctrl+f (cmd+f on macOS). Y
 
 Try displaying a simple level of your own design.
 
-Next try making that level a string
+Next try making that level a String

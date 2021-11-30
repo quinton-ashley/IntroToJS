@@ -14,7 +14,7 @@ https://codepen.io/qashto/pen/porNBjX?editors=0010
 
 Since you're just starting to write this program, don't make the number random yet so you can test it out more easily. Create a varible called `num` using `let` and choose the number yourself.
 
-Tell the player to guess a number using `await prompt()` put your message (string) inside the parenthesis of the `prompt` function. Create the variable `guess` using `let`, assign it to the user's response to the `prompt`.
+Tell the player to guess a number using `await prompt()` put your message (String) inside the parenthesis of the `prompt` function. Create the variable `guess` using `let`, assign it to the user's response to the `prompt`.
 
 After each guess, the player should be told if their guess was right or wrong. If they were wrong, the player should be told whether their guess was too high or too low. They should also be told when they guess the number correctly. Use the `alert` function inside the code blocks `{}` of `if` and `else if` statements!
 

@@ -200,7 +200,7 @@ console.log(favColor);
 
 That was a LOT of information! Here's a summary of everything we learned about:
 
-- types of variables: numbers, booleans, strings and functions
+- types of variables: numbers, booleans, Strings and functions
 - making boolean conditions to test if something is `true` or `false`
 - using double equals to `==` check for equivalence
 - `if`, `else if`, and `else` statements
@@ -243,7 +243,7 @@ Not equals `!=` checks if something is not equal to something else.
 
 ```js
 if (message != '') {
-	// check to see if string message is not empty
+	// check to see if String message is not empty
 }
 ```
 

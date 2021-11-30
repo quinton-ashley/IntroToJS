@@ -15,7 +15,7 @@ JSON stands for JavaScript Object Notation. JSON files are just a JS object in a
 
 ## Regular Expressions (RegEx)
 
-To better manipulate data, simple find and replace using strings often won't cut it. You'll need to learn about Regular Expressions, a powerful pattern matching tool.
+To better manipulate data, simple find and replace using Strings often won't cut it. You'll need to learn about Regular Expressions, a powerful pattern matching tool.
 
 https://regex101.com/
 
@@ -28,7 +28,7 @@ https://regex101.com/
 ```js
 let file = 'yourFileName.txt'; // file name
 let req = await fetch(file); // returns a request object
-let txt = await req.text(); // returns a string with the text from the file
+let txt = await req.text(); // returns a String with the text from the file
 ```
 
 Here's what the same code looks like in one line. Note that the parenthesis around await fetch are necessary to indicate that the fetch function should be done first.

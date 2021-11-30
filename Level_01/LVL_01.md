@@ -83,14 +83,14 @@ You've finished the install process! Read the next lesson section before startin
 
 ## Special characters
 
-When you make strings using quotes they can't be on multiple lines of your JavaScript file.
+When you make Strings using quotes they can't be on multiple lines of your JavaScript file.
 
 ```js
 let example = "I want to put something on a new line:
 something"; // ERROR!
 ```
 
-To put part of a string on a newline use `\n` the newline character.
+To put part of a String on a newline use `\n` the newline character.
 
 ```js
 let example = 'I want to put something on a new line:\nsomething';
@@ -101,7 +101,7 @@ I want to put something on a new line:
 something
 ```
 
-The tab character `\t`, note that the `+` operator is used to add another string to the list on a new line in the JavaScript code.
+The tab character `\t`, note that the `+` operator is used to add another String to the list on a new line in the JavaScript code.
 
 ```js
 let list = 'Grocery list:\n\n\t'

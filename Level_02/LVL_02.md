@@ -33,7 +33,7 @@ The p5.js `draw` function should contain code for drawing an image (frame). p5.j
 
 p5.js has it's own `createImage` function, but it's a bit complicated. I created a simple `spriteArt` function for QuintOS that we can use to make sprites for our games very easily!
 
-The first parameter to `spriteArt` is a string representing the color values of pixels.
+The first parameter to `spriteArt` is a String representing the color values of pixels.
 
 ```js
 let img = spriteArt('w.w');
@@ -57,9 +57,9 @@ Here's the full color palette you can use for this game. They are the same color
 
 ## Making Strings with Backticks
 
-Backticks can also be used to create strings. Backticks look like a backwards apostrophe. They can be found on your keyboard on a special key next to the number 1. The backtick key also has a squiggly line called a tilda on it.
+Backticks can also be used to create Strings. Backticks look like a backwards apostrophe. They can be found on your keyboard on a special key next to the number 1. The backtick key also has a squiggly line called a tilda on it.
 
-When backticks are used to create strings, the text inside the backticks can go on multiple lines of code and retain these newlines without the use of the newline `\n` character.
+When backticks are used to create Strings, the text inside the backticks can go on multiple lines of code and retain these newlines without the use of the newline `\n` character.
 
 ```js
 let str = `
@@ -79,9 +79,9 @@ It's a simple yellow and black smiley face image. 😃
 
 Note that you don't have to complete the width of each line with transparent pixels, you can just leave it blank.
 
-## string.repeat(amount)
+## String.repeat(amount)
 
-To more easily create large strings you can use a String function called [repeat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
+To more easily create large Strings you can use a String function called [repeat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
 
 ```js
 let pattern = '><'.repeat(4);
@@ -114,7 +114,7 @@ Here's what you learned about in Level 2:
 
 - p5.js basics
 - the `spriteArt` function
-- the `repeat` string function
+- the `repeat` String function
 - how to create sprites and position them
 
 # Level 02 B
@@ -168,18 +168,18 @@ background(colorPal('r'));
 This level's computer is based on the Commodore 64
 
 - [Level 02 A](#level-02-a)
-	- [What is p5.js?](#what-is-p5js)
-	- [Creating functions 👷](#creating-functions-)
-	- [p5.js Basics](#p5js-basics)
-	- [spriteArt](#spriteart)
-	- [Making Strings with Backticks](#making-strings-with-backticks)
-	- [string.repeat(amount)](#stringrepeatamount)
-	- [p5.play Sprites](#p5play-sprites)
-	- [End of Level 02 A](#end-of-level-02-a)
+  - [What is p5.js?](#what-is-p5js)
+  - [Creating functions 👷](#creating-functions-)
+  - [p5.js Basics](#p5js-basics)
+  - [spriteArt](#spriteart)
+  - [Making Strings with Backticks](#making-Strings-with-backticks)
+  - [String.repeat(amount)](#Stringrepeatamount)
+  - [p5.play Sprites](#p5play-sprites)
+  - [End of Level 02 A](#end-of-level-02-a)
 - [Level 02 B](#level-02-b)
-	- [Vectors](#vectors)
-	- [Bounces](#bounces)
-	- [Immovable objects](#immovable-objects)
-	- [colorPal](#colorpal)
-	- [End of Level 02 B](#end-of-level-02-b)
-	- [Computer History: Commodore 64](#computer-history-commodore-64)
+  - [Vectors](#vectors)
+  - [Bounces](#bounces)
+  - [Immovable objects](#immovable-objects)
+  - [colorPal](#colorpal)
+  - [End of Level 02 B](#end-of-level-02-b)
+  - [Computer History: Commodore 64](#computer-history-commodore-64)

@@ -2,13 +2,13 @@
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen2.jpg)
 
-## string.split(seperator)
+## String.split(seperator)
 
 Strings have a lot of useful functions we can use. MDN, the Mozilla Developer Network, is a really great resource for learning JS. Documentation for the String class can be found here:
 
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String>
 
-`.split(char)` splits a string by a pattern creating an array of strings
+`.split(char)` splits a String by a pattern creating an array of Strings
 
 ```js
 // split by ' ' to get an array of words
@@ -16,9 +16,16 @@ Strings have a lot of useful functions we can use. MDN, the Mozilla Developer Ne
 // -> ['the', 'red', 'fox']
 ```
 
+You can also split a String into individual letters using the split function with an empty String as the input.
+
+```js
+'the red fox'.split('');
+// -> [ "t", "h", "e", " ", "r", "e", "d", " ", "f", "o", "x" ]
+```
+
 ## array.join(separator)
 
-The Array `join` function creates a string by joining each element in the array together, inserting an optional seperator string between each item.
+The Array `join` function creates a String by joining each element in the array together, inserting an optional seperator String between each item.
 
 ```js
 let names = ['Amy', 'Ellie', 'Max'];
@@ -31,8 +38,8 @@ names.join(' ~ ');
 We learned how to:
 
 - make while loops with a counter variable
-- split strings
-- get a character at a specific index in a string
+- split Strings
+- get a character at a specific index in a String
 
 # Level 02 B
 
@@ -59,16 +66,16 @@ nums[1] = 36;
 
 ## Accessing characters in a String
 
-To access characters in a string you can use `[]` but note that you can't edit them like you can with arrays.
+To access characters in a String you can use `[]` but note that you can't edit them like you can with arrays.
 
 ```js
 let animal = 'the red fox';
 console.log(animal[4]); // prints 'r'
 animal[8] = 'b'; // error
-// will not change fox string to 'the red box'
+// will not change fox String to 'the red box'
 ```
 
-Strings are immutable, meaning individual characters in the string can not be changed.
+Strings are immutable, meaning individual characters in the String can not be changed.
 
 ## Counting with while loops
 
@@ -130,12 +137,12 @@ break;
 This level's computer was inspired by the [Apple II](https://www.youtube.com/watch?v=CxJwy8NsXFs)
 
 - [Level 03 A](#level-03-a)
-  - [string.split(seperator)](#stringsplitseperator)
+  - [String.split(seperator)](#Stringsplitseperator)
   - [array.join(separator)](#arrayjoinseparator)
   - [End of Level 03 A](#end-of-level-03-a)
 - [Level 02 B](#level-02-b)
   - [Accessing items in an Array](#accessing-items-in-an-array)
-  - [Accessing characters in a String](#accessing-characters-in-a-string)
+  - [Accessing characters in a String](#accessing-characters-in-a-String)
   - [Counting with while loops](#counting-with-while-loops)
   - [End of Level 03 B](#end-of-level-03-b)
 - [Level 03 C](#level-03-c)

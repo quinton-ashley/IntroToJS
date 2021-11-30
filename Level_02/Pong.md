@@ -14,7 +14,7 @@ Usually Pong is a two player game but to easily test the game you can change the
 
 Personalize your game of Pong by choosing a sport or something else to theme it on. Give the ball a new design, it's pretty small so you can keep it simple.
 
-Make a wall image (or two) with the `spriteArt` function. Place two walls at the top and bottom of the screen. You can make the walls one color or patterned or anything if you'd like, besides transparent lol. The second input parameter to the `spriteArt` function is a number value for scale, you can use it to make the wall big without having to type such a long string. HINT: use the `repeat` function too and remember the newline character `\n`.
+Make a wall image (or two) with the `spriteArt` function. Place two walls at the top and bottom of the screen. You can make the walls one color or patterned or anything if you'd like, besides transparent lol. The second input parameter to the `spriteArt` function is a number value for scale, you can use it to make the wall big without having to type such a long String. HINT: use the `repeat` function too and remember the newline character `\n`.
 
 Make the ball bounce off the walls. To easily test your code for this, make the ball move straight down and then when it bounces have it go straight up. HINT: store the y velocity of the ball (the direction it is moving vertically) in a seperate variable.
 

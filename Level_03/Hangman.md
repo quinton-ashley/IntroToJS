@@ -4,7 +4,7 @@
 
 ## Instructions for PART A
 
-Split the `words` string into an array of words, assign the array to the `words` variables. HINT: use the `split` String function.
+Split the `words` String into an array of words, assign the array to the `words` variables. HINT: use the `split` String function.
 
 Pick a random word from the array of words. HINT: reference your use of `Math.random()` in the GuessTheNumber game.
 

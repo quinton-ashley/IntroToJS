@@ -8,7 +8,7 @@
 		// while choice is not null (nothing)
 		// null in this case indicates the player cancelled out of the prompt
 
-		let msg = ''; // initialize message to empty string
+		let msg = ''; // initialize message to empty String
 
 		if (choice == -1) {
 			/* PART A0: Start your story! */

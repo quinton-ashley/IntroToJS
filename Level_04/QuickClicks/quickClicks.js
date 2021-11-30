@@ -5,7 +5,7 @@ const target = `
 88    88
  8b  d8 
  'Y88P' `.slice(1);
-// slice removes the first character from the string
+// slice removes the first character from the String
 // in this case I remove the new line at the beginning
 // so the first line of the button will be at the proper
 // row value
