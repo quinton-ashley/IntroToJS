@@ -18,4 +18,4 @@ Copy the text art from a website and put it into a new file in your `ClickAPath`
 
 Instead of a while loop to go to the next path or page, use recursion! Create a function called `nextPage` that you can use to go to the next page of the story by clicking the illustrated buttons.
 
-The other "pages" of the story should still use the prompt, but if you'd like to make them all illustrated, then go for it! If not move on to Level 04.
+The other "pages" of the story should still use the prompt, but if you'd like to make them all illustrated, then go for it! If not move on to the next level.

@@ -1,6 +1,6 @@
 # Level 10 A
 
-## Coding Philosophy: Part 2
+## Coding Philosophy: How to approach complex problems
 
 Solve complex problems by thinking algorithmically! That means breaking problems down step by step. "A journey of a thousand miles begins with a single step". If you get stuck on a problem you may be overcomplicating it. Keep things as simple as possible at first and test often after adding new code! Doing this will help prevent you from getting stuck.
 

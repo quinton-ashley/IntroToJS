@@ -8,11 +8,7 @@ After you complete those challenges you can upgrade to level 6! 🥳
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen4.jpg)
 
-## Coding Philosophy: Part 1
-
-Good code should be easy for other programmers (humans) to read and efficient for your computer to run. Here are some guidelines for how to write good code!
-
-Above all, it's important to put effort into thinking of GOOD names for your variables. Good variable names in Javascript are short and concise descriptors. Write sufficiently detailed comments in your code too.
+## Coding Philosophy: Using functions effectively
 
 Try not to rewrite the same exact lines of code in different places, put that code chunk in a function and use that function instead. Likewise if you have a chunk of code and you want to do something only slightly different at another point in your program, make a function with input parameters for the thing(s) that make it different. If you have a code chunk inside a function that is unrelated to the name/description you gave that function, move that code into its own function.
 
@@ -100,7 +96,7 @@ How could we use a nested for loop to clear the board of all the pieces by assig
 - nested for loops
 
 - [Level 06 A](#level-06-a)
-	- [Coding Philosophy: Part 1](#coding-philosophy-part-1)
+	- [Coding Philosophy: Using functions effectively](#coding-philosophy-using-functions-effectively)
 	- [Return variables from a function](#return-variables-from-a-function)
 	- [Creating functions with input parameters](#creating-functions-with-input-parameters)
 	- [Arrow function syntax](#arrow-function-syntax)

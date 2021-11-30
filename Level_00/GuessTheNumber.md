@@ -45,7 +45,7 @@ _Make sure you read all of `LVL_00.md` before doing PART B_
 
 Make the game loop by using a while loop. Think about what condition must remain true for the player to keep playing the game.
 
-## Instructions for PART C
+## CHALLENGE SECTION
 
 _Complete Hangman (A and B) first!_
 

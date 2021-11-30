@@ -23,10 +23,6 @@ sayHello(); // run the function
 
 https://p5js.org/get-started/
 
-You need to make two functions, `setup` and `draw`, in your p5.js programs.
-
-The p5.js `setup` function is run by p5.js once at the start of the game and should contain code for setting up the game, such as setting the inital positions of everything in the game.
-
 The p5.js `draw` function should contain code for drawing an image (frame). p5.js will run it 60 times per second, this is called the frame rate. To animate objects on screen simply change their position everytime the draw function is run.
 
 ## spriteArt
@@ -172,8 +168,8 @@ This level's computer is based on the Commodore 64
   - [Creating functions 👷](#creating-functions-)
   - [p5.js Basics](#p5js-basics)
   - [spriteArt](#spriteart)
-  - [Making Strings with Backticks](#making-Strings-with-backticks)
-  - [String.repeat(amount)](#Stringrepeatamount)
+  - [Making Strings with Backticks](#making-strings-with-backticks)
+  - [String.repeat(amount)](#stringrepeatamount)
   - [p5.play Sprites](#p5play-sprites)
   - [End of Level 02 A](#end-of-level-02-a)
 - [Level 02 B](#level-02-b)
