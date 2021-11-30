@@ -174,7 +174,38 @@ async function sayHello() {
 
 Async functions and callbacks are the two main forms of asynchronous programming in JavaScript. Async functions were created so that asynchronous code could be written linearly like synchronous code, one line after the other.
 
-## Computer History: GRiD Compass
+## Changing the positions of prompts and alerts
+
+The position of prompt and alert windows can be changed by defining their row and column values just like with the `text` function.
+
+```js
+//         (text           , row, col, w)
+await alert('I can move too!', 5, 20, 16);
+```
+
+A fourth input paramter can be used to restrict the width of the window. This also works with the `text` and `prompt` functions but not the `button` function. Text that is longer than the specified width will be put on new lines.
+
+If row, column, and width are not defined, default position values are used, which are different for each of the QuintOS virtual computers.
+
+# Level 04 D
+
+## modulo operator
+
+The modulo operator `%` gets the gets the remainder of a division.
+
+```js
+// true if x is even (divisible by 2)
+if (x % 2 == 0) {
+	console.log('x is even!');
+}
+
+// true if y is divisible by 5
+if (y % 5 == 0) {
+	console.log(y + ' is a multiple of 5');
+}
+```
+
+# Computer History: GRiD Compass
 
 This level's computer is based on the GRiD Compass 1101. The following description is from http://oldcomputers.net/grid1101.html
 
@@ -188,18 +219,24 @@ Of course, all of these great features raised the price significantly. At $8150,
 
 Originally developed for business executives, GRiDs were also used by the U.S. military 'in the field', and by NASA on the Space Shuttles during the 1980's and 90's. It's even been said that the US President's "nuclear football" at one time included a GRiD computer.
 
+# Level 04 Table of Contents
+
 - [Level 04 A](#level-04-a)
-  - [Drawing text to the screen](#drawing-text-to-the-screen)
-  - [Creating a Button](#creating-a-button)
-  - [End of Level 04 A](#end-of-level-04-a)
+	- [Drawing text to the screen](#drawing-text-to-the-screen)
+	- [Creating a Button](#creating-a-button)
+	- [End of Level 04 A](#end-of-level-04-a)
 - [Level 04 B](#level-04-b)
-  - [Recursion](#recursion)
-  - [Erasing a button](#erasing-a-button)
-  - [Implied boolean conditions](#implied-boolean-conditions)
-  - [How to check if a variable is defined](#how-to-check-if-a-variable-is-defined)
-  - [truthy or falsy?](#truthy-or-falsy)
+	- [Recursion](#recursion)
+	- [Erasing a button](#erasing-a-button)
+	- [Implied boolean conditions](#implied-boolean-conditions)
+	- [How to check if a variable is defined](#how-to-check-if-a-variable-is-defined)
+	- [truthy or falsy?](#truthy-or-falsy)
 - [Level 04 C](#level-04-c)
-  - [Date](#date)
-  - [Adding to Arrays](#adding-to-arrays)
-  - [asynchronous functions](#asynchronous-functions)
-  - [Computer History: GRiD Compass](#computer-history-grid-compass)
+	- [Date](#date)
+	- [Adding to Arrays](#adding-to-arrays)
+	- [asynchronous functions](#asynchronous-functions)
+	- [Changing the positions of prompts and alerts](#changing-the-positions-of-prompts-and-alerts)
+- [Level 04 D](#level-04-d)
+	- [modulo operator](#modulo-operator)
+- [Computer History: GRiD Compass](#computer-history-grid-compass)
+- [Level 04 Table of Contents](#level-04-table-of-contents)

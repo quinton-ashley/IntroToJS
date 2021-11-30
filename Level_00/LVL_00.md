@@ -180,7 +180,7 @@ let favColor = await prompt('What is your favorite color?');
 // the user's response to the prompt is assigned to favColor
 
 // waits for user to read the message in the alert and press okay
-await alert("That's my favorite color too!"); // show message to user
+await alert(favColor + ' is my favorite color too!'); // show message to user
 ```
 
 ## Javascript Console

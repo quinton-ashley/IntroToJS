@@ -16,4 +16,6 @@ To use the text based art in your code you will store the text art as Strings. U
 
 Copy the text art from a website and put it into a new file in your `ClickAPath` folder. You can call it `art.txt` the `.txt` is the file extension used for plain text files. Use ctrl+f (command+f on macOS) to find backslashes in your text art. Enter a backslash in the find input then click find. Enter two backslashes in the replace input, then click replace all. This will replace all of the single slashes with two backslashes! Do the same for backticks, replace with backslash backtick.
 
-The other "pages" of the story can still use the prompt but if you'd like to make them all illustrated go for it! If not move on to Level 04.
+Instead of a while loop to go to the next path or page, use recursion! Create a function called `nextPage` that you can use to go to the next page of the story by clicking the illustrated buttons.
+
+The other "pages" of the story should still use the prompt, but if you'd like to make them all illustrated, then go for it! If not move on to Level 04.
