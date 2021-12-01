@@ -22,7 +22,9 @@ Replace the while loops you used for counting, use for loops instead!
 
 If the player guesses a letter which does not occur in the word, the computer should add a body part to the hangman stick figure. HINT: Don't check if they got a letter wrong, just ensure their guess matched none of the letters in the word.
 
-If the player makes too many wrong guesses and the hangman drawing is completed, the game should end. Tell the player they lost and what the word was.
+If the player makes too many wrong guesses and the hangman drawing is completed, the game should end. HINT: use `break` to exit the game loop early.
+
+Make the game a bit easier by adding more drawings to the `hangman` array.
 
 The player guessing the word may, at any time, attempt to guess the whole word. If the word is correct, the game is over and the guesser wins. The guesser should also still be able to win by guessing all the letters that appear in the word.
 

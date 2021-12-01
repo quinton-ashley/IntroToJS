@@ -6,7 +6,7 @@ Why is this field of study called "Computer Science" and not "Program Writing" o
 
 These lessons will teach you how to code in JavaScript, which is the most popular modern programming language and my personal favorite!
 
-Since you're just starting out, you will have to memorize some vocabulary, "grammar", and syntax to learn this new language. Learning to code isn't what programming is all about though, just like learning to play scales isn't what being a musician is, putting on a costume and memorizing lines isn't what acting is. In these lessons you will not just learn to code but also how to think like a programmer! Programming is a skill you can develop over the course of your whole life.
+Since you're just starting out, you will have to memorize some vocabulary, "grammar", and syntax to learn this new language. Learning to code isn't what programming is all about though, just like learning to play scales isn't what being a musician is all about. In these lessons you will not just learn to code but also how to think like a programmer! Programming is a skill you can develop over the course of your whole life.
 
 As you may expect, programming will be really fun and interesting for you if you like abstract problem solving, in this way it is also similar to Math. Programming has a language arts aspect too. You will not only strive to write efficient code but also code that is easily understood by other programmers.
 
@@ -16,7 +16,7 @@ Issac Newton once said, "we stand on the shoulders of giants". To understand how
 
 If you signed up for this course you might want to know how video games work and how to make your own! If not, making games will hopefully be a fun way for you to learn how to code.
 
-During each lesson you'll develop a QuintOS game that runs on virtual computers displayed in your web browser: Google Chrome, Firefox, or Opera. QuintOS is a retro game engine I created for this course and also for my own games. As you level up your coding skills, your virtual computer will get upgraded. So since you're just starting out, the first game you make will be for... a programmable calculator. 😜
+During each lesson you'll develop a QuintOS game that runs on virtual computers displayed in your web browser: Google Chrome, Firefox, or Opera. QuintOS is a retro game engine I created for this course. As you level up your coding skills, your virtual computer will get upgraded. Since you're just starting out, the first game you make will be for... a programmable calculator. 😜
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen0.jpg)
 
@@ -51,7 +51,7 @@ let x = 10;
 x = 5; // good :)
 ```
 
-Double slash `//` is for making a comment, any text behind it on the same line will not be considered part of the code's instructions.
+Double slash `//` is for making a comment, any text behind it on the same line will not be considered part of the code's instructions. Comments are used to describe what is happening in the code. You might want to make comments so other people can understand your programs or so that you can understand it yourself in case you forget what you did.
 
 ## Types of Variables 🔡
 
@@ -73,7 +73,7 @@ let codingIsFun = true;
 
 ### String
 
-Strings are text, stored as lists of characters. You can think of them like lettered beads on a charm bracelet string. They are defined using quotes, apostrophes, or backticks: " " ' ' \`\`
+Strings are text, stored as lists of characters. To remember the name String, you can think of lettered beads on a charm bracelet string. Strings are defined using quotes, apostrophes, or backticks: " " ' ' \`\`
 
 ```js
 let story = 'The dog went to the dog park on 3rd Avenue.';
@@ -94,6 +94,8 @@ let apple = '🍎';
 let applePie = '🍎 π';
 let applePieIceCream = '🍎 π 🍨';
 ```
+
+Note using this naming convention isn't required for JavaScript to run, but you should still do it to make your code easier to read.
 
 ## Mathematical operators 🔢
 
@@ -118,7 +120,7 @@ Single equals `=` is for assigning values to variables. Double equals `==` is a 
 
 `else if` and `else` are used after if statements, they form a chain of different paths the code can take if the previous if statements were false.
 
-Take a look at the example below which assigns a color to the variable `fruitColor` based on the name of the `fruit`.
+Take a look at the example below, which assigns a color to the variable `fruitColor` based on the name of the `fruit`.
 
 ```js
 let fruitColor; // variables can be created without a value assigned to them
@@ -166,11 +168,11 @@ turn('right');
 moveForward(2);
 ```
 
-This code for a robot remote control makes the robot power on, turn to the left, then move forward ten steps, turn to the right, then move forward two steps.
+This code for a robot remote control makes the robot power on, turn to the left, then move forward ten steps, turn to the right, then move forward two steps. Note that functions can do different things depending on their input values.
 
 ## Globals 🌐
 
-Globals are special variables that are already available for you to use. You can also create global variables yourself but we'll learn how to do that later.
+Globals are special variables that are available for you to use anywhere in your code.
 
 Check out the `alert` and `prompt` global functions for user interaction. The word `await` is used to wait for the user to interact with the prompt or alert window.
 
@@ -185,15 +187,15 @@ await alert(favColor + ' is my favorite color too!'); // show message to user
 
 ## Javascript Console
 
-Like other programming languages, JavaScript code conveys instructions that computers interpret and perform. Like any language, it has grammatical structures and syntax. Yet when writing an essay, if you put a comma in the wrong pl,ace or spell a werd wrong, it usually won't make your sentences unreadable. Making syntax and spelling mistakes in your code will make it unreadable for your computer though! Luckily for us, we have really great tools to help us code.
+Like other programming languages, JavaScript code conveys instructions that computers interpret and perform. Making syntax and spelling mistakes in your code will make it unreadable for your computer though! Luckily for us, we have really great tools to help us code.
 
-The console can be opened in your web browser by right clicking anywhere on a web page and choosing "Inspect" or by using the shortcut `ctrl+shift+i` on Windows/Linux or `cmd+shift+i` on macOS. When it first opens you'll see the "Elements" tab, this is the HTML structure of the website. As you move your mouse over an element you can see it will be highlighted on the screen. Cool huh?! Now go to the "Console" tab. You'll use the console to print messages and errors in Javascript.
+The console can be opened in your web browser by right clicking anywhere on a web page and choosing "Inspect" or by using the shortcut `ctrl+shift+i` on Windows/Linux or `cmd+option+i` on macOS. When it first opens you'll see the "Elements" tab, this is the HTML structure of the website. If you hover your mouse over an element it will be highlighted. You can even change text on the website. Cool huh?! Note that these changes are only visible to you.
 
-`console.log` prints to the JS console in your web browser.
+Now go to the "Console" tab. If your program doesn't start or stops working, look at the JavaScript console for errors. You can also use `console.log` to print things to the console.
 
 ```js
 // prints the favorite color the user entered to the console
-console.log(favColor);
+console.log("The user's favorite color is: " + favColor);
 ```
 
 ## End of Level 00 A
@@ -212,44 +214,30 @@ Now you're ready to start making your first game! 🥳 [Click here for the Guess
 
 Did you complete part A and are ready to learn more? Before we can finish `GuessTheNumber` game we have to learn a bit more stuff.
 
-## while loops
+## Math functions
 
-Need to loop some code? Use a while loop! The code in the code block `{}` will be looped as long as the while loop condition remains true.
-
-While a toaster is ON the heating elements change in temperature and get hotter. Pretend `getTemperature()` is a function that gets the temperature from the toaster's temperature sensor.
+At this point you should also know about the global object [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math), which has many useful functions. You will use `.random()` and `.ceil()` to make this game.
 
 ```js
-let toastLevel = 70; // default amount before toasting
+// Math.random() returns a random decimal number between 0 and 1 (not including 1)
+let x = Math.random(); // x could be .2364 or .928279 or 0.45398, it's random!
 
-// more heat is required to toast frozen bread
-if (defrost == true) {
-	toastLevel = 0;
-}
+Math.round(30.1); // -> 30
+Math.round(30.7); // -> 31
+// Math.round() rounds the number to the nearest integer
 
-turnToasterOn();
-// loops while toastLevel is below 1000
-while (toastLevel < 1000) {
-	let heat = getTemperature();
-	toastLevel = toastLevel + heat; // add additional heat to toastLevel
-}
+let y = Math.floor(22.9); // y -> 22 (y gets assigned the value 22)
+// Math.floor() always rounds down
 
-console.log('Toast is ready!');
-turnToasterOff();
+let z = Math.ceil(15.3); // z -> 16
+// Math.ceil() always rounds up (ceil for ceiling)
 ```
 
-## Checking for Inequivalence
-
-Not equals `!=` checks if something is not equal to something else.
-
-```js
-if (message != '') {
-	// check to see if String message is not empty
-}
-```
+# Level 00 C
 
 ## Scopes
 
-Note that if you declare a variable in a code block it will only be available from the beginning to the end of the block. This is the scope of a variable.
+Note that if you declare a variable in a code block it will only be available from the beginning to the end of the block. This is called the scope of a variable. The code block/scope begins with this opening squiggly bracket (aka curly brace) `{` and ends with a closing squiggly bracket `}`
 
 ```js
 if (name == 'Bob') {
@@ -270,12 +258,54 @@ if (name == 'Bob') {
 console.log(message); // good!
 ```
 
+## while loops
+
+Need to loop some code? Use a while loop! `if` statements run the code in their code block once if their boolean condition is true. `while` loops repeat the code in their code block as long as their boolean condition remains true.
+
+Take a look at the following example. Imagine that the `pickACard` function returns a String with the name of the card taken from the top of the deck, such as "Two of Hearts" or "Nine of Clubs".
+
+```js
+let card; // no card picked yet
+
+while (card != 'Ace of Spades') {
+	card = pickACard();
+}
+
+await alert('Found the Ace of Spades!');
+```
+
+The while loop will loop until `card` is the Ace of Spades. What if the Ace of Spades wasn't in the deck though? Then every card in the deck will be picked until there are none left and then the program will keep trying to pick a card! This would result in an infinite loop, not good...
+
+## Breaking out of a loop early
+
+If there are no cards left in the deck let's imagine the `pickACard` function would return `null`, a special value that means none. If there are no cards left in the deck, the Ace of Spades can not be found. The while loop condition would remain true forever, so the loop must be exited early by using the `break` keyword.
+
+```js
+let card;
+
+while (card != 'Ace of Spades') {
+	card = pickACard();
+
+	if (card == null) {
+		break; // exit the while loop
+	}
+}
+
+if (card == 'Ace of Spades') {
+	await alert('Found the Ace of Spades!');
+} else {
+	await alert('The Ace of Spades was not in the deck!');
+}
+```
+
 ## End of Level 00 B
 
 Here's a summary of everything we learned about:
 
-- while loops
 - more about code blocks/scopes `{}`
+- `while` loops, used to repeat a code block
+- `null`, a special value that means none or nothing
+- `break`, a keyword used to exit a loop early
 
 ## Computer History: Casio FX-720P
 
@@ -301,8 +331,10 @@ This level's computer was inspired by the Casio FX-720P, which could run program
   - [Javascript Console](#javascript-console)
   - [End of Level 00 A](#end-of-level-00-a)
 - [Level 00 B](#level-00-b)
-  - [while loops](#while-loops)
-  - [Checking for Inequivalence](#checking-for-inequivalence)
+  - [Math functions](#math-functions)
+- [Level 00 C](#level-00-c)
   - [Scopes](#scopes)
+  - [while loops](#while-loops)
+  - [Breaking out of a loop early](#breaking-out-of-a-loop-early)
   - [End of Level 00 B](#end-of-level-00-b)
   - [Computer History: Casio FX-720P](#computer-history-casio-fx-720p)
