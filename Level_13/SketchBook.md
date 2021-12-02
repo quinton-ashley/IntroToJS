@@ -1,18 +1,12 @@
 # SketchBook
 
-_This is a BONUS program, the main game for this level is Snake_
-
-The pixel art sketchbook program will let users create and save pixel art images.
+A pixel art sketchbook program that lets users create and save pixel art images.
 
 ## Instructions
 
 There's a color palette on the left side of the screen. It was created by using `spriteArt()` with an array of the palette's keys. Each String in the array is a line.
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
-
-Each of the 16 color squares is 25 pixels tall, the screen is 640x400 pixels. When the user selects a color, the tip of their paintbrush should change to be that color. Use the `mouseClicked()` p5.js function. Use `mouseY` and do some math to find which color the user clicked.
-
-https://p5js.org/reference/#/p5/mouseClicked
+Each of the 16 color squares is 25 pixels tall, the screen is 640x400 pixels. When the user selects a color, the tip of their paintbrush should change to be that color. Use the [`mouseClicked`](https://p5js.org/reference/#/p5/mouseClicked) p5.js function. Use `mouseY` and do some math to find which color the user clicked.
 
 Start by making a 20x10 grid of gray squares with a black border. The squares will represent a pixel in the user's image but should be displayed much larger. Use p5.js functions `rect`, `stroke` and `fill`. Use a class to store the position data, side length, and color letter of these squares. Place them using a for loop.
 
@@ -30,7 +24,9 @@ Allow the user to zoom out and in on their drawing using the p5.js `mouseWheel` 
 
 The user should be able to zoom onto the pixel they're hovering over. This will require some math! Think about it logically and break the problem down to simple steps. Try making the canvas move to `mouseX` and `mouseY` when zooming. Then try zooming around the middle of the pixel art. Finally try zooming around any pixel.
 
-If you like working on this SketchBook program you can also add some advanced things, if not move onto Snake!
+## CHALLENGE SECTION
+
+If you like working on this SketchBook program you can also add some more advanced things:
 
 You could add undo and redo buttons.
 
