@@ -140,7 +140,9 @@ break;
 
 ## Computer History: Apple II
 
-This level's computer was inspired by the [Apple II](https://www.youtube.com/watch?v=CxJwy8NsXFs)
+This level's computer was inspired by the Apple II. Check out this video about it if you'd like!
+
+https://www.youtube.com/watch?v=CxJwy8NsXFs
 
 - [Level 03 A](#level-03-a)
   - [Coding Philosophy: Naming variables](#coding-philosophy-naming-variables)

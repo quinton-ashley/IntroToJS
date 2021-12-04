@@ -254,7 +254,9 @@ You learned how to:
 
 ## Computer History: Commodore PET
 
-This level's computer was inspired by the [1977 Commodore PET 2001 Series](https://www.youtube.com/watch?v=eP9y_7it3ZM). These computers were some of the first commerically successful personal computers that did not require any assembly by the user.
+This level's computer was inspired by the 1977 Commodore PET 2001 Series. These computers were some of the first commerically successful personal computers that did not require any assembly by the user. Check out this video about it if you'd like!
+
+https://www.youtube.com/watch?v=eP9y_7it3ZM
 
 PETSCII character set: <https://style64.org/petscii/>
 

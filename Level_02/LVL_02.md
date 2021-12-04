@@ -154,14 +154,15 @@ paddle.immovable = true;
 background(colorPal('r'));
 ```
 
-## End of Level 02 B
+## Computer History: ZX Spectrum
 
-- vectors (x and y velocities)
-- bounces
+Excerpt from the last paragraph of Chapter 1 of "ZX81 BASIC PROGRAMMING" by Stephen Vickers:
 
-## Computer History: Commodore 64
+"Whatever else you do, keep using the computer. If you have a question 'What does it do if I tell it such & such?' then the answer is easy:type it in & see. Whenever the manual tells you to type something in, always ask yourself, 'What could I type instead?' & try out your replies. The more of your own stuff you write, the better you will understand the ZX81. (This is called unprogrammed learning.) Regardless of what you type in, you cannot damage the computer."
 
-This level's computer is based on the Commodore 64
+This level's computer is based on the ZX Spectrum, an 8-bit personal home computer developed by Sinclair Research. It was first released in the United Kingdom on the 23rd of April 1982 and went on to become Britain's best-selling microcomputer. Watch some of this video to hear what it was like for people to use the ZX Spectrum back then!
+
+https://youtu.be/nRlmTiynbd8?t=242
 
 - [Level 02 A](#level-02-a)
   - [What is p5.js?](#what-is-p5js)
@@ -177,5 +178,4 @@ This level's computer is based on the Commodore 64
   - [Bounces](#bounces)
   - [Immovable objects](#immovable-objects)
   - [colorPal](#colorpal)
-  - [End of Level 02 B](#end-of-level-02-b)
-  - [Computer History: Commodore 64](#computer-history-commodore-64)
+  - [Computer History: ZX Spectrum](#computer-history-zx-spectrum)

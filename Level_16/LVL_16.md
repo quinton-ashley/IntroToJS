@@ -164,6 +164,42 @@ switch (QuintOS.language) {
 
 The switch statement is overkill here, if/else is definitely preferrable.
 
+## Getters
+
+Let's say you wanted to make a calculated property like area that could change if the box changes size.
+
+```js
+console.log('The area of box 0 is ' + box0.w * box0.h); // 20!
+```
+
+To get a calculated property like area, you can use a getter.
+
+```js
+class Rectangle {
+	constructor(width, height) {
+		this.x = 0;
+		this.y = 0;
+		this.w = width;
+		this.h = height;
+	}
+
+	draw() {
+		rect(this.x, this.y, this.w, this.h);
+	}
+
+	get area() {
+		return this.w * this.h;
+	}
+}
+
+let box0 = new Rectangle(5, 4);
+console.log('The area is ' + box0.area); // 20
+box0.w = 6; // change width to 6
+console.log('Now the area is ' + box0.area); // 24
+```
+
+This example shows how the area will still be calculated correctly even after the width of the box changes.
+
 ## Javascript's memory
 
 Let's take a look at how variables are stored in Javascript.
@@ -189,21 +225,24 @@ With ReactJS you can create mobile apps using HTML+CSS+JS.
 ## Other resources of potential interest
 
 [Article: More about JavaScript](https://github.com/MarcoWorms/learn.js)  
+[Video: How random number generators work](https://www.youtube.com/watch?v=Ks1pw1X22y4)  
 [Video: How spritesheet animation works](https://www.youtube.com/watch?v=CY0HE277IBM)  
 [Video: Aseprite Animation Beginner Tutorial](https://www.youtube.com/watch?v=N4Z4MdZ1KWY)  
 [Tutorials: Make 3D games with Babylon](https://doc.babylonjs.com/start)  
+[Video: History of node.js and Electron](https://www.youtube.com/watch?v=whwa7ua_RbA)  
 [Course: freeCodeCamp](https://github.com/mcturner1995/freeCodeCamp)  
 [Video: Explanation of what .exe files are and how computer processors execute assembly](https://www.youtube.com/watch?v=hhgxsrAFyz8)  
 [Video: AI Sudoku solver in python](https://www.youtube.com/watch?v=G_UYXzGuqvM)
 
 - [Level 16 A](#level-16-a)
-  - [Node.js and npm](#nodejs-and-npm)
-  - [Creating your own QuintOS project!](#creating-your-own-quintos-project)
+	- [Node.js and npm](#nodejs-and-npm)
+	- [Creating your own QuintOS project!](#creating-your-own-quintos-project)
 - [Level 16 B](#level-16-b)
-  - [Switch statements](#switch-statements)
-  - [Javascript's memory](#javascripts-memory)
+	- [Switch statements](#switch-statements)
+	- [Getters](#getters)
+	- [Javascript's memory](#javascripts-memory)
 - [End of IntroToJS](#end-of-introtojs)
-  - [Google's zx](#googles-zx)
-  - [Electron](#electron)
-  - [ReactJS](#reactjs)
-  - [Other resources of potential interest](#other-resources-of-potential-interest)
+	- [Google's zx](#googles-zx)
+	- [Electron](#electron)
+	- [ReactJS](#reactjs)
+	- [Other resources of potential interest](#other-resources-of-potential-interest)

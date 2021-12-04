@@ -2,8 +2,12 @@
 
 ## Tiles
 
+The Tiles class can be used to create tile based games.
+
 ```js
-let world = new Tiles(tileSize);
+let world = new Tiles(tileSize, x, y);
+
+world.createSprite(row, col, layer);
 ```
 
 ## Events
