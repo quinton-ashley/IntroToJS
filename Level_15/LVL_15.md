@@ -4,12 +4,13 @@ Start thinking of an idea for your own game or interactive art which I will help
 
 ## JSON
 
-JSON stands for JavaScript Object Notation. JSON files are just a JS object in a file, but unlike in JS where quotes for the properties/keys are optional, for JSON they are required.
+JSON stands for JavaScript Object Notation. JSON files are just a JS object in a file, but unlike in JS where quotes for the properties/keys are optional, for JSON they are required, in fact double quotes are required for all strings.
 
 ```json
 {
 	"name": "Quinton Ashley",
-	"job": "Computer Science Teacher"
+	"job": "Computer Science Teacher",
+	"age": 25
 }
 ```
 

@@ -22,6 +22,8 @@ Make the ball bounce off the walls. To easily test your code for this, make the 
 
 Use the ball's velocity property to move it instead of changing it's x and y values. When you change the x and y velocities of the ball then the p5.play `drawSprites` function will change its position.
 
+Make the ball bounce off the paddles.
+
 Place the ball back in the middle of the screen when it goes off the edge of the screen.
 
 When the ball is served make it go in any pure diagonal direction randomly. In level 9 you'll learn how to make the ball move at different angles, other than pure diagonal, without changing its total speed.
@@ -29,3 +31,11 @@ When the ball is served make it go in any pure diagonal direction randomly. In l
 Make the ball speed up a little bit each time it hits the walls. Have the ball's speed get reset each time it goes off screen.
 
 Reference the [p5.js documentation](https://p5js.org/reference/) to learn how to make simple shapes like rectangles, circles, ovals, and triangles. The background of your Pong game should incorporate a few different shapes. The `colorPal` function can be use it inside p5.js functions like `background`, `fill`, and `stroke` that expect a color. You can also make some images with `spriteArt` if you'd like. Be creative!
+
+## CHALLENGE SECTION
+
+_Complete Level 05 ClickAPath first_
+
+Use the up/down arrow keys and w/s keys to enable two players to play your Pong game.
+
+Show the score on screen at all times.
