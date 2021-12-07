@@ -7,6 +7,8 @@ let speed = 1; // snake speed
 text('SCORE: ' + score, 17, 0);
 text('SPEED: ' + score, 17, 11);
 
+let apple = items.createSprite('apple', 0, 0);
+
 function draw() {
-	// move the snake
+	drawSprites();
 }

@@ -11,3 +11,9 @@ for (let i = 1; i < 10; i++) {
 	sound.setVolume(0.3);
 	moveSounds[i] = sound;
 }
+
+let world = createTiles(8, 0, 16);
+world.spriteSheet = loadImage(QuintOS.dir + '/img/world.png');
+
+let items = world.createGroup('items');
+items.loadAni('apple', { pos: [0, 3] });
