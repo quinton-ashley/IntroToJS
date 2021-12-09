@@ -59,17 +59,18 @@ let fireball = createSprite('powerup0', 5, 2, 1);
 
 Creates a `fireball` sprite using the `powerup0` image at row 5, column 2 on the tiles grid on layer 1.
 
+## Flipping a Sprite
+
+```js
+sprite.mirrorX(-1); // flip sprite horizontally
+sprite.mirrorY(-1); // flip sprite veritcally
+```
+
 ## Events
 
 Take a look at the p5.js way of getting input from the user's keyboard.
 
 https://p5js.org/reference/#/p5/keyCode
-
-How does this work? Let's take a look at the pure JavaScript that p5.js is using behind the scenes.
-
-https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
-
-https://developer.mozilla.org/en-US/docs/Web/API/Document/keydown_event
 
 # Level 12 B
 
@@ -88,6 +89,7 @@ After losing a game the score window will show up, click on the settings icon in
 	- [Changing a sprite's animation](#changing-a-sprites-animation)
 	- [Loading Images from a Sprite Sheet](#loading-images-from-a-sprite-sheet)
 	- [Creating sprites with animations](#creating-sprites-with-animations)
+	- [Flipping a Sprite](#flipping-a-sprite)
 	- [Events](#events)
 - [Level 12 B](#level-12-b)
 	- [Google's Snake Game](#googles-snake-game)
