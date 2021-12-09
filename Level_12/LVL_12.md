@@ -66,6 +66,23 @@ sprite.mirrorX(-1); // flip sprite horizontally
 sprite.mirrorY(-1); // flip sprite veritcally
 ```
 
+## Moving the Sprite
+
+`row` and `col` is the destination row and column on the tile grid to move the sprite to. `speed` is in pixels per frame.
+
+```js
+sprite.move(row, col, speed);
+```
+
+## Teleport the Sprite
+
+This example teleports the sprite to row 4, column 3.
+
+```js
+sprite.row = 4;
+sprite.col = 3;
+```
+
 ## Events
 
 Take a look at the p5.js way of getting input from the user's keyboard.
@@ -90,6 +107,8 @@ After losing a game the score window will show up, click on the settings icon in
 	- [Loading Images from a Sprite Sheet](#loading-images-from-a-sprite-sheet)
 	- [Creating sprites with animations](#creating-sprites-with-animations)
 	- [Flipping a Sprite](#flipping-a-sprite)
+	- [Moving the Sprite](#moving-the-sprite)
+	- [Teleport the Sprite](#teleport-the-sprite)
 	- [Events](#events)
 - [Level 12 B](#level-12-b)
 	- [Google's Snake Game](#googles-snake-game)
