@@ -36,7 +36,7 @@ player.loadAni('walk-down', { line: 2, frames: 4 });
 
 Assuming the `player` object's sprite sheet has animations for a character that are all the same height, get the 4 frame animation from line/row 2, which is third set of animation frames from the top.
 
-## Changing a sprite's animation
+## Changing a Sprite's animation
 
 ```js
 player.ani('walk-down');
@@ -50,7 +50,7 @@ player.ani('walk-down');
 tiles.loadAni('powerup0', { pos: [5, 3] });
 ```
 
-## Creating sprites with animations
+## Creating Sprites with animations
 
 ```js
 //            createSprite(aniName, row, col, layer)
@@ -59,24 +59,32 @@ let fireball = createSprite('powerup0', 5, 2, 1);
 
 Creates a `fireball` sprite using the `powerup0` image at row 5, column 2 on the tiles grid on layer 1.
 
-## Flipping a Sprite
+## Flip a Sprite
 
 ```js
 sprite.mirrorX(-1); // flip sprite horizontally
 sprite.mirrorY(-1); // flip sprite veritcally
 ```
 
-## Moving the Sprite
+## Move a Sprite
 
-`row` and `col` is the destination row and column on the tile grid to move the sprite to. `speed` is in pixels per frame.
+`direction` specifies 'up', 'down', 'left', or 'right', the sprite will move one tile from its current position in the specified direction. `speed` is the pixels per frame at which the sprite will move.
 
 ```js
-sprite.move(row, col, speed);
+await sprite.move(direction, speed);
 ```
 
-## Teleport the Sprite
+The `move` function of tile based sprites can also accept a destination `row` and `column` on the tile grid to move the sprite to.
 
-This example teleports the sprite to row 4, column 3.
+```js
+await sprite.move(row, col, speed);
+```
+
+`move` is an async function because the sprite's movement will be animated.
+
+## Teleport a Sprite
+
+If you want to teleport a spirte in one frame to a new location without any animation simply change its `row` and `col` values.
 
 ```js
 sprite.row = 4;
@@ -103,12 +111,12 @@ After losing a game the score window will show up, click on the settings icon in
 	- [Tiles](#tiles)
 	- [Sprite Sheets](#sprite-sheets)
 	- [Loading Animations from a Sprite Sheet](#loading-animations-from-a-sprite-sheet)
-	- [Changing a sprite's animation](#changing-a-sprites-animation)
+	- [Changing a Sprite's animation](#changing-a-sprites-animation)
 	- [Loading Images from a Sprite Sheet](#loading-images-from-a-sprite-sheet)
-	- [Creating sprites with animations](#creating-sprites-with-animations)
-	- [Flipping a Sprite](#flipping-a-sprite)
-	- [Moving the Sprite](#moving-the-sprite)
-	- [Teleport the Sprite](#teleport-the-sprite)
+	- [Creating Sprites with animations](#creating-sprites-with-animations)
+	- [Flip a Sprite](#flip-a-sprite)
+	- [Move a Sprite](#move-a-sprite)
+	- [Teleport a Sprite](#teleport-a-sprite)
 	- [Events](#events)
 - [Level 12 B](#level-12-b)
 	- [Google's Snake Game](#googles-snake-game)

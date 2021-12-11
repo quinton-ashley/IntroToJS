@@ -10,5 +10,7 @@ text('SPEED: ' + score, 17, 11);
 let apple = items.createSprite('apple', 0, 0);
 
 function draw() {
+	background(colorPal(2));
+
 	drawSprites();
 }
