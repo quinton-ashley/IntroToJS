@@ -26,7 +26,7 @@ Make the ball bounce off the paddles.
 
 Place the ball back in the middle of the screen when it goes off the edge of the screen.
 
-When the ball is served make it go in any pure diagonal direction randomly. In level 9 you'll learn how to make the ball move at different angles, other than pure diagonal, without changing its total speed.
+When the ball is served make it go away from the player that lost the ball. The ball must move in a diagonal, don't let it go straight left and right. In level 9 you'll learn how to make the ball move at different angles without changing its total speed.
 
 Make the ball speed up a little bit each time it hits the walls. Have the ball's speed get reset each time it goes off screen.
 
