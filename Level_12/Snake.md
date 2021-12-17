@@ -4,24 +4,40 @@ Move your snake over food pellets to eat them and get bigger but don't run into 
 
 ## Instructions for PART A
 
-Let the player change the direction the snake moves using the arrow keys. For now you will just be moving the head of the snake. Limit movement so that the snake can't go in the opposite direction that it's currently headed.
+Create a tiles grid object, call it `world`. Load all the grass tiles and make a rectangular game world within the part of the game boy screen that does not contain text.
 
-Add a food pellet at a random empty location (not occupied by the snake) on the lcd screen. When the snake head touches a food pellet, make a new food pellet appear.
+Place a food item in the middle of the screen on layer 1.
 
-The snake must stay within the boundaries of the screen, if it goes off screen the player loses the game.
-
-When the snake head is about to go off the edge of the screen, the whole snake should stop moving and start blinking repeatedly to show it is dead. Use the modulo operator `%` and p5.js `frameCount` to acheive this effect inside the `draw` function.
-
-!Hint: don't let the snake head be assigned a position off the screen.
-
-Create the rest of the snake. The available snake blocks are named `snake head`, `snake body`, and `snake tail`. Add two body objects and one tail to the `snake` array.
-
-When the snake head moves the rest of the snake should follow it.
-
-If the snake is about to run into itself, the whole snake should stop moving and blink to show it is dead.
-
-Each time the snake eats a pellet make it move a bit faster unless it is already going max speed. Define the max speed as a reasonable limit on how fast the snake should move. The snake should still move one block at a time, so don't change that amount, change the rate at which it moves.
+Create a sprite for the head of the snake, don't make the rest of the snake yet. The snake head should be on layer 2.
 
 ## Instructions for PART B
 
-Pick three modes from the Google's online snake game to implement in your snake game!
+Make the snake head move upwards using the `move` function and `"up"` as the first input parameter. Without any user input, the snake should move up continuously. HINT: Make a recursive async function for the snake's movement.
+
+Allow the player to change the direction the snake moves using the arrow keys. For now just move the head of the snake. Limit movement so that the snake can't go in the opposite direction that it's currently headed. HINT: use the `keyPressed` p5.js function.
+
+## Instructions for PART C
+
+Create a wall of pipes around the whole grass rectangle. If the snake hits the pipes it should stop moving and the game should end. HINT: use the `collide` p5.js play function
+
+When the snake gets close to a food item, it should start doing the eating animation. When the snake head eats a food item, make a new food item appear somewhere else within the pipe walls.
+
+## Instructions for PART D
+
+Create the body and tail of the snake using the other snake tiles. All the tiles in the snake should be in a group called `snake`. When the snake head moves the rest of the snake should follow it.
+
+Everytime the snake eats a food item the snake should grow one new body part.
+
+Each time the snake eats a pellet make it move a bit faster unless it is already going max speed. Define the max speed as a reasonable limit on how fast the snake should move. The snake should still move one block at a time, don't change that amount, change the rate at which it moves.
+
+If the snake runs into itself, the whole snake should stop moving and blink to show it is dead. HINT: Check if the snake head will move onto a tile that will have a snake part on it.
+
+## Instructions for PART E
+
+Check out Google's online snake game:
+
+https://www.google.com/fbx?fbx=snake_arcade
+
+After losing a game the score window will show up, click on the settings icon in the bottom right corner. There are a few different game modes you can select between. Try all of them out!
+
+Pick one of these special Snake modes that you'd like to implement in your snake game. Use the icons in the `icons.png` file to make a game mode menu.

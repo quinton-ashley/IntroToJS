@@ -36,12 +36,6 @@ player.loadAni('walk-down', { line: 2, frames: 4 });
 
 Assuming the `player` object's sprite sheet has animations for a character that are all the same height, get the 4 frame animation from line/row 2, which is third set of animation frames from the top.
 
-## Changing a Sprite's animation
-
-```js
-player.ani('walk-down');
-```
-
 ## Loading Images from a Sprite Sheet
 
 `loadAni` can be used to load single frame animations from a sprite sheet, assuming all tiles in the sprite sheet grid are the same width and height.
@@ -49,6 +43,8 @@ player.ani('walk-down');
 ```js
 tiles.loadAni('powerup0', { pos: [5, 3] });
 ```
+
+You can use `line` when specifying a row at column 0 in the spritesheet or use `pos` to specify a row and column position.
 
 ## Creating Sprites with animations
 
@@ -59,11 +55,12 @@ let fireball = createSprite('powerup0', 5, 2, 1);
 
 Creates a `fireball` sprite using the `powerup0` image at row 5, column 2 on the tiles grid on layer 1.
 
-## Flip a Sprite
+# Level 12 B
+
+## Changing a Sprite's animation
 
 ```js
-sprite.mirrorX(-1); // flip sprite horizontally
-sprite.mirrorY(-1); // flip sprite veritcally
+player.ani('walk-down');
 ```
 
 ## Move a Sprite
@@ -91,32 +88,82 @@ sprite.row = 4;
 sprite.col = 3;
 ```
 
+## Flip a Sprite
+
+```js
+sprite.mirrorX(-1); // flip sprite horizontally
+sprite.mirrorY(-1); // flip sprite veritcally
+```
+
 ## Events
 
 Take a look at the p5.js way of getting input from the user's keyboard.
 
 https://p5js.org/reference/#/p5/keyCode
 
-# Level 12 B
+# Level 12 C
 
-## Google's Snake Game
+## Groups
 
-Check out Google's online snake game:
+The `createGroup` function of the tiles grid object can be used to create sub-groups of Sprites.
 
-https://www.google.com/fbx?fbx=snake_arcade
+```js
+let walls = tiles.createGroup('walls');
+```
 
-After losing a game the score window will show up, click on the settings icon in the bottom right corner. There are a few different game modes you can select between. Try all of them out and pick 3 that you'd like to implement yourself! :)
+## Check for Collisions
+
+The p5.js play `collide` function can be used to prevent sprites from overlapping.
+
+```js
+player.collide(walls);
+```
+
+The `player` sprite would not be able to move through any of the sprites in the `walls` group. This function can also be used for groups colliding with other groups and sprites colliding with other sprites.
+
+## Rotate a Sprite
+
+```js
+sprite.rotate(90); // rotate the sprite 90 degrees
+```
+
+# Level 12 D
+
+##
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+
+Get the array of sprites from a sprite group.
+
+```js
+group.toArray();
+```
+
+## Add/Remove from the middle of an Array
+
+The `push` function is used to add an item to the end of an array and `pop` is used to remove an item from the end.
+
+The [`splice`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) is used to add or remove from the middle of an Array.
+
+```js
+arr.splice(start, deleteCount, item1);
+```
 
 - [Level 12 A](#level-12-a)
 	- [Tiles](#tiles)
 	- [Sprite Sheets](#sprite-sheets)
 	- [Loading Animations from a Sprite Sheet](#loading-animations-from-a-sprite-sheet)
-	- [Changing a Sprite's animation](#changing-a-sprites-animation)
 	- [Loading Images from a Sprite Sheet](#loading-images-from-a-sprite-sheet)
 	- [Creating Sprites with animations](#creating-sprites-with-animations)
-	- [Flip a Sprite](#flip-a-sprite)
+- [Level 12 B](#level-12-b)
+	- [Changing a Sprite's animation](#changing-a-sprites-animation)
 	- [Move a Sprite](#move-a-sprite)
 	- [Teleport a Sprite](#teleport-a-sprite)
+	- [Flip a Sprite](#flip-a-sprite)
 	- [Events](#events)
-- [Level 12 B](#level-12-b)
-	- [Google's Snake Game](#googles-snake-game)
+- [Level 12 C](#level-12-c)
+	- [Groups](#groups)
+	- [Check for Collisions](#check-for-collisions)
+	- [Rotate a Sprite](#rotate-a-sprite)
+- [Level 12 D](#level-12-d)
+	- [Add/Remove from the middle of an Array](#addremove-from-the-middle-of-an-array)
