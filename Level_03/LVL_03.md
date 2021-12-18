@@ -22,27 +22,6 @@ Strings have a lot of useful functions we can use. MDN, the Mozilla Developer Ne
 // -> ['the', 'red', 'fox']
 ```
 
-You can also split a String into individual letters using the split function with an empty String as the input.
-
-```js
-'the red fox'.split('');
-// -> [ "t", "h", "e", " ", "r", "e", "d", " ", "f", "o", "x" ]
-```
-
-## array.join(separator)
-
-The Array `join` function creates a String by joining each element in the array together, inserting an optional seperator String between each item.
-
-```js
-let names = ['Amy', 'Ellie', 'Max'];
-names.join(' ~ ');
-// -> 'Amy ~ Ellie ~ Max'
-```
-
-## End of Level 03 A
-
-# Level 02 B
-
 ## Accessing items in an Array
 
 The `[]` square brackets are used to create arrays and are also used to access items in an array.
@@ -64,6 +43,10 @@ nums[1] = 36;
 // edits the list: [50, 36, 42, 83]
 ```
 
+## End of Level 03 A
+
+# Level 02 B
+
 ## Accessing characters in a String
 
 To access characters in a String you can use `[]` but note that you can't edit them like you can with arrays.
@@ -77,9 +60,32 @@ animal[8] = 'b'; // error
 
 Strings are immutable, meaning individual characters in the String can not be changed.
 
+## Getting an array of characters from a String
+
+You can also split a String into individual characters using the `split` function with an empty String as the input.
+
+```js
+'the red fox'.split('');
+// -> [ "t", "h", "e", " ", "r", "e", "d", " ", "f", "o", "x" ]
+```
+
+## array.join(separator)
+
+The Array `join` function creates a String by joining each element in the array together, inserting an optional seperator String between each item.
+
+```js
+let names = ['Amy', 'Ellie', 'Max'];
+names.join(' ~ ');
+// -> 'Amy ~ Ellie ~ Max'
+```
+
 ## End of Level 03 B
 
 # Level 03 C
+
+## Getting the length of a String
+
+`.length` can be used to get the amount of characters in a String.
 
 ## Counting with while loops
 
@@ -143,13 +149,15 @@ https://www.youtube.com/watch?v=CxJwy8NsXFs
 - [Level 03 A](#level-03-a)
   - [Coding Philosophy: Naming variables](#coding-philosophy-naming-variables)
   - [String.split(seperator)](#stringsplitseperator)
-  - [array.join(separator)](#arrayjoinseparator)
+  - [Accessing items in an Array](#accessing-items-in-an-array)
   - [End of Level 03 A](#end-of-level-03-a)
 - [Level 02 B](#level-02-b)
-  - [Accessing items in an Array](#accessing-items-in-an-array)
   - [Accessing characters in a String](#accessing-characters-in-a-string)
+  - [Getting an array of characters from a String](#getting-an-array-of-characters-from-a-string)
+  - [array.join(separator)](#arrayjoinseparator)
   - [End of Level 03 B](#end-of-level-03-b)
 - [Level 03 C](#level-03-c)
+  - [Getting the length of a String](#getting-the-length-of-a-string)
   - [Counting with while loops](#counting-with-while-loops)
 - [Level 03 D](#level-03-d)
   - [for loops](#for-loops)

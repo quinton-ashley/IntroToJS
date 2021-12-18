@@ -39,7 +39,7 @@ doMyMathHomework(2, 5); // what does this return?
 
 ## Arrow function syntax
 
-You can also create function using the arrow syntax.
+You can also create functions using the arrow syntax.
 
 ```js
 //       (   text    , x, y, action)
