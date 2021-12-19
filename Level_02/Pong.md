@@ -14,11 +14,13 @@ Usually Pong is a two player game but to easily test the game you can change the
 
 Personalize your game of Pong by choosing a sport or something else to theme it on. Give the ball a new design, it's pretty small so you can keep it simple.
 
+## Instructions for PART B
+
 Make a wall image (or two) with the `spriteArt` function. Place two walls at the top and bottom of the screen. You can make the walls one color or patterned or anything if you'd like, besides transparent lol. The second input parameter to the `spriteArt` function is a number value for scale, you can use it to make the wall big without having to type such a long String. HINT: use the `repeat` function too and remember the newline character `\n`.
 
 Make the ball bounce off the walls. To easily test your code for this, make the ball move straight down and then when it bounces have it go straight up. HINT: store the y velocity of the ball (the direction it is moving vertically) in a seperate variable.
 
-## Instructions for PART B
+## Instructions for PART C
 
 Use the ball's velocity property to move it instead of changing it's x and y values. When you change the x and y velocities of the ball then the p5.play `drawSprites` function will change its position.
 
@@ -28,14 +30,14 @@ Place the ball back in the middle of the screen when it goes off the edge of the
 
 When the ball is served make it go away from the player that lost the ball. The ball must move in a diagonal, don't let it go straight left and right. In level 9 you'll learn how to make the ball move at different angles without changing its total speed.
 
+## Instructions for PART D
+
+Implement key controls to enable two players to play your Pong game.
+
+Show the score on screen at all times. HINT: Use the `text` function
+
 Make the ball speed up a little bit each time it hits the walls. Have the ball's speed get reset each time it goes off screen.
 
-Reference the [p5.js documentation](https://p5js.org/reference/) to learn how to make simple shapes like rectangles, circles, ovals, and triangles. The background of your Pong game should incorporate a few different shapes. The `colorPal` function can be use it inside p5.js functions like `background`, `fill`, and `stroke` that expect a color. You can also make some images with `spriteArt` if you'd like. Be creative!
+## Instructions for PART E
 
-## CHALLENGE SECTION
-
-_Complete Level 05 ClickAPath first_
-
-Use the up/down arrow keys and w/s keys to enable two players to play your Pong game.
-
-Show the score on screen at all times.
+Reference the [p5.js documentation](https://p5js.org/reference/) to learn how to make simple shapes like rectangles, circles, ovals, and triangles. The background of your Pong game should incorporate a few different shapes. You can also make some images with `spriteArt` if you'd like. Be creative!

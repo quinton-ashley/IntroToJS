@@ -8,13 +8,13 @@ Create a tiles grid object, call it `world`. Load all the grass tiles and make a
 
 Place a food item in the middle of the screen on layer 1.
 
-Create a sprite for the head of the snake, don't make the rest of the snake yet. The snake head should be on layer 2.
+Create a sprite for the head of the snake, don't make the rest of the snake yet. The snake head should be on layer 2. HINT: Create the snake sprite from the `world` tiles grid object without using an image, then assign the snake's SpriteSheet to the `snakes.png` image. Change the snake head's animation using the `ani` function.
 
 ## Instructions for PART B
 
 Make the snake head move upwards using the `move` function and `"up"` as the first input parameter. Without any user input, the snake should move up continuously. HINT: Make a recursive async function for the snake's movement.
 
-Allow the player to change the direction the snake moves using the arrow keys. For now just move the head of the snake. Limit movement so that the snake can't go in the opposite direction that it's currently headed. HINT: use the `keyPressed` p5.js function.
+Allow the player to change the direction the snake moves using the arrow keys. For now just move the head of the snake. Limit movement so that the snake can't go in the opposite direction that it's currently headed. HINT: Use the `keyPressed` p5.js function.
 
 ## Instructions for PART C
 

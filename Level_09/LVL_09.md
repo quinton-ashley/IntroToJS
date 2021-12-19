@@ -1,7 +1,17 @@
 # Level 09 A
 
-## Loading p5 Sounds
+## Loading and Playing Sounds
 
-To make the game we'll be loading sounds using the p5.js sound library (a core add-on to p5.js that I've added for you).
+Load and play sounds using p5.js sound:
 
 https://p5js.org/examples/sound-load-and-play-sound.html
+
+## bounce callback
+
+You can make a callback function for when a sprite bounces off another sprite.
+
+```js
+ball.bounce(paddleTop, () => {
+	log('ball bounced!');
+});
+```

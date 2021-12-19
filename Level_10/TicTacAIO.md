@@ -16,7 +16,7 @@ Make three levels of AI player:
 
 Also make a "Challenge Mode" option for the AI difficulty. Make it progressive, so the player has to beat the easy AI, then the medium AI, before they play against the hard AI.
 
-## Instructions for the Extra Challenge Section
+## CHALLENGE SECTION
 
 TicTacToe is a solved game, meaning that if both players always play their best moves, the game will end in a forced draw.
 

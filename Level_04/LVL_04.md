@@ -4,17 +4,6 @@ Do the GuessTheNumber challenge section before starting level 04!
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen3.jpg)
 
-## Drawing text to the screen
-
-In the past you've been using `prompt()` which creates a rectangle, text, an input, and two buttons. In this level you'll learn how to draw text and buttons to the screen on their own!
-
-```js
-//  (text         , row, col)
-text('Hello World!', 10, 12);
-```
-
-`text` expects at least three input arguments/parameters seperated by commas. The first input parameter is the String to display and the second and third inputs parameters are the row and column to display it on.
-
 ## Creating a Button
 
 Let's learn how to add a button. The `button` function is just like `text` but it also expects a fourth input parameter, a callback function that gets run when the button is clicked.
@@ -30,10 +19,6 @@ button('Click me!', 5, 5, btnClick);
 ```
 
 ## End of Level 04 A
-
-- drawing text to the screen
-- how to create functions
-- creating buttons
 
 # Level 04 B
 
@@ -224,7 +209,6 @@ Originally developed for business executives, GRiDs were also used by the U.S. m
 # Level 04 Table of Contents
 
 - [Level 04 A](#level-04-a)
-	- [Drawing text to the screen](#drawing-text-to-the-screen)
 	- [Creating a Button](#creating-a-button)
 	- [End of Level 04 A](#end-of-level-04-a)
 - [Level 04 B](#level-04-b)

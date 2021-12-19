@@ -15,5 +15,11 @@ for (let i = 1; i < 10; i++) {
 let world = createTiles(8, 0, 16);
 world.spriteSheet = loadImage(QuintOS.dir + '/img/world.png');
 
-let items = world.createGroup('items');
-items.loadAni('apple', { pos: [0, 3] });
+world.loadAni('apple', { pos: [0, 3] });
+
+/* load the grass tiles */
+
+/* create the snake sprite, load the snakes spritesheet */
+// let snake = world.createSprite(9, 1, 2);
+
+/* load the snake animations */

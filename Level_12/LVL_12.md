@@ -31,10 +31,10 @@ This property can be used to store the sprite sheet image of Tile and Sprite obj
 `loadAni` loads animations that has multiple frames.
 
 ```js
-player.loadAni('walk-down', { line: 2, frames: 4 });
+player.loadAni('walk-down', { pos: [2, 0], frames: 4 });
 ```
 
-Assuming the `player` object's sprite sheet has animations for a character that are all the same height, get the 4 frame animation from line/row 2, which is third set of animation frames from the top.
+Loads a 4 frame animation from row 2, column 0 in the player's SpriteSheet.
 
 ## Loading Images from a Sprite Sheet
 
@@ -49,19 +49,21 @@ You can use `line` when specifying a row at column 0 in the spritesheet or use `
 ## Creating Sprites with animations
 
 ```js
-//            createSprite(aniName, row, col, layer)
-let fireball = createSprite('powerup0', 5, 2, 1);
+//            tiles.createSprite(aniName, row, col, layer)
+let fireball = tiles.createSprite('powerup0', 5, 2, 1);
 ```
 
 Creates a `fireball` sprite using the `powerup0` image at row 5, column 2 on the tiles grid on layer 1.
-
-# Level 12 B
 
 ## Changing a Sprite's animation
 
 ```js
 player.ani('walk-down');
 ```
+
+## End of Level 12 A
+
+# Level 12 B
 
 ## Move a Sprite
 
@@ -95,11 +97,7 @@ sprite.mirrorX(-1); // flip sprite horizontally
 sprite.mirrorY(-1); // flip sprite veritcally
 ```
 
-## Events
-
-Take a look at the p5.js way of getting input from the user's keyboard.
-
-https://p5js.org/reference/#/p5/keyCode
+## End of Level 12 B
 
 # Level 12 C
 
@@ -127,9 +125,11 @@ The `player` sprite would not be able to move through any of the sprites in the 
 sprite.rotate(90); // rotate the sprite 90 degrees
 ```
 
+## End of Level 12 C
+
 # Level 12 D
 
-##
+## slice
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
 
@@ -155,15 +155,18 @@ arr.splice(start, deleteCount, item1);
 	- [Loading Animations from a Sprite Sheet](#loading-animations-from-a-sprite-sheet)
 	- [Loading Images from a Sprite Sheet](#loading-images-from-a-sprite-sheet)
 	- [Creating Sprites with animations](#creating-sprites-with-animations)
-- [Level 12 B](#level-12-b)
 	- [Changing a Sprite's animation](#changing-a-sprites-animation)
+	- [End of Level 12 A](#end-of-level-12-a)
+- [Level 12 B](#level-12-b)
 	- [Move a Sprite](#move-a-sprite)
 	- [Teleport a Sprite](#teleport-a-sprite)
 	- [Flip a Sprite](#flip-a-sprite)
-	- [Events](#events)
+	- [End of Level 12 B](#end-of-level-12-b)
 - [Level 12 C](#level-12-c)
 	- [Groups](#groups)
 	- [Check for Collisions](#check-for-collisions)
 	- [Rotate a Sprite](#rotate-a-sprite)
+	- [End of Level 12 C](#end-of-level-12-c)
 - [Level 12 D](#level-12-d)
+	- [slice](#slice)
 	- [Add/Remove from the middle of an Array](#addremove-from-the-middle-of-an-array)

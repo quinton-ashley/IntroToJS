@@ -51,7 +51,7 @@ Here's the full color palette you can use for this game. They are the same color
 |   y    |   Yellow 🟨    |
 |   w    |    White ⬜    |
 
-## Making Strings with Backticks
+## Make Strings with Backticks
 
 Backticks can also be used to create Strings. Backticks look like a backwards apostrophe. They can be found on your keyboard on a special key next to the number 1. The backtick key also has a squiggly line called a tilda on it.
 
@@ -66,23 +66,12 @@ yybyyyybyy
 .yybbbbyy
 ...yyyy`;
 
-let bigImg = spriteArt(str);
+let img = spriteArt(str);
 ```
 
 Can you tell what the image is?
 
-It's a simple yellow and black smiley face image. 😃
-
-Note that you don't have to complete the width of each line with transparent pixels, you can just leave it blank.
-
-## String.repeat(amount)
-
-To more easily create large Strings you can use a String function called [repeat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
-
-```js
-let pattern = '><'.repeat(4);
-// pattern -> '><><><><';
-```
+It's a simple yellow and black smiley face image! 😃
 
 ## p5.play Sprites
 
@@ -92,8 +81,8 @@ Sprite objects have attributes such as their x and y position.
 
 ```js
 let ball = createSprite(imgBall);
-ball.x = width / 2;
-ball.y = height / 2;
+ball.x = 0;
+ball.y = 0;
 ```
 
 Note that `width` and `height` refer to the size of the screen in pixels.
@@ -110,10 +99,28 @@ Here's what you learned about in Level 2:
 
 - p5.js basics
 - the `spriteArt` function
-- the `repeat` String function
 - how to create sprites and position them
 
 # Level 02 B
+
+## spriteArt scaling
+
+```js
+let face = spriteArt(str, 2);
+```
+
+Multiple input parameters can be given to some functions. Input parameters are seperated by commas. The second input parameter to the `spriteArt` function is an optional scale value. By default each character in the string will be one pixel in the resulting image. If you change the scale to 2 then each character in the string will be represented by 4 pixels! This is useful for making larger images.
+
+## String.repeat(amount)
+
+To more easily create large Strings you can use a String function called [repeat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
+
+```js
+let pattern = '><'.repeat(4);
+// pattern -> '><><><><';
+```
+
+# Level 02 C
 
 Checking for intersections between the ball and paddle is harder because they are both moving objects.
 
@@ -154,6 +161,63 @@ paddle.immovable = true;
 background(colorPal('r'));
 ```
 
+# Level 02 D
+
+## Responding to key presses
+
+The `keyPressed` is a p5.js function that is run whenever a key is pressed.
+
+```js
+function draw() {}
+function keyPressed() {
+	if (key == 'q') {
+		log('The q key was pressed!');
+	}
+}
+```
+
+Implement `keyPressed` outside the `draw` function.
+
+## Checking if a key is held
+
+```js
+function draw() {
+	if (keyIsDown('ArrowLeft')) {
+		player.x -= 2; // move the player left by 2 pixels
+	}
+	if (keyIsDown('ArrowRight')) {
+		player.x += 2; // move the player right by 2 pixels
+	}
+}
+```
+
+## Drawing text to the screen
+
+Text can be displayed on screen at a given text row and column.
+
+```js
+//  (text         , row, col)
+text('Hello World!', 10, 12);
+```
+
+## Level 02 E
+
+## p5.js fill, stroke, and rect
+
+This example `draw` function draws a black background and then a blue rectangle with a red stroke (outline). The `colorPal` function can be use it inside p5.js functions like `background`, `fill`, and `stroke` that expect a color.
+
+```js
+function draw() {
+	background(colorPal('b'));
+
+	fill(colorPal('u'));
+	stroke(colorPal('r'));
+
+	//  ( x,  y,  w,  h)
+	rect(10, 20, 15, 55);
+}
+```
+
 ## Computer History: ZX Spectrum
 
 Excerpt from the last paragraph of Chapter 1 of "ZX81 BASIC PROGRAMMING" by Stephen Vickers:
@@ -169,13 +233,21 @@ https://youtu.be/nRlmTiynbd8?t=242
   - [Creating functions 👷](#creating-functions-)
   - [p5.js Basics](#p5js-basics)
   - [spriteArt](#spriteart)
-  - [Making Strings with Backticks](#making-strings-with-backticks)
-  - [String.repeat(amount)](#stringrepeatamount)
+  - [Make Strings with Backticks](#make-strings-with-backticks)
   - [p5.play Sprites](#p5play-sprites)
   - [End of Level 02 A](#end-of-level-02-a)
 - [Level 02 B](#level-02-b)
+  - [spriteArt scaling](#spriteart-scaling)
+  - [String.repeat(amount)](#stringrepeatamount)
+- [Level 02 C](#level-02-c)
   - [Vectors](#vectors)
   - [Bounces](#bounces)
   - [Immovable objects](#immovable-objects)
   - [colorPal](#colorpal)
+- [Level 02 D](#level-02-d)
+  - [Responding to key presses](#responding-to-key-presses)
+  - [Checking if a key is held](#checking-if-a-key-is-held)
+  - [Drawing text to the screen](#drawing-text-to-the-screen)
+  - [Level 02 E](#level-02-e)
+  - [p5.js fill, stroke, and rect](#p5js-fill-stroke-and-rect)
   - [Computer History: ZX Spectrum](#computer-history-zx-spectrum)
