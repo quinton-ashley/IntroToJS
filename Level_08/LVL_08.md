@@ -31,3 +31,13 @@ async function takeFive() {
 
 takeFive();
 ```
+
+## Add/Remove from the middle of an Array
+
+The `push` function is used to add an item to the end of an array and `pop` is used to remove an item from the end.
+
+The [`splice`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) is used to add or remove from the middle of an Array.
+
+```js
+arr.splice(start, deleteCount, item1);
+```

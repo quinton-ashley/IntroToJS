@@ -16,7 +16,7 @@ Make boxes using `textRect` around the blank spaces and letters just like in the
 └─┘└─┘└─┘└─┘└─┘
 ```
 
-Create an `addLetter` function that uses the `delay` function to delay the rate at which random letters in the phrase are revealed to the player. HINT: `delay` must be used in an async function. Do not reveal the same letters more than once, your `addLetter` function should only reveal a letter at a position in the phrase which has not been revealed previously.
+Create an `addLetter` function that uses the `delay` function to delay the rate at which random letters in the phrase are revealed to the player. HINT: `delay` must be used in an async function. Do not reveal the same letters more than once, your `addLetter` function should only reveal a letter at a position in the phrase which has not been revealed previously. Use splice to remove letters from an array of available letter coordinates.
 
 If the player guesses the phrase correctly their score should be increased by the number of blank spaces left in the `board`.
 

@@ -129,24 +129,12 @@ sprite.rotate(90); // rotate the sprite 90 degrees
 
 # Level 12 D
 
-## slice
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+## Group array
 
 Get the array of sprites from a sprite group.
 
 ```js
 group.toArray();
-```
-
-## Add/Remove from the middle of an Array
-
-The `push` function is used to add an item to the end of an array and `pop` is used to remove an item from the end.
-
-The [`splice`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) is used to add or remove from the middle of an Array.
-
-```js
-arr.splice(start, deleteCount, item1);
 ```
 
 - [Level 12 A](#level-12-a)
@@ -168,5 +156,4 @@ arr.splice(start, deleteCount, item1);
 	- [Rotate a Sprite](#rotate-a-sprite)
 	- [End of Level 12 C](#end-of-level-12-c)
 - [Level 12 D](#level-12-d)
-	- [slice](#slice)
-	- [Add/Remove from the middle of an Array](#addremove-from-the-middle-of-an-array)
+	- [Group array](#group-array)
