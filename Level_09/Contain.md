@@ -37,3 +37,9 @@ How do we change the angle of the ball's vector to be a bit random each time a n
 Start by figuring out where the ball will go depending on what theta is. Theta should be in the range 0 to 2π. Use `Math.PI` for π. Then make theta randomly a bit lower or higher from a perfect diagonal.
 
 The balls should not be able to go straight up and down or left and right.
+
+How could you check for collisions between balls without using the p5.play `bounce` function? Make a collision detection method for intersections between circles. Circles intersect if the distance between their centers is less than the sum of their radius (plural).
+
+```
+distance = (x2-x1)²+(y2-y1)²
+```

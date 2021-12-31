@@ -4,9 +4,9 @@ Artificial Intelligence Os!
 
 ## Instructions
 
-For TicTacAIO you'll just be adding onto your code from 'TicTacToe'. Copy and paste the code into your `ticTacAIO.js` file.
+For TicTacAIO you'll just be adding onto your code from 'TicTacToe'. Copy and paste the code from `ticTacToe.js` into your `ticTacAIO.js` file.
 
-Make buttons to let the user pick between starting a two player game or one player game against your AI player.
+Make buttons to let the user pick between starting a two player game or one player game against your AI player. Then remove those buttons from the screen. If the player wants to play agains the AI play have them choose which level of difficulty they want the AI player to be at.
 
 Make three levels of AI player:
 
@@ -22,4 +22,4 @@ TicTacToe is a solved game, meaning that if both players always play their best 
 
 Try implementing a Very Hard AI player that's unbeatable and uses strategies to win against unskilled players.
 
-First make a 0 player mode to test your Very Hard AI against your Hard AI. Have a limit to the number of matches that will be played. You should be able to view the results of each match.
+Test out your AI with a 0 player mode. Make your Very Hard AI play hundreds of games against your Hard AI. When they finish playing you should be able to view the score and the results of every match.
