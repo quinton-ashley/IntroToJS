@@ -16,6 +16,16 @@ ball.bounce(paddle, () => {
 });
 ```
 
+# Level 09 B
+
+## Adding properties to an existing object
+
+Adding properties to an existing object is super easy, just give it a value as if the property already exisited!
+
+```js
+ball.active = true;
+```
+
 ## Skip iterations of a for loop
 
 Use `continue` to skip an iteration of a for loop but continue looping. Unlike `break` which is for exiting the loop early.

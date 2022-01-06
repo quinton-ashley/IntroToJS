@@ -4,7 +4,7 @@
 
 ## What is p5.js?
 
-To make Pong we're going to use 2D graphics instead of text based graphics. p5.js is a JavaScript graphics library for creative coding.
+To make Pong we're going to use p5.js, a JavaScript graphics library for creative coding.
 
 ## Creating functions 👷
 
@@ -19,17 +19,33 @@ function sayHello() {
 sayHello(); // run the function
 ```
 
+Creating functions does not run the code inside them!
+
 ## p5.js Basics
 
 https://p5js.org/get-started/
 
-The p5.js `draw` function should contain code for drawing an image (frame). p5.js will run it 60 times per second, this is called the frame rate. To animate objects on screen simply change their position everytime the draw function is run.
+The p5.js `draw` function should contain code for drawing an image (frame). Behind the scenes, p5.js will run it 60 times per second, this is called the frame rate.
+
+## p5.play Sprites
+
+Sprites are characters or items in 2D video games that typically move above the background layer(s). Sprite objects in the p5.play library have attributes such as their x and y position.
+
+```js
+let ball = createSprite(imgBall);
+ball.x = 5;
+ball.y = 12;
+```
+
+When you create a sprite using an image the width and height of the sprite is automatically assigned to the sprite based on the size of the image. They can be accessed using `.w` and `.h`
+
+```js
+console.log('size of the ball: ' + ball.w + 'x' + ball.h);
+```
 
 ## spriteArt
 
-p5.js has it's own `createImage` function, but it's a bit complicated. I created a simple `spriteArt` function for QuintOS that we can use to make sprites for our games very easily!
-
-The first parameter to `spriteArt` is a String representing the color values of pixels.
+The `spriteArt` function can be used to create images very easily! The first parameter to `spriteArt` is a String representing the color values of pixels.
 
 ```js
 let img = spriteArt('w.w');
@@ -71,27 +87,13 @@ let img = spriteArt(str);
 
 Can you tell what the image is?
 
+...
+
 It's a simple yellow and black smiley face image! 😃
 
-## p5.play Sprites
+## p5.js global variables
 
-To make Pong you'll need to have the ball move and bounce off the paddles. To acheive this use sprites!
-
-Sprite objects have attributes such as their x and y position.
-
-```js
-let ball = createSprite(imgBall);
-ball.x = 0;
-ball.y = 0;
-```
-
-Note that `width` and `height` refer to the size of the screen in pixels.
-
-When you create a sprite using an image the width and height of the sprite is automatically assigned to the sprite based on the size of the image. They can be accessed using `.w` and `.h`
-
-```js
-console.log('size of the ball: ' + ball.w + 'x' + ball.h);
-```
+Note that p5.js adds a lot of variables to the global scope. Note that `width` and `height` refer to the size of the screen in pixels.
 
 ## End of Level 02 A
 
@@ -232,9 +234,10 @@ https://youtu.be/nRlmTiynbd8?t=242
   - [What is p5.js?](#what-is-p5js)
   - [Creating functions 👷](#creating-functions-)
   - [p5.js Basics](#p5js-basics)
+  - [p5.play Sprites](#p5play-sprites)
   - [spriteArt](#spriteart)
   - [Make Strings with Backticks](#make-strings-with-backticks)
-  - [p5.play Sprites](#p5play-sprites)
+  - [p5.js global variables](#p5js-global-variables)
   - [End of Level 02 A](#end-of-level-02-a)
 - [Level 02 B](#level-02-b)
   - [spriteArt scaling](#spriteart-scaling)

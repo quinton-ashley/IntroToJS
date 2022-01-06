@@ -35,24 +35,6 @@ Use `let` or `const` to create variables. In the example code `a` and `b` are th
 
 Use a semicolon `;` to end each line of code. Though it's not required for your computer to run JavaScript, knowing where each line ends makes it easier for other humans to read your code. 👁👅👁
 
-### Changing a variable's value
-
-Don't create variables twice!
-
-```js
-let x = 10;
-let x = 5; // ERROR! x already exists
-```
-
-Here's how to change the value of the variable `x`
-
-```js
-let x = 10;
-x = 5; // good :)
-```
-
-Double slash `//` is for making a comment, any text behind it on the same line will not be considered part of the code's instructions. Comments are used to describe what is happening in the code. You might want to make comments so other people can understand your programs or so that you can understand it yourself in case you forget what you did.
-
 ## Types of Variables 🔡
 
 ### Number
@@ -73,21 +55,21 @@ let codingIsFun = true;
 
 ### String
 
-Strings are text, stored as lists of characters. To remember the name String, you can think of lettered beads on a charm bracelet string. Strings are defined using quotes, apostrophes, or backticks: " " ' ' \`\`
+Strings are text, stored as lists of characters. To remember the name String, you can think of lettered beads on a charm bracelet string. Strings can be defined using 'apostrophes' or "quotes".
 
 ```js
-let story = 'The dog went to the dog park on 3rd Avenue.';
+let story = 'I took my dog to the dog park on 3rd Avenue.';
 ```
 
-If you don't use quotes, JavaScript will think the words are variables!
+ERROR! If you don't use quotes, JavaScript will think the words are variables!
 
 ```js
-let story = The dog went to the dog park on 3rd Avenue.; // ERROR!
+let story = I took my dog to the dog park on 3rd Avenue.;
 ```
 
 ## Camel Case 🐫
 
-Variables in JS can't have spaces, 🙅‍♂️ so for variables that have multiple words, the first letter of the words after the first word are capitalized. This naming convention is called camel case because the capitalized letters are like the humps on a camel.
+Variable names in JS can't have spaces, 🙅‍♂️ so for variables that have multiple words, use camel case! It is called camel case because the first letter of the words after the first word are capitalized, which looks like the humps of a camel? 🤔
 
 ```js
 let apple = '🍎';
@@ -95,7 +77,25 @@ let applePie = '🍎 π';
 let applePieIceCream = '🍎 π 🍨';
 ```
 
-Note using this naming convention isn't required for JavaScript to run, but you should still do it to make your code easier to read.
+Camel case is a naming convention specific to JavaScript, other programming languages have their own conventions. Note that using this naming convention isn't required for JavaScript to run, but you should still do it to make your code easier to read.
+
+### Changing a variable's value
+
+Don't create variables twice!
+
+```js
+let x = 10;
+let x = 5; // ERROR! x already exists
+```
+
+Here's how to change the value of the variable `x`
+
+```js
+let x = 10;
+x = 5; // good :)
+```
+
+Double slash `//` is for making a comment, any text behind it on the same line will not be considered part of the code's instructions. Comments are used to describe what is happening in the code. You might want to make comments so other people can understand your programs or so that you can understand it yourself in case you forget what you did.
 
 ## Mathematical operators 🔢
 
@@ -222,8 +222,8 @@ At this point you should also know about the global object [Math](https://develo
 // Math.random() returns a random decimal number between 0 and 1 (not including 1)
 let x = Math.random(); // x could be .2364 or .928279 or 0.45398, it's random!
 
-Math.round(30.1); // -> 30
-Math.round(30.7); // -> 31
+let a = Math.round(30.1); // a -> 30
+let b = Math.round(30.7); // b -> 31
 // Math.round() rounds the number to the nearest integer
 
 let y = Math.floor(22.9); // y -> 22 (y gets assigned the value 22)
@@ -317,12 +317,12 @@ This level's computer was inspired by the Casio FX-720P, which could run program
   - [What is Computer Science?](#what-is-computer-science)
   - [What is QuintOS?](#what-is-quintos)
   - [Creating Variables 🔡](#creating-variables-)
-    - [Changing a variable's value](#changing-a-variables-value)
   - [Types of Variables 🔡](#types-of-variables-)
     - [Number](#number)
     - [Boolean](#boolean)
     - [String](#string)
   - [Camel Case 🐫](#camel-case-)
+    - [Changing a variable's value](#changing-a-variables-value)
   - [Mathematical operators 🔢](#mathematical-operators-)
   - [Checking Equivalence ✅](#checking-equivalence-)
   - [Boolean operators 🐰](#boolean-operators-)
