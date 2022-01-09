@@ -2,23 +2,25 @@
 
 ## What is Computer Science?
 
-Why is this field of study called "Computer Science" and not "Program Writing" or "Code Mathematics"? It's because coding requires experimentation! You'll often need to test your code, learn from unexpected problems, and make changes to get the results you want. Coding often requires research too, even professional programmers learn new things every day.
+Why is this field of study called "Computer Science" and not "Program Writing" or "Code Mathematics"? It's because coding requires research and experimentation! You'll often need to test your programs to learn from unexpected errors, then make changes to get the results you want.
 
-These lessons will teach you how to code in JavaScript, which is the most popular modern programming language and my personal favorite!
+These lessons will teach you how to code in JavaScript, which is the most popular modern programming language and my personal favorite! You will have to memorize some vocabulary, grammar, and syntax to learn this new language. However, learning to code isn't what programming is all about, you will also learn how to think like a programmer!
 
-Since you're just starting out, you will have to memorize some vocabulary, "grammar", and syntax to learn this new language. Learning to code isn't what programming is all about though, just like learning to play scales isn't what being a musician is all about. In these lessons you will not just learn to code but also how to think like a programmer! Programming is a skill you can develop over the course of your whole life.
+In the 21st century, even if you don't want to become a professional programmer, it is valuable to study Computer Science. Unlike in Hollywood movies, which depict programmers as super genius nerds, in reality anyone can learn how to code! You don't even have to be good at or enjoy Math. You'll be able to use your programming skills to do many things: create art, make robots, design websites, do scientific research, help run a business, develop apps, etc.
 
-As you may expect, programming will be really fun and interesting for you if you like abstract problem solving, in this way it is also similar to Math. Programming has a language arts aspect too. You will not only strive to write efficient code but also code that is easily understood by other programmers.
+Learning to program will change the way you view the world by improving your logical reasoning and abstract problem solving skills. Programming has a language arts aspect too. You will not only strive to write efficient code for the computer but also code that can be easily understood by other programmers.
 
 ## What is QuintOS?
 
-Issac Newton once said, "we stand on the shoulders of giants". To understand how software is developed today it's important to learn a bit about the history of computers.
+Issac Newton once said, "we stand on the shoulders of giants", millions of programmers and computer engineers have done incredible work over several decades for you to be able to write programs using the advanced modern programming languages we have today like JavaScript. To understand how software is developed today it's important to learn a bit about the history of computers.
 
 If you signed up for this course you might want to know how video games work and how to make your own! If not, making games will hopefully be a fun way for you to learn how to code.
 
-During each lesson you'll develop a QuintOS game that runs on virtual computers displayed in your web browser: Google Chrome, Firefox, or Opera. QuintOS is a retro game engine I created for this course. As you level up your coding skills, your virtual computer will get upgraded. Since you're just starting out, the first game you make will be for... a programmable calculator. 😜
+QuintOS is a retro game engine I created for this course. During each lesson you'll develop a QuintOS game that runs on virtual computers displayed in your web browser: Google Chrome, Firefox, or Opera. As you level up your coding skills, your virtual computer will get upgraded. Since you're just starting out, the first game you make will be for... a programmable calculator. 😜
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen0.jpg)
+
+You might like to know, "How long will it take to become an expert programmer?". Well, just like any other skill, programming can take many years to master. I will say that if you finish this course, you will have a very good understanding of JavaScript.
 
 This first lesson will require you to learn a lot of information before we can even make a simple game. It may be a bit overwhelming for you but don't worry! You'll get a lot of practice with these concepts so that you will fully understand them. Let's get started! 🥳
 
