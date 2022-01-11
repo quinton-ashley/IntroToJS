@@ -36,6 +36,8 @@ Prettier is an extension that will automatically format your code for you when y
 
 Live Server auto-refreshes the browser when you make changes to your code.
 
+Also install all the reccommended Java extensions. You may need to download the latest JDK as well.
+
 ## VSCode Settings
 
 Press F1 on your keyboard (hold Fn then press F1 on macOS). Search the menu for "Preferences: Open Settings (JSON)". Use these settings in VSCode's `settings.json` file:
@@ -230,8 +232,12 @@ let nums = [50, 21, 46, 83];
 Another useful Array function is `includes`, it checks if the input "Ellie" is included in the array.
 
 ```js
-names.includes('Ellie'); // returns true
-names.includes('James'); // returns false
+if (names.includes('Ellie')) {
+	// is true
+}
+if (names.includes('James')) {
+	// is false
+}
 ```
 
 ## Array length
@@ -249,8 +255,8 @@ This example code would print "The names array has 3 names" to the console.
 You learned how to:
 
 - create Arrays
-- get the amount of items in an array using `.length`
 - how to check if something is included in an array
+- get the amount of items in an array using `.length`
 
 ## Computer History: Commodore PET
 

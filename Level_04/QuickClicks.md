@@ -4,15 +4,17 @@ Test your reflexes with the Quick Clicks target practice game! Click a target to
 
 ## Instructions for PART A
 
+Try placing the button in the bottom right corner of the screen. Note the values of the row and column.
+
 Put the button in a random position on the screen.
 
 Remember! `Math.random()` returns a value between 0 and 1 (not including 1)
 
+When the player clicks the button place another button in a random position on the screen. HINT: Use recursion to achieve this!
+
 ## Instructions for PART B
 
-When the player clicks the button place another button in a random position on the screen. Use recursion to achieve this!
-
-After the player clicks a button it should get erased. Do not attempt to erase a button if it doesn't exist.
+After the player clicks a button it should get erased. Do not attempt to erase a button if it doesn't exist!
 
 ## Instructions for PART C
 

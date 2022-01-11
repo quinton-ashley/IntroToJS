@@ -122,7 +122,7 @@ The `player` sprite would not be able to move through any of the sprites in the 
 ## Rotate a Sprite
 
 ```js
-sprite.rotate(90); // rotate the sprite 90 degrees
+sprite.rotation = 90; // rotate the sprite 90 degrees
 ```
 
 ## End of Level 12 C

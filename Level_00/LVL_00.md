@@ -149,7 +149,6 @@ if (fruit == 'banana') {
 
 ```txt
 Equivalence:              ==
-Not equal:                !=
 Less than:                <
 Less than or equal to:    <=
 Greater than:             >
@@ -300,7 +299,7 @@ if (card == 'Ace of Spades') {
 }
 ```
 
-## End of Level 00 B
+## End of Level 00 C
 
 Here's a summary of everything we learned about:
 
@@ -338,5 +337,5 @@ This level's computer was inspired by the Casio FX-720P, which could run program
   - [Scopes](#scopes)
   - [while loops](#while-loops)
   - [Breaking out of a loop early](#breaking-out-of-a-loop-early)
-  - [End of Level 00 B](#end-of-level-00-b)
+  - [End of Level 00 C](#end-of-level-00-c)
   - [Computer History: Casio FX-720P](#computer-history-casio-fx-720p)

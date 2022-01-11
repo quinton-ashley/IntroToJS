@@ -19,7 +19,7 @@ function sayHello() {
 sayHello(); // run the function
 ```
 
-Creating functions does not run the code inside them!
+The code inside a function is not run until the function is called/invoked by using it's name and the parenthesis.
 
 ## p5.js Basics
 

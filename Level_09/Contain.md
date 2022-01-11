@@ -4,7 +4,7 @@ Contain is a 1 player or 2-4 player co-op variant of Pong, with the goal being t
 
 ## Instructions for PART A
 
-Copy and paste your code from Pong into your `GAMES/contain.js` file.
+Copy and paste your code from Pong into the empty `contain.js` file.
 
 Remove the walls but keep the paddles on the left and right sides of the screen. Add horizontal paddles to the top and bottom of the screen. You will have to make new sprite art for the horizontal paddles using the `spriteArt()` function. They should look like the other paddles rotated 90 degrees.
 
@@ -30,7 +30,7 @@ Use `text()` to display the player's score, it can be based on the number of bou
 
 Use a variable to store the number of balls served and the number of balls actively on the screen. If the number of balls is 1 or less then the game should end! Show them a "Game Over" screen and then let them try again. Use `await alert()`
 
-Add collision detection to the
+Make the balls bounce off each other.
 
 ## CHALLENGE SECTION
 

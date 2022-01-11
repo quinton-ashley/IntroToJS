@@ -33,8 +33,8 @@ function doMyMathHomework(x, y) {
 	return x * x * y * y;
 }
 
-doMyMathHomework(1, 3); // returns 9
-doMyMathHomework(2, 5); // what does this return?
+let result0 = doMyMathHomework(1, 3); // returns 9
+let result1 = doMyMathHomework(2, 5); // what does this return?
 ```
 
 ## Arrow function syntax
@@ -90,11 +90,6 @@ for (let i = 0; i < rows; i++) {
 
 How could we use a nested for loop to clear the board of all the pieces by assigning a blank space " " to every element in the `board` array?
 
-## End of Level 06 A
-
-- 2d Arrays
-- nested for loops
-
 - [Level 06 A](#level-06-a)
 	- [Coding Philosophy: Using functions effectively](#coding-philosophy-using-functions-effectively)
 	- [Return variables from a function](#return-variables-from-a-function)
@@ -102,4 +97,3 @@ How could we use a nested for loop to clear the board of all the pieces by assig
 	- [Arrow function syntax](#arrow-function-syntax)
 	- [Two Dimensional Arrays](#two-dimensional-arrays)
 	- [Nested for loops](#nested-for-loops)
-	- [End of Level 06 A](#end-of-level-06-a)

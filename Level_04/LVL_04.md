@@ -18,10 +18,6 @@ function btnClick() {
 button('Click me!', 5, 5, btnClick);
 ```
 
-## End of Level 04 A
-
-# Level 04 B
-
 ## Recursion
 
 Recursion is when a function calls itself. It's another way to loop code in addition to for loops and while loops.
@@ -47,6 +43,8 @@ function doRecursion() {
 	}
 }
 ```
+
+# Level 04 B
 
 ## Erasing a button
 
@@ -170,7 +168,7 @@ The position of prompt and alert windows can be changed by defining their row an
 await alert('I can move too!', 5, 20, 16);
 ```
 
-A fourth input paramter can be used to restrict the width of the window. This also works with the `text` and `prompt` functions but not the `button` function. Text that is longer than the specified width will be put on new lines.
+A fourth input parameter can be used to restrict the width of the window. This also works with the `text` and `prompt` functions but not the `button` function. Text that is longer than the specified width will be put on new lines.
 
 If row, column, and width are not defined, default position values are used, which are different for each of the QuintOS virtual computers.
 
@@ -202,7 +200,7 @@ Designed to be the ultimate portable computer, the clamshell-style GRiD Compass 
 
 The Compass is very high-tech, with its flat-black, die-cast magnesium-alloy case, and bright, sharp electroluminescent display (ELD). No other system packed so much speed and power in as small a case, and none had such a unique and large, easy-to-read screen, allowing full 80x24 text.
 
-Of course, all of these great features raised the price significantly. At $8150, the GRiD Compass 1101 was the most expensive personal computer you could buy.
+Of course, all of these great features raised the price significantly. At $8150, the GRiD Compass 1101 was the most expensive personal computer on the market.
 
 Originally developed for business executives, GRiDs were also used by the U.S. military 'in the field', and by NASA on the Space Shuttles during the 1980's and 90's. It's even been said that the US President's "nuclear football" at one time included a GRiD computer.
 
@@ -210,9 +208,8 @@ Originally developed for business executives, GRiDs were also used by the U.S. m
 
 - [Level 04 A](#level-04-a)
 	- [Creating a Button](#creating-a-button)
-	- [End of Level 04 A](#end-of-level-04-a)
-- [Level 04 B](#level-04-b)
 	- [Recursion](#recursion)
+- [Level 04 B](#level-04-b)
 	- [Erasing a button](#erasing-a-button)
 	- [Implied boolean conditions](#implied-boolean-conditions)
 	- [How to check if a variable is defined](#how-to-check-if-a-variable-is-defined)

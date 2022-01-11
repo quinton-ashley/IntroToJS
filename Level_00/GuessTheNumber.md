@@ -75,5 +75,3 @@ Use a `for` loop to count the turns but keep the same condition: `guess != num`.
 If the user enters a number outside the range of 1 to 100, tell them "Invalid guess" but don't count it against them. They should still have the same amount of valid guess attempts no matter how many invalid guess attempts they make.
 
 When you're done move on to Level 03!
-
-## Hints for PART C

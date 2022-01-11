@@ -8,7 +8,7 @@ Copy the `PickAPath` folder into your `GAMES` directory. Start coding in the `pi
 
 ## Instructions for PART A
 
-Note that prompt will return `null` instead of what the user enters if they press cancel. That's why this game's `while` loop condition is `choice != null`.
+Note that `prompt` will return `null` instead of what the user enters if they press cancel. That's why this game's `while` loop condition is `choice != null`.
 
 Use formatting characters tab `\t` and newline `\n`
 

@@ -132,14 +132,6 @@ for (int i = 0; i < names.length; i++) {
 
 When the for loop starts `i` is set to 0, then is check the condtion. If the condition is true the for loop runs for the first time, this is called an iteration. When the for loop ends, the incrementor section of the for loop is run, in this case `i++` which increases the value of `i` by 1. The condition is checked again, if true the for loop will repeat again, doing another iteration. Until the condition is false the for loop will continue to repeat.
 
-## Breaking out of a loop early
-
-If you need to exit a while loop early, use the `break` keyword.
-
-```js
-break;
-```
-
 ## Computer History: Apple II
 
 This level's computer was inspired by the Apple II. Check out this video about it if you'd like!
@@ -161,5 +153,4 @@ https://www.youtube.com/watch?v=CxJwy8NsXFs
   - [Counting with while loops](#counting-with-while-loops)
 - [Level 03 D](#level-03-d)
   - [for loops](#for-loops)
-  - [Breaking out of a loop early](#breaking-out-of-a-loop-early)
   - [Computer History: Apple II](#computer-history-apple-ii)

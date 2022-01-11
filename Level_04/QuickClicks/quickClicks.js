@@ -18,9 +18,13 @@ const target = `
 // 30 rows - 6 target height - 1 frame line = 23
 // 80 columns - 8 target width - 1 frame line = 71
 
-let row = 1;
-let col = 1;
-button(target, row, col);
+function makeButton() {
+	let row = 1;
+	let col = 1;
+	button(target, row, col);
+}
+
+makeButton();
 
 /* PART B: Use recursion to make a new button after clicking a button */
 
