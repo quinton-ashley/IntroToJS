@@ -1,3 +1,6 @@
+// hides the mouse when it is on the screen
+document.querySelector('.screen').style.cursor = 'none';
+
 // gets an array of color letters from the default color palette
 let colors = Object.keys(QuintOS.palette);
 // scale each color pixel by 10

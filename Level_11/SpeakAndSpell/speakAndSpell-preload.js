@@ -427,3 +427,4 @@ let speech = [
 
 // example loading the letter A sound
 let letterSoundA = loadSound(QuintOS.dir + '/sounds/letters/A.mp3');
+letterSoundA.setVolume(0.3);
