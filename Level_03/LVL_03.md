@@ -132,6 +132,40 @@ for (int i = 0; i < names.length; i++) {
 
 When the for loop starts `i` is set to 0, then is check the condtion. If the condition is true the for loop runs for the first time, this is called an iteration. When the for loop ends, the incrementor section of the for loop is run, in this case `i++` which increases the value of `i` by 1. The condition is checked again, if true the for loop will repeat again, doing another iteration. Until the condition is false the for loop will continue to repeat.
 
+## Breaking out of a loop early
+
+Take a look at this example code that searches for the Ace of Spades in a deck of cards.
+
+```js
+let card; // no card picked yet
+
+while (card != 'Ace of Spades') {
+	card = pickACard();
+}
+
+await alert('Found the Ace of Spades!');
+```
+
+If there are no cards left in the deck, the Ace of Spades can not be found. The while loop would keep looping infinitely! Let's imagine the `pickACard` function would return `null`, a special value that means none if there are no cards left in the deck. The while loop condition would remain true forever, so the loop must be exited early by using the `break` keyword.
+
+```js
+let card;
+
+while (card != 'Ace of Spades') {
+	card = pickACard();
+
+	if (card == null) {
+		break; // exit the while loop
+	}
+}
+
+if (card == 'Ace of Spades') {
+	await alert('Found the Ace of Spades!');
+} else {
+	await alert('The Ace of Spades was not in the deck!');
+}
+```
+
 ## Computer History: Apple II
 
 This level's computer was inspired by the Apple II. Check out this video about it if you'd like!
@@ -153,4 +187,5 @@ https://www.youtube.com/watch?v=CxJwy8NsXFs
   - [Counting with while loops](#counting-with-while-loops)
 - [Level 03 D](#level-03-d)
   - [for loops](#for-loops)
+  - [Breaking out of a loop early](#breaking-out-of-a-loop-early)
   - [Computer History: Apple II](#computer-history-apple-ii)

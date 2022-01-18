@@ -118,6 +118,18 @@ Grocery list:
 	Bananas
 ```
 
+## Javascript Console
+
+Code is essentially a set of instructions for your computer to interpret and perform. If you make syntax and spelling mistakes in your code, your computer won't know what to do! Luckily for us, web browsers have really great development tools to help us fix mistakes in our code.
+
+The console can be opened in your web browser by right clicking anywhere on a web page and choosing "Inspect" or by using the shortcut `ctrl+shift+i` on Windows/Linux or `cmd+option+i` on macOS. When it first opens you'll see the "Elements" tab, this is the HTML structure of the website. If you hover your mouse over an element it will be highlighted. You can even change text on the website. Cool huh?! Note that these changes are only visible to you.
+
+Now go to the "Console" tab. If your program doesn't start or stops working, look at the JavaScript console for errors. You can also use `console.log` to print things to the console.
+
+```js
+console.log("The user's favorite color is: " + favColor);
+```
+
 ## End of Level 01 A
 
 Start your PickAPath game! Follow the instructions in project file `PickAPath.md` located in the same folder as this lesson file.
@@ -273,6 +285,7 @@ PETSCII character set: <https://style64.org/petscii/>
   - [VSCode Settings](#vscode-settings)
   - [Loading QuintOS Games](#loading-quintos-games)
   - [Special characters](#special-characters)
+  - [Javascript Console](#javascript-console)
   - [End of Level 01 A](#end-of-level-01-a)
 - [Level 01 B](#level-01-b)
   - [Boolean Operators](#boolean-operators)

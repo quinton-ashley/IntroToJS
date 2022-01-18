@@ -34,7 +34,7 @@ After each guess, the player should be told if their guess was right or wrong. I
 
 _Read Level 00 B in the `LVL_00.md` file before doing this section_
 
-Use `Math` functions to have the computer pick a random whole number between 1 and 100.
+Use `Math` functions to have the computer pick a random whole number between 1 and 100. To make sure your code for this works try printing the number out using an `alert`. When you are sure it is working remove the `alert`.
 
 ## Instructions for PART C
 

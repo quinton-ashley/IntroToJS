@@ -4,23 +4,17 @@
 
 Why is this field of study called "Computer Science" and not "Program Writing" or "Code Mathematics"? It's because coding requires research and experimentation! You'll often need to test your programs to learn from unexpected errors, then make changes to get the results you want.
 
-These lessons will teach you how to code in JavaScript, which is the most popular modern programming language and my personal favorite! You will have to memorize some vocabulary, grammar, and syntax to learn this new language. However, learning to code isn't what programming is all about, you will also learn how to think like a programmer!
-
-In the 21st century, even if you don't want to become a professional programmer, it is valuable to study Computer Science. Unlike in Hollywood movies, which depict programmers as super genius nerds, in reality anyone can learn how to code! You don't even have to be good at or enjoy Math. You'll be able to use your programming skills to do many things: create art, make robots, design websites, do scientific research, help run a business, develop apps, etc.
-
-Learning to program will change the way you view the world by improving your logical reasoning and abstract problem solving skills. Programming has a language arts aspect too. You will not only strive to write efficient code for the computer but also code that can be easily understood by other programmers.
+These lessons will teach you how to code in JavaScript, which is the most popular modern programming language and my personal favorite! You will have to memorize some vocabulary, grammar, and syntax to learn this new language. However, learning to code isn't what programming is all about, you will also learn how to think like a programmer! Learning to program will improve your logical reasoning and abstract problem solving skills. Programming has a language arts aspect too. You will not only strive to write efficient code for the computer but also code that can be easily understood by other programmers.
 
 ## What is QuintOS?
 
-Issac Newton once said, "we stand on the shoulders of giants", millions of programmers and computer engineers have done incredible work over several decades for you to be able to write programs using the advanced modern programming languages we have today like JavaScript. To understand how software is developed today it's important to learn a bit about the history of computers.
+The famous 17th century scientist, Issac Newton, once said, "we stand on the shoulders of giants". To understand how software is developed today it's important to learn a bit about the history of computers.
 
 If you signed up for this course you might want to know how video games work and how to make your own! If not, making games will hopefully be a fun way for you to learn how to code.
 
-QuintOS is a retro game engine I created for this course. During each lesson you'll develop a QuintOS game that runs on virtual computers displayed in your web browser: Google Chrome, Firefox, or Opera. As you level up your coding skills, your virtual computer will get upgraded. Since you're just starting out, the first game you make will be for... a programmable calculator. 😜
+QuintOS is a retro game engine I created for this course. During each lesson you'll develop a QuintOS game that runs on virtual computers displayed in your web browser: Google Chrome, Firefox, or Opera. As you level up your coding skills, the virtual computer will get upgraded too. Since you're just starting out, the first game you make will be for... a programmable calculator. 😜
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen0.jpg)
-
-You might like to know, "How long will it take to become an expert programmer?". Well, just like any other skill, programming can take many years to master. I will say that if you finish this course, you will have a very good understanding of JavaScript.
 
 This first lesson will require you to learn a lot of information before we can even make a simple game. It may be a bit overwhelming for you but don't worry! You'll get a lot of practice with these concepts so that you will fully understand them. Let's get started! 🥳
 
@@ -35,7 +29,7 @@ const b = 1;
 
 Use `let` or `const` to create variables. In the example code `a` and `b` are the names of the variables. `a` is assigned the number `0` and `b` is assigned the number `1`. The value of `b` can not be changed because it was declared with `const`.
 
-Use a semicolon `;` to end each line of code. Though it's not required for your computer to run JavaScript, knowing where each line ends makes it easier for other humans to read your code. 👁👅👁
+Semicolons `;` are used to end each line of code. Though they are not required for your computer to run JavaScript, putting a semicolon at the end of each line can make it easier for other humans to read code, especially if it has really long lines. 👁👅👁
 
 ## Types of Variables 🔡
 
@@ -49,7 +43,7 @@ let z = 9504.15;
 
 ### Boolean
 
-Booleans are either `true` or `false`
+Booleans can be either `true` or `false`
 
 ```js
 let codingIsFun = true;
@@ -57,7 +51,7 @@ let codingIsFun = true;
 
 ### String
 
-Strings are text, stored as lists of characters. To remember the name String, you can think of lettered beads on a charm bracelet string. Strings can be defined using 'apostrophes' or "quotes".
+Strings are text, defined by 'apostrophes' or "quotes".
 
 ```js
 let story = 'I took my dog to the dog park on 3rd Avenue.';
@@ -69,6 +63,8 @@ ERROR! If you don't use quotes, JavaScript will think the words are variables!
 let story = I took my dog to the dog park on 3rd Avenue.;
 ```
 
+To remember that the data type for text is called String, you can think of lettered beads on a charm bracelet string. This is similar to how text in a string is stored, as a list of characters.
+
 ## Camel Case 🐫
 
 Variable names in JS can't have spaces, 🙅‍♂️ so for variables that have multiple words, use camel case! It is called camel case because the first letter of the words after the first word are capitalized, which looks like the humps of a camel? 🤔
@@ -79,7 +75,7 @@ let applePie = '🍎 π';
 let applePieIceCream = '🍎 π 🍨';
 ```
 
-Camel case is a naming convention specific to JavaScript, other programming languages have their own conventions. Note that using this naming convention isn't required for JavaScript to run, but you should still do it to make your code easier to read.
+Note that using this naming convention isn't required for JavaScript to run, it's just something that most professional Javascript programmers do to make variable names easier to read. Camel case is a naming convention specific to JavaScript, other programming languages have their own conventions.
 
 ### Changing a variable's value
 
@@ -97,7 +93,7 @@ let x = 10;
 x = 5; // good :)
 ```
 
-Double slash `//` is for making a comment, any text behind it on the same line will not be considered part of the code's instructions. Comments are used to describe what is happening in the code. You might want to make comments so other people can understand your programs or so that you can understand it yourself in case you forget what you did.
+Double slash `//` is for making a comment, any text behind it on the same line will not be considered part of the code's instructions. Comments are used to describe what is happening in the code. You might want to make comments so other people can understand your programs or so that you can understand it yourself in case you forget what you did!
 
 ## Mathematical operators 🔢
 
@@ -116,7 +112,7 @@ let x = 5 * 8; // x -> 40
 
 ## Checking Equivalence ✅
 
-Single equals `=` is for assigning values to variables. Double equals `==` is a boolean operator used for checking equivalence.
+Single equals `=` is for assigning values to variables. Double equals `==` is a boolean operator used for checking equivalence. What is a boolean operator? It performs an operation that results in either a true or false (boolean) value.
 
 `if` statements use a boolean condition, which goes in parenthesis after the keyword `if`. If the boolean condition is `true`, the code block `{}`, whatever's inside the squiggly brackets, is run.
 
@@ -144,6 +140,8 @@ if (fruit == 'banana') {
 	fruitColor = 'unknown';
 }
 ```
+
+What color will be assigned to `fruitColor` if the `fruit` is a pear? What if the fruit is a strawberry?
 
 ## Boolean operators 🐰
 
@@ -186,19 +184,6 @@ let favColor = await prompt('What is your favorite color?');
 await alert(favColor + ' is my favorite color too!'); // show message to user
 ```
 
-## Javascript Console
-
-Like other programming languages, JavaScript code conveys instructions that computers interpret and perform. Making syntax and spelling mistakes in your code will make it unreadable for your computer though! Luckily for us, we have really great tools to help us code.
-
-The console can be opened in your web browser by right clicking anywhere on a web page and choosing "Inspect" or by using the shortcut `ctrl+shift+i` on Windows/Linux or `cmd+option+i` on macOS. When it first opens you'll see the "Elements" tab, this is the HTML structure of the website. If you hover your mouse over an element it will be highlighted. You can even change text on the website. Cool huh?! Note that these changes are only visible to you.
-
-Now go to the "Console" tab. If your program doesn't start or stops working, look at the JavaScript console for errors. You can also use `console.log` to print things to the console.
-
-```js
-// prints the favorite color the user entered to the console
-console.log("The user's favorite color is: " + favColor);
-```
-
 ## End of Level 00 A
 
 That was a LOT of information! Here's a summary of everything we learned about:
@@ -207,7 +192,7 @@ That was a LOT of information! Here's a summary of everything we learned about:
 - making boolean conditions to test if something is `true` or `false`
 - using double equals to `==` check for equivalence
 - `if`, `else if`, and `else` statements
-- globals functions `alert`, `prompt`, and `console.log`
+- globals functions `alert`, `prompt`
 
 Now you're ready to start making your first game! 🥳 [Click here for the GuessTheNumber instructions.](https://github.com/quinton-ashley/IntroToJS/blob/main/Level_00/GuessTheNumber.md)
 
@@ -217,7 +202,7 @@ Did you complete part A and are ready to learn more? Before we can finish `Guess
 
 ## Math functions
 
-At this point you should also know about the global object [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math), which has many useful functions. You will use `.random()` and `.ceil()` to make this game.
+At this point you should also know about the global object [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math), which has many useful functions.
 
 ```js
 // Math.random() returns a random decimal number between 0 and 1 (not including 1)
@@ -275,39 +260,6 @@ while (card != 'Ace of Spades') {
 await alert('Found the Ace of Spades!');
 ```
 
-The while loop will loop until `card` is the Ace of Spades. What if the Ace of Spades wasn't in the deck though? Then every card in the deck will be picked until there are none left and then the program will keep trying to pick a card! This would result in an infinite loop, not good...
-
-## Breaking out of a loop early
-
-If there are no cards left in the deck let's imagine the `pickACard` function would return `null`, a special value that means none. If there are no cards left in the deck, the Ace of Spades can not be found. The while loop condition would remain true forever, so the loop must be exited early by using the `break` keyword.
-
-```js
-let card;
-
-while (card != 'Ace of Spades') {
-	card = pickACard();
-
-	if (card == null) {
-		break; // exit the while loop
-	}
-}
-
-if (card == 'Ace of Spades') {
-	await alert('Found the Ace of Spades!');
-} else {
-	await alert('The Ace of Spades was not in the deck!');
-}
-```
-
-## End of Level 00 C
-
-Here's a summary of everything we learned about:
-
-- more about code blocks/scopes `{}`
-- `while` loops, used to repeat a code block
-- `null`, a special value that means none or nothing
-- `break`, a keyword used to exit a loop early
-
 ## Computer History: Casio FX-720P
 
 This level's computer was inspired by the Casio FX-720P, which could run programs in a programming language called BASIC. Portable programmable calculators were limited by their small button keyboards and display limitations, but when slotted into a dock that had little printer, they could be used to print out graphs and many lines of text. The calculator could also load programs from tape cassettes.
@@ -329,13 +281,10 @@ This level's computer was inspired by the Casio FX-720P, which could run program
   - [Boolean operators 🐰](#boolean-operators-)
     - [functions](#functions)
   - [Globals 🌐](#globals-)
-  - [Javascript Console](#javascript-console)
   - [End of Level 00 A](#end-of-level-00-a)
 - [Level 00 B](#level-00-b)
   - [Math functions](#math-functions)
 - [Level 00 C](#level-00-c)
   - [Scopes](#scopes)
   - [while loops](#while-loops)
-  - [Breaking out of a loop early](#breaking-out-of-a-loop-early)
-  - [End of Level 00 C](#end-of-level-00-c)
   - [Computer History: Casio FX-720P](#computer-history-casio-fx-720p)
