@@ -2,7 +2,7 @@
 (async () => {
 	// your code goes here! below this line
 
-	let choice = -1; // initialize choice to -1, user has not made any choice yet
+	let choice = 0; // initialize choice to 0, user has not made any choice yet
 
 	while (choice != null) {
 		// while choice is not null (nothing)
@@ -10,7 +10,7 @@
 
 		let msg = ''; // initialize message to empty String
 
-		if (choice == -1) {
+		if (choice == 0) {
 			/* PART A0: Start your story! */
 			msg =
 				"It's a dark October night. You're staying up late coding but suddenly you hear a knock at your door!\n\n\t" +

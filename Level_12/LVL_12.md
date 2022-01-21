@@ -134,7 +134,18 @@ sprite.rotation = 90; // rotate the sprite 90 degrees
 Get the array of sprites from a sprite group.
 
 ```js
-group.toArray();
+spriteGroup.toArray();
+```
+
+## Promise.all
+
+Sometimes you will need to `await` multiple Promises at once. For example, to wait for mutliple sprites to move at the same time with the async `sprite.move` function.
+
+```js
+let movements = [];
+movements.push(spriteGroup[0].move('up'));
+movements.push(spriteGroup[1].move('up'));
+await Promise.all(movements);
 ```
 
 - [Level 12 A](#level-12-a)
@@ -157,3 +168,4 @@ group.toArray();
 	- [End of Level 12 C](#end-of-level-12-c)
 - [Level 12 D](#level-12-d)
 	- [Group array](#group-array)
+	- [Promise.all](#promiseall)
