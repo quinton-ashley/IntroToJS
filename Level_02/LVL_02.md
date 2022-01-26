@@ -172,8 +172,8 @@ The `keyPressed` is a p5.js function that is run whenever a key is pressed.
 ```js
 function draw() {}
 function keyPressed() {
-	if (key == 'q') {
-		log('The q key was pressed!');
+	if (key == 'ArrowRight') {
+		log('The right arrow key was pressed!');
 	}
 }
 ```
@@ -184,10 +184,10 @@ Implement `keyPressed` outside the `draw` function.
 
 ```js
 function draw() {
-	if (keyIsDown('ArrowLeft')) {
+	if (keyIsDown(LEFT_ARROW)) {
 		player.x -= 2; // move the player left by 2 pixels
 	}
-	if (keyIsDown('ArrowRight')) {
+	if (keyIsDown(RIGHT_ARROW)) {
 		player.x += 2; // move the player right by 2 pixels
 	}
 }
