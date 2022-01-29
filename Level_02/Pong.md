@@ -6,11 +6,13 @@ Pong is a table tennis–themed arcade game, featuring simple two-dimensional gr
 
 Create two paddle sprites and place them on opposite ends of the screen.
 
-Make the ball move to the right. Then try moving it to the left. Then try moving the ball in a diagonal. Get a sense of how changing the ball's x and y values will affect its trajectory. HINT: Do this inside the draw function.
+Make the ball move to the right. HINT: Do this inside the draw function.
 
 You will notice that when the ball moves it leaves a trail of ball images behind it. That's because everything drawn to the p5.js canvas stays there, it doesn't become a blank slate everytime the draw function is used to make a new frame. To clear the screen draw a background using the background function with `0` as the input argument `background(0)` (0 is black 255 is white)
 
-Usually Pong is a two player game but to easily test the game you can change the position of both paddles using your mouse. `mouseX` and `mouseY` store the position of the mouse at all times. HINT: Change the y position of the paddles to `mouseY`.
+Now try moving the ball to the left. Then try moving the ball up and down, then in a diagonal. Get a sense of how changing the ball's x and y values will affect its trajectory.
+
+Usually Pong is a two player game but to easily test the game you can change the position of both paddles using your mouse. `mouseX` and `mouseY` store the position of the mouse at all times. HINT: Change the y position of both paddles to `mouseY`.
 
 Personalize your game of Pong by choosing a sport or something else to theme it on. Give the ball a new design, it's pretty small so you can keep it simple.
 
@@ -24,15 +26,15 @@ Make the ball bounce off the walls. To easily test your code for this, make the 
 
 Use the ball's velocity property to move it instead of changing it's x and y values. When you change the x and y velocities of the ball then the p5.play `drawSprites` function will change its position.
 
-Make the ball bounce off the paddles. You can implement checking for the bounce yourself or use the p5.play `bounce` function.
+Make the ball bounce off the paddles. As a challenge you can implement the bounce yourself or use the p5.play `bounce` function.
 
 Place the ball back in the middle of the screen when it goes off the edge of the screen.
 
-When the ball is served make it go away from the player that lost the ball. Make the ball move in a diagonal, have it be random whether it goes up or down, don't let it go straight left and right.In level 9 you'll learn how to make the ball move at different angles without changing its total speed.
+When the ball is served make it go away from the player that lost the ball. Make the ball move in a diagonal, have it be random whether it goes up or down, don't let it go straight left and right. In level 9 you'll learn how to make sprites move at different angles without changing their total speed.
 
 ## Instructions for PART D
 
-Implement key controls to enable two players to play your Pong game.
+Implement key controls to enable two players to play your Pong game. Don't let players move the paddles off the screen.
 
 Show the score on screen at all times. HINT: Use the `text` function
 

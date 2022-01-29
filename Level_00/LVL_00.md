@@ -29,7 +29,7 @@ const b = 1;
 
 Use `let` or `const` to create variables. In the example code `a` and `b` are the names of the variables. `a` is assigned the number `0` and `b` is assigned the number `1`. The value of `b` can not be changed because it was declared with `const`.
 
-Semicolons `;` are used to end each line of code. Though they are not required for your computer to run JavaScript, putting a semicolon at the end of each line can make it easier for other humans to read code, especially if it has really long lines. 👁👅👁
+Semicolons `;` can be used to end each line of code but they're not required. 👁👅👁
 
 ## Types of Variables 🔡
 

@@ -37,7 +37,7 @@ ball.x = 5;
 ball.y = 12;
 ```
 
-When you create a sprite using an image the width and height of the sprite is automatically assigned to the sprite based on the size of the image. They can be accessed using `.w` and `.h`
+When you create a sprite using an image the width and height of the sprite is automatically assigned to the sprite based on the size of the image. They can be accessed using `.width` and `.height` or with `.w` and `.h`
 
 ```js
 console.log('size of the ball: ' + ball.w + 'x' + ball.h);
@@ -122,13 +122,21 @@ let pattern = '><'.repeat(4);
 // pattern -> '><><><><';
 ```
 
+## += operator
+
+The `+=` operator can be used to add to the existing value of a variable.
+
+```js
+let x = 5;
+x += 2;
+log(x); // x -> 7
+```
+
+`-=`, `*=`, and `/=` operators can be used in JS too.
+
 # Level 02 C
 
-Checking for intersections between the ball and paddle is harder because they are both moving objects.
-
 ## Vectors
-
-To finish Pong, we'll have to use Math "in real life"! How exciting! 😄
 
 In Physics a vector is a direction in which something is moving and the magnitude of how fast it's moving there at a given interval of time.
 
@@ -149,7 +157,7 @@ ball.bounce(paddle);
 
 ## Immovable objects
 
-By default when sprites bounce of each other both objects will move. To prevent this, set the sprite to be immovable when another sprite bounces on it.
+By default when sprites bounce off each other both objects will move. To prevent this, set the sprite to be immovable when another sprite bounces on it.
 
 ```js
 paddle.immovable = true;
@@ -165,29 +173,29 @@ background(colorPal('r'));
 
 # Level 02 D
 
-## Responding to key presses
+## Respond to keyboard input
 
 The `keyPressed` is a p5.js function that is run whenever a key is pressed.
 
 ```js
 function draw() {}
 function keyPressed() {
-	if (key == 'ArrowRight') {
-		log('The right arrow key was pressed!');
+	if (key == 'ArrowUp') {
+		log('The up arrow key was pressed!');
 	}
 }
 ```
 
 Implement `keyPressed` outside the `draw` function.
 
-## Checking if a key is held
+## Check if a key is held
 
 ```js
 function draw() {
-	if (keyIsDown(LEFT_ARROW)) {
+	if (isKeyDown('ArrowLeft')) {
 		player.x -= 2; // move the player left by 2 pixels
 	}
-	if (keyIsDown(RIGHT_ARROW)) {
+	if (isKeyDown('ArrowRight')) {
 		player.x += 2; // move the player right by 2 pixels
 	}
 }
@@ -242,14 +250,15 @@ https://youtu.be/nRlmTiynbd8?t=242
 - [Level 02 B](#level-02-b)
   - [spriteArt scaling](#spriteart-scaling)
   - [String.repeat(amount)](#stringrepeatamount)
+  - [+= operator](#-operator)
 - [Level 02 C](#level-02-c)
   - [Vectors](#vectors)
   - [Bounces](#bounces)
   - [Immovable objects](#immovable-objects)
   - [colorPal](#colorpal)
 - [Level 02 D](#level-02-d)
-  - [Responding to key presses](#responding-to-key-presses)
-  - [Checking if a key is held](#checking-if-a-key-is-held)
+  - [Respond to keyboard input](#respond-to-keyboard-input)
+  - [Check if a key is held](#check-if-a-key-is-held)
   - [Drawing text to the screen](#drawing-text-to-the-screen)
   - [Level 02 E](#level-02-e)
   - [p5.js fill, stroke, and rect](#p5js-fill-stroke-and-rect)
