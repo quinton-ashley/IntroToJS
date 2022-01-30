@@ -79,7 +79,7 @@ The `move` function of tile based sprites can also accept a destination `row` an
 await sprite.move(row, col, speed);
 ```
 
-`move` is an async function because the sprite's movement will be animated.
+`move` is an async function because the sprite's movement will be animated. Use `await` to wait for it to move to its destination. However if the speed is 0, then the sprite will teleport and you don't need to use `await`.
 
 ## Teleport a Sprite
 
@@ -89,6 +89,8 @@ If you want to teleport a spirte in one frame to a new location without any anim
 sprite.row = 4;
 sprite.col = 3;
 ```
+
+Increasing/decreasing the sprite's row or column with the `++` and `--` operators will work too.
 
 ## Flip a Sprite
 

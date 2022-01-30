@@ -16,8 +16,8 @@ When the first player clicks a button, record their move on the two dimensional 
 
 If a player tries to place their 'x' or 'o' on a space that is not empty, do not let them overwrite that space. Show the player an alert window that explains they can't put their mark there because the space is not empty. Show the alerts on the bottom right of the screen, don't let them overlap with the Tic Tac Toe grid or it will get erased when the alert window gets erased. Note that the alert function also accepts an optional width limit as a 4th input parameter: `alert(text, row, col, w)`
 
-Create a function called `checkForWinner` that should take a mark ('x' or 'o') as an input parameter. Check for winners (three Xs or three Os in a row) on all horizontal and vertical rows using a single for loop. Also check for the two diagonals, no loop required.
+Create a function called `checkForWinner` that should take a mark ('x' or 'o') as an input parameter. Check for winners (three Xs or three Os in a row) on all horizontal and vertical rows using a single for loop. Also check for the two diagonals, no loop required. If there is a winner return `true`, if there's not return `false`. Use the function in `takeTurn` and tell the players who won.
 
-Create a function called `checkForDraw` that checks for a draw.
+Create a function called `checkForDraw` that checks for a draw. Use the function in `takeTurn` and tell the players there was a draw.
 
 After a game is complete, start a new game. Always show whose turn it is and a tally of the score in the top right corner.
