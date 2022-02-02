@@ -206,7 +206,7 @@ https://codeburst.io/explaining-value-vs-reference-in-javascript-647a975e12a0
 
 # End of IntroToJS
 
-Congratulations you've completed my IntroToJS course! There are a few more things I think you should know about before you continue on to learn more advanced stuff.
+Congratulations you've completed my IntroToJS course! You now have a good understanding of JavaScript now and programming in general.
 
 ## Google's zx
 

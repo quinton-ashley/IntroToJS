@@ -6,7 +6,7 @@
 
 Split the `words` String into an array of words, assign the array to the `words` variables. HINT: use the `split` String function.
 
-Pick a random word from the array of words. HINT: Remember `.length` can be use to get the length of an array. Reference your use of `Math.random()` and `Math.floor(x)` in the GuessTheNumber game.
+Pick a random word from the array of words. HINT: Remember `.length` can be use to get the length of an array. Reference your use of `Math.random()` and in the GuessTheNumber game.
 
 ## Instructions for PART B
 

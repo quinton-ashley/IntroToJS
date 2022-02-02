@@ -47,6 +47,10 @@ nums[1] = 36;
 
 # Level 02 B
 
+## Getting the length of a String
+
+`.length` is used to get the amount of items in an array and it can also be used to get the amount of characters in a String.
+
 ## Accessing characters in a String
 
 To access characters in a String you can use `[]` but note that you can't edit them like you can with arrays.
@@ -83,10 +87,6 @@ names.join(' ~ ');
 
 # Level 03 C
 
-## Getting the length of a String
-
-`.length` can be used to get the amount of characters in a String.
-
 ## Counting with while loops
 
 The number of loops a while loop does can be counted with a variable.
@@ -102,7 +102,7 @@ while (i < names.length) {
 	console.log(i + '. ' + names[i]);
 
 	i = i + 1;
-} // in this loop i goes up from 0 to 1 to 3
+} // in this loop i goes up from 0 to 1 to 2 to 3
 ```
 
 The code above prints out a numbered list of names in the JS console.
@@ -178,12 +178,12 @@ https://www.youtube.com/watch?v=CxJwy8NsXFs
   - [Accessing items in an Array](#accessing-items-in-an-array)
   - [End of Level 03 A](#end-of-level-03-a)
 - [Level 02 B](#level-02-b)
+  - [Getting the length of a String](#getting-the-length-of-a-string)
   - [Accessing characters in a String](#accessing-characters-in-a-string)
   - [Getting an array of characters from a String](#getting-an-array-of-characters-from-a-string)
   - [array.join(separator)](#arrayjoinseparator)
   - [End of Level 03 B](#end-of-level-03-b)
 - [Level 03 C](#level-03-c)
-  - [Getting the length of a String](#getting-the-length-of-a-string)
   - [Counting with while loops](#counting-with-while-loops)
 - [Level 03 D](#level-03-d)
   - [for loops](#for-loops)
