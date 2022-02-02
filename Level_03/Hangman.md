@@ -4,9 +4,9 @@
 
 ## Instructions for PART A
 
-Split the `words` String into an array of words, assign the array to the `words` variables. HINT: use the `split` String function.
+Split the `wordsList` String into an array, call the array `words`. HINT: use the `split` String function.
 
-Pick a random word from the array of words. HINT: Remember `.length` can be use to get the length of an array. Reference your use of `Math.random()` and in the GuessTheNumber game.
+Pick a random word from the array of words. HINT: Remember `.length` can be use to get the length of an array. Reference your use of `Math.random()` in the GuessTheNumber game.
 
 ## Instructions for PART B
 
@@ -17,6 +17,8 @@ Display the `lines` array like this `_ _ _ _` in the prompt on a new line below 
 ## Instructions for PART C
 
 If the player guesses a letter which occurs in the word, edit the `lines` array so the letter will be displayed in all its correct positions. For example if the word is "avenue" and the player has guessed "e", "x", "b", "r", "v" your prompt should display: `_ v e _ _ e`
+
+Make the game loop! HINT: What condition must be true for the player to keep guessing letters? (use the `includes` String function)
 
 ## Instructions for PART D
 

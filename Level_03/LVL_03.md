@@ -43,8 +43,6 @@ nums[1] = 36;
 // edits the list: [50, 36, 42, 83]
 ```
 
-## End of Level 03 A
-
 # Level 02 B
 
 ## Getting the length of a String
@@ -176,7 +174,6 @@ https://www.youtube.com/watch?v=CxJwy8NsXFs
   - [Coding Philosophy: Naming variables](#coding-philosophy-naming-variables)
   - [String.split(seperator)](#stringsplitseperator)
   - [Accessing items in an Array](#accessing-items-in-an-array)
-  - [End of Level 03 A](#end-of-level-03-a)
 - [Level 02 B](#level-02-b)
   - [Getting the length of a String](#getting-the-length-of-a-string)
   - [Accessing characters in a String](#accessing-characters-in-a-string)
