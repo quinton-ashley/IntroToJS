@@ -61,8 +61,6 @@ Creates a `fireball` sprite using the `powerup0` image at row 5, column 2 on the
 player.ani('walk-down');
 ```
 
-## End of Level 12 A
-
 # Level 12 B
 
 ## Move a Sprite
@@ -99,8 +97,6 @@ sprite.mirrorX(-1); // flip sprite horizontally
 sprite.mirrorY(-1); // flip sprite veritcally
 ```
 
-## End of Level 12 B
-
 # Level 12 C
 
 ## Groups
@@ -126,8 +122,6 @@ The `player` sprite would not be able to move through any of the sprites in the 
 ```js
 sprite.rotation = 90; // rotate the sprite 90 degrees
 ```
-
-## End of Level 12 C
 
 # Level 12 D
 
@@ -157,17 +151,14 @@ await Promise.all(movements);
 	- [Loading Images from a Sprite Sheet](#loading-images-from-a-sprite-sheet)
 	- [Creating Sprites with animations](#creating-sprites-with-animations)
 	- [Changing a Sprite's animation](#changing-a-sprites-animation)
-	- [End of Level 12 A](#end-of-level-12-a)
 - [Level 12 B](#level-12-b)
 	- [Move a Sprite](#move-a-sprite)
 	- [Teleport a Sprite](#teleport-a-sprite)
 	- [Flip a Sprite](#flip-a-sprite)
-	- [End of Level 12 B](#end-of-level-12-b)
 - [Level 12 C](#level-12-c)
 	- [Groups](#groups)
 	- [Check for Collisions](#check-for-collisions)
 	- [Rotate a Sprite](#rotate-a-sprite)
-	- [End of Level 12 C](#end-of-level-12-c)
 - [Level 12 D](#level-12-d)
 	- [Group array](#group-array)
 	- [Promise.all](#promiseall)
