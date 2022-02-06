@@ -21,3 +21,5 @@ Create a function called `checkForWinner` that should take a mark ('x' or 'o') a
 Create a function called `checkForDraw` that checks for a draw. Use the function in `takeTurn` and tell the players there was a draw.
 
 After a game is complete, start a new game. Always show whose turn it is and a tally of the score in the top right corner.
+
+Make it random who starts first in the beginning or in case of a draw, otherwise, let the player who lost go first.

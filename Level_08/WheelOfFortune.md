@@ -4,9 +4,23 @@ The TV show, "Wheel of Fortune", features many different mini-games that contest
 
 ## Instructions
 
-Split the list of phrases into an array of phrases. Select a random phrase and split that phrase into an array of words. HINT: Review your Hangman program.
+Split the `phrasesList` into an array of `phrases`. Select a random phrase, call it `fullPhrase`, and split it into an array of words called `phrase`. HINT: Review your Hangman program.
+
+```js
+// example
+fullPhrase -> 'Community Chest'
+phrase -> ['Community', 'Chest']
+```
 
 Make a 2D `board` array that should be initialized to store blank space strings for all the letters in the phrase. Similar to TicTacToe, you will use this `board` to keep track of which letters have been revealed. HINT: Use the `repeat` and `split` String functions.
+
+```js
+// blank spaces for the phrase "Community Chest"
+board -> [
+  [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+  [' ', ' ', ' ', ' ', ' ']
+]
+```
 
 Make boxes using `textRect` around the blank spaces and letters just like in the Wheel of Fortune TV show. Use `for` loops to make all the boxes for the phrase! HINT: Review your TicTacToe progam.
 

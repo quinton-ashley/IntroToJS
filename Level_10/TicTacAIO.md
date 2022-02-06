@@ -11,7 +11,7 @@ Make buttons to let the user pick between starting a two player game or one play
 Make three levels of AI player:
 
 - Easy : picks the first available space
-- Medium : picks one of the available spaces left (not from tbe whole grid)
+- Medium : picks an available space randomly
 - Hard : picks a winning move if available, blocks opponent's winning moves if they have any, otherwise it picks any available space
 
 Also make a "Challenge Mode" option for the AI difficulty. Make it progressive, so the player has to beat the easy AI, then the medium AI, before they play against the hard AI.
