@@ -120,13 +120,13 @@ The code above prints out a numbered list of names in the JS console.
 
 Scroll up and take another look at the example of the while loop with a counter variable, then check out this for loop! It does the same thing but all the steps related to the index variable are written as one line. The order of their operation is still the same.
 
-```java
-String[] names = new String[]{"Jake", "Ali", "Ben", "Cam"};
+```js
+let names = ['Jake', 'Ali', 'Ben', 'Cam'];
 
 // (INITIALIZER; CONDITION; INCREMENATION)
-for (int i = 0; i < names.length; i++) {
+for (let i = 0; i < names.length; i++) {
 	// print the next name in the list
-	System.out.println(i + '. ' + names[i]);
+	console.log(i + '. ' + names[i]);
 }
 ```
 
