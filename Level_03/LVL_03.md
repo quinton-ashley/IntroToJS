@@ -49,19 +49,6 @@ nums[1] = 36;
 
 `.length` is used to get the amount of items in an array and it can also be used to get the amount of characters in a String.
 
-## Accessing characters in a String
-
-To access characters in a String you can use `[]` but note that you can't edit them like you can with arrays.
-
-```js
-let animal = 'the red fox';
-console.log(animal[4]); // prints 'r'
-animal[8] = 'b'; // error
-// will not change fox String to 'the red box'
-```
-
-Strings are immutable, meaning individual characters in the String can not be changed.
-
 ## Getting an array of characters from a String
 
 You can also split a String into individual characters using the `split` function with an empty String as the input.
@@ -84,6 +71,21 @@ names.join(' ~ ');
 ## End of Level 03 B
 
 # Level 03 C
+
+## Accessing characters in a String
+
+To access characters in a String you can use `[]` just like with accessing items in arrays!
+
+```js
+let animal = 'the red fox';
+console.log(animal[4]); // prints 'r'
+```
+
+However, Strings are immutable, meaning individual characters in the String can not be edited like you can with individual elements in an array.
+
+```js
+animal[8] = 'b'; // ERROR: won't change String to 'the red box'
+```
 
 ## Counting with while loops
 
@@ -171,18 +173,18 @@ This level's computer was inspired by the Apple II. Check out this video about i
 https://www.youtube.com/watch?v=CxJwy8NsXFs
 
 - [Level 03 A](#level-03-a)
-  - [Coding Philosophy: Naming variables](#coding-philosophy-naming-variables)
-  - [String.split(seperator)](#stringsplitseperator)
-  - [Accessing items in an Array](#accessing-items-in-an-array)
+	- [Coding Philosophy: Naming variables](#coding-philosophy-naming-variables)
+	- [String.split(seperator)](#stringsplitseperator)
+	- [Accessing items in an Array](#accessing-items-in-an-array)
 - [Level 02 B](#level-02-b)
-  - [Getting the length of a String](#getting-the-length-of-a-string)
-  - [Accessing characters in a String](#accessing-characters-in-a-string)
-  - [Getting an array of characters from a String](#getting-an-array-of-characters-from-a-string)
-  - [array.join(separator)](#arrayjoinseparator)
-  - [End of Level 03 B](#end-of-level-03-b)
+	- [Getting the length of a String](#getting-the-length-of-a-string)
+	- [Getting an array of characters from a String](#getting-an-array-of-characters-from-a-string)
+	- [array.join(separator)](#arrayjoinseparator)
+	- [End of Level 03 B](#end-of-level-03-b)
 - [Level 03 C](#level-03-c)
-  - [Counting with while loops](#counting-with-while-loops)
+	- [Accessing characters in a String](#accessing-characters-in-a-string)
+	- [Counting with while loops](#counting-with-while-loops)
 - [Level 03 D](#level-03-d)
-  - [for loops](#for-loops)
-  - [Breaking out of a loop early](#breaking-out-of-a-loop-early)
-  - [Computer History: Apple II](#computer-history-apple-ii)
+	- [for loops](#for-loops)
+	- [Breaking out of a loop early](#breaking-out-of-a-loop-early)
+	- [Computer History: Apple II](#computer-history-apple-ii)
