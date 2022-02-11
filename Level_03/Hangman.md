@@ -12,7 +12,7 @@ Pick a random word from the array of words. HINT: Remember `.length` can be use 
 
 Create a `lines` array with the same amount of underscores as the choosen word. For example, if the word is "quiz" the `lines` array should have four dashes: `['_', '_', '_', '_']`. HINT: Use `word.length` and the `repeat` and `split` String functions.
 
-Display the `lines` array like this `_ _ _ _` in the prompt on a new line below the hangman text drawing. HINT: use the `join` String function.
+Display the `lines` array like this `_ _ _ _` in the prompt on a new line below the hangman text drawing. HINT: use the `join` String function and remember the newline character `\n`
 
 ## Instructions for PART C
 
