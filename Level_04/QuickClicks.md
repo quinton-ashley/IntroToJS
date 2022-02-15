@@ -18,11 +18,15 @@ After the player clicks a button it should get erased. Do not attempt to erase a
 
 ## Instructions for PART C
 
-Before the game starts be sure to tell the user how to play. Place an alert window with instructions in the middle of the screen.
+Before the game starts, place an alert window with instructions on how to play in the middle of the screen. Tell the user to press the "OKAY" button to start the game.
 
-After the player clicks 10 buttons, show the user some results regarding how fast they clicked the buttons. To find the speed at which they click between buttons you'll first need to create an array of times. Track how fast it takes the player to click the button using [Date.now()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date). Each time they click a button add the current time in milliseconds to the array of times. HINT: Use the `push` function to add to arrays
+## Instructions for PART D
 
-Create an array of speeds that stores time in milliseconds it took the player to click each button. Each number in this array should represent the difference between the time a button was clicked and the time the next button was click. HINT: If the player clicks the button 10 times there will only be 9 speeds (time between each button click).
+After the player clicks 10 buttons, calculate the user's average, slowest, and fastest response times. Display these results in an alert window.
+
+To find the speed at which the player clicked between buttons you'll first need to create an array that stores the time at which they clicked each target. HINT: Use the `push` function to add `Date.now()` to an array called `times`
+
+Create an array of speeds that stores the time in milliseconds it took the player to click each button. Each number in this array should represent the difference between the time a button was clicked and the time the next button was clicked. HINT: If the player clicks the button 10 times there will only be 9 speeds (time between each button click). Use a `for` loop to create the array of speeds.
 
 Remember! `for` loops with a counter variable:
 
@@ -33,9 +37,11 @@ for (let i = 0; i < loopAmount; i++) {
 }
 ```
 
-After 10 clicks calculate the user's average, slowest, and fastest response times. Display these statistics using an alert window.
+To calculate the average speed, add all the speeds up and divide by the amount of speeds.
 
-## Instructions for PART D
+The fastest speed is the lowest number in the speeds array. The slowest speed is the highest.
+
+## Instructions for PART E
 
 Add a background pattern to the game that should cover the entire space within the frame. Create this pattern yourself using for loops by drawing with `text(txt, row, col)`
 

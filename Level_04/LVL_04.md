@@ -6,9 +6,7 @@ Do the GuessTheNumber challenge section before starting level 04!
 
 ## Creating a Button
 
-Let's learn how to add a button. The `button` function is just like `text` but it also expects a fourth input parameter, a callback function that gets run when the button is clicked.
-
-A callback function is a function passed as an input argument to a function that will run the callback function. They used to be used for nearly everything asynchronous in JavaScript. These days callbacks are mainly just used for events, like button clicks.
+Let's learn how to add a button. The `button` function is just like `text` but you can add a fourth input parameter to it, a callback function that gets run when the button is clicked.
 
 ```js
 function btnClick() {
@@ -18,9 +16,11 @@ function btnClick() {
 button('Click me!', 5, 5, btnClick);
 ```
 
+Note that the function is passed as a variable but it is not run. It gets run only when the button is clicked.
+
 ## Recursion
 
-Recursion is when a function calls itself. It's another way to loop code in addition to for loops and while loops.
+In the past few lessons you've learned about `for` loops and `while` loops. Recursion is another way to loop code. It is simply a function that calls itself inside its own defintion.
 
 ```js
 function doRecursion() {
@@ -28,18 +28,23 @@ function doRecursion() {
 }
 ```
 
-Example of a recursion loop that ends when the player's score reaches 20.
+Here's example of a recursion loop that ends when the player losses all their health points.
 
 ```js
-let score = 0;
+player.health = 100; // initial health
 
-function doRecursion() {
+function gameLoop() {
 	//
 	// ... game code here ...
-	score++;
 	//
-	if (score < 20) {
-		doRecursion();
+	if (enemy.attack(player) == true) {
+		player.health -= enemy.damage;
+	}
+	//
+	if (player.health > 0) {
+		gameLoop();
+	} else {
+		gameOver();
 	}
 }
 ```
@@ -79,9 +84,9 @@ if (playerIsDead) {
 }
 ```
 
-## How to check if a variable is defined
+## Check if a variable is defined
 
-Sometimes you'll need to check if a variable is defined before you do something with it. If you put a variable that doesn't have a boolean value in a boolean condition by itself, Javascript will evaluate its "truthiness".
+Sometimes you'll need to check if a variable is defined before you do something with it. If you put a variable that doesn't have a boolean value in a boolean condition by itself, Javascript will evaluate its "truthiness". You can check if a variable exists by putting it on it's own in a boolean condition.
 
 ```js
 let robot; // robot created but not defined
@@ -92,25 +97,17 @@ if (robot) {
 }
 ```
 
-You can check if a variable exists by putting it on it's own in a boolean condition. To check if it's undefined (falsy), put a negation operator `!` in front of the variable name in the boolean condition. Variables are considered undefined if they were not assigned a value.
+## Check if a variable is undefined
 
-Remember that the prompt function will return a String with the text the user entered or `null` if the user cancelled out of the prompt. In this example, if `name` is set to any String of text it will be considered truthy. If `name` is `null` or an empty String it will be considered falsy and the user will be asked for their name again.
+To check if a variable is undefined (falsy), put a negation operator `!` in front of the variable name in the boolean condition. Variables are considered undefined if they were not assigned a value.
 
 ```js
-let name;
+let robot;
 
-while (!name) {
-	name = await prompt("What's your name?");
-
-	if (!name) {
-		await alert('ERROR: You did not type anything!');
-	}
+if (!robot) {
+	robot = createRobot();
 }
-
-await alert('Hello ' + name + '!');
 ```
-
-The while loop will repeat until `name` is defined by the user. Neat!
 
 ## truthy or falsy?
 
@@ -123,7 +120,61 @@ null;
 (''); // an empty String
 ```
 
+In this example code the while loop will repeat until `username` is defined by the user (truthy).
+
+```js
+let username;
+
+while (!username) {
+	username = await prompt('What do you want your username to be?');
+
+	if (!username) {
+		await alert('ERROR: You are required to enter a username!');
+	}
+}
+
+await alert('Hello ' + username + '!');
+```
+
+Remember that the prompt function will return a String with the text the user entered or `null` if the user cancelled out of the prompt.
+
+If `username` is set to any String of text it will be considered truthy. If `username` is undefined, `null`, or an empty String it will be considered falsy.
+
 # Level 04 C
+
+## asynchronous functions
+
+To use `await` inside a function you must make it an `async` function.
+
+```js
+async function sayHello() {
+	let name = await prompt("What's your name?");
+	await alert('Hello ' + name + '!');
+}
+```
+
+## async/await vs callbacks
+
+`async`/`await` and callbacks are the two main forms of asynchronous programming in JavaScript. `async`/`await` was added to JavaScript in 2017 so that asynchronous code could be written linearly, like synchronous code, one line after the other.
+
+Callbacks are non-linear, so they are good for handling events (like button clicks) that in some cases we wouldn't want our program to wait for. For example if you gave the user a choice between clicking a "Yes" or "No" button you wouldn't want the program to wait for them to click "Yes" because they might click "No". Different callback function need to be used to handle the user's response.
+
+Now you might be wondering how await-ing the prompt function works, since the user can either enter text or click cancel?! In level 11 you'll learn how to make await-able `Promise` objects that resolve after an event or any number of different events.
+
+## Change the position of prompts and alerts
+
+The position of prompt and alert windows can be changed by defining their row and column values just like with the `text` function.
+
+```js
+//         (text           , row, col, w)
+await alert('I can move too!', 5, 20, 16);
+```
+
+A fourth input paramter can be used to restrict the width of the window. Text that is longer than the specified width will be put on new lines. This width limiter can be used with the `text`, `alert`, and `prompt` functions.
+
+If row, column, and width are not defined, default position values are used, which are different for each of the QuintOS virtual computers.
+
+# Level 04 D
 
 ## Date
 
@@ -146,33 +197,7 @@ nums.push(97); // adds 97 to the nums array
 // nums -> [50, 21, 46, 83, 97]
 ```
 
-## asynchronous functions
-
-To use `await` inside a function you must make it an `async` function. Remember that `await` is used to wait for user interaction.
-
-```js
-async function sayHello() {
-	let name = await prompt("What's your name?");
-	await alert('Hello ' + name + '!');
-}
-```
-
-Async functions and callbacks are the two main forms of asynchronous programming in JavaScript. Async functions were created so that asynchronous code could be written linearly like synchronous code, one line after the other.
-
-## Changing the positions of prompts and alerts
-
-The position of prompt and alert windows can be changed by defining their row and column values just like with the `text` function.
-
-```js
-//         (text           , row, col, w)
-await alert('I can move too!', 5, 20, 16);
-```
-
-A fourth input parameter can be used to restrict the width of the window. This also works with the `text` and `prompt` functions but not the `button` function. Text that is longer than the specified width will be put on new lines.
-
-If row, column, and width are not defined, default position values are used, which are different for each of the QuintOS virtual computers.
-
-# Level 04 D
+# Level 04 E
 
 ## modulo operator
 
@@ -212,14 +237,17 @@ Originally developed for business executives, GRiDs were also used by the U.S. m
 - [Level 04 B](#level-04-b)
 	- [Erasing a button](#erasing-a-button)
 	- [Implied boolean conditions](#implied-boolean-conditions)
-	- [How to check if a variable is defined](#how-to-check-if-a-variable-is-defined)
+	- [Check if a variable is defined](#check-if-a-variable-is-defined)
+	- [Check if a variable is undefined](#check-if-a-variable-is-undefined)
 	- [truthy or falsy?](#truthy-or-falsy)
 - [Level 04 C](#level-04-c)
+	- [asynchronous functions](#asynchronous-functions)
+	- [async/await vs callbacks](#asyncawait-vs-callbacks)
+	- [Change the position of prompts and alerts](#change-the-position-of-prompts-and-alerts)
+- [Level 04 D](#level-04-d)
 	- [Date](#date)
 	- [Adding to Arrays](#adding-to-arrays)
-	- [asynchronous functions](#asynchronous-functions)
-	- [Changing the positions of prompts and alerts](#changing-the-positions-of-prompts-and-alerts)
-- [Level 04 D](#level-04-d)
+- [Level 04 E](#level-04-e)
 	- [modulo operator](#modulo-operator)
 - [Computer History: GRiD Compass](#computer-history-grid-compass)
 - [Level 04 Table of Contents](#level-04-table-of-contents)
