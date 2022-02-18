@@ -8,10 +8,6 @@ After you complete those challenges you can upgrade to level 6! 🥳
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen4.jpg)
 
-## Coding Philosophy: Using functions effectively
-
-Try not to rewrite the same exact lines of code in different places, put that code chunk in a function and use that function instead. Likewise if you have a chunk of code and you want to do something only slightly different at another point in your program, make a function with input parameters for the thing(s) that make it different. If you have a code chunk inside a function that is unrelated to the name/description you gave that function, move that code into its own function.
-
 ## Return variables from a function
 
 functions can return a variable (only one). What will the value of `upHigh` be?
@@ -37,6 +33,10 @@ let result0 = doMyMathHomework(1, 3); // returns 9
 let result1 = doMyMathHomework(2, 5); // what does this return?
 ```
 
+## Coding Philosophy: Using functions effectively
+
+Try not to rewrite the same lines of code in different places, put that code in a function instead. If you have a chunk of code and you need to do something only slightly different at another point in your program, sometimes you should make a function with input parameters for the thing(s) that are different. Typically functions should only contain code that is related to the name/description you gave that function, move unrelated code into its own function.
+
 ## Arrow function syntax
 
 You can also create functions using the arrow syntax.
@@ -47,6 +47,24 @@ button('click me!', 0, 0, () => {
 	console.log('button clicked!');
 });
 ```
+
+# Level 06 B
+
+## Nested for loops
+
+A `for` loop inside a `for` loop? FORLOOPCEPTION! 😮
+
+```js
+for (let row = 0; row < rows; row++) {
+	for (let col = 0; col < columns; col++) {
+		// nested for loop
+	}
+}
+```
+
+The first `for` loop goes row by row, then the `for` loop on the inside goes through all the columns in that row.
+
+# Level 06 C
 
 ## Two Dimensional Arrays
 
@@ -68,6 +86,8 @@ let board = [
 
 Two dimensional data, such as checker board piece positions, can be stored in two dimensional arrays. In the example `"r"` represents a single red piece, uppercase `"R"` represents a king (two stacked red pieces).
 
+## 2D array access
+
 How could we access the red piece on the top row?
 
 ```js
@@ -76,24 +96,26 @@ board[0][3]; // row is 0, column is 3
 
 `board[0]` gets the first row in board array and the `[3]` after that gets us the piece at column 3 in that row array. How could we access the red peice in the middle of the board?
 
-## Nested for loops
+## Using nested for loops with 2D arrays
 
-A for loop inside a for loop? FORLOOPCEPTION! 😮
+How could we use a nested for loop to clear the board of all the pieces by assigning a blank space " " to every element in the `board` array?
 
 ```js
-for (let i = 0; i < rows; i++) {
-	for (let j = 0; j < columns; j++) {
-		// nested for loop
+for (let row = 0; row < rows; row++) {
+	for (let col = 0; col < columns; col++) {
+		board[row][col] = ' ';
 	}
 }
 ```
 
-How could we use a nested for loop to clear the board of all the pieces by assigning a blank space " " to every element in the `board` array?
-
 - [Level 06 A](#level-06-a)
-	- [Coding Philosophy: Using functions effectively](#coding-philosophy-using-functions-effectively)
 	- [Return variables from a function](#return-variables-from-a-function)
 	- [Creating functions with input parameters](#creating-functions-with-input-parameters)
+	- [Coding Philosophy: Using functions effectively](#coding-philosophy-using-functions-effectively)
 	- [Arrow function syntax](#arrow-function-syntax)
-	- [Two Dimensional Arrays](#two-dimensional-arrays)
+- [Level 06 B](#level-06-b)
 	- [Nested for loops](#nested-for-loops)
+- [Level 06 C](#level-06-c)
+	- [Two Dimensional Arrays](#two-dimensional-arrays)
+	- [2D array access](#2d-array-access)
+	- [Using nested for loops with 2D arrays](#using-nested-for-loops-with-2d-arrays)

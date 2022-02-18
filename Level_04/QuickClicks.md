@@ -22,11 +22,9 @@ Before the game starts, place an alert window with instructions on how to play i
 
 ## Instructions for PART D
 
-After the player clicks 10 buttons, calculate the user's average, slowest, and fastest response times. Display these results in an alert window.
+After the player clicks 10 buttons, calculate the user's average, slowest, and fastest response times. To get the speeds at which the player clicked between buttons you'll first need to create an array that stores the time at which they clicked each target. HINT: Use the `push` function to add `Date.now()` to an array called `times`
 
-To find the speed at which the player clicked between buttons you'll first need to create an array that stores the time at which they clicked each target. HINT: Use the `push` function to add `Date.now()` to an array called `times`
-
-Create an array of speeds that stores the time in milliseconds it took the player to click each button. Each number in this array should represent the difference between the time a button was clicked and the time the next button was clicked. HINT: If the player clicks the button 10 times there will only be 9 speeds (time between each button click). Use a `for` loop to create the array of speeds.
+Now create an array of speeds that stores the time in milliseconds it took the player to click each button. Each number in this array should represent the difference between the time a button was clicked and the time the next button was clicked. HINT: If the player clicks the button 10 times there will only be 9 speeds (time between each button click). Use a `for` loop to create the array of speeds.
 
 Remember! `for` loops with a counter variable:
 
@@ -40,6 +38,8 @@ for (let i = 0; i < loopAmount; i++) {
 To calculate the average speed, add all the speeds up and divide by the amount of speeds.
 
 The fastest speed is the lowest number in the speeds array. The slowest speed is the highest.
+
+Display the result in an alert window.
 
 ## Instructions for PART E
 

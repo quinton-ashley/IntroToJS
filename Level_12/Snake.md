@@ -28,9 +28,13 @@ Create the body and tail of the snake using the other snake tiles. All the tiles
 
 Everytime the snake eats a food item the snake should grow one new body part.
 
-Each time the snake eats a pellet make it move a bit faster unless it is already going max speed. Define the max speed as a reasonable limit on how fast the snake should move. The snake should still move one block at a time, don't change that amount, change the rate at which it moves.
+Each time the snake eats a pellet, make it move a bit faster. The snake should still move one block at a time, don't change that amount, just change the speed at which it moves. Its speed should increase at a higher rate in the beginning and more gradually when the snake starts going fast.
 
-If the snake runs into itself, the whole snake should stop moving and blink to show it is dead. HINT: Check if the snake head will move onto a tile that will have a snake part on it.
+If the snake runs into a pipe wall, the whole snake should stop moving and blink to show it is dead. The player has lost, display a game over message. HINT: Before moving the snake check if the head would move into a wall based on the current input direction.
+
+If the snake runs into itself, the player should also lose. HINT: Check if the snake head will move onto a tile that will have a snake part on it.
+
+When the player loses give them an opportunity to try playing the game again.
 
 ## Instructions for PART E
 

@@ -6,7 +6,7 @@ Do the GuessTheNumber challenge section before starting level 04!
 
 ## Creating a Button
 
-Let's learn how to add a button. The `button` function is just like `text` but you can add a fourth input parameter to it, a callback function that gets run when the button is clicked.
+Let's learn how to add a button. The `button` function is just like `text` but you can add a fourth input parameter, a callback function that gets run when the button is clicked.
 
 ```js
 function btnClick() {
@@ -28,7 +28,7 @@ function doRecursion() {
 }
 ```
 
-Here's example of a recursion loop that ends when the player losses all their health points.
+Here's a more practical example of a recursion loop that ends when the player losses all their health points.
 
 ```js
 player.health = 100; // initial health
@@ -53,7 +53,7 @@ function gameLoop() {
 
 ## Erasing a button
 
-Remove buttons from the screen by using the erase function on them. You must store the button returned by `button` to use the `erase` function on it.
+To remove a button from the screen, store it in a variable and then use the button's erase function.
 
 ```js
 let btn = button('Click this!', 10, 10, clickResponse);
@@ -215,6 +215,29 @@ if (y % 5 == 0) {
 }
 ```
 
+Here's how modulo can be used for alternation.
+
+```js
+for (let i = 0; i < 10; i++) {
+	if (i % 2 == 0) {
+		text('even', i);
+	} else {
+		text('odd', i);
+	}
+}
+```
+
+## for loops with non-standard incrementation
+
+This code does the same kind of alternation.
+
+```js
+for (let i = 0; i < 10; i += 2) {
+	text('even', i);
+	text('odd', i + 1);
+}
+```
+
 # Computer History: GRiD Compass
 
 This level's computer is based on the GRiD Compass 1101. The following description is from http://oldcomputers.net/grid1101.html
@@ -249,5 +272,6 @@ Originally developed for business executives, GRiDs were also used by the U.S. m
 	- [Adding to Arrays](#adding-to-arrays)
 - [Level 04 E](#level-04-e)
 	- [modulo operator](#modulo-operator)
+	- [for loops with non-standard incrementation](#for-loops-with-non-standard-incrementation)
 - [Computer History: GRiD Compass](#computer-history-grid-compass)
 - [Level 04 Table of Contents](#level-04-table-of-contents)
