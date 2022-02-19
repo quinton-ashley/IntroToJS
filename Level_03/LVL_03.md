@@ -132,6 +132,8 @@ for (let i = 0; i < names.length; i++) {
 
 When the for loop starts `i` is set to 0, then is check the condtion. If the condition is true the for loop runs for the first time, this is called an iteration. When the for loop ends, the incrementor section of the for loop is run, in this case `i++` which increases the value of `i` by 1. The condition is checked again, if true the for loop will repeat again, doing another iteration. Until the condition is false the for loop will continue to repeat.
 
+# Level 03 E
+
 ## Breaking out of a loop early
 
 Take a look at this example code that searches for the Ace of Spades in a deck of cards.
@@ -186,5 +188,6 @@ https://www.youtube.com/watch?v=CxJwy8NsXFs
 	- [Counting with while loops](#counting-with-while-loops)
 - [Level 03 D](#level-03-d)
 	- [for loops](#for-loops)
+- [Level 03 E](#level-03-e)
 	- [Breaking out of a loop early](#breaking-out-of-a-loop-early)
 	- [Computer History: Apple II](#computer-history-apple-ii)
