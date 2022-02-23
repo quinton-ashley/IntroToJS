@@ -201,7 +201,7 @@ nums.push(97); // adds 97 to the nums array
 
 ## modulo operator
 
-The modulo operator `%` gets the gets the remainder of a division.
+The modulo operator `%` it gets the remainder of a division.
 
 ```js
 // true if x is even (divisible by 2)
