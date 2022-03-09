@@ -85,6 +85,7 @@ However, Strings are immutable, meaning individual characters in the String can 
 
 ```js
 animal[8] = 'b'; // ERROR: won't change String to 'the red box'
+animal = 'the red box'; // this will work!
 ```
 
 ## Counting with while loops

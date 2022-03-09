@@ -14,7 +14,7 @@ We humans have ten fingers so our number system is based on the number 10. We us
 10
 ```
 
-The 1 is in the tens place which is how we know it's ten. We know `40` is forty because the 4 is in the tens place and `4 * 10` is forty.
+The 1 is in the tens place which is how we know it's ten. We know `100` is one hundred because the 1 is in the hundreds place.
 
 ## Base 2
 
@@ -27,6 +27,8 @@ Computers have switches that can either be on or off, so their number system is 
 What?! But 10 is ten! Well in our usual base 10 number system the 1 would be in the tens place but in base 2 the 1 is in the twos place so 10 has a value of two!
 
 ## Counting in Binary
+
+The base 2 numbers are padded with zeroes on the left side.
 
 | Base 10 | Base 2 |
 | ------: | -----: |
@@ -47,13 +49,25 @@ What?! But 10 is ten! Well in our usual base 10 number system the 1 would be in 
 |      14 |   1110 |
 |      15 |   1111 |
 
-When counting in binary you can think of the 1 being like a 9 in decimal. When you get to 1, 11, and 111 another bit must be added to represent the next value.
+When counting in binary you can think of the 1 being like a 9 in decimal. When you get to 1, 11, and 111 another bit must be added to represent the next value. Note that 0010 in binary is 2 in decimal, 0100 is 4, and 1000 is 8. A 1 represents 2 raised to the power of the place value of that 1.
+
+```
+2^0 =   1
+2^1 =   2
+2^2 =   4
+2^3 =   8
+2^4 =  16
+2^5 =  32
+2^6 =  64
+2^7 = 128
+2^8 = 256
+```
 
 4 bits can be used to create 16 different possible combinations, so 4 bits can only store 16 different values, 0-15. Note that the number of values that can be stored value in a given number of bits can be calculated by doing 2 to the power of the number of bits. 2^4, two to the power of 4, (aka `2*2*2*2`) is 16!
 
-## Converting from Binary to Decimal
+## Convert from Binary to Decimal
 
-Note that 0010 in binary is 2 in decimal, 0100 is 4, and 1000 is 8. We can therefore calculate the decimal value of binary numbers by finding the sum of 2 to the power of the place value for all the places with a 1 in it.
+We can calculate the decimal value of binary numbers by finding the sum of 2 to the power of the place value for all the places with a 1 in it.
 
 ```
 1111
@@ -62,13 +76,26 @@ Note that 0010 in binary is 2 in decimal, 0100 is 4, and 1000 is 8. We can there
  8  +  4  +  2  +  1  = 15
 ```
 
+## Convert from Decimal to Binary
+
+To convert from decimal to binary, start with the biggest 2^n that is less than the decimal number you want to convert. Then keep adding the next largest 2^n until the sum adds up to the decimal number.
+
+```
+10
+
+ 8  +  2  = 10
+2^3 + 2^1
+
+1010
+```
+
 ## Byte
 
 A byte is a group of 8 bits. How many different values can be stored using 8 bits? Remember we can calculate this by doing 2 to the power of the number of bits 2^8 is... uhh. Well 2^4 is 16, so 2^5 must be 32, then 2^6 is 64, 2^7 is 128, so finally 2^8 is 256. One byte (8 bits) can store 256 different values, 0-255!
 
 ## ASCII
 
-Computers have to store everything as binary numbers, so symbols (including letters and digits) need to be assigned a numerical value that corresponds to that symbol.
+Computers have to store everything as binary numbers, so symbols (including letters and digits) need to be assigned a numerical value that corresponds to that symbol, like a dictionary!
 
 Before ASCII was created, computer manufactures all devised their own methods for assigning numbers to symbols. Because of this, if you created a text file on one computer and tried to load it on a computer from a different company, it could be an indecipherable mess! ASCII was created to solve this problem.
 

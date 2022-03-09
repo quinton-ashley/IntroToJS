@@ -2,10 +2,8 @@
 // text rows: 18 cols: 20
 
 let score = 0; // number of apples eaten
-let speed = 1; // snake speed
 
-text('SCORE: ' + score, 17, 0);
-text('SPEED: ' + score, 17, 11);
+text('SCORE: ' + score, 17, 6);
 
 let apple = world.createSprite('apple', 0, 0);
 

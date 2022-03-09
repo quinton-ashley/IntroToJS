@@ -6,7 +6,7 @@ Based on the classic children's toy from the 1980s, the electronic [Speak and Sp
 
 Copy the `SpeakAndSpell` folder into your `quintos-games` project `GAMES` folder. This folder contains all the sounds you'll need and two template files.
 
-You may be too young to remember this but websites used to be able to just immediately start playing unwanted music or ads when you visited them. Nowadays due to restrictions that improved everyone's internet browsing experience, modern browsers must get user input before playing any sounds. If you try to play a sound without the user interacting with a web page the browser will throw this error: "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page.". That gesture on the page can be as simple as the user pressing enter on the keyboard or clicking a button. This is why in the starter code for this project I use `alert('Press enter to start.')` to get user input before starting the game and playing sounds.
+You may be too young to remember this but websites used to be able to play unwanted music or ads as soon as the site loaded. Nowadays due to restrictions that improved everyone's internet browsing experience, modern browsers must get user input before playing any sounds. If you try to play a sound without the user interacting with a web page the browser will throw this error: "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page.". That gesture on the page can be as simple as the user pressing enter on the keyboard or clicking a button. This is why in the starter code for this project I use `alert('Press enter to start.')` to get user input before starting the game and playing sounds.
 
 First work on the preload file that will load all the sound files before `speakAndSpell.js` is started. Load all the letter sounds into an object called `letterSounds`. HINT: the letters should be the keys and the sounds should be the values in the `letterSounds` object. HINT: put the alphabet in a String and use the `split` function to get an array of all the letters in the alphabet. Also try using a "for of" loop.
 
@@ -16,7 +16,7 @@ Make the Speak and Spell say any letter you type in the input using the `onChang
 
 At the start of the game choose a random word from words array from the preload file. Have it say "spell" and then the word.
 
-Let the player spell out the word, when they press enter your program should check if their spelling was correct. If their spelling was correct, use the phrase `that_is_correct_now_spell` and tell them the next word they should spell. HINT: Only have the Speak and Spell say "spell" in the beginning of the game, then have `nextWord` just say the word.
+Let the player spell out the word, when they press enter your program should check if their spelling was correct. If their spelling was correct, use the phrase "that_is_correct_now_spell" and tell them the next word they should spell. HINT: Only have the Speak and Spell say "spell" in the beginning of the game, then have `nextWord` just say the word.
 
 If the player spelled the word incorrectly then have the Speak and Spell tell them how to correctly spell the word. Have it spell out the word letter by letter. Here is an example of what it should say: "that is incorrect the correct spelling of worth is w o r t h". HINT: This part is tricky because you can't use a for loop cause the program must wait till each letter sound ends before playing the next letter, you must use a recursion loop.
 
@@ -30,7 +30,7 @@ Give the player another chance to spell words right before telling them how the 
 
 Tell the player their score (how many words they got right) after they try to spell 10 words.
 
-At the start of the game, the player should be able to select between two modes. If they type "A" for mode A they get the small words. If they type "B" for mode B they get the long words.
+At the start of the game, the player should be able to select between two modes. If they select mode A they get small words. If they select mode B they get long words. Explain the modes to the player and let them select a mode by typing 'A' or 'B'.
 
 ## History of Speech Synthesis
 

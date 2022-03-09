@@ -91,6 +91,14 @@ Hello Ali
 Hello Ben
 ```
 
+## Loading sounds
+
+The `loadSound` function loads a sound file from a given path. A path is the location of a file on your computer. `QuintOS.dir` is the location of the game's folder (aka directory).
+
+```js
+let letterSoundA = loadSound(QuintOS.dir + '/sounds/letters/A.mp3');
+```
+
 # Level 11 B
 
 ## Working with Inputs directly
@@ -255,14 +263,15 @@ async function playAllLetters() {
 This level's computer is based on the classic children's toy from the 1980s, the electronic [Speak and Spell](<https://en.wikipedia.org/wiki/Speak_%26_Spell_(toy)>) made by Texas Instruments.
 
 - [Level 11 A](#level-11-a)
-  - [Creating Objects](#creating-objects)
-  - [for in loops](#for-in-loops)
-  - [for of loops](#for-of-loops)
+	- [Creating Objects](#creating-objects)
+	- [for in loops](#for-in-loops)
+	- [for of loops](#for-of-loops)
+	- [Loading sounds](#loading-sounds)
 - [Level 11 B](#level-11-b)
-  - [Working with Inputs directly](#working-with-inputs-directly)
-  - [Example use of Inputs](#example-use-of-inputs)
-  - [Callback Chaining](#callback-chaining)
+	- [Working with Inputs directly](#working-with-inputs-directly)
+	- [Example use of Inputs](#example-use-of-inputs)
+	- [Callback Chaining](#callback-chaining)
 - [Level 11 C](#level-11-c)
-  - [Promises](#promises)
-  - [Promisfied p5.js Sound](#promisfied-p5js-sound)
-  - [Computer History: Speak and Spell](#computer-history-speak-and-spell)
+	- [Promises](#promises)
+	- [Promisfied p5.js Sound](#promisfied-p5js-sound)
+	- [Computer History: Speak and Spell](#computer-history-speak-and-spell)
