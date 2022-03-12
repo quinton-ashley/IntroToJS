@@ -24,11 +24,11 @@ When a player clicks a button the `takeTurn` function should check if the corres
 
 Show the alerts on the bottom right of the screen, don't let them overlap with the Tic Tac Toe grid or it will get erased when the alert window gets erased. HINT: Remember that the alert function accepts an optional width limit as a 4th input parameter: `alert(text, row, col, w)`
 
-Create a function called `checkForWinner` that should take a mark ('x' or 'o') as an input parameter. First try checking for winners (three Xs or three Os in a row) on the first row. If there is a winner return `true`, if there's not return `false`.
+Create a function called `checkForWinner` that should take a mark ('x' or 'o') as an input parameter. First try checking for winners (three Xs or three Os in a row) on the first row. If there is a winner return `true`, if there's not return `false`. Use the `checkForWinner` function in `takeTurn` and tell the players who won using an alert.
 
-Now check all horizontal rows and vertical columns using a single for loop. Also check for the two diagonals, no loop required. Use the `checkForWinner` function in `takeTurn` and tell the players who won.
+Now implement checking for a winner in all horizontal rows and vertical columns using a single for loop. Also check for the two diagonals, no loop required.
 
-Create a function called `checkForDraw` that checks for a draw. Use the function in `takeTurn` and tell the players there was a draw.
+Create a function called `checkForDraw` that checks for a draw (all spaces filled and no winner). Use the function in `takeTurn` and tell the players there was a draw.
 
 After a game is complete, start a new game. Always show whose turn it is and a tally of the score in the top right corner.
 

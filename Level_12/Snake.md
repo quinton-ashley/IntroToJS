@@ -4,11 +4,11 @@ Move your snake over food pellets to eat them and get bigger but don't run into 
 
 ## Instructions for PART A
 
-Create a tiles grid object, call it `world`. Load all the grass tiles and make a rectangular game world within the part of the game boy screen that does not contain text.
+Note the Tiles object in the preload file called `world` and the loading of the apple image. The tile size is 8x8. First load all the grass tiles with a for loop in the preload file. You will use them to make a rectangular game world within the part of the GameBoi screen that does not contain text. Randomize the placement of grass tiles on the world grid so it looks nice.
 
-Place a food item in the middle of the screen on layer 1.
+Create an apple sprite (or you could also use a different food item), place it in the middle of the screen on layer 1.
 
-Create a sprite for the head of the snake, don't make the rest of the snake yet. The snake head should be on layer 2. HINT: Create the snake sprite from the `world` tiles grid object without using an image, then assign the snake's SpriteSheet to the `snakes.png` image. Change the snake head's animation using the `ani` function.
+Create a sprite for the head of the snake, don't make the rest of the snake yet. The snake head should be on layer 2. Create the snake head sprite from the `world` tiles grid object without using an image, then use the `snakes.png` image for the sprite's SpriteSheet. Load the head image and change the snake head's image using the `ani` function.
 
 ## Instructions for PART B
 

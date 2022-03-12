@@ -26,22 +26,12 @@ player.spriteSheet = loadImage(img1);
 
 This property can be used to store the sprite sheet image of Tile and Sprite objects.
 
-## Loading Animations from a Sprite Sheet
-
-`loadAni` loads animations that has multiple frames.
-
-```js
-player.loadAni('walk-down', { pos: [2, 0], frames: 4 });
-```
-
-Loads a 4 frame animation from row 2, column 0 in the player's SpriteSheet.
-
 ## Loading Images from a Sprite Sheet
 
-`loadAni` can be used to load single frame animations from a sprite sheet, assuming all tiles in the sprite sheet grid are the same width and height.
+`loadImg` can be used to load a single image from a sprite sheet.
 
 ```js
-tiles.loadAni('powerup0', { pos: [5, 3] });
+tiles.loadImg('powerup0', { pos: [5, 3] });
 ```
 
 You can use `line` when specifying a row at column 0 in the spritesheet or use `pos` to specify a row and column position.
@@ -62,6 +52,16 @@ player.ani('walk-down');
 ```
 
 # Level 12 B
+
+## Loading Animations from a Sprite Sheet
+
+`loadAni` loads animations that has multiple frames.
+
+```js
+player.loadAni('walk-down', { pos: [2, 0], frames: 4 });
+```
+
+Loads a 4 frame animation from row 2, column 0 in the player's SpriteSheet.
 
 ## Move a Sprite
 
@@ -149,11 +149,11 @@ sprite.remove();
 - [Level 12 A](#level-12-a)
 	- [Tiles](#tiles)
 	- [Sprite Sheets](#sprite-sheets)
-	- [Loading Animations from a Sprite Sheet](#loading-animations-from-a-sprite-sheet)
 	- [Loading Images from a Sprite Sheet](#loading-images-from-a-sprite-sheet)
 	- [Creating Sprites with animations](#creating-sprites-with-animations)
 	- [Changing a Sprite's animation](#changing-a-sprites-animation)
 - [Level 12 B](#level-12-b)
+	- [Loading Animations from a Sprite Sheet](#loading-animations-from-a-sprite-sheet)
 	- [Move a Sprite](#move-a-sprite)
 	- [Teleport a Sprite](#teleport-a-sprite)
 	- [Flip a Sprite](#flip-a-sprite)

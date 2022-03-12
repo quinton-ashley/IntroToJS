@@ -19,7 +19,10 @@ world.loadAni('apple', { pos: [0, 3] });
 
 /* load the grass tiles */
 
-/* create the snake sprite, load the snakes spritesheet */
-// let snake = world.createSprite(9, 1, 2);
+/* creates the snake head, load the snakes spritesheet */
+let snake = world.createSprite(9, 10, 2);
+snake.spriteSheet = loadImage(QuintOS.dir + '/img/snakes.png');
+snake.loadAni('head-up', { pos: [0, 0] });
+snake.ani('head-up');
 
 /* load the snake animations */
