@@ -22,7 +22,7 @@ let upHigh = gimmeFive() + gimmeFive();
 
 ## Creating functions with input parameters
 
-function with input parameters x and y, returns the value of x^2 \* y^2
+function with input parameters x and y, returns the value of `x^2 * y^2`
 
 ```js
 function doMyMathHomework(x, y) {
@@ -36,17 +36,6 @@ let result1 = doMyMathHomework(2, 5); // what does this return?
 ## Coding Philosophy: Using functions effectively
 
 Try not to rewrite the same lines of code in different places, put that code in a function instead. If you have a chunk of code and you need to do something only slightly different at another point in your program, sometimes you should make a function with input parameters for the thing(s) that are different. Typically functions should only contain code that is related to the name/description you gave that function, move unrelated code into its own function.
-
-## Arrow function syntax
-
-You can also create functions using the arrow syntax.
-
-```js
-//       (   text    , x, y, action)
-button('click me!', 0, 0, () => {
-	console.log('button clicked!');
-});
-```
 
 # Level 06 B
 
@@ -63,6 +52,17 @@ for (let row = 0; row < rows; row++) {
 ```
 
 The first `for` loop goes row by row, then the `for` loop on the inside goes through all the columns in that row.
+
+## Arrow function syntax
+
+You can also create functions using the arrow syntax. The arrow is: `=>`
+
+```js
+//       (   text    , x, y, action)
+button('click me!', 0, 0, () => {
+	console.log('button clicked!');
+});
+```
 
 # Level 06 C
 
@@ -112,9 +112,9 @@ for (let row = 0; row < rows; row++) {
 	- [Return variables from a function](#return-variables-from-a-function)
 	- [Creating functions with input parameters](#creating-functions-with-input-parameters)
 	- [Coding Philosophy: Using functions effectively](#coding-philosophy-using-functions-effectively)
-	- [Arrow function syntax](#arrow-function-syntax)
 - [Level 06 B](#level-06-b)
 	- [Nested for loops](#nested-for-loops)
+	- [Arrow function syntax](#arrow-function-syntax)
 - [Level 06 C](#level-06-c)
 	- [Two Dimensional Arrays](#two-dimensional-arrays)
 	- [2D array access](#2d-array-access)

@@ -25,7 +25,7 @@ The code inside a function is not run until the function is called/invoked by us
 
 https://p5js.org/get-started/
 
-The p5.js `draw` function should contain code for drawing an image (frame). Behind the scenes, p5.js will run it 60 times per second, this is called the frame rate.
+The p5.js `draw` function should contain code for drawing an image (frame). Behind the scenes, p5.js will run it 60 times per second, this is called the frame rate. This allows you to move objects on the screen by animating them, moving them a little bit when each new frame is drawn to the screen.
 
 ## p5.play Sprites
 
@@ -35,12 +35,6 @@ Sprites are characters or items in 2D video games that typically move above the 
 let ball = createSprite(imgBall);
 ball.x = 5;
 ball.y = 12;
-```
-
-When you create a sprite using an image the width and height of the sprite is automatically assigned to the sprite based on the size of the image. They can be accessed using `.width` and `.height` or with `.w` and `.h`
-
-```js
-console.log('size of the ball: ' + ball.w + 'x' + ball.h);
 ```
 
 ## spriteArt
@@ -104,6 +98,14 @@ Here's what you learned about in Level 2:
 - how to create sprites and position them
 
 # Level 02 B
+
+# Getting a Sprite's width and height
+
+When you create a sprite using an image the width and height of the sprite is automatically assigned to the sprite based on the size of the image. These attributes can be accessed using `.width` and `.height` or with `.w` and `.h`
+
+```js
+console.log('size of the ball: ' + ball.w + 'x' + ball.h);
+```
 
 ## spriteArt scaling
 
@@ -248,6 +250,7 @@ https://youtu.be/nRlmTiynbd8?t=242
   - [p5.js global variables](#p5js-global-variables)
   - [End of Level 02 A](#end-of-level-02-a)
 - [Level 02 B](#level-02-b)
+- [Getting a Sprite's width and height](#getting-a-sprites-width-and-height)
   - [spriteArt scaling](#spriteart-scaling)
   - [String.repeat(amount)](#stringrepeatamount)
   - [+= operator](#-operator)

@@ -241,7 +241,7 @@ let nums = [50, 21, 46, 83];
 
 ## array.includes(item)
 
-Another useful Array function is `includes`, it checks if the input "Ellie" is included in the array.
+One useful function you can use on Arrays is `includes`, it checks if the input "Ellie" is included in the array.
 
 ```js
 if (names.includes('Ellie')) {

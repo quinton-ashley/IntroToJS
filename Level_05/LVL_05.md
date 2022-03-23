@@ -250,6 +250,8 @@ _____/\     _   /       | otter
 https://asciiart.website/index.php?art=books/harry%20potter
 ```
 
+# Level 05 B
+
 ## Erase
 
 Erase everything on the screen using the `erase` function. Note this has a delayed effect so use `await` before displaying anything on the screen after it.

@@ -14,7 +14,7 @@ Now create all the buttons using a nested for loop instead of doing them one by 
 
 Make a `takeTurn` function with row and column input parameters. The click callback function for all the buttons should be an anonymous arrow function. Inside the anonymous function run `takeTurn(row, col)`. For now try drawing a `bigX` on the clicked button using the `text` function.
 
-After player X takes their turn, playe O should be able to place their `bigO` mark on the grid.
+After player X takes their turn, player O should be able to place their `bigO` mark on the grid.
 
 ## Instructions for PART C
 
