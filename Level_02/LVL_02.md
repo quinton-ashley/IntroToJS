@@ -157,8 +157,6 @@ You can easily check for bounces between sprites using the p5.play sprite bounce
 ball.bounce(paddle);
 ```
 
-## Immovable objects
-
 By default when sprites bounce off each other both objects will move. To prevent this, set the sprite to be immovable when another sprite bounces on it.
 
 ```js
@@ -257,7 +255,6 @@ https://youtu.be/nRlmTiynbd8?t=242
 - [Level 02 C](#level-02-c)
   - [Vectors](#vectors)
   - [Bounces](#bounces)
-  - [Immovable objects](#immovable-objects)
   - [colorPal](#colorpal)
 - [Level 02 D](#level-02-d)
   - [Respond to keyboard input](#respond-to-keyboard-input)

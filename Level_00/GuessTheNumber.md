@@ -26,21 +26,23 @@ Since you're just starting to write this program, don't make the number random y
 
 Tell the player to guess a number using `await prompt()` put your message (String) inside the parenthesis of the `prompt` function. Create the variable `guess` using `let`, assign it to the user's response to the `prompt`.
 
-After each guess, the player should be told if their guess was right or wrong. If they were wrong, the player should be told whether their guess was too high or too low. They should also be told when they guess the number correctly. Use the `alert` function inside the code blocks `{}` of `if` and `else if` statements!
-
 [Now you can click here to move onto Level 00 B](https://github.com/quinton-ashley/IntroToJS#level-00-b).
 
 ## Instructions for PART B
 
 _Read Level 00 B in the `LVL_00.md` file before doing this section_
 
-Use `Math` functions to have the computer pick a random whole number between 1 and 100. To make sure your code for this works try printing the number out using an `alert`. When you are sure it is working remove the `alert`.
+After each guess, the player should be told whether their guess was too high, too low, or if they guessed the number correctly! Use the `alert` function inside the code blocks `{}` of `if` and `else if` statements!
 
 ## Instructions for PART C
 
-_Read Level 00 C in the `LVL_00.md` file before doing this section_
+Use `Math` functions to enable your computer pick a random whole number between 1 and 100 for the player to guess. To test your code, try using an `alert` to display the number your computer picks. When you are sure it is working, remove the `alert`.
 
-Make the game loop by using a while loop. Think about what condition must remain true for the player to keep playing the game.
+## Instructions for PART D
+
+Make the game loop by using a while loop! Think about what condition must remain true for the player to keep playing the game.
+
+Congrats! You finished your first game in JavaScript!
 
 ## CHALLENGE SECTION
 

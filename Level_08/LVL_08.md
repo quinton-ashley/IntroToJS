@@ -17,6 +17,8 @@ Use `for` loops to make all the boxes for the phrase!
 └─┘└─┘└─┘└─┘└─┘
 ```
 
+# Level 08 B
+
 ## delay
 
 Use the `delay` function to delay the rate at which letters are displayed.
@@ -36,8 +38,8 @@ takeFive();
 
 The `push` function is used to add an item to the end of an array and `pop` is used to remove an item from the end.
 
-The [`splice`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) is used to add or remove from the middle of an Array.
+The [`splice` function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) is used to add/remove items from the middle of an Array.
 
 ```js
-arr.splice(start, deleteCount, item1);
+arr.splice(start, deleteCount, item);
 ```

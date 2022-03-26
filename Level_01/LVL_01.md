@@ -2,9 +2,9 @@
 
 Congratulations, you completed level 0! 🥳
 
-Before you can work on the next game, let's get you setup so you can write JavaScript on your own computer without having to only use CodePen, which an online code editor.
+Before you start your next game, let's get you setup for JavaScript development on your own computer so you won't have to use CodePen which is an online-only code editor.
 
-## Requirements for Offline Development
+## Requirements for Local JS Development
 
 - install Google Chrome (Firefox, Edge, and Opera are good too, just don't use Safari)
 - install [node.js](https://nodejs.org/en/) (includes [npm](https://www.npmjs.com/))
@@ -16,7 +16,7 @@ Before you can work on the next game, let's get you setup so you can write JavaS
 
 Open the [quintos-template](https://github.com/quinton-ashley/quintos-template) project on Github. Press the big green button that says "Use this template". Name your project "quintos-games".
 
-Now open Git Bash on Windows or Terminal on macOS and copy/paste these commands. Replace `!!!your username!!!` with your github username. Don't worry I'm not hacking your computer! The first command `cd`, changes directory (aka folder), which opens your Documents folder inside the terminal. The second command downloads your `quintos-games` project into your Documents folder, third command opens that folder. The last command, `npm i`, installs all the other code needed for this project.
+Now open Git Bash on Windows or Terminal on macOS and copy/paste these commands. Replace `!!!your username!!!` with your github username.
 
 ```sh
 cd ~/Documents
@@ -25,6 +25,8 @@ git clone https://github.com/!!!your username!!!/quintos-games.git
 cd quintos-games
 npm i
 ```
+
+Don't worry I'm not hacking your computer! The first command `cd`, changes directory (aka folder), which opens your Documents folder inside the terminal. The second command downloads your `quintos-games` project into your Documents folder, third command opens that folder. The last command, `npm i`, installs all the other code needed for this project.
 
 Open Visual Studio Code (aka VSCode) and add `IntroToJS` and your `quintos-games` folder to the workspace.
 
@@ -35,8 +37,6 @@ In the Activity Bar on the left side of VSCode click the extension icon which lo
 Prettier is an extension that will automatically format your code for you when you save it so you won't have to worry about doing proper indentation and formatting yourself!
 
 Live Server auto-refreshes the browser when you make changes to your code.
-
-Also install all the reccommended Java extensions. You may need to download the latest JDK as well.
 
 ## VSCode Settings
 
@@ -279,7 +279,7 @@ https://www.youtube.com/watch?v=eP9y_7it3ZM
 PETSCII character set: <https://style64.org/petscii/>
 
 - [Level 01 A](#level-01-a)
-  - [Requirements for Offline Development](#requirements-for-offline-development)
+  - [Requirements for Local JS Development](#requirements-for-local-js-development)
   - [Setup](#setup)
   - [Install Extensions for VSCode](#install-extensions-for-vscode)
   - [VSCode Settings](#vscode-settings)
