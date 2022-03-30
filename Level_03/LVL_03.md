@@ -8,6 +8,15 @@ Good code should be easy for other programmers (humans) to read and efficient fo
 
 Above all, it's important to put effort into thinking of GOOD names for your variables. Good variable names in Javascript are short and concise descriptors. Write sufficiently detailed comments in your code too.
 
+## const
+
+```js
+const b = 1;
+b = 2; // ERROR! b is a constant
+```
+
+Unlike variables created using `let`, variables created with `const` are constants. When they are assigned a value they can not be assigned another.
+
 ## String.split(seperator)
 
 Strings have a lot of useful functions we can use. MDN, the Mozilla Developer Network, is a really great resource for learning JS. Documentation for the String class can be found here:
@@ -177,6 +186,7 @@ https://www.youtube.com/watch?v=CxJwy8NsXFs
 
 - [Level 03 A](#level-03-a)
 	- [Coding Philosophy: Naming variables](#coding-philosophy-naming-variables)
+	- [const](#const)
 	- [String.split(seperator)](#stringsplitseperator)
 	- [Accessing items in an Array](#accessing-items-in-an-array)
 - [Level 02 B](#level-02-b)

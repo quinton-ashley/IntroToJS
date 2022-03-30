@@ -19,7 +19,7 @@ function sayHello() {
 sayHello(); // run the function
 ```
 
-The code inside a function is not run until the function is called/invoked by using it's name and the parenthesis.
+The code inside a function is not run until the function is called/invoked by using its name and the parenthesis.
 
 ## p5.js Basics
 
@@ -89,14 +89,6 @@ It's a simple yellow and black smiley face image! 😃
 
 Note that p5.js adds a lot of variables to the global scope. Note that `width` and `height` refer to the size of the screen in pixels.
 
-## End of Level 02 A
-
-Here's what you learned about in Level 2:
-
-- p5.js basics
-- the `spriteArt` function
-- how to create sprites and position them
-
 # Level 02 B
 
 # Getting a Sprite's width and height
@@ -124,18 +116,6 @@ let pattern = '><'.repeat(4);
 // pattern -> '><><><><';
 ```
 
-## += operator
-
-The `+=` operator can be used to add to the existing value of a variable.
-
-```js
-let x = 5;
-x += 2;
-log(x); // x -> 7
-```
-
-`-=`, `*=`, and `/=` operators can be used in JS too.
-
 # Level 02 C
 
 ## Vectors
@@ -148,6 +128,8 @@ In 2D (two dimensional) games, a sprite's vector can be stored as the velocity a
 ball.velocity.x = 1;
 ball.velocity.y = 1;
 ```
+
+When you assign values to a sprite's velocities, the p5.play `drawSprites` function will change the ball's position.
 
 ## Bounces
 
@@ -178,7 +160,6 @@ background(colorPal('r'));
 The `keyPressed` is a p5.js function that is run whenever a key is pressed.
 
 ```js
-function draw() {}
 function keyPressed() {
 	if (key == 'ArrowUp') {
 		log('The up arrow key was pressed!');
@@ -211,6 +192,18 @@ text('Hello World!', 10, 12);
 ```
 
 ## Level 02 E
+
+## += operator
+
+The `+=` operator can be used to add to the existing value of a variable.
+
+```js
+let x = 5;
+x += 2;
+log(x); // x -> 7
+```
+
+`-=`, `*=`, and `/=` operators can be used in JS too.
 
 ## p5.js fill, stroke, and rect
 
@@ -246,12 +239,10 @@ https://youtu.be/nRlmTiynbd8?t=242
   - [spriteArt](#spriteart)
   - [Make Strings with Backticks](#make-strings-with-backticks)
   - [p5.js global variables](#p5js-global-variables)
-  - [End of Level 02 A](#end-of-level-02-a)
 - [Level 02 B](#level-02-b)
 - [Getting a Sprite's width and height](#getting-a-sprites-width-and-height)
   - [spriteArt scaling](#spriteart-scaling)
   - [String.repeat(amount)](#stringrepeatamount)
-  - [+= operator](#-operator)
 - [Level 02 C](#level-02-c)
   - [Vectors](#vectors)
   - [Bounces](#bounces)
@@ -261,5 +252,6 @@ https://youtu.be/nRlmTiynbd8?t=242
   - [Check if a key is held](#check-if-a-key-is-held)
   - [Drawing text to the screen](#drawing-text-to-the-screen)
   - [Level 02 E](#level-02-e)
+  - [+= operator](#-operator)
   - [p5.js fill, stroke, and rect](#p5js-fill-stroke-and-rect)
   - [Computer History: ZX Spectrum](#computer-history-zx-spectrum)
