@@ -2,21 +2,21 @@
 
 Congratulations, you completed level 0! 🥳
 
-Before you start your next game, let's get you setup for JavaScript development on your own computer so you won't have to use CodePen which is an online-only code editor.
+Before you start your next game, let's get you setup for JavaScript development on your own computer so you won't have to use CodePen, which is an online-only code editor.
 
 ## Requirements for Local JS Development
 
-- install Google Chrome (Firefox, Edge, and Opera are good too, just don't use Safari)
+- install Google Chrome (Firefox, Edge, and Opera are good too, but not Safari)
 - install [node.js](https://nodejs.org/en/) (includes [npm](https://www.npmjs.com/))
 - Windows users need to install [Git](https://gitforwindows.org/)
-- macOS users need to use the command `xcode-select --install` in Terminal
+- macOS users need to use the command `xcode-select --install` in the Terminal app
 - install the [Visual Studio Code editor](https://code.visualstudio.com/)
 
 ## Setup
 
 Open the [quintos-template](https://github.com/quinton-ashley/quintos-template) project on Github. Press the big green button that says "Use this template". Name your project "quintos-games".
 
-Now open Git Bash on Windows or Terminal on macOS and copy/paste these commands. Replace `!!!your username!!!` with your github username.
+Now open the Git Bash app on Windows or the Terminal app on macOS and copy/paste these commands. Replace `!!!your username!!!` with your github username.
 
 ```sh
 cd ~/Documents
@@ -26,13 +26,13 @@ cd quintos-games
 npm i
 ```
 
-Don't worry I'm not hacking your computer! The first command `cd`, changes directory (aka folder), which opens your Documents folder inside the terminal. The second command downloads your `quintos-games` project into your Documents folder, third command opens that folder. The last command, `npm i`, installs all the other code needed for this project.
+Don't worry I'm not hacking your computer! The first command `cd`, changes directory (aka folder), which opens your Documents folder inside the terminal (you can choose a different folder if you'd like). The second command downloads my teaching curriculum "IntroToJs". The thrid command downloads your "quintos-games" project. The fourth command changes directory into your "quintos-games" folder. The last command, `npm i`, installs "QuintOS".
 
-Open Visual Studio Code (aka VSCode) and add `IntroToJS` and your `quintos-games` folder to the workspace.
+Open Visual Studio Code (aka VSCode) and add "IntroToJS" and your "quintos-games" folder to the workspace.
 
 ## Install Extensions for VSCode
 
-In the Activity Bar on the left side of VSCode click the extension icon which looks like one box being separated from three other boxes. In the Extension sidebar, search for and install Prettier and Live Server.
+In the Activity Bar on the left side of VSCode click the extension icon, which looks like one box being separated from three other boxes. In the Extension sidebar, search for and install Prettier and Live Server.
 
 Prettier is an extension that will automatically format your code for you when you save it so you won't have to worry about doing proper indentation and formatting yourself!
 
@@ -69,9 +69,9 @@ Press F1 on your keyboard (hold Fn then press F1 on macOS). Search the menu for 
 
 ## Loading QuintOS Games
 
-Make a new folder in `quintos-games` called `GAMES`. Copy the `GuessTheNumber` folder from Level_00 in IntroToJava and paste it in `GAMES`.
+Make a new folder in `quintos-games` called `GAMES`. Copy the `GuessTheNumber` folder from Level_00 in IntroToJS and paste it in `GAMES`.
 
-Copy your GuessTheNumber code from CodePen and put it in `GuessTheNumber.java`
+Copy your GuessTheNumber code from CodePen and put it in `guessTheNumber.js`
 
 Edit the `load.js` in your `quintos-games` project folder.
 
@@ -224,15 +224,7 @@ x y z
 1 1 1 =
 ```
 
-## End of Level 01 B
-
-You learned about boolean operators:
-
-- NOT `!`
-- AND `&&`
-- OR `||`
-
-## Level 01 C
+# Level 01 C
 
 ## Arrays
 
@@ -266,14 +258,6 @@ console.log('The names array has ' + names.length + ' names');
 
 This example code would print "The names array has 3 names" to the console.
 
-## End of Level 01 C
-
-You learned how to:
-
-- create Arrays
-- how to check if something is included in an array
-- get the amount of items in an array using `.length`
-
 ## Computer History: Commodore PET
 
 This level's computer was inspired by the 1977 Commodore PET 2001 Series. These computers were some of the first commerically successful personal computers that did not require any assembly by the user. Check out this video about it if you'd like!
@@ -299,10 +283,8 @@ PETSCII character set: <https://style64.org/petscii/>
     - [AND](#and)
     - [NAND](#nand)
   - [Compound Operations](#compound-operations)
-  - [End of Level 01 B](#end-of-level-01-b)
-  - [Level 01 C](#level-01-c)
+- [Level 01 C](#level-01-c)
   - [Arrays](#arrays)
   - [array.includes(item)](#arrayincludesitem)
   - [Array length](#array-length)
-  - [End of Level 01 C](#end-of-level-01-c)
   - [Computer History: Commodore PET](#computer-history-commodore-pet)

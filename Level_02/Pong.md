@@ -38,8 +38,8 @@ Display both player's scores. HINT: Use the `text` function
 
 When the ball is served from the center of the screen, make it move away from the player that lost the ball, just like in tennis. Also there should be a 50% chance that the ball moves diagonally up or down. The y velocity of the ball should be either 1 or -1.
 
-## Instructions for PART E
-
 Make the ball speed up a little bit each time it hits the walls. Have the ball's speed get reset each time it goes off screen.
+
+## Instructions for PART E
 
 Reference the [p5.js documentation](https://p5js.org/reference/) to learn how to make simple shapes like rectangles, circles, ovals, and triangles. The background of your Pong game should incorporate a few different shapes. You can also make some images with `spriteArt` if you'd like. Be creative!

@@ -48,7 +48,7 @@ let z = 9504.15;
 
 ### Boolean
 
-Booleans can be either `true` or `false`
+Booleans can either be `true` or `false`
 
 ```js
 let codingIsFun = true;

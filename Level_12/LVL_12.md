@@ -109,7 +109,7 @@ let walls = tiles.createGroup('walls');
 
 ## Check for Collisions
 
-The p5.js play `collide` function can be used to prevent sprites from overlapping.
+The p5.js play `collide` function can be used to check for collisions between sprites inside the `draw` function.
 
 ```js
 player.collide(walls);

@@ -8,7 +8,7 @@ To make Pong we're going to use p5.js, a JavaScript graphics library for creativ
 
 ## Creating functions 👷
 
-How do we create our own functions? Using the `function` keyword!
+Create functions using the `function` keyword.
 
 ```js
 // create the function
@@ -25,45 +25,49 @@ The code inside a function is not run until the function is called/invoked by us
 
 https://p5js.org/get-started/
 
-The p5.js `draw` function should contain code for drawing an image (frame). Behind the scenes, p5.js will run it 60 times per second, this is called the frame rate. This allows you to move objects on the screen by animating them, moving them a little bit when each new frame is drawn to the screen.
+The p5.js `draw` function should contain code for drawing an image (frame). Behind the scenes, p5.js will run the `draw` function 60 times per second, this is called the frame rate.
+
+Move objects a little bit in each new frame drawn to the screen. This is called animation.
 
 ## p5.play Sprites
 
-Sprites are characters or items in 2D video games that typically move above the background layer(s). Sprite objects in the p5.play library have attributes such as their x and y position.
+Sprites are characters or items in 2D video games that typically move above a background layer.
 
 ```js
-let ball = createSprite(imgBall);
-ball.x = 5;
-ball.y = 12;
+let sprite = createSprite(img);
+sprite.x = 5;
+sprite.y = 12;
 ```
+
+Sprite objects in the p5.play library have attributes such as their x and y position. A sprite's x position is its horizontal position on the screen. A sprite's y position is its vertical position on the screen.
 
 ## spriteArt
 
 The `spriteArt` function can be used to create images very easily! The first parameter to `spriteArt` is a String representing the color values of pixels.
 
 ```js
-let img = spriteArt('w.w');
+let img = spriteArt('wgw');
 ```
 
-This example code would create an image with one white pixel, followed by a transparent pixel, and then another white pixel. You can also use spaces to indicate transparent pixels.
+This example code would create an image with one white pixel, followed by a green pixel, and then another white pixel.
 
-Here's the full color palette you can use for this game. They are the same colors as the real ZX Spectrum, which this level's computer is based on.
+Here's the limited color palette you can use for this game. They are the same colors as the real ZX Spectrum, which this level's computer is based on.
 
-| letter |     color      |
-| :----: | :------------: |
-|   .    | transparent 🔳 |
-|   b    |    Black ⬛    |
-|   u    |    blUe 🟦     |
-|   r    |     Red 🟥     |
-|   m    |   Magenta 🔴   |
-|   g    |    Green 🟩    |
-|   c    |    Cyan 🔵     |
-|   y    |   Yellow 🟨    |
-|   w    |    White ⬜    |
+|   letter   |     color      |
+| :--------: | :------------: |
+| '.' or ' ' | transparent 🔳 |
+|    'b'     |    Black ⬛    |
+|    'u'     |    blUe 🟦     |
+|    'r'     |     Red 🟥     |
+|    'm'     |   Magenta 🔴   |
+|    'g'     |    Green 🟩    |
+|    'c'     |    Cyan 🔵     |
+|    'y'     |   Yellow 🟨    |
+|    'w'     |    White ⬜    |
 
 ## Make Strings with Backticks
 
-Backticks can also be used to create Strings. Backticks look like a backwards apostrophe. They can be found on your keyboard on a special key next to the number 1. The backtick key also has a squiggly line called a tilda on it.
+Backticks can also be used to create Strings. Backticks look like a backwards apostrophe. They can be found on your keyboard on a special key next to the number 1. The backtick key also has a squiggly line `~` called a tilda on it.
 
 When backticks are used to create Strings, the text inside the backticks can go on multiple lines of code and retain these newlines without the use of the newline `\n` character.
 
@@ -96,16 +100,18 @@ Note that p5.js adds a lot of variables to the global scope. Note that `width` a
 When you create a sprite using an image the width and height of the sprite is automatically assigned to the sprite based on the size of the image. These attributes can be accessed using `.width` and `.height` or with `.w` and `.h`
 
 ```js
-console.log('size of the ball: ' + ball.w + 'x' + ball.h);
+console.log('size of the sprite: ' + sprite.w + 'x' + sprite.h);
 ```
 
 ## spriteArt scaling
+
+By default each character in the string will be one pixel in the resulting sprite art image. Yet, if you change the scale to 2 then each character in the string will be represented by 4 pixels! This is useful for making larger images.
 
 ```js
 let face = spriteArt(str, 2);
 ```
 
-Multiple input parameters can be given to some functions. Input parameters are seperated by commas. The second input parameter to the `spriteArt` function is an optional scale value. By default each character in the string will be one pixel in the resulting image. If you change the scale to 2 then each character in the string will be represented by 4 pixels! This is useful for making larger images.
+The second input parameter to the `spriteArt` function is an optional scale value. Input parameters are seperated by commas.
 
 ## String.repeat(amount)
 
@@ -114,6 +120,34 @@ To more easily create large Strings you can use a String function called [repeat
 ```js
 let pattern = '><'.repeat(4);
 // pattern -> '><><><><';
+```
+
+## += operator
+
+The `+=` operator can be used to add to the existing value of a variable.
+
+```js
+let story = 'The cow';
+story += ' jumped over the moon.';
+// story -> "The cow jumped over the moon"
+```
+
+You can use `+=` with numbers too!
+
+```js
+let x = 5;
+x += 2;
+console.log(x); // x -> 7
+```
+
+`-=`, `*=`, and `/=` operators can also be used with numbers.
+
+## colorPal
+
+The `colorPal` function retreives the color associated with the given letter from the retro computer's color palette. Here's some example code for making a red background:
+
+```js
+background(colorPal('r'));
 ```
 
 # Level 02 C
@@ -133,7 +167,7 @@ When you assign values to a sprite's velocities, the p5.play `drawSprites` funct
 
 ## Bounces
 
-You can easily check for bounces between sprites using the p5.play sprite bounce function.
+You can easily check for bounces between sprites using the p5.play sprite `bounce` function inside the `draw` function.
 
 ```js
 ball.bounce(paddle);
@@ -143,14 +177,6 @@ By default when sprites bounce off each other both objects will move. To prevent
 
 ```js
 paddle.immovable = true;
-```
-
-## colorPal
-
-`colorPal` retreives the color associated with the given letter from the retro computer's color palette. Here's some example code for making a red background:
-
-```js
-background(colorPal('r'));
 ```
 
 # Level 02 D
@@ -193,18 +219,6 @@ text('Hello World!', 10, 12);
 
 ## Level 02 E
 
-## += operator
-
-The `+=` operator can be used to add to the existing value of a variable.
-
-```js
-let x = 5;
-x += 2;
-log(x); // x -> 7
-```
-
-`-=`, `*=`, and `/=` operators can be used in JS too.
-
 ## p5.js fill, stroke, and rect
 
 This example `draw` function draws a black background and then a blue rectangle with a red stroke (outline). The `colorPal` function can be use it inside p5.js functions like `background`, `fill`, and `stroke` that expect a color.
@@ -243,15 +257,15 @@ https://youtu.be/nRlmTiynbd8?t=242
 - [Getting a Sprite's width and height](#getting-a-sprites-width-and-height)
   - [spriteArt scaling](#spriteart-scaling)
   - [String.repeat(amount)](#stringrepeatamount)
+  - [+= operator](#-operator)
+  - [colorPal](#colorpal)
 - [Level 02 C](#level-02-c)
   - [Vectors](#vectors)
   - [Bounces](#bounces)
-  - [colorPal](#colorpal)
 - [Level 02 D](#level-02-d)
   - [Respond to keyboard input](#respond-to-keyboard-input)
   - [Check if a key is held](#check-if-a-key-is-held)
   - [Drawing text to the screen](#drawing-text-to-the-screen)
   - [Level 02 E](#level-02-e)
-  - [+= operator](#-operator)
   - [p5.js fill, stroke, and rect](#p5js-fill-stroke-and-rect)
   - [Computer History: ZX Spectrum](#computer-history-zx-spectrum)
