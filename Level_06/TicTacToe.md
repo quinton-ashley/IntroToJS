@@ -18,7 +18,7 @@ After player X takes their turn, player O should be able to place their `bigO` m
 
 ## Instructions for PART C
 
-If a player tries to place their 'x' or 'o' on a space that is not empty, do not let them overwrite that space. Start by storing the position of the marks the players make in a two dimensional `board` array.
+If a player tries to place their 'x' or 'o' on a space that is not empty, do not let them overwrite that space. To acheive this, start by storing the position of the marks the players make in a two dimensional `board` array.
 
 When a player clicks a button the `takeTurn` function should check if the corresponding position in the board array is empty. Show the player an alert window that explains they can't put their mark there because the space is not empty.
 
@@ -30,6 +30,8 @@ Now implement checking for a winner in all horizontal rows and vertical columns 
 
 Create a function called `checkForDraw` that checks for a draw (all spaces filled and no winner). Use the function in `takeTurn` and tell the players there was a draw.
 
-After a game is complete, start a new game. Always show whose turn it is and a tally of the score in the top right corner.
+After a game is complete, start a new game.
+
+Always show whose turn it is and a tally of the score in the top right corner. Use the `text` function, not alerts.
 
 Make it random who starts first in the beginning or in case of a draw, otherwise, let the player who lost go first.

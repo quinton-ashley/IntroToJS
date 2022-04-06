@@ -127,9 +127,23 @@ Did you complete `GuessTheNumber` part A and are ready to learn more? Before we 
 
 Single equals `=` is for assigning values to variables. Double equals `==` is a boolean operator used for checking equivalence. What is a boolean operator? It performs an operation that results in either a true or false (boolean) value.
 
+## if/else statements
+
 `if` statements use a boolean condition, which goes in parenthesis after the keyword `if`. If the boolean condition is `true`, the code block `{}`, whatever's inside the squiggly brackets, is run.
 
-`else if` and `else` are used after if statements, they form a chain of different paths the code can take if the previous if statements were false.
+Check out this coin toss example code. Coin tosses are used in many sports to decide which of two teams goes first. One team picks which side of the coin they think will land facing up, "heads" or "tails". If the result of a coin flip is "heads" then the code in the `if` statement code block will be run. If the result was "tails", then the code in the `else` block is run.
+
+```js
+if (coinFlip() == 'heads') {
+	await alert('Heads wins the coin toss!');
+} else {
+	await alert('Tails wins the coin toss!');
+}
+```
+
+## else if chaining
+
+`else if` can be used after if statements, they form a chain of different paths the code can take if the previous if statements were false.
 
 Take a look at the example below, which assigns a color to the variable `fruitColor` based on the name of the `fruit`.
 
@@ -301,6 +315,8 @@ This level's computer was inspired by the Casio FX-720P, which could run program
   - [End of Level 00 A](#end-of-level-00-a)
 - [Level 00 B](#level-00-b)
   - [Checking Equivalence ✅](#checking-equivalence-)
+  - [if/else statements](#ifelse-statements)
+  - [else if chaining](#else-if-chaining)
   - [Boolean operators 🐰](#boolean-operators-)
 - [Level 00 C](#level-00-c)
   - [Mathematical operators 🔢](#mathematical-operators-)
