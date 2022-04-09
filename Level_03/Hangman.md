@@ -16,7 +16,7 @@ Display the `lines` array like this `_ _ _ _` in the prompt on a new line below 
 
 ## Instructions for PART C
 
-If the player guesses a letter which occurs in the word, edit the `lines` array so the letter will be displayed in all its correct positions. For example if the word is "avenue" and the player has guessed "e", "x", "b", "r", "v" your prompt should display: `_ v e _ _ e`
+If the player guesses a letter which occurs in the word, edit the `lines` array so the letter will be displayed in all its correct positions. For example if the word is "avenue" and the player has guessed "e" your prompt should display: `_ _ e _ _ e`
 
 Make the game loop! HINT: What condition must be true for the player to keep guessing letters? (use the `includes` String function)
 

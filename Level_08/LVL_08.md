@@ -34,11 +34,27 @@ async function takeFive() {
 takeFive();
 ```
 
+## replace String
+
+```js
+let str = 'The cat jumped over the moon';
+let result = str.replace('cat', 'dog');
+log(result);
+```
+
+The function returns a String with the searchValue replaced
+
+## slice String
+
+```js
+
+```
+
 ## Add/Remove from the middle of an Array
 
 The `push` function is used to add an item to the end of an array and `pop` is used to remove an item from the end.
 
-The [`splice` function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) is used to add/remove items from the middle of an Array.
+The [`splice` function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) is used to add/remove items from the middle of an Array. This function actually changes the array.
 
 ```js
 arr.splice(start, deleteCount, item);
