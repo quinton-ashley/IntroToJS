@@ -77,8 +77,6 @@ names.join(' ~ ');
 // -> 'Amy ~ Ellie ~ Max'
 ```
 
-## End of Level 03 B
-
 # Level 03 C
 
 ## Accessing characters in a String
@@ -193,7 +191,6 @@ https://www.youtube.com/watch?v=CxJwy8NsXFs
 	- [Getting the length of a String](#getting-the-length-of-a-string)
 	- [Getting an array of characters from a String](#getting-an-array-of-characters-from-a-string)
 	- [array.join(separator)](#arrayjoinseparator)
-	- [End of Level 03 B](#end-of-level-03-b)
 - [Level 03 C](#level-03-c)
 	- [Accessing characters in a String](#accessing-characters-in-a-string)
 	- [Counting with while loops](#counting-with-while-loops)

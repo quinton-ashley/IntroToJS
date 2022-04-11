@@ -1,27 +1,64 @@
 # Level 08 A
 
-## textRect
-
-Make boxes using `textRect(row, col, w, h)` around the blank spaces and letters just like in the Wheel of Fortune TV show.
+## fetch a text file
 
 ```js
-textRect(5, 5, 3, 3); // make a 3x3 rect at row 5 column 5 (5,5)
-text('w', 6, 6); // make letter 'w' at row 6 column 6 (6,6)
+let fileName = QuintOS.dir + '/file.txt';
+let data = await fetch(fileName);
+let txt = await data.text();
 ```
 
-Use `for` loops to make all the boxes for the phrase!
+`QuintOS.dir` represents the file path to your game directory. `fetch` loads file data asynchronously, returns a `Response` object. If the response contains text then it can be converted to a string using the asynchronous `.text()` function.
 
-```txt
-┌─┐┌─┐┌─┐┌─┐┌─┐
-│W││h││e││e││ │
-└─┘└─┘└─┘└─┘└─┘
+## slice String
+
+```js
+str.slice(start, end);
 ```
+
+This function returns an edited version of the string but does not change the original value of the string. `end` index is optional. Indexes can be negative. Take a look at the examples in the `slice` MDN JS documentation:
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
 
 # Level 08 B
 
+## eraseRect
+
+```js
+await eraseRect(row, col, w, h);
+```
+
+Erases text within the specified rectangle.
+
+## textRect
+
+Make rectangles out of text characters using `textRect`.
+
+```js
+textRect(5, 5, 3, 3); // make a 3x3 rect at row 5 column 5 (5,5)
+text('W', 6, 6); // make letter 'W' at row 6 column 6 (6,6)
+```
+
+Use `for` loops to make lots of boxes!
+
+```txt
+┌─┐┌─┐┌─┐┌─┐┌─┐
+│W││h││e││e││l│
+└─┘└─┘└─┘└─┘└─┘
+┌─┐┌─┐┌─┐┌─┐┌─┐
+│ ││ ││ ││ ││ │
+└─┘└─┘└─┘└─┘└─┘
+```
+
+# Level 08 C
+
 ## delay
 
-Use the `delay` function to delay the rate at which letters are displayed.
+```js
+await delay(millis);
+```
+
+Use the `delay` to have your program wait for a certain amount of time in milliseconds.
 
 ```js
 // you need to make the function asynchronous to use await
@@ -37,18 +74,27 @@ takeFive();
 ## replace String
 
 ```js
-let str = 'The cat jumped over the moon';
+let str = 'The cat jumped over the moon. The cat meowed.';
 let result = str.replace('cat', 'dog');
 log(result);
+// -> 'The dog jumped over the moon. The cat meowed.'
 ```
 
-The function returns a String with the searchValue replaced
+This function takes two input parameters, the first input parameter is replaced in the string by the second. Note that it only does one replacement.
 
-## slice String
+This function does not change the original value of the string.
+
+## toUpperCase and toLowerCase String
 
 ```js
-
+let str = 'Hello!';
+let up = str.toUpperCase(); // up -> 'HELLO!'
+let low = str.toLowerCase(); // low -> 'hello!'
 ```
+
+These functions do not change the original value of the string.
+
+# Level 08 D
 
 ## Add/Remove from the middle of an Array
 
