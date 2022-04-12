@@ -3,8 +3,8 @@
 ## fetch a text file
 
 ```js
-let fileName = QuintOS.dir + '/file.txt';
-let data = await fetch(fileName);
+let filePath = QuintOS.dir + '/file.txt';
+let data = await fetch(filePath);
 let txt = await data.text();
 ```
 

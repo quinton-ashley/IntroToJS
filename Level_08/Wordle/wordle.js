@@ -3,8 +3,7 @@ let words = [];
 let board;
 
 async function loadGame() {
-	let data = await fetch(QuintOS.dir + '/words5.txt');
-	let wordsList = await data.text();
+	/* load the text files*/
 
 	startGame();
 }
