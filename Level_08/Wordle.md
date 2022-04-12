@@ -6,9 +6,9 @@ https://www.nytimes.com/games/wordle/index.html
 
 ## Instructions for PART A
 
-Split the list of common five letter words from the `words5.txt` file into an array of `words`. Take a look at the file, it has one word per line.
+Split the list of common five letter words from the `words5.txt` file into an array of `words`. Take a look at the file, it has one word per line. HINT: Review your Hangman code. Remember the String `split` function.
 
-Split the list of all five letter words from the `dictionary5.txt` file into an array, call it `dictionary`. Note this will be a bit more challenging since the file has multiple words per line.
+Split the list of all five letter words from the `dictionary5.txt` file into an array, call it `dictionary`. Note this will be a bit more challenging since the file has multiple words per line. HINT: Remember you can use `arr.push(item)` to add to arrays.
 
 ## Instructions for PART B
 

@@ -2,6 +2,8 @@
 
 The TV show, "Wheel of Fortune", features many different mini-games that contestants play. You'll make one of the hangman inspired mini-games. In this mini-game blank boxes representing all the letters in a phrase are presented to the player. Letters are revealed to the player slowly, one by one, in their correct positions. The sooner the player presses the buzzer and correctly guesses the phrase, the more points they win!
 
+https://youtu.be/K1nF5iNubcY?t=153
+
 ## Instructions for PART A
 
 Split the `phrasesList` into an array of `phrases`.
@@ -32,7 +34,7 @@ If the player presses the buzzer, the game should stop adding letters and provid
 
 If the player guesses wrong or press cancel in the prompt, their score should be decreased by 1 point but the game should keep going and the player should have the opportunity to guess again.
 
-If the player guesses the phrase correctly their score should be increased by the number of blank spaces left in the `board`.
+If the player guesses the phrase correctly their score should be increased by the number of blank spaces left on the board.
 
 If the player is too slow and all the letters in the phrase are shown, they should lose that round and their score should be decreased by 3 points.
 

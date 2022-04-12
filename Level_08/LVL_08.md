@@ -10,16 +10,6 @@ let txt = await data.text();
 
 `QuintOS.dir` represents the file path to your game directory. `fetch` loads file data asynchronously, returns a `Response` object. If the response contains text then it can be converted to a string using the asynchronous `.text()` function.
 
-## slice String
-
-```js
-str.slice(start, end);
-```
-
-This function returns an edited version of the string but does not change the original value of the string. `end` index is optional. Indexes can be negative. Take a look at the examples in the `slice` MDN JS documentation:
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
-
 # Level 08 B
 
 ## eraseRect
@@ -71,6 +61,16 @@ async function takeFive() {
 takeFive();
 ```
 
+## toUpperCase and toLowerCase String
+
+```js
+let str = 'Hello!';
+let up = str.toUpperCase(); // up -> 'HELLO!'
+let low = str.toLowerCase(); // low -> 'hello!'
+```
+
+These functions do not change the original value of the string.
+
 ## replace String
 
 ```js
@@ -84,15 +84,15 @@ This function takes two input parameters, the first input parameter is replaced 
 
 This function does not change the original value of the string.
 
-## toUpperCase and toLowerCase String
+## slice String
 
 ```js
-let str = 'Hello!';
-let up = str.toUpperCase(); // up -> 'HELLO!'
-let low = str.toLowerCase(); // low -> 'hello!'
+str.slice(start, end);
 ```
 
-These functions do not change the original value of the string.
+This function returns a subsection of the string, starting at the start index and ending and the end index. It does not change the original value of the string. The `end` index is optional. Indexes can be negative. Take a look at the examples in the `slice` MDN JS documentation:
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
 
 # Level 08 D
 
@@ -100,8 +100,10 @@ These functions do not change the original value of the string.
 
 The `push` function is used to add an item to the end of an array and `pop` is used to remove an item from the end.
 
-The [`splice` function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) is used to add/remove items from the middle of an Array. This function actually changes the array.
+The [`splice` function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) is used to add/remove items from the middle of an Array.
 
 ```js
 arr.splice(start, deleteCount, item);
 ```
+
+It's important to note that this function actually changes the array!
