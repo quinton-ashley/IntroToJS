@@ -12,12 +12,16 @@ Split the list of all five letter words from the `dictionary5.txt` file into an 
 
 ## Instructions for PART B
 
-Each letter in each of the player's valid guesses will be displayed inside a box. The player only has 6 chances to guess the 5 letter word. All 30 empty boxes should be displayed in the beginning.
-
 Pick a random word from `words`, call it `word`. HINT: Review your Hangman program.
 
-When the player guesses a word, check if the word is five letters also check if it can be found in the dictionary. If the player's guess doesn't meet these requirements, alert the player. Do not count this guess as one of the players six guesses. HINT: It's more efficient to check whether the player's guess is five letters before checking if it is found in the dictionary.
+Each letter in each of the player's valid guesses will be displayed inside a box. The player only has 6 chances to guess the 5 letter word. All 30 empty boxes should be displayed in the beginning.
 
-If the player's guess is valid, edit the board array so that the word is shown.
+When the player guesses a word, check if the word is five letters. If it is not five letters, alert the player.
+
+Also check if the player's guess can be found in the dictionary, if not, alert the player.
+
+If the player's guess is valid, show it on the board. Make a game loop to let the player guess again. Do not count invalid guesses as one of the player's six guesses.
 
 ## Instructions for PART C
+
+Show the player whether the letters in their guesses are found in the word in the right positions.
