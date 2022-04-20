@@ -1,28 +1,32 @@
 # QuickClicks
 
-Test your reflexes with the Quick Clicks target practice game! Click a target to make another one appear in a random position on the screen. The goal is to click between targets as fast as possible.
+Test your reflexes with the Quick Clicks target practice game! Click a target to make another one appear in a random position on the screen. To win the game, click between 10 targets as fast as possible, but don't click an imposter target or you'll lose!
 
 ## Instructions for PART A
 
-Try placing the button in the bottom right corner of the screen. Note the values of the row and column.
+Try placing the target button in the bottom right corner of the screen. Note the values used for the row and column.
 
-Put the button in a random position on the screen.
+Put the target button in a random position on the screen. HINT: `random(start, end)` returns decimal numbers but row and col values need to be whole numbers
 
-Remember! `Math.random()` returns a value between 0 and 1 (not including 1)
-
-When the player clicks the button place another button in a random position on the screen. HINT: Use recursion to achieve this!
+Make four imposter targets using a `for` loop. HINT: Imposter targets should look a bit different from the real target. The smaller the differences the harder your Quick Clicks game will be.
 
 ## Instructions for PART B
 
-After the player clicks a button it should get erased. Do not attempt to erase a button if it doesn't exist!
+When the player clicks the target button, place another target and another four imposter targets in random positions on the screen. HINT: Use recursion to achieve this.
+
+You will notice that using recursion generates a lot of targets quickly!
 
 ## Instructions for PART C
 
+When the player clicks the target, erase the screen before creating another target and four more imposter targets.
+
 Before the game starts, place an alert window with instructions on how to play in the middle of the screen. Tell the user to press the "OKAY" button to start the game.
+
+If the player clicks an imposter target tell them "Game Over!" because they clicked an imposter target. Show them the location of the real target but don't allow them to click it. The player should be able to try playing again from the beginning.
 
 ## Instructions for PART D
 
-After the player clicks 10 buttons, calculate the user's average, slowest, and fastest response times. To get the speeds at which the player clicked between buttons you'll first need to create an array that stores the time at which they clicked each target. HINT: Use the `push` function to add `Date.now()` to an array called `times`
+After the player clicks 10 target buttons, calculate the user's average, slowest, and fastest response times. To get the speeds at which the player clicked between buttons you'll first need to create an array that stores the time at which they clicked each target. HINT: Use the `push` function to add `Date.now()` to an array called `times`
 
 Now create an array of speeds that stores the time in milliseconds it took the player to click each button. Each number in this array should represent the difference between the time a button was clicked and the time the next button was clicked. HINT: If the player clicks the button 10 times there will only be 9 speeds (time between each button click). Use a `for` loop to create the array of speeds.
 
@@ -60,3 +64,5 @@ Try making a cool geometric pattern like this! HINT: use the modulo operator to 
 ⎺\⎽⎽/⎺⎺\⎽⎽/⎺
 ⎽/⎺⎺\⎽⎽/⎺⎺\⎽
 ```
+
+BUG FIX! Though unlikely it is possible that an imposter target is placed directly over a real target. How can this be prevented? What degree of button overlap, if any, should be acceptable?

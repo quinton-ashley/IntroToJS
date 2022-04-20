@@ -49,3 +49,34 @@ const object1 = {
 console.log(Object.keys(object1));
 // expected output: Array ["a", "b", "c"]
 ```
+
+## truthy or falsy?
+
+Any value that is not falsy is truthy. Variables are falsy if they are:
+
+```js
+undefined;
+null;
+0; // the number 0
+(''); // an empty String
+```
+
+In this example code the while loop will repeat until `username` is defined by the user (truthy).
+
+```js
+let username;
+
+while (!username) {
+	username = await prompt('What do you want your username to be?');
+
+	if (!username) {
+		await alert('ERROR: You are required to enter a username!');
+	}
+}
+
+await alert('Hello ' + username + '!');
+```
+
+Remember that the prompt function will return a String with the text the user entered or `null` if the user cancelled out of the prompt.
+
+If `username` is set to any String of text it will be considered truthy. If `username` is undefined, `null`, or an empty String it will be considered falsy.

@@ -108,6 +108,50 @@ for (let row = 0; row < rows; row++) {
 }
 ```
 
+# Level 06 D
+
+## Implied boolean conditions
+
+In this example, if the boolean variable `playerIsDead` gets set to `true`, then tell the user "Game Over!".
+
+```js
+if (playerIsDead == true) {
+	await alert('Game Over!');
+}
+```
+
+In Javascript you don't have to use `== true` in boolean conditions because checking for equivalence to `true` is implied. You can just put the variable in a boolean condition on it's own.
+
+```js
+if (playerIsDead) {
+	await alert('Game Over!');
+}
+```
+
+## exit a function
+
+`return` can be used to exit functions.
+
+```js
+function stamp(passport) {
+	if (!passport) {
+		return;
+	}
+	//
+}
+```
+
+## alert and prompt window sizing
+
+A fourth input paramter can be used to restrict the width of prompt and alert windows. Text that is longer than the specified width will be put on new lines. This width limiter can be used with the `text`, `alert`, and `prompt` functions.
+
+```js
+let message =
+	"This here is lot of text, like a whole lot. You really don't need to read all of it. You can stop reading this now, it is not important. This is just filler text. I don't know why you're still reading it. Just kidding I want you to read all of it so please keep reading this! You have to read it. Did you stop reading? Well that's too bad there was a suprise at the end. Just kidding again, there is not. Stop reading now though, I'm serious you will only be disappointed. There is nothing special at the end of this long paragraph. This paragraph is not the credits of a Marvel movie! Skip to the end please. Wow, now you're almost at the end. Alright you did it, this is the end of the paragraph.";
+//         (text  , row, col, w)
+await alert(message, 5, 20, 16);
+```
+
 - [Level 06 A](#level-06-a)
 	- [Return variables from a function](#return-variables-from-a-function)
 	- [Creating functions with input parameters](#creating-functions-with-input-parameters)
@@ -119,3 +163,7 @@ for (let row = 0; row < rows; row++) {
 	- [Two Dimensional Arrays](#two-dimensional-arrays)
 	- [2D array access](#2d-array-access)
 	- [Using nested for loops with 2D arrays](#using-nested-for-loops-with-2d-arrays)
+- [Level 06 D](#level-06-d)
+	- [Implied boolean conditions](#implied-boolean-conditions)
+	- [exit a function](#exit-a-function)
+	- [alert and prompt window sizing](#alert-and-prompt-window-sizing)

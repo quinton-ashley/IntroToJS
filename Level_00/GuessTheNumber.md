@@ -36,11 +36,13 @@ After each guess, the player should be told whether their guess was too high, to
 
 ## Instructions for PART C
 
-Use `Math` functions to enable your computer pick a random whole number between 1 and 100 for the player to guess. To test your code, try using an `alert` to display the number your computer picks. When you are sure it is working, remove the `alert`.
+Make the game loop by using a while loop! Think about what condition must remain true for the player to keep playing the game.
 
 ## Instructions for PART D
 
-Make the game loop by using a while loop! Think about what condition must remain true for the player to keep playing the game.
+Use the `random` function to enable your computer pick a random number between 1 and 100 for the player to guess. Use the `Math.round` function to round the random number to the nearest whole number. To test your code, try using an `alert` to display the number your computer picks. When you are sure it is working, remove the `alert`.
+
+Try playing your Guess the Number game a few times to make sure your code works. What do you think is the best way to play this game in order to guess the number in the fewest amount of guesses? (besides just being very lucky of course haha)
 
 Congrats! You finished your first game in JavaScript!
 

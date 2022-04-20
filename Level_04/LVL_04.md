@@ -1,12 +1,31 @@
 # Level 04 A
 
-Do the GuessTheNumber challenge section before starting level 04!
-
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen3.jpg)
 
-## Creating a Button
+## slice String
 
-Let's learn how to add a button. The `button` function is just like `text` but you can add a fourth input parameter, a callback function that gets run when the button is clicked.
+```js
+let str = 'hello'.slice(1);
+log(str); // -> 'ello'
+```
+
+`slice` returns a substring of the original string which starts at the index provided as the first input parameter.
+
+## Create a Button
+
+Buttons glow when hovered over and are clickable. The `button` function is quite similar to the `text` function.
+
+```js
+//    (text, row, col)
+button('Yes', 5, 5);
+button('No', 5, 9);
+```
+
+# Level 04 B
+
+## Respond to button clicks
+
+Let's learn how to add a button. The `button` function is just like the `text` function but you can add a fourth input parameter, a callback function that gets run when the button is clicked.
 
 ```js
 function btnClick() {
@@ -16,7 +35,7 @@ function btnClick() {
 button('Click me!', 5, 5, btnClick);
 ```
 
-Note that the function is passed as a variable but it is not run. It gets run only when the button is clicked.
+Note that the callback function is passed as a variable, it is not run using parenthesis `()` when the button is created. It gets run only when the button is clicked.
 
 ## Recursion
 
@@ -31,17 +50,13 @@ function doRecursion() {
 Here's a more practical example of a recursion loop that ends when the player losses all their health points.
 
 ```js
-player.health = 100; // initial health
+let health = 100; // initial health
 
 function gameLoop() {
 	//
 	// ... game code here ...
 	//
-	if (enemy.attack(player) == true) {
-		player.health -= enemy.damage;
-	}
-	//
-	if (player.health > 0) {
+	if (health > 0) {
 		gameLoop();
 	} else {
 		gameOver();
@@ -49,98 +64,24 @@ function gameLoop() {
 }
 ```
 
-# Level 04 B
-
-## Erasing a button
-
-To remove a button from the screen, store it in a variable and then use the button's erase function.
-
-```js
-let btn = button('Click this!', 10, 10, clickResponse);
-btn.erase();
-```
-
-## Implied boolean conditions
-
-In this example, `playerIsDead` is a boolean varible.
-
-```js
-let playerIsDead = false;
-```
-
-If `playerIsDead` gets set to `true` while the user is playing a game, then tell the user "Game Over!".
-
-```js
-if (playerIsDead == true) {
-	await alert('Game Over!');
-}
-```
-
-In Javascript you don't have to use `== true` in boolean conditions because checking for equivalence to `true` is implied. You can just put the variable in a boolean condition on it's own.
-
-```js
-if (playerIsDead) {
-	await alert('Game Over!');
-}
-```
-
-## Check if a variable is defined
-
-Sometimes you'll need to check if a variable is defined before you do something with it. If you put a variable that doesn't have a boolean value in a boolean condition by itself, Javascript will evaluate its "truthiness". You can check if a variable exists by putting it on it's own in a boolean condition.
-
-```js
-let robot; // robot created but not defined
-
-// only have the robot shoot lasers if it is defined!
-if (robot) {
-	robot.shootLasers();
-}
-```
-
-## Check if a variable is undefined
-
-To check if a variable is undefined (falsy), put a negation operator `!` in front of the variable name in the boolean condition. Variables are considered undefined if they were not assigned a value.
-
-```js
-let robot;
-
-if (!robot) {
-	robot = createRobot();
-}
-```
-
-## truthy or falsy?
-
-Any value that is not falsy is truthy. Variables are falsy if they are:
-
-```js
-undefined;
-null;
-0; // the number 0
-(''); // an empty String
-```
-
-In this example code the while loop will repeat until `username` is defined by the user (truthy).
-
-```js
-let username;
-
-while (!username) {
-	username = await prompt('What do you want your username to be?');
-
-	if (!username) {
-		await alert('ERROR: You are required to enter a username!');
-	}
-}
-
-await alert('Hello ' + username + '!');
-```
-
-Remember that the prompt function will return a String with the text the user entered or `null` if the user cancelled out of the prompt.
-
-If `username` is set to any String of text it will be considered truthy. If `username` is undefined, `null`, or an empty String it will be considered falsy.
-
 # Level 04 C
+
+## Erase
+
+```js
+erase();
+```
+
+Use erase to remove all text and buttons from the screen.
+
+## Change the position of prompts and alerts
+
+The position of prompt and alert windows can be changed by defining their row and column values just like with the `text` and `button` functions.
+
+```js
+//         (text           , row, col)
+await alert('I can move too!', 5, 20);
+```
 
 ## asynchronous functions
 
@@ -153,6 +94,8 @@ async function sayHello() {
 }
 ```
 
+# Level 04 D
+
 ## async/await vs callbacks
 
 `async`/`await` and callbacks are the two main forms of asynchronous programming in JavaScript. `async`/`await` was added to JavaScript in 2017 so that asynchronous code could be written linearly, like synchronous code, one line after the other.
@@ -160,21 +103,6 @@ async function sayHello() {
 Callbacks are non-linear, so they are good for handling events (like button clicks) that in some cases we wouldn't want our program to wait for. For example if you gave the user a choice between clicking a "Yes" or "No" button you wouldn't want the program to wait for them to click "Yes" because they might click "No". Different callback function need to be used to handle the user's response.
 
 Now you might be wondering how await-ing the prompt function works, since the user can either enter text or click cancel?! In level 11 you'll learn how to make await-able `Promise` objects that resolve after an event or any number of different events.
-
-## Change the position of prompts and alerts
-
-The position of prompt and alert windows can be changed by defining their row and column values just like with the `text` function.
-
-```js
-//         (text           , row, col, w)
-await alert('I can move too!', 5, 20, 16);
-```
-
-A fourth input paramter can be used to restrict the width of the window. Text that is longer than the specified width will be put on new lines. This width limiter can be used with the `text`, `alert`, and `prompt` functions.
-
-If row, column, and width are not defined, default position values are used, which are different for each of the QuintOS virtual computers.
-
-# Level 04 D
 
 ## Date
 
@@ -255,19 +183,17 @@ Originally developed for business executives, GRiDs were also used by the U.S. m
 # Level 04 Table of Contents
 
 - [Level 04 A](#level-04-a)
-	- [Creating a Button](#creating-a-button)
-	- [Recursion](#recursion)
+	- [slice String](#slice-string)
+	- [Create a Button](#create-a-button)
 - [Level 04 B](#level-04-b)
-	- [Erasing a button](#erasing-a-button)
-	- [Implied boolean conditions](#implied-boolean-conditions)
-	- [Check if a variable is defined](#check-if-a-variable-is-defined)
-	- [Check if a variable is undefined](#check-if-a-variable-is-undefined)
-	- [truthy or falsy?](#truthy-or-falsy)
+	- [Respond to button clicks](#respond-to-button-clicks)
+	- [Recursion](#recursion)
 - [Level 04 C](#level-04-c)
-	- [asynchronous functions](#asynchronous-functions)
-	- [async/await vs callbacks](#asyncawait-vs-callbacks)
+	- [Erase](#erase)
 	- [Change the position of prompts and alerts](#change-the-position-of-prompts-and-alerts)
+	- [asynchronous functions](#asynchronous-functions)
 - [Level 04 D](#level-04-d)
+	- [async/await vs callbacks](#asyncawait-vs-callbacks)
 	- [Date](#date)
 	- [Adding to Arrays](#adding-to-arrays)
 - [Level 04 E](#level-04-e)

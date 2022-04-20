@@ -244,7 +244,7 @@ await alert(message); // good!
 
 ## while loops
 
-Need to loop some code? Use a while loop! `if` statements run the code in their code block once if their boolean condition is true. `while` loops repeat the code in their code block as long as their boolean condition remains true.
+Need to loop some code? Use a while loop! `if` statements run the code in their code block once if their boolean condition is true. `while` loops repeat the code in their code block as long as their boolean condition _remains_ true.
 
 Take a look at the following example. Imagine that the `pickACard` function returns a String with the name of the card taken from the top of the deck, such as "Two of Hearts" or "Nine of Clubs".
 
@@ -275,23 +275,22 @@ The multiplication symbol is the asterisk, NOT the letter `x`!
 let x = 5 * 8; // x -> 40
 ```
 
-## Math functions
+## Generate a random number
+
+```js
+// random(low, high) returns a random decimal number in the specified range
+let x = random(0, 1); // numbers ranging from 0 to 1
+let x2 = random(-4, 7); // numbers ranging from -4 to 7
+```
+
+## Math
 
 At this point you should also know about the global object [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math), which has many useful functions.
 
 ```js
-// Math.random() returns a random decimal number between 0 and 1 (not including 1)
-let x = Math.random(); // x could be .2364 or .928279 or 0.45398, it's random!
-
 let a = Math.round(30.1); // a -> 30
 let b = Math.round(30.7); // b -> 31
-// Math.round() rounds the number to the nearest integer
-
-let y = Math.floor(22.9); // y -> 22 (y gets assigned the value 22)
-// Math.floor() always rounds down
-
-let z = Math.ceil(15.3); // z -> 16
-// Math.ceil() always rounds up (ceil for ceiling)
+// Math.round() rounds a number to the nearest integer
 ```
 
 ## Computer History: Casio FX-720P
@@ -325,5 +324,6 @@ This level's computer was inspired by the Casio FX-720P, which could run program
   - [while loops](#while-loops)
 - [Level 00 D](#level-00-d)
   - [Mathematical operators 🔢](#mathematical-operators-)
-  - [Math functions](#math-functions)
+  - [Generate a random number](#generate-a-random-number)
+  - [Math](#math)
   - [Computer History: Casio FX-720P](#computer-history-casio-fx-720p)
