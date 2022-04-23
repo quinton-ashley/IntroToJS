@@ -12,7 +12,7 @@ Make four imposter targets using a `for` loop. HINT: Imposter targets should loo
 
 ## Instructions for PART B
 
-When the player clicks the target button, place another target and another four imposter targets in random positions on the screen. HINT: Use recursion to achieve this.
+When the player clicks the target button, place another target and another four imposter targets in random positions on the screen. HINT: Use a recursion callback to the button click function to achieve this.
 
 You will notice that using recursion generates a lot of targets quickly!
 

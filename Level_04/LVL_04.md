@@ -1,5 +1,7 @@
 # Level 04 A
 
+Do the GuessTheNumber challenge section before starting level 04!
+
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen3.jpg)
 
 ## slice String
@@ -9,7 +11,7 @@ let str = 'hello'.slice(1);
 log(str); // -> 'ello'
 ```
 
-`slice` returns a substring of the original string which starts at the index provided as the first input parameter.
+`slice` returns a part of the original string which starts at the index provided as the first input parameter.
 
 ## Create a Button
 
@@ -100,7 +102,7 @@ async function sayHello() {
 
 `async`/`await` and callbacks are the two main forms of asynchronous programming in JavaScript. `async`/`await` was added to JavaScript in 2017 so that asynchronous code could be written linearly, like synchronous code, one line after the other.
 
-Callbacks are non-linear, so they are good for handling events (like button clicks) that in some cases we wouldn't want our program to wait for. For example if you gave the user a choice between clicking a "Yes" or "No" button you wouldn't want the program to wait for them to click "Yes" because they might click "No". Different callback function need to be used to handle the user's response.
+Callbacks are non-linear, so they are good for handling events (like button clicks) that in some cases we wouldn't want our program to wait for. For example if you gave the user a choice between clicking a "Yes" or "No" button you wouldn't want the program to wait for them to click "Yes" because they might click "No". A seperate callback function is needed to handle each response.
 
 Now you might be wondering how await-ing the prompt function works, since the user can either enter text or click cancel?! In level 11 you'll learn how to make await-able `Promise` objects that resolve after an event or any number of different events.
 

@@ -11,10 +11,10 @@ const target = `
 // row value
 
 /* PART A: find the range of row and column values the target can be placed at */
-function makeTarget() {
+function makeTargets() {
 	let row = 1;
 	let col = 1;
 	button(target, row, col);
 }
 
-makeTarget();
+makeTargets();
