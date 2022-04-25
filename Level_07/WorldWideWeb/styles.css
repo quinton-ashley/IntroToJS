@@ -1,0 +1,73 @@
+html,
+body {
+	margin: 0;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: white;
+}
+
+nav div {
+	padding: 8px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+nav #homeLink {
+	font-size: 30px;
+}
+nav img {
+	width: 40px;
+}
+
+article {
+	padding: 8px;
+	padding-top: 40px;
+}
+
+.tinyImg {
+	max-width: 50px;
+	max-height: 50px;
+}
+
+.smallImg {
+	max-width: 90px;
+	max-height: 90px;
+}
+
+.mediumImg {
+	width: 150px;
+}
+
+.largeImg {
+	width: 180px;
+}
+
+.wrapLeft {
+	float: left;
+	padding-right: 5px;
+}
+
+.wrapRight {
+	float: right;
+	padding-left: 5px;
+}
+
+.extraPadTop {
+	padding-top: 20px;
+}
+
+#globe0 {
+	margin-top: -10px;
+}
+
+footer {
+	border: black dotted 0px;
+	border-top-width: 3px;
+	padding: 8px;
+}
