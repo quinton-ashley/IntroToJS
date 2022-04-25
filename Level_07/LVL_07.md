@@ -1,8 +1,6 @@
 # Level 07 A
 
-# Welcome to the World Wide Web!
-
-You're surfing the official electronic webpage of QuintOS.
+## Welcome to the World Wide Web!
 
 Before the existence of MySpace, Facebook, Instagram, YouTube, Reddit, TikTok, and templating sites like Wix and SquareSpace, the only way to have an online prescence was to make your own website. When HTML was created in 1993, making a website was simple and people didn't have high expectations regarding what a website should look like or what it should do. People were just excited to be on the net!
 
@@ -16,46 +14,45 @@ Web development is primarily done with three languages HTML, CSS, and Javascript
 
 ## HTML
 
-Unlike Javascript, [HTML is not a programming language](https://ischool.syr.edu/why-html-is-not-a-programming-language/) since on its own it doesn't do anything dynamic. HTML (HyperText Markup Language) forms the skeleton of the website. HTML code is made up of tags. There are tags for headings, paragraphs, images, lists, links, quotes, videos, navigation bars, and more.
-
-`<body>` for example is an opening tag for the start of the body element. Opening tags have the name of the element surrounded with greater than and less than symbols. Closing tags use a slash before the name of the element `</body>`, which represent the end of that element.
-
-The elements inside the opening and closing tags of an element are called child elements. The elements that the child elements are inside are called parent elements.
-
-The latest version of HTML is HTML5.
+HTML (HyperText Markup Language) forms the skeleton of the website. The latest version is HTML5. Unlike Javascript, [HTML is not a programming language](https://ischool.syr.edu/why-html-is-not-a-programming-language/) since on its own it doesn't do anything dynamic. HTML code is made up of tags. There are tags for headings, paragraphs, images, lists, links, videos, navigation bars, and more.
 
 ## CSS
 
 CSS (Cascading Style Sheet) is primarily used to style web pages and [it is widely considered to be a programming language](https://css-tricks.com/is-css-a-programming-language/) since it has functions, variables, and its own kind of `if/else` statements.
 
-```html
-<h1 class="red-text">This heading is red!</h1>
-<p class="green-text">This paragraph is green!</p>
-<p class="blue-text">This paragraph is blue!</p>
-<p class="green-text">This paragraph is also green!</p>
-```
-
-```css
-.red-text {
-	color: red;
-}
-
-.blue-text {
-	color: blue;
-}
-```
-
-Professional front end developers that have advanced knowledge of CSS3, the latest edition of CSS, have created many incredible showcases on [CODEPEN](https://codepen.io), [Behance](https://www.behance.net/), and [dribbble](https://dribbble.com/). Check these sites out if you are interested in web design!
+Professional front end developers have created incredible showcases of what is possible using CSS3, the latest edition of CSS. If you're interested in web design you can find inspiration on [CODEPEN](https://codepen.io), [Behance](https://www.behance.net/), and [dribbble](https://dribbble.com/).
 
 ## Aside
 
 Most courses that teach web development actually start by teaching HTML and CSS, since they are the primary languages for creating the visuals of most websites. Yet, I don't do that because HTML is not a programming language and neither is basic level CSS. I teach Javascript first to give you an understanding of what programming actually is!
 
+## How HTML tags work
+
+`<html>` is the opening tag for the start of the html file. Opening tags have the name of the element surrounded with greater than and less than symbols. Closing tags use a slash before the name of the element, like this `</html>`. They represent the end of that element. "Self-closing" tags, which can not contain text or html contents inside them, such as `<img>` tags (for images), do not have a closing tag.
+
+The elements inside the opening and closing tags of an element are called child elements. The element that a child element is inside is called the parent element, relative to the child.
+
 ## Common HTML tags
 
-As you can see on the top of the example page there is a navigational bar, created using the `nav` tag. Next there is a header created using the `h1` tag, it is the largest header.
+Learn more about common HTML tags by referencing this table I made:
+
+<https://quintos.org/reference.html?language=html>
 
 # Level 07 B
+
+## How CSS styling works
+
+Take a look at the MDN guide "What is CSS?":
+
+<https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS#css_syntax>
+
+## CSS Flexbox
+
+Here is an excellent guide from css-tricks.com on how to use flexbox:
+
+<https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
+
+# Level 07 C
 
 ## HTML form tag
 
@@ -70,11 +67,15 @@ let form = document.getElementById('signUpForm');
 ```
 
 - [Level 07 A](#level-07-a)
-- [Welcome to the World Wide Web!](#welcome-to-the-world-wide-web)
+  - [Welcome to the World Wide Web!](#welcome-to-the-world-wide-web)
   - [Web Development](#web-development)
   - [HTML](#html)
   - [CSS](#css)
   - [Aside](#aside)
+  - [How HTML tags work](#how-html-tags-work)
   - [Common HTML tags](#common-html-tags)
 - [Level 07 B](#level-07-b)
+  - [How CSS styling works](#how-css-styling-works)
+  - [CSS Flexbox](#css-flexbox)
+- [Level 07 C](#level-07-c)
   - [HTML form tag](#html-form-tag)
