@@ -13,16 +13,16 @@
 		if (choice == 0) {
 			/* PART A0: Start your story! */
 			msg =
-				"It's a dark October night. You're staying up late coding but suddenly you hear a knock at your door!\n\n\t" +
-				'1: Ask "Who is it?"\n\t' +
-				'2: Ignore it and keep coding\n\t' +
-				'3: Try to go to sleep';
+				'This is the start of the story. Type one of the numbers and press enter.\n\n\t' +
+				'1: your player could pick this choice\n\t' +
+				'2: or maybe this path\n\t' +
+				'3: or even this option';
 		} else if (choice == 1) {
 			/* PART A1: continue the story */
 			msg =
-				'Continue the story, each choice will lead to another path, you can reuse the same options though and have paths converge.\n\t' +
-				'4: another option\n\t' +
-				'5: another option';
+				'Continue the story, each choice could lead to a different path but you can also reuse choice numbers and have paths converge.\n\t' +
+				'4: another path\n\t' +
+				'5: an additional option';
 		}
 
 		// prompt the player to make choices

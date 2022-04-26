@@ -1,6 +1,6 @@
 # WorldWideWeb
 
-Fully modify the template files `index.html` and `styles.css` to make your own webpage. For this project you only need to create one webpage, not a whole website. Your webpage doesn't need to be a home page. You can make a news article, image gallery, shop, blog post, or social media feed. If you want an extra challenge you can try creating a very simple app, for example: a timer, a metronome, or temperature converter.
+Fully modify the template files `index.html` and `styles.css` to make your own webpage. For this project you only need to create one webpage, not a whole website. Your webpage doesn't need to be a home page. You can make a news article, image gallery, shop, blog post, or social media feed. If you want an extra challenge you can try creating a very simple app, for example: a timer, a metronome, temperature converter, or simple calculator.
 
 ## Instructions for PART A
 
