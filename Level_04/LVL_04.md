@@ -41,7 +41,7 @@ Note that the callback function is passed as a variable, it is not run using par
 
 ## Recursion
 
-In the past few lessons you've learned about `for` loops and `while` loops. Recursion is another way to loop code. It is simply a function that calls itself inside its own defintion.
+In the past few lessons you've learned about `for` loops and `while` loops. Recursion is another way to loop code. It is simply a function that calls itself inside its own definition.
 
 ```js
 function doRecursion() {
@@ -102,7 +102,7 @@ async function sayHello() {
 
 `async`/`await` and callbacks are the two main forms of asynchronous programming in JavaScript. `async`/`await` was added to JavaScript in 2017 so that asynchronous code could be written linearly, like synchronous code, one line after the other.
 
-Callbacks are non-linear, so they are good for handling events (like button clicks) that in some cases we wouldn't want our program to wait for. For example if you gave the user a choice between clicking a "Yes" or "No" button you wouldn't want the program to wait for them to click "Yes" because they might click "No". A seperate callback function is needed to handle each response.
+Callbacks are non-linear, so they are good for handling events (like button clicks) that in some cases we wouldn't want our program to wait for. For example if you gave the user a choice between clicking a "Yes" or "No" button you wouldn't want the program to wait for them to click "Yes" because they might click "No". A separate callback function is needed to handle each response.
 
 Now you might be wondering how await-ing the prompt function works, since the user can either enter text or click cancel?! In level 11 you'll learn how to make await-able `Promise` objects that resolve after an event or any number of different events.
 

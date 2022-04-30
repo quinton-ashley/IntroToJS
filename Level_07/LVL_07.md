@@ -46,9 +46,9 @@ Take a look at the MDN guide "What is CSS?":
 
 <https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS#css_syntax>
 
-## CSS Flexbox
+## CSS FlexBox
 
-Here is an excellent guide from css-tricks.com on how to use flexbox:
+Here is an excellent guide from css-tricks.com on how to use FlexBox:
 
 <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
 
@@ -76,6 +76,6 @@ let form = document.getElementById('signUpForm');
   - [Common HTML tags](#common-html-tags)
 - [Level 07 B](#level-07-b)
   - [How CSS styling works](#how-css-styling-works)
-  - [CSS Flexbox](#css-flexbox)
+  - [CSS FlexBox](#css-flexbox)
 - [Level 07 C](#level-07-c)
   - [HTML form tag](#html-form-tag)

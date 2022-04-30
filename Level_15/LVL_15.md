@@ -22,26 +22,18 @@ https://regex101.com/
 
 # Level 15 B
 
-## Using fetch
+## fetching JSON files
 
-`fetch` is a global function that can be used to load data from other files.
-
-```js
-let file = 'yourFileName.txt'; // file name
-let req = await fetch(file); // returns a request object
-let txt = await req.text(); // returns a String with the text from the file
-```
-
-Here's what the same code looks like in one line. Note that the parenthesis around await fetch are necessary to indicate that the fetch function should be done first.
+`fetch` can be load JavaScript objects from JSON files.
 
 ```js
-let txt = await (await fetch('yourFileName.txt')).text();
+let data = await (await fetch('data.json')).json();
 ```
 
-For JSON, use the `.json()` function on the request object.
+Note that the parenthesis around await fetch are necessary to indicate that the fetch function should be done first.
 
 - [Level 15 A](#level-15-a)
-  - [JSON](#json)
-  - [Regular Expressions (RegEx)](#regular-expressions-regex)
+	- [JSON](#json)
+	- [Regular Expressions (RegEx)](#regular-expressions-regex)
 - [Level 15 B](#level-15-b)
-  - [Using fetch](#using-fetch)
+	- [fetching JSON files](#fetching-json-files)

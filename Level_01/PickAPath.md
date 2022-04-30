@@ -14,7 +14,7 @@ Here are some ideas for the kind of PickAPath game you could make:
 
 - a mystery story in which the player investigates rooms in a building to find clues
 - an adventure story in which the player explores an area to collect items
-- a scary/horror story in which the player tries to escape from or defeat a villian
+- a scary/horror story in which the player tries to escape from or defeat a villain
 - a trivia game show
 - a dramatic dialogue between the player and an interesting character
 - a simple dialogue with a shop owner that allows the player to buy and sell items
@@ -29,7 +29,7 @@ Add some complexity to your game, try implementing one of these ideas:
 
 - a clue the player has to find before they can continue their investigation
 - an area that the player can't enter without a key
-- a weapon the player has to find before they have a chance at escaping from or defeating the villian
+- a weapon the player has to find before they have a chance at escaping from or defeating the villain
 - a bonus round the player only gets to play if they earned enough points
 - additional dialogue options that only become available after the character has told the player about something
 - an item or items that a shop owner will only let the player buy if they already purchased a certain item or items

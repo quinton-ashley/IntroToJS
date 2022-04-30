@@ -10,7 +10,7 @@ Create two paddle sprites and place them on opposite ends of the screen.
 
 Make the ball move to the right. HINT: Do this inside the draw function.
 
-You will notice that when the ball moves it leaves a trail of ball images behind it. That's because everything drawn to the p5.js canvas stays there, it doesn't become a blank slate everytime the draw function is used to make a new frame. To clear the screen draw a background using the background function with `0` as the input argument `background(0)` (0 is black 255 is white)
+You will notice that when the ball moves it leaves a trail of ball images behind it. That's because everything drawn to the p5.js canvas stays there, it doesn't become a blank slate every time the draw function is used to make a new frame. To clear the screen draw a background using the background function with `0` as the input argument `background(0)` (0 is black 255 is white)
 
 Now try moving the ball to the left. Then try moving the ball up and down, then in a diagonal. Get a sense of how changing the ball's x and y values will affect its trajectory.
 

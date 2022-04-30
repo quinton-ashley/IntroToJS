@@ -18,7 +18,7 @@ After player X takes their turn, player O should be able to place their `bigO` m
 
 ## Instructions for PART C
 
-If a player tries to place their 'x' or 'o' on a space that is not empty, do not let them overwrite that space. To acheive this, start by storing the position of the marks the players make in a two dimensional `board` array.
+If a player tries to place their 'x' or 'o' on a space that is not empty, do not let them overwrite that space. To achieve this, start by storing the position of the marks the players make in a two dimensional `board` array.
 
 When a player clicks a button the `takeTurn` function should check if the corresponding position in the board array is empty. Show the player an alert window that explains they can't put their mark there because the space is not empty. You may notice the alert is not placed in an ideal location haha.
 

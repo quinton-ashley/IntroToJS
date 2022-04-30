@@ -183,7 +183,7 @@ Greater than:             >
 Greater than or equal to: >=
 ```
 
-Boolean operations evaulate to either true or false. Use them in the boolean conditions (inside the parenthesis) of `if` and `else if` statements.
+Boolean operations evaluate to either true or false. Use them in the boolean conditions (inside the parenthesis) of `if` and `else if` statements.
 
 # Level 00 C
 

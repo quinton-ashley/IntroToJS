@@ -4,7 +4,7 @@
 
 Node.js is a Javascript runtime based on Chrome's V8 Javascript engine that lets you interact with your computer's file system, among other things that you can't do with Javascript inside a web browser due to the security risk these features pose.
 
-npm is the nodejs package manager, use it to download packages (versioned bundles of code) like p5.js. Javascript developers have posted 1.8 million Javascript packages on there!
+npm is the node.js package manager, use it to download packages (versioned bundles of code) like p5.js. Javascript developers have posted 1.8 million Javascript packages on there!
 
 ## Creating your own QuintOS project!
 
@@ -160,7 +160,7 @@ switch (QuintOS.language) {
 }
 ```
 
-The switch statement is overkill here, if/else is definitely preferrable.
+The switch statement is overkill here, if/else is definitely preferable.
 
 ## Getters
 

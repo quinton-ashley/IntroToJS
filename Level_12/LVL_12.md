@@ -16,7 +16,7 @@ Layer represents the depth of the Sprite in relation to the rest of the tiles in
 
 ## Sprite Sheets
 
-Sprite sheets are images which have a lot of smaller images in them. These could be images of character animations, items, or background enviroment tiles.
+Sprite sheets are images which have a lot of smaller images in them. These could be images of character animations, items, or background environment tiles.
 
 ```js
 tiles.spriteSheet = loadImage(img0);
@@ -34,7 +34,7 @@ This property can be used to store the sprite sheet image of Tile and Sprite obj
 tiles.loadImg('powerup0', { pos: [5, 3] });
 ```
 
-You can use `line` when specifying a row at column 0 in the spritesheet or use `pos` to specify a row and column position.
+You can use `line` when specifying a row at column 0 in the SpriteSheet or use `pos` to specify a row and column position.
 
 ## Creating Sprites with animations
 
@@ -81,7 +81,7 @@ await sprite.move(row, col, speed);
 
 ## Teleport a Sprite
 
-If you want to teleport a spirte in one frame to a new location without any animation simply change its `row` and `col` values.
+If you want to teleport a sprite in one frame to a new location without any animation simply change its `row` and `col` values.
 
 ```js
 sprite.row = 4;
@@ -129,7 +129,7 @@ spriteGroup.toArray();
 
 ## Promise.all
 
-Sometimes you will need to `await` multiple Promises at once. For example, to wait for mutliple sprites to move at the same time with the async `sprite.move` function.
+Sometimes you will need to `await` multiple Promises at once. For example, to wait for multiple sprites to move at the same time with the async `sprite.move` function.
 
 ```js
 let movements = [];

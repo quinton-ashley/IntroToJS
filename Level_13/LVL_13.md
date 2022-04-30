@@ -50,9 +50,9 @@ console.log(Object.keys(object1));
 // expected output: Array ["a", "b", "c"]
 ```
 
-## truthy or falsy?
+## truth-y or false-y?
 
-Any value that is not falsy is truthy. Variables are falsy if they are:
+Any value that is not false-y is truth-y. Variables are false-y if they are:
 
 ```js
 undefined;
@@ -61,7 +61,7 @@ null;
 (''); // an empty String
 ```
 
-In this example code the while loop will repeat until `username` is defined by the user (truthy).
+In this example code the while loop will repeat until `username` is defined by the user (truth-y).
 
 ```js
 let username;
@@ -79,4 +79,4 @@ await alert('Hello ' + username + '!');
 
 Remember that the prompt function will return a String with the text the user entered or `null` if the user cancelled out of the prompt.
 
-If `username` is set to any String of text it will be considered truthy. If `username` is undefined, `null`, or an empty String it will be considered falsy.
+If `username` is set to any String of text it will be considered truth-y. If `username` is undefined, `null`, or an empty String it will be considered false-y.

@@ -65,11 +65,11 @@ Here's the limited color palette you can use for this game. They are the same co
 |    'y'     |   Yellow 🟨    |
 |    'w'     |    White ⬜    |
 
-## Make Strings with Backticks
+## Make Strings with Back-ticks
 
-Backticks can also be used to create Strings. Backticks look like a backwards apostrophe. They can be found on your keyboard on a special key next to the number 1. The backtick key also has a squiggly line `~` called a tilda on it.
+Back-ticks can also be used to create Strings. Back-ticks look like a backwards apostrophe. They can be found on your keyboard on a special key next to the number 1. The back-tick key also has a squiggly line `~` called a tilde on it.
 
-When backticks are used to create Strings, the text inside the backticks can go on multiple lines of code and retain these newlines without the use of the newline `\n` character.
+When back-ticks are used to create Strings, the text inside the back-ticks can go on multiple lines of code and retain these newlines without the use of the newline `\n` character.
 
 ```js
 let str = `
@@ -111,7 +111,7 @@ By default each character in the string will be one pixel in the resulting sprit
 let face = spriteArt(str, 2);
 ```
 
-The second input parameter to the `spriteArt` function is an optional scale value. Input parameters are seperated by commas.
+The second input parameter to the `spriteArt` function is an optional scale value. Input parameters are separated by commas.
 
 ## String.repeat(amount)
 
@@ -144,7 +144,7 @@ console.log(x); // x -> 7
 
 ## colorPal
 
-The `colorPal` function retreives the color associated with the given letter from the retro computer's color palette. Here's some example code for making a red background:
+The `colorPal` function retrieves the color associated with the given letter from the retro computer's color palette. Here's some example code for making a red background:
 
 ```js
 background(colorPal('r'));
@@ -239,7 +239,7 @@ function draw() {
 
 Excerpt from the last paragraph of Chapter 1 of "ZX81 BASIC PROGRAMMING" by Stephen Vickers:
 
-"Whatever else you do, keep using the computer. If you have a question 'What does it do if I tell it such & such?' then the answer is easy:type it in & see. Whenever the manual tells you to type something in, always ask yourself, 'What could I type instead?' & try out your replies. The more of your own stuff you write, the better you will understand the ZX81. (This is called unprogrammed learning.) Regardless of what you type in, you cannot damage the computer."
+"Whatever else you do, keep using the computer. If you have a question 'What does it do if I tell it such & such?' then the answer is easy:type it in & see. Whenever the manual tells you to type something in, always ask yourself, 'What could I type instead?' & try out your replies. The more of your own stuff you write, the better you will understand the ZX81. (This is called un-programmed learning.) Regardless of what you type in, you cannot damage the computer."
 
 This level's computer is based on the ZX Spectrum, an 8-bit personal home computer developed by Sinclair Research. It was first released in the United Kingdom on the 23rd of April 1982 and went on to become Britain's best-selling microcomputer. Watch some of this video to hear what it was like for people to use the ZX Spectrum back then!
 
@@ -251,7 +251,7 @@ https://youtu.be/nRlmTiynbd8?t=242
   - [p5.js Basics](#p5js-basics)
   - [p5.play Sprites](#p5play-sprites)
   - [spriteArt](#spriteart)
-  - [Make Strings with Backticks](#make-strings-with-backticks)
+  - [Make Strings with Back-ticks](#make-strings-with-back-ticks)
   - [p5.js global variables](#p5js-global-variables)
 - [Level 02 B](#level-02-b)
 - [Getting a Sprite's width and height](#getting-a-sprites-width-and-height)

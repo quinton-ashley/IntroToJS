@@ -17,7 +17,7 @@ b = 2; // ERROR! b is a constant
 
 Unlike variables created using `let`, variables created with `const` are constants. When they are assigned a value they can not be assigned another.
 
-## String.split(seperator)
+## String.split(separator)
 
 Strings have a lot of useful functions we can use. MDN, the Mozilla Developer Network, is a really great resource for learning JS. Documentation for the String class can be found here:
 
@@ -69,7 +69,7 @@ You can also split a String into individual characters using the `split` functio
 
 ## array.join(separator)
 
-The Array `join` function creates a String by joining each element in the array together, inserting an optional seperator String between each item.
+The Array `join` function creates a String by joining each element in the array together, inserting an optional separator String between each item.
 
 ```js
 let names = ['Amy', 'Ellie', 'Max'];
@@ -138,7 +138,7 @@ for (let i = 0; i < names.length; i++) {
 }
 ```
 
-When the for loop starts `i` is set to 0, then is check the condtion. If the condition is true the for loop runs for the first time, this is called an iteration. When the for loop ends, the incrementor section of the for loop is run, in this case `i++` which increases the value of `i` by 1. The condition is checked again, if true the for loop will repeat again, doing another iteration. Until the condition is false the for loop will continue to repeat.
+When the for loop starts `i` is set to 0, then is check the condition. If the condition is true the for loop runs for the first time, this is called an iteration. When the for loop ends, the incrementation section of the for loop is run, in this case `i++` which increases the value of `i` by 1. The condition is checked again, if true the for loop will repeat again, doing another iteration. Until the condition is false the for loop will continue to repeat.
 
 # Level 03 E
 
@@ -185,7 +185,7 @@ https://www.youtube.com/watch?v=CxJwy8NsXFs
 - [Level 03 A](#level-03-a)
 	- [Coding Philosophy: Naming variables](#coding-philosophy-naming-variables)
 	- [const](#const)
-	- [String.split(seperator)](#stringsplitseperator)
+	- [String.split(separator)](#stringsplitseparator)
 	- [Accessing items in an Array](#accessing-items-in-an-array)
 - [Level 02 B](#level-02-b)
 	- [Getting the length of a String](#getting-the-length-of-a-string)
