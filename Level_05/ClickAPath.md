@@ -1,6 +1,6 @@
 # ClickAPath
 
-Improve your PickAPath game by using illustrated buttons in addition to the prompt!
+Upgrade your PickAPath game by using illustrated buttons in addition to the prompt!
 
 ## Setup
 
@@ -8,16 +8,18 @@ In your `GAMES` directory make a new folder `ClickAPath` and new file `clickAPat
 
 ## Instructions for PART A
 
+For the "ClickAPath" upgrade to your "PickAPath" game you will make at least the first "page" of the story illustrated and interactive using mouse clicks.
+
+Before finding the ASCII art you want to use, convert the first page of your program so that it uses buttons instead of using `prompt` to ask the user to make choices. Make a button for each option. Use the `text` function to show the story message/dialogue. HINT: Be careful! Remember that buttons do not wait for the user to click on them like `prompt` waits for the user's response. You will have to restructure your program to make use of button click callbacks instead of the while loop.
+
+The other "pages" of the story should still use the prompt.
+
+## Instructions for PART B
+
 Search the internet for "ASCII art" (text based art) to illustrate your story!
 
-Make at least the first "page" of the story illustrated and interactive using the mouse cursor. Instead of using `prompt` to ask the user to make choices, use `text`. Instead of getting player's choices via the String returned from `prompt`, the player will click a button to choose the path they want to take.
+Save the ASCII art you find in separate text files inside the ClickAPath folder.
 
-To use the text based art in your code you will store the text art as Strings. Use a backtick character (the key to the left of the number 1 key on your keyboard) to store the art. Note that if the art includes a backtick character it must be "escaped" using a backslash in front of it. "escaped" in this context means that the backtick will not be interpreted as the end of the String if their is a backslash in front of it. Because backslash is a special character also used for newlines `\n` and tabs `\t`, if you want to include an actual backslash in your text art String you must escape it as well with a backslash. This means to have one backslash show up in your text art you have to use two. You saw an example of this in the hangman text art.
+Load the text from those files into your JavaScript program using the `fetch` function.
 
-Copy the text art from a website and put it into a new file called `art.txt` in your `ClickAPath` folder. `.txt` is the file extension used for plain text files. Use ctrl+f (command+f on macOS) to find backslashes in your text art. Enter a backslash in the find input then click find. Enter two backslashes in the replace input, then click replace all. This will replace all of the single slashes with two backslashes! Do the same for backticks, replace with backslash backtick.
-
-# Instructions for PART B
-
-Instead of using a while loop to go to the next path or page, use recursion! Create a function called `nextPage` that you can use to go to the next page of the story by clicking the illustrated buttons.
-
-The other "pages" of the story should still use the prompt, but if you'd like to make them all illustrated, then go for it! If not move on to the next level.
+Display all the ASCII art by adding it to the text of your buttons for the options. You can also display art using the `text` function.

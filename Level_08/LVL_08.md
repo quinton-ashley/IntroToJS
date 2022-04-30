@@ -1,14 +1,8 @@
 # Level 08 A
 
-## fetch a text file
+## Coding Philosophy: How to approach complex problems
 
-```js
-let filePath = QuintOS.dir + '/file.txt';
-let data = await fetch(filePath);
-let txt = await data.text();
-```
-
-`QuintOS.dir` represents the file path to your game directory. `fetch` loads file data asynchronously, returns a `Response` object. If the response contains text then it can be converted to a string using the asynchronous `.text()` function.
+Solve complex problems by thinking algorithmically! That means breaking problems down step by step. "A journey of a thousand miles begins with a single step". If you get stuck on a problem you may be overcomplicating it. Keep things as simple as possible at first and test often after adding new code! Doing this will help prevent you from getting stuck.
 
 # Level 08 B
 
