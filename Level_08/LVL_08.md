@@ -1,8 +1,8 @@
 # Level 08 A
 
-## Coding Philosophy: How to approach complex problems
+## Coding Philosophy: Debugging
 
-Solve complex problems by thinking algorithmically! That means breaking problems down step by step. "A journey of a thousand miles begins with a single step". If you get stuck on a problem you may be overcomplicating it. Keep things as simple as possible at first and test often after adding new code! Doing this will help prevent you from getting stuck.
+If you have problems with your code try using the `console.log` function (with QuintOS you can use `log` as a shortcut). Log the value of variables so you can see in the JavaScript console how your code is actually working.
 
 # Level 08 B
 
@@ -90,14 +90,16 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 # Level 08 D
 
-## Add/Remove from the middle of an Array
+## Add/Remove from any index in an Array
 
 The `push` function is used to add an item to the end of an array and `pop` is used to remove an item from the end.
 
-The [`splice` function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) is used to add/remove items from the middle of an Array.
+The [`splice` function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) is used to add/remove items from any index in an Array.
 
 ```js
-arr.splice(start, deleteCount, item);
+let removedItems = arr.splice(start, deleteCount, item);
 ```
 
 It's important to note that this function actually changes the array!
+
+This function returns the removed item(s).
