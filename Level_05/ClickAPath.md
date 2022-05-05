@@ -23,3 +23,5 @@ Save the ASCII art you find in separate text files inside the ClickAPath folder.
 Load the text from those files into your JavaScript program using the `fetch` function.
 
 Display all the ASCII art by adding it to the text of your buttons for the options. You can also display art using the `text` function.
+
+If you'd like you can make some choices strings instead of just numbers.

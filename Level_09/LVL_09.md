@@ -49,7 +49,7 @@ if (robot) {
 
 ## Check if a variable is undefined
 
-To check if a variable is undefined (false-y), put a negation operator `!` in front of the variable name in the boolean condition. Variables are considered undefined if they were not assigned a value.
+To check if a variable is undefined (falsy), put a negation operator `!` in front of the variable name in the boolean condition. Variables are considered undefined if they were not assigned a value.
 
 ```js
 let robot;

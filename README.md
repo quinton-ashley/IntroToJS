@@ -32,22 +32,24 @@ Join the [QuintOS Discord server](https://discord.gg/5pcyKWRwSB) to chat with ot
 
 ## Games List
 
-GuessTheNumber : a random number is generated, player tries to guess it  
-PickAPath : a "Choose Your Own Adventure" type game  
-Pong : the classic tennis arcade game  
-Hangman : a random word from a word list is picked, player tries to guess it  
-QuickClicks : tests player's mouse movement speed with a mouse  
-ClickAPath : illustrated "remaster" of PickAPath  
-TicTacToe : play Tic Tac Toe against a friend or an AI  
-WorldWideWeb : create a web page using HTML and CSS  
-WheelOfFortune : a mini-game from the "Wheel of Fortune" TV show  
-SpeakAndSpell : the classic 80s educational talking toy  
-Contain : 4 paddle variant of Pong for 1-4 players  
-SketchBook : a drawing program for creating pixel art images  
-Snake : move fast to collect food pellets but don't hit your tail!  
-SuperJump : an endless vertical platform jumping game  
-Sokoban : a Japanese puzzle game, move boxes into the correct positions  
-CosmicDebris : navigate two spaceships through dangerous cosmic debris fields
+**GuessTheNumber** : players try to guess a random number between 1 to 100
+**PickAPath** : a text-based "Choose Your Own Adventure" RPG game  
+**Pong** : the classic tennis arcade game  
+**Hangman** : players try to guess a word letter by letter  
+**QuickClicks** : players click targets as fast as possible while avoiding imposter targets  
+**ClickAPath** : illustrated upgrade to PickAPath  
+**TicTacToe** : two player Tic Tac Toe  
+**WorldWideWeb** : create a retro web page using modern HTML, CSS, and JS  
+**WheelOfFortune** : a mini-game from the "Wheel of Fortune" TV show  
+**Wordle** : the popular NYT word puzzle  
+**SpeakAndSpell** : a classic 80s educational talking toy  
+**Contain** : 4 paddle variant of Pong for 1-4 players  
+**TicTacAIO** : play TicTacToe against an AI  
+**SketchBook** : a drawing program for creating pixel art images  
+**Snake** : players try to control a snake that grows when it eats  
+**SuperJump** : an endless vertical platform jumping game (based on DoodleJump)  
+**Sokoban** : a Japanese puzzle game, boxes must be moved to particular locations in a room  
+**CosmicDebris** : navigate two spaceships through dangerous cosmic debris fields
 
 ## Credits
 
