@@ -32,7 +32,7 @@ Join the [QuintOS Discord server](https://discord.gg/5pcyKWRwSB) to chat with ot
 
 ## Games List
 
-**GuessTheNumber** : players try to guess a random number between 1 to 100
+**GuessTheNumber** : players try to guess a random number between 1 to 100  
 **PickAPath** : a text-based "Choose Your Own Adventure" RPG game  
 **Pong** : the classic tennis arcade game  
 **Hangman** : players try to guess a word letter by letter  
