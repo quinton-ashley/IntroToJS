@@ -36,7 +36,7 @@ Implement key controls to enable two players to play your Pong game. Don't let p
 
 Display both player's scores. HINT: Use the `text` function
 
-When the ball is served from the center of the screen, make it move away from the player that lost the ball, just like in tennis. Also there should be a 50% chance that the ball moves diagonally up or down. The y velocity of the ball should be either 1 or -1.
+When the ball is served from the center of the screen, make it move away from the player that lost the ball, just like in tennis. Also there should be a 50% chance that the ball moves up or down. The y velocity of the ball shouldn't be able to be zero or close to zero. Why not? That would make the game really boring if the ball moved straight left and right!
 
 Make the ball speed up a little bit each time it hits the walls. Have the ball's speed get reset each time it goes off screen.
 

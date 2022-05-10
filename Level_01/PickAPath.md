@@ -46,6 +46,6 @@ Reject invalid choices by the user, don't let them skip ahead!
 
 Make an `options` array and in each decision branch assign it to the valid options for that choice.
 
-Check if the number the user inputs is included in the `options` array of valid options. If it is change the `choice` variable to the user's input. Otherwise alert the user they've made an incorrect choice and keep the `choice` variable the same and prompt them to make a decision again.
+If the number the user entered, their input, is a valid option change the `choice` variable to the user's input. Otherwise alert the user they've made an incorrect choice.
 
 At the end of the game, on paths where the player has no choices to make, give them the option to play again or exit the game.

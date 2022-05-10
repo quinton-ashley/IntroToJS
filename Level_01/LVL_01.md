@@ -228,24 +228,11 @@ x y z
 
 ## Arrays
 
-[Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) are lists of variables with numbered indexes.
+[Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) are lists of variables.
 
 ```js
 let names = ['Amy', 'Ellie', 'Max'];
 let nums = [50, 21, 46, 83];
-```
-
-## array.includes(item)
-
-One useful function you can use on Arrays is `includes`, it checks if the input "Ellie" is included in the array.
-
-```js
-if (names.includes('Ellie')) {
-	// is true
-}
-if (names.includes('James')) {
-	// is false
-}
 ```
 
 ## Array length
@@ -257,6 +244,34 @@ console.log('The names array has ' + names.length + ' names');
 ```
 
 This example code would print "The names array has 3 names" to the console.
+
+## array.includes(item)
+
+One useful function you can use on Arrays is `includes`, it checks if an item is included in the array.
+
+```js
+// Ellie is included in the array of names...
+if (names.includes('Ellie') == true) {
+	// ... so this is true
+}
+
+// James is not included in the array of names...
+if (names.includes('James') == true) {
+	// ...so this is false
+}
+```
+
+## Redefining an Array
+
+Arrays can be redefined by changing their value after they are created just like with other variables.
+
+```js
+// create the array using let
+let luckyNumbers = [4, 8, 24];
+
+// replace the lucky numbers with a different set of numbers
+luckyNumbers = [6, 10, 32];
+```
 
 ## Computer History: Commodore PET
 
@@ -285,6 +300,7 @@ PETSCII character set: <https://style64.org/petscii/>
   - [Compound Operations](#compound-operations)
 - [Level 01 C](#level-01-c)
   - [Arrays](#arrays)
-  - [array.includes(item)](#arrayincludesitem)
   - [Array length](#array-length)
+  - [array.includes(item)](#arrayincludesitem)
+  - [Redefining an Array](#redefining-an-array)
   - [Computer History: Commodore PET](#computer-history-commodore-pet)

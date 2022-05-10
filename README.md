@@ -32,39 +32,38 @@ Join the [QuintOS Discord server](https://discord.gg/5pcyKWRwSB) to chat with ot
 
 ## Games List
 
-**GuessTheNumber** : players try to guess a random number between 1 to 100  
-**PickAPath** : a text-based "Choose Your Own Adventure" RPG game  
-**Pong** : the classic tennis arcade game  
-**Hangman** : players try to guess a word letter by letter  
-**QuickClicks** : players click targets as fast as possible while avoiding imposter targets  
-**ClickAPath** : illustrated upgrade to PickAPath  
-**TicTacToe** : two player Tic Tac Toe  
-**WorldWideWeb** : create a retro web page using modern HTML, CSS, and JS  
-**WheelOfFortune** : a mini-game from the "Wheel of Fortune" TV show  
-**Wordle** : the popular NYT word puzzle  
-**SpeakAndSpell** : a classic 80s educational talking toy  
-**Contain** : 4 paddle variant of Pong for 1-4 players  
-**TicTacAIO** : play TicTacToe against an AI  
-**SketchBook** : a drawing program for creating pixel art images  
-**Snake** : players try to control a snake that grows when it eats  
-**SuperJump** : an endless vertical platform jumping game (based on DoodleJump)  
-**Sokoban** : a Japanese puzzle game, boxes must be moved to particular locations in a room  
+**GuessTheNumber** : players try to guess a random number between 1 to 100
+
+**PickAPath** : a text-based "Choose Your Own Adventure" RPG game
+
+**Pong** : the classic tennis arcade game
+
+**Hangman** : players try to guess a word letter by letter
+
+**QuickClicks** : players click targets as fast as possible while avoiding imposter targets
+
+**ClickAPath** : illustrated upgrade to PickAPath
+
+**TicTacToe** : two player Tic Tac Toe
+
+**WorldWideWeb** : create a retro web page using modern HTML, CSS, and JS
+
+**WheelOfFortune** : a mini-game from the "Wheel of Fortune" TV show
+
+**Wordle** : the popular NYT word puzzle
+
+**SpeakAndSpell** : a classic 80s educational talking toy
+
+**Contain** : 4 paddle variant of Pong for 1-4 players
+
+**TicTacAIO** : play TicTacToe against an AI
+
+**SketchBook** : a drawing program for creating pixel art images
+
+**Snake** : players try to control a snake that grows when it eats
+
+**SuperJump** : an endless vertical platform jumping game (based on DoodleJump)
+
+**Sokoban** : a Japanese puzzle game, boxes must be moved to particular locations in a room
+
 **CosmicDebris** : navigate two spaceships through dangerous cosmic debris fields
-
-## Credits
-
-### Fonts
-
-Apple2 https://www.kreativekorp.com/software/fonts/apple2.shtml  
-C64 Pro Mono https://style64.org/petscii/  
-casio_fx_9860gii https://www.dafont.com/casio-fx-9860gii.font  
-Digital7 https://www.dafont.com/digital-7.font?text=digital7
-
-### Codepens
-
-Calculator https://codepen.io/wiljav/pen/zYrBYKb  
-Terminal https://codepen.io/rocknrollinc/pen/MwLMZG  
-CSS Old Computer https://codepen.io/rocknrollinc/pen/MwLMZG  
-MS-DOS Defrag https://codepen.io/manz/pen/MdErww  
-MS-DOS Scandisk https://codepen.io/manz/pen/KLPEby  
-90s Web https://codepen.io/bgbraithwaite/pen/vzPrRY
