@@ -2,7 +2,7 @@
 
 Based on the classic children's toy from the 1980s, the electronic [Speak and Spell](<https://en.wikipedia.org/wiki/Speak_%26_Spell_(toy)>) by Texas Instruments.
 
-## Instructions for PART A
+## Instructions for Part A
 
 Copy the `SpeakAndSpell` folder into your `quintos-games` project `GAMES` folder. This folder contains all the sounds you'll need and two template files.
 
@@ -10,7 +10,7 @@ You may be too young to remember this but websites used to be able to play unwan
 
 First work on the preload file that will load all the sound files before `speakAndSpell.js` is started. Load all the letter sounds into an object called `letterSounds`. HINT: the letters should be the keys and the sounds should be the values in the `letterSounds` object. HINT: put the alphabet in a String and use the `split` function to get an array of all the letters in the alphabet. Also try using a "for of" loop.
 
-## Instructions for PART B
+## Instructions for Part B
 
 Make the Speak and Spell say any letter you type in the input using the `onChange` callback function.
 
@@ -20,7 +20,7 @@ Let the player spell out the word, when they press enter your program should che
 
 If the player spelled the word incorrectly then have the Speak and Spell tell them how to correctly spell the word. Have it spell out the word letter by letter. Here is an example of what it should say: "that is incorrect the correct spelling of worth is w o r t h". HINT: This part is tricky because you can't use a for loop cause the program must wait till each letter sound ends before playing the next letter, you must use a recursion loop.
 
-## Instructions for PART C
+## Instructions for Part C
 
 Change your program to use the "promisified" play function to play sounds using async/await instead of callback chaining. Use a for loop instead of recursion to easily spell out the word.
 

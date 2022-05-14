@@ -113,11 +113,28 @@ Note that many of the control characters in ASCII were used for sending telegrap
 
 ## Unicode
 
-Today all modern computers share a new encoding standard called Unicode, which still includes all the ASCII symbols in the beginning but has also standardized its extension to include hundreds of thousands of additional symbols encompassing practically all forms of written communication in every language. There are also tons of niche mathematical and engineering symbols, icons, and every emoji!
+While ASCII successfully standardized the encoding of letters in the English alphabet, as people all over the world began to use computers a new standard was needed for encoding symbols from every written language.
 
-Take a look at the unicode table:
+Today all modern computers share a new encoding standard for text based communications called Unicode. Unicode still includes all the ASCII symbols in the beginning but has also standardized its extension to include hundreds of thousands of additional symbols. It includes tons of mathematical symbols, icons, and every emoji!
 
-https://unicode-table.com/en/
+If you'd like to learn more about Unicode watch this video:
+
+https://youtu.be/-n2nlPHEMG8
+
+## String charCodeAt and fromCharCode
+
+Gets the numerical value of a character.
+
+```js
+let number = 'a'.charCodeAt(0) + 1; // -> 97 + 1
+let letter = String.fromCharCode(number);
+console.log(letter); // -> b
+```
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode
+
+# Level 05 B
 
 ## ASCII art
 
@@ -250,8 +267,6 @@ _____/\     _   /       | otter
 https://asciiart.website/index.php?art=books/harry%20potter
 ```
 
-# Level 05 B
-
 ## fetch a text file
 
 ```js
@@ -261,195 +276,3 @@ let txt = await data.text();
 ```
 
 `QuintOS.dir` represents the file path to your game directory. `fetch` loads file data asynchronously, returns a `Response` object. If the response contains text then it can be converted to a string using the `.text()` function.
-
-# Level 05 C (BONUS)
-
-It is not necessary for you to read this bonus section but if you are curious about why storing ASCII art inside a JS file could be tricky, then read this section.
-
-## Storing ASCII art in a JavaScript file
-
-Storing ASCII art in a String inside a JS file can be tricky if the art contains backslash or back-tick characters.
-
-Since back-ticks allow Strings to have multiple lines, it is best to use them when storing ASCII art in a JavaScript file. Reminder that the back-tick is the key to the left of the number 1 key on your keyboard.
-
-Take a look at the following ASCII art of a knight riding a horse.
-
-```txt
-  |
-  |
-  + \
-  \\.G_.*=.
-   `( '/.\|
-    .>' (_--.
- _=/d   ,^\
-~~ \)-'   '
-   / |
-  '  '
-```
-
-This ASCII art contains a back-tick character. This is a problem because JavaScript interprets the back-tick as the end of the String.
-
-```js
-let knight = `
-  |
-  |
-  + \
-  \\.G_.*=.
-   `( '/.\|
-    .>' (_--.
- _=/d   ,^\
-~~ \)-'   '
-   / |
-  '  '
-`;
-```
-
-Note that if the art includes a back-tick character it must be "escaped" using a backslash in front of it. "escaped" in this context means that the back-tick will not be interpreted as the end of the String if there is a backslash in front of it.
-
-Because backslash is a special character also used for newlines `\n` and tabs `\t`, if you want to include an actual backslash in your text art String you must escape it as well with a backslash. This means to have one backslash show up in your text art you have to use two. You saw an example of this in the hangman text art.
-
-## Using Find/Replace
-
-Any backslashes in a piece of ASCII art must be replaced with two backslashes. Then all back-ticks must be replaced with a backslashed back-tick.
-
-| find |     | replace |
-| ---- | --- | ------- |
-| \    | ->  | \\      |
-| `    | ->  | \`      |
-
-Finding and replacing these characters manually could be confusing. Luckily, you can use command+f on macOS or ctrl+f on Windows/Linux to open the find panel in Visual Studio Code. Click the arrow on the left to expand the panel to show the replace input. There is a button for replacing one instance of the found string and another for replacing all!
-
-Here's an ASCII art rocket:
-
-```txt
-                     /\
-                    /''\
-                   /    \
-                  /      \
-                 /        \
-                /          \
-               '------------'
-                |__________|
-                /----/\----\
-               /|    ||    |\
-              //|____||____|\\
-             //  |   ||   |  \\
-            / |  |___||___|  | \
-            | |   '._||_.'   | |
-            | |    |_||_|    | |
-            | |  .'  ||  '.  | |
-            | | /    ||    \ | |
-            | ||     ||     || |
-            | ||     ||     || |
-            | | \    ||    / | |
-            | |  '. _||_ .'  | |
-            | | _    ||    _ | |
-            | |/ \_.'||'._/ \| |
-            | |\_/ '.||.' \_/| |
-            | |     _||_     | |
-           /| |  .'  ||  '.  | |\
-          / '.| /    ||    \ |.' \
-         /   |||     ||     |||   \
-        /    |||     ||     |||    \
-       /     || \    ||    / ||     \
-      /____/\||__'. _||_ .'__||/\____\
-             |_.--^--||--^--._|
-            / .'/_'''||'''_\'. \
-           / /   /___||___\   \ \
-          / /     /__||__\     \ \
-         / /         ||         \ \
-        /.'          ||          '.\
-       //            ||            \\
-    __//_          __||__          _\\__
-   '====='        '======'    LGB '====='
-```
-
-All the backslashes must be replaced by two backslashes. There are no back-ticks in this art to replace.
-
-```js
-let rocket = `
-                     /\\
-                    /''\\
-                   /    \\
-                  /      \\
-                 /        \\
-                /          \\
-               '------------'
-                |__________|
-                /----/\\----\\
-               /|    ||    |\\
-              //|____||____|\\\\
-             //  |   ||   |  \\\\
-            / |  |___||___|  | \\
-            | |   '._||_.'   | |
-            | |    |_||_|    | |
-            | |  .'  ||  '.  | |
-            | | /    ||    \\ | |
-            | ||     ||     || |
-            | ||     ||     || |
-            | | \\    ||    / | |
-            | |  '. _||_ .'  | |
-            | | _    ||    _ | |
-            | |/ \\_.'||'._/ \\| |
-            | |\\_/ '.||.' \\_/| |
-            | |     _||_     | |
-           /| |  .'  ||  '.  | |\\
-          / '.| /    ||    \\ |.' \\
-         /   |||     ||     |||   \\
-        /    |||     ||     |||    \\
-       /     || \\    ||    / ||     \\
-      /____/\\||__'. _||_ .'__||/\\____\\
-             |_.--^--||--^--._|
-            / .'/_'''||'''_\\'. \\
-           / /   /___||___\\   \\ \\
-          / /     /__||__\\     \\ \\
-         / /         ||         \\ \\
-        /.'          ||          '.\\
-       //            ||            \\\\
-    __//_          __||__          _\\\\__
-   '====='        '======'    LGB '====='
-`;
-```
-
-Here is what the `knight` String should contain after it is edited:
-
-```js
-let knight = `
-  |
-  |
-  + \\
-  \\\\.G_.*=.
-   \`( '/.\\|
-    .>' (_--.
- _=/d   ,^\\
-~~ \\)-'   '
-   / |
-  '  ' 
-`;
-```
-
-The backslashes are escaped by a backslash and back-ticks are escaped by a backslash as well. This makes the art look like a mess but when it's displayed it will look the same as the unedited knight ASCII art.
-
-```txt
-  |
-  |
-  + \
-  \\.G_.*=.
-   `( '/.\|
-    .>' (_--.
- _=/d   ,^\
-~~ \)-'   '
-   / |
-  '  '
-```
-
-## Control Characters and Escape Sequences
-
-| char | description |
-| ---- | ----------- |
-| \n   | newline     |
-| \t   | tab         |
-| \'   | apostrophe  |
-| \"   | quote       |
-| \`   | back-tick   |
-| \\   | backslash   |

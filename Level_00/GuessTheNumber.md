@@ -20,7 +20,7 @@ Open this pen and press "Fork" in the bottom left menu bar:
 
 https://codepen.io/qashto/pen/porNBjX?editors=0010
 
-## Instructions for PART A
+## Instructions for Part A
 
 Since you're just starting to write this program, don't make the number random yet so you can test it out more easily. Create a varible called `num` using `let` and choose the number yourself.
 
@@ -28,17 +28,17 @@ Tell the player to guess a number using `await prompt()` put your message (Strin
 
 [Now you can click here to move onto Level 00 B](https://github.com/quinton-ashley/IntroToJS#level-00-b).
 
-## Instructions for PART B
+## Instructions for Part B
 
 _Read Level 00 B in the `LVL_00.md` file before doing this section_
 
 After each guess, the player should be told whether their guess was too high, too low, or if they guessed the number correctly! Use the `alert` function inside the code blocks `{}` of `if` and `else if` statements!
 
-## Instructions for PART C
+## Instructions for Part C
 
 Make the game loop by using a while loop! Think about what condition must remain true for the player to keep playing the game.
 
-## Instructions for PART D
+## Instructions for Part D
 
 Use the `random` function to enable your computer pick a random number between 1 and 100 for the player to guess. Use the `Math.round` function to round the random number to the nearest whole number. To test your code, try using an `alert` to display the number your computer picks. When you are sure it is working, remove the `alert`.
 

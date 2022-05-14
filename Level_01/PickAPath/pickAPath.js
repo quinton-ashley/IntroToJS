@@ -11,14 +11,14 @@
 		let msg = ''; // initialize message to empty String
 
 		if (choice == 0) {
-			/* PART A0: Start your story! */
+			/* Part A0: Start your story! */
 			msg =
 				'This is the start of the story. Type one of the numbers and press enter.\n\n\t' +
 				'1: your player could pick this choice\n\t' +
 				'2: or maybe this path\n\t' +
 				'3: or even this option';
 		} else if (choice == 1) {
-			/* PART A1: continue the story */
+			/* Part A1: continue the story */
 			msg =
 				'Continue the story, each choice could lead to a different path but you can also reuse choice numbers and have paths converge.\n\t' +
 				'4: another path\n\t' +
@@ -28,9 +28,9 @@
 		// prompt the player to make choices
 		choice = await prompt(msg);
 
-		/* PART B0: end the game if there are no more choices to make */
+		/* Part B0: end the game if there are no more choices to make */
 
-		/* PART B1: check if the player made a valid choice, reject invalid choices */
+		/* Part B1: check if the player made a valid choice, reject invalid choices */
 	}
 
 	exit(); // exits the game

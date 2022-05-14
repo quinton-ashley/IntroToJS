@@ -4,13 +4,13 @@ Wordle is a combination of Mastermind and Hangman in which you must guess a word
 
 https://www.nytimes.com/games/wordle/index.html
 
-## Instructions for PART A
+## Instructions for Part A
 
 Split the list of common five letter words from the `words5.txt` file into an array of `words`. Take a look at the file, it has one word per line. HINT: Review your Hangman code. Remember the String `split` function.
 
 Split the list of all five letter words from the `dictionary5.txt` file into an array, call it `dictionary`. Note this will be a bit more challenging since the file has multiple words per line. HINT: Remember you can use `arr.push(item)` to add to arrays.
 
-## Instructions for PART B
+## Instructions for Part B
 
 Pick a random word from `words`, call it `word`. HINT: Review your Hangman program.
 
@@ -22,6 +22,6 @@ Also check if the player's guess can be found in the dictionary, if not, alert t
 
 If the player's guess is valid, show it on the board. Make a game loop to let the player guess again. Do not count invalid guesses as one of the player's six guesses.
 
-## Instructions for PART C
+## Instructions for Part C
 
 Show the player whether the letters in their guesses are found in the word in the right positions.

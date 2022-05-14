@@ -2,13 +2,13 @@
 
 Tic-tac-toe (also known as noughts and crosses, Xs and Os, or X'y O'sies) is a paper-and-pencil game for two players who take turns marking X or O in the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a diagonal, horizontal, or vertical row is the winner.
 
-## Instructions for PART A
+## Instructions for Part A
 
 Implement TicTacToe between two human players. Start by finishing the grid lines.
 
 Create 9 buttons for all the empty spaces on the grid. Use `bigSpace` for the text of these buttons. Start with the top row, then middle row, and then do the last row.
 
-## Instructions for PART B
+## Instructions for Part B
 
 Now create all the buttons using a nested for loop instead of doing them one by one. Pay attention to the intervals at which the buttons are placed.
 
@@ -16,13 +16,13 @@ Make a `takeTurn` function with row and column input parameters. The click callb
 
 After player X takes their turn, player O should be able to place their `bigO` mark on the grid.
 
-## Instructions for PART C
+## Instructions for Part C
 
 If a player tries to place their 'x' or 'o' on a space that is not empty, do not let them overwrite that space. To achieve this, start by storing the position of the marks the players make in a two dimensional `board` array.
 
 When a player clicks a button the `takeTurn` function should check if the corresponding position in the board array is empty. Show the player an alert window that explains they can't put their mark there because the space is not empty. You may notice the alert is not placed in an ideal location haha.
 
-## Instructions for PART D
+## Instructions for Part D
 
 Show alerts on the bottom right of the screen, don't let them overlap with the Tic Tac Toe grid or it will get erased when the alert window gets erased. HINT: Remember that the alert function accepts an optional width limit as a 4th input parameter: `alert(text, row, col, w)`
 

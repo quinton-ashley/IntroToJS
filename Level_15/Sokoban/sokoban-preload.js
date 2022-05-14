@@ -37,5 +37,5 @@ let wallDown = loadAni(tilesImg, tileSize, [2, 1]);
 // at row 5, column 0 in the tile sheet
 let box = loadAni(tilesImg, tileSize, [5, 0]);
 
-/* PART A: Choose a tile to represent the box goal positions on the floor */
+/* Part A: Choose a tile to represent the box goal positions on the floor */
 // let goal = loadAni(tilesImg, tileSize, [?, ?]);

@@ -4,7 +4,7 @@ The TV show, "Wheel of Fortune", features many different mini-games that contest
 
 https://youtu.be/K1nF5iNubcY?t=153
 
-## Instructions for PART A
+## Instructions for Part A
 
 Split the `phrasesList` into an array of `phrases`.
 
@@ -16,7 +16,7 @@ phrase -> 'Community Chest'
 words -> ['Community', 'Chest']
 ```
 
-## Instructions for PART B
+## Instructions for Part B
 
 Make boxes using `textRect` around the blank spaces and letters just like in the Wheel of Fortune TV show. Use `for` loops to make all the boxes for the phrase! HINT: Review your TicTacToe progam.
 
@@ -26,7 +26,7 @@ Make boxes using `textRect` around the blank spaces and letters just like in the
 └─┘└─┘└─┘└─┘└─┘
 ```
 
-## Instructions for PART C
+## Instructions for Part C
 
 Create an `addLetter` function that uses the `delay` function to delay the rate at which random letters in the phrase are revealed to the player. HINT: `delay` must be used in an async function. Do not reveal the same letters more than once, your `addLetter` function should only reveal a letter at a position in the phrase which has not been revealed previously.
 
@@ -38,7 +38,7 @@ If the player guesses the phrase correctly their score should be increased by th
 
 If the player is too slow and all the letters in the phrase are shown, they should lose that round and their score should be decreased by 3 points.
 
-## Instructions for PART D
+## Instructions for Part D
 
 When the game restarts and a new phrase is choosen, make sure not to use any phrase that the player has already guessed at.
 

@@ -42,14 +42,14 @@ XX    XX`.slice(1);
 const gridRow = 3;
 const gridCol = 26;
 
-/* PART A: finish the grid of 9x8 spaces */
+/* Part A: finish the grid of 9x8 spaces */
 text('─'.repeat(26), gridRow + 7, gridCol);
 // text('─'.repeat(26), ?, ?); // draw another horizontal line
 
 text('│\n'.repeat(23), gridRow, gridCol + 8);
 // text('│\n'.repeat(23), ?, ?); // draw another vertical line
 
-/* PART A: Make the buttons in the grid */
+/* Part A: Make the buttons in the grid */
 // note the intervals! row += 8 and col += 9
 // test code, delete after reading
 button(bigO, gridRow, gridCol);

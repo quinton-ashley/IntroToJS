@@ -6,7 +6,7 @@ Pick a Path stories, also known as [Choose your own Adventures](https://en.wikip
 
 Copy the `PickAPath` folder into your `GAMES` directory. Start coding in the `pickAPath.js` file.
 
-## Instructions for PART A
+## Instructions for Part A
 
 Take a look at the starter code for this game. Note that `prompt` will return `null` instead of what the user enters if they press cancel. That's why the game loop's `while` condition is `choice != null`.
 
@@ -21,7 +21,7 @@ Here are some ideas for the kind of PickAPath game you could make:
 
 Use the formatting characters tab `\t` and newline `\n` in your messages. After you get your story started, read part B in the `LVL_01.md` lesson file.
 
-## Instructions for PART B
+## Instructions for Part B
 
 Continue writing your story! Use boolean OR at least once to make two or more choices have the same result.
 
@@ -40,7 +40,7 @@ You could make a number variable to store how many of that item the player has: 
 
 You could also make a String variable to store what kind of item the player is holding: `let primaryWeapon = 'knife'`.
 
-## Instructions for PART C
+## Instructions for Part C
 
 Reject invalid choices by the user, don't let them skip ahead!
 

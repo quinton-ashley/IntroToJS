@@ -10,7 +10,7 @@ const target = `
 // so the first line of the button will be at the proper
 // row value
 
-/* PART A: find the range of row and column values the target can be placed at */
+/* Part A: find the range of row and column values the target can be placed at */
 function makeTargets() {
 	let row = 1;
 	let col = 1;
