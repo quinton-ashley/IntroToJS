@@ -55,16 +55,6 @@ async function takeFive() {
 takeFive();
 ```
 
-## toUpperCase and toLowerCase String
-
-```js
-let str = 'Hello!';
-let up = str.toUpperCase(); // up -> 'HELLO!'
-let low = str.toLowerCase(); // low -> 'hello!'
-```
-
-These functions do not change the original value of the string.
-
 ## replace String
 
 ```js

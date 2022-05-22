@@ -279,7 +279,13 @@ This level's computer was inspired by the 1977 Commodore PET 2001 Series. These 
 
 https://www.youtube.com/watch?v=eP9y_7it3ZM
 
-PETSCII character set: <https://style64.org/petscii/>
+The Commodore PET 2001 was the first computer that Satoru Iwata, former president of Nintendo, owned while he was studying computer science at the Tokyo Institute of Technology. His days of programming on a programmable calculator were over. Satoru's dorm room became known as "Iwata's Arcade" among his classmates. At that time there were only 9 other people at his college that owned their own computer. His first game for the PET was "Car Race". Satoru went on to become a brilliant programmer at HAL Laboratories and worked on Kirby's DreamLand. At Nintendo he worked on Super Smash Bros. Melee (my favorite video game). You can learn more about his life by watching this video by Gaming Historian:
+
+https://www.youtube.com/watch?v=k4cJh2YgrKE
+
+PET computers are also famous for their fun character set (font) called PETSCII:
+
+https://style64.org/petscii/
 
 - [Level 01 A](#level-01-a)
   - [Requirements for Local JS Development](#requirements-for-local-js-development)

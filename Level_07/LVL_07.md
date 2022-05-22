@@ -51,6 +51,7 @@ Take a look at the MDN guide "What is CSS?":
 Here is an excellent guide from css-tricks.com on how to use FlexBox:
 
 <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
+<https://i.redd.it/rofzm44oka091.png>
 
 # Level 07 C
 
@@ -82,6 +83,12 @@ function getFormData(formID) {
 ```
 
 The `getFormData` function returns an object with all the data from the specified form. You can use it in your own code.
+
+Be sure to set the form target to blank so the page doesn't reload.
+
+```html
+<form target="_blank"></form>
+```
 
 - [Level 07 A](#level-07-a)
   - [Welcome to the World Wide Web!](#welcome-to-the-world-wide-web)

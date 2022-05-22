@@ -24,4 +24,12 @@ If the player's guess is valid, show it on the board. Make a game loop to let th
 
 ## Instructions for Part C
 
-Show the player whether the letters in their guesses are found in the word in the right positions.
+Show the player whether the letters in their guesses are in the correct position in the word.
+
+Also show the player whether the letters in their guesses are found in the word.
+
+If you'd like the extra challenge, the actual rules are a bit more complicated. Here are some examples:
+
+If the word is BEING and the player's guess is KNEEL, only the first E in kneel should be marked as appearing in the word, the second E should not be marked as appearing in the word. This indicates there is an E in the word but it is closer to the first E.
+
+If the word is BEING and the player's guess is SEVEN, the first E should be marked as appearing in the correct position in the word. The second E should not be marked. This shows that there is only one E and the user already found its position.

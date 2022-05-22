@@ -134,6 +134,16 @@ console.log(letter); // -> b
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode
 
+## toUpperCase and toLowerCase String
+
+```js
+let str = 'Hello!';
+let up = str.toUpperCase(); // up -> 'HELLO!'
+let low = str.toLowerCase(); // low -> 'hello!'
+```
+
+These functions do not change the original value of the string.
+
 # Level 05 B
 
 ## ASCII art
