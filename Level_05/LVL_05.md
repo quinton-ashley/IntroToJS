@@ -121,19 +121,6 @@ If you'd like to learn more about Unicode watch this video:
 
 https://youtu.be/-n2nlPHEMG8
 
-## String charCodeAt and fromCharCode
-
-Gets the numerical value of a character.
-
-```js
-let number = 'a'.charCodeAt(0) + 1; // -> 97 + 1
-let letter = String.fromCharCode(number);
-console.log(letter); // -> b
-```
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode
-
 ## toUpperCase and toLowerCase String
 
 ```js

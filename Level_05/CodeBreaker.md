@@ -6,11 +6,11 @@ https://en.wikipedia.org/wiki/Caesar_cipher
 
 ## Instructions for Part A
 
-Prompt the user for a text message they would like to encode.
-
-Create a Caesar Cipher encryption algorithm. For now, shift all the letters in the message one letter position to the right. For example, "able" should become "bcmf". Display the encrypted message to the user. HINT: Use a `for` loop and the string functions `charCodeAt` and `fromCharCode`.
+Create a Caesar Cipher encryption algorithm. For now, try shifting all the letters in the "BABEL" one letter position to the right. The encrypted message should be "CBCFM". Make a variable called `msg` and set it to "Babel". Make an array with every letter of the alphabet in it. Next make a `for` loop to go through each letter in the message and find it's position in the alphabet. Add the shifted letters to a string called `secret` which will contain the decoded message. Display the encoded message to the user!
 
 Your encryption algorithm should not shift punctuation symbols or numbers. Check each character to see if it is included in the alphabet, only shift letters.
+
+Prompt the user for a text message they would like to encode.
 
 Prompt the user for the Caesar Cipher key, the shift amount, and modify your encryption algorithm to use it. Users should be able to either enter a number or letter. For example if a user enters the letter "c", it should be equivalent to a positive shift of 2.
 
