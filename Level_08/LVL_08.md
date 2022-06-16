@@ -4,6 +4,16 @@
 
 If you have problems with your code try using the `console.log` function (with QuintOS you can use `log` as a shortcut). Log the value of variables so you can see in the JavaScript console how your code is actually working.
 
+## fetch a text file
+
+```js
+let filePath = QuintOS.dir + '/art.txt';
+let data = await fetch(filePath);
+let txt = await data.text();
+```
+
+`QuintOS.dir` represents the file path to your game directory. `fetch` loads file data asynchronously, returns a `Response` object. If the response contains text then it can be converted to a string using the `.text()` function.
+
 # Level 08 B
 
 ## eraseRect

@@ -263,13 +263,3 @@ _____/\     _   /       | otter
 ------------------------------------------------
 https://asciiart.website/index.php?art=books/harry%20potter
 ```
-
-## fetch a text file
-
-```js
-let filePath = QuintOS.dir + '/art.txt';
-let data = await fetch(filePath);
-let txt = await data.text();
-```
-
-`QuintOS.dir` represents the file path to your game directory. `fetch` loads file data asynchronously, returns a `Response` object. If the response contains text then it can be converted to a string using the `.text()` function.
