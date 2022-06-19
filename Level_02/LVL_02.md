@@ -2,10 +2,6 @@
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen5.jpg)
 
-## What is p5.js?
-
-To make Pong we're going to use p5.js, a JavaScript graphics library for creative coding.
-
 ## Creating functions 👷
 
 Create functions using the `function` keyword.
@@ -20,6 +16,10 @@ sayHello(); // run the function
 ```
 
 The code inside a function is not run until the function is called/invoked by using its name and the parenthesis.
+
+## What is p5.js?
+
+To make Pong we're going to use p5.js, a JavaScript graphics library for creative coding.
 
 ## p5.js Basics
 
@@ -142,14 +142,6 @@ console.log(x); // x -> 7
 
 `-=`, `*=`, and `/=` operators can also be used with numbers.
 
-## colorPal
-
-The `colorPal` function retrieves the color associated with the given letter from the retro computer's color palette. Here's some example code for making a red background:
-
-```js
-background(colorPal('r'));
-```
-
 # Level 02 C
 
 ## Vectors
@@ -161,22 +153,27 @@ In 2D (two dimensional) games, a sprite's vector can be stored as the velocity a
 ```js
 ball.velocity.x = 1;
 ball.velocity.y = 1;
+// you can also use "vel" instead of "velocity"
+ball.vel.x = 1;
+ball.vel.y = 1;
 ```
 
 When you assign values to a sprite's velocities, the p5.play `drawSprites` function will change the ball's position.
 
 ## Bounces
 
-You can easily check for bounces between sprites using the p5.play sprite `bounce` function inside the `draw` function.
+Objects in p5.play collide by default but the paddle and ball won't do a perfect bounce off the paddle automatically.
+
+To have the ball bounce off the paddle and retain its speed, set the ball's bounciness to 1, indicating you want a full bounce.
 
 ```js
-ball.bounce(paddle);
+ball.bounciness = 1;
 ```
 
-By default when sprites bounce off each other both objects will move. To prevent this, set the sprite to be immovable when another sprite bounces on it.
+By default when sprites collide both objects will move. To prevent this, set the sprite to be static when another sprite bounces on it.
 
 ```js
-paddle.immovable = true;
+paddle.static = true;
 ```
 
 # Level 02 D
@@ -199,10 +196,10 @@ Implement `keyPressed` outside the `draw` function.
 
 ```js
 function draw() {
-	if (isKeyDown('ArrowLeft')) {
+	if (keyIsDown('ArrowLeft')) {
 		player.x -= 2; // move the player left by 2 pixels
 	}
-	if (isKeyDown('ArrowRight')) {
+	if (keyIsDown('ArrowRight')) {
 		player.x += 2; // move the player right by 2 pixels
 	}
 }
@@ -225,10 +222,10 @@ This example `draw` function draws a black background and then a blue rectangle 
 
 ```js
 function draw() {
-	background(colorPal('b'));
+	background('b');
 
-	fill(colorPal('u'));
-	stroke(colorPal('r'));
+	fill('u');
+	stroke('r');
 
 	//  ( x,  y,  w,  h)
 	rect(10, 20, 15, 55);
@@ -246,8 +243,8 @@ This level's computer is based on the ZX Spectrum, an 8-bit personal home comput
 https://youtu.be/nRlmTiynbd8?t=242
 
 - [Level 02 A](#level-02-a)
-  - [What is p5.js?](#what-is-p5js)
   - [Creating functions 👷](#creating-functions-)
+  - [What is p5.js?](#what-is-p5js)
   - [p5.js Basics](#p5js-basics)
   - [p5.play Sprites](#p5play-sprites)
   - [spriteArt](#spriteart)
@@ -258,7 +255,6 @@ https://youtu.be/nRlmTiynbd8?t=242
   - [spriteArt scaling](#spriteart-scaling)
   - [String.repeat(amount)](#stringrepeatamount)
   - [+= operator](#-operator)
-  - [colorPal](#colorpal)
 - [Level 02 C](#level-02-c)
   - [Vectors](#vectors)
   - [Bounces](#bounces)

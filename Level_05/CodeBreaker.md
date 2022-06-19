@@ -6,7 +6,7 @@ https://en.wikipedia.org/wiki/Caesar_cipher
 
 ## Instructions for Part A
 
-Create a Caesar Cipher encryption algorithm. For now, try shifting all the letters in the "BABEL" one letter position to the right. The encrypted message should be "CBCFM". Make a variable called `msg` and set it to "Babel". Make an array with every letter of the alphabet in it. Next make a `for` loop to go through each letter in the message and find it's position in the alphabet. Add the shifted letters to a string called `secret` which will contain the decoded message. Display the encoded message to the user!
+Create a Caesar Cipher encryption algorithm. For now, try shifting all the letters in the "BABEL" one letter position to the right. The encrypted message should be "CBCFM". Make a variable called `msg` and set it to "Babel". Make an string with every letter of the alphabet in it. Next make a `for` loop to go through each letter in the message and find it's position in the alphabet. Add the shifted letters to a string called `secret` which will contain the decoded message. Display the encoded message to the user!
 
 Your encryption algorithm should not shift punctuation symbols or numbers. Check each character to see if it is included in the alphabet, only shift letters.
 
