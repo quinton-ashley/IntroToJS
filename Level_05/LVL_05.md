@@ -1,265 +1,205 @@
 # Level 05 A
 
-## Binary
+Do the GuessTheNumber challenge section before starting level 04!
 
-You may know that computers store all data in binary, just 0s and 1s. How is that possible?
+![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen3.jpg)
 
-If there are only 0s and 1s how do computers even store the number 2?
-
-## Base 10
-
-We humans have ten fingers so our number system is based on the number 10. We use ten symbols (Arabic numerals) to represent these values 0,1,2,3,4,5,6,7,8,9 that are called digits. We don't have a separate symbol for the value ten so we use two digits
-
-```base10
-10
-```
-
-The 1 is in the tens place which is how we know it's ten. We know `100` is one hundred because the 1 is in the hundreds place.
-
-## Base 2
-
-Computers have switches that can either be on or off, so their number system is based on 2. Bits can either be 0 or 1, there is no single symbol for the value two, so to represent the number two they need two bits.
-
-```base2
-10
-```
-
-What?! But 10 is ten! Well in our usual base 10 number system the 1 would be in the tens place but in base 2 the 1 is in the twos place so 10 has a value of two!
-
-## Counting in Binary
-
-The base 2 numbers are padded with zeroes on the left side.
-
-| Base 10 | Base 2 |
-| ------: | -----: |
-|       0 |   0000 |
-|       1 |   0001 |
-|       2 |   0010 |
-|       3 |   0011 |
-|       4 |   0100 |
-|       5 |   0101 |
-|       6 |   0110 |
-|       7 |   0111 |
-|       8 |   1000 |
-|       9 |   1001 |
-|      10 |   1010 |
-|      11 |   1011 |
-|      12 |   1100 |
-|      13 |   1101 |
-|      14 |   1110 |
-|      15 |   1111 |
-
-When counting in binary you can think of the 1 being like a 9 in decimal. When you get to 1, 11, and 111 another bit must be added to represent the next value. Note that 0010 in binary is 2 in decimal, 0100 is 4, and 1000 is 8. A 1 represents 2 raised to the power of the place value of that 1.
-
-```
-2^0 =   1
-2^1 =   2
-2^2 =   4
-2^3 =   8
-2^4 =  16
-2^5 =  32
-2^6 =  64
-2^7 = 128
-2^8 = 256
-```
-
-4 bits can be used to create 16 different possible combinations, so 4 bits can only store 16 different values, 0-15. Note that the number of values that can be stored value in a given number of bits can be calculated by doing 2 to the power of the number of bits. 2^4, two to the power of 4, (aka `2*2*2*2`) is 16!
-
-## Convert from Binary to Decimal
-
-We can calculate the decimal value of binary numbers by finding the sum of 2 to the power of the place value for all the places with a 1 in it.
-
-```
-1111
-
-2^3 + 2^2 + 2^1 + 2^0 =
- 8  +  4  +  2  +  1  = 15
-```
-
-## Convert from Decimal to Binary
-
-To convert from decimal to binary, start with the biggest 2^n that is less than the decimal number you want to convert. Then keep adding the next largest 2^n until the sum adds up to the decimal number.
-
-```
-10
-
- 8  +  2  = 10
-2^3 + 2^1
-
-1010
-```
-
-## Byte
-
-A byte is a group of 8 bits. How many different values can be stored using 8 bits? Remember we can calculate this by doing 2 to the power of the number of bits 2^8 is... uhh. Well 2^4 is 16, so 2^5 must be 32, then 2^6 is 64, 2^7 is 128, so finally 2^8 is 256. One byte (8 bits) can store 256 different values, 0-255!
-
-## ASCII
-
-Computers have to store everything as binary numbers, so symbols (including letters and digits) need to be assigned a numerical value that corresponds to that symbol, like a dictionary!
-
-Before ASCII was created, computer manufactures all devised their own methods for assigning numbers to symbols. Because of this, if you created a text file on one computer and tried to load it on a computer from a different company, it could be an indecipherable mess! ASCII was created to solve this problem.
-
-ASCII (American Standard Code for Information Interchange) was developed during the 1960s. The purpose of ASCII is right in the name, its creators wanted ASCII to become a standard code for computers to exchange information.
-
-ASCII only used 7 bits to encode a single character of text. This allowed for 128 different symbols and control characters (like tab/ident and escape) to be represented.
-
-Since early personal computers used bytes (8 bits) to store characters this allowed computer companies to make extensions to ASCII that could add symbols specific to that system.
-
-Take a look at the ASCII table:
-
-https://www.asciitable.com/
-
-Note that many of the control characters in ASCII were used for sending telegraphs via teleprinters and also for typing on teletype machines, making them obsolete now.
-
-## Unicode
-
-While ASCII successfully standardized the encoding of letters in the English alphabet, as people all over the world began to use computers a new standard was needed for encoding symbols from every written language.
-
-Today all modern computers share a new encoding standard for text based communications called Unicode. Unicode still includes all the ASCII symbols in the beginning but has also standardized its extension to include hundreds of thousands of additional symbols. It includes tons of mathematical symbols, icons, and every emoji!
-
-If you'd like to learn more about Unicode watch this video:
-
-https://youtu.be/-n2nlPHEMG8
-
-## toUpperCase and toLowerCase String
+## slice String
 
 ```js
-let str = 'Hello!';
-let up = str.toUpperCase(); // up -> 'HELLO!'
-let low = str.toLowerCase(); // low -> 'hello!'
+let str = 'hello'.slice(1);
+log(str); // -> 'ello'
 ```
 
-These functions do not change the original value of the string.
+`slice` returns a part of the original string which starts at the index provided as the first input parameter.
+
+## Create a Button
+
+Buttons glow when hovered over and are clickable. The `button` function is quite similar to the `text` function.
+
+```js
+//    (text, row, col)
+button('Yes', 5, 5);
+button('No', 5, 9);
+```
 
 # Level 05 B
 
-## ASCII art
+## Respond to button clicks
 
-ASCII art is text based art made exclusively from symbols in the original ASCII 128 character set or extended ASCII 256 character sets. Here are a few example:
+Let's learn how to add a button. The `button` function is just like the `text` function but you can add a fourth input parameter, a callback function that gets run when the button is clicked.
 
+```js
+function btnClick() {
+	console.log('You clicked the button!');
+}
+//    (text,     row, col, function)
+button('Click me!', 5, 5, btnClick);
 ```
 
-                /||\
-                ||||
-                ||||
-           /|\  |||| /|\
-           |||  |||| d||
-           |||  |||||||/
-           ||b._||||~~'
-           \||||||||
-            `~~~||||
-                ||||
-                ||||
-~~~~~~~~~~~~~~~~||||~~~~~~~~~~~~~~
-  \/..__..--  . |||| \/  .  ..
-\/         \/ \/    \/
-        .  \/              \/    .
-. \/             .   \/     .
+Note that the callback function is passed as a variable, it is not run using parenthesis `()` when the button is created. It gets run only when the button is clicked.
 
-------------------------------------------------
-https://asciiart.website/index.php?art=plants/cactus
+## Recursion
 
-    *                             |>>>                    +
-+          *                      |                   *       +
-                    |>>>      _  _|_  _   *     |>>>
-           *        |        |;| |;| |;|        |                 *
-     +          _  _|_  _    \\.    .  /    _  _|_  _       +
- *             |;|_|;|_|;|    \\: +   /    |;|_|;|_|;|
-               \\..      /    ||:+++. |    \\.    .  /           *
-      +         \\.  ,  /     ||:+++  |     \\:  .  /
-                 ||:+  |_   _ ||_ . _ | _   _||:+  |       *
-          *      ||+++.|||_|;|_|;|_|;|_|;|_|;||+++ |          +
-                 ||+++ ||.    .     .      . ||+++.|   *
-+   *            ||: . ||:.     . .   .  ,   ||:   |               *
-         *       ||:   ||:  ,     +       .  ||: , |      +
-  *              ||:   ||:.     +++++      . ||:   |         *
-     +           ||:   ||.     +++++++  .    ||: . |    +
-           +     ||: . ||: ,   +++++++ .  .  ||:   |             +
-                 ||: . ||: ,   +++++++ .  .  ||:   |        *
-                 ||: . ||: ,   +++++++ .  .  ||:   |
+In the past few lessons you've learned about `for` loops and `while` loops. Recursion is another way to loop code. It is simply a function that calls itself inside its own definition.
 
-------------------------------------------------
-https://asciiart.website/index.php?art=objects/buildings
-
-   `,.      .   .        *   .    .      .  _    ..          .
-     \,~-.         *           .    .       ))       *    .
-          \ *          .   .   |    *  . .  ~    .      .  .  ,
- ,           `-.  .            :               *           ,-
-  -             `-.        *._/_\_.       .       .   ,-'
-  -                 `-_.,     |n|     .      .       ;
-    -                    \ ._/_,_\_.  .          . ,'         ,
-     -                    `-.|.n.|      .   ,-.__,'         -
-      -                   ._/_,_,_\_.    ,-'              -
-      -                     |..n..|-`'-'                -
-       -                 ._/_,_,_,_\_.                 -
-         -               ,-|...n...|                  -
-           -         ,-'._/_,_,_,_,_\_.              -
-             -  ,-=-'     |....n....|              -
-              -;       ._/_,_,_,_,_,_\_.         -
-             ,-          |.....n.....|          -
-           ,;         ._/_,_,_,_,_,_,_\_.         -
-  `,  '.  `.  ".  `,  '.| n   ,-.   n |  ",  `.  `,  '.  `,  ',
-,.:;..;;..;;.,:;,.;:,o__|__o !.|.! o__|__o;,.:;.,;;,,:;,.:;,;;:
- ][  ][  ][  ][  ][  |_i_i_H_|_|_|_H_i_i_|  ][  ][  ][  ][  ][
-                     |     //=====\\     |
-                     |____//=======\\____|
- gpyy                    //=========\\
-
-------------------------------------------------
-https://asciiart.website/index.php?art=objects/buildings
-
-                     _
-               (____/@\____)
-                \\\\_V_////
-             (__|_H_|I|_H_|__)
-              \\\\\\_V_//////
-           (___|_H_|III|_H__|__)
-            \\\\\\\\_V_////////
-         (___|_H__|IIIII|__H__|__)
-  .:.     \\\\\\\\\\_V_//////////     .:.
-.:.|' (____|__H__|IIIIIII|__H__|____) '|.:.
-'|'|   \\\\\\\\\\\\\\V//////////////   |'|'
- |      |_H__H__|III   III|__H__H_|      |
-Sher^
-
-------------------------------------------------
-https://asciiart.website/index.php?art=objects/buildings
-
-                                  _
-                        .-.      / \        _
-            ^^         /   \    /^./\__   _/ \
-          _        .--'\/\_ \__/.      \ /    \  ^^  ___
-         / \_    _/ ^      \/  __  :'   /\/\  /\  __/   \
-        /    \  /    .'   _/  /  \   ^ /    \/  \/ .`'\_/\
-       /\/\  /\/ :' __  ^/  ^/    `--./.'  ^  `-.\ _    _:\ _
-      /    \/  \  _/  \-' __/.' ^ _   \_   .'\   _/ \ .  __/ \
-    /\  .-   `. \/     \ / -.   _/ \ -. `_/   \ /    `._/  ^  \
-   /  `-.__ ^   / .-'.--'    . /    `--./ .-'  `-.  `-. `.  -  `.
- @/        `.  / /      `-.   /  .-'   / .   .'   \    \  \  .-  \%
- @(88%@)@%% @)&@&(88&@.-_=_-=_-=_-=_-=_.8@% &@&&8(8%@%8)(8@%8 8%@)%
- @88:::&(&8&&8::JGS:&`.~-_~~-~~_~-~_~-~~=.'@(&%::::%@8&8)::&#@8::::
- `::::::8%@@%:::::@%&8:`.=~~-.~~-.~~=..~'8::::::::&@8:::::&8::::::'
-  `::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::'
-
-------------------------------------------------
-https://asciiart.website/index.php?art=nature/mountains
-
-          _
-      /b_,dM\__,_
-    _/MMMMMMMMMMMm,
-   _YMMMMMMMMMMMM(
-  `MMMMMM/   /   \   _   ,
-   MMM|  __  / __/  ( |_|
-   YMM/_/# \__/# \    | |_)arry
-   (.   \__/  \__/     ___
-     )       _,  |    '_|_)
-_____/\     _   /       | otter
-    \  `._____,'
-     `..___(__
-              ``-.
-                  \
-              gnv  )
-
-------------------------------------------------
-https://asciiart.website/index.php?art=books/harry%20potter
+```js
+function doRecursion() {
+	doRecursion(); // infinite loop! OH NO!
+}
 ```
+
+Here's a more practical example of a recursion loop that ends when the player losses all their health points.
+
+```js
+let health = 100; // initial health
+
+function gameLoop() {
+	//
+	// ... game code here ...
+	//
+	if (health > 0) {
+		gameLoop();
+	} else {
+		gameOver();
+	}
+}
+```
+
+# Level 05 C
+
+## Erase
+
+```js
+erase();
+```
+
+Use erase to remove all text and buttons from the screen.
+
+## Change the position of prompts and alerts
+
+The position of prompt and alert windows can be changed by defining their row and column values just like with the `text` and `button` functions.
+
+```js
+//         (text           , row, col)
+await alert('I can move too!', 5, 20);
+```
+
+## asynchronous functions
+
+To use `await` inside a function you must make it an `async` function.
+
+```js
+async function sayHello() {
+	let name = await prompt("What's your name?");
+	await alert('Hello ' + name + '!');
+}
+```
+
+# Level 05 D
+
+## async/await vs callbacks
+
+`async`/`await` and callbacks are the two main forms of asynchronous programming in JavaScript. `async`/`await` was added to JavaScript in 2017 so that asynchronous code could be written linearly, like synchronous code, one line after the other.
+
+Callbacks are non-linear, so they are good for handling events (like button clicks) that in some cases we wouldn't want our program to wait for. For example if you gave the user a choice between clicking a "Yes" or "No" button you wouldn't want the program to wait for them to click "Yes" because they might click "No". A separate callback function is needed to handle each response.
+
+Now you might be wondering how await-ing the prompt function works, since the user can either enter text or click cancel?! In level 11 you'll learn how to make await-able `Promise` objects that resolve after an event or any number of different events.
+
+## Date
+
+Take a look at the MDN documentation for [Date.now()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now) and run the JavaScript demo.
+
+`Date.now()` returns the current date in milliseconds.
+
+## Adding to Arrays
+
+So how do we add to arrays? By using the `.push()` function.
+
+```js
+let names = ['Amy', 'Ellie', 'Max'];
+let nums = [50, 21, 46, 83];
+
+names.push('Jake'); // adds "Jake" to names array
+// names -> ['Amy', 'Ellie', 'Max', 'Jake']
+
+nums.push(97); // adds 97 to the nums array
+// nums -> [50, 21, 46, 83, 97]
+```
+
+# Level 05 E
+
+## modulo operator
+
+The modulo operator `%` it gets the remainder of a division.
+
+```js
+// true if x is even (divisible by 2)
+if (x % 2 == 0) {
+	console.log('x is even!');
+}
+
+// true if y is divisible by 5
+if (y % 5 == 0) {
+	console.log(y + ' is a multiple of 5');
+}
+```
+
+Here's how modulo can be used for alternation.
+
+```js
+for (let i = 0; i < 10; i++) {
+	if (i % 2 == 0) {
+		text('even', i);
+	} else {
+		text('odd', i);
+	}
+}
+```
+
+## for loops with non-standard incrementation
+
+This code does the same kind of alternation.
+
+```js
+for (let i = 0; i < 10; i += 2) {
+	text('even', i);
+	text('odd', i + 1);
+}
+```
+
+# Computer History: GRiD Compass
+
+This level's computer is based on the GRiD Compass 1101. The following description is from http://oldcomputers.net/grid1101.html
+
+![](http://oldcomputers.net/pics/grid1101-right.jpg)
+
+Designed to be the ultimate portable computer, the clamshell-style GRiD Compass 1101 is the grand-daddy of all present-day laptop computers.
+
+The Compass is very high-tech, with its flat-black, die-cast magnesium-alloy case, and bright, sharp electroluminescent display (ELD). No other system packed so much speed and power in as small a case, and none had such a unique and large, easy-to-read screen, allowing full 80x24 text.
+
+Of course, all of these great features raised the price significantly. At $8150, the GRiD Compass 1101 was the most expensive personal computer on the market.
+
+Originally developed for business executives, GRiDs were also used by the U.S. military 'in the field', and by NASA on the Space Shuttles during the 1980's and 90's. It's even been said that the US President's "nuclear football" at one time included a GRiD computer.
+
+# Level 04 Table of Contents
+
+- [Level 05 A](#level-05-a)
+	- [slice String](#slice-string)
+	- [Create a Button](#create-a-button)
+- [Level 05 B](#level-05-b)
+	- [Respond to button clicks](#respond-to-button-clicks)
+	- [Recursion](#recursion)
+- [Level 05 C](#level-05-c)
+	- [Erase](#erase)
+	- [Change the position of prompts and alerts](#change-the-position-of-prompts-and-alerts)
+	- [asynchronous functions](#asynchronous-functions)
+- [Level 05 D](#level-05-d)
+	- [async/await vs callbacks](#asyncawait-vs-callbacks)
+	- [Date](#date)
+	- [Adding to Arrays](#adding-to-arrays)
+- [Level 05 E](#level-05-e)
+	- [modulo operator](#modulo-operator)
+	- [for loops with non-standard incrementation](#for-loops-with-non-standard-incrementation)
+- [Computer History: GRiD Compass](#computer-history-grid-compass)
+- [Level 04 Table of Contents](#level-04-table-of-contents)

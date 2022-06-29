@@ -34,7 +34,7 @@ Move objects a little bit in each new frame drawn to the screen. This is called 
 Sprites are characters or items in 2D video games that typically move above a background layer.
 
 ```js
-let sprite = createSprite(img);
+let sprite = new Sprite(img);
 sprite.x = 5;
 sprite.y = 12;
 ```

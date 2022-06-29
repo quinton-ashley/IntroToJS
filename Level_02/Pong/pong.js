@@ -15,7 +15,7 @@ let imgPaddle = spriteArt('.wwwwww.\nwwwwwwww\n' + 'ww....ww\n'.repeat(42) + 'ww
 /* Part B: make image for the wall */
 
 // places a ball in center of the screen
-let ball = createSprite(imgBall);
+let ball = new Sprite(imgBall);
 ball.x = width / 2;
 ball.y = height / 2;
 
@@ -23,6 +23,4 @@ ball.y = height / 2;
 
 function draw() {
 	/* Part A1: make the ball move */
-
-	drawSprites();
 }
