@@ -136,7 +136,7 @@ You can use `+=` with numbers too!
 
 ```js
 let x = 5;
-x += 2;
+x += 2; // shortcut for x = x + 2
 console.log(x); // x -> 7
 ```
 

@@ -2,23 +2,28 @@
 
 ## Accessing items in an Array
 
-The `[]` square brackets are used to create arrays and are also used to access items in an array.
+Items in an array can be accessed by putting the position number of the item inside square brackets `[]` at the end of the name of the array.
 
 ```js
 let names = ['Amy', 'Ellie', 'Max'];
 let nums = [50, 21, 46, 83];
 
-console.log(names[0]); // prints 'Amy'
-console.log(nums[1]); // prints 21
+console.log(names[0]); // prints the String 'Amy' to the JS console
+console.log(nums[1]); // prints the Number 21 to the JS console
 ```
+
+The position
+
+## Editing items in an Array
 
 Items in an array can also be edited using `[]` (aka sub).
 
 ```js
-names[2] = 'Ben';
-// edits the list: ['Amy', 'Ellie', 'Ben']
-nums[1] = 36;
-// edits the list: [50, 36, 42, 83]
+names[2] = 'Ben'; // edits the item at position 2 in the names array
+// names -> ['Amy', 'Ellie', 'Ben']
+
+nums[1] += 4; // edits the item at position 1 in the nums array
+// num -> [50, 25, 42, 83]
 ```
 
 ## Counting with while loops
@@ -35,7 +40,7 @@ while (i < names.length) {
 	// print the next name in the list
 	console.log(i + '. ' + names[i]);
 
-	i = i + 1;
+	i++; // shortcut for i = i + 1
 } // in this loop i goes up from 0 to 1 to 2 to 3
 ```
 
