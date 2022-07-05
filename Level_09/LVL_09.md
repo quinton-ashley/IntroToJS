@@ -1,4 +1,4 @@
-# Level 06 A
+# Level 09 A
 
 Before you can start working on the `TicTacToe` game, you'll have to prove your skills in Javascript. You should be able to complete the first few test sections quite quickly. Stop when you complete the challenge titled "Golf Code".
 
@@ -8,7 +8,7 @@ After you complete those challenges you can upgrade to level 6! 🥳
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen4.jpg)
 
-# Level 06 B
+# Level 09 B
 
 ## Nested for loops
 
@@ -35,7 +35,7 @@ button('click me!', 0, 0, () => {
 });
 ```
 
-# Level 06 C
+# Level 09 C
 
 ## Two Dimensional Arrays
 
@@ -79,7 +79,7 @@ for (let row = 0; row < rows; row++) {
 }
 ```
 
-# Level 06 D
+# Level 09 D
 
 ## exit a function
 
@@ -105,14 +105,14 @@ let message =
 await alert(message, 5, 20, 16);
 ```
 
-- [Level 06 A](#level-06-a)
-- [Level 06 B](#level-06-b)
+- [Level 09 A](#level-09-a)
+- [Level 09 B](#level-09-b)
 	- [Nested for loops](#nested-for-loops)
 	- [Arrow function syntax](#arrow-function-syntax)
-- [Level 06 C](#level-06-c)
+- [Level 09 C](#level-09-c)
 	- [Two Dimensional Arrays](#two-dimensional-arrays)
 	- [2D array access](#2d-array-access)
 	- [Using nested for loops with 2D arrays](#using-nested-for-loops-with-2d-arrays)
-- [Level 06 D](#level-06-d)
+- [Level 09 D](#level-09-d)
 	- [exit a function](#exit-a-function)
 	- [alert and prompt window sizing](#alert-and-prompt-window-sizing)

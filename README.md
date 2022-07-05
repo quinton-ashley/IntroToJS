@@ -36,30 +36,18 @@ Join the [QuintOS Discord server](https://discord.gg/5pcyKWRwSB) to chat with ot
 
 **Pong** : the classic tennis arcade game
 
+**LeafEater** : a hungry caterpillar must become a butterfly
+
 **Hangman** : players try to guess a word letter by letter
 
 **QuickClicks** : players click targets as fast as possible while avoiding imposter targets
 
-**CodeBreaker** : learn how to send secret messages using Caesar Cipher encryption
+**BinaryConverter** : convert base 10 numbers to binary
+
+**CodeBreaker** : send secret messages using Caesar Cipher encryption
 
 **TicTacToe** : two player Tic Tac Toe
 
+**DataDesigner** : create a JSON database
+
 **WorldWideWeb** : create a retro 90s web page using modern HTML, CSS, and JS
-
-**Wordle** : the popular NYT word puzzle
-
-**SpeakAndSpell** : a classic 80s educational talking toy
-
-**Contain** : 4 paddle variant of Pong for 1-4 players
-
-**TicTacAIO** : play TicTacToe against an AI
-
-**SketchBook** : a drawing program for creating pixel art images
-
-**Snake** : players try to control a snake that grows when it eats
-
-**SuperJump** : an endless vertical platform jumping game (based on DoodleJump)
-
-**Sokoban** : a Japanese puzzle game, boxes must be moved to particular locations in a room
-
-**StudentGame** : students make their own game during the last level of the course!

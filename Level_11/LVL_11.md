@@ -1,4 +1,4 @@
-# Level 07 A
+# Level 11 A
 
 ## Welcome to the World Wide Web!
 
@@ -38,7 +38,7 @@ Learn more about common HTML tags by referencing this table I made:
 
 <https://quintos.org/reference.html?language=html>
 
-# Level 07 B
+# Level 11 B
 
 ## How CSS styling works
 
@@ -53,7 +53,7 @@ Here is an excellent guide from css-tricks.com on how to use FlexBox:
 <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
 <https://i.redd.it/rofzm44oka091.png>
 
-# Level 07 C
+# Level 11 C
 
 ## HTML form tag
 
@@ -90,7 +90,7 @@ Be sure to set the form target to blank so the page doesn't reload.
 <form target="_blank"></form>
 ```
 
-- [Level 07 A](#level-07-a)
+- [Level 11 A](#level-11-a)
   - [Welcome to the World Wide Web!](#welcome-to-the-world-wide-web)
   - [Web Development](#web-development)
   - [HTML](#html)
@@ -98,9 +98,9 @@ Be sure to set the form target to blank so the page doesn't reload.
   - [Aside](#aside)
   - [How HTML tags work](#how-html-tags-work)
   - [Common HTML tags](#common-html-tags)
-- [Level 07 B](#level-07-b)
+- [Level 11 B](#level-11-b)
   - [How CSS styling works](#how-css-styling-works)
   - [CSS FlexBox](#css-flexbox)
-- [Level 07 C](#level-07-c)
+- [Level 11 C](#level-11-c)
   - [HTML form tag](#html-form-tag)
   - [The easy way to get data from a form](#the-easy-way-to-get-data-from-a-form)
