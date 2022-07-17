@@ -1,3 +1,0 @@
-# GenerativeArt
-
-coming soon
