@@ -20,7 +20,7 @@
 		} else if (choice == 1) {
 			/* Part A1: continue the story */
 			msg =
-				'Continue the story, each choice could lead to a different path but you can also reuse choice numbers and have paths converge.\n\t' +
+				'Continue the story, each choice could lead to a different path but you can also reuse choice numbers and have paths converge.\n\n\t' +
 				'4: another path\n\t' +
 				'5: an additional option';
 		}

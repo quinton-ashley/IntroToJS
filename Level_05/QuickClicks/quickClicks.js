@@ -17,4 +17,6 @@ function makeTargets() {
 	button(target, row, col);
 }
 
-makeTargets();
+function start() {
+	makeTargets();
+}

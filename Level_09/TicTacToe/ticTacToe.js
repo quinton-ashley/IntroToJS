@@ -17,8 +17,6 @@ TTTTT  OOO   EEEE
   T   O   O  E
   T    OOO   EEEE`.slice(1);
 
-text(title, 5, 6);
-
 const bigSpace = '        \n'.repeat(7);
 
 const bigO = `
@@ -42,16 +40,20 @@ XX    XX`.slice(1);
 const gridRow = 3;
 const gridCol = 26;
 
-/* Part A: finish the grid of 9x8 spaces */
-text('─'.repeat(26), gridRow + 7, gridCol);
-// text('─'.repeat(26), ?, ?); // draw another horizontal line
+function start() {
+	text(title, 5, 6);
 
-text('│\n'.repeat(23), gridRow, gridCol + 8);
-// text('│\n'.repeat(23), ?, ?); // draw another vertical line
+	/* Part A: finish the grid of 9x8 spaces */
+	text('─'.repeat(26), gridRow + 7, gridCol);
+	// text('─'.repeat(26), ?, ?); // draw another horizontal line
 
-/* Part A: Make the buttons in the grid */
-// note the intervals! row += 8 and col += 9
-// test code, delete after reading
-button(bigO, gridRow, gridCol);
-button(bigX, gridRow + 8, gridCol + 9);
-button(bigO, gridRow + 16, gridCol + 18);
+	text('│\n'.repeat(23), gridRow, gridCol + 8);
+	// text('│\n'.repeat(23), ?, ?); // draw another vertical line
+
+	/* Part A: Make the buttons in the grid */
+	// note the intervals! row += 8 and col += 9
+	// test code, delete after reading
+	button(bigO, gridRow, gridCol);
+	button(bigX, gridRow + 8, gridCol + 9);
+	button(bigO, gridRow + 16, gridCol + 18);
+}

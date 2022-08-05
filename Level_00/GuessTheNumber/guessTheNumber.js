@@ -1,6 +1,6 @@
-// start of wrapper (I will explain how this works later)
-(async () => {
+// the start function gets run when the game starts
+async function start() {
 	// your code goes here! below this line
 
 	exit(); // this function exits the game
-})(); // end
+} // end of the start function
