@@ -134,7 +134,7 @@ placeTopCard(card); // play the card
 
 ## Computer History: Apple II
 
-This level's computer was inspired by the Apple II. Check out this video about it if you'd like!
+This level's computer was inspired by the Apple II. For many people in the US, the Apple II was the first computer they ever used at their home or school. Check out this video about it if you'd like!
 
 https://www.youtube.com/watch?v=CxJwy8NsXFs
 

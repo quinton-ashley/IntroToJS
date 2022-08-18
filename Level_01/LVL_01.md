@@ -81,7 +81,7 @@ QuintOS.dir = 'GAMES';
 QuintOS.gameTitle = 'GuessTheNumber';
 ```
 
-Right click on `QuintOS_live.html` file and select `Open with Live Server`. You should see the calculator show up in your browser. 😄
+Right click on `index.html` file and select `Open with Live Server` or click `Go Live` in VSCode's bottom status bar. You should see the calculator show up in your browser. 😄
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen1.jpg)
 
@@ -275,11 +275,13 @@ luckyNumbers = [6, 10, 32];
 
 ## Computer History: Commodore PET
 
-This level's computer was inspired by the 1977 Commodore PET 2001 Series. These computers were some of the first commercially successful personal computers that did not require any assembly by the user. Check out this video about it if you'd like!
+This level's computer was inspired by the Commodore PET 2001 Series released way back in 1977. These computers were some of the first commercially successful personal computers that did not require any assembly by the user. Check out this video about it if you'd like!
 
 https://www.youtube.com/watch?v=eP9y_7it3ZM
 
-The Commodore PET 2001 was the first computer that Satoru Iwata, former president of Nintendo, owned while he was studying computer science at the Tokyo Institute of Technology. His days of programming on a programmable calculator were over. Satoru's dorm room became known as "Iwata's Arcade" among his classmates. At that time there were only 9 other people at his college that owned their own computer. His first game for the PET was "Car Race". Satoru went on to become a brilliant programmer at HAL Laboratories and worked on Kirby's DreamLand. At Nintendo he worked on Super Smash Bros. Melee (my favorite video game). You can learn more about his life by watching this video by Gaming Historian:
+The Commodore PET 2001 was the first computer that Satoru Iwata, former president of Nintendo, owned while he was studying computer science at the Tokyo Institute of Technology. His days of programming on a programmable calculator were over. Satoru's dorm room became known as "Iwata's Arcade" among his classmates. At that time there were only 9 other people at his college that owned their own computer. His first game for the PET was called "Car Race".
+
+Satoru went on to become a brilliant programmer at HAL Laboratories and worked on Kirby's DreamLand. At Nintendo he worked on Super Smash Bros. Melee (my favorite video game). You can learn more about his life by watching this video by Gaming Historian:
 
 https://www.youtube.com/watch?v=k4cJh2YgrKE
 

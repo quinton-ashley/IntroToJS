@@ -14,7 +14,7 @@ You will notice that when the ball moves it leaves a trail of ball images behind
 
 Now try moving the ball to the left. Then try moving the ball up and down, then in a diagonal. Get a sense of how changing the ball's x and y values will affect its trajectory.
 
-Usually Pong is a two player game but to easily test the game you can change the position of both paddles using your mouse. `mouseX` and `mouseY` are global p5.js variables that store the position of the mouse at all times. HINT: Change the y position of both paddles to `mouseY`.
+Usually Pong is a two player game but to easily test the game you can change the position of both paddles using your mouse. `mouse` is a global p5.play variable you can use to access the current position of the mouse using `mouse.x` and `mouse.y`. HINT: Change the y position of both paddles to `mouse.y`.
 
 Personalize your game of Pong by choosing a sport or something else to theme it on. Give the ball a new design, it's pretty small so you can keep it simple.
 
