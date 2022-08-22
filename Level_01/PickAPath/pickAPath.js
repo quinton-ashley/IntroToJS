@@ -1,5 +1,5 @@
 // start of wrapper (I will explain how this works later)
-(async () => {
+async function start() {
 	// your code goes here! below this line
 
 	let choice = 0; // initialize choice to 0, user has not made any choice yet
@@ -34,4 +34,4 @@
 	}
 
 	exit(); // exits the game
-})(); // end wrapper
+} // end wrapper
