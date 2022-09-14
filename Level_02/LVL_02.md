@@ -173,7 +173,7 @@ ball.bounciness = 1;
 By default when sprites collide both objects will move. To prevent this, set the sprite to be static when another sprite bounces on it.
 
 ```js
-paddle.static = true;
+paddle.collider = 'static';
 ```
 
 # Level 02 D

@@ -1,3 +1,0 @@
-# LeafEater
-
-coming soon!
