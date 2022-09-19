@@ -58,6 +58,30 @@ names.join(' ~ ');
 
 # Level 04 C
 
+## Accessing items in an Array
+
+Items in an array can be accessed by putting the position number of the item inside square brackets `[]` at the end of the name of the array.
+
+```js
+let names = ['Amy', 'Ellie', 'Max'];
+let nums = [50, 21, 46, 83];
+
+console.log(names[0]); // prints the String 'Amy' to the JS console
+console.log(nums[1]); // prints the Number 21 to the JS console
+```
+
+## Editing items in an Array
+
+Items in an array can also be edited using `[]` (aka sub).
+
+```js
+names[2] = 'Ben'; // edits the item at position 2 in the names array
+// names -> ['Amy', 'Ellie', 'Ben']
+
+nums[1] += 4; // edits the item at position 1 in the nums array
+// num -> [50, 25, 42, 83]
+```
+
 ## Accessing characters in a String
 
 To access characters in a String you can use `[]` just like with accessing items in arrays!
@@ -147,6 +171,8 @@ https://www.youtube.com/watch?v=CxJwy8NsXFs
 	- [Getting an array of characters from a String](#getting-an-array-of-characters-from-a-string)
 	- [array.join(separator)](#arrayjoinseparator)
 - [Level 04 C](#level-04-c)
+	- [Accessing items in an Array](#accessing-items-in-an-array)
+	- [Editing items in an Array](#editing-items-in-an-array)
 	- [Accessing characters in a String](#accessing-characters-in-a-string)
 - [Level 04 D](#level-04-d)
 	- [Implied boolean conditions](#implied-boolean-conditions)

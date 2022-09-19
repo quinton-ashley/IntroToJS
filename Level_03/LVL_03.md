@@ -1,31 +1,5 @@
 # Level 03 A
 
-## Accessing items in an Array
-
-Items in an array can be accessed by putting the position number of the item inside square brackets `[]` at the end of the name of the array.
-
-```js
-let names = ['Amy', 'Ellie', 'Max'];
-let nums = [50, 21, 46, 83];
-
-console.log(names[0]); // prints the String 'Amy' to the JS console
-console.log(nums[1]); // prints the Number 21 to the JS console
-```
-
-The position
-
-## Editing items in an Array
-
-Items in an array can also be edited using `[]` (aka sub).
-
-```js
-names[2] = 'Ben'; // edits the item at position 2 in the names array
-// names -> ['Amy', 'Ellie', 'Ben']
-
-nums[1] += 4; // edits the item at position 1 in the nums array
-// num -> [50, 25, 42, 83]
-```
-
 ## Counting with while loops
 
 The number of loops a while loop does can be counted with a variable.

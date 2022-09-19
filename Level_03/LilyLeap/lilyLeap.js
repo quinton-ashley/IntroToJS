@@ -36,7 +36,11 @@ function draw() {
 	fill('3');
 	rect(0, 0, width, 90);
 
+	// frog is not mid-jump and not falling
+	// the frog is sitting on a lilypad
 	if (frog.y > 83 && frog.vel.y < 1) {
+		// round the x position of the frog to be at exactly
+		// the same x position as the nearest lilypad
 		frog.x = round(frog.x / 16) * 16;
 
 		if (kb.pressed('ArrowUp')) {
