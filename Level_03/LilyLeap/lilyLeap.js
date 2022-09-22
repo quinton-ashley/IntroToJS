@@ -14,10 +14,6 @@ function setup() {
 	frog.w = 10;
 	frog.h = 8;
 
-	frog.rotationLock = true;
-
-	lilypads.layer = 0;
-	lilypads.x = 16;
 	lilypads.y = 90;
 	lilypads.w = 10;
 	lilypads.h = 2;
@@ -29,6 +25,7 @@ function setup() {
 function makeLilyPads() {
 	/* Part A: Use a loop to make more lily pads. */
 	let lily = new lilypads.Sprite();
+	lily.x = 16;
 }
 
 function draw() {
@@ -36,29 +33,13 @@ function draw() {
 	fill('3');
 	rect(0, 0, width, 90);
 
-	// frog is not mid-jump and not falling
-	// the frog is sitting on a lilypad
-	if (frog.y > 83 && frog.vel.y < 1) {
-		// round the x position of the frog to be at exactly
-		// the same x position as the nearest lilypad
-		frog.x = round(frog.x / 16) * 16;
-
-		if (kb.pressed('ArrowUp')) {
-			// little jump
-			frog.velocity.y = -1.4;
-		} else if (kb.pressed('ArrowRight')) {
-			// BIG jump!
-			frog.velocity.y = -2;
-		}
+	if (kb.pressed('ArrowUp')) {
+		// little jump
+		frog.velocity.y = -1.4;
+	} else if (kb.pressed('ArrowRight')) {
+		// BIG jump!
+		frog.velocity.y = -2;
 	}
 
 	camera.x = frog.x + 64;
-
-	// restart the game
-	if (kb.pressed('r')) {
-		lilypads.removeAll();
-		frog.x = 16;
-		frog.y = 90;
-		makeLilyPads();
-	}
 }
