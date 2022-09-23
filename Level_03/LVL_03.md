@@ -1,5 +1,11 @@
 # Level 03 A
 
+## Coding Philosophy: Naming variables
+
+Good code should be easy for other programmers (humans) to read and efficient for your computer to run. Here are some guidelines for how to write good code!
+
+Above all, it's important to put effort into thinking of GOOD names for your variables. Good variable names in Javascript are short and concise descriptors.
+
 ## Counting with while loops
 
 The number of loops a while loop does can be counted with a variable.

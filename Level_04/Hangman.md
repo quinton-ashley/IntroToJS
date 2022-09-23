@@ -10,7 +10,7 @@ Pick a random word from the array of words. HINT: Remember `.length` can be use 
 
 ## Instructions for Part B
 
-Create a `lines` array with the same amount of underscores as the choosen word. For example, if the word is "quiz" the `lines` array should have four dashes: `['_', '_', '_', '_']`. HINT: Use `word.length` and the `repeat` and `split` String functions.
+Create a `lines` array with the same amount of underscores as the choosen word. For example, if the word is "quiz" the `lines` array should have four dashes: `['_', '_', '_', '_']`. HINT: Use a for loop.
 
 Display the `lines` array like this `_ _ _ _` in the prompt on a new line below the hangman text drawing. HINT: use the `join` String function and remember the newline character `\n`
 
@@ -28,10 +28,8 @@ If the player makes too many wrong guesses and the hangman drawing is completed,
 
 At the end of the game tell the player if they won or lost and show them what the word was.
 
-Make the game a bit easier by adding more drawings to the `hangman` array.
+These are some hard words to guess within a limit of only 5 mistakes! Make the game a bit easier by adding more drawings to the `hangman` array. Make the scaffold build up before the hangman is drawn.
 
 The player guessing the word may, at any time, attempt to guess the whole word. If the word is correct, the game is over and the guesser wins.
 
-## Instructions for Part E
-
-Let the player guess another word.
+Ask the player if they'd like to keep playing, if they say yes start a new game. HINT: Use a while loop and the `prompt` function.

@@ -2,11 +2,13 @@
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen2.jpg)
 
-## Coding Philosophy: Naming variables
+## Coding Philosophy: Use log!
 
-Good code should be easy for other programmers (humans) to read and efficient for your computer to run. Here are some guidelines for how to write good code!
+`log` is a shortcut in QuintOS for the JavaScript `console.log` function. It can print the value of variables to the JS console. It's really useful for quickly investigating problems with your program or just to see if it's working the way you intended.
 
-Above all, it's important to put effort into thinking of GOOD names for your variables. Good variable names in Javascript are short and concise descriptors. Write sufficiently detailed comments in your code too.
+```js
+log('test your code!');
+```
 
 ## const
 
@@ -33,18 +35,24 @@ Strings have a lot of useful functions we can use. MDN, the Mozilla Developer Ne
 
 # Level 04 B
 
+## Adding to Arrays
+
+Use the `.push()` function. Weird name huh? It's based on the metaphor of
+
+```js
+let names = ['Amy', 'Ellie', 'Max'];
+let nums = [50, 21, 46, 83];
+
+names.push('Jake'); // adds "Jake" to names array
+// names -> ['Amy', 'Ellie', 'Max', 'Jake']
+
+nums.push(97); // adds 97 to the nums array
+// nums -> [50, 21, 46, 83, 97]
+```
+
 ## Getting the length of a String
 
 `.length` is used to get the amount of items in an array and it can also be used to get the amount of characters in a String.
-
-## Getting an array of characters from a String
-
-You can also split a String into individual characters using the `split` function with an empty String as the input.
-
-```js
-'the red fox'.split('');
-// -> [ "t", "h", "e", " ", "r", "e", "d", " ", "f", "o", "x" ]
-```
 
 ## array.join(separator)
 
@@ -102,10 +110,10 @@ animal = 'the red box'; // this will work!
 
 ## Implied boolean conditions
 
-In this example, if the boolean variable `playerIsDead` gets set to `true`, then tell the user "Game Over!".
+In this example, if the boolean variable `gameOver` gets set to `true`, then tell the user "Game Over!".
 
 ```js
-if (playerIsDead == true) {
+if (gameOver == true) {
 	await alert('Game Over!');
 }
 ```
@@ -113,7 +121,7 @@ if (playerIsDead == true) {
 In Javascript you don't have to use `== true` in boolean conditions because checking for equivalence to `true` is implied. You can just put the variable in a boolean condition on it's own.
 
 ```js
-if (playerIsDead) {
+if (gameOver) {
 	await alert('Game Over!');
 }
 ```
@@ -128,32 +136,17 @@ if (!isPlaying) {
 
 ## Breaking out of a loop
 
-In the card game, Uno, players must play a card matching the color or value of the last card played. They can also play a wild card. If none of the cards in their hand meet these requirements then the player has to pick cards from the deck. Here's an example of one turn in Uno:
+Use the keyword `break` to break out of a loop.
 
 ```js
-let topCard = 'Blue 2';
-topCard = topCard.split(' ');
-let color = topCard[0];
-let value = topCard[1];
+while (playerHealth > 0) {
+	// ... game loop code
 
-let hand = ['Red 5', 'Green 3'];
-let card;
-
-for (let i = 0; i < hand.length + 1; i++) {
-	if (i < hand.length) {
-		card = hand[i];
-	} else {
-		card = pickACard(); // pick a card from the deck
-		hand.push(card); // add the card to the player's hand
-	}
-
-	// card can be played so break out of the for loop!
-	if (card.includes(color) || card.includes(value) || card.includes('Wild')) {
-		break; // exit the loop
+	if (gameOver) {
+		await alert('Game Over!');
+		break;
 	}
 }
-
-placeTopCard(card); // play the card
 ```
 
 ## Computer History: Apple II
@@ -163,12 +156,12 @@ This level's computer was inspired by the Apple II. For many people in the US, t
 https://www.youtube.com/watch?v=CxJwy8NsXFs
 
 - [Level 04 A](#level-04-a)
-	- [Coding Philosophy: Naming variables](#coding-philosophy-naming-variables)
+	- [Coding Philosophy: Use log!](#coding-philosophy-use-log)
 	- [const](#const)
 	- [String.split(separator)](#stringsplitseparator)
 - [Level 04 B](#level-04-b)
+	- [Adding to Arrays](#adding-to-arrays)
 	- [Getting the length of a String](#getting-the-length-of-a-string)
-	- [Getting an array of characters from a String](#getting-an-array-of-characters-from-a-string)
 	- [array.join(separator)](#arrayjoinseparator)
 - [Level 04 C](#level-04-c)
 	- [Accessing items in an Array](#accessing-items-in-an-array)

@@ -112,21 +112,6 @@ Take a look at the MDN documentation for [Date.now()](https://developer.mozilla.
 
 `Date.now()` returns the current date in milliseconds.
 
-## Adding to Arrays
-
-So how do we add to arrays? By using the `.push()` function.
-
-```js
-let names = ['Amy', 'Ellie', 'Max'];
-let nums = [50, 21, 46, 83];
-
-names.push('Jake'); // adds "Jake" to names array
-// names -> ['Amy', 'Ellie', 'Max', 'Jake']
-
-nums.push(97); // adds 97 to the nums array
-// nums -> [50, 21, 46, 83, 97]
-```
-
 # Level 05 E
 
 ## modulo operator
@@ -197,7 +182,6 @@ Originally developed for business executives, GRiDs were also used by the U.S. m
 - [Level 05 D](#level-05-d)
 	- [async/await vs callbacks](#asyncawait-vs-callbacks)
 	- [Date](#date)
-	- [Adding to Arrays](#adding-to-arrays)
 - [Level 05 E](#level-05-e)
 	- [modulo operator](#modulo-operator)
 	- [for loops with non-standard incrementation](#for-loops-with-non-standard-incrementation)
