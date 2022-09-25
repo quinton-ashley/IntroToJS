@@ -1,14 +1,24 @@
 # Level 03 A
 
-## Coding Philosophy: Naming variables
+## Accessing items in an Array
 
-Good code should be easy for other programmers (humans) to read and efficient for your computer to run. Here are some guidelines for how to write good code!
+Items in an array can be accessed using `[]`, referred to as "sub" or "at". For example, `names[0]` is referred to as names sub 0 or name at 0.
 
-Above all, it's important to put effort into thinking of GOOD names for your variables. Good variable names in Javascript are short and concise descriptors.
+The first item in a JavaScript array is at index 0, the second item is at index 1, and so on.
+
+```js
+let names = ['Amy', 'Ellie', 'Max'];
+let nums = [50, 21, 46, 83];
+
+console.log(names[0]); // prints the String 'Amy' to the JS console
+console.log(nums[1]); // prints the Number 21 to the JS console
+```
 
 ## Counting with while loops
 
 The number of loops a while loop does can be counted with a variable.
+
+The variable name `i` stands for "index". It is the standard name for a counter variable.
 
 ```js
 let names = ['Jake', 'Ali', 'Ben', 'Cam'];
@@ -27,10 +37,10 @@ while (i < names.length) {
 The code above prints out a numbered list of names in the JS console.
 
 ```txt
-0. Jake
-1. Ali
-2. Ben
-3. Cam
+1. Jake
+2. Ali
+3. Ben
+4. Cam
 ```
 
 # Level 03 B

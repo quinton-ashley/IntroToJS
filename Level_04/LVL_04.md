@@ -66,18 +66,6 @@ names.join(' ~ ');
 
 # Level 04 C
 
-## Accessing items in an Array
-
-Items in an array can be accessed by putting the position number of the item inside square brackets `[]` at the end of the name of the array.
-
-```js
-let names = ['Amy', 'Ellie', 'Max'];
-let nums = [50, 21, 46, 83];
-
-console.log(names[0]); // prints the String 'Amy' to the JS console
-console.log(nums[1]); // prints the Number 21 to the JS console
-```
-
 ## Editing items in an Array
 
 Items in an array can also be edited using `[]` (aka sub).
@@ -164,7 +152,6 @@ https://www.youtube.com/watch?v=CxJwy8NsXFs
 	- [Getting the length of a String](#getting-the-length-of-a-string)
 	- [array.join(separator)](#arrayjoinseparator)
 - [Level 04 C](#level-04-c)
-	- [Accessing items in an Array](#accessing-items-in-an-array)
 	- [Editing items in an Array](#editing-items-in-an-array)
 	- [Accessing characters in a String](#accessing-characters-in-a-string)
 - [Level 04 D](#level-04-d)
