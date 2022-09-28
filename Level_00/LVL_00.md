@@ -275,7 +275,7 @@ The multiplication symbol is the asterisk, NOT the letter `x`!
 let x = 5 * 8; // x -> 40
 ```
 
-## Generate a random number
+## Math: Generate a random number
 
 ```js
 // random(low, high) returns a random decimal number in the specified range
@@ -283,14 +283,12 @@ let x = random(0, 1); // numbers ranging from 0 to 1
 let x2 = random(-4, 7); // numbers ranging from -4 to 7
 ```
 
-## Math
+## Math: round
 
-At this point you should also know about the global object [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math), which has many useful functions.
+The `round` function rounds a number to the nearest integer.
 
 ```js
-let a = Math.round(30.1); // a -> 30
-let b = Math.round(30.7); // b -> 31
-// Math.round() rounds a number to the nearest integer
+let y = round(5.3); // y -> 5
 ```
 
 ## Computer History: Casio FX-720P
@@ -324,6 +322,6 @@ This level's computer was inspired by the Casio FX-720P, which could run program
   - [while loops](#while-loops)
 - [Level 00 D](#level-00-d)
   - [Mathematical operators 🔢](#mathematical-operators-)
-  - [Generate a random number](#generate-a-random-number)
-  - [Math](#math)
+  - [Math: Generate a random number](#math-generate-a-random-number)
+  - [Math: round](#math-round)
   - [Computer History: Casio FX-720P](#computer-history-casio-fx-720p)

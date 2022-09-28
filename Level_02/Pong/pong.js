@@ -1,5 +1,9 @@
 // screen width is 256, height is 192
 
+// create the sprite variables outside the setup function so you
+// can use them in other functions
+let ball;
+
 function setup() {
 	// code in this function gets run once at the start
 	// of the game
@@ -17,9 +21,10 @@ ww....ww
 	let imgPaddle = spriteArt('.wwwwww.\nwwwwwwww\n' + 'ww....ww\n'.repeat(42) + 'wwwwwwww\n.wwwwww.');
 
 	// creates a ball in center of the screen
-	let ball = new Sprite(imgBall);
+	ball = new Sprite(imgBall);
 	ball.x = width / 2;
 	ball.y = height / 2;
+	ball.diameter = 8;
 }
 
 function draw() {

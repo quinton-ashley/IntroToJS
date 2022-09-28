@@ -164,43 +164,38 @@ When you assign values to a sprite's velocities, the p5.play `drawSprites` funct
 
 Objects in p5.play collide by default but the paddle and ball won't do a perfect bounce off the paddle automatically.
 
-To have the ball bounce off the paddle and retain its speed, set the ball's bounciness to 1, indicating you want a full bounce.
+To have the ball bounce off the paddle and retain its speed, set the ball's bounciness to 1, indicating you want a full bounce. Set the friction to 0, indicating you want no friction.
 
 ```js
 ball.bounciness = 1;
+ball.friction = 0;
 ```
 
 By default when sprites collide both objects will move. To prevent this, set the sprite to be static when another sprite bounces on it.
 
 ```js
-paddle.collider = 'static';
+wall.collider = 'static';
+```
+
+If you want to have a sprite that isn't moved by other sprites but can still be moved by the player, set the sprite's collider to 'kinematic'.
+
+```js
+paddle.collider = 'kinematic';
 ```
 
 # Level 02 D
 
-## Respond to keyboard input
+## Keyboard Input
 
-The `keyPressed` is a p5.js function that is run whenever a key is pressed.
-
-```js
-function keyPressed() {
-	if (key == 'ArrowUp') {
-		log('The up arrow key was pressed!');
-	}
-}
-```
-
-Implement `keyPressed` outside the `draw` function.
-
-## Check if a key is held
+Check if the user is pressing a key:
 
 ```js
 function draw() {
-	if (keyIsDown('ArrowLeft')) {
-		player.x -= 2; // move the player left by 2 pixels
+	if (kb.pressing('ArrowLeft')) {
+		player.vel.x -= 0.1; // move the player left
 	}
-	if (keyIsDown('ArrowRight')) {
-		player.x += 2; // move the player right by 2 pixels
+	if (kb.pressing('ArrowRight')) {
+		player.vel.x += 0.1; // move the player right
 	}
 }
 ```
@@ -259,8 +254,7 @@ https://youtu.be/nRlmTiynbd8?t=242
   - [Vectors](#vectors)
   - [Bounces](#bounces)
 - [Level 02 D](#level-02-d)
-  - [Respond to keyboard input](#respond-to-keyboard-input)
-  - [Check if a key is held](#check-if-a-key-is-held)
+  - [Keyboard Input](#keyboard-input)
   - [Drawing text to the screen](#drawing-text-to-the-screen)
   - [Level 02 E](#level-02-e)
   - [p5.js fill, stroke, and rect](#p5js-fill-stroke-and-rect)
