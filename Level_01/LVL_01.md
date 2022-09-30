@@ -107,11 +107,10 @@ I want to put something on a new line:
 something
 ```
 
-The tab character `\t`, note that the `+` operator is used to add another String to the list on a new line in the JavaScript code.
+The tab character `\t` is for indenting text.
 
 ```js
-let list = 'Grocery list:\n\n\t'
-	+ "Apples\n\tOranges\n\tBananas';
+let list = 'Grocery list:\n\n\tApples\n\tOranges\n\tBananas';
 ```
 
 ```txt
@@ -120,6 +119,18 @@ Grocery list:
 	Apples
 	Oranges
 	Bananas
+```
+
+## Adding Strings
+
+You can add Strings together using the `+` operator.
+
+```js
+let firstName = 'Quinton';
+let lastName = 'Ashley';
+let fullName = firstName + ' ' + lastName;
+
+console.log(fullName); // -> 'Quinton Ashley'
 ```
 
 ## Javascript Console
@@ -296,6 +307,7 @@ https://style64.org/petscii/
   - [VSCode Settings](#vscode-settings)
   - [Loading QuintOS Games](#loading-quintos-games)
   - [Special characters](#special-characters)
+  - [Adding Strings](#adding-strings)
   - [Javascript Console](#javascript-console)
   - [End of Level 01 A](#end-of-level-01-a)
 - [Level 01 B](#level-01-b)
