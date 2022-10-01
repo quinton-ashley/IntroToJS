@@ -10,15 +10,6 @@ Good code should be easy for other programmers (humans) to read and efficient fo
 
 Above all, it's important to put effort into thinking of GOOD names for your variables. Good variable names in Javascript are short and concise descriptors.
 
-## slice String
-
-```js
-let str = 'hello'.slice(1);
-log(str); // -> 'ello'
-```
-
-`slice` returns a part of the original string which starts at the index provided as the first input parameter.
-
 ## Create a Button
 
 Buttons glow when hovered over and are clickable. The `button` function is quite similar to the `text` function.
@@ -177,7 +168,6 @@ Originally developed for business executives, GRiDs were also used by the U.S. m
 
 - [Level 05 A](#level-05-a)
 	- [Coding Philosophy: Naming variables](#coding-philosophy-naming-variables)
-	- [slice String](#slice-string)
 	- [Create a Button](#create-a-button)
 - [Level 05 B](#level-05-b)
 	- [Respond to button clicks](#respond-to-button-clicks)
