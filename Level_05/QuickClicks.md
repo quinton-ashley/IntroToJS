@@ -12,7 +12,7 @@ Make four imposter targets using a `for` loop. HINT: Imposter targets should loo
 
 ## Instructions for Part B
 
-When the player clicks the target button, place another target and another four imposter targets in random positions on the screen. HINT: Use a recursion callback to the button click function to achieve this.
+When the player clicks the target button, place another target and another four imposter targets in random positions on the screen. HINT: Use a recursion callback to the `makeTargets` function to achieve this.
 
 You will notice that using recursion generates a lot of targets quickly!
 
@@ -22,7 +22,7 @@ When the player clicks the target, erase the screen before creating another targ
 
 Before the game starts, place an alert window with instructions on how to play in the middle of the screen. Tell the user to press the "OKAY" button to start the game.
 
-If the player clicks an imposter target tell them "Game Over!" because they clicked an imposter target. Show them the location of the real target but don't allow them to click it. The player should be able to try playing again from the beginning.
+If the player clicks an imposter target tell them "Game Over!" because they clicked an imposter target. Show them the location of the real target but don't allow them to click it.
 
 ## Instructions for Part D
 
@@ -65,4 +65,4 @@ Try making a cool geometric pattern like this! HINT: use the modulo operator to 
 ⎽/⎺⎺\⎽⎽/⎺⎺\⎽
 ```
 
-BUG FIX! Though unlikely it is possible that an imposter target is placed directly over a real target. How can this be prevented? What degree of button overlap, if any, should be acceptable?
+BUG FIX! Though unlikely, it is possible that an imposter target is placed directly over a real target. Try to prevent this!

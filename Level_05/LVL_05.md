@@ -24,14 +24,14 @@ button('No', 5, 9);
 
 ## Respond to button clicks
 
-Let's learn how to add a button. The `button` function is just like the `text` function but you can add a fourth input parameter, a callback function that gets run when the button is clicked.
+You can add a fourth input parameter to the button function, a callback function that gets run when the button is clicked.
 
 ```js
-function btnClick() {
+function test() {
 	console.log('You clicked the button!');
 }
 //    (text,     row, col, function)
-button('Click me!', 5, 5, btnClick);
+button('Click me!', 5, 5, test);
 ```
 
 Note that the callback function is passed as a variable, it is not run using parenthesis `()` when the button is created. It gets run only when the button is clicked.
@@ -75,11 +75,11 @@ Use erase to remove all text and buttons from the screen.
 
 ## Change the position of prompts and alerts
 
-The position of prompt and alert windows can be changed by defining their row and column values just like with the `text` and `button` functions.
+The position of prompt and alert windows can be changed by defining their row and column values just like with the `text` and `button` functions. You can also limit the width of the window.
 
 ```js
-//         (text           , row, col)
-await alert('I can move too!', 5, 20);
+//         (text           , row, col, width limit)
+await alert('I can move too!', 5, 12, 20);
 ```
 
 ## asynchronous functions
