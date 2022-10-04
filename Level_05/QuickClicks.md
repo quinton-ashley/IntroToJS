@@ -26,6 +26,8 @@ If the player clicks an imposter target tell them "Game Over!" because they clic
 
 After the player clicks 10 target buttons, calculate the user's average, slowest, and fastest response times. To get the speeds at which the player clicked between buttons you'll first need to create an array that stores the time at which they clicked each target. HINT: Use the `push` function to add `Date.now()` to an array called `times`
 
+Stop making targets after 10 clicks and run a `calcStats` (calculate statistics) function that calculates the average, slowest, and fastest response times.
+
 Now create an array of speeds that stores the time in milliseconds it took the player to click each button. Each number in this array should represent the difference between the time a button was clicked and the time the next button was clicked. HINT: If the player clicks the button 10 times there will only be 9 speeds (time between each button click). Use a `for` loop to create the array of speeds.
 
 Remember! `for` loops with a counter variable:

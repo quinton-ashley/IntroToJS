@@ -40,6 +40,38 @@ Draws a line between two points.
 line(x1, y1, x2, y2);
 ```
 
+# Level 07 C
+
+## color
+
+Color can be given in many different ways to the p5.js color function. You can use a color letter or color name to use the default colors. But you can also specify a RGB values or a hexadecimal code.
+
+```js
+color('red'); // simple color name
+color(255, 16, 32); // RGB value
+color('#ff1020'); // hex code
+```
+
+RGB stands for Red, Green, and Blue. Each value is a number between 0 and 255. The color of the pixel is determined by the combination of these three values.
+
+## Hexadecimal numbers
+
+In the previous lesson you learned about binary (base 2) numbers but hypotethically a number system could be created with any base amount. The second most common number system in Computer Science is hexadecimal (base 16). Hexadecimal numbers are written with the digits 0-9 and the letters A-F. Letters are used because each place stores 16 different values. The number 10 in hexadecimal is written as A, 11 is B, 12 is C, and so on.
+
+## Hex color code
+
+What is a hex color code? It's a way of representing a color using 6 characters. The first two characters represent the red value, the second two characters represent the green value, and the last two characters represent the blue value.
+
+```js
+#ff1020
+// Hexadecimal: red: ff, green: 10, blue: 20
+// Decimal:    red: 255, green: 16, blue: 32
+```
+
+The hexadecimal number 20 is equal to the decimal number 32. That's because the 2 is in the 16s place and `2 * 16 = 32`.
+
+The hexadecimal number ff is equal to the decimal number 255. Because `15 * 16 + 15 = 255`.
+
 ## Computer History: IBM 2250
 
 From Wikipedia:

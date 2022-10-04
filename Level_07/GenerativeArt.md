@@ -6,3 +6,15 @@ Watch the first few minutes of this short film from 1968 to see examples of John
 https://www.youtube.com/watch?v=LaarVR1AOvs
 
 # Instructions for Part A
+
+Create a variable `time` that goes up by .1 every frame (everytime the draw function is run).
+
+Move a point using the `sin` and `cos` functions using the `time` variable.
+
+Move another point using different equations from the first point.
+
+# Instructions for Part B
+
+Join the two points with a line.
+
+Draw a trail of lines following the first line.
