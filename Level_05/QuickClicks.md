@@ -8,21 +8,19 @@ Try placing the target button in the bottom right corner of the screen. Note the
 
 Put the target button in a random position on the screen. HINT: `random(start, end)` returns decimal numbers but row and col values need to be whole numbers
 
-Make four imposter targets using a `for` loop. HINT: Imposter targets should look a bit different from the real target. The smaller the differences the harder your Quick Clicks game will be.
+Make four imposter targets using a `for` loop. Imposter targets should look a bit different from the real target. The smaller the differences the harder your Quick Clicks game will be.
 
 ## Instructions for Part B
 
-When the player clicks the target button, place another target and another four imposter targets in random positions on the screen. HINT: Use a recursion callback to the `makeTargets` function to achieve this.
+When the player clicks the target button, place another target and another four imposter targets in random positions on the screen. HINT: Use a recursion callback to the `makeTargets` function.
 
-You will notice that using recursion generates a lot of targets quickly!
+You will notice that using recursion generates a lot of targets quickly! You can use the `erase()` function to remove all text and buttons from the screen.
+
+If the player clicks an imposter target tell them "Game Over!" because they clicked an imposter target. Show them the location of the real target but don't allow them to click it.
 
 ## Instructions for Part C
 
-When the player clicks the target, erase the screen before creating another target and four more imposter targets.
-
 Before the game starts, place an alert window with instructions on how to play in the middle of the screen. Tell the user to press the "OKAY" button to start the game.
-
-If the player clicks an imposter target tell them "Game Over!" because they clicked an imposter target. Show them the location of the real target but don't allow them to click it.
 
 ## Instructions for Part D
 

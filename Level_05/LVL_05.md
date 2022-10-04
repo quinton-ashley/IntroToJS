@@ -65,14 +65,6 @@ function gameLoop() {
 
 # Level 05 C
 
-## Erase
-
-```js
-erase();
-```
-
-Use erase to remove all text and buttons from the screen.
-
 ## Change the position of prompts and alerts
 
 The position of prompt and alert windows can be changed by defining their row and column values just like with the `text` and `button` functions. You can also limit the width of the window.
@@ -93,8 +85,6 @@ async function sayHello() {
 }
 ```
 
-# Level 05 D
-
 ## async/await vs callbacks
 
 `async`/`await` and callbacks are the two main forms of asynchronous programming in JavaScript. `async`/`await` was added to JavaScript in 2017 so that asynchronous code could be written linearly, like synchronous code, one line after the other.
@@ -102,6 +92,8 @@ async function sayHello() {
 Callbacks are non-linear, so they are good for handling events (like button clicks) that in some cases we wouldn't want our program to wait for. For example if you gave the user a choice between clicking a "Yes" or "No" button you wouldn't want the program to wait for them to click "Yes" because they might click "No". A separate callback function is needed to handle each response.
 
 Now you might be wondering how await-ing the prompt function works, since the user can either enter text or click cancel?! In level 11 you'll learn how to make await-able `Promise` objects that resolve after an event or any number of different events.
+
+# Level 05 D
 
 ## Date
 
@@ -173,11 +165,10 @@ Originally developed for business executives, GRiDs were also used by the U.S. m
 	- [Respond to button clicks](#respond-to-button-clicks)
 	- [Recursion](#recursion)
 - [Level 05 C](#level-05-c)
-	- [Erase](#erase)
 	- [Change the position of prompts and alerts](#change-the-position-of-prompts-and-alerts)
 	- [asynchronous functions](#asynchronous-functions)
-- [Level 05 D](#level-05-d)
 	- [async/await vs callbacks](#asyncawait-vs-callbacks)
+- [Level 05 D](#level-05-d)
 	- [Date](#date)
 - [Level 05 E](#level-05-e)
 	- [modulo operator](#modulo-operator)

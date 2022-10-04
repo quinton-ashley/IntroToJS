@@ -37,7 +37,7 @@ Strings have a lot of useful functions we can use. MDN, the Mozilla Developer Ne
 
 ## Adding to Arrays
 
-Use the `.push()` function. Weird name huh? It's based on the metaphor of
+Use the `.push()` function. Weird name huh? It's based on the metaphor of a stack of papers.
 
 ```js
 let names = ['Amy', 'Ellie', 'Max'];
