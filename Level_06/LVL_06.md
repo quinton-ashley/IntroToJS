@@ -89,18 +89,23 @@ To convert from decimal to binary, start with the biggest 2^n that is less than 
 1010
 ```
 
-##
+## Byte
+
+A bit is one place value in a binary number.
+
+A 4 bit binary number is called a nibble. Ha!
+
+An 8 bit binary number is called a byte.
+
+How many different values can be stored using 8 bits? Remember we can calculate this by doing 2 to the power of the number of bits 2^8 is... uhh. Well 2^4 is 16, so 2^5 must be 32, then 2^6 is 64, 2^7 is 128, so finally 2^8 is 256. One byte (8 bits) can store 256 different values, 0-255!
+
+## Exponents in JavaScript
 
 ```js
-let x = 12;
-let binary = x.toString(2);
+let x = 2 ** 3; // -> 8
 ```
 
 # Level 06 B
-
-## Byte
-
-A byte is a group of 8 bits. How many different values can be stored using 8 bits? Remember we can calculate this by doing 2 to the power of the number of bits 2^8 is... uhh. Well 2^4 is 16, so 2^5 must be 32, then 2^6 is 64, 2^7 is 128, so finally 2^8 is 256. One byte (8 bits) can store 256 different values, 0-255!
 
 ## ASCII
 
