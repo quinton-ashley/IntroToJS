@@ -91,11 +91,14 @@ Hello Ali
 Hello Ben
 ```
 
-## slice String
+## JSON file
 
-```js
-let str = 'hello'.slice(1);
-log(str); // -> 'ello'
+JSON stands for JavaScript Object Notation. It is a way to store data in a text file. It is a common way to store data for web applications.
+
+```json
+{
+	"apples": 2,
+	"bananas": 10,
+	"pears": 4
+}
 ```
-
-`slice` returns a part of the original string which starts at the index provided as the first input parameter.
