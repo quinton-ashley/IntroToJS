@@ -15,7 +15,7 @@ TTTTT  OOO   EEEE
   T   O   O  E
   T   O   O  EEE
   T   O   O  E
-  T    OOO   EEEE`.slice(1);
+  T    OOO   EEEE`;
 
 const bigSpace = '        \n'.repeat(7);
 
@@ -26,7 +26,7 @@ OO    OO
 OO    OO
 OO    OO
 OO    OO
- OOOOOO`.slice(1); // slice off the first newline character
+ OOOOOO`;
 
 const bigX = `
 XX    XX
@@ -35,7 +35,7 @@ XX    XX
    XX
   XXXX
  XX  XX
-XX    XX`.slice(1);
+XX    XX`;
 
 const gridRow = 3;
 const gridCol = 26;

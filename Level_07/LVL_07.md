@@ -44,7 +44,7 @@ line(x1, y1, x2, y2);
 
 ## color
 
-Color can be given in many different ways to the p5.js color function. You can use a color letter or color name to use the default colors. But you can also specify a RGB values or a hexadecimal code.
+Color can be given in many different ways to the p5.js color function. You can use a color letter or color name to use the default colors. But you can also specify RGB values or a hexadecimal code.
 
 ```js
 color('red'); // simple color name
@@ -71,6 +71,16 @@ What is a hex color code? It's a way of representing a color using 6 characters.
 The hexadecimal number 20 is equal to the decimal number 32. That's because the 2 is in the 16s place and `2 * 16 = 32`.
 
 The hexadecimal number ff is equal to the decimal number 255. Because `15 * 16 + 15 = 255`.
+
+## Anonymous arrow functions
+
+Arrow/lambda functions are a short way to write functions in JavaScript using an arrow `=>` instead of the word function. You can create arrow functions without naming the function too: `() => {}`
+
+```js
+button('click here!', 10, 4, () => {
+	log('button clicked');
+});
+```
 
 ## Computer History: IBM 2250
 

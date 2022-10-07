@@ -10,4 +10,4 @@ Each film object should have the following properties: `id` string, `title` stri
 
 Your `dataDesigner.js` program should read the `films.json` file and display all the films in a table. Remove the example film data from the table. Use a `for of` loop to add films to the table.
 
-Create a JSON file called `members.json`. Inside the object create a property called `members` which will contain an array of member objects. Each member object should have the following properties: `id` string, `name` string, and `rented` array. Add at least 3 members to the array.
+Create a JSON file called `members.json`. Inside the object create a property called `members` which will contain an array of member objects. Add at least 3 members to the array. Each member object should have the following properties: `id` string, `name` string, and `rented` array. The `rented` array should contain the `id` strings of the films the member has rented.

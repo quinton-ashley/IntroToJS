@@ -70,10 +70,10 @@ When counting in binary you can think of the 1 being like a 9 in decimal. When y
 We can calculate the decimal value of binary numbers by finding the sum of 2 to the power of the place value for all the places with a 1 in it.
 
 ```
-1111
+1101
 
-2^3 + 2^2 + 2^1 + 2^0 =
- 8  +  4  +  2  +  1  = 15
+2^0 + 2^2 + 2^3 =
+ 1  +  4  +  8  = 13
 ```
 
 ## Convert from Decimal to Binary
@@ -130,6 +130,8 @@ Note that many of the control characters in ASCII were used for sending telegrap
 While ASCII successfully standardized the encoding of letters in the English alphabet, as people all over the world began to use computers a new standard was needed for encoding symbols from every written language.
 
 Today all modern computers share a new encoding standard for text based communications called Unicode. Unicode still includes all the ASCII symbols in the beginning but has also standardized its extension to include hundreds of thousands of additional symbols. It includes tons of mathematical symbols, icons, and every emoji!
+
+https://unicode-explorer.com/blocks
 
 If you'd like to learn more about Unicode watch this video:
 
