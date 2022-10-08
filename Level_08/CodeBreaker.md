@@ -10,11 +10,13 @@ Create a Caesar Cipher encryption algorithm. For now, try shifting all the lette
 
 The encrypted string `secret` should include all the spaces, punctuation symbols, and numbers found in the `message` string. Try adding non-letter characters to your `message` string. Make sure the `secret` string includes them.
 
-Prompt the user for a message they would like to encode. You will need to change the user's message to all upper case or modify your encryption algorithm to handle lower case letters.
+Prompt the user for a message they would like to encode. You will need to change the user's message to all upper case or for an extra challenge, modify your encryption algorithm to handle upper and lower case letters.
 
-Prompt the user for the Caesar Cipher key, the shift amount, and modify your encryption algorithm to use it. Users should be able to either enter a number or letter. For example if a user enters the letter "c", it should be equivalent to a positive shift of 2.
+Try the word "zebra" and shift by 1. "z" should become "a" but it doesn't.
 
-Try the word "zebra" and shift by 1. "z" should become "a" but it doesn't. HINT: Remember the modulo operator % gets the remainder of a division.
+Prompt the user for the Caesar Cipher key, the shift amount, and modify your encryption algorithm to use it.
+
+Users should be able to use a letter for the shift amount. For example if a user enters the letter "c", it should be equivalent to a positive shift of 2. (a=0, b=1, c=2, d=3, etc.)
 
 ## Instructions for Part B
 
@@ -22,4 +24,4 @@ Give users the option to load text from a .txt plaintext file.
 
 ## Instructions for Part C
 
-Allow the user to decrypt Caesar Cipher messages without knowing the shift amount: code breaking!! Allow the user to easily view truncated (sliced!) results of using different shift amounts on the secret message. Create 25 buttons on the screen, one for each shift amount. When a user clicks a button, clear the screen and display the full result.
+Allow the user to decrypt Caesar Cipher messages without knowing the shift amount: code breaking!! Allow the user to easily view truncated (sliced!) results of using different shift amounts on the secret message. Create 25 buttons on the screen, one for each shift amount. When a user clicks a button, clear the screen and display the full result. HINT: Make a function for Caesar Cipher encryption and decryption. Call the function with the message and shift amount as parameters. The function should return the encrypted or decrypted message. While you're testing the program make the file name hardcoded to "secrets.txt".
