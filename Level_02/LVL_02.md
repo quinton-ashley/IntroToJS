@@ -29,17 +29,11 @@ The p5.js `draw` function should contain code for drawing an image (frame). Behi
 
 Move objects a little bit in each new frame drawn to the screen. This is called animation.
 
+Note that p5.js adds a lot of variables to the global scope. Note that `width` and `height` refer to the size of the screen in pixels.
+
 ## p5.play Sprites
 
-Sprites are characters or items in 2D video games that typically move above a background layer.
-
-```js
-let sprite = new Sprite(img);
-sprite.x = 5;
-sprite.y = 12;
-```
-
-Sprite objects in the p5.play library have attributes such as their x and y position. A sprite's x position is its horizontal position on the screen. A sprite's y position is its vertical position on the screen.
+Take a look at the p5.play website to learn about sprites: https://p5play.org/learn/sprite.html
 
 ## spriteArt
 
@@ -89,19 +83,7 @@ Can you tell what the image is?
 
 It's a simple yellow and black smiley face image! 😃
 
-## p5.js global variables
-
-Note that p5.js adds a lot of variables to the global scope. Note that `width` and `height` refer to the size of the screen in pixels.
-
 # Level 02 B
-
-# Getting a Sprite's width and height
-
-When you create a sprite using an image the width and height of the sprite is automatically assigned to the sprite based on the size of the image. These attributes can be accessed using `.width` and `.height` or with `.w` and `.h`
-
-```js
-console.log('size of the sprite: ' + sprite.w + 'x' + sprite.h);
-```
 
 ## spriteArt scaling
 
@@ -144,22 +126,6 @@ console.log(x); // x -> 7
 
 # Level 02 C
 
-## Vectors
-
-In Physics a vector is a direction in which something is moving and the magnitude of how fast it's moving there at a given interval of time.
-
-In 2D (two dimensional) games, a sprite's vector can be stored as the velocity at which a sprite is moving along the x-axis and the velocity it's moving along the y-axis per frame. The ball's speed is the combination of these velocities.
-
-```js
-ball.velocity.x = 1;
-ball.velocity.y = 1;
-// you can also use "vel" instead of "velocity"
-ball.vel.x = 1;
-ball.vel.y = 1;
-```
-
-When you assign values to a sprite's velocities, the p5.play `drawSprites` function will change the ball's position.
-
 ## Bounces
 
 Objects in p5.play collide by default but the paddle and ball won't do a perfect bounce off the paddle automatically.
@@ -181,6 +147,14 @@ If you want to have a sprite that isn't moved by other sprites but can still be 
 
 ```js
 paddle.collider = 'kinematic';
+```
+
+## Custom collision
+
+In the example below, `deflectLaser` is a function that will be called when the shield sprite gets hit by a laser. The `deflectLaser` function could make the laser bounce off the shield in a random direction or have it be absorbed by the shield.
+
+```js
+shield.collide(laser, deflectLaser);
 ```
 
 # Level 02 D
@@ -244,15 +218,13 @@ https://youtu.be/nRlmTiynbd8?t=242
   - [p5.play Sprites](#p5play-sprites)
   - [spriteArt](#spriteart)
   - [Make Strings with Back-ticks](#make-strings-with-back-ticks)
-  - [p5.js global variables](#p5js-global-variables)
 - [Level 02 B](#level-02-b)
-- [Getting a Sprite's width and height](#getting-a-sprites-width-and-height)
   - [spriteArt scaling](#spriteart-scaling)
   - [String.repeat(amount)](#stringrepeatamount)
   - [+= operator](#-operator)
 - [Level 02 C](#level-02-c)
-  - [Vectors](#vectors)
   - [Bounces](#bounces)
+  - [Custom collision](#custom-collision)
 - [Level 02 D](#level-02-d)
   - [Keyboard Input](#keyboard-input)
   - [Drawing text to the screen](#drawing-text-to-the-screen)

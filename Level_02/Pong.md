@@ -8,7 +8,7 @@ https://www.youtube.com/watch?v=fiShX2pTz9A
 
 Create two paddle sprites and place them on opposite ends of the screen.
 
-Make the ball move to the right. HINT: Do this inside the draw function.
+Make the ball move to the right.
 
 You will notice that when the ball moves it leaves a trail of ball images behind it. That's because everything drawn to the p5.js canvas stays there, it doesn't become a blank slate every time the draw function is used to make a new frame. This is useful for some art programs but not for a Pong game. Use the p5.js background function with "b" (black) as the input argument `background("b")`
 
@@ -22,9 +22,7 @@ Make a wall image (or two) with the `spriteArt` function. Place two walls at the
 
 ## Instructions for Part C
 
-Make the ball bounce off the walls without using the `bounce` function. To easily test your code for this, have the ball move straight down, when it bounces it should go straight up. HINT: change `ball.velocity.y` when the ball touches a wall.
-
-Make the ball bounce off the paddles. As a challenge you can implement the bounce yourself or use the p5.play `bounce` function.
+Make the ball bounce off the paddles.
 
 Place the ball back in the middle of the screen when it goes off screen.
 

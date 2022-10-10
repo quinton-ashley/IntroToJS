@@ -43,6 +43,12 @@ The code above prints out a numbered list of names in the JS console.
 4. Cam
 ```
 
+## p5.play Groups
+
+Take a look at the p5.play Learn pages for Groups:
+
+https://p5play.org/learn/group.html
+
 # Level 03 B
 
 ## for loops
