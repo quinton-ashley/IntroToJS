@@ -33,10 +33,10 @@ function draw() {
 	fill('3');
 	rect(0, 0, width, 90);
 
-	if (kb.pressed('ArrowUp')) {
+	if (kb.presses('ArrowUp')) {
 		// little jump
 		frog.velocity.y = -1.4;
-	} else if (kb.pressed('ArrowRight')) {
+	} else if (kb.presses('ArrowRight')) {
 		// BIG jump!
 		frog.velocity.y = -2;
 	}

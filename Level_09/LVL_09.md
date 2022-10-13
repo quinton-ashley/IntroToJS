@@ -24,17 +24,6 @@ for (let row = 0; row < rows; row++) {
 
 The first `for` loop goes row by row, then the `for` loop on the inside goes through all the columns in that row.
 
-## Arrow function syntax
-
-You can also create functions using the arrow syntax. The arrow is: `=>`
-
-```js
-//       (   text    , x, y, action)
-button('click me!', 0, 0, () => {
-	console.log('button clicked!');
-});
-```
-
 # Level 09 C
 
 ## Two Dimensional Arrays
@@ -108,7 +97,6 @@ await alert(message, 5, 20, 16);
 - [Level 09 A](#level-09-a)
 - [Level 09 B](#level-09-b)
 	- [Nested for loops](#nested-for-loops)
-	- [Arrow function syntax](#arrow-function-syntax)
 - [Level 09 C](#level-09-c)
 	- [Two Dimensional Arrays](#two-dimensional-arrays)
 	- [2D array access](#2d-array-access)

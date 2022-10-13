@@ -102,3 +102,11 @@ JSON stands for JavaScript Object Notation. It is a way to store data in a text 
 	"pears": 4
 }
 ```
+
+## fetch a json file
+
+```js
+let filePath = QuintOS.dir + '/groceries.json';
+let data = await fetch(filePath);
+let txt = await data.json();
+```

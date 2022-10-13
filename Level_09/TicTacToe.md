@@ -6,7 +6,7 @@ Tic-tac-toe (also known as noughts and crosses, Xs and Os, or X'y O'sies) is a p
 
 Implement TicTacToe between two human players. Start by finishing the grid lines.
 
-Create 9 buttons for all the empty spaces on the grid. Use `bigSpace` for the text of these buttons. Start with the top row, then middle row, and then do the last row.
+Create 9 buttons for all the empty spaces on the grid. Use `bigSpace` for the text of these buttons. Start by making the buttons on the top row, then the middle row, and then do the last row.
 
 ## Instructions for Part B
 
@@ -14,7 +14,7 @@ Now create all the buttons using a nested for loop instead of doing them one by 
 
 Make a `takeTurn` function with row and column input parameters. The click callback function for all the buttons should be an anonymous arrow function. Inside the anonymous function run `takeTurn(row, col)`. For now try drawing a `bigX` on the clicked button using the `text` function.
 
-After player X takes their turn, player O should be able to place their `bigO` mark on the grid.
+After player X takes their turn, player O should be able to place their `bigO` mark on the grid. HINT: Store whose turn it is in a variable.
 
 ## Instructions for Part C
 
@@ -28,7 +28,7 @@ Show alerts on the bottom right of the screen, don't let them overlap with the T
 
 Create a function called `checkForWinner` that should take a mark ('x' or 'o') as an input parameter. First try checking for winners (three Xs or three Os in a row) on the first row. If there is a winner return `true`, if there's not return `false`. Use the `checkForWinner` function in `takeTurn` and tell the players who won using an alert.
 
-Now implement checking for a winner in all horizontal rows and vertical columns using a single for loop. Also check for the two diagonals, no loop required.
+Now implement checking for a winner in all horizontal rows and vertical columns in a loop. Also check for the two diagonals, no loop required.
 
 Create a function called `checkForDraw` that checks for a draw (all spaces filled and no winner). Use the function in `takeTurn` and tell the players there was a draw.
 

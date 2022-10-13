@@ -23,7 +23,7 @@ Draw a trail of lines following the first line.
 
 Make a gallery of generative art. Create 8 buttons on the bottom of the screen numbered 1-8 that change which of your artworks is displayed. Create 8 different artworks and try to make them all really different!
 
-You can use any of the p5.js and p5.play functions you've learned to create dynamic generative art based on randomness `random(low, high)` or user input `mouse.x`, `kb.pressed(key)`. You can also change the strokeWeight, color, and amount of lines that each artwork has. Experiment with the color of the background and using an alpha (opacity) value so that the older lines fade away.
+You can use any of the p5.js and p5.play functions you've learned to create dynamic generative art based on randomness `random(low, high)` or user input `mouse.x`, `kb.presses(key)`. You can also change the strokeWeight, color, and amount of lines that each artwork has. Experiment with the color of the background and using an alpha (opacity) value so that the older lines fade away.
 
 ```js
 //   RED, GREEN, BLUE, ALPHA

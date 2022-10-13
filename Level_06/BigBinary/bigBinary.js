@@ -34,8 +34,8 @@ function start() {
 }
 
 function update() {
-	if (kb.pressed('ArrowLeft')) pickedLeft();
-	if (kb.pressed('ArrowRight')) pickedRight();
+	if (kb.presses('ArrowLeft')) pickedLeft();
+	if (kb.presses('ArrowRight')) pickedRight();
 	requestAnimationFrame(update);
 }
 
