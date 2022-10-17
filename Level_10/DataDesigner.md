@@ -6,7 +6,7 @@ Create a program that can read, edit, and write data in a database.
 
 Create a JSON file called `films.json`. Inside the object create a property called `films` which will contain an array of film objects.
 
-Each film object should have the following properties: `id` string, `title` string, `genre` number code, `rating` number, and `description` string. The rating should be a number 1-5. Each film object should have a unique two character long `id` string. Add at least 8 films to the array.
+Each film object should have the following properties: `id` string, `title` string, `genre` number code, `rating` number, and `description` string. The rating should be a number 1-5. Each film object should have a unique two character long `id` string. Add at least 4 more films to the array.
 
 Your `dataDesigner.js` program should read the `films.json` file and display all the films in a table. Remove the example film data from the table. Use a `for of` loop to add films to the table.
 

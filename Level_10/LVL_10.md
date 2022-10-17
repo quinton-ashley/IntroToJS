@@ -74,7 +74,7 @@ I need to get 4 pears!
 
 ## for of loops
 
-`for of` loops iterate through the values of an array or object.
+`for of` loops iterate through the values of an array.
 
 ```js
 let names = ['Jake', 'Ali', 'Max'];
@@ -108,5 +108,12 @@ JSON stands for JavaScript Object Notation. It is a way to store data in a text 
 ```js
 let filePath = QuintOS.dir + '/groceries.json';
 let data = await fetch(filePath);
-let txt = await data.json();
+let obj = await data.json();
+```
+
+## padEnd
+
+```js
+let str = 'hello';
+str.padEnd(10, ' '); // -> 'hello     '
 ```

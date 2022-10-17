@@ -27,9 +27,9 @@ https://p5js.org/get-started/
 
 The p5.js `draw` function should contain code for drawing an image (frame). Behind the scenes, p5.js will run the `draw` function 60 times per second, this is called the frame rate.
 
-Move objects a little bit in each new frame drawn to the screen. This is called animation.
+You can move objects a little bit in each new frame drawn to the screen. This is called animation.
 
-Note that p5.js adds a lot of variables to the global scope. Note that `width` and `height` refer to the size of the screen in pixels.
+Note that p5.js adds a lot of variables to the global scope. Note that `width` and `height` refer to the size of the p5.js canvas (drawable area) in pixels.
 
 ## p5.play Sprites
 
