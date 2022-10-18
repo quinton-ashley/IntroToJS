@@ -149,14 +149,6 @@ If you want to have a sprite that isn't moved by other sprites but can still be 
 paddle.collider = 'kinematic';
 ```
 
-## Custom collision
-
-In the example below, `deflectLaser` is a function that will be called when the shield sprite gets hit by a laser. The `deflectLaser` function could make the laser bounce off the shield in a random direction or have it be absorbed by the shield.
-
-```js
-shield.collide(laser, deflectLaser);
-```
-
 # Level 02 D
 
 ## Keyboard Input
@@ -166,10 +158,9 @@ Check if the user is pressing a key:
 ```js
 function draw() {
 	if (kb.pressing('ArrowLeft')) {
-		player.vel.x -= 0.1; // move the player left
-	}
-	if (kb.pressing('ArrowRight')) {
-		player.vel.x += 0.1; // move the player right
+		player.vel.x = 1; // move the player left
+	} else if (kb.pressing('ArrowRight')) {
+		player.vel.x = 1; // move the player right
 	}
 }
 ```
@@ -181,6 +172,16 @@ Text can be displayed on screen at a given text row and column.
 ```js
 //  (text         , row, col)
 text('Hello World!', 10, 12);
+```
+
+## Custom collision
+
+Custom collisions handling can be used to change what happens after two sprites collide.
+
+```js
+if (laser.collides(shield)) {
+	laser.direction = 20; // makes the laser deflect up off the shield
+}
 ```
 
 ## Level 02 E
@@ -224,10 +225,10 @@ https://youtu.be/nRlmTiynbd8?t=242
   - [+= operator](#-operator)
 - [Level 02 C](#level-02-c)
   - [Bounces](#bounces)
-  - [Custom collision](#custom-collision)
 - [Level 02 D](#level-02-d)
   - [Keyboard Input](#keyboard-input)
   - [Drawing text to the screen](#drawing-text-to-the-screen)
+  - [Custom collision](#custom-collision)
   - [Level 02 E](#level-02-e)
   - [p5.js fill, stroke, and rect](#p5js-fill-stroke-and-rect)
   - [Computer History: ZX Spectrum](#computer-history-zx-spectrum)

@@ -18,6 +18,20 @@ Don't let the frog jump if it's in the air!
 
 ## Instructions for Part B
 
-Use a for loop to make the lilypads. Nothing should change visually.
+Use a for loop to make the lilypads instead of a while loop with a counter variable. Nothing should change visually.
 
 Try making all the lilypads have a big gap of one lilypad between them. Then try making it random whether there is a big gap or not.
+
+## Instructions for Part C
+
+Add the `frog_jump.png` spritesheet animation to the frog.
+
+Add the `lilypads.png` spritesheet animation to the lilypads. Make each lilypad start on a different frame and make their frames advance at different rates.
+
+## CHALLENGE SECTION
+
+Make a countdown timer, if the player runs out of time the clock the frog goes back to the beginning. HINT: Use the p5.js variable `frameCount`
+
+Make little fly sprites with image using the `spriteArt` function. Place them above lilypads.
+
+When the frog overlaps with a fly it should eat it and get more time added to the countdown timer. HINT: Use the `overlap` function.

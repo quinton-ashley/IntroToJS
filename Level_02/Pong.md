@@ -32,9 +32,13 @@ Implement key controls to enable two players to play your Pong game. Don't let p
 
 Display both player's scores. HINT: Use the `text` function
 
-When the ball is served from the center of the screen, make it move away from the player that lost the ball, just like in tennis. Also there should be a 50% chance that the ball moves up or down. The y velocity of the ball shouldn't be able to be zero or close to zero. Why not? That would make the game really boring if the ball moved straight left and right!
+When the ball is served from the center of the screen, make it move away from the player that lost the ball, just like in tennis. The y axis (up/down) direction of the serve should be random. HINT: use the `random` function.
 
-Make the ball speed up a little bit each time it hits the walls. Have the ball's speed get reset each time it goes off screen.
+Make the ball speed up a little bit each time it hits the paddles. HINT: use the ball's `.speed` property.
+
+Also change ball's trajectory (the direction it moves) based on where it hits the paddle. If it hits the top of the paddle, change the ball's direction so it moves further up. If it hits the bottom of the paddle, change the ball's direction so it moves further down. HINT: use the ball's `.direction` property.
+
+Have the ball's speed get reset each time it goes off screen.
 
 ## Instructions for Part E
 

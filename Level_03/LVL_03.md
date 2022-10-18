@@ -67,6 +67,12 @@ for (let i = 0; i < names.length; i++) {
 
 When the for loop starts `i` is set to 0, then is check the condition. If the condition is true the for loop runs for the first time, this is called an iteration. When the for loop ends, the incrementation section of the for loop is run, in this case `i++` which increases the value of `i` by 1. The condition is checked again, if true the for loop will repeat again, doing another iteration. Until the condition is false the for loop will continue to repeat.
 
+# Level 03 C
+
+## Animation
+
+Learn about sprite animation on the p5.play website: https://p5play.org/learn/sprite_animation.html
+
 ## Computer History: Nintendo GameBoy
 
 From Wikipedia:
