@@ -34,7 +34,9 @@ Display both player's scores. HINT: Use the `text` function
 
 When the ball is served from the center of the screen, make it move away from the player that lost the ball, just like in tennis. The y axis (up/down) direction of the serve should be random. HINT: use the `random` function.
 
-Make the ball speed up a little bit each time it hits the paddles. HINT: use the ball's `.speed` property.
+You may notice sometimes the ball is pushed down when it hits the corners or top and bottom of the paddle. Due to this push the ball's speed can increase a lot. Set a speed limit for the ball `ball.speedLimit` when it collides with the paddles. HINT: use the ball's `.speed` property.
+
+Now try making the ball speed up a little bit each time it hits the paddles.
 
 Also change ball's trajectory (the direction it moves) based on where it hits the paddle. If it hits the top of the paddle, change the ball's direction so it moves further up. If it hits the bottom of the paddle, change the ball's direction so it moves further down. HINT: use the ball's `.direction` property.
 

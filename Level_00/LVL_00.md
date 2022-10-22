@@ -32,9 +32,9 @@ Use `let` to create variables. In the example code `a` is the name of the variab
 
 Semicolons `;` can be used to end each line of code but they're not required. 👁👅👁
 
-## Types of Variables 🔡
+## Types of Data 🔡
 
-In JavaScript all types of variables can be created using `let`.
+In JavaScript all variables can be created using `let`, regardless of the type of data they store.
 
 ### Number
 
@@ -134,7 +134,9 @@ Single equals `=` is for assigning values to variables. Double equals `==` is a 
 Check out this coin toss example code. Coin tosses are used in many sports to decide which of two teams goes first. One team picks which side of the coin they think will land facing up, "heads" or "tails". If the result of a coin flip is "heads" then the code in the `if` statement code block will be run. If the result was "tails", then the code in the `else` block is run.
 
 ```js
-if (coinFlip() == 'heads') {
+let pick = await prompt('Heads or Tails?');
+
+if (coinFlip() == pick) {
 	await alert('Heads wins the coin toss!');
 } else {
 	await alert('Tails wins the coin toss!');
@@ -177,6 +179,7 @@ What color will be assigned to `fruitColor` if the `fruit` is a pear? What if th
 
 ```txt
 Equivalence:              ==
+Not equals:               !=
 Less than:                <
 Less than or equal to:    <=
 Greater than:             >
@@ -301,7 +304,7 @@ This level's computer was inspired by the Casio FX-720P, which could run program
   - [What is Computer Science?](#what-is-computer-science)
   - [What is QuintOS?](#what-is-quintos)
   - [Creating Variables 🔡](#creating-variables-)
-  - [Types of Variables 🔡](#types-of-variables-)
+  - [Types of Data 🔡](#types-of-data-)
     - [Number](#number)
     - [Boolean](#boolean)
     - [String](#string)

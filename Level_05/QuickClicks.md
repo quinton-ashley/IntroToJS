@@ -26,9 +26,7 @@ If the player clicks an imposter target tell them "Game Over!" because they clic
 
 After the player clicks 10 target buttons, calculate the user's average, slowest, and fastest response times. To get the speeds at which the player clicked between buttons you'll first need to create an array that stores the time at which they clicked each target. HINT: Use the `push` function to add `Date.now()` to an array called `times`
 
-Stop making targets after 10 clicks and run a `calcStats` (calculate statistics) function that calculates the average, slowest, and fastest response times.
-
-Now create an array of speeds that stores the time in milliseconds it took the player to click each button. Each number in this array should represent the difference between the time a button was clicked and the time the next button was clicked. HINT: If the player clicks the button 10 times there will only be 9 speeds (time between each button click). Use a `for` loop to create the array of speeds.
+Stop making targets after 10 clicks and run a `calcStats` (calculate statistics) function that will show the user their stats at the end of the game. Inside the `calcStats` function create an array of speeds that stores the time in milliseconds it took the player to click each button. Each number in this array should represent the difference between the time a button was clicked and the time the next button was clicked. HINT: If the player clicks the button 10 times there will only be 9 speeds (time between each button click). Use a `for` loop to create the array of speeds.
 
 Remember! `for` loops with a counter variable:
 
@@ -39,11 +37,11 @@ for (let i = 0; i < loopAmount; i++) {
 }
 ```
 
-To calculate the average speed, add all the speeds up and divide by the amount of speeds.
+Calculate the user's average time first. HINT: remember the average is the sum of all numbers in a list divided by the amount of numbers.
 
-The fastest speed is the lowest number in the speeds array. The slowest speed is the highest.
+Next calculate the user's slowest and fastest reponse times. The fastest speed is the lowest number in the speeds array. The slowest speed is the highest.
 
-Display the result in an alert window.
+Display the stats in an alert window.
 
 ## Instructions for Part E
 
@@ -56,7 +54,7 @@ let pattern = '><'.repeat(4);
 // pattern -> '><><><><';
 ```
 
-Try making a cool geometric pattern like this! HINT: use the modulo operator to make alternating lines
+Try making your own cool pattern like this one! (don't copy this pattern) HINT: use an alternating line pattern with two or more alternations
 
 ```
 ⎺\⎽⎽/⎺⎺\⎽⎽/⎺
