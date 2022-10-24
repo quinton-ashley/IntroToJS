@@ -137,6 +137,8 @@ ball.bounciness = 1;
 ball.friction = 0;
 ```
 
+## collider types
+
 By default when sprites collide both objects will move. To prevent this, set the sprite to be static when another sprite bounces on it.
 
 ```js
@@ -174,6 +176,8 @@ Text can be displayed on screen at a given text row and column.
 text('Hello World!', 10, 12);
 ```
 
+## Level 02 E
+
 ## Custom collision
 
 Custom collisions handling can be used to change what happens after two sprites collide.
@@ -184,7 +188,15 @@ if (laser.collides(shield)) {
 }
 ```
 
-## Level 02 E
+## Adding properties to an existing object
+
+Adding your own properties to an existing object is super easy, just give it a value as if the property already existed!
+
+```js
+ball.serveSpeed = 1;
+```
+
+## Level 02 F
 
 ## p5.js fill, stroke, and rect
 
@@ -225,10 +237,13 @@ https://youtu.be/nRlmTiynbd8?t=242
   - [+= operator](#-operator)
 - [Level 02 C](#level-02-c)
   - [Bounces](#bounces)
+  - [collider types](#collider-types)
 - [Level 02 D](#level-02-d)
   - [Keyboard Input](#keyboard-input)
   - [Drawing text to the screen](#drawing-text-to-the-screen)
-  - [Custom collision](#custom-collision)
   - [Level 02 E](#level-02-e)
+  - [Custom collision](#custom-collision)
+  - [Adding properties to an existing object](#adding-properties-to-an-existing-object)
+  - [Level 02 F](#level-02-f)
   - [p5.js fill, stroke, and rect](#p5js-fill-stroke-and-rect)
   - [Computer History: ZX Spectrum](#computer-history-zx-spectrum)
