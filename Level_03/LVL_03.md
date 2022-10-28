@@ -45,7 +45,7 @@ The code above prints out a numbered list of names in the JS console.
 
 ## p5.play Groups
 
-Take a look at the p5.play Learn pages for Groups:
+Take a look at the first page of the p5.play Group reference pages:
 
 https://p5play.org/learn/group.html
 
