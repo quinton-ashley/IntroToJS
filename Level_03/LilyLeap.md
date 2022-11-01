@@ -31,10 +31,18 @@ Add the `frog_jump.png` spritesheet animation to the frog.
 
 Add the `lilypads.png` spritesheet animation to the lilypads. Make each lilypad start on a different frame and make their frames advance at different rates.
 
-## CHALLENGE SECTION
+## Instructions for Part D
 
-Make a countdown timer, if the player runs out of time the clock the frog goes back to the beginning. HINT: Use the p5.js variable `frameCount`
+Pick the sounds you want to play when the frog jumps!
 
-Make little fly sprites with image using the `spriteArt` function. Place them above lilypads.
+Load the sounds in the `preload` function.
 
-When the frog overlaps with a fly it should eat it and get more time added to the countdown timer. HINT: Use the `overlap` function.
+Play the sounds when the frog jumps.
+
+## Instructions for Part E
+
+Make a countdown timer, if the player runs out of time the clock the frog goes back to the beginning. Use the p5.js variable `frameCount`, which stores how many times the draw loop has run. Make the countdown decreses every 60 frames. HINT: Use modulo!
+
+Make little bug sprites with image using the `spriteArt` function. Place them above lilypads. The GameBoi only has four color shades in its pallette: 0, 1, 2, 3. Use zeroes for the ant, the darkest shade available.
+
+When the frog overlaps with a bug it should eat it and get more time added to the countdown timer. HINT: Use the p5.play `overlaps` function.

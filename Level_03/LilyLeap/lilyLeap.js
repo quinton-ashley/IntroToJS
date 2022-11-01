@@ -9,8 +9,8 @@ function setup() {
 	world.gravity.y = 10;
 	noStroke();
 
-	frog.x = 16;
-	frog.y = 90;
+	frog.x = 0;
+	frog.y = 80;
 	frog.w = 10;
 	frog.h = 8;
 
@@ -25,7 +25,7 @@ function setup() {
 function makeLilyPads() {
 	/* Part A: Use a loop to make more lily pads. */
 	let lily = new lilypads.Sprite();
-	lily.x = 16;
+	lily.x = 0;
 }
 
 function draw() {

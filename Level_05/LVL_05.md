@@ -103,21 +103,7 @@ Take a look at the MDN documentation for [Date.now()](https://developer.mozilla.
 
 # Level 05 E
 
-## modulo operator
-
-The modulo operator `%` it gets the remainder of a division.
-
-```js
-// true if x is even (divisible by 2)
-if (x % 2 == 0) {
-	console.log('x is even!');
-}
-
-// true if y is divisible by 5
-if (y % 5 == 0) {
-	console.log(y + ' is a multiple of 5');
-}
-```
+## modulo alternation
 
 Here's how modulo can be used for alternation.
 
@@ -171,7 +157,7 @@ Originally developed for business executives, GRiDs were also used by the U.S. m
 - [Level 05 D](#level-05-d)
 	- [Date](#date)
 - [Level 05 E](#level-05-e)
-	- [modulo operator](#modulo-operator)
+	- [modulo alternation](#modulo-alternation)
 	- [for loops with non-standard incrementation](#for-loops-with-non-standard-incrementation)
 - [Computer History: GRiD Compass](#computer-history-grid-compass)
 - [Level 04 Table of Contents](#level-04-table-of-contents)

@@ -73,6 +73,40 @@ When the for loop starts `i` is set to 0, then is check the condition. If the co
 
 Learn about sprite animation on the p5.play website: https://p5play.org/learn/sprite_animation.html
 
+# Level 03 D
+
+## Loading sounds
+
+The `loadSound` function loads a sound file from a given path. A path is the location of a file on your computer. Only use this function in the p5.js preload function!
+
+```js
+let greeting = loadSound('sounds/hi.mp3');
+```
+
+## Playing sounds
+
+Play sound objects by using the play function.
+
+```js
+greeting.play();
+```
+
+# Level 03 E
+
+The modulo operator `%` it gets the remainder of a division.
+
+```js
+// true if x is even (divisible by 2)
+if (x % 2 == 0) {
+	console.log('x is even!');
+}
+
+// true if y is divisible by 5
+if (y % 5 == 0) {
+	console.log(y + ' is a multiple of 5');
+}
+```
+
 ## Computer History: Nintendo GameBoy
 
 From Wikipedia:
