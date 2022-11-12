@@ -6,7 +6,7 @@
 
 Split the `wordsList` String into an array, call the array `words`. HINT: use the `split` String function.
 
-Pick a random word from the array of words. HINT: Remember `.length` can be use to get the length of an array. Reference your use of `random()` in the GuessTheNumber game.
+Pick a random word from the array of words. HINT: Remember `.length` can be use to get the length of an array. Reference your use of `random()` in the GuessTheNumber game. Remember items in an array can be accessed using square brackets: `array[index]`
 
 ## Instructions for Part B
 
