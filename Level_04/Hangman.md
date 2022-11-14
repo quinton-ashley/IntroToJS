@@ -24,9 +24,9 @@ If the player guesses a letter which does not occur in the word, the computer sh
 
 ## Instructions for Part D
 
-If the player makes too many wrong guesses and the hangman drawing is completed, the game should end. HINT: use `break` to exit the game loop early.
+If the player makes too many wrong guesses and the hangman drawing is completed, the game should end. Show the player what the word was! HINT: use `break` to exit the game loop early.
 
-At the end of the game tell the player if they won or lost and show them what the word was.
+If the player wins tell them they won!
 
 These are some hard words to guess within a limit of only 5 mistakes! Make the game a bit easier by adding more drawings to the `hangman` array. Make the scaffold build up before the hangman is drawn.
 

@@ -12,7 +12,7 @@ Make four imposter targets using a `for` loop. Imposter targets should look a bi
 
 ## Instructions for Part B
 
-When the player clicks the target button, place another target and another four imposter targets in random positions on the screen. HINT: Use a recursion callback to the `makeTargets` function.
+When the player clicks the target button, place another target and another four imposter targets in random positions on the screen. HINT: Use a recursive callback to the `makeTargets` function.
 
 You will notice that using recursion generates a lot of targets quickly! You can use the `erase()` function to remove all text and buttons from the screen.
 

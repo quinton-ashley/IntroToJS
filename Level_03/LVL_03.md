@@ -37,10 +37,10 @@ while (i < names.length) {
 The code above prints out a numbered list of names in the JS console.
 
 ```txt
-1. Jake
-2. Ali
-3. Ben
-4. Cam
+0. Jake
+1. Ali
+2. Ben
+3. Cam
 ```
 
 ## p5.play Groups
