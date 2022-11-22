@@ -83,6 +83,14 @@ The `loadSound` function loads a sound file from a given path. A path is the loc
 let greeting = loadSound('sounds/hi.mp3');
 ```
 
+## Setting the playback volume
+
+Volume ranges from 0 (no sound) to 1 (full volume). Usually you won't want any individual sound to play at full volume so that you can mix sounds at a typical listening volume without distortion.
+
+```js
+greeting.setVolume(0.3);
+```
+
 ## Playing sounds
 
 Play sound objects by using the play function.

@@ -9,7 +9,7 @@ The starter code for this game doesn't have any animations. The frog is represen
 Use a while loop with a counter variable to make a bunch of lilypads without big gaps between them. Each lilypad should be 16 pixels from the previous lilypad.
 
 Add an x velocity value to each of the jumps so that the frog moves one lilypad on little jumps and two lilypads on big jumps. You may notice it's hard to get the frog to exactly jump in the middle of the lilypads.
-For now try getting the frog close enough to the center first.
+For now, just try getting the frog close enough to the center on each jump.
 
 Don't let the frog jump if it's in the air!
 
