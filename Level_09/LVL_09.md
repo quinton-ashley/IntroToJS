@@ -8,6 +8,16 @@ After you complete those challenges you can upgrade to level 6! 🥳
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen4.jpg)
 
+## Anonymous arrow functions
+
+Arrow/lambda functions are a short way to write functions in JavaScript using an arrow `=>` instead of the word function. You can create arrow functions without naming the function too: `() => {}`
+
+```js
+button('click here!', 10, 4, () => {
+	log('button clicked');
+});
+```
+
 # Level 09 B
 
 ## Nested for loops
@@ -95,6 +105,7 @@ await alert(message, 5, 20, 16);
 ```
 
 - [Level 09 A](#level-09-a)
+	- [Anonymous arrow functions](#anonymous-arrow-functions)
 - [Level 09 B](#level-09-b)
 	- [Nested for loops](#nested-for-loops)
 - [Level 09 C](#level-09-c)

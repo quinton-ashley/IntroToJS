@@ -32,11 +32,19 @@ Open Visual Studio Code (aka VSCode) and add "IntroToJS" and your "quintos-games
 
 ## Install Extensions for VSCode
 
-In the Activity Bar on the left side of VSCode click the extension icon, which looks like one box being separated from three other boxes. In the Extension sidebar, search for and install Prettier and Live Server.
+In the Activity Bar on the left side of VSCode click the extension icon, which looks like one box being separated from three other boxes, you can search for the following extensions or use the links below to install them.
 
-Prettier is an extension that will automatically format your code for you when you save it so you won't have to worry about doing proper indentation and formatting yourself!
+"Live Server" auto-refreshes the browser when you make changes to your code.
+https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 
-Live Server auto-refreshes the browser when you make changes to your code.
+"Prettier" is an extension that will automatically format your code for you when you save it so you won't have to worry about doing proper indentation and formatting yourself!
+https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+
+"Markdown Preview Enhanced" is a great extension for previewing Markdown files (the kind of file you're reading right now).
+https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced
+
+"vscode-color-picker" is a great extension for picking colors in JavaScript files.
+https://marketplace.visualstudio.com/items?itemName=AntiAntiSepticeye.vscode-color-picker
 
 ## VSCode Settings
 

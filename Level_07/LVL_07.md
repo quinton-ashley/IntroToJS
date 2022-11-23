@@ -32,15 +32,30 @@ point(x, y);
 
 # Level 07 B
 
-## lines
+## Return variables from a function
 
-Draws a line between two points.
+functions can return a variable (only one). What will the value of `upHigh` be?
 
 ```js
-line(x1, y1, x2, y2);
+function gimmeFive() {
+	return 5;
+}
+
+let upHigh = gimmeFive() + gimmeFive();
 ```
 
-# Level 07 C
+## Creating functions with input parameters
+
+function with input parameters x and y, returns the value of `x^2 * y^2`
+
+```js
+function doMyMathHomework(x, y) {
+	return x * x * y * y;
+}
+
+let result0 = doMyMathHomework(1, 3); // returns 9
+let result1 = doMyMathHomework(2, 5); // what does this return?
+```
 
 ## color
 
@@ -72,14 +87,23 @@ The hexadecimal number 20 is equal to the decimal number 32. That's because the 
 
 The hexadecimal number ff is equal to the decimal number 255. Because `15 * 16 + 15 = 255`.
 
-## Anonymous arrow functions
+## alpha
 
-Arrow/lambda functions are a short way to write functions in JavaScript using an arrow `=>` instead of the word function. You can create arrow functions without naming the function too: `() => {}`
+The alpha value is a number between 0 and 255 that determines how transparent a color is. 0 is completely transparent and 255 is completely opaque.
 
 ```js
-button('click here!', 10, 4, () => {
-	log('button clicked');
-});
+color(255, 16, 32, 128); // RGB value with alpha
+color('#ff1020', 128); // hex code with alpha
+```
+
+# Level 07 C
+
+## lines
+
+Draws a line between two points.
+
+```js
+line(x1, y1, x2, y2);
 ```
 
 ## Computer History: IBM 2250
