@@ -1,5 +1,7 @@
 # Level 06 A
 
+![](../src/memes/06_0.jpeg)
+
 ## Binary
 
 You may know that computers store all data in binary, just 0s and 1s. How is that possible?

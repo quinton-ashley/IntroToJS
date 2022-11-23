@@ -4,7 +4,9 @@ Tic-tac-toe (also known as noughts and crosses, Xs and Os, or X'y O'sies) is a p
 
 ## Instructions for Part A
 
-Implement TicTacToe between two human players. Start by finishing the grid lines.
+For this project you'll be implementing TicTacToe between two human players.
+
+Start by finishing the grid lines.
 
 Create 9 buttons for all the empty spaces on the grid. Use `bigSpace` for the text of these buttons. Start by making the buttons on the top row, then the middle row, and then do the last row.
 

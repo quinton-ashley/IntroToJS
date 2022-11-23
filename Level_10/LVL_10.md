@@ -103,6 +103,8 @@ JSON stands for JavaScript Object Notation. It is a way to store data in a text 
 }
 ```
 
+![](../src/memes/10_0.jpeg)
+
 ## fetch a json file
 
 ```js
@@ -117,3 +119,7 @@ let obj = await data.json();
 let str = 'hello';
 str.padEnd(10, ' '); // -> 'hello     '
 ```
+
+# End of Level 10
+
+![](../src/memes/10_1.jpeg)

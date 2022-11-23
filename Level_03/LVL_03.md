@@ -101,6 +101,12 @@ greeting.play();
 
 # Level 03 E
 
+Welcome back to level 3! You're now ready to start working on part E of the LilyLeap game.
+
+![](../src/memes/03_0.jpeg)
+
+## modulo operator
+
 The modulo operator `%` it gets the remainder of a division.
 
 ```js
@@ -115,10 +121,14 @@ if (y % 5 == 0) {
 }
 ```
 
+# End of Level 03
+
+Don't get too mad at your code!
+
+![](../src/memes/03_1.jpeg)
+
 ## Computer History: Nintendo GameBoy
 
-From Wikipedia:
-
-Despite receiving mixed reviews by critics and being technologically inferior to its fourth-generation competitors (Sega's Game Gear, Atari's Lynx, and NEC's TurboExpress), the Game Boy received praise for its battery life and durability in its construction. It quickly outsold the competition, selling one million units in the United States within a few weeks. An estimated 118.69 million units of the Game Boy and its successor, the Game Boy Color, have been sold worldwide, making it the third best-selling video game console of all time. It is one of the most recognizable devices from the 1990s, becoming a cultural icon in the years following its release.
+_Despite receiving mixed reviews by critics and being technologically inferior to its fourth-generation competitors (Sega's Game Gear, Atari's Lynx, and NEC's TurboExpress), the Game Boy received praise for its battery life and durability in its construction. It quickly outsold the competition, selling one million units in the United States within a few weeks. An estimated 118.69 million units of the Game Boy and its successor, the Game Boy Color, have been sold worldwide, making it the third best-selling video game console of all time. It is one of the most recognizable devices from the 1990s, becoming a cultural icon in the years following its release._
 
 https://en.wikipedia.org/wiki/Game_Boy

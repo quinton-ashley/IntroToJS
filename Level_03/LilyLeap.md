@@ -39,6 +39,8 @@ Load the sounds in the `preload` function.
 
 Play the sounds when the frog jumps.
 
+**_You are now complete with Level 03 for now! Come back to finish Part E after you complete level 5._**
+
 ## Instructions for Part E
 
 Make a countdown timer, if the player runs out of time the clock the frog goes back to the beginning. Use the p5.js variable `frameCount`, which stores how many times the draw loop has run. Make the countdown decreses every 60 frames. HINT: Use modulo!

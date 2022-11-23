@@ -1,8 +1,6 @@
 # Level 04 A
 
-![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen2.jpg)
-
-## Coding Philosophy: Use log!
+## Coding Philosophy: Remember to log!
 
 `log` is a shortcut in QuintOS for the JavaScript `console.log` function. It can print the value of variables to the JS console. It's really useful for quickly investigating problems with your program or just to see if it's working the way you intended.
 
@@ -137,6 +135,12 @@ while (playerHealth > 0) {
 }
 ```
 
+# End of Level 04
+
+Sorry if you felt like this after testing your Hangman game!
+
+![am i testing this program or is it testing me?](../src/memes/04_0.png)
+
 ## Computer History: Apple II
 
 This level's computer was inspired by the Apple II. For many people in the US, the Apple II was the first computer they ever used at their home or school. Check out this video about it if you'd like!
@@ -144,7 +148,7 @@ This level's computer was inspired by the Apple II. For many people in the US, t
 https://www.youtube.com/watch?v=CxJwy8NsXFs
 
 - [Level 04 A](#level-04-a)
-	- [Coding Philosophy: Use log!](#coding-philosophy-use-log)
+	- [Coding Philosophy: Remember to log!](#coding-philosophy-remember-to-log)
 	- [const](#const)
 	- [String.split(separator)](#stringsplitseparator)
 - [Level 04 B](#level-04-b)
@@ -157,4 +161,5 @@ https://www.youtube.com/watch?v=CxJwy8NsXFs
 - [Level 04 D](#level-04-d)
 	- [Implied boolean conditions](#implied-boolean-conditions)
 	- [Breaking out of a loop](#breaking-out-of-a-loop)
+- [End of Level 04](#end-of-level-04)
 	- [Computer History: Apple II](#computer-history-apple-ii)

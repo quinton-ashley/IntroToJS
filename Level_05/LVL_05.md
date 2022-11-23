@@ -128,7 +128,13 @@ for (let i = 0; i < 10; i += 2) {
 }
 ```
 
-# Computer History: GRiD Compass
+# End of Level 05
+
+Congrats! You're halfway through the Intro to JavaScript course! You've learned a lot about programming. 🥳
+
+![](../src/memes/05_0.jpeg)
+
+## Computer History: GRiD Compass
 
 This level's computer is based on the GRiD Compass 1101. The following description is from http://oldcomputers.net/grid1101.html
 
@@ -142,7 +148,7 @@ Of course, all of these great features raised the price significantly. At $8150,
 
 Originally developed for business executives, GRiDs were also used by the U.S. military 'in the field', and by NASA on the Space Shuttles during the 1980's and 90's. It's even been said that the US President's "nuclear football" at one time included a GRiD computer.
 
-# Level 04 Table of Contents
+# Level 05 Table of Contents
 
 - [Level 05 A](#level-05-a)
 	- [Coding Philosophy: Naming variables](#coding-philosophy-naming-variables)
@@ -159,5 +165,6 @@ Originally developed for business executives, GRiDs were also used by the U.S. m
 - [Level 05 E](#level-05-e)
 	- [modulo alternation](#modulo-alternation)
 	- [for loops with non-standard incrementation](#for-loops-with-non-standard-incrementation)
-- [Computer History: GRiD Compass](#computer-history-grid-compass)
-- [Level 04 Table of Contents](#level-04-table-of-contents)
+- [End of Level 05](#end-of-level-05)
+	- [Computer History: GRiD Compass](#computer-history-grid-compass)
+- [Level 05 Table of Contents](#level-05-table-of-contents)

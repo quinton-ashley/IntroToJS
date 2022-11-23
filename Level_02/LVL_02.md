@@ -1,7 +1,5 @@
 # Level 02 A
 
-![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen5.jpg)
-
 ## Creating functions 👷
 
 Create functions using the `function` keyword.
@@ -17,7 +15,7 @@ sayHello(); // run the function
 
 The code inside a function is not run until the function is called/invoked by using its name and the parenthesis.
 
-## What is p5.js?
+## What is p5.js? 🌸
 
 To make Pong we're going to use p5.js, a JavaScript graphics library for creative coding.
 
@@ -214,6 +212,12 @@ function draw() {
 }
 ```
 
+## End of Level 02
+
+Remember, don't "reinvent the wheel" if you don't have to! Using a game engine, like p5.play, makes game development easier. Often learning to use existing tools is way easier than writing similar code yourself.
+
+![](../src/memes/02_0.jpeg)
+
 ## Computer History: ZX Spectrum
 
 Excerpt from the last paragraph of Chapter 1 of "ZX81 BASIC PROGRAMMING" by Stephen Vickers:
@@ -226,7 +230,7 @@ https://youtu.be/nRlmTiynbd8?t=242
 
 - [Level 02 A](#level-02-a)
   - [Creating functions 👷](#creating-functions-)
-  - [What is p5.js?](#what-is-p5js)
+  - [What is p5.js? 🌸](#what-is-p5js-)
   - [p5.js Basics](#p5js-basics)
   - [p5.play Sprites](#p5play-sprites)
   - [spriteArt](#spriteart)
@@ -246,4 +250,5 @@ https://youtu.be/nRlmTiynbd8?t=242
   - [Adding properties to an existing object](#adding-properties-to-an-existing-object)
   - [Level 02 F](#level-02-f)
   - [p5.js fill, stroke, and rect](#p5js-fill-stroke-and-rect)
+  - [End of Level 02](#end-of-level-02)
   - [Computer History: ZX Spectrum](#computer-history-zx-spectrum)

@@ -2,21 +2,19 @@
 
 ## What is Computer Science?
 
-Why is this field of study called "Computer Science" and not "Program Writing" or "Code Mathematics"? It's because coding requires research and experimentation! You'll often need to test your programs to learn from unexpected errors and then make changes to get the results you want.
+Why is this field of study called "Computer Science" and not "Program Writing" or "Code Mathematics"? It's because coding requires research and experimentation! You'll often need to test your programs to learn from unexpected errors, and then make changes to get the results you want.
 
-These lessons will teach you how to code in JavaScript (JS), which is the most popular modern programming language and my personal favorite! You will have to memorize some vocabulary, grammar, and syntax to learn this new language. However, learning to code isn't what programming is all about, you'll also learn how to think like a programmer!
-
-Learning to program will improve your logical reasoning and abstract problem solving skills. Programming has a language arts aspect too. You will not only strive to write efficient code for the computer but also code that can be easily understood by other programmers.
+These lessons will teach you how to code in JavaScript (JS), which is the most popular modern programming language and my personal favorite! You'll need to memorize some vocabulary, grammar, and syntax to learn this new language. However, learning to code isn't what programming is all about, you'll also learn how to think like a programmer.
 
 ## What is QuintOS?
 
-The famous 17th century scientist, Issac Newton, once said, "we stand on the shoulders of giants". To understand how software is developed today, it's important to learn a bit about the history of computers.
-
 If you signed up for this course you might want to know how video games work and how to make your own! If not, making games will hopefully be a fun way for you to learn how to code.
+
+Issac Newton, a famous 17th century scientist, once said, "we stand on the shoulders of giants". Newton was humbly acknowledging that great advancements made by people in his day were built upon a giant foundation laid by our ancestors. To become a software developer today it's good to learn a bit about the history of computers and computer games.
 
 QuintOS is a retro game engine I created for this course. During each lesson you'll develop a QuintOS game that runs on virtual computers displayed in your web browser: Google Chrome, Firefox, or Opera. As you level up your coding skills, the virtual computer will get upgraded too. Since you're just starting out, the first game you make will be for... a programmable calculator. 😜
 
-![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen0.jpg)
+![](../src/QuintOS/bootScreen0.jpg)
 
 This first lesson will require you to learn a lot of information before we can even make a simple game. It may be a bit overwhelming for you but don't worry! You'll get a lot of practice with these concepts so that you will fully understand them. Let's get started! 🥳
 
@@ -116,6 +114,8 @@ await alert(favColor + ' is my favorite color too!'); // show message to user
 Double slash `//` is for making a comment, any text behind it on the same line will not be considered part of the code's instructions. Comments are used to describe what is happening in the code. You might want to make comments so other people can understand your programs or so that you can understand it yourself in case you forget what you did.
 
 ## End of Level 00 A
+
+![](../src/memes/00_0.jpeg)
 
 Now you're ready to start making your first game! 🥳 [Click here for the GuessTheNumber instructions.](https://github.com/quinton-ashley/IntroToJS/blob/main/Level_00/GuessTheNumber.md)
 
@@ -245,6 +245,10 @@ if (name == 'Bob') {
 await alert(message); // good!
 ```
 
+Also remember to finish every scope you start! Every opening brace `{` needs a closing brace `}`.
+
+![](../src/memes/00_4.png)
+
 ## while loops
 
 Need to loop some code? Use a while loop! `if` statements run the code in their code block once if their boolean condition is true. `while` loops repeat the code in their code block as long as their boolean condition _remains_ true.
@@ -294,6 +298,12 @@ The `round` function rounds a number to the nearest integer.
 let y = round(5.3); // y -> 5
 ```
 
+# End of Level 00
+
+When you're done with your GuessTheNumber game you'll have already made something much cooler than the usual beginner CS project!
+
+![](../src/memes/00_1.jpeg)
+
 ## Computer History: Casio FX-720P
 
 This level's computer was inspired by the Casio FX-720P, which could run programs in a programming language called BASIC. Portable programmable calculators were limited by their small button keyboards and displays, but when slotted into a dock that had little printer, they could be used to print out graphs and many lines of text. The calculator could also load programs from tape cassettes.
@@ -327,4 +337,5 @@ This level's computer was inspired by the Casio FX-720P, which could run program
   - [Mathematical operators 🔢](#mathematical-operators-)
   - [Math: Generate a random number](#math-generate-a-random-number)
   - [Math: round](#math-round)
+- [End of Level 00](#end-of-level-00)
   - [Computer History: Casio FX-720P](#computer-history-casio-fx-720p)

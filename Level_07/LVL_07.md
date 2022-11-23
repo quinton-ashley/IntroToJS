@@ -30,6 +30,12 @@ strokeWeight(1);
 point(x, y);
 ```
 
+## End of Level 07 A
+
+Remember to save your work!
+
+![](../src/memes/07_0.png)
+
 # Level 07 B
 
 ## Return variables from a function

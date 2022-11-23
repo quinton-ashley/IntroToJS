@@ -26,6 +26,10 @@ Professional front end developers have created incredible showcases of what is p
 
 Most courses that teach web development actually start by teaching HTML and CSS, since they are the primary languages for creating the visuals of most websites. Yet, I don't do that because HTML is not a programming language and neither is basic level CSS. I teach Javascript first to give you an understanding of what programming actually is!
 
+Also you might've gotten into some trouble if you told everyone you could build websites after just one lesson on HTML and CSS!
+
+![](../src/memes/11_0.jpeg)
+
 ## How HTML tags work
 
 `<html>` is the opening tag for the start of the html file. Opening tags have the name of the element surrounded with greater than and less than symbols. Closing tags use a slash before the name of the element, like this `</html>`. They represent the end of that element. "Self-closing" tags, which can not contain text or html contents inside them, such as `<img>` tags (for images), do not have a closing tag.
@@ -90,6 +94,28 @@ Be sure to set the form target to blank so the page doesn't reload.
 <form target="_blank"></form>
 ```
 
+# End of Introduction to JavaScript
+
+You've made it to the end of the Introduction to JavaScript course!
+
+You also have probably realized that you've only just begun to scratch the surface of what programming is.
+
+![](../src/memes/11_1.jpeg)
+
+But you should also be really proud of the progress you've made in this course! There will always be more to learn and so many more things you can do with programming. That's what makes programming so great!
+
+Programming is just like any skill. You can only get better by practicing. So keep practicing and keep learning! I hope you continue to learn and grow as a programmer.
+
+What you do now with your JavaScript programming skills is up to you! Here are some ideas:
+
+- make a new generative artwork with p5.js every day
+- make a new game prototype with p5.play every week (until you make a game you really like)
+- make a static website with GitHub Pages
+- make a website backend using node.js and express that you can add to over time
+- make a desktop app with electron
+
+# Level 11 Table of Contents
+
 - [Level 11 A](#level-11-a)
   - [Welcome to the World Wide Web!](#welcome-to-the-world-wide-web)
   - [Web Development](#web-development)
@@ -104,3 +130,5 @@ Be sure to set the form target to blank so the page doesn't reload.
 - [Level 11 C](#level-11-c)
   - [HTML form tag](#html-form-tag)
   - [The easy way to get data from a form](#the-easy-way-to-get-data-from-a-form)
+- [End of Introduction to JavaScript](#end-of-introduction-to-javascript)
+- [Level 11 Table of Contents](#level-11-table-of-contents)

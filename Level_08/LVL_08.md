@@ -10,6 +10,12 @@ let low = str.toLowerCase(); // low -> 'hello!'
 
 These functions do not change the original value of the string.
 
+## End of Level 08 A
+
+What's the funny mistake this user made when testing their code? Remember to test your programs thoroughly!
+
+![](../src/memes/08_1.jpeg)
+
 # Level 08 B
 
 ## fetch a text file
@@ -38,3 +44,7 @@ log(str); // -> 'ello'
 ```
 
 `slice` returns a part of the original string which starts at the index provided as the first input parameter.
+
+# End of Level 08
+
+![](../src/memes/08_0.jpeg)

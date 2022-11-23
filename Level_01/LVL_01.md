@@ -91,7 +91,7 @@ QuintOS.gameTitle = 'GuessTheNumber';
 
 Right click on `index.html` file and select `Open with Live Server` or click `Go Live` in VSCode's bottom status bar. You should see the calculator show up in your browser. 😄
 
-![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen1.jpg)
+![](../src/QuintOS/bootScreen1.jpg)
 
 You've finished the install process! Read the next lesson section before starting PickAPath.
 
@@ -152,6 +152,8 @@ Now go to the "Console" tab. If your program doesn't start or stops working, loo
 ```js
 console.log("The user's favorite color is: " + favColor);
 ```
+
+![](../src/memes/01_1.jpg)
 
 ## End of Level 01 A
 
@@ -292,6 +294,10 @@ let luckyNumbers = [4, 8, 24];
 luckyNumbers = [6, 10, 32];
 ```
 
+# End of Level 01
+
+![](../src/memes/01_0.jpeg)
+
 ## Computer History: Commodore PET
 
 This level's computer was inspired by the Commodore PET 2001 Series released way back in 1977. These computers were some of the first commercially successful personal computers that did not require any assembly by the user. Check out this video about it if you'd like!
@@ -331,4 +337,5 @@ https://style64.org/petscii/
   - [Array length](#array-length)
   - [array.includes(item)](#arrayincludesitem)
   - [Redefining an Array](#redefining-an-array)
+- [End of Level 01](#end-of-level-01)
   - [Computer History: Commodore PET](#computer-history-commodore-pet)
