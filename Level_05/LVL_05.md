@@ -1,6 +1,6 @@
 # Level 05 A
 
-Do the GuessTheNumber challenge section before starting level 04!
+Do the GuessTheNumber challenge section before starting level 05!
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen3.jpg)
 

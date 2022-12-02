@@ -48,7 +48,7 @@ Congrats! You finished your first game in JavaScript!
 
 ## CHALLENGE SECTION
 
-_Complete the Level 03 game, Hangman, first!_
+_Complete the Level 04 game, Hangman, first!_
 
 If you haven't already, figure out the best strategy to use when playing this game.
 
@@ -74,9 +74,9 @@ If the player had to guess between 1 to 10, sometimes it would take more than 3 
 
 Now that you know how the binary search method works it should be easy to figure out how many guesses are required to guess any number between 1 to 100.
 
-Use a `for` loop to count the turns but keep the same condition: `guess != num`. Tell the user when they run out of attempts to guess the number. Use `break;` to exit the `for` loop.
+Replace the game's while loop with a `for` loop that counts the amount of guesses the player has made but keep the same condition: `guess != num`. Tell the user when they run out of attempts to guess the number. Use `break;` to exit the `for` loop.
 
-If the user enters a number outside the range of 1 to 100, tell them "Invalid guess" but don't count it against them. They should still have the same amount of valid guess attempts no matter how many invalid guess attempts they make.
+If the user enters a number outside the range of 1 to 100, tell them "Invalid guess" but don't count it against them. They should still have the same amount of valid guess attempts no matter how many invalid guesses they make.
 
 Here's the real question though...
 
