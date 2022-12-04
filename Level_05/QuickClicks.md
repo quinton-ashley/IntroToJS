@@ -41,7 +41,7 @@ Calculate the user's average time first. HINT: remember the average is the sum o
 
 Next calculate the user's slowest and fastest reponse times. The fastest speed is the lowest number in the speeds array. The slowest speed is the highest.
 
-Display the stats in an alert window.
+Display all the stats in one alert window.
 
 ## Instructions for Part E
 
