@@ -29,7 +29,7 @@ While you're testing the program make the file name hardcoded to "secrets.txt".
 Move your Caesar Cipher algorithm into its own function. The function should accept a string to encrypt/decrypt and a shift amount as a parameter. The function should return the encrypted or decrypted message.
 
 ```js
-ceasarCipher(message, shiftAmount) {
+function ceasarCipher(message, shiftAmount) {
 	// code here
 }
 ```
