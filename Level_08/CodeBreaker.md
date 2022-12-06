@@ -20,8 +20,14 @@ Users should be able to use a letter for the shift amount. For example if a user
 
 ## Instructions for Part B
 
-Give users the option to load text from a .txt plaintext file.
+Give users the option to load text from a plaintext file with the ".txt" file extension.
+
+While you're testing the program make the file name hardcoded to "secrets.txt".
 
 ## Instructions for Part C
 
-Allow the user to decrypt Caesar Cipher messages without knowing the shift amount: code breaking!! Allow the user to easily view truncated (sliced!) results of using different shift amounts on the secret message. Create 25 buttons on the screen, one for each shift amount. When a user clicks a button, clear the screen and display the full result. HINT: Make a function for Caesar Cipher encryption and decryption. Call the function with the message and shift amount as parameters. The function should return the encrypted or decrypted message. While you're testing the program make the file name hardcoded to "secrets.txt".
+Move your Caesar Cipher algorithm into its own function. The function should accept a shift amount as a parameter. You can make `message` a file level variable. The function should return the encrypted or decrypted message.
+
+## Instructions for Part D
+
+Enable the user to decrypt Caesar Cipher messages without knowing the shift amount: code breaking!! HINT: One way of doing this is enabling the user to easily view truncated (sliced!) results of using different shift amounts on the secret message. Create 25 buttons on the screen, one for each shift amount. When a user clicks a button, clear the screen and display the full result.

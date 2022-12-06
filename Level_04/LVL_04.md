@@ -82,6 +82,8 @@ To access characters in a String you can use `[]` just like with accessing items
 
 ```js
 let animal = 'the red fox';
+console.log(animal[0]); // prints 't'
+console.log(animal[1]); // prints 'h'
 console.log(animal[4]); // prints 'r'
 ```
 

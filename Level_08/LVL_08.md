@@ -36,6 +36,8 @@ let txt = await data.text();
 
 Try not to rewrite the same lines of code in different places, put that code in a function instead. If you have a chunk of code and you need to do something only slightly different at another point in your program, sometimes you should make a function with input parameters for the thing(s) that are different. Typically functions should only contain code that is related to the name/description you gave that function, move unrelated code into its own function.
 
+# Level 08 D
+
 ## slice String
 
 ```js
