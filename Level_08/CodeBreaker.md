@@ -28,6 +28,14 @@ While you're testing the program make the file name hardcoded to "secrets.txt".
 
 Move your Caesar Cipher algorithm into its own function. The function should accept a shift amount as a parameter. You can make `message` a file level variable. The function should return the encrypted or decrypted message.
 
+```js
+ceasarCipher(shiftAmount) {
+	// code here
+}
+```
+
 ## Instructions for Part D
 
-Enable the user to decrypt Caesar Cipher messages without knowing the shift amount: code breaking!! HINT: One way of doing this is enabling the user to easily view truncated (sliced!) results of using different shift amounts on the secret message. Create 25 buttons on the screen, one for each shift amount. When a user clicks a button, clear the screen and display the full result.
+Ask the user if they know the shift value they want to use. If they say "yes" the program should ask the user for the shift amount.
+
+If the user doesn't now what shift amount is needed to decrypt a secret message, enable the user to decrypt Caesar Cipher messages with brute force code breaking! Show the message with all 25 possible shift amounts applied. HINT: One way of doing this is enabling the user to easily view truncated (sliced!) results of using different shift amounts on the secret message. Create 25 buttons on the screen, one for each shift amount. When a user clicks a button, clear the screen and display the full result.
