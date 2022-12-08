@@ -1,10 +1,16 @@
+---
 # Level 00 A
+---
 
 ## What is Computer Science?
 
 Why is this field of study called "Computer Science" and not "Program Writing" or "Code Mathematics"? It's because coding requires research and experimentation! You'll often need to test your programs to learn from unexpected errors, and then make changes to get the results you want.
 
+---
+
 These lessons will teach you how to code in JavaScript (JS), which is the most popular modern programming language and my personal favorite! You'll need to memorize some vocabulary, grammar, and syntax to learn this new language. However, learning to code isn't what programming is all about, you'll also learn how to think like a programmer.
+
+---
 
 ## What is QuintOS?
 
@@ -12,11 +18,17 @@ If you signed up for this course you might want to know how video games work and
 
 Issac Newton, a famous 17th century scientist, once said, "we stand on the shoulders of giants". Newton was humbly acknowledging that great advancements made by people in his day were built upon a giant foundation laid by our ancestors. To become a software developer today it's good to learn a bit about the history of computers and computer games.
 
+---
+
 QuintOS is a retro game engine I created for this course. During each lesson you'll develop a QuintOS game that runs on virtual computers displayed in your web browser: Google Chrome, Firefox, or Opera. As you level up your coding skills, the virtual computer will get upgraded too. Since you're just starting out, the first game you make will be for... a programmable calculator. 😜
 
 ![](../src/QuintOS/bootScreen0.jpg)
 
+---
+
 This first lesson will require you to learn a lot of information before we can even make a simple game. It may be a bit overwhelming for you but don't worry! You'll get a lot of practice with these concepts so that you will fully understand them. Let's get started! 🥳
+
+---
 
 ## Creating Variables 🔡
 
@@ -30,9 +42,13 @@ Use `let` to create variables. In the example code `a` is the name of the variab
 
 Semicolons `;` can be used to end each line of code but they're not required. 👁👅👁
 
+---
+
 ## Types of Data 🔡
 
 In JavaScript all variables can be created using `let`, regardless of the type of data they store.
+
+---
 
 ### Number
 
@@ -44,6 +60,8 @@ let y = -49;
 let z = 9504.15;
 ```
 
+---
+
 ### Boolean
 
 Booleans can either be `true` or `false`
@@ -51,6 +69,8 @@ Booleans can either be `true` or `false`
 ```js
 let codingIsFun = true;
 ```
+
+---
 
 ### String
 
@@ -68,6 +88,8 @@ let story = I took my dog to the dog park on 3rd Avenue.;
 
 To remember that the data type for text is called String, you can think of lettered beads on a charm bracelet string.
 
+---
+
 ### functions
 
 functions are a reference to other sections of code which you can run using `()` parenthesis. Input parameters to a function go in the parenthesis.
@@ -82,6 +104,8 @@ moveForward(2);
 
 This code for a robot remote control makes the robot power on, turn left, move forward ten steps, turn right, and then move forward two steps. Note that functions can do different things depending on their input values!
 
+---
+
 ## Camel Case 🐫
 
 Variable names in JS can't have spaces, 🙅‍♂️ so for variables that have multiple words, use camel case! Capitalize the first letter of the words after the first word.
@@ -94,11 +118,15 @@ let applePieIceCream = '🍎 π 🍨';
 
 Note that using this naming convention isn't required for JavaScript to run, it's just something that most professional JS programmers do to make variable names easier to read. Camel case is a naming convention specific to JS, other programming languages have their own conventions.
 
+---
+
 ## Globals 🌐
 
 Globals are special variables that are available for you to use anywhere in your code.
 
 Check out the `alert` and `prompt` global functions for user interaction. The keyword `await` is used to wait for the user to interact with the prompt or alert window.
+
+The `prompt` function is used to ask the user for input, such as an answer to a question. The `alert` function is used to show the user a message.
 
 ```js
 // waits for the user to type something and press enter
@@ -109,23 +137,33 @@ let favColor = await prompt('What is your favorite color?');
 await alert(favColor + ' is my favorite color too!'); // show message to user
 ```
 
+---
+
 ## Comments
 
 Double slash `//` is for making a comment, any text behind it on the same line will not be considered part of the code's instructions. Comments are used to describe what is happening in the code. You might want to make comments so other people can understand your programs or so that you can understand it yourself in case you forget what you did.
 
+---
+
 ## End of Level 00 A
+
+Now you're ready to start making your first game! 🥳 [Click here for the GuessTheNumber instructions.](https://github.com/quinton-ashley/IntroToJS/blob/main/Level_00/GuessTheNumber.md)
 
 ![](../src/memes/00_0.jpeg)
 
-Now you're ready to start making your first game! 🥳 [Click here for the GuessTheNumber instructions.](https://github.com/quinton-ashley/IntroToJS/blob/main/Level_00/GuessTheNumber.md)
+---
 
 # Level 00 B
 
 Did you complete `GuessTheNumber` part A and are ready to learn more? Before we can finish the game we have to learn a bit more stuff.
 
+---
+
 ## Checking Equivalence ✅
 
 Single equals `=` is for assigning values to variables. Double equals `==` is a boolean operator used for checking equivalence. What is a boolean operator? It performs an operation that results in either a true or false (boolean) value.
+
+---
 
 ## if/else statements
 
@@ -142,6 +180,8 @@ if (coinFlip() == pick) {
 	await alert('Tails wins the coin toss!');
 }
 ```
+
+---
 
 ## else if chaining
 
@@ -175,6 +215,8 @@ await alert('The color of a ' + fruit + ' is ' + fruitColor);
 
 What color will be assigned to `fruitColor` if the `fruit` is a pear? What if the fruit is a strawberry?
 
+---
+
 ## Boolean operators 🐰
 
 ```txt
@@ -188,7 +230,11 @@ Greater than or equal to: >=
 
 Boolean operations evaluate to either true or false. Use them in the boolean conditions (inside the parenthesis) of `if` and `else if` statements.
 
+---
+
 # Level 00 C
+
+---
 
 ## Changing a variable's value
 
@@ -206,6 +252,8 @@ let x = 10;
 x = 5; // good :)
 ```
 
+---
+
 ## Code Execution Order
 
 Note that you can not use a variable before you create it. You will get an error saying the variable is not defined, meaning that JS doesn't have a variable with that name in its memory.
@@ -221,6 +269,8 @@ Create variables before you use them.
 let message = 'Hi!';
 await alert(message); // good!
 ```
+
+---
 
 ## Scopes
 
@@ -245,9 +295,13 @@ if (name == 'Bob') {
 await alert(message); // good!
 ```
 
+---
+
 Also remember to finish every scope you start! Every opening brace `{` needs a closing brace `}`.
 
 ![](../src/memes/00_4.png)
+
+---
 
 ## while loops
 
@@ -265,7 +319,11 @@ while (card != 'Ace of Spades') {
 await alert('Found the Ace of Spades!');
 ```
 
+---
+
 # Level 00 D
+
+---
 
 ## Mathematical operators 🔢
 
@@ -282,6 +340,8 @@ The multiplication symbol is the asterisk, NOT the letter `x`!
 let x = 5 * 8; // x -> 40
 ```
 
+---
+
 ## Math: Generate a random number
 
 ```js
@@ -289,6 +349,8 @@ let x = 5 * 8; // x -> 40
 let x = random(0, 1); // numbers ranging from 0 to 1
 let x2 = random(-4, 7); // numbers ranging from -4 to 7
 ```
+
+---
 
 ## Math: round
 
@@ -298,11 +360,15 @@ The `round` function rounds a number to the nearest integer.
 let y = round(5.3); // y -> 5
 ```
 
+---
+
 # End of Level 00
 
 When you're done with your GuessTheNumber game you'll have already made something much cooler than the usual beginner CS project!
 
 ![](../src/memes/00_1.jpeg)
+
+---
 
 ## Computer History: Casio FX-720P
 
@@ -310,32 +376,4 @@ This level's computer was inspired by the Casio FX-720P, which could run program
 
 <https://youtu.be/d3NIe1jTZMc?t=760>
 
-- [Level 00 A](#level-00-a)
-  - [What is Computer Science?](#what-is-computer-science)
-  - [What is QuintOS?](#what-is-quintos)
-  - [Creating Variables 🔡](#creating-variables-)
-  - [Types of Data 🔡](#types-of-data-)
-    - [Number](#number)
-    - [Boolean](#boolean)
-    - [String](#string)
-    - [functions](#functions)
-  - [Camel Case 🐫](#camel-case-)
-  - [Globals 🌐](#globals-)
-  - [Comments](#comments)
-  - [End of Level 00 A](#end-of-level-00-a)
-- [Level 00 B](#level-00-b)
-  - [Checking Equivalence ✅](#checking-equivalence-)
-  - [if/else statements](#ifelse-statements)
-  - [else if chaining](#else-if-chaining)
-  - [Boolean operators 🐰](#boolean-operators-)
-- [Level 00 C](#level-00-c)
-  - [Changing a variable's value](#changing-a-variables-value)
-  - [Code Execution Order](#code-execution-order)
-  - [Scopes](#scopes)
-  - [while loops](#while-loops)
-- [Level 00 D](#level-00-d)
-  - [Mathematical operators 🔢](#mathematical-operators-)
-  - [Math: Generate a random number](#math-generate-a-random-number)
-  - [Math: round](#math-round)
-- [End of Level 00](#end-of-level-00)
-  - [Computer History: Casio FX-720P](#computer-history-casio-fx-720p)
+---

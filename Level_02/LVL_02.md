@@ -1,4 +1,6 @@
+---
 # Level 02 A
+---
 
 ## Creating functions 👷
 
@@ -15,33 +17,39 @@ sayHello(); // run the function
 
 The code inside a function is not run until the function is called/invoked by using its name and the parenthesis.
 
-## What is p5.js? 🌸
+---
 
-To make Pong we're going to use p5.js, a JavaScript graphics library for creative coding.
+## What is p5.play and p5.js? 🌸
 
-## p5.js Basics
+To make Pong we're going to use p5.play, a 2D game engine made by Computer Science teachers to help you turn your game ideas into JavaScript code!
 
-https://p5js.org/get-started/
+The lead developer of p5.play is Quinton Ashley, a Computer Science teacher at Crimson Education and the author of these lessons!
 
-The p5.js `draw` function should contain code for drawing an image (frame). Behind the scenes, p5.js will run the `draw` function 60 times per second, this is called the frame rate.
+p5.play uses p5.js for graphics rendering. We share the Processing Foundation's goal of make coding more accessible for artists, designers, educators, and beginners. Behind the scenes p5.play v3 uses planck (Box2D), a physics simulator that's been used in popular 2D games like Angry Birds and Tiny Wings.
 
-You can move objects a little bit in each new frame drawn to the screen. This is called animation.
+<https://p5play.org>
 
-Note that p5.js adds a lot of variables to the global scope. Note that `width` and `height` refer to the size of the p5.js canvas (drawable area) in pixels.
+---
 
 ## p5.play Sprites
 
-Take a look at the p5.play website to learn about sprites: https://p5play.org/learn/sprite.html
+Take a look at page 0 of the Sprite learn pages on the p5.play website:
+
+<https://p5play.org/learn/sprite.html>
+
+---
 
 ## spriteArt
 
-The `spriteArt` function can be used to create images very easily! The first parameter to `spriteArt` is a String representing the color values of pixels.
+The p5.play `spriteArt` function can be used to create images very easily! The first parameter to `spriteArt` is a String representing the color values of pixels.
 
 ```js
 let img = spriteArt('wgw');
 ```
 
 This example code would create an image with one white pixel, followed by a green pixel, and then another white pixel.
+
+---
 
 Here's the limited color palette you can use for this game. They are the same colors as the real ZX Spectrum, which this level's computer is based on.
 
@@ -56,6 +64,8 @@ Here's the limited color palette you can use for this game. They are the same co
 |    'c'     |    Cyan 🔵     |
 |    'y'     |   Yellow 🟨    |
 |    'w'     |    White ⬜    |
+
+---
 
 ## Make Strings with Back-ticks
 
@@ -77,11 +87,15 @@ let img = spriteArt(str);
 
 Can you tell what the image is?
 
-...
+---
 
 It's a simple yellow and black smiley face image! 😃
 
+---
+
 # Level 02 B
+
+---
 
 ## spriteArt scaling
 
@@ -93,6 +107,8 @@ let face = spriteArt(str, 2);
 
 The second input parameter to the `spriteArt` function is an optional scale value. Input parameters are separated by commas.
 
+---
+
 ## String.repeat(amount)
 
 To more easily create large Strings you can use a String function called [repeat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
@@ -101,6 +117,8 @@ To more easily create large Strings you can use a String function called [repeat
 let pattern = '><'.repeat(4);
 // pattern -> '><><><><';
 ```
+
+---
 
 ## += operator
 
@@ -122,34 +140,36 @@ console.log(x); // x -> 7
 
 `-=`, `*=`, and `/=` operators can also be used with numbers.
 
+---
+
 # Level 02 C
+
+---
+
+Take a look at pages 1 and 2 of the Sprite learn pages on the p5.play website:
+
+<https://p5play.org/learn/sprite.html?page=1>
+
+---
 
 ## Bounces
 
 Objects in p5.play collide by default but the paddle and ball won't do a perfect bounce off the paddle automatically.
 
-To have the ball bounce off the paddle and retain its speed, set the ball's bounciness to 1, indicating you want a full bounce. Set the friction to 0, indicating you want no friction.
-
 ```js
-ball.bounciness = 1;
-ball.friction = 0;
+function draw() {
+	// make the ball bounce off the paddle
+	if (ball.collides(paddleLeft)) {
+		ball.speed = 1;
+	}
+}
 ```
 
-## collider types
-
-By default when sprites collide both objects will move. To prevent this, set the sprite to be static when another sprite bounces on it.
-
-```js
-wall.collider = 'static';
-```
-
-If you want to have a sprite that isn't moved by other sprites but can still be moved by the player, set the sprite's collider to 'kinematic'.
-
-```js
-paddle.collider = 'kinematic';
-```
+---
 
 # Level 02 D
+
+---
 
 ## Keyboard Input
 
@@ -165,6 +185,8 @@ function draw() {
 }
 ```
 
+---
+
 ## Drawing text to the screen
 
 Text can be displayed on screen at a given text row and column.
@@ -174,7 +196,11 @@ Text can be displayed on screen at a given text row and column.
 text('Hello World!', 10, 12);
 ```
 
+---
+
 ## Level 02 E
+
+---
 
 ## Custom collision
 
@@ -186,6 +212,8 @@ if (laser.collides(shield)) {
 }
 ```
 
+---
+
 ## Adding properties to an existing object
 
 Adding your own properties to an existing object is super easy, just give it a value as if the property already existed!
@@ -194,7 +222,11 @@ Adding your own properties to an existing object is super easy, just give it a v
 ball.serveSpeed = 1;
 ```
 
+---
+
 ## Level 02 F
+
+---
 
 ## p5.js fill, stroke, and rect
 
@@ -212,11 +244,15 @@ function draw() {
 }
 ```
 
+---
+
 ## End of Level 02
 
 Remember, don't "reinvent the wheel" if you don't have to! Using a game engine, like p5.play, makes game development easier. Often learning to use existing tools is way easier than writing similar code yourself.
 
 ![](../src/memes/02_0.jpeg)
+
+---
 
 ## Computer History: ZX Spectrum
 
@@ -224,31 +260,10 @@ Excerpt from the last paragraph of Chapter 1 of "ZX81 BASIC PROGRAMMING" by Step
 
 "Whatever else you do, keep using the computer. If you have a question 'What does it do if I tell it such & such?' then the answer is easy:type it in & see. Whenever the manual tells you to type something in, always ask yourself, 'What could I type instead?' & try out your replies. The more of your own stuff you write, the better you will understand the ZX81. (This is called un-programmed learning.) Regardless of what you type in, you cannot damage the computer."
 
+---
+
 This level's computer is based on the ZX Spectrum, an 8-bit personal home computer developed by Sinclair Research. It was first released in the United Kingdom on the 23rd of April 1982 and went on to become Britain's best-selling microcomputer. Watch some of this video to hear what it was like for people to use the ZX Spectrum back then!
 
 https://youtu.be/nRlmTiynbd8?t=242
 
-- [Level 02 A](#level-02-a)
-  - [Creating functions 👷](#creating-functions-)
-  - [What is p5.js? 🌸](#what-is-p5js-)
-  - [p5.js Basics](#p5js-basics)
-  - [p5.play Sprites](#p5play-sprites)
-  - [spriteArt](#spriteart)
-  - [Make Strings with Back-ticks](#make-strings-with-back-ticks)
-- [Level 02 B](#level-02-b)
-  - [spriteArt scaling](#spriteart-scaling)
-  - [String.repeat(amount)](#stringrepeatamount)
-  - [+= operator](#-operator)
-- [Level 02 C](#level-02-c)
-  - [Bounces](#bounces)
-  - [collider types](#collider-types)
-- [Level 02 D](#level-02-d)
-  - [Keyboard Input](#keyboard-input)
-  - [Drawing text to the screen](#drawing-text-to-the-screen)
-  - [Level 02 E](#level-02-e)
-  - [Custom collision](#custom-collision)
-  - [Adding properties to an existing object](#adding-properties-to-an-existing-object)
-  - [Level 02 F](#level-02-f)
-  - [p5.js fill, stroke, and rect](#p5js-fill-stroke-and-rect)
-  - [End of Level 02](#end-of-level-02)
-  - [Computer History: ZX Spectrum](#computer-history-zx-spectrum)
+---
