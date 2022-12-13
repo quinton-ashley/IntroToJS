@@ -129,12 +129,10 @@ Check out the `alert` and `prompt` global functions for user interaction. The ke
 The `prompt` function is used to ask the user for input, such as an answer to a question. The `alert` function is used to show the user a message.
 
 ```js
-// waits for the user to type something and press enter
 let favColor = await prompt('What is your favorite color?');
 // the user's response to the prompt is assigned to favColor
 
-// waits for user to read the message in the alert and press okay
-await alert(favColor + ' is my favorite color too!'); // show message to user
+await alert(favColor + ' is my favorite color too!');
 ```
 
 ---

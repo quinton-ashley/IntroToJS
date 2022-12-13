@@ -16,31 +16,17 @@ console.log(nums[1]); // prints the Number 21 to the JS console
 
 ## Counting with while loops
 
-The number of loops a while loop does can be counted with a variable.
+Here is an example of a while loop with a counter variable. The code in the while loop prints the numbers 0 through 9 to the JS console.
 
 The variable name `i` stands for "index". It is the standard name for a counter variable.
 
 ```js
-let names = ['Jake', 'Ali', 'Ben', 'Cam'];
+let i = 0; // initialize the counter variable
 
-let i = 0; // initialize i to 0
-
-// loop while i is less than names.length which is 4
-while (i < names.length) {
-	// print the next name in the list
-	console.log(i + '. ' + names[i]);
-
-	i++; // shortcut for i = i + 1
-} // in this loop i goes up from 0 to 1 to 2 to 3
-```
-
-The code above prints out a numbered list of names in the JS console.
-
-```txt
-0. Jake
-1. Ali
-2. Ben
-3. Cam
+while (i < 10) {
+	console.log(i);
+	i++; // increment the counter variable
+}
 ```
 
 ## p5.play Groups
@@ -53,19 +39,32 @@ https://p5play.org/learn/group.html
 
 ## for loops
 
-Scroll up and take another look at the example of the while loop with a counter variable, then check out this for loop! It does the same thing but all the steps related to the index variable are written as one line. The order of their operation is still the same.
+Scroll up and take another look at the example of the while loop with a counter variable.
+
+A `for` loop is a way to repeat a block of code a certain number of times. The basic idea of a `for` loop is as follows:
+
+1. First, we create a counter variable and set its initial value.
+2. Then, we create a condition that checks if the counter variable has reached a certain value.
+3. Finally, we create an increment that increases the value of the counter variable after each iteration of the loop.
+
+Here's an example of a `for` loop in action:
 
 ```js
-let names = ['Jake', 'Ali', 'Ben', 'Cam'];
-
-// (INITIALIZER; CONDITION; INCREMENATION)
-for (let i = 0; i < names.length; i++) {
-	// print the next name in the list
-	console.log(i + '. ' + names[i]);
+// (initialization; condition; increment)
+for (let i = 0; i < 10; i++) {
+	console.log(i);
 }
 ```
 
-When the for loop starts `i` is set to 0, then is check the condition. If the condition is true the for loop runs for the first time, this is called an iteration. When the for loop ends, the incrementation section of the for loop is run, in this case `i++` which increases the value of `i` by 1. The condition is checked again, if true the for loop will repeat again, doing another iteration. Until the condition is false the for loop will continue to repeat.
+In this example, the `for` loop does the following:
+
+1. The `initialization` sets the counter variable `i` to 0.
+2. The `condition` checks if `i` is less than 10. If it is, the code inside the loop is executed. If not, the loop is terminated.
+3. The `increment` increments `i` by 1 after each iteration of the loop.
+
+The `for` loop will continue to execute until the condition evaluates to `false`, which will happen when `i` is equal to 10. At that point, the loop will be terminated and the code will continue to execute after the `for` loop.
+
+In this example, the code inside the `for` loop simply prints the value of `i` to the console. This will result in the numbers 0 through 9 being printed to the console.
 
 # Level 03 C
 

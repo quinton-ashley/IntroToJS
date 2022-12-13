@@ -2,7 +2,7 @@
 
 ## Creating Objects
 
-Objects have properties, aka key/value pairs. Everything in Javascript (Number, String, Array, etc.) is actually an Object too! You've already used some properties that these objects have such as `.length` for Strings.
+Objects have properties, aka key/value pairs. You've already used some properties that these objects have such as `.length` for Strings.
 
 Let's take a look at how we could use an object to store attributes about Gumball, a character from the Cartoon Network show The Amazing World of Gumball.
 
@@ -49,6 +49,34 @@ let gumball = {
 };
 ```
 
+## JSON file
+
+JSON stands for JavaScript Object Notation. It is a way to store data in a text file. It is a common way to store data for web applications.
+
+```json
+{
+	"apples": 2,
+	"bananas": 10,
+	"pears": 4
+}
+```
+
+## End of Level 10 A
+
+![](../src/memes/10_0.jpeg)
+
+# Level 10 B
+
+## fetch a json file
+
+```js
+let filePath = QuintOS.dir + '/groceries.json';
+let data = await fetch(filePath);
+let obj = await data.json();
+```
+
+# Level 10 C
+
 ## for in loops
 
 `for in` loop iterates through the indexes/keys of an array or object.
@@ -89,28 +117,6 @@ Result:
 Hello Jake
 Hello Ali
 Hello Ben
-```
-
-## JSON file
-
-JSON stands for JavaScript Object Notation. It is a way to store data in a text file. It is a common way to store data for web applications.
-
-```json
-{
-	"apples": 2,
-	"bananas": 10,
-	"pears": 4
-}
-```
-
-![](../src/memes/10_0.jpeg)
-
-## fetch a json file
-
-```js
-let filePath = QuintOS.dir + '/groceries.json';
-let data = await fetch(filePath);
-let obj = await data.json();
 ```
 
 ## padEnd
