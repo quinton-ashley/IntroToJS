@@ -1,4 +1,6 @@
+---
 # Level 03 A
+---
 
 ## Accessing items in an Array
 
@@ -10,9 +12,11 @@ The first item in a JavaScript array is at index 0, the second item is at index 
 let names = ['Amy', 'Ellie', 'Max'];
 let nums = [50, 21, 46, 83];
 
-console.log(names[0]); // prints the String 'Amy' to the JS console
-console.log(nums[1]); // prints the Number 21 to the JS console
+log(names[0]); // prints the String 'Amy' to the JS console
+log(nums[1]); // prints the Number 21 to the JS console
 ```
+
+---
 
 ## Counting with while loops
 
@@ -24,18 +28,24 @@ The variable name `i` stands for "index". It is the standard name for a counter 
 let i = 0; // initialize the counter variable
 
 while (i < 10) {
-	console.log(i);
+	log(i);
 	i++; // increment the counter variable
 }
 ```
+
+---
 
 ## p5.play Groups
 
 Take a look at the first page of the p5.play Group reference pages:
 
-https://p5play.org/learn/group.html
+<https://p5play.org/learn/group.html>
+
+---
 
 # Level 03 B
+
+---
 
 ## for loops
 
@@ -47,12 +57,14 @@ A `for` loop is a way to repeat a block of code a certain number of times. The b
 2. Then, we create a condition that checks if the counter variable has reached a certain value.
 3. Finally, we create an increment that increases the value of the counter variable after each iteration of the loop.
 
+---
+
 Here's an example of a `for` loop in action:
 
 ```js
 // (initialization; condition; increment)
 for (let i = 0; i < 10; i++) {
-	console.log(i);
+	log(i);
 }
 ```
 
@@ -66,11 +78,19 @@ The `for` loop will continue to execute until the condition evaluates to `false`
 
 In this example, the code inside the `for` loop simply prints the value of `i` to the console. This will result in the numbers 0 through 9 being printed to the console.
 
+---
+
 # Level 03 C
+
+---
 
 ## Animation
 
-Learn about sprite animation on the p5.play website: https://p5play.org/learn/sprite_animation.html
+Learn about sprite animation on the p5.play website:
+
+<https://p5play.org/learn/sprite_animation.html>
+
+---
 
 # Level 03 D
 
@@ -82,6 +102,8 @@ The `loadSound` function loads a sound file from a given path. A path is the loc
 let greeting = loadSound('sounds/hi.mp3');
 ```
 
+---
+
 ## Setting the playback volume
 
 Volume ranges from 0 (no sound) to 1 (full volume). Usually you won't want any individual sound to play at full volume so that you can mix sounds at a typical listening volume without distortion.
@@ -89,6 +111,8 @@ Volume ranges from 0 (no sound) to 1 (full volume). Usually you won't want any i
 ```js
 greeting.setVolume(0.3);
 ```
+
+---
 
 ## Playing sounds
 
@@ -98,11 +122,15 @@ Play sound objects by using the play function.
 greeting.play();
 ```
 
+---
+
 # Level 03 E
 
 Welcome back to level 3! You're now ready to start working on part E of the LilyLeap game.
 
 ![](../src/memes/03_0.jpeg)
+
+---
 
 ## modulo operator
 
@@ -111,14 +139,16 @@ The modulo operator `%` it gets the remainder of a division.
 ```js
 // true if x is even (divisible by 2)
 if (x % 2 == 0) {
-	console.log('x is even!');
+	log('x is even!');
 }
 
 // true if y is divisible by 5
 if (y % 5 == 0) {
-	console.log(y + ' is a multiple of 5');
+	log(y + ' is a multiple of 5');
 }
 ```
+
+---
 
 # End of Level 03
 
@@ -126,8 +156,12 @@ Don't get too mad at your code!
 
 ![](../src/memes/03_1.jpeg)
 
+---
+
 ## Computer History: Nintendo GameBoy
 
 _Despite receiving mixed reviews by critics and being technologically inferior to its fourth-generation competitors (Sega's Game Gear, Atari's Lynx, and NEC's TurboExpress), the Game Boy received praise for its battery life and durability in its construction. It quickly outsold the competition, selling one million units in the United States within a few weeks. An estimated 118.69 million units of the Game Boy and its successor, the Game Boy Color, have been sold worldwide, making it the third best-selling video game console of all time. It is one of the most recognizable devices from the 1990s, becoming a cultural icon in the years following its release._
 
 https://en.wikipedia.org/wiki/Game_Boy
+
+---

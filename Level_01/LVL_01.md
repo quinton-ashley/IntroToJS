@@ -181,8 +181,10 @@ The console can be opened in your web browser by right clicking anywhere on a we
 
 Now go to the "Console" tab. If your program doesn't start or stops working, look at the JavaScript console for errors. You can also use `console.log` to print things to the console.
 
+With QuintOS you can use the shortcut `log` for `console.log`.
+
 ```js
-console.log("The user's favorite color is: " + favColor);
+log("The user's favorite color is: " + favColor);
 ```
 
 ---
@@ -321,7 +323,7 @@ let nums = [50, 21, 46, 83];
 length is a property of Array accessed using a period `.`
 
 ```js
-console.log('The names array has ' + names.length + ' names');
+log('The names array has ' + names.length + ' names');
 ```
 
 This example code would print "The names array has 3 names" to the console.

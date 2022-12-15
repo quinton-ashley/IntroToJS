@@ -1,12 +1,16 @@
+---
 # Level 04 A
+---
 
 ## Coding Philosophy: Remember to log!
 
-`log` is a shortcut in QuintOS for the JavaScript `console.log` function. It can print the value of variables to the JS console. It's really useful for quickly investigating problems with your program or just to see if it's working the way you intended.
+Remember that `log` is a shortcut in QuintOS for the JavaScript `console.log` function. It can print the value of variables to the JS console. It's really useful for quickly investigating problems with your program or just to see if it's working the way you intended.
 
 ```js
 log('test your code!');
 ```
+
+---
 
 ## const
 
@@ -16,6 +20,8 @@ b = 2; // ERROR! b is a constant
 ```
 
 Unlike variables created using `let`, variables created with `const` are constants. When they are assigned a value they can not be assigned another.
+
+---
 
 ## String.split(separator)
 
@@ -31,7 +37,11 @@ Strings have a lot of useful functions we can use. MDN, the Mozilla Developer Ne
 // -> ['the', 'red', 'fox']
 ```
 
+---
+
 # Level 04 B
+
+---
 
 ## Adding to Arrays
 
@@ -48,6 +58,8 @@ nums.push(97); // adds 97 to the nums array
 // nums -> [50, 21, 46, 83, 97]
 ```
 
+---
+
 ## Getting the length of a String
 
 `.length` is used to get the amount of items in an array and it can also be used to get the amount of characters in a String.
@@ -62,7 +74,11 @@ names.join(' ~ ');
 // -> 'Amy ~ Ellie ~ Max'
 ```
 
+---
+
 # Level 04 C
+
+---
 
 ## Editing items in an Array
 
@@ -76,15 +92,17 @@ nums[1] += 4; // edits the item at position 1 in the nums array
 // num -> [50, 25, 42, 83]
 ```
 
+---
+
 ## Accessing characters in a String
 
 To access characters in a String you can use `[]` just like with accessing items in arrays!
 
 ```js
 let animal = 'the red fox';
-console.log(animal[0]); // prints 't'
-console.log(animal[1]); // prints 'h'
-console.log(animal[4]); // prints 'r'
+log(animal[0]); // prints 't'
+log(animal[1]); // prints 'h'
+log(animal[4]); // prints 'r'
 ```
 
 However, Strings are immutable, meaning individual characters in the String can not be edited like you can with individual elements in an array.
@@ -94,7 +112,11 @@ animal[8] = 'b'; // ERROR: won't change String to 'the red box'
 animal = 'the red box'; // this will work!
 ```
 
+---
+
 # Level 04 D
+
+---
 
 ## Implied boolean conditions
 
@@ -106,6 +128,8 @@ if (gameOver == true) {
 }
 ```
 
+---
+
 In Javascript you don't have to use `== true` in boolean conditions because checking for equivalence to `true` is implied. You can just put the variable in a boolean condition on it's own.
 
 ```js
@@ -114,6 +138,8 @@ if (gameOver) {
 }
 ```
 
+---
+
 You can use the not symbol `!` in front of booleans to check if something is not true.
 
 ```js
@@ -121,6 +147,8 @@ if (!isPlaying) {
 	pause();
 }
 ```
+
+---
 
 ## Breaking out of a loop
 
@@ -137,11 +165,15 @@ while (playerHealth > 0) {
 }
 ```
 
+---
+
 # End of Level 04
 
 Sorry if you felt like this after testing your Hangman game!
 
 ![am i testing this program or is it testing me?](../src/memes/04_0.png)
+
+---
 
 ## Computer History: Apple II
 
@@ -149,19 +181,4 @@ This level's computer was inspired by the Apple II. For many people in the US, t
 
 https://www.youtube.com/watch?v=CxJwy8NsXFs
 
-- [Level 04 A](#level-04-a)
-	- [Coding Philosophy: Remember to log!](#coding-philosophy-remember-to-log)
-	- [const](#const)
-	- [String.split(separator)](#stringsplitseparator)
-- [Level 04 B](#level-04-b)
-	- [Adding to Arrays](#adding-to-arrays)
-	- [Getting the length of a String](#getting-the-length-of-a-string)
-	- [array.join(separator)](#arrayjoinseparator)
-- [Level 04 C](#level-04-c)
-	- [Editing items in an Array](#editing-items-in-an-array)
-	- [Accessing characters in a String](#accessing-characters-in-a-string)
-- [Level 04 D](#level-04-d)
-	- [Implied boolean conditions](#implied-boolean-conditions)
-	- [Breaking out of a loop](#breaking-out-of-a-loop)
-- [End of Level 04](#end-of-level-04)
-	- [Computer History: Apple II](#computer-history-apple-ii)
+---

@@ -6,32 +6,32 @@ https://www.youtube.com/watch?v=fiShX2pTz9A
 
 ## Instructions for Part A
 
-Create two paddle sprites and place them on opposite ends of the screen.
+Create two paddle sprites using the `paddleImg` and place them on opposite ends of the screen.
 
-Make the ball move to the right.
+Make the ball move to the right. HINT: Set ball.direction and ball.speed.
 
 You will notice that when the ball moves it leaves a trail of ball images behind it. That's because everything drawn to the p5.js canvas stays there, it doesn't become a blank slate every time the draw function is used to make a new frame. This is useful for some art programs but not for a Pong game. Use the p5.js background function with "b" (black) as the input argument `background("b")`
 
-Now try moving the ball to the left. Then try moving the ball up and down, then in a diagonal. Get a sense of how changing the ball's x and y values will affect its trajectory.
+Now try moving the ball to the left. Then try moving the ball up and down, then in a diagonal. Get a sense of how changing the ball's direction will affect its trajectory.
 
 Usually Pong is a two player game but to easily test the game you can change the position of both paddles using your mouse. `mouse` is a global p5.play variable you can use to access the current position of the mouse using `mouse.x` and `mouse.y`. HINT: Change the y position of both paddles to `mouse.y`.
 
-## Instructions for Part B
+You may notice that if the paddles hit the ball, they will not bounce correctly! The paddles should not move when the ball hits them. HINT: Make the paddles have a collider type of 'kinematic' instead of 'dynamic'. This will allow players to move the paddles but prevents the ball from moving the paddles.
 
-Make a wall image (or two) with the `spriteArt` function. Place two walls at the top and bottom of the screen. You can make the walls one color or patterned or anything if you'd like, besides transparent lol. The second input parameter to the `spriteArt` function is a number value for scale, you can use it to make the wall big without having to type such a long String. HINT: use the `repeat` function too and remember the newline character `\n`.
-
-Set these properties to make the ball have a full bounce off the walls without losing speed:
+The ball still doesn't really bounce off the paddle correctly though! Set these properties to make the ball have a full bounce off the paddles without losing speed to friction:
 
 ```js
 ball.bounciness = 1;
 ball.friction = 0;
 ```
 
+## Instructions for Part B
+
+Make a wall image (or two) with the `spriteArt` function. Place two walls at the top and bottom of the screen. You can make the walls one color or patterned or anything if you'd like. HINT: use the `repeat` function too and remember the newline character `\n`.
+
 The walls should have 'static' colliders.
 
 ## Instructions for Part C
-
-Make the ball bounce off the paddles.
 
 Place the ball back in the middle of the screen when it goes off screen.
 

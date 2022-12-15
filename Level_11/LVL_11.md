@@ -1,4 +1,6 @@
+---
 # Level 11 A
+---
 
 ## Welcome to the World Wide Web!
 
@@ -8,19 +10,27 @@ These days a lot of websites all look the same but back in the 90s the World Wid
 
 Pretty _rad_ am I right?
 
+---
+
 ## Web Development
 
 Web development is primarily done with three languages HTML, CSS, and Javascript.
 
+---
+
 ## HTML
 
 HTML (HyperText Markup Language) forms the skeleton of the website. The latest version is HTML5. Unlike Javascript, [HTML is not a programming language](https://ischool.syr.edu/why-html-is-not-a-programming-language/) since on its own it doesn't do anything dynamic. HTML code is made up of tags. There are tags for headings, paragraphs, images, lists, links, videos, navigation bars, and more.
+
+---
 
 ## CSS
 
 CSS (Cascading Style Sheet) is primarily used to style web pages and [it is widely considered to be a programming language](https://css-tricks.com/is-css-a-programming-language/) since it has functions, variables, and its own kind of `if/else` statements.
 
 Professional front end developers have created incredible showcases of what is possible using CSS3, the latest edition of CSS. If you're interested in web design you can find inspiration on [CODEPEN](https://codepen.io), [Behance](https://www.behance.net/), and [dribbble](https://dribbble.com/).
+
+---
 
 ## Aside
 
@@ -30,11 +40,15 @@ Also you might've gotten into some trouble if you told everyone you could build 
 
 ![](../src/memes/11_0.jpeg)
 
+---
+
 ## How HTML tags work
 
 `<html>` is the opening tag for the start of the html file. Opening tags have the name of the element surrounded with greater than and less than symbols. Closing tags use a slash before the name of the element, like this `</html>`. They represent the end of that element. "Self-closing" tags, which can not contain text or html contents inside them, such as `<img>` tags (for images), do not have a closing tag.
 
 The elements inside the opening and closing tags of an element are called child elements. The element that a child element is inside is called the parent element, relative to the child.
+
+---
 
 ## Common HTML tags
 
@@ -42,13 +56,19 @@ Learn more about common HTML tags by referencing this table I made:
 
 <https://quintos.org/reference.html?language=html>
 
+---
+
 # Level 11 B
+
+---
 
 ## How CSS styling works
 
 Take a look at the MDN guide "What is CSS?":
 
 <https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS#css_syntax>
+
+---
 
 ## CSS FlexBox
 
@@ -57,7 +77,11 @@ Here is an excellent guide from css-tricks.com on how to use FlexBox:
 <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
 <https://i.redd.it/rofzm44oka091.png>
 
+---
+
 # Level 11 C
+
+---
 
 ## HTML form tag
 
@@ -108,27 +132,10 @@ Programming is just like any skill. You can only get better by practicing. So ke
 
 What you do now with your JavaScript programming skills is up to you! Here are some ideas:
 
-- make a new generative artwork with p5.js every day
-- make a new game prototype with p5.play every week (until you make a game you really like)
+- make generative artwork with p5.js
+- make games with p5.play
 - make a static website with GitHub Pages
-- make a website backend using node.js and express that you can add to over time
-- make a desktop app with electron
+- make a dynamic website with a backend that uses node.js and Express
+- make a desktop app with Electron
 
-# Level 11 Table of Contents
-
-- [Level 11 A](#level-11-a)
-  - [Welcome to the World Wide Web!](#welcome-to-the-world-wide-web)
-  - [Web Development](#web-development)
-  - [HTML](#html)
-  - [CSS](#css)
-  - [Aside](#aside)
-  - [How HTML tags work](#how-html-tags-work)
-  - [Common HTML tags](#common-html-tags)
-- [Level 11 B](#level-11-b)
-  - [How CSS styling works](#how-css-styling-works)
-  - [CSS FlexBox](#css-flexbox)
-- [Level 11 C](#level-11-c)
-  - [HTML form tag](#html-form-tag)
-  - [The easy way to get data from a form](#the-easy-way-to-get-data-from-a-form)
-- [End of Introduction to JavaScript](#end-of-introduction-to-javascript)
-- [Level 11 Table of Contents](#level-11-table-of-contents)
+---

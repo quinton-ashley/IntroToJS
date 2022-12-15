@@ -1,4 +1,6 @@
+---
 # Level 10 A
+---
 
 ## Creating Objects
 
@@ -16,6 +18,8 @@ let gumball = {
 	teacher: 'Ms. Simian'
 };
 ```
+
+---
 
 Properties can be accessed using the dot syntax or with the `[]` square brackets.
 
@@ -35,6 +39,8 @@ gumball.grade = 8;
 gumball.brother = 'Darwin';
 ```
 
+---
+
 What does the `gumball` object look like after these changes?
 
 ```js
@@ -49,6 +55,8 @@ let gumball = {
 };
 ```
 
+---
+
 ## JSON file
 
 JSON stands for JavaScript Object Notation. It is a way to store data in a text file. It is a common way to store data for web applications.
@@ -61,11 +69,17 @@ JSON stands for JavaScript Object Notation. It is a way to store data in a text 
 }
 ```
 
+---
+
 ## End of Level 10 A
 
 ![](../src/memes/10_0.jpeg)
 
+---
+
 # Level 10 B
+
+---
 
 ## fetch a json file
 
@@ -75,7 +89,11 @@ let data = await fetch(filePath);
 let obj = await data.json();
 ```
 
+---
+
 # Level 10 C
+
+---
 
 ## for in loops
 
@@ -100,6 +118,8 @@ I need to get 10 bananas!
 I need to get 4 pears!
 ```
 
+---
+
 ## for of loops
 
 `for of` loops iterate through the values of an array.
@@ -119,6 +139,8 @@ Hello Ali
 Hello Ben
 ```
 
+---
+
 ## padEnd
 
 ```js
@@ -126,6 +148,10 @@ let str = 'hello';
 str.padEnd(10, ' '); // -> 'hello     '
 ```
 
+---
+
 # End of Level 10
 
 ![](../src/memes/10_1.jpeg)
+
+---

@@ -8,7 +8,11 @@ Why is this field of study called "Computer Science" and not "Program Writing" o
 
 ---
 
-These lessons will teach you how to code in JavaScript (JS), which is the most popular modern programming language and my personal favorite! You'll need to memorize some vocabulary, grammar, and syntax to learn this new language. However, learning to code isn't what programming is all about, you'll also learn how to think like a programmer.
+These lessons will teach you how to code in JavaScript (JS), which is the most popular modern programming language and my personal favorite!
+
+1 out of every 3 programming jobs (31%) require JavaScript skills.
+
+You'll need to memorize some vocabulary, grammar, and syntax to learn this new language. However, learning to code isn't what programming is all about, you'll also learn how to think like a programmer.
 
 ---
 
@@ -20,7 +24,7 @@ Issac Newton, a famous 17th century scientist, once said, "we stand on the shoul
 
 ---
 
-QuintOS is a retro game engine I created for this course. During each lesson you'll develop a QuintOS game that runs on virtual computers displayed in your web browser: Google Chrome, Firefox, or Opera. As you level up your coding skills, the virtual computer will get upgraded too. Since you're just starting out, the first game you make will be for... a programmable calculator. 😜
+QuintOS contains a set of retro computer simulations that I created for this course just to make writing your beginner level programs more fun. During each lesson you'll develop a game that runs on a virtual computer displayed in the Google Chrome web browser. As you level up your coding skills, the virtual computer will get upgraded too. Since you're just starting out, the first game you make will be for... a programmable calculator. 😜
 
 ![](../src/QuintOS/bootScreen0.jpg)
 
@@ -124,7 +128,13 @@ Note that using this naming convention isn't required for JavaScript to run, it'
 
 Globals are special variables that are available for you to use anywhere in your code.
 
-Check out the `alert` and `prompt` global functions for user interaction. The keyword `await` is used to wait for the user to interact with the prompt or alert window.
+## await
+
+The `await` keyword is used in JavaScript to make certain parts of your code "wait" until something happens. This can be useful when you're working with things that take time to complete, like fetching data from a server or waiting for a user to click a button or type a response.
+
+## alert and prompt
+
+Check out the `alert` and `prompt` global functions for user interaction.
 
 The `prompt` function is used to ask the user for input, such as an answer to a question. The `alert` function is used to show the user a message.
 
@@ -134,6 +144,8 @@ let favColor = await prompt('What is your favorite color?');
 
 await alert(favColor + ' is my favorite color too!');
 ```
+
+In this example the program will wait for the user to type their favorite color and press enter before continuing. Then it will show an alert window with a message in which the program will always agree with the user's choice of favorite color.
 
 ---
 

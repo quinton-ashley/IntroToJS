@@ -21,13 +21,17 @@ ww....ww
 	let imgPaddle = spriteArt('.wwwwww.\nwwwwwwww\n' + 'ww....ww\n'.repeat(42) + 'wwwwwwww\n.wwwwww.');
 
 	// creates a ball in center of the screen
-	ball = new Sprite(imgBall);
+	ball = new Sprite();
+	ball.image = imgBall;
 	ball.x = width / 2;
 	ball.y = height / 2;
 	ball.diameter = 8;
+	/* Part A1: make the ball move */
+
+	/* Part A0: make the left and right paddles */
 }
 
 function draw() {
 	// code in this function gets run 60 times per second
-	/* Part A1: make the ball move */
+	/* Part A2: make the paddles move */
 }

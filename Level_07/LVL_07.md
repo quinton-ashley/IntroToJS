@@ -1,4 +1,6 @@
+---
 # Level 07 A
+---
 
 ## sine and cosine waves
 
@@ -10,6 +12,8 @@ let x = cos(angle);
 let y = sin(angle);
 ```
 
+---
+
 ## stroke
 
 Shapes in p5.js can be drawn with an outline, also called a "stroke". Change the color of strokes using the `stroke` function. This will also affect the color of lines.
@@ -18,11 +22,15 @@ Shapes in p5.js can be drawn with an outline, also called a "stroke". Change the
 stroke('w');
 ```
 
+---
+
 ## stroke size
 
 ```js
 strokeWeight(1);
 ```
+
+---
 
 ## point
 
@@ -30,13 +38,19 @@ strokeWeight(1);
 point(x, y);
 ```
 
+---
+
 ## End of Level 07 A
 
 Remember to save your work!
 
 ![](../src/memes/07_0.png)
 
+---
+
 # Level 07 B
+
+---
 
 ## Return variables from a function
 
@@ -49,6 +63,8 @@ function gimmeFive() {
 
 let upHigh = gimmeFive() + gimmeFive();
 ```
+
+---
 
 ## Creating functions with input parameters
 
@@ -63,6 +79,8 @@ let result0 = doMyMathHomework(1, 3); // returns 9
 let result1 = doMyMathHomework(2, 5); // what does this return?
 ```
 
+---
+
 ## color
 
 Color can be given in many different ways to the p5.js color function. You can use a color letter or color name to use the default colors. But you can also specify RGB values or a hexadecimal code.
@@ -75,16 +93,20 @@ color('#ff1020'); // hex code
 
 RGB stands for Red, Green, and Blue. Each value is a number between 0 and 255. The color of the pixel is determined by the combination of these three values.
 
+---
+
 ## Hexadecimal numbers
 
 In the previous lesson you learned about binary (base 2) numbers but hypotethically a number system could be created with any base amount. The second most common number system in Computer Science is hexadecimal (base 16). Hexadecimal numbers are written with the digits 0-9 and the letters A-F. Letters are used because each place stores 16 different values. The number 10 in hexadecimal is written as A, 11 is B, 12 is C, and so on.
+
+---
 
 ## Hex color code
 
 What is a hex color code? It's a way of representing a color using 6 characters. The first two characters represent the red value, the second two characters represent the green value, and the last two characters represent the blue value.
 
 ```js
-#ff1020
+color('#ff1020');
 // Hexadecimal: red: ff, green: 10, blue: 20
 // Decimal:    red: 255, green: 16, blue: 32
 ```
@@ -92,6 +114,8 @@ What is a hex color code? It's a way of representing a color using 6 characters.
 The hexadecimal number 20 is equal to the decimal number 32. That's because the 2 is in the 16s place and `2 * 16 = 32`.
 
 The hexadecimal number ff is equal to the decimal number 255. Because `15 * 16 + 15 = 255`.
+
+---
 
 ## alpha
 
@@ -102,7 +126,11 @@ color(255, 16, 32, 128); // RGB value with alpha
 color('#ff1020', 128); // hex code with alpha
 ```
 
+---
+
 # Level 07 C
+
+---
 
 ## lines
 
@@ -111,6 +139,8 @@ Draws a line between two points.
 ```js
 line(x1, y1, x2, y2);
 ```
+
+---
 
 ## Computer History: IBM 2250
 
@@ -123,3 +153,5 @@ https://en.wikipedia.org/wiki/IBM_2250
 The IBM 2250 was used by John Whitney, the father of computer animation, to make incredible generative art.
 
 https://en.wikipedia.org/wiki/John_Whitney_(animator)
+
+---

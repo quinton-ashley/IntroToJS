@@ -1,14 +1,20 @@
+---
 # Level 05 A
+---
 
 Do the GuessTheNumber challenge section before starting level 05!
 
 ![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen3.jpg)
+
+---
 
 ## Coding Philosophy: Naming variables
 
 Good code should be easy for other programmers (humans) to read and efficient for your computer to run. Here are some guidelines for how to write good code!
 
 Above all, it's important to put effort into thinking of GOOD names for your variables. Good variable names in Javascript are short and concise descriptors.
+
+---
 
 ## Create a Button
 
@@ -20,7 +26,11 @@ button('Yes', 5, 5);
 button('No', 5, 9);
 ```
 
+---
+
 # Level 05 B
+
+---
 
 ## Respond to button clicks
 
@@ -36,6 +46,8 @@ button('Click me!', 5, 5, test);
 
 Note that the callback function is passed as a variable, it is not run using parenthesis `()` when the button is created. It gets run only when the button is clicked.
 
+---
+
 ## Recursion
 
 In the past few lessons you've learned about `for` loops and `while` loops. Recursion is another way to loop code. It is simply a function that calls itself inside its own definition.
@@ -45,6 +57,8 @@ function doRecursion() {
 	doRecursion(); // infinite loop! OH NO!
 }
 ```
+
+---
 
 Here's a more practical example of a recursion loop that ends when the player losses all their health points.
 
@@ -63,6 +77,8 @@ function gameLoop() {
 }
 ```
 
+---
+
 # Level 05 C
 
 ## Change the position of prompts and alerts
@@ -73,6 +89,8 @@ The position of prompt and alert windows can be changed by defining their row an
 //         (text           , row, col, width limit)
 await alert('I can move too!', 5, 12, 20);
 ```
+
+---
 
 ## asynchronous functions
 
@@ -85,6 +103,8 @@ async function sayHello() {
 }
 ```
 
+---
+
 ## async/await vs callbacks
 
 `async`/`await` and callbacks are the two main forms of asynchronous programming in JavaScript. `async`/`await` was added to JavaScript in 2017 so that asynchronous code could be written linearly, like synchronous code, one line after the other.
@@ -93,7 +113,11 @@ Callbacks are non-linear, so they are good for handling events (like button clic
 
 Now you might be wondering how await-ing the prompt function works, since the user can either enter text or click cancel?! In level 11 you'll learn how to make await-able `Promise` objects that resolve after an event or any number of different events.
 
+---
+
 # Level 05 D
+
+---
 
 ## Date
 
@@ -101,7 +125,11 @@ Take a look at the MDN documentation for [Date.now()](https://developer.mozilla.
 
 `Date.now()` returns the current date in milliseconds.
 
+---
+
 # Level 05 E
+
+---
 
 ## modulo alternation
 
@@ -117,6 +145,8 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
+---
+
 ## for loops with non-standard incrementation
 
 This code does the same kind of alternation.
@@ -128,11 +158,15 @@ for (let i = 0; i < 10; i += 2) {
 }
 ```
 
+---
+
 # End of Level 05
 
 Congrats! You're halfway through the Intro to JavaScript course! You've learned a lot about programming. 🥳
 
 ![](../src/memes/05_0.jpeg)
+
+---
 
 ## Computer History: GRiD Compass
 
@@ -148,23 +182,4 @@ Of course, all of these great features raised the price significantly. At $8150,
 
 Originally developed for business executives, GRiDs were also used by the U.S. military 'in the field', and by NASA on the Space Shuttles during the 1980's and 90's. It's even been said that the US President's "nuclear football" at one time included a GRiD computer.
 
-# Level 05 Table of Contents
-
-- [Level 05 A](#level-05-a)
-	- [Coding Philosophy: Naming variables](#coding-philosophy-naming-variables)
-	- [Create a Button](#create-a-button)
-- [Level 05 B](#level-05-b)
-	- [Respond to button clicks](#respond-to-button-clicks)
-	- [Recursion](#recursion)
-- [Level 05 C](#level-05-c)
-	- [Change the position of prompts and alerts](#change-the-position-of-prompts-and-alerts)
-	- [asynchronous functions](#asynchronous-functions)
-	- [async/await vs callbacks](#asyncawait-vs-callbacks)
-- [Level 05 D](#level-05-d)
-	- [Date](#date)
-- [Level 05 E](#level-05-e)
-	- [modulo alternation](#modulo-alternation)
-	- [for loops with non-standard incrementation](#for-loops-with-non-standard-incrementation)
-- [End of Level 05](#end-of-level-05)
-	- [Computer History: GRiD Compass](#computer-history-grid-compass)
-- [Level 05 Table of Contents](#level-05-table-of-contents)
+---

@@ -9,7 +9,7 @@ Create functions using the `function` keyword.
 ```js
 // create the function
 function sayHello() {
-	console.log('hello!');
+	log('hello!');
 }
 
 sayHello(); // run the function
@@ -17,23 +17,31 @@ sayHello(); // run the function
 
 The code inside a function is not run until the function is called/invoked by using its name and the parenthesis.
 
+## The importance of using Libraries 📚
+
+As a programmer one of the most important skills you can learn is how to use libraries.
+
+Libraries, primarily referred to as packages in JS, are collections of code that other people have written.
+
+The most popular JS packages provide solutions to common problems. Using libraries can prevent you from wasting time re-inventing the wheel! Although building something from scratch can sometimes be a good educational experience or allow for greater customization, most of the time it's better to use a library.
+
 ---
 
 ## What is p5.play and p5.js? 🌸
 
 To make Pong we're going to use p5.play, a 2D game engine made by Computer Science teachers to help you turn your game ideas into JavaScript code!
 
-The lead developer of p5.play is Quinton Ashley, a Computer Science teacher at Crimson Education and the author of these lessons!
-
 p5.play uses p5.js for graphics rendering. We share the Processing Foundation's goal of make coding more accessible for artists, designers, educators, and beginners. Behind the scenes p5.play v3 uses planck (Box2D), a physics simulator that's been used in popular 2D games like Angry Birds and Tiny Wings.
 
 <https://p5play.org>
+
+The lead developer of p5.play is Quinton Ashley, a Computer Science teacher at Crimson Education who also happens to be the author of these lessons!
 
 ---
 
 ## p5.play Sprites
 
-Take a look at page 0 of the Sprite learn pages on the p5.play website:
+Take a look at page 0, 1, and 2 of the Sprite learn pages on the p5.play website:
 
 <https://p5play.org/learn/sprite.html>
 
@@ -146,12 +154,6 @@ console.log(x); // x -> 7
 
 ---
 
-Take a look at pages 1 and 2 of the Sprite learn pages on the p5.play website:
-
-<https://p5play.org/learn/sprite.html?page=1>
-
----
-
 ## Bounces
 
 Objects in p5.play collide by default but the paddle and ball won't do a perfect bounce off the paddle automatically.
@@ -198,7 +200,7 @@ text('Hello World!', 10, 12);
 
 ---
 
-## Level 02 E
+# Level 02 E
 
 ---
 
@@ -224,7 +226,7 @@ ball.serveSpeed = 1;
 
 ---
 
-## Level 02 F
+# Level 02 F
 
 ---
 
