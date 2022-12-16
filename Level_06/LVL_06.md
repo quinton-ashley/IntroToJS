@@ -1,6 +1,6 @@
 ---
-
 # Level 06 A
+---
 
 ![](../src/memes/06_0.jpeg)
 
@@ -18,7 +18,7 @@ If there are only 0s and 1s how do computers even store the number 2?
 
 We humans have ten fingers so our number system is based on the number 10. We use ten symbols (Arabic numerals) to represent these values 0,1,2,3,4,5,6,7,8,9 that are called digits. We don't have a separate symbol for the value ten so we use two digits
 
-```base10
+```txt
 10
 ```
 
@@ -30,7 +30,7 @@ The 1 is in the tens place which is how we know it's ten. We know `100` is one h
 
 Computers have switches that can either be on or off, so their number system is based on 2. Bits can either be 0 or 1, there is no single symbol for the value two, so to represent the number two they need two bits.
 
-```base2
+```txt
 10
 ```
 
@@ -87,7 +87,7 @@ When counting in binary you can think of the 1 being like a 9 in decimal. When y
 
 We can calculate the decimal value of binary numbers by finding the sum of 2 to the power of the place value for all the places with a 1 in it.
 
-```
+```txt
 1101
 
 2^0 + 2^2 + 2^3 =
@@ -100,7 +100,7 @@ We can calculate the decimal value of binary numbers by finding the sum of 2 to 
 
 To convert from decimal to binary, start with the biggest 2^n that is less than the decimal number you want to convert. Then keep adding the next largest 2^n until the sum adds up to the decimal number.
 
-```
+```txt
 10
 
  8  +  2  = 10
@@ -155,7 +155,7 @@ Since early personal computers used bytes (8 bits) to store characters this allo
 
 Take a look at the ASCII table:
 
-https://www.asciitable.com/
+<https://www.asciitable.com/>
 
 Note that many of the control characters in ASCII were used for sending telegraphs via teleprinters and also for typing on teletype machines, making them obsolete now.
 
@@ -169,13 +169,13 @@ Today all modern computers share a new encoding standard for text based communic
 
 ---
 
-https://unicode-explorer.com/blocks
+<https://unicode-explorer.com/blocks>
 
 ---
 
 If you'd like to learn more about Unicode watch this video:
 
-https://youtu.be/-n2nlPHEMG8
+<https://youtu.be/-n2nlPHEMG8>
 
 ---
 
@@ -187,7 +187,7 @@ Here are some examples of ASCII art...
 
 ---
 
-```ascii
+```txt
                 /||\
                 ||||
                 ||||
@@ -206,11 +206,11 @@ Here are some examples of ASCII art...
 . \/             .   \/     .
 ```
 
-https://asciiart.website/index.php?art=plants/cactus
+<https://asciiart.website/index.php?art=plants/cactus>
 
 ---
 
-```ascii
+```txt
     *                             |>>>                    +
 +          *                      |                   *       +
                     |>>>      _  _|_  _   *     |>>>
@@ -231,11 +231,11 @@ https://asciiart.website/index.php?art=plants/cactus
                  ||: . ||: ,   +++++++ .  .  ||:   |
 ```
 
-https://asciiart.website/index.php?art=objects/buildings
+<https://asciiart.website/index.php?art=objects/buildings>
 
 ---
 
-```ascii
+```txt
    `,.      .   .        *   .    .      .  _    ..          .
      \,~-.         *           .    .       ))       *    .
           \ *          .   .   |    *  . .  ~    .      .  .  ,
@@ -261,11 +261,11 @@ https://asciiart.website/index.php?art=objects/buildings
  gpyy                    //=========\\
 ```
 
-https://asciiart.website/index.php?art=objects/buildings
+<https://asciiart.website/index.php?art=objects/buildings>
 
 ---
 
-```ascii
+```txt
                      _
                (____/@\____)
                 \\\\_V_////
@@ -281,11 +281,11 @@ https://asciiart.website/index.php?art=objects/buildings
 Sher^
 ```
 
-https://asciiart.website/index.php?art=objects/buildings
+<https://asciiart.website/index.php?art=objects/buildings>
 
 ---
 
-```ascii
+```txt
                                   _
                         .-.      / \        _
             ^^         /   \    /^./\__   _/ \
@@ -303,13 +303,11 @@ https://asciiart.website/index.php?art=objects/buildings
   `::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::'
 ```
 
-https://asciiart.website/index.php?art=nature/mountains
-
-````
+<https://asciiart.website/index.php?art=nature/mountains>
 
 ---
 
-```ascii
+```txt
           _
       /b_,dM\__,_
     _/MMMMMMMMMMMm,
@@ -325,8 +323,8 @@ _____/\     _   /       | otter
               ``-.
                   \
               gnv  )
-````
+```
 
-https://asciiart.website/index.php?art=books/harry%20potter
+<https://asciiart.website/index.php?art=books/harry%20potter>
 
 ---

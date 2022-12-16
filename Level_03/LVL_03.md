@@ -20,7 +20,7 @@ log(nums[1]); // prints the Number 21 to the JS console
 
 ## Counting with while loops
 
-Here is an example of a while loop with a counter variable. The code in the while loop prints the numbers 0 through 9 to the JS console.
+Here's an example of a while loop with a counter variable. The code in the while loop prints the numbers 0 through 9 to the JS console.
 
 The variable name `i` stands for "index". It is the standard name for a counter variable.
 
@@ -74,6 +74,8 @@ In this example, the `for` loop does the following:
 2. The `condition` checks if `i` is less than 10. If it is, the code inside the loop is executed. If not, the loop is terminated.
 3. The `increment` increments `i` by 1 after each iteration of the loop.
 
+---
+
 The `for` loop will continue to execute until the condition evaluates to `false`, which will happen when `i` is equal to 10. At that point, the loop will be terminated and the code will continue to execute after the `for` loop.
 
 In this example, the code inside the `for` loop simply prints the value of `i` to the console. This will result in the numbers 0 through 9 being printed to the console.
@@ -93,6 +95,8 @@ Learn about sprite animation on the p5.play website:
 ---
 
 # Level 03 D
+
+---
 
 ## Loading sounds
 
@@ -121,6 +125,20 @@ Play sound objects by using the play function.
 ```js
 greeting.play();
 ```
+
+---
+
+# To be continued...
+
+Come back to Level 03 E after you complete level 5.
+
+---
+
+## Computer History: Nintendo GameBoy
+
+_Despite receiving mixed reviews by critics and being technologically inferior to its fourth-generation competitors (Sega's Game Gear, Atari's Lynx, and NEC's TurboExpress), the Game Boy received praise for its battery life and durability in its construction. It quickly outsold the competition, selling one million units in the United States within a few weeks. An estimated 118.69 million units of the Game Boy and its successor, the Game Boy Color, have been sold worldwide, making it the third best-selling video game console of all time. It is one of the most recognizable devices from the 1990s, becoming a cultural icon in the years following its release._
+
+https://en.wikipedia.org/wiki/Game_Boy
 
 ---
 
@@ -155,13 +173,5 @@ if (y % 5 == 0) {
 Don't get too mad at your code!
 
 ![](../src/memes/03_1.jpeg)
-
----
-
-## Computer History: Nintendo GameBoy
-
-_Despite receiving mixed reviews by critics and being technologically inferior to its fourth-generation competitors (Sega's Game Gear, Atari's Lynx, and NEC's TurboExpress), the Game Boy received praise for its battery life and durability in its construction. It quickly outsold the competition, selling one million units in the United States within a few weeks. An estimated 118.69 million units of the Game Boy and its successor, the Game Boy Color, have been sold worldwide, making it the third best-selling video game console of all time. It is one of the most recognizable devices from the 1990s, becoming a cultural icon in the years following its release._
-
-https://en.wikipedia.org/wiki/Game_Boy
 
 ---

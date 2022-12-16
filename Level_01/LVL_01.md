@@ -130,11 +130,15 @@ let example = "I want to put something on a new line:
 something"; // ERROR!
 ```
 
-To put part of a String on a newline use `\n` the newline character.
+---
+
+To put part of a String on a newline use the newline character: `\n`
 
 ```js
 let example = 'I want to put something on a new line:\nsomething';
 ```
+
+Result:
 
 ```txt
 I want to put something on a new line:
@@ -179,6 +183,8 @@ Code is essentially a set of instructions for your computer to interpret and per
 
 The console can be opened in your web browser by right clicking anywhere on a web page and choosing "Inspect" or by using the shortcut `ctrl+shift+i` on Windows/Linux or `cmd+option+i` on macOS. When it first opens you'll see the "Elements" tab, this is the HTML structure of the website. If you hover your mouse over an element it will be highlighted. You can even change text on the website. Cool huh?! Note that these changes are only visible to you.
 
+---
+
 Now go to the "Console" tab. If your program doesn't start or stops working, look at the JavaScript console for errors. You can also use `console.log` to print things to the console.
 
 With QuintOS you can use the shortcut `log` for `console.log`.
@@ -186,8 +192,6 @@ With QuintOS you can use the shortcut `log` for `console.log`.
 ```js
 log("The user's favorite color is: " + favColor);
 ```
-
----
 
 ![](../src/memes/01_1.jpg)
 

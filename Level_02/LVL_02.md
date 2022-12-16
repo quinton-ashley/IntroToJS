@@ -9,7 +9,7 @@ Create functions using the `function` keyword.
 ```js
 // create the function
 function sayHello() {
-	log('hello!');
+	log('hello!'); // prints "hello!" in the JS console
 }
 
 sayHello(); // run the function
@@ -17,7 +17,7 @@ sayHello(); // run the function
 
 The code inside a function is not run until the function is called/invoked by using its name and the parenthesis.
 
-## The importance of using Libraries 📚
+## Using Libraries 📚
 
 As a programmer one of the most important skills you can learn is how to use libraries.
 
@@ -81,6 +81,8 @@ Back-ticks can also be used to create Strings. Back-ticks look like a backwards 
 
 When back-ticks are used to create Strings, the text inside the back-ticks can go on multiple lines of code and retain these newlines without the use of the newline `\n` character.
 
+---
+
 ```js
 let str = `
 ...yyyy
@@ -119,7 +121,9 @@ The second input parameter to the `spriteArt` function is an optional scale valu
 
 ## String.repeat(amount)
 
-To more easily create large Strings you can use a String function called [repeat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat)
+To more easily create large Strings you can use a String function called repeat.
+
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat>
 
 ```js
 let pattern = '><'.repeat(4);
@@ -137,6 +141,8 @@ let story = 'The cow';
 story += ' jumped over the moon.';
 // story -> "The cow jumped over the moon"
 ```
+
+---
 
 You can use `+=` with numbers too!
 
@@ -250,7 +256,7 @@ function draw() {
 
 ## End of Level 02
 
-Remember, don't "reinvent the wheel" if you don't have to! Using a game engine, like p5.play, makes game development easier. Often learning to use existing tools is way easier than writing similar code yourself.
+Remember, don't "reinvent the wheel" if you don't have to!
 
 ![](../src/memes/02_0.jpeg)
 
@@ -266,6 +272,6 @@ Excerpt from the last paragraph of Chapter 1 of "ZX81 BASIC PROGRAMMING" by Step
 
 This level's computer is based on the ZX Spectrum, an 8-bit personal home computer developed by Sinclair Research. It was first released in the United Kingdom on the 23rd of April 1982 and went on to become Britain's best-selling microcomputer. Watch some of this video to hear what it was like for people to use the ZX Spectrum back then!
 
-https://youtu.be/nRlmTiynbd8?t=242
+<https://youtu.be/nRlmTiynbd8?t=242>
 
 ---

@@ -2,7 +2,7 @@
 # Level 00 A
 ---
 
-## What is Computer Science?
+## What is Computer Science? 💻👨‍🔬
 
 Why is this field of study called "Computer Science" and not "Program Writing" or "Code Mathematics"? It's because coding requires research and experimentation! You'll often need to test your programs to learn from unexpected errors, and then make changes to get the results you want.
 
@@ -10,13 +10,13 @@ Why is this field of study called "Computer Science" and not "Program Writing" o
 
 These lessons will teach you how to code in JavaScript (JS), which is the most popular modern programming language and my personal favorite!
 
-1 out of every 3 programming jobs (31%) require JavaScript skills.
+1 out of every 3 programming jobs (31%) require JavaScript skills. 👀
 
 You'll need to memorize some vocabulary, grammar, and syntax to learn this new language. However, learning to code isn't what programming is all about, you'll also learn how to think like a programmer.
 
 ---
 
-## What is QuintOS?
+## What is QuintOS? 👾
 
 If you signed up for this course you might want to know how video games work and how to make your own! If not, making games will hopefully be a fun way for you to learn how to code.
 
@@ -48,13 +48,13 @@ Semicolons `;` can be used to end each line of code but they're not required. �
 
 ---
 
-## Types of Data 🔡
+## Types of Data 💾
 
 In JavaScript all variables can be created using `let`, regardless of the type of data they store.
 
 ---
 
-### Number
+### Number 🔢
 
 Numbers in JavaScript can be positive, negative, or decimal.
 
@@ -66,7 +66,7 @@ let z = 9504.15;
 
 ---
 
-### Boolean
+### Boolean ✅
 
 Booleans can either be `true` or `false`
 
@@ -76,7 +76,7 @@ let codingIsFun = true;
 
 ---
 
-### String
+### String 💬
 
 Strings are text, contained within 'apostrophes' or "quotes".
 
@@ -94,7 +94,7 @@ To remember that the data type for text is called String, you can think of lette
 
 ---
 
-### functions
+### functions ⚙️
 
 functions are a reference to other sections of code which you can run using `()` parenthesis. Input parameters to a function go in the parenthesis.
 
@@ -128,11 +128,11 @@ Note that using this naming convention isn't required for JavaScript to run, it'
 
 Globals are special variables that are available for you to use anywhere in your code.
 
-## await
+## await 🛑
 
 The `await` keyword is used in JavaScript to make certain parts of your code "wait" until something happens. This can be useful when you're working with things that take time to complete, like fetching data from a server or waiting for a user to click a button or type a response.
 
-## alert and prompt
+## alert and prompt ❔
 
 Check out the `alert` and `prompt` global functions for user interaction.
 
@@ -149,7 +149,7 @@ In this example the program will wait for the user to type their favorite color 
 
 ---
 
-## Comments
+## Comments 📝
 
 Double slash `//` is for making a comment, any text behind it on the same line will not be considered part of the code's instructions. Comments are used to describe what is happening in the code. You might want to make comments so other people can understand your programs or so that you can understand it yourself in case you forget what you did.
 

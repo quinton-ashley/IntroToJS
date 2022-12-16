@@ -179,6 +179,6 @@ Sorry if you felt like this after testing your Hangman game!
 
 This level's computer was inspired by the Apple II. For many people in the US, the Apple II was the first computer they ever used at their home or school. Check out this video about it if you'd like!
 
-https://www.youtube.com/watch?v=CxJwy8NsXFs
+<https://www.youtube.com/watch?v=CxJwy8NsXFs>
 
 ---

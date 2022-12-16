@@ -4,8 +4,6 @@
 
 Do the GuessTheNumber challenge section before starting level 05!
 
-![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen3.jpg)
-
 ---
 
 ## Coding Philosophy: Naming variables
@@ -60,7 +58,7 @@ function doRecursion() {
 
 ---
 
-Here's a more practical example of a recursion loop that ends when the player losses all their health points.
+Here's a more practical example of a recursion loop that ends when the player loses all their health points.
 
 ```js
 let health = 100; // initial health
@@ -80,6 +78,8 @@ function gameLoop() {
 ---
 
 # Level 05 C
+
+---
 
 ## Change the position of prompts and alerts
 
@@ -111,8 +111,6 @@ async function sayHello() {
 
 Callbacks are non-linear, so they are good for handling events (like button clicks) that in some cases we wouldn't want our program to wait for. For example if you gave the user a choice between clicking a "Yes" or "No" button you wouldn't want the program to wait for them to click "Yes" because they might click "No". A separate callback function is needed to handle each response.
 
-Now you might be wondering how await-ing the prompt function works, since the user can either enter text or click cancel?! In level 11 you'll learn how to make await-able `Promise` objects that resolve after an event or any number of different events.
-
 ---
 
 # Level 05 D
@@ -121,9 +119,9 @@ Now you might be wondering how await-ing the prompt function works, since the us
 
 ## Date
 
-Take a look at the MDN documentation for [Date.now()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now) and run the JavaScript demo.
+`Date.now()` returns the current date in milliseconds since the UNIX epoch which occurred at the start of midnight on the 1st of January 1970.
 
-`Date.now()` returns the current date in milliseconds.
+Over 1.6 trillion milliseconds have occurred since then!
 
 ---
 
@@ -176,7 +174,9 @@ This level's computer is based on the GRiD Compass 1101. The following descripti
 
 Designed to be the ultimate portable computer, the clamshell-style GRiD Compass 1101 is the grand-daddy of all present-day laptop computers.
 
-The Compass is very high-tech, with its flat-black, die-cast magnesium-alloy case, and bright, sharp electroluminescent display (ELD). No other system packed so much speed and power in as small a case, and none had such a unique and large, easy-to-read screen, allowing full 80x24 text.
+---
+
+The Compass was very high-tech, with its flat-black, die-cast magnesium-alloy case, and bright, sharp electroluminescent display (ELD). No other system packed so much speed and power in as small a case, and none had such a unique and large, easy-to-read screen, allowing full 80x24 text.
 
 Of course, all of these great features raised the price significantly. At $8150, the GRiD Compass 1101 was the most expensive personal computer on the market.
 
