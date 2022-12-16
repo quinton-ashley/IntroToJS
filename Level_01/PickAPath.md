@@ -1,6 +1,6 @@
 # PickAPath
 
-Pick a Path stories, also known as [Choose your own Adventures](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure)), are stories written from a second-person point of view, with the reader assuming the role of the protagonist and making choices that determine the main character's actions and the plot's outcome. These types of games are also called Role Playing Games (RPGs).
+Pick a Path stories, also known as ["Choose your own Adventure"](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure), are stories written from a second-person point of view, with the reader assuming the role of the protagonist and making choices that determine the main character's actions and the plot's outcome. These types of games are also called Role Playing Games (RPGs).
 
 ## Setup
 

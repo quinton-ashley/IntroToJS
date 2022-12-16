@@ -100,10 +100,16 @@ Learn about sprite animation on the p5.play website:
 
 ## Loading sounds
 
-The `loadSound` function loads a sound file from a given path. A path is the location of a file on your computer. Only use this function in the p5.js preload function!
+The `loadSound` function loads a sound file from a given path. A path is the location of a file on your computer. Only use this function in the p5.js `preload` function!
+
+Be sure to create the variable that will hold the sound object outside the `preload` function so that you can use the sound in any function.
 
 ```js
-let greeting = loadSound('sounds/hi.mp3');
+let greeting;
+
+function preload() {
+	greeting = loadSound('sounds/hi.mp3');
+}
 ```
 
 ---
@@ -170,7 +176,7 @@ if (y % 5 == 0) {
 
 # End of Level 03
 
-Don't get too mad at your code!
+Don't get too mad at your code! Taking a break and doing something else can give you a fresh perspective on your code.
 
 ![](../src/memes/03_1.jpeg)
 

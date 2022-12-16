@@ -18,13 +18,22 @@ Display the `lines` array like this `_ _ _ _` in the prompt on a new line below 
 
 If the player guesses a letter which occurs in the word, edit the `lines` array so the letter will be displayed in all its correct positions. For example if the word is "avenue" and the player has guessed "e" your prompt should display: `_ _ e _ _ e`
 
+HINT: Use a `for` loop with a counter variable!
+
+```js
+//   initialize;  condition; increment
+for (let i = 0; i < loopAmount; i++) {
+	// code that gets run each loop
+}
+```
+
 Make the game loop! HINT: What condition must be true for the player to keep guessing letters? (use the `includes` array function)
 
 If the player guesses a letter which does not occur in the word, the computer should add a body part to the hangman stick figure. HINT: Don't check if they got a letter wrong, just ensure their guess matched none of the letters in the word.
 
 ## Instructions for Part D
 
-If the player makes too many wrong guesses and the hangman drawing is completed, the game should end. Show the player what the word was! HINT: use `break` to exit the game loop early.
+If the player makes too many wrong guesses and the hangman drawing is completed, the game should end. Add this condition to the game loop using boolean OR `||`.
 
 If the player wins tell them they won!
 

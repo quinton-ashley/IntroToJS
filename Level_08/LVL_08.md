@@ -14,6 +14,23 @@ Note! These functions do not change the original value of the string.
 
 ---
 
+## Breaking out of a loop
+
+Use the keyword `break` to break out of a loop.
+
+```js
+while (playerHealth > 0) {
+	// ... game loop code
+
+	if (gameOver) {
+		await alert('Game Over!');
+		break;
+	}
+}
+```
+
+---
+
 ## End of Level 08 A
 
 What's the funny mistake this user made when testing their code? Remember to test your programs thoroughly!

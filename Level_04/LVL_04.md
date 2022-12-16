@@ -150,23 +150,6 @@ if (!isPlaying) {
 
 ---
 
-## Breaking out of a loop
-
-Use the keyword `break` to break out of a loop.
-
-```js
-while (playerHealth > 0) {
-	// ... game loop code
-
-	if (gameOver) {
-		await alert('Game Over!');
-		break;
-	}
-}
-```
-
----
-
 # End of Level 04
 
 Sorry if you felt like this after testing your Hangman game!

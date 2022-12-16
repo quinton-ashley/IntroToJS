@@ -143,9 +143,11 @@ Hello Ben
 
 ## padEnd
 
+This function adds characters to the end of a string until it reaches the specified length.
+
 ```js
 let str = 'hello';
-str.padEnd(10, ' '); // -> 'hello     '
+str.padEnd(10, 'x'); // -> 'helloxxxxx'
 ```
 
 ---

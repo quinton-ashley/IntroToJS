@@ -10,15 +10,15 @@ Just to get you started coding as quick as possible, use the online editor CodeP
 
 Create an account on Github:
 
-https://github.com/
+<https://github.com/>
 
 Then create an account on CodePen, sign up with GitHub:
 
-https://codepen.io
+<https://codepen.io>
 
 Open this pen and press "Fork" in the bottom left menu bar:
 
-https://codepen.io/qashto/pen/porNBjX?editors=0010
+<https://codepen.io/qashto/pen/porNBjX?editors=0010>
 
 ## Instructions for Part A
 
@@ -44,7 +44,11 @@ Use the `random` function to enable your computer pick a random number between 1
 
 Try playing your Guess the Number game a few times to make sure your code works. What do you think is the best way to play this game in order to guess the number in the fewest amount of guesses? (besides just being very lucky of course haha)
 
-Congrats! You finished your first game in JavaScript!
+Congrats! You finished your first game in JavaScript.
+
+Level up to level 01!
+
+---
 
 ## CHALLENGE SECTION
 

@@ -179,6 +179,8 @@ Single equals `=` is for assigning values to variables. Double equals `==` is a 
 
 `if` statements use a boolean condition, which goes in parenthesis after the keyword `if`. If the boolean condition is `true`, the code block `{}`, whatever's inside the squiggly brackets, is run.
 
+---
+
 Check out this coin toss example code. Coin tosses are used in many sports to decide which of two teams goes first. One team picks which side of the coin they think will land facing up, "heads" or "tails". If the result of a coin flip is "heads" then the code in the `if` statement code block will be run. If the result was "tails", then the code in the `else` block is run.
 
 ```js
@@ -196,6 +198,8 @@ if (coinFlip() == pick) {
 ## else if chaining
 
 `else if` can be used after if statements, they form a chain of different paths the code can take if the previous if statements were false.
+
+---
 
 Take a look at the example below, which assigns a color to the variable `fruitColor` based on the name of the `fruit`.
 
@@ -293,6 +297,8 @@ if (name == 'Bob') {
 
 await alert(message); // ERROR: message is not defined
 ```
+
+---
 
 Fix this by initializing `message` outside of the if statement.
 

@@ -33,15 +33,19 @@ Add the `lilypads.png` spritesheet animation to the lilypads. Make each lilypad 
 
 ## Instructions for Part D
 
-Pick the sounds you want to play when the frog jumps!
+Listen to all the sounds in the LilyLeap/sounds folder.
 
-Load the sounds in the `preload` function.
+Pick a sound for when the frog does big jumps and another sound for the small jumps. Pick another sound for when the frog falls in the water.
 
-Play the sounds when the frog jumps.
+Load the sounds in the p5.js `preload` function.
 
-**_You are now complete with Level 03 for now! Come back to finish Part E after you complete level 5._**
+Play the jumping sounds when the frog jumps and the falling sound for when it falls in the water.
+
+**_You are now complete with Level 03 for now!_**
 
 ## Instructions for Part E
+
+**_Come back to finish Part E after you complete Level 05._**
 
 Make a countdown timer, if the player runs out of time the clock the frog goes back to the beginning. Use the p5.js variable `frameCount`, which stores how many times the draw loop has run. Make the countdown decreses every 60 frames. HINT: Use modulo!
 

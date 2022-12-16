@@ -2,7 +2,9 @@
 
 Pong is a table tennis–themed arcade game, featuring simple two-dimensional graphics, created by Allan Alcorn. It was manufactured by Atari and released in 1972.
 
-https://www.youtube.com/watch?v=fiShX2pTz9A
+If you're not familiar with Pong take a look at this demonstration video:
+
+<https://www.youtube.com/watch?v=fiShX2pTz9A>
 
 ## Instructions for Part A
 

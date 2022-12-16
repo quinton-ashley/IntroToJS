@@ -10,6 +10,15 @@ Put the target button in a random position on the screen. HINT: `random(start, e
 
 Make four imposter targets using a `for` loop. Imposter targets should look a bit different from the real target. The smaller the differences the harder your Quick Clicks game will be.
 
+HINT: Use a `for` loop with a counter variable!
+
+```js
+//   initialize;  condition; increment
+for (let i = 0; i < loopAmount; i++) {
+	// code that gets run each loop
+}
+```
+
 ## Instructions for Part B
 
 When the player clicks the target button, place another target and another four imposter targets in random positions on the screen. HINT: Use a recursive callback to the `makeTargets` function.
@@ -27,15 +36,6 @@ If the player clicks an imposter target tell them "Game Over!" because they clic
 After the player clicks 10 target buttons, calculate the user's average, slowest, and fastest response times. To get the speeds at which the player clicked between buttons you'll first need to create an array that stores the time at which they clicked each target. HINT: Use the `push` function to add `Date.now()` to an array called `times`
 
 Stop making targets after 10 clicks and run a `calcStats` (calculate statistics) function that will show the user their stats at the end of the game. Inside the `calcStats` function create an array of speeds that stores the time in milliseconds it took the player to click each button. Each number in this array should represent the difference between the time a button was clicked and the time the next button was clicked. HINT: If the player clicks the button 10 times there will only be 9 speeds (time between each button click). Use a `for` loop to create the array of speeds.
-
-Remember! `for` loops with a counter variable:
-
-```js
-//   initialize;  condition; increment
-for (let i = 0; i < loopAmount; i++) {
-	// code
-}
-```
 
 Calculate the user's average time first. HINT: remember the average is the sum of all numbers in a list divided by the amount of numbers.
 
