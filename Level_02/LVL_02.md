@@ -181,6 +181,8 @@ function draw() {
 
 ## Keyboard Input
 
+One of the global variables p5.play adds is `kb` short for `keyboard`.
+
 Check if the user is pressing a key:
 
 ```js
@@ -203,6 +205,8 @@ Text can be displayed on screen at a given text row and column.
 //  (text         , row, col)
 text('Hello World!', 10, 12);
 ```
+
+Note that the text (row, col) system is different than the dimensions of the screen in (x, y) pixel coordinates.
 
 ---
 
@@ -227,29 +231,7 @@ if (laser.collides(shield)) {
 Adding your own properties to an existing object is super easy, just give it a value as if the property already existed!
 
 ```js
-ball.serveSpeed = 1;
-```
-
----
-
-# Level 02 F
-
----
-
-## p5.js fill, stroke, and rect
-
-This example `draw` function draws a black background and then a blue rectangle with a red stroke (outline). The `colorPal` function can be use it inside p5.js functions like `background`, `fill`, and `stroke` that expect a color.
-
-```js
-function draw() {
-	background('b');
-
-	fill('u');
-	stroke('r');
-
-	//  ( x,  y,  w,  h)
-	rect(10, 20, 15, 55);
-}
+ball.speedLimit = 1;
 ```
 
 ---

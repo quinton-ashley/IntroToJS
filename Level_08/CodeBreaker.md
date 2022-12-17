@@ -2,7 +2,7 @@
 
 A program that uses the Caesar Cipher to encrypt and decrypt secret messages.
 
-https://en.wikipedia.org/wiki/Caesar_cipher
+<https://en.wikipedia.org/wiki/Caesar_cipher>
 
 ## Instructions for Part A
 
@@ -22,7 +22,7 @@ Users should be able to use a letter for the shift amount. For example if a user
 
 Give users the option to load text from a plaintext file with the ".txt" file extension.
 
-While you're testing the program make the file name hardcoded to "secrets.txt".
+While you're testing your program, make the file name hardcoded to "secrets.txt". Don't ask yourself for it everytime and type it in, that's a waste of time.
 
 ## Instructions for Part C
 
