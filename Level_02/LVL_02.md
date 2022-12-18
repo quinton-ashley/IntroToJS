@@ -214,15 +214,17 @@ Note that the text (row, col) system is different than the dimensions of the scr
 
 ---
 
-## Custom collision
+## Custom collision handling
 
-Custom collisions handling can be used to change what happens after two sprites collide.
+In p5.play it's easy to change what happens after two sprites collide.
 
 ```js
 if (laser.collides(shield)) {
-	laser.direction = 20; // makes the laser deflect up off the shield
+	laser.direction = 20;
 }
 ```
+
+In this example code, the laser gets deflected upward after hitting the shield.
 
 ---
 

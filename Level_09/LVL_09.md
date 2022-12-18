@@ -8,8 +8,6 @@ Before you can start working on the `TicTacToe` game, you'll have to prove your 
 
 After you complete those challenges you can upgrade to level 6! 🥳
 
-![](https://elasticbeanstalk-us-east-2-651921832906.s3.us-east-2.amazonaws.com/QuintOS/bootScreen4.jpg)
-
 ---
 
 ## Anonymous arrow functions
@@ -26,7 +24,9 @@ button('click here!', 10, 4, () => {
 
 ## End of Level 09 A
 
-QA (Quality Assurance) engineers test software to make sure it works as expected. They're responsible for finding bugs and reporting them to the developers. They also test the software to make sure it is easy to use. What's the funny mistake that this QA engineer made?
+QA (Quality Assurance) engineers test software to make sure it works as expected. They're responsible for finding bugs and reporting them to the developers. They also test the software to make sure it is easy to use.
+
+What's the funny mistake that this QA engineer made?
 
 ![](../src/memes/09_0.jpeg)
 
@@ -108,6 +108,19 @@ for (let row = 0; row < rows; row++) {
 
 ---
 
+## alert and prompt window sizing
+
+A fourth input parameter can be used to restrict the width of prompt and alert windows. Text that is longer than the specified width will be put on new lines. This width limiter can be used with the `text`, `alert`, and `prompt` functions.
+
+```js
+let message =
+	"This here is lot of text, like a whole lot. You really don't need to read all of it. You can stop reading this now, it is not important. This is just filler text. I don't know why you're still reading it. Just kidding I want you to read all of it so please keep reading this! You have to read it. Did you stop reading? Well that's too bad there was a surprise at the end. Just kidding again, there is not. Stop reading now though, I'm serious you will only be disappointed. There is nothing special at the end of this long paragraph. This paragraph is not the credits of a Marvel movie! Skip to the end please. Wow, now you're almost at the end. Alright you did it, this is the end of the paragraph.";
+//         (text  , row, col, w)
+await alert(message, 5, 20, 16);
+```
+
+---
+
 ## exit a function
 
 `return` can be used to exit functions.
@@ -119,19 +132,6 @@ function stamp(passport) {
 	}
 	//
 }
-```
-
----
-
-## alert and prompt window sizing
-
-A fourth input parameter can be used to restrict the width of prompt and alert windows. Text that is longer than the specified width will be put on new lines. This width limiter can be used with the `text`, `alert`, and `prompt` functions.
-
-```js
-let message =
-	"This here is lot of text, like a whole lot. You really don't need to read all of it. You can stop reading this now, it is not important. This is just filler text. I don't know why you're still reading it. Just kidding I want you to read all of it so please keep reading this! You have to read it. Did you stop reading? Well that's too bad there was a suprise at the end. Just kidding again, there is not. Stop reading now though, I'm serious you will only be disappointed. There is nothing special at the end of this long paragraph. This paragraph is not the credits of a Marvel movie! Skip to the end please. Wow, now you're almost at the end. Alright you did it, this is the end of the paragraph.";
-//         (text  , row, col, w)
-await alert(message, 5, 20, 16);
 ```
 
 ---
