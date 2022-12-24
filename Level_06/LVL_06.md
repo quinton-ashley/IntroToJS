@@ -131,6 +131,53 @@ let x = 2 ** 3; // -> 8
 
 ---
 
+## Convert a String to Number
+
+The `Number` function can convert a string to a number. Note that any leading zeros will be lost.
+
+```js
+let x = '0101';
+x = Number(x); // -> 101
+```
+
+## Convert a Number to String
+
+Use the `toString` function to convert a number to a string.
+
+```js
+let x = 10;
+x = x.toString(); // -> "10"
+```
+
+You can also add an empty string to a number to convert it to a string.
+
+```js
+let x = 10;
+x = x + ''; // -> "10"
+```
+
+---
+
+## Countdown for loop
+
+In a typical for loop the counter variable starts at zero and increases in value each loop until reaching a certain value.
+
+```js
+for (let i = 0; i < 10; i++) {
+	console.log(i);
+}
+```
+
+But you can also use a for loop to count down instead. This for loop will count down from 10 to 1.
+
+```js
+for (let i = 10; i > 0; i--) {
+	console.log(i);
+}
+```
+
+---
+
 # Level 06 B
 
 ---
