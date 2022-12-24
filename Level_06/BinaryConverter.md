@@ -12,4 +12,4 @@ Ask the user for a binary number. The program should convert it to decimal and d
 
 Ask the user for a decimal number. The program should convert it to binary and display the result! Start with only supporting 4 bit binary numbers.
 
-Edit your program so it can support up to 16 bit long binary numbers.
+Edit your program so it can support up to 16 bit long binary numbers for the decimal to binary conversion.
