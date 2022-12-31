@@ -87,7 +87,7 @@ Here is an excellent guide from css-tricks.com on how to use FlexBox:
 
 Check out this example of an HTML form:
 
-https://codepen.io/qashto/pen/LYxJzJv
+<https://codepen.io/qashto/pen/LYxJzJv>
 
 The most important attribute a tag can have is its `id`. The `id` attribute should be unique since ids are used to retrieve tags in Javascript.
 
@@ -103,7 +103,7 @@ You could go through every tag to get it's data but there is a new class in JS y
 function getFormData(formID) {
 	let fd = new FormData(document.getElementById(formID));
 	let data = {};
-	for (var entry of fd.entries()) {
+	for (let entry of fd.entries()) {
 		data[entry[0]] = entry[1];
 	}
 	return data;
@@ -132,10 +132,11 @@ Programming is just like any skill. You can only get better by practicing. So ke
 
 What you do now with your JavaScript programming skills is up to you! Here are some ideas:
 
-- make generative artwork with p5.js
-- make games with p5.play
+- make generative artwork with [p5.js](p5js.org)
+- make games with [p5.play](p5play.org)
 - make a static website with GitHub Pages
 - make a dynamic website with a backend that uses node.js and Express
+- make mobile apps with React Native
 - make a desktop app with Electron
 
 ---

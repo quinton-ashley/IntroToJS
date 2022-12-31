@@ -47,8 +47,8 @@ Play the jumping sounds when the frog jumps and the falling sound for when it fa
 
 **_Come back to finish Part E after you complete Level 05._**
 
-Make a countdown timer, if the player runs out of time the clock the frog goes back to the beginning. Use the p5.js variable `frameCount`, which stores how many times the draw loop has run. Make the countdown decreses every 60 frames. HINT: Use modulo!
+Make a countdown timer. If the player runs out of time, the frog gets back to the beginning: game over! Use the p5.js variable `frameCount`, which stores how many times the draw loop has run. Make the countdown decreases every 60 frames. HINT: Use the `%` modulo operator!
 
-Make little bug sprites with image using the `spriteArt` function. Place them above lilypads. The GameBoi only has four color shades in its pallette: 0, 1, 2, 3. Use zeroes for the ant, the darkest shade available.
+Make little bug images using the `spriteArt` function. Place them above lilypads. The GameBoi only has four color shades in its pallette: 0, 1, 2, 3. Use zeroes for the ant, the darkest shade available.
 
 When the frog overlaps with a bug it should eat it and get more time added to the countdown timer. HINT: Use the p5.play `overlaps` function.
