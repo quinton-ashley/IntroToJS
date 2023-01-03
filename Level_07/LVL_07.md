@@ -41,6 +41,16 @@ point(x, y);
 
 ---
 
+## translate
+
+Translates the origin of the canvas to a new point. This is useful for centering drawings.
+
+```js
+translate(width * 0.5, height * 0.5);
+```
+
+---
+
 # End of Level 07 A
 
 Remember to save your work!
@@ -82,9 +92,13 @@ let result1 = doMyMathHomework(2, 5); // what does this return?
 
 ---
 
+# Level 07 C
+
+---
+
 ## color
 
-Color can be given in many different ways to the p5.js color function. You can use a color letter or color name to use the default colors. But you can also specify RGB values or a hexadecimal code.
+Color can be given in many different ways to the p5.js color function. You can use a color letter or color name to use the default colors. But you can also specify RGB values or a hexadecimal code. These formats can be used with the p5.js `stroke`, `fill`, and `background` functions too!
 
 ```js
 color('red'); // simple color name
@@ -129,7 +143,7 @@ color('#ff1020', 128); // hex code with alpha
 
 ---
 
-# Level 07 C
+# Level 07 D
 
 ---
 

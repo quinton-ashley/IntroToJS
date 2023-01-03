@@ -10,11 +10,19 @@ Watch the first few minutes of this short film from 1968 to see examples of John
 
 Create a variable `time` that goes up by 0.1 every frame (everytime the draw function is run).
 
+Translate the origin to the center of the canvas.
+
 Move a point using the `sin` and `cos` functions using the `time` variable.
+
+Try making one or both of your equations parametric by adding one wave to another!
+
+```js
+point(sin(time * 5) * 500 + cos(time) * 20, cos(time) * 40);
+```
 
 ## Instructions for Part B
 
-Create equation functions that take `t` as an input parameter and return a value for `x` or `y`. Use them to plot points.
+Create equation functions that take `time` as an input parameter and return a value for `x` or `y`. Use them to plot points.
 
 ```js
 point(eqX(time), eqY(time));
@@ -35,20 +43,29 @@ function eqX(t) {
 }
 ```
 
+## Instructions for Part C
+
+Try changing other things in your artworks like the stroke weight or stroke color.
+
+```js
+//   			RED, GREEN, BLUE
+strokeWeght(255, 100, 60);
+```
+
+Try using a for loop to draw multiple points at once. You can vary the amount of points drawn per frame for each artwork, some can be drawn slower and other could be drawn faster.
+
 Experiment with the color of the background and use an alpha (opacity) value so that the older points fade away.
 
 ```js
-//   RED, GREEN, BLUE, ALPHA
+//  RED, GREEN, BLUE, ALPHA
 background(0, 0, 0, 10);
 ```
 
-You can use any of the p5.js and p5.play functions you've learned to create dynamic generative art based on randomness `random(low, high)` or user input `mouse.x`, `kb.presses(key)`. You can also change the stroke weight, color, and amount of points that each artwork has.
-
-In at least one of your works of generative art, use a for loop to create a trail of points that use decrementally lower values of `time`.
-
 Viewers of your art program should be able to use the arrow keys "right" and "left" to change the artwork that is being displayed.
 
-## Instructions for Part C
+You can use any of the p5.js and p5.play functions you've learned to create dynamic generative art based on randomness `random(low, high)` or user input `mouse.x`, `kb.presses(key)`.
+
+## Instructions for Part D
 
 Use the equations of two points to create a line! Implement `eqX2` and `eqY2` functions.
 
@@ -58,4 +75,4 @@ line(eqX(time), eqY(time), eqX2(time), eqY2(time));
 
 Create 6 unique artworks that use the `line` function.
 
-In at least one of your line artworks, use a for loop to create a trail of lines that use decrementally lower values of `time`.
+In at least one of your line artworks, use a for loop to create a trail of lines.
