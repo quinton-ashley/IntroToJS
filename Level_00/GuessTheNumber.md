@@ -22,7 +22,7 @@ Open this pen and press "Fork" in the bottom left menu bar:
 
 ## Instructions for Part A
 
-Since you're just starting to write this program, don't make the number random yet so you can test it out more easily. Create a varible called `num` using `let` and choose the number yourself.
+Since you're just starting to write this program, don't make the number random yet so you can test it out more easily. Create a varible called `num` using `let` and assign it the number that the player will try to guess.
 
 Tell the player to guess a number using `await prompt()` put your message (String) inside the parenthesis of the `prompt` function. Create the variable `guess` using `let`, assign it to the user's response to the `prompt`.
 
