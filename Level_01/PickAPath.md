@@ -8,7 +8,7 @@ Copy the `PickAPath` folder into your `GAMES` directory. Start coding in the `pi
 
 ## Instructions for Part A
 
-Take a look at the starter code for this game. Note that `prompt` will return `null` instead of what the user enters if they press cancel. That's why the game loop's `while` condition is `choice != null`.
+Take a look at the starter code for this game. Note that `prompt` will return `null` instead of what the user enters if they press cancel. That's why the game loop's `while` condition is `path != null`.
 
 Here are some ideas for the kind of PickAPath game you could make:
 
@@ -46,6 +46,6 @@ Reject invalid choices by the user, don't let them skip ahead!
 
 Make an `options` array and in each decision branch assign it to the valid options for that choice.
 
-If the number the user entered, their input, is a valid option change the `choice` variable to the user's input. Otherwise alert the user they've made an incorrect choice. HINT: Use `await alert()`
+If the number the user entered, their input, is a valid option change the value of `path` to the user's input. Otherwise alert the user they've made an incorrect choice. HINT: Use `await alert()`
 
 At the end of the game, on paths where the player has no choices to make, give them the option to play again.
