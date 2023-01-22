@@ -17,13 +17,19 @@ sayHello(); // run the function
 
 The code inside a function is not run until the function is called/invoked by using its name and the parenthesis.
 
+## Make Strings with Back-ticks
+
+Back-ticks can also be used to create Strings. Back-ticks look like a backwards apostrophe. They can be found on your keyboard on a special key next to the number 1. The back-tick key also has a squiggly line `~` called a tilde on it.
+
+When back-ticks are used to create Strings, the text inside the back-ticks can go on multiple lines of code and retain these newlines without the use of the newline `\n` character.
+
 ## Using Libraries 📚
 
-As a programmer one of the most important skills you can learn is how to use libraries.
+As a programmer it's important to learn how to use libraries.
 
 Libraries, primarily referred to as packages in JS, are collections of code that other people have written.
 
-The most popular JS packages provide solutions to common problems. Using libraries can prevent you from wasting time re-inventing the wheel! Although building something from scratch can sometimes be a good educational experience or allow for greater customization, most of the time it's better to use a library.
+The most popular JS packages provide solutions to common problems. Using libraries can prevent you from wasting time re-inventing the wheel! Although building something from scratch can sometimes be a good educational experience or allow for greater customization, often it's better to use a library.
 
 ---
 
@@ -31,33 +37,21 @@ The most popular JS packages provide solutions to common problems. Using librari
 
 To make Pong we're going to use p5.play, a 2D game engine made by Computer Science teachers to help you turn your game ideas into JavaScript code!
 
-p5.play uses p5.js for graphics rendering. We share the Processing Foundation's goal of make coding more accessible for artists, designers, educators, and beginners. Behind the scenes p5.play v3 uses planck (Box2D), a physics simulator that's been used in popular 2D games like Angry Birds and Tiny Wings.
+The lead developer of p5.play is Quinton Ashley, a Computer Science teacher at Crimson Education who also happens to be the author of these lessons!
 
 <https://p5play.org>
-
-The lead developer of p5.play is Quinton Ashley, a Computer Science teacher at Crimson Education who also happens to be the author of these lessons!
 
 ---
 
 ## p5.play Sprites
 
-Take a look at page 0, 1, and 2 of the Sprite learn pages on the p5.play website:
+Take a look at page 0, 1, 2, and 3 of the Sprite learn pages on the p5.play website:
 
 <https://p5play.org/learn/sprite.html>
 
 ---
 
 ## spriteArt
-
-The p5.play `spriteArt` function can be used to create images very easily! The first parameter to `spriteArt` is a String representing the color values of pixels.
-
-```js
-let img = spriteArt('wgw');
-```
-
-This example code would create an image with one white pixel, followed by a green pixel, and then another white pixel.
-
----
 
 Here's the limited color palette you can use for this game. They are the same colors as the real ZX Spectrum, which this level's computer is based on.
 
@@ -72,34 +66,6 @@ Here's the limited color palette you can use for this game. They are the same co
 |    'c'     |    Cyan 🔵     |
 |    'y'     |   Yellow 🟨    |
 |    'w'     |    White ⬜    |
-
----
-
-## Make Strings with Back-ticks
-
-Back-ticks can also be used to create Strings. Back-ticks look like a backwards apostrophe. They can be found on your keyboard on a special key next to the number 1. The back-tick key also has a squiggly line `~` called a tilde on it.
-
-When back-ticks are used to create Strings, the text inside the back-ticks can go on multiple lines of code and retain these newlines without the use of the newline `\n` character.
-
----
-
-```js
-let str = `
-...yyyy
-.yybyybyy
-yyyyyyyyyy
-yybyyyybyy
-.yybbbbyy
-...yyyy`;
-
-let img = spriteArt(str);
-```
-
-Can you tell what the image is?
-
----
-
-It's a simple yellow and black smiley face image! 😃
 
 ---
 
