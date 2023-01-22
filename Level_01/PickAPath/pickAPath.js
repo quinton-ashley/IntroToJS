@@ -28,10 +28,6 @@ async function start() {
 
 		// prompt the player to choose a path
 		path = await prompt(message);
-
-		/* Part B0: end the game if there are no more choices to make */
-
-		/* Part B1: check if the player made a valid choice, reject invalid choices */
 	}
 
 	exit(); // exits the game
