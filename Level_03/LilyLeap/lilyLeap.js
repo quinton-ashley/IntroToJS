@@ -23,7 +23,7 @@ function setup() {
 }
 
 function makeLilyPads() {
-	/* Part A: Use a loop to make more lily pads. */
+	// TODO: use a loop to make more lily pads
 	let lily = new lilypads.Sprite();
 	lily.x = 0;
 }

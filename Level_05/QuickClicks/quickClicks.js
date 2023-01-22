@@ -6,7 +6,7 @@ const target = `
  8b  d8 
  'Y88P' `;
 
-/* Part A: find the range of row and column values the target can be placed at */
+// TODO: find the range of row and column values the target can be placed at
 function makeTargets() {
 	let row = 1;
 	let col = 1;

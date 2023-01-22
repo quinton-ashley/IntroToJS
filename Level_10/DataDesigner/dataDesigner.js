@@ -1,3 +1,4 @@
+// example film table
 let table = `
 | id | film title                      |
 |====|=================================|
@@ -7,7 +8,6 @@ let table = `
 |----|---------------------------------|
 | 19 | Groundhog Day                   |
 |----|---------------------------------|`;
-// example film data
 
 async function start() {
 	text(table, 2, 0);

@@ -4,10 +4,8 @@
 // can use them in other functions
 let ball;
 
+// code in the setup function gets run once at the start of the game
 function setup() {
-	// code in this function gets run once at the start
-	// of the game
-
 	let imgBall = spriteArt(`
 ..wwww..
 .ww..ww.
@@ -20,18 +18,17 @@ ww....ww
 
 	let imgPaddle = spriteArt('.wwwwww.\nwwwwwwww\n' + 'ww....ww\n'.repeat(42) + 'wwwwwwww\n.wwwwww.');
 
-	// creates a ball in center of the screen
+	// creates a ball sprite and places it in center of the screen
 	ball = new Sprite();
 	ball.image = imgBall;
 	ball.x = width / 2;
 	ball.y = height / 2;
 	ball.diameter = 8;
-	/* Part A1: make the ball move */
 
-	/* Part A0: make the left and right paddles */
+	// TODO: create paddle sprites
 }
 
+// code in the draw function gets run 60 times per second
 function draw() {
-	// code in this function gets run 60 times per second
-	/* Part A2: make the paddles move */
+	// TODO: move the paddles
 }

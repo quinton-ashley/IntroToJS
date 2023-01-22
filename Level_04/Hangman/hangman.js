@@ -73,5 +73,5 @@ async function start() {
 	/* Part C: show the lines for the word below the hangman art */
 	let guess = await prompt(hangman[0]);
 
-	exit(); // exits the game
+	exit();
 } // end of the start function

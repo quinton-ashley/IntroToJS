@@ -106,9 +106,9 @@ Copy your GuessTheNumber code from CodePen and put it in `guessTheNumber.js`
 Edit the `load.js` in your `quintos-games` project folder.
 
 ```js
-QuintOS.username = 'your username';
+QuintOS.user = 'your username';
 QuintOS.dir = 'GAMES';
-QuintOS.gameTitle = 'GuessTheNumber';
+QuintOS.game = 'GuessTheNumber';
 ```
 
 Right click on `index.html` file and select `Open with Live Server` or click `Go Live` in VSCode's bottom status bar. You should see the calculator show up in your browser. 😄
