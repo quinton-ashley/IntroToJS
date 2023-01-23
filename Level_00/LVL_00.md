@@ -360,9 +360,10 @@ let x = 5 * 8; // x -> 40
 
 ## Math: Generate a random number
 
+`random(low, high)` returns a random decimal number in the specified range. If you use the `random()` function without any input parameters it will return a decimal number in the range of 0 to almost 1.
+
 ```js
-// random(low, high) returns a random decimal number in the specified range
-let x = random(0, 1); // numbers ranging from 0 to 1
+let x = random(); // numbers ranging from 0 to 1
 let x2 = random(-4, 7); // numbers ranging from -4 to 7
 ```
 

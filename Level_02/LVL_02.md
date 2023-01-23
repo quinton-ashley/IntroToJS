@@ -17,12 +17,6 @@ sayHello(); // run the function
 
 The code inside a function is not run until the function is called/invoked by using its name and the parenthesis.
 
-## Make Strings with Back-ticks
-
-Back-ticks can also be used to create Strings. Back-ticks look like a backwards apostrophe. They can be found on your keyboard on a special key next to the number 1. The back-tick key also has a squiggly line `~` called a tilde on it.
-
-When back-ticks are used to create Strings, the text inside the back-ticks can go on multiple lines of code and retain these newlines without the use of the newline `\n` character.
-
 ## Using Libraries 📚
 
 As a programmer it's important to learn how to use libraries.
@@ -37,21 +31,31 @@ The most popular JS packages provide solutions to common problems. Using librari
 
 To make Pong we're going to use p5.play, a 2D game engine made by Computer Science teachers to help you turn your game ideas into JavaScript code!
 
-The lead developer of p5.play is Quinton Ashley, a Computer Science teacher at Crimson Education who also happens to be the author of these lessons!
-
 <https://p5play.org>
+
+The lead developer of p5.play is Quinton Ashley, a Computer Science teacher at Crimson Education who's also the author of these lessons!
 
 ---
 
 ## p5.play Sprites
 
-Take a look at page 0, 1, 2, and 3 of the Sprite learn pages on the p5.play website:
+Take a look at page 0 and 1 of the Sprite learn pages on the p5.play website.
 
 <https://p5play.org/learn/sprite.html>
 
 ---
 
 ## spriteArt
+
+The p5.play `spriteArt` function can be used to create images very easily! The first parameter to `spriteArt` is a String representing the color values of pixels.
+
+```js
+let img = spriteArt('wgw');
+```
+
+This example code would create an image with one white pixel, followed by a green pixel, and then another white pixel.
+
+---
 
 Here's the limited color palette you can use for this game. They are the same colors as the real ZX Spectrum, which this level's computer is based on.
 
@@ -66,6 +70,34 @@ Here's the limited color palette you can use for this game. They are the same co
 |    'c'     |    Cyan 🔵     |
 |    'y'     |   Yellow 🟨    |
 |    'w'     |    White ⬜    |
+
+---
+
+## Make Strings with Back-ticks
+
+Back-ticks can also be used to create Strings. Back-ticks look like a backwards apostrophe. They can be found on your keyboard on a special key next to the number 1. The back-tick key also has a squiggly line `~` called a tilde on it.
+
+When back-ticks are used to create Strings, the text inside the back-ticks can go on multiple lines of code and retain these newlines without the use of the newline `\n` character.
+
+---
+
+```js
+let str = `
+...yyyy
+.yybyybyy
+yyyyyyyyyy
+yybyyyybyy
+.yybbbbyy
+...yyyy`;
+
+let img = spriteArt(str);
+```
+
+Can you tell what the image is?
+
+---
+
+It's a simple yellow and black smiley face image! 😃
 
 ---
 
@@ -98,6 +130,18 @@ let pattern = '><'.repeat(4);
 
 ---
 
+# Level 02 C
+
+---
+
+## p5.play Input Devices
+
+Take a look at page 0 of the Input learn pages on the p5.play website.
+
+<https://p5play.org/learn/input_devices.html>
+
+---
+
 ## += operator
 
 The `+=` operator can be used to add to the existing value of a variable.
@@ -122,44 +166,7 @@ console.log(x); // x -> 7
 
 ---
 
-# Level 02 C
-
----
-
-## Bounces
-
-Objects in p5.play collide by default but the paddle and ball won't do a perfect bounce off the paddle automatically.
-
-```js
-function draw() {
-	// make the ball bounce off the paddle
-	if (ball.collides(paddleLeft)) {
-		ball.speed = 1;
-	}
-}
-```
-
----
-
 # Level 02 D
-
----
-
-## Keyboard Input
-
-One of the global variables p5.play adds is `kb` short for `keyboard`.
-
-Check if the user is pressing a key:
-
-```js
-function draw() {
-	if (kb.pressing('ArrowLeft')) {
-		player.vel.x = 1; // move the player left
-	} else if (kb.pressing('ArrowRight')) {
-		player.vel.x = 1; // move the player right
-	}
-}
-```
 
 ---
 
@@ -182,25 +189,16 @@ Note that the text (row, col) system is different than the dimensions of the scr
 
 ## Custom collision handling
 
-In p5.play it's easy to change what happens after two sprites collide.
+In p5.play it's easy to change what happens after two sprites collide using the `collided` function.
 
 ```js
-if (laser.collides(shield)) {
+if (laser.collided(shield)) {
 	laser.direction = 20;
+	laser.speed = 1;
 }
 ```
 
 In this example code, the laser gets deflected upward after hitting the shield.
-
----
-
-## Adding properties to an existing object
-
-Adding your own properties to an existing object is super easy, just give it a value as if the property already existed!
-
-```js
-ball.speedLimit = 1;
-```
 
 ---
 

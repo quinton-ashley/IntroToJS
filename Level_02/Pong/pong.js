@@ -24,6 +24,8 @@ ww....ww
 	ball.x = width / 2;
 	ball.y = height / 2;
 	ball.diameter = 8;
+	ball.bounciness = 1; // full bounciness
+	ball.friction = 0; // no friction
 
 	// TODO: create paddle sprites
 }
