@@ -58,7 +58,7 @@ function doRecursion() {
 
 ---
 
-Here's a more practical example of a recursion loop that ends when the player loses all their health points.
+Here's a more practical example of a recursion loop that ends when the player loses all their health points. Although for such a simple case of recursion it'd be more efficient to use a while loop.
 
 ```js
 let health = 100; // initial health
@@ -126,6 +126,34 @@ Over 1.6 trillion milliseconds have occurred since then!
 ---
 
 # Level 05 E
+
+---
+
+## += operator
+
+The `+=` operator can be used to add to the existing value of a variable.
+
+```js
+let story = 'The cow';
+story += ' jumped over the moon.';
+// story -> "The cow jumped over the moon"
+```
+
+---
+
+You can use `+=` with numbers too!
+
+```js
+let x = 5;
+x += 2; // shortcut for x = x + 2
+console.log(x); // x -> 7
+```
+
+`-=`, `*=`, and `/=` operators can also be used with numbers.
+
+---
+
+# Level 05 F
 
 ---
 

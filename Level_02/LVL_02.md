@@ -23,7 +23,7 @@ As a programmer it's important to learn how to use libraries.
 
 Libraries, primarily referred to as packages in JS, are collections of code that other people have written.
 
-The most popular JS packages provide solutions to common problems. Using libraries can prevent you from wasting time re-inventing the wheel! Although building something from scratch can sometimes be a good educational experience or allow for greater customization, often it's better to use a library.
+The most popular JS packages provide solutions to common problems. Using libraries can prevent you from wasting time re-inventing the wheel! Although building something "from scratch" can sometimes be a good educational experience or allow for greater customization, often it's better to use a library.
 
 ---
 
@@ -139,30 +139,6 @@ let pattern = '><'.repeat(4);
 Take a look at page 0 of the Input learn pages on the p5.play website.
 
 <https://p5play.org/learn/input_devices.html>
-
----
-
-## += operator
-
-The `+=` operator can be used to add to the existing value of a variable.
-
-```js
-let story = 'The cow';
-story += ' jumped over the moon.';
-// story -> "The cow jumped over the moon"
-```
-
----
-
-You can use `+=` with numbers too!
-
-```js
-let x = 5;
-x += 2; // shortcut for x = x + 2
-console.log(x); // x -> 7
-```
-
-`-=`, `*=`, and `/=` operators can also be used with numbers.
 
 ---
 

@@ -37,13 +37,15 @@ After the player clicks 10 target buttons, calculate the user's average, slowest
 
 Stop making targets after 10 clicks and run a `calcStats` (calculate statistics) function that will show the user their stats at the end of the game. Inside the `calcStats` function create an array of speeds that stores the time in milliseconds it took the player to click each button. Each number in this array should represent the difference between the time a button was clicked and the time the next button was clicked. HINT: If the player clicks the button 10 times there will only be 9 speeds (time between each button click). Use a `for` loop to create the array of speeds.
 
-Calculate the user's average time first. HINT: remember the average is the sum of all numbers in a list divided by the amount of numbers.
-
-Next calculate the user's slowest and fastest reponse times. The fastest speed is the lowest number in the speeds array. The slowest speed is the highest.
-
-Display all the stats in one alert window.
-
 ## Instructions for Part E
+
+Calculate the user's average speed first. HINT: To calculate an average, add up all the numbers in a list and divide by the amount of numbers.
+
+Next calculate the user's slowest and fastest reponse times. The slowest speed is the highest. The fastest speed is the lowest number in the speeds array. Try finding the slowest speed first.
+
+Display all the stats in one alert window. HINT: Remember the new line formatting character "\n"
+
+## Instructions for Part F
 
 Add a background pattern to the game that should cover the entire space within the frame. Create this pattern yourself using for loops by drawing with `text(txt, row, col)`
 

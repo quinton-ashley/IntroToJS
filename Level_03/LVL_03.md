@@ -88,7 +88,7 @@ In this example, the code inside the `for` loop simply prints the value of `i` t
 
 ## Animation
 
-Learn about sprite animation on the p5.play website:
+Look at the Animation Learn page 0, 1, 2, and 3 on the p5.play website:
 
 <https://p5play.org/learn/sprite_animation.html>
 

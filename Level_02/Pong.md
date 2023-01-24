@@ -40,15 +40,17 @@ Display both player's scores. HINT: Use the `text` function.
 
 ## Instructions for Part E
 
-Sometimes the paddles can move into the ball, which forces the ball to move away from them, which can overly increase the ball's speed by a lot! Fix this bug by overriding the ball's speed after it collides with a paddle. HINT: Use the `collided` function.
+Sometimes the paddles can move inside the ball's collider, forcing the ball to move away from them, which can overly increase the ball's speed by a lot! Fix this bug by overriding the ball's speed after it collides with a paddle. HINT: Use the `collided` function.
+
+If you're interested in working on improving your Pong game
 
 ## CHALLENGE SECTION
 
-Try making the ball speed up a little bit each time it hits one of the paddles. HINT: use the `collided` function.
+Try making the ball speed up a little bit each time it hits one of the paddles.
 
 Reset the ball's speed when it's served from the center.
 
-Sometimes when the ball hits the corner of the paddles, it deflects at a "bad" angle, causing the ball to move up and down too much. Fix this bug by adjusting the ball's direction after it collides with a paddle. HINT: Use the `collided` function.
+Sometimes when the ball hits the corner of the paddles, it deflects at a "bad" angle, causing the ball to move up and down too much. Fix this bug by adjusting the ball's direction after it collides with a paddle.
 
 Reference the [p5.js documentation](https://p5js.org/reference/) to learn how to make simple shapes like rectangles, circles, and ellipses. The background of your Pong game should incorporate a few different shapes. You can also make more images with `spriteArt` if you'd like. Be creative!
 
