@@ -36,11 +36,13 @@ When the ball is served from the center of the screen, make it move away from th
 
 ## Instructions for Part D
 
-Display both player's scores. HINT: Use the `text` function.
+Display both player's scores using the QuintOS `text` function.
 
 ## Instructions for Part E
 
-Sometimes the paddles can move inside the ball's collider, forcing the ball to move away from them, which can overly increase the ball's speed by a lot! Fix this bug by overriding the ball's speed after it collides with a paddle. HINT: Use the `collided` function.
+Sometimes the paddles can move inside the ball's collider, forcing the ball to move away from them, which can overly increase the ball's speed by a lot! If you haven't noticed this yet while testing your game try hitting the ball on the top or corner of the paddle while moving the paddle. This may be correct physics but it's not how players expect a Pong game to work.
+
+Fix this bug by overriding the ball's speed after it collides with a paddle. HINT: Use the `collided` function.
 
 If you're interested in working on improving your Pong game
 

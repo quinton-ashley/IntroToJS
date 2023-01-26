@@ -15,15 +15,15 @@ function sayHello() {
 sayHello(); // run the function
 ```
 
-The code inside a function is not run until the function is called/invoked by using its name and the parenthesis.
+The code inside a function isn't run when the function is created, only when it's invoked.
 
 ## Using Libraries 📚
 
-As a programmer it's important to learn how to use libraries.
+As a programmer it's important to learn how to use libraries. And no... we're not talking about the kind of library you go to borrow books from!
 
 Libraries, primarily referred to as packages in JS, are collections of code that other people have written.
 
-The most popular JS packages provide solutions to common problems. Using libraries can prevent you from wasting time re-inventing the wheel! Although building something "from scratch" can sometimes be a good educational experience or allow for greater customization, often it's better to use a library.
+The most popular JS packages provide solutions to common problems. Using libraries can prevent you from wasting time re-inventing the wheel! Although building something "from scratch" using only core features of a programming language can sometimes be a good educational experience or allow for greater customization. Yet, often it's easier to use a library.
 
 ---
 
@@ -148,14 +148,14 @@ Take a look at page 0 of the Input learn pages on the p5.play website.
 
 ## Drawing text to the screen
 
-Text can be displayed on screen at a given text row and column.
+In QuintOS, text can be displayed at a specified row and column on the screen.
 
 ```js
 //  (text         , row, col)
 text('Hello World!', 10, 12);
 ```
 
-Note that the text (row, col) system is different than the dimensions of the screen in (x, y) pixel coordinates.
+Note that the (row, col) dimensions of the screen are different than its (x, y) pixel coordinates.
 
 ---
 
@@ -165,7 +165,7 @@ Note that the text (row, col) system is different than the dimensions of the scr
 
 ## Custom collision handling
 
-In p5.play it's easy to change what happens after two sprites collide using the `collided` function.
+In p5.play it's easy to change what happens after two sprites collide using the `collided` function inside the p5.js draw function.
 
 ```js
 if (laser.collided(shield)) {
