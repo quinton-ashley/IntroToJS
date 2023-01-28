@@ -99,11 +99,9 @@ Press F1 on your keyboard (hold Fn then press F1 on macOS). Search the menu for 
 
 ## Loading QuintOS Games
 
-Make a new folder in `quintos-games` called `GAMES`. Copy the `GuessTheNumber` folder from Level_00 in IntroToJS and paste it in `GAMES`.
+Copy your GuessTheNumber code from CodePen and put it in `GAMES/GuessTheNumber/guessTheNumber.js`
 
-Copy your GuessTheNumber code from CodePen and put it in `guessTheNumber.js`
-
-Edit the `load.js` in your `quintos-games` project folder.
+Edit the `load.js` in your `quintos-games` project folder. Set `QuintOS.user` to your GitHub username.
 
 ```js
 QuintOS.user = 'your username';
@@ -111,13 +109,13 @@ QuintOS.dir = 'GAMES';
 QuintOS.game = 'GuessTheNumber';
 ```
 
-Right click on `index.html` file and select `Open with Live Server` or click `Go Live` in VSCode's bottom status bar. You should see the calculator show up in your browser. 😄
+In VSCode, right click on the `index.html` file and select `Open with Live Server` or click `Go Live` on the bottom status bar. You should see the calculator show up in your browser. 😄
 
 ![](../src/QuintOS/bootScreen1.jpg)
 
 ---
 
-You've finished the install process! Read the next lesson section before starting PickAPath.
+You've finished the install process! Read the next lesson section before starting the Pick A Path project.
 
 ---
 
