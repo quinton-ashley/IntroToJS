@@ -69,6 +69,17 @@ while (playerHealth > 0) {
 
 ---
 
+## string.indexOf
+
+The `indexOf` function returns the index of the first occurrence of a specified value in a string. If the value is not found, it returns -1.
+
+```js
+let str = 'Hello World!';
+let index = str.indexOf('o'); // index -> 4
+```
+
+---
+
 ## End of Level 08 A
 
 What's the funny mistake this user made when testing their code? Remember to test your programs thoroughly!
