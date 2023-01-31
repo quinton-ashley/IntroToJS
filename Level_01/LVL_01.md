@@ -338,13 +338,13 @@ One useful function you can use on Arrays is `includes`, it checks if an item is
 
 ```js
 // Ellie is included in the array of names...
-if (names.includes('Ellie') == true) {
-	// ... so this is true
+if (names.includes('Ellie')) {
+	// ... so the code in this block is run
 }
 
 // James is not included in the array of names...
-if (names.includes('James') == true) {
-	// ...so this is false
+if (names.includes('James')) {
+	// ...so the code in this block is skipped
 }
 ```
 

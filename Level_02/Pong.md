@@ -14,7 +14,7 @@ Make the ball move to the right by assigning a postive value to `ball.speed` in 
 
 You will notice that when the ball moves it leaves a trail of ball images behind it! That's because everything drawn to the p5.js canvas stays there, it doesn't become a blank slate every time the draw function is used to make a new frame. This is useful for some art programs but not for most games. Use the p5.js background function with "b" (black) as the input argument `background("b")`
 
-Notice how if a ball hits a paddle it bounces off the paddle super slowly and the paddle gets knocked. In Pong, the paddles shouldn't be pushed around by the ball. HINT: Set the collider type of the paddles to 'kinematic'. This will prevent the ball sprite from being able to move the paddles but players will still be able to move them (after you implement key controls in part C).
+Notice how if a ball hits a paddle, it bounces off and the paddle gets knocked away. In Pong, the paddles shouldn't be pushed around by the ball. HINT: Set the collider type of the paddles to 'kinematic'. This will prevent the ball sprite from being able to move the paddles but players will still be able to move them (after you implement key controls in part C).
 
 Try assigning different angle values to `ball.direction`. Try moving the ball to the left, then try moving the ball up and down, and then in diagonals. Get a sense of how changing the ball's direction affects its trajectory.
 
