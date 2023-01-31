@@ -10,7 +10,7 @@ If you're not familiar with Pong take a look at this demonstration video!
 
 Create two paddle sprites and place them on the left and right sides of the screen. Set their image to the `paddleImg`.
 
-Make the ball move to the right by assigning a postive value to `ball.speed` in the p5.js `setup` function.
+Make the ball move to the right by assigning a positive value to `ball.speed` in the p5.js `setup` function.
 
 You will notice that when the ball moves it leaves a trail of ball images behind it! That's because everything drawn to the p5.js canvas stays there, it doesn't become a blank slate every time the draw function is used to make a new frame. This is useful for some art programs but not for most games. Use the p5.js background function with "b" (black) as the input argument `background("b")`
 
@@ -18,13 +18,11 @@ Notice how if a ball hits a paddle, it bounces off and the paddle gets knocked a
 
 Try assigning different angle values to `ball.direction`. Try moving the ball to the left, then try moving the ball up and down, and then in diagonals. Get a sense of how changing the ball's direction affects its trajectory.
 
-## Instructions for Part B
-
-Make a wall image (or two) with the `spriteArt` function. Place walls at the top and bottom of the screen. You can make the walls one color or patterned or anything if you'd like. HINT: use the `repeat` function too and remember the newline character `\n`. HINT: The walls should have 'static' colliders.
+Make two walls, one on the top and one on the bottom of the screen. Set their color to 'white' and their collider type to 'static'. Optionally, you can use the `spriteArt` function to create the images for the walls.
 
 If you want, you can further customize your game of Pong by choosing a sports theme or other design for it.
 
-## Instructions for Part C
+## Instructions for Part B
 
 Implement key controls to enable two players to play your Pong game. When players aren't pressing any keys the paddles shouldn't move. HINT: Use `ball.velocity.y`
 
@@ -34,11 +32,11 @@ Place the ball back in the middle of the screen when it goes off screen. Let the
 
 When the ball is served from the center of the screen, make it move away from the player that lost the ball, just like in tennis. The y axis (up/down) diagonal direction of the serve should be random. HINT: Adjust `ball.direction`.
 
-## Instructions for Part D
+## Instructions for Part C
 
 Display both player's scores using the QuintOS `text` function.
 
-## Instructions for Part E
+## Instructions for Part D
 
 Sometimes the paddles can move inside the ball's collider, forcing the ball to move away from them, which can overly increase the ball's speed by a lot! If you haven't noticed this yet while testing your game try hitting the ball on the top or corner of the paddle while moving the paddle. This may be correct physics but it's not how players expect a Pong game to work.
 

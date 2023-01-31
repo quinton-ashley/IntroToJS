@@ -101,22 +101,6 @@ It's a simple yellow and black smiley face image! 😃
 
 ---
 
-# Level 02 B
-
----
-
-## spriteArt scaling
-
-By default each character in the string will be one pixel in the resulting sprite art image. Yet, if you change the scale to 2 then each character in the string will be represented by 4 pixels! This is useful for making larger images.
-
-```js
-let face = spriteArt(str, 2);
-```
-
-The second input parameter to the `spriteArt` function is an optional scale value. Input parameters are separated by commas.
-
----
-
 ## String.repeat(amount)
 
 To more easily create large Strings you can use a String function called repeat.
@@ -130,7 +114,7 @@ let pattern = '><'.repeat(4);
 
 ---
 
-# Level 02 C
+# Level 02 B
 
 ---
 
@@ -142,7 +126,17 @@ Take a look at page 0 of the Input learn pages on the p5.play website.
 
 ---
 
-# Level 02 D
+## Sprite velocity vector
+
+What is a velocity? A velocity is an object's speed along one axis of movement. In p5.play a sprite's velocity vector is an object with two properties: `x` and `y`. These properties represent the sprite's speed along the x and y axes.
+
+```js
+sprite.velocity.x = 5;
+```
+
+---
+
+# Level 02 C
 
 ---
 
@@ -159,7 +153,7 @@ Note that the (row, col) dimensions of the screen are different than its (x, y) 
 
 ---
 
-# Level 02 E
+# Level 02 D
 
 ---
 
