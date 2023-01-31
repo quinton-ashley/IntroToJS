@@ -81,6 +81,8 @@ When back-ticks are used to create Strings, the text inside the back-ticks can g
 
 ---
 
+Can you tell what the image is?
+
 ```js
 let str = `
 ...yyyy
@@ -92,8 +94,6 @@ yybyyyybyy
 
 let img = spriteArt(str);
 ```
-
-Can you tell what the image is?
 
 ---
 

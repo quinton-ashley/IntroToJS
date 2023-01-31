@@ -46,6 +46,6 @@ Reject invalid choices by the user, don't let them skip ahead!
 
 Make an `options` array and in each decision branch assign it to the valid options for that choice.
 
-If the number the user entered, their input, is a valid option change the value of `path` to the user's input. Otherwise alert the user they've made an incorrect choice. HINT: Use `await alert()`
+If the number the user entered, their input, is a valid option change the value of `path` to the user's input. Otherwise alert the user they've made an invalid choice. HINT: Use `await alert()`
 
 At the end of the game, on paths where the player has no choices to make, give them the option to play again.
