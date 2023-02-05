@@ -51,11 +51,7 @@ Take a look at the first page of the p5.play Group reference pages:
 
 Scroll up and take another look at the example of the while loop with a counter variable.
 
-A `for` loop is a way to repeat a block of code a certain number of times. The basic idea of a `for` loop is as follows:
-
-1. First, we create a counter variable and set its initial value.
-2. Then, we create a condition that checks if the counter variable has reached a certain value.
-3. Finally, we create an increment that increases the value of the counter variable after each iteration of the loop.
+A `for` loop is a more convenient way to repeat a block of code a certain number of times.
 
 ---
 
@@ -71,8 +67,8 @@ for (let i = 0; i < 10; i++) {
 In this example, the `for` loop does the following:
 
 1. The `initialization` sets the counter variable `i` to 0.
-2. The `condition` checks if `i` is less than 10. If it is, the code inside the loop is executed. If not, the loop is terminated.
-3. The `increment` increments `i` by 1 after each iteration of the loop.
+2. The `condition` checks if `i` is less than 10. If it is, the code inside the loop gets run. If not, the loop ends.
+3. The `increment` increases the value of `i` by 1 after each iteration of the loop.
 
 ---
 
