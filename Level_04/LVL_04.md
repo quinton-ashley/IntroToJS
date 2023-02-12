@@ -8,6 +8,7 @@ Remember that `log` is a shortcut in QuintOS for the JavaScript `console.log` fu
 
 ```js
 log('test your code!');
+log(x); // print the value of a variable
 ```
 
 ---

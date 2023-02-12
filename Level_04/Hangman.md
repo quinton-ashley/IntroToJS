@@ -10,15 +10,7 @@ Pick a random word from the array of words. HINT: Remember `.length` can be use 
 
 ## Instructions for Part B
 
-Create a `lines` array with the same amount of underscores as the choosen word. For example, if the word is "quiz" the `lines` array should have four dashes: `['_', '_', '_', '_']`. HINT: Use a for loop.
-
-Display the `lines` array like this `_ _ _ _` in the prompt on a new line below the hangman text drawing. HINT: use the `join` String function and remember the newline character `\n`
-
-## Instructions for Part C
-
-If the player guesses a letter which occurs in the word, edit the `lines` array so the letter will be displayed in all its correct positions. For example if the word is "avenue" and the player has guessed "e" your prompt should display: `_ _ e _ _ e`
-
-HINT: Use a `for` loop with a counter variable!
+Create a `lines` array with the same amount of underscores as the choosen word. For example, if the word is "quiz" the `lines` array should have four dashes: `['_', '_', '_', '_']`. HINT: Use a for loop with a counter variable!
 
 ```js
 //   initialize;  condition; increment
@@ -26,6 +18,12 @@ for (let i = 0; i < loopAmount; i++) {
 	// code that gets run each loop
 }
 ```
+
+Display the `lines` array like this `_ _ _ _` in the prompt on a new line below the hangman text drawing. HINT: use the `join` String function and remember the newline character `\n`
+
+## Instructions for Part C
+
+If the player guesses a letter which occurs in the word, edit the `lines` array so the letter will be displayed in all its correct positions. For example if the word is "avenue" and the player has guessed "e" your prompt should display: `_ _ e _ _ e` HINT: Use a `for` loop with a counter variable.
 
 Make the game loop! HINT: What condition must be true for the player to keep guessing letters? (use the `includes` array function)
 
