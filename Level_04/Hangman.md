@@ -19,7 +19,7 @@ for (let i = 0; i < loopAmount; i++) {
 }
 ```
 
-Display the `lines` array like this `_ _ _ _` in the prompt on a new line below the hangman text drawing. HINT: use the `join` String function and remember the newline character `\n`
+Display the `lines` array like this `_ _ _ _` in the prompt on a new line below the hangman text drawing. HINT: use the String `join` function and remember the newline character `\n`
 
 ## Instructions for Part C
 
