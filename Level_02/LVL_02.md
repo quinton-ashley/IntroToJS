@@ -27,19 +27,19 @@ The most popular JS packages provide solutions to common problems. Using librari
 
 ---
 
-## What is p5.play and p5.js? 🌸
+## What is p5play and p5.js? 🌸
 
-To make Pong we're going to use p5.play, a 2D game engine made by Computer Science teachers to help you turn your game ideas into JavaScript code!
+To make Pong we're going to use p5play, a 2D game engine made by Computer Science teachers to help you turn your game ideas into JavaScript code!
 
 <https://p5play.org>
 
-The lead developer of p5.play is Quinton Ashley, a Computer Science teacher at Crimson Education who's also the author of these lessons!
+The lead developer of p5play is Quinton Ashley, a Computer Science teacher at Crimson Education who's also the author of these lessons!
 
 ---
 
-## p5.play Sprites
+## p5play Sprites
 
-Take a look at page 0 and 1 of the Sprite learn pages on the p5.play website.
+Take a look at page 0 and 1 of the Sprite learn pages on the p5play website.
 
 <https://p5play.org/learn/sprite.html>
 
@@ -47,7 +47,7 @@ Take a look at page 0 and 1 of the Sprite learn pages on the p5.play website.
 
 ## spriteArt
 
-The p5.play `spriteArt` function can be used to create images very easily! The first parameter to `spriteArt` is a String representing the color values of pixels.
+The p5play `spriteArt` function can be used to create images very easily! The first parameter to `spriteArt` is a String representing the color values of pixels.
 
 ```js
 let img = spriteArt('wgw');
@@ -118,9 +118,9 @@ let pattern = '><'.repeat(4);
 
 ---
 
-## p5.play Input Devices
+## p5play Input Devices
 
-Take a look at page 0 of the Input learn pages on the p5.play website.
+Take a look at page 0 of the Input learn pages on the p5play website.
 
 <https://p5play.org/learn/input_devices.html>
 
@@ -128,7 +128,7 @@ Take a look at page 0 of the Input learn pages on the p5.play website.
 
 ## Sprite velocity vector
 
-What is a velocity? A velocity is an object's speed along one axis of movement. In p5.play a sprite's velocity vector is an object with two properties: `x` and `y`. These properties represent the sprite's speed along the x and y axes.
+What is a velocity? A velocity is an object's speed along one axis of movement. In p5play a sprite's velocity vector is an object with two properties: `x` and `y`. These properties represent the sprite's speed along the x and y axes.
 
 ```js
 sprite.velocity.x = 5;
@@ -159,7 +159,7 @@ Note that the (row, col) dimensions of the screen are different than its (x, y) 
 
 ## Custom collision handling
 
-In p5.play it's easy to change what happens after two sprites collide using the `collided` function inside the p5.js draw function.
+In p5play it's easy to change what happens after two sprites collide using the `collided` function inside the p5.js draw function.
 
 ```js
 if (laser.collided(shield)) {

@@ -35,9 +35,9 @@ while (i < 10) {
 
 ---
 
-## p5.play Groups
+## p5play Groups
 
-Take a look at the first page of the p5.play Group reference pages:
+Take a look at the first page of the p5play Group reference pages:
 
 <https://p5play.org/learn/group.html>
 
@@ -84,7 +84,7 @@ In this example, the code inside the `for` loop simply prints the value of `i` t
 
 ## Animation
 
-Look at the Animation Learn page 0, 1, 2, and 3 on the p5.play website:
+Look at the Animation Learn page 0, 1, 2, and 3 on the p5play website:
 
 <https://p5play.org/learn/sprite_animation.html>
 

@@ -133,7 +133,7 @@ Programming is just like any skill. You can only get better by practicing. So ke
 What you do now with your JavaScript programming skills is up to you! Here are some ideas:
 
 - make generative artwork with [p5.js](p5js.org)
-- make games with [p5.play](p5play.org)
+- make games with [p5play](p5play.org)
 - make a static website with GitHub Pages
 - make a dynamic website with a backend that uses node.js and Express
 - make mobile apps with React Native

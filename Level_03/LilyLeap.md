@@ -51,4 +51,4 @@ Make a countdown timer. If the player runs out of time, the frog gets back to th
 
 Make little bug images using the `spriteArt` function. Place them above lilypads. The GameBoi only has four color shades in its pallette: 0, 1, 2, 3. Use zeroes for the ant, the darkest shade available.
 
-When the frog overlaps with a bug it should eat it and get more time added to the countdown timer. HINT: Use the p5.play `overlaps` function.
+When the frog overlaps with a bug it should eat it and get more time added to the countdown timer. HINT: Use the p5play `overlaps` function.

@@ -63,7 +63,7 @@ background(0, 0, 0, 10);
 
 Viewers of your art program should be able to use the arrow keys "right" and "left" to change the artwork that is being displayed.
 
-You can use any of the p5.js and p5.play functions you've learned to create dynamic generative art based on randomness `random(low, high)` or user input `mouse.x`, `kb.presses(key)`.
+You can use any of the p5.js and p5play functions you've learned to create dynamic generative art based on randomness `random(low, high)` or user input `mouse.x`, `kb.presses(key)`.
 
 ## Instructions for Part D
 
