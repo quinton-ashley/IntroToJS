@@ -40,3 +40,7 @@ These are some hard words to guess within a limit of only 5 mistakes! Make the g
 The player guessing the word may, at any time, attempt to guess the whole word. If the word is correct, the game is over and the guesser wins.
 
 Ask the player if they'd like to keep playing, if they say yes start a new game. HINT: Use a while loop and the `prompt` function.
+
+## EXTRA CHALLENGE
+
+Show the user the letters they guessed wrong. If the user guesses the same wrong letter twice, don't count it! Tell them they already guessed that letter and they should guess a different letter.

@@ -111,18 +111,6 @@ To convert from decimal to binary, start with the biggest 2^n that is less than 
 
 ---
 
-## Byte
-
-A bit is one place value in a binary number.
-
-A 4 bit binary number is called a nibble. Ha!
-
-An 8 bit binary number is called a byte.
-
-How many different values can be stored using 8 bits? Remember we can calculate this by doing 2 to the power of the number of bits 2^8 is... uhh. Well 2^4 is 16, so 2^5 must be 32, then 2^6 is 64, 2^7 is 128, so finally 2^8 is 256. One byte (8 bits) can store 256 different values, 0-255!
-
----
-
 ## Exponents in JavaScript
 
 ```js
@@ -139,6 +127,8 @@ The `Number` function can convert a string to a number. Note that any leading ze
 let x = '0101';
 x = Number(x); // -> 101
 ```
+
+---
 
 ## Convert a Number to String
 
@@ -160,7 +150,7 @@ x = x + ''; // -> "10"
 
 ## Countdown for loop
 
-In a typical for loop the counter variable starts at zero and increases in value each loop until reaching a certain value.
+In a typical for loop the counter variable starts at zero and increases in value each loop until reaching a certain value. This loop will count from 0 to 9.
 
 ```js
 for (let i = 0; i < 10; i++) {
@@ -168,10 +158,10 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-But you can also use a for loop to count down instead. This for loop will count down from 10 to 1.
+But you can also use a for loop to count down instead. This for loop will count down from 9 to 0.
 
 ```js
-for (let i = 10; i > 0; i--) {
+for (let i = 9; i >= 0; i--) {
 	console.log(i);
 }
 ```
@@ -179,6 +169,18 @@ for (let i = 10; i > 0; i--) {
 ---
 
 # Level 06 B
+
+---
+
+## Byte
+
+A bit is one place value in a binary number.
+
+A 4 bit binary number is called a nibble. Ha!
+
+An 8 bit binary number is called a byte.
+
+How many different values can be stored using 8 bits? Remember we can calculate this by doing 2 to the power of the number of bits 2^8 is... uhh. Well 2^4 is 16, so 2^5 must be 32, then 2^6 is 64, 2^7 is 128, so finally 2^8 is 256. One byte (8 bits) can store 256 different values, 0-255!
 
 ---
 
