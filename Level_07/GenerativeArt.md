@@ -10,9 +10,9 @@ Watch the first few minutes of this short film from 1968 to see examples of John
 
 Create a variable `time` that goes up by 0.1 every frame (everytime the draw function is run).
 
-Translate the origin to the center of the canvas.
+Translate the origin to the center of the canvas. For now, make the stroke white and thick. Put a point at (0, 0).
 
-Move a point using the `sin` and `cos` functions using the `time` variable.
+Move the point using the `sin` and `cos` functions using the `time` variable.
 
 Try making one or both of your equations parametric by adding one wave to another!
 
@@ -34,7 +34,7 @@ function eqX(t) {
 }
 ```
 
-Make six unique works of generative art. Create a variable `art` that stores the number of which artwork is currently being viewed. Use the `art` variable in if statements so your `eqX` and `eqY` functions can determine which equation to use for which artwork.
+Make two unique works of generative art. Create a variable `art` that stores the number of which artwork is currently being viewed. Use the `art` variable in if statements so your `eqX` and `eqY` functions can determine which equation to use for which artwork.
 
 ```js
 function eqX(t) {
@@ -48,11 +48,11 @@ function eqX(t) {
 Try changing other things in your artworks like the stroke weight or stroke color.
 
 ```js
-//   			RED, GREEN, BLUE
-strokeWeght(255, 100, 60);
+//    RED, GREEN, BLUE
+stroke(255, 100, 60);
 ```
 
-Try using a for loop to draw multiple points at once. You can vary the amount of points drawn per frame for each artwork, some can be drawn slower and other could be drawn faster.
+Try using a for loop to draw multiple points during the same frame. You can vary the amount of points drawn per frame for each artwork, some can be drawn slower and other could be drawn faster.
 
 Experiment with the color of the background and use an alpha (opacity) value so that the older points fade away.
 
@@ -60,6 +60,8 @@ Experiment with the color of the background and use an alpha (opacity) value so 
 //  RED, GREEN, BLUE, ALPHA
 background(0, 0, 0, 10);
 ```
+
+Try making 4 more unique artworks for a total of 6.
 
 Viewers of your art program should be able to use the arrow keys "right" and "left" to change the artwork that is being displayed.
 
