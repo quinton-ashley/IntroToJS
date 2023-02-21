@@ -164,9 +164,9 @@ Here's how modulo can be used for alternation.
 ```js
 for (let i = 0; i < 10; i++) {
 	if (i % 2 == 0) {
-		text('even', i);
+		txt('even', i);
 	} else {
-		text('odd', i);
+		txt('odd', i);
 	}
 }
 ```
@@ -179,8 +179,8 @@ This code does the same kind of alternation.
 
 ```js
 for (let i = 0; i < 10; i += 2) {
-	text('even', i);
-	text('odd', i + 1);
+	txt('even', i);
+	txt('odd', i + 1);
 }
 ```
 

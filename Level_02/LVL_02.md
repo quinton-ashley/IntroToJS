@@ -146,7 +146,7 @@ In QuintOS, text can be displayed at a specified row and column on the screen.
 
 ```js
 //  (text         , row, col)
-text('Hello World!', 10, 12);
+txt('Hello World!', 10, 12);
 ```
 
 Note that the (row, col) dimensions of the screen are different than its (x, y) pixel coordinates.

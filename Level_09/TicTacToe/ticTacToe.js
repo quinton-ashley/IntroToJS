@@ -41,14 +41,14 @@ const gridRow = 3;
 const gridCol = 26;
 
 function start() {
-	text(title, 5, 6);
+	txt(title, 5, 6);
 
 	/* Part A: finish the grid of 9x8 spaces */
-	text('─'.repeat(26), gridRow + 7, gridCol);
-	// text('─'.repeat(26), ?, ?); // draw another horizontal line
+	txt('─'.repeat(26), gridRow + 7, gridCol);
+	// txt('─'.repeat(26), ?, ?); // draw another horizontal line
 
-	text('│\n'.repeat(23), gridRow, gridCol + 8);
-	// text('│\n'.repeat(23), ?, ?); // draw another vertical line
+	txt('│\n'.repeat(23), gridRow, gridCol + 8);
+	// txt('│\n'.repeat(23), ?, ?); // draw another vertical line
 
 	/* Part A: Make the buttons in the grid */
 	// note the intervals! row += 8 and col += 9

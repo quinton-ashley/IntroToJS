@@ -14,16 +14,16 @@ let isCorrect = false;
 let checkingPick = false;
 
 function preload() {
-	miniBulb = loadTextAni('miniBulb.txt');
-	oldBulb = loadTextAni('oldBulb.txt');
-	robot = loadTextAni('robot.txt');
-	stdBulb = loadTextAni('stdBulb.txt');
-	tower = loadTextAni('tower.txt');
-	tv = loadTextAni('tv.txt');
+	miniBulb = loadTxtAni('miniBulb.txt');
+	oldBulb = loadTxtAni('oldBulb.txt');
+	robot = loadTxtAni('robot.txt');
+	stdBulb = loadTxtAni('stdBulb.txt');
+	tower = loadTxtAni('tower.txt');
+	tv = loadTxtAni('tv.txt');
 }
 
 function start() {
-	QuintOS.defaultTextSpeed = 0;
+	QuintOS.defaultTxtSpeed = 0;
 	frameRate(4);
 	miniBulb2 = miniBulb.clone();
 	miniBulb3 = miniBulb.clone();
@@ -50,26 +50,26 @@ function pickNumbers() {
 function draw() {
 	eraseRect(12, 4, 24, 5, 0);
 
-	textAni(tower, 15, 25);
+	txtAni(tower, 15, 25);
 
-	textAni(stdBulb, 1, 11, isCorrect ? undefined : 0);
+	txtAni(stdBulb, 1, 11, isCorrect ? undefined : 0);
 	if (random() < 0.8) {
-		textAni(robot, 14, 1, isCorrect ? undefined : 0);
+		txtAni(robot, 14, 1, isCorrect ? undefined : 0);
 	} else {
-		textAni(robot, 14, 1, 1);
+		txtAni(robot, 14, 1, 1);
 	}
-	textAni(tv, 1, 1);
-	textAni(tv, 3, 28);
+	txtAni(tv, 1, 1);
+	txtAni(tv, 3, 28);
 
-	text(leftNum.toString(10).padStart(4, ' '), 7, 6);
-	text(rightNum.toString(2).padStart(4, '0'), 9, 33);
+	txt(leftNum.toString(10).padStart(4, ' '), 7, 6);
+	txt(rightNum.toString(2).padStart(4, '0'), 9, 33);
 
 	if (!checkingPick) {
-		text('DECIMAL', 10, 2);
-		text('BINARY ', 12, 29);
+		txt('DECIMAL', 10, 2);
+		txt('BINARY ', 12, 29);
 	}
 
-	text(message, 12, 4);
+	txt(message, 12, 4);
 }
 
 function pickedLeft() {

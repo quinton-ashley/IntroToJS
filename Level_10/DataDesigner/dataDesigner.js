@@ -10,6 +10,6 @@ let table = `
 |----|---------------------------------|`;
 
 async function start() {
-	text(table, 2, 0);
+	txt(table, 2, 0);
 	let cmd = await prompt('0: Back, 1: View, 2: Return', 20, 0, 40);
 }

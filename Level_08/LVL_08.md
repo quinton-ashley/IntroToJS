@@ -97,12 +97,12 @@ What's the funny mistake this user made when testing their code? Remember to tes
 ```js
 let filePath = QuintOS.dir + '/art.txt';
 let data = await fetch(filePath);
-let txt = await data.text();
+let textContent = await data.txt();
 ```
 
 `QuintOS.dir` stores the file path to your game directory.
 
-`fetch` loads file data asynchronously and returns a `Response` object. If the response contains text then it can be converted to a string using the Response `.text()` async function.
+`fetch` loads file data asynchronously and returns a `Response` object. If the response contains text then it can be converted to a string using the Response `.txt()` async function.
 
 ---
 
