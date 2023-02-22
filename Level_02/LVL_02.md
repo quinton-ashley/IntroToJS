@@ -145,7 +145,7 @@ sprite.velocity.x = 5;
 In QuintOS, text can be displayed at a specified row and column on the screen.
 
 ```js
-//  (text         , row, col)
+// (text         , row, col)
 txt('Hello World!', 10, 12);
 ```
 

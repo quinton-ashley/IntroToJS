@@ -34,7 +34,7 @@ When the ball is served from the center of the screen, make it move away from th
 
 ## Instructions for Part C
 
-Display both player's scores using the QuintOS `text` function.
+Display both player's scores using the QuintOS `txt` function.
 
 ## Instructions for Part D
 

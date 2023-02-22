@@ -89,8 +89,8 @@ Items in an array can also be edited using `[]` (aka sub).
 names[2] = 'Ben'; // edits the item at position 2 in the names array
 // names -> ['Amy', 'Ellie', 'Ben']
 
-nums[1] += 4; // edits the item at position 1 in the nums array
-// num -> [50, 25, 42, 83]
+nums[1] = 4; // edits the item at position 1 in the nums array
+// num -> [50, 4, 42, 83]
 ```
 
 ---

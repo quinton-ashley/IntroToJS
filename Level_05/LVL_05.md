@@ -117,11 +117,17 @@ Callbacks are non-linear, so they are good for handling events (like button clic
 
 ---
 
-## Date
+## Date.now()
 
 `Date.now()` returns the current date in milliseconds since the UNIX epoch which occurred at the start of midnight on the 1st of January 1970.
 
 Over 1.6 trillion milliseconds have occurred since then!
+
+## performance.now()
+
+`performance.now()` returns the number of milliseconds since the start of the program.
+
+It's more accurate than `Date.now()` because the accuracy of `Date.now()` is limited by the browser to prevent hackers from pulling off timing attacks.
 
 ---
 
