@@ -26,7 +26,7 @@ Since you're just starting to write this program, don't make the number random y
 
 Tell the player to guess a number using `await prompt()` put your message (String) inside the parenthesis of the `prompt` function. Create the variable `guess` using `let`, assign it to the user's response to the `prompt`.
 
-[Now you can click here to move onto Level 00 B](https://github.com/quinton-ashley/IntroToJS/LVL_00/LVL_00.md#level-00-b).
+[Now you can click here to move onto Level 00 B](https://github.com/quinton-ashley/IntroToJS/blob/main/Level_00/LVL_00.md#level-00-b).
 
 ## Instructions for Part B
 
