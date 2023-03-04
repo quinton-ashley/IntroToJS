@@ -1,22 +1,28 @@
 # DataDesigner
 
-Create a program that an 1980s video rental store employee could've used to manage the store's inventory. Don't use any clickable buttons in this program, use the `text`, `prompt`, and `alert` functions instead.
+Create a program that an 1980s video rental store employee could've used to manage the store's inventory. Back then computers didn't have a mouse so don't use any clickable buttons in this program. Just use the `txt`, `prompt`, and `alert` QuintOS functions.
 
 ## Instructions for Part A
 
-Create a JSON file called `films.json`. For now just create one film inside it. A film object should have the following properties: `id` string, `title` string, `genre` number code, `rating` number, and `description` string. The rating should be a number 1-5. Each film object should have a unique two character long `id` string.
+Create a JSON file called `films.json`.
+
+Since a JSON file can only store one object, make the object have one property, `films`, that will store an array of film objects.
+
+For now just add two films inside the `films` array. A film object should have the following properties: `id` string, `title` string, `genre` number code, `rating` number, and `description` string. The rating should be a number 1-5. Each film object should have a unique two character long `id` string.
 
 ## Instructions for Part B
 
-Try loading the film data from the `films.json` file and just log it to the JS console for now.
+Try loading the film data from the `films.json` file and at first, just log it to the JS console to see that it's working.
+
+Add the data for one of the films to the table.
+
+If the film title is too short, add spaces to the end of the title so that the table looks nice. If the title is too long, shorten it and add ellipsis (the "...") so that it fits in the table. HINT: use the `padEnd` and `slice` functions.
+
+Now try displaying all the films in a table. Remove the example film data from the table. Use a `for of` loop to add films to the table.
+
+Add at least 5 more films to your `films.json` database. You can use ChatGPT to generate film data for you! Just be sure to give it the description of what a film object should contain.
 
 ## Instructions for Part C
-
-Add the film data to the table with the example films.
-
-Now since we want to store multiple films in our JSON database, change your JSON file so that it just has one property called `films` which will contain an array of film objects. Add the film object you made previously and at least 3 more films to the array.
-
-Your `dataDesigner.js` program should read the `films.json` file and display all the films in a table. Remove the example film data from the table. Use a `for of` loop to add films to the table.
 
 Create a JSON file called `members.json`. Inside the object create a property called `members` which will contain an array of member objects. Add at least 3 members to the array. Each member object should have the following properties: `id` string, `name` string, and `rented` array. The `rented` array should contain the `id` strings of the films the member has rented.
 

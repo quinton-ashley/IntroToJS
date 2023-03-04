@@ -181,12 +181,12 @@ Single equals `=` is for assigning values to variables. Double equals `==` is a 
 
 ---
 
-Check out this coin toss example code. Coin tosses are used in many sports to decide which of two teams goes first. One team picks which side of the coin they think will land facing up, "heads" or "tails". In this example, the `coinFlip` function would return either "heads" or "tails".
+Check out this coin toss example code. Coin tosses are used in many sports to decide which of two teams goes first. One team picks which side of the coin they think will land facing up, "heads" or "tails". Imagine the `coinFlip` variable was set to either "heads" or "tails" randomly before the example excerpt below.
 
 ```js
 let pick = await prompt('heads or tails?');
 
-if (coinFlip() == pick) {
+if (coinFlip == pick) {
 	await alert('You won the coin toss!');
 } else {
 	await alert('You lost the coin toss!');

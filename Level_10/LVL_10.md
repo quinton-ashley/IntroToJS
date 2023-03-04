@@ -81,41 +81,12 @@ JSON stands for JavaScript Object Notation. It is a way to store data in a text 
 
 ---
 
-## fetch a json file
+## Loading a JSON file
 
 ```js
 let filePath = QuintOS.dir + '/groceries.json';
 let data = await fetch(filePath);
 let obj = await data.json();
-```
-
----
-
-# Level 10 C
-
----
-
-## for in loops
-
-`for in` loop iterates through the indexes/keys of an array or object.
-
-```js
-let list = {
-	apples: 2,
-	bananas: 10,
-	pears: 4
-};
-for (let item in list) {
-	console.log('I need to get ' + list[item] + ' ' + item + '!');
-}
-```
-
-Result:
-
-```txt
-I need to get 2 apples!
-I need to get 10 bananas!
-I need to get 4 pears!
 ```
 
 ---
@@ -147,7 +118,37 @@ This function adds characters to the end of a string until it reaches the specif
 
 ```js
 let str = 'hello';
-str.padEnd(10, 'x'); // -> 'helloxxxxx'
+str = str.padEnd(10, 'x');
+console.log(str); // str -> 'helloxxxxx'
+```
+
+---
+
+# Level 10 C
+
+---
+
+## for in loops
+
+`for in` loop iterates through the indexes/keys of an array or object.
+
+```js
+let list = {
+	apples: 2,
+	bananas: 10,
+	pears: 4
+};
+for (let item in list) {
+	console.log('I need to get ' + list[item] + ' ' + item + '!');
+}
+```
+
+Result:
+
+```txt
+I need to get 2 apples!
+I need to get 10 bananas!
+I need to get 4 pears!
 ```
 
 ---
