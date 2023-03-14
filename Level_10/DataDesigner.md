@@ -4,11 +4,9 @@ Create a program that an 1980s video rental store employee could've used to mana
 
 ## Instructions for Part A
 
-Create a JSON file called `films.json`.
+Create a JSON file called `films.json` that will store an array of film objects.
 
-Since a JSON file can only store one object, make the object have one property, `films`, that will store an array of film objects.
-
-For now just add two films inside the `films` array. A film object should have the following properties: `id` string, `title` string, `genre` number code, `rating` number, and `description` string. The rating should be a number 1-5. Each film object should have a unique two character long `id` string.
+For now just add two films inside the array. A film object should have the following properties: `id` string, `title` string, `genre` number code, `rating` number, and `description` string. The rating should be a number 1-5. Each film object should have a unique two character long `id` string.
 
 ## Instructions for Part B
 
@@ -24,11 +22,11 @@ Add at least 5 more films to your `films.json` database. You can use ChatGPT to 
 
 ## Instructions for Part C
 
-Create a JSON file called `members.json`. Inside the object create a property called `members` which will contain an array of member objects. Add at least 3 members to the array. Each member object should have the following properties: `id` string, `name` string, and `rented` array. The `rented` array should contain the `id` strings of the films the member has rented.
+Create a JSON file called `members.json` which will contain an array of member objects. Add at least 3 members to the array. Each member object should have the following properties: `id` string, `name` string, and `rented` array. The `rented` array should contain the `id` strings of the films the member has rented.
 
 When the program starts it should show a main menu prompt that gives the user three options: view a member, view a film's info, or exit (close the program).
 
-If the user chooses to view a member, the program should display the member's name and the ID and titles of the films they have rented in the same format as the table you've made so far. The screen for viewing a member should have a prompt with three options: go back to the main menu, view a film's info, or return the film (delete the film from the user's rented list).
+If the user chooses to view a member, the program should display the member's name and ID. Then show the titles of the films they have rented in the same format as the films table you worked on previously. The screen for viewing a member should have a prompt with four options: go back to the main menu, view a film's info, rent a film, or return the film (delete the film from the user's rented list).
 
 If the user chooses to view a film, the program should display the film's title, genre, rating, and description.
 

@@ -8,13 +8,17 @@ Watch the first few minutes of this short film from 1968 to see examples of John
 
 ## Instructions for Part A
 
+Create a p5.js draw function. Remember this function is used to draw a new frame 60 times per second.
+
+Translate the origin to the center of the canvas.
+
+Put a point at (0, 0). Can't see it? You'll need to set the point's stroke color to white and be sure to make the strokeWeight thick enough.
+
 Create a variable `time` that goes up by 0.1 every frame (everytime the draw function is run).
 
-Translate the origin to the center of the canvas. For now, make the stroke white and thick. Put a point at (0, 0).
+Change the position of the point by setting the x and y position with the results of using `sin` and `cos` functions with the `time` variable. Try experimenting with different amplitudes and frequencies. Try making the point move in a circle.
 
-Move the point using the `sin` and `cos` functions using the `time` variable.
-
-Try making one or both of your equations parametric by adding one wave to another!
+Now try making one or both of your equations parametric by adding one wave to another!
 
 ```js
 point(sin(time * 5) * 500 + cos(time) * 20, cos(time) * 40);

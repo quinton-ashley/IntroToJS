@@ -69,6 +69,25 @@ JSON stands for JavaScript Object Notation. It is a way to store data in a text 
 }
 ```
 
+JSON files can also store an array containing multiple objects.
+
+```json
+[
+	{
+		"name": "Jake",
+		"age": 12
+	},
+	{
+		"name": "Ali",
+		"age": 13
+	},
+	{
+		"name": "Max",
+		"age": 14
+	}
+]
+```
+
 ---
 
 ## End of Level 10 A
