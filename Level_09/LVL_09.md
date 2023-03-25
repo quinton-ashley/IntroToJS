@@ -22,16 +22,6 @@ button('click here!', 10, 4, () => {
 
 ---
 
-## End of Level 09 A
-
-QA (Quality Assurance) engineers test software to make sure it works as expected. They're responsible for finding bugs and reporting them to the developers. They also test the software to make sure it is easy to use.
-
-What's the funny mistake that this QA engineer made?
-
-![](../src/memes/09_0.jpeg)
-
----
-
 # Level 09 B
 
 ---

@@ -34,6 +34,4 @@ function ceasarCipher(message, shiftAmount) {
 }
 ```
 
-## Instructions for Part D
-
 Enable the user to select the successfully decoded message from the results and see the full length decoded message. HINT: One way of doing this is to create 25 buttons on the screen, one for each shift amount. If you have one button on each row they will not be able to show the full message. Use slice to only attempt to decode part of the message to show on each button. When the user clicks a button, clear the screen and display the full result.

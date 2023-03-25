@@ -118,10 +118,6 @@ If you have a chunk of code and you need to do something only slightly different
 
 ---
 
-# Level 08 D
-
----
-
 ## String slice
 
 The String `slice()` function is used to extract a part of a string and return it as a new string. It accepts two input parameters: a start index and an end index. The extracted part of the string includes the characters from the start index up to, but not including, the end index.
@@ -166,6 +162,11 @@ log(sliced); // -> "World"
 ---
 
 # End of Level 08
+
+If you'd like to learn more about modern day encryption techniques, check out this video:
+
+"How Quantum Computers Break The Internet... Starting Now" by Veritasium
+https://www.youtube.com/watch?v=-UrdExQW0cs
 
 ![](../src/memes/08_0.jpeg)
 
