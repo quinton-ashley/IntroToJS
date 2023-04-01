@@ -36,6 +36,6 @@ Create a function called `checkForDraw` that checks for a draw (all spaces fille
 
 After a game is complete, start a new game.
 
-Always show whose turn it is and a tally of the score in the top right corner. Use the `text` function, not alerts.
+Always show whose turn it is and a tally of the score in the top right corner. Use the `txt` function, not alerts.
 
 Make it random who starts first in the beginning or in case of a draw, otherwise, let the player who lost go first.

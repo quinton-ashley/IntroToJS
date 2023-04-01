@@ -100,7 +100,7 @@ for (let row = 0; row < rows; row++) {
 
 ## alert and prompt window sizing
 
-A fourth input parameter can be used to restrict the width of prompt and alert windows. Text that is longer than the specified width will be put on new lines. This width limiter can be used with the `text`, `alert`, and `prompt` functions.
+A fourth input parameter can be used to restrict the width of prompt and alert windows. Text that is longer than the specified width will be put on new lines. This width limiter can be used with the `txt`, `alert`, and `prompt` functions.
 
 ```js
 let message =
