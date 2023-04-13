@@ -31,7 +31,7 @@ function makeLilyPads() {
 function draw() {
 	background('0');
 	fill('3');
-	rect(0, 0, width, 90);
+	rect(0, 0, canvas.w, 90);
 
 	if (kb.presses('up')) {
 		// little jump

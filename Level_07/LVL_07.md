@@ -46,7 +46,7 @@ point(x, y);
 Translates the origin of the canvas to a new point. This is useful for centering drawings.
 
 ```js
-translate(width * 0.5, height * 0.5);
+translate(canvas.w * 0.5, canvas.h * 0.5);
 ```
 
 ---

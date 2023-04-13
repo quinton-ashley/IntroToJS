@@ -1,4 +1,4 @@
-// screen width is 256, height is 192
+// canvas width is 256, height is 192
 
 // create the sprite variables outside the setup function so you
 // can use them in other functions
@@ -21,8 +21,8 @@ ww....ww
 	// creates a ball sprite and places it in center of the screen
 	ball = new Sprite();
 	ball.image = imgBall;
-	ball.x = width / 2;
-	ball.y = height / 2;
+	ball.x = canvas.w / 2;
+	ball.y = canvas.h / 2;
 	ball.diameter = 8;
 	ball.bounciness = 1; // full bounciness
 	ball.friction = 0; // no friction
