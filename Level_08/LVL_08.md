@@ -161,6 +161,18 @@ log(sliced); // -> "World"
 
 ---
 
+## Anonymous arrow functions
+
+Arrow/lambda functions are a short way to write functions in JavaScript using an arrow `=>` instead of the word function. You can create arrow functions without naming the function too: `() => {}`
+
+```js
+button('click here!', 10, 4, () => {
+	log('button clicked');
+});
+```
+
+---
+
 # End of Level 08
 
 If you'd like to learn more about modern day encryption techniques, check out this video:

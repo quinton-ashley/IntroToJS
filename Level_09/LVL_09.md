@@ -10,18 +10,6 @@ After you complete those challenges you can upgrade to level 6! 🥳
 
 ---
 
-## Anonymous arrow functions
-
-Arrow/lambda functions are a short way to write functions in JavaScript using an arrow `=>` instead of the word function. You can create arrow functions without naming the function too: `() => {}`
-
-```js
-button('click here!', 10, 4, () => {
-	log('button clicked');
-});
-```
-
----
-
 # Level 09 B
 
 ---
