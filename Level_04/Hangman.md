@@ -19,25 +19,23 @@ for (let i = 0; i < loopAmount; i++) {
 }
 ```
 
+Make the game loop! Add a variable that will store how many wrong guesses the player has made. If they make more than 6 wrong guesses the game should end. Put the code that shows the hangman and asks the player for a guess inside the loop. HINT: Use a while loop.
+
 Display the `lines` array like this `_ _ _ _` in the prompt on a new line below the hangman text drawing. HINT: use the String `join` function and remember the newline character `\n`
 
 ## Instructions for Part C
 
 If the player guesses a letter which occurs in the word, edit the `lines` array so the letter will be displayed in all its correct positions. For example if the word is "avenue" and the player has guessed "e" your prompt should display: `_ _ e _ _ e` HINT: Use a `for` loop with a counter variable.
 
-Make the game loop! HINT: What condition must be true for the player to keep guessing letters? (use the `includes` array function)
-
 If the player guesses a letter which does not occur in the word, the computer should add a body part to the hangman stick figure. HINT: Don't check if they got a letter wrong, just ensure their guess matched none of the letters in the word.
 
 ## Instructions for Part D
 
-If the player makes too many wrong guesses and the hangman drawing is completed, the game should end. Add this condition to the game loop using boolean OR `||`.
+If the player wins, the game should end. The player wins if they guess the whole word or if the lines array does not include any lines. Add the condition to the game loop using boolean OR `||`. HINT: Remember the `includes` array function.
 
-If the player wins tell them they won!
+If the player wins tell them they won! If they lost show them the word.
 
 These are some hard words to guess within a limit of only 5 mistakes! Make the game a bit easier by adding more drawings to the `hangman` array. Make the scaffold build up before the hangman is drawn.
-
-The player guessing the word may, at any time, attempt to guess the whole word. If the word is correct, the game is over and the guesser wins.
 
 Ask the player if they'd like to keep playing, if they say yes start a new game. HINT: Use a while loop and the `prompt` function.
 
