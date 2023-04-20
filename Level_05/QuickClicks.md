@@ -53,7 +53,7 @@ Remember! You can use the `repeat` String function
 
 ```js
 let pattern = '><'.repeat(4);
-// pattern -> '><><><><';
+console.log(pattern); // -> '><><><><';
 ```
 
 Try making your own cool pattern like this one! (don't copy this pattern) HINT: use an alternating line pattern with two or more alternations

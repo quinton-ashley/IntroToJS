@@ -78,12 +78,14 @@ If the player had to guess between 1 to 10, sometimes it would take more than 3 
 
 Now that you know how the binary search method works it should be easy to figure out how many guesses are required to guess any number between 1 to 100.
 
-Replace the game's while loop with a `for` loop that counts the amount of guesses the player has made but keep the same condition: `guess != num`. Tell the user when they run out of attempts to guess the number. Use `break;` to exit the `for` loop.
+Create a variable `turn` for counting how many guesses the player has made. Tell the player they lost if they make more than the required amount of attempts to guess the number.
 
-If the user enters a number outside the range of 1 to 100, tell them "Invalid guess" but don't count it against them. They should still have the same amount of valid guess attempts no matter how many invalid guesses they make.
+If the user enters a number outside the range of 1 to 100, tell them "Invalid guess" but don't count it against them. They should still have the same amount of valid guess attempts no matter how many invalid guess attempts they make.
+
+Ask the user if they want to play again. If they say yes, reset the game. If they say no, tell them goodbye and end the game.
 
 Here's the real question though...
 
-![](../src/memes/00_3.png)
+![](../src/memes/00_3.jpeg)
 
-When you're done move on to Level 03!
+When you're done move on to Level 05!
