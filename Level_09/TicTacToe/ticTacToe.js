@@ -50,9 +50,8 @@ function start() {
 	txt('│\n'.repeat(23), gridRow, gridCol + 8);
 	// txt('│\n'.repeat(23), ?, ?); // draw another vertical line
 
-	/* Part A: Make the buttons in the grid */
-	// note the intervals! row += 8 and col += 9
-	// test code, delete after reading
+	// the following buttons were created just to help you make the grid
+	// you can delete them once you're done
 	button(bigO, gridRow, gridCol);
 	button(bigX, gridRow + 8, gridCol + 9);
 	button(bigO, gridRow + 16, gridCol + 18);
