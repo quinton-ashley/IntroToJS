@@ -2,12 +2,11 @@
 let table = `
 | id | film title                      |
 |====|=================================|
-|----|---------------------------------|
 | 02 | Titanic                         |
 |----|---------------------------------|
-| 19 | Groundhog Day                   |
+| E9 | Groundhog Day                   |
 |----|---------------------------------|
-| 31 | Harry Potter and The Prisone... |
+| 3A | Harry Potter and The Prisone... |
 |----|---------------------------------|`;
 
 async function start() {

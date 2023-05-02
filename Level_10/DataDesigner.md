@@ -1,6 +1,6 @@
 # DataDesigner
 
-Create a program that an 1980s video rental store employee could've used to manage the store's inventory. Back then computers didn't have a mouse so don't use any clickable buttons in this program. Just use the `txt`, `prompt`, and `alert` QuintOS functions.
+Create a program that a 1980s video rental store employee could've used to manage the store's inventory. Back then computers didn't have a mouse so don't use any clickable buttons in this program. Just use the `txt`, `prompt`, and `alert` QuintOS functions.
 
 ## Instructions for Part A
 
@@ -16,9 +16,9 @@ Add the data for one of the films to the table.
 
 If the film title is too short, add spaces to the end of the title so that the table looks nice. If the title is too long, shorten it and add ellipsis (the "...") so that it fits in the table. HINT: use the `padEnd` and `slice` functions.
 
-Now try displaying all the films in a table. Remove the example film data from the table. Use a `for of` loop to add films to the table.
-
 Add at least 5 more films to your `films.json` database. You can use ChatGPT to generate film data for you! Just be sure to give it the description of what a film object should contain.
+
+Now try displaying all the films in a table. Remove the example film data from the table. Use a `for of` loop to add films to the table.
 
 ## Instructions for Part C
 
