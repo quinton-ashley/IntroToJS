@@ -12,7 +12,7 @@ These lessons will teach you how to code in JavaScript (JS), which is the most p
 
 1 out of every 3 programming jobs (31%) require JavaScript skills. 👀
 
-You'll need to memorize some vocabulary, grammar, and syntax to learn this new language. However, learning to code isn't what programming is all about, you'll also learn how to think like a programmer.
+However, learning to code isn't what programming is all about, you'll also learn how to think like a programmer!
 
 ---
 
@@ -24,7 +24,7 @@ Issac Newton, a famous 17th century scientist, once said, "we stand on the shoul
 
 ---
 
-QuintOS contains a set of retro computer simulations that I created for this course just to make writing your beginner level programs more fun. During each lesson you'll develop a game that runs on a virtual computer displayed in the Google Chrome web browser. As you level up your coding skills, the virtual computer will get upgraded too. Since you're just starting out, the first game you make will be for... a programmable calculator. 😜
+QuintOS contains a set of retro computer simulations. During each lesson you'll develop a game that runs on a virtual computer displayed in the Google Chrome web browser. As you level up your coding skills, the virtual computer will get upgraded too. Since you're just starting out, the first game you make will be for... a programmable calculator. 😜
 
 ![](../src/QuintOS/bootScreen0.jpg)
 
@@ -110,17 +110,9 @@ This code for a robot remote control makes the robot power on, turn left, move f
 
 ---
 
-## Camel Case 🐫
+## await 🛑
 
-Variable names in JS can't have spaces, 🙅‍♂️ so for variables that have multiple words, use camel case! Capitalize the first letter of the words after the first word.
-
-```js
-let apple = '🍎';
-let applePie = '🍎 π';
-let applePieIceCream = '🍎 π 🍨';
-```
-
-Note that using this naming convention isn't required for JavaScript to run, it's just something that most professional JS programmers do to make variable names easier to read. Camel case is a naming convention specific to JS, other programming languages have their own conventions.
+The `await` keyword is used in JavaScript to make certain parts of your code "wait" until something happens. This can be useful when you're working with things that take time to complete, like fetching data from a server or waiting for a user to click a button or type a response.
 
 ---
 
@@ -128,9 +120,7 @@ Note that using this naming convention isn't required for JavaScript to run, it'
 
 Globals are special variables that are available for you to use anywhere in your code.
 
-## await 🛑
-
-The `await` keyword is used in JavaScript to make certain parts of your code "wait" until something happens. This can be useful when you're working with things that take time to complete, like fetching data from a server or waiting for a user to click a button or type a response.
+---
 
 ## alert and prompt ❔
 
@@ -159,13 +149,25 @@ Double slash `//` is for making a comment, any text behind it on the same line w
 
 Now you're ready to start making your first game! 🥳 [Click here for the GuessTheNumber instructions.](https://github.com/quinton-ashley/IntroToJS/blob/main/Level_00/GuessTheNumber.md)
 
-![](../src/memes/00_0.jpeg)
-
 ---
 
 # Level 00 B
 
 Did you complete `GuessTheNumber` part A and are ready to learn more? Before we can finish the game we have to learn a bit more stuff.
+
+---
+
+## Camel Case 🐫
+
+Variable names in JS can't have spaces, 🙅‍♂️ so for variables that have multiple words, use camel case! Capitalize the first letter of the words after the first word.
+
+```js
+let apple = '🍎';
+let applePie = '🍎 π';
+let applePieIceCream = '🍎 π 🍨';
+```
+
+Note that using this naming convention isn't required for JavaScript to run, it's just something that most professional JS programmers do to make variable names easier to read. Camel case is a naming convention specific to JS, other programming languages have their own conventions.
 
 ---
 
