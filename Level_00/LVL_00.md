@@ -18,15 +18,11 @@ However, learning to code isn't what programming is all about, you'll also learn
 
 ## What is QuintOS? 👾
 
-If you signed up for this course you might want to know how video games work and how to make your own! If not, making games will hopefully be a fun way for you to learn how to code.
+Issac Newton, a famous 17th century scientist, once said, "we stand on the shoulders of giants". Newton was humbly acknowledging that great advancements made by people in his day were built upon a giant foundation laid by our ancestors.
 
-Issac Newton, a famous 17th century scientist, once said, "we stand on the shoulders of giants". Newton was humbly acknowledging that great advancements made by people in his day were built upon a giant foundation laid by our ancestors. To become a software developer today it's good to learn a bit about the history of computers and computer games.
+To become a software developer today it's good to learn a bit about the history of computers and computer games.
 
----
-
-QuintOS contains a set of retro computer simulations. During each lesson you'll develop a game that runs on a virtual computer displayed in the Google Chrome web browser. As you level up your coding skills, the virtual computer will get upgraded too. Since you're just starting out, the first game you make will be for... a programmable calculator. 😜
-
-![](../src/QuintOS/bootScreen0.jpg)
+QuintOS contains a set of retro computer simulations. During each lesson you'll develop a game or program that runs on a virtual computer displayed in the Google Chrome web browser. As you level up your coding skills, the virtual computer will get upgraded too. Since you're just starting out, the first program you make will be for... a programmable calculator. 😜
 
 ---
 
@@ -207,6 +203,7 @@ Take a look at the example below, which assigns a color to the variable `fruitCo
 
 ```js
 let fruit = await prompt("What's your favorite fruit?");
+
 let fruitColor; // variables can be created without a value assigned to them
 
 // if the fruit is a banana

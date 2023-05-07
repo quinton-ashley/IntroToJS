@@ -44,7 +44,7 @@ Use the `random` function to enable your computer pick a random number between 1
 
 Try playing your Guess the Number game a few times to make sure your code works. What do you think is the best way to play this game in order to guess the number in the fewest amount of guesses? (besides just being very lucky of course haha)
 
-Congrats! You finished your first game in JavaScript.
+Congratulations! You finished your first JavaScript program!
 
 Level up to level 01!
 
