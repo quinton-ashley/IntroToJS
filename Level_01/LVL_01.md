@@ -20,23 +20,23 @@ Before you start your next game, let's get you setup for JavaScript development 
 
 ## Setup
 
-Open the [quintos-template](https://github.com/quinton-ashley/quintos-template) project on Github. Press the big green button that says "Use this template". Name your project "quintos-games".
+Open the [quintos-template](https://github.com/quinton-ashley/quintos-template) project on Github. Press the big green button that says "Use this template". Name your project "quintos-projects".
 
 ---
 
-Now open the Git Bash app on Windows or the Terminal app on macOS and copy/paste these commands. Replace `!!!your username!!!` with your GitHub username.
+Now open the Git Bash app on Windows or the Terminal app on macOS and copy/paste these commands one line at a time. Replace `!!!your username!!!` with your GitHub username.
 
 ```sh
 cd ~/Documents
 git clone https://github.com/quinton-ashley/IntroToJS.git
-git clone https://github.com/!!!your username!!!/quintos-games.git
-cd quintos-games
+git clone https://github.com/!!!your username!!!/quintos-projects.git
+cd quintos-projects
 npm i
 ```
 
-Don't worry I'm not hacking your computer! The first command `cd`, changes directory (aka folder), which opens your Documents folder inside the terminal (you can choose a different folder if you'd like). The second command downloads my teaching curriculum "IntroToJs". The third command downloads your "quintos-games" project. The fourth command changes directory into your "quintos-games" folder. The last command, `npm i`, installs "QuintOS".
+Don't worry I'm not hacking your computer! The first command `cd`, changes directory (aka folder), which opens your Documents folder inside the terminal (you can choose a different folder if you'd like). The second command downloads my teaching curriculum "IntroToJs". The third command downloads your "quintos-projects" project. The fourth command changes directory into your "quintos-projects" folder. The last command, `npm i`, installs "QuintOS".
 
-Open Visual Studio Code (aka VSCode) and add "IntroToJS" and your "quintos-games" folder to the workspace.
+Open Visual Studio Code (aka VSCode) and add "IntroToJS" and your "quintos-projects" folder to the workspace.
 
 ---
 
@@ -63,6 +63,11 @@ In the Activity Bar on the left side of VSCode click the extension icon, which l
 
 "vscode-color-picker" is a great extension for picking colors in JavaScript files.
 <https://marketplace.visualstudio.com/items?itemName=AntiAntiSepticeye.vscode-color-picker>
+
+---
+
+"p5play VSCode" is an extension that provides auto-complete snippets for the p5play game engine.
+<https://marketplace.visualstudio.com/items?itemName=quinton-ashley.p5play-vscode>
 
 ---
 
@@ -101,17 +106,14 @@ Press F1 on your keyboard (hold Fn then press F1 on macOS). Search the menu for 
 
 Copy your GuessTheNumber code from CodePen and put it in `GAMES/GuessTheNumber/guessTheNumber.js`
 
-Edit the `load.js` in your `quintos-games` project folder. Set `QuintOS.user` to your GitHub username.
+Edit the `load.js` in your `quintos-projects` project folder. Set `QuintOS.user` to your GitHub username.
 
 ```js
-QuintOS.user = 'your username';
-QuintOS.dir = 'GAMES';
+QuintOS.user = 'your-username';
 QuintOS.game = 'GuessTheNumber';
 ```
 
 In VSCode, right click on the `index.html` file and select `Open with Live Server` or click `Go Live` on the bottom status bar. You should see the calculator show up in your browser. 😄
-
-![](../src/QuintOS/bootScreen1.jpg)
 
 ---
 
