@@ -8,13 +8,13 @@ For this project you'll be implementing TicTacToe between two human players.
 
 Start by finishing the grid lines.
 
-Create 9 buttons for all the empty spaces on the grid. Use `bigSpace` for the text of these buttons. Start by making the buttons on the top row, then the middle row, and then do the last row.
+Create 9 buttons for all the empty spaces on the grid. While testing, use `bigO` for the text of these buttons. Start by making the buttons on the top row, then the middle row, and then do the last row.
 
 ## Instructions for Part B
 
-Now create all the buttons using a nested for loop instead of doing them one by one. Pay attention to the intervals at which the buttons are placed.
+Now create all the buttons using a nested for loop instead of doing them one by one.
 
-Make a `takeTurn` function with row and column input parameters. The click callback function for all the buttons should be an anonymous arrow function. Inside the anonymous function run `takeTurn(row, col)`. For now try drawing a `bigX` on the clicked button using the `text` function.
+Make a `takeTurn` function with row and column input parameters. The click callback function for all the buttons should be an anonymous arrow function. Inside the anonymous function run `takeTurn(i, j);`. For now try drawing a `bigX` on the clicked button using the `txt` function.
 
 After player X takes their turn, player O should be able to place their `bigO` mark on the grid. HINT: Store whose turn it is in a variable.
 

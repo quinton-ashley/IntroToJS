@@ -18,15 +18,19 @@ After you complete those challenges you can upgrade to level 6! 🥳
 
 A `for` loop inside a `for` loop? FORLOOPCEPTION! 😮
 
+Nested for loops are useful for iterating over two dimensions. For example, text rows and columns.
+
 ```js
-for (let row = 0; row < rows; row++) {
-	for (let col = 0; col < columns; col++) {
+for (let i = 0; i < 5; i++) {
+	for (let j = 0; j < 5; j++) {
 		// nested for loop
 	}
 }
 ```
 
-The first `for` loop goes row by row, then the `for` loop on the inside goes through all the columns in that row.
+`i` is commonly used to represent the index of the outer loop and `j` is commonly used to represent the index of the inner loop.
+
+Each time the code in the outer loop is run, the inner loop will run completely. In the example above, the inner loop will run 5 times for each time the outer loop runs. The inner loop will run 25 times in total.
 
 ---
 
