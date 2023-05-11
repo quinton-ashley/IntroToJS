@@ -174,6 +174,8 @@ I need to get 4 pears!
 
 # End of Level 10
 
+Hollywood programming managers be like:
+
 ![](../src/memes/10_1.jpeg)
 
 ---
