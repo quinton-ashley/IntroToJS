@@ -8,6 +8,7 @@ function preload() {
 function setup() {
 	world.gravity.y = 10;
 	noStroke();
+	allSprites.pixelPerfect = true;
 
 	frog.x = 0;
 	frog.y = 80;

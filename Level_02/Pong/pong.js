@@ -6,6 +6,9 @@ let ball;
 
 // code in the setup function gets run once at the start of the game
 function setup() {
+	noStroke(); // disable black outlines around shapes
+	allSprites.pixelPerfect = true;
+
 	let imgBall = spriteArt(`
 ..wwww..
 .ww..ww.
