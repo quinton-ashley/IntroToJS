@@ -388,7 +388,7 @@ When you're done with your GuessTheNumber game you'll have already made somethin
 
 ## Computer History: Casio FX-720P
 
-This level's computer was inspired by the Casio FX-720P, which could run programs in a programming language called BASIC. Portable programmable calculators were limited by their small button keyboards and displays, but when slotted into a dock that had little printer, they could be used to print out graphs and many lines of text. The calculator could also load programs from tape cassettes.
+This level's computer was inspired by the Casio FX-720P, released in 1986, which could run programs in a programming language called BASIC. Portable programmable calculators were limited by their small button keyboards and displays, but when slotted into a dock that had little printer, they could be used to print out graphs and many lines of text. The calculator could also load programs from tape cassettes.
 
 <https://youtu.be/d3NIe1jTZMc?t=760>
 

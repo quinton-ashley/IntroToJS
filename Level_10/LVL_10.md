@@ -170,6 +170,20 @@ I need to get 10 bananas!
 I need to get 4 pears!
 ```
 
+## Add/Remove from any index in an Array
+
+The `push` function is used to add an item to the end of an array and `pop` is used to remove an item from the end.
+
+The [`splice` function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) is used to add/remove items from any index in an Array.
+
+```js
+let removedItems = arr.splice(start, deleteCount, item);
+```
+
+It's important to note that this function actually changes the array!
+
+This function returns the removed item(s).
+
 ---
 
 # End of Level 10
