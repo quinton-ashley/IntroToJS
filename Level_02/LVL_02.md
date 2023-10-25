@@ -21,9 +21,9 @@ The code inside a function isn't run when the function is created, only when it'
 
 As a programmer it's important to learn how to use libraries. And no... we're not talking about the kind of library you go to borrow books from!
 
-Libraries, primarily referred to as packages in JS, are collections of code that other people have written.
+Libraries, primarily referred to as packages in JS, are collections of code that other people have written. Popular JS packages provide solutions to common problems.
 
-The most popular JS packages provide solutions to common problems. Using libraries can prevent you from wasting time re-inventing the wheel! Although building something "from scratch" using only core features of a programming language can sometimes be a good educational experience or allow for greater customization. Yet, often it's easier to use a library.
+Although building something "from scratch" using only core features of a programming language can sometimes be a good educational experience or allow for greater customization, often it's easier to use an existing library.
 
 ---
 
@@ -173,8 +173,6 @@ In this example code, the laser gets deflected upward after hitting the shield.
 ---
 
 ## End of Level 02
-
-Remember, don't "reinvent the wheel" if you don't have to!
 
 ![](../src/memes/02_0.jpeg)
 
