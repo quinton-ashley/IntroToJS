@@ -1,4 +1,12 @@
-let frog, lilypads;
+/**
+ * @type {Sprite}
+ */
+let frog;
+
+/**
+ * @type {Group}
+ */
+let lilypads;
 
 function preload() {
 	frog = new Sprite();

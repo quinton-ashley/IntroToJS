@@ -2,6 +2,10 @@
 
 // create the sprite variables outside the setup function so you
 // can use them in other functions
+
+/**
+ * @type {Sprite}
+ */
 let ball;
 
 // code in the setup function gets run once at the start of the game
