@@ -2,7 +2,7 @@
 
 Learn to code by making games in JavaScript using QuintOS!
 
-<https://quintos.org>
+<https://quinton-ashley.github.io/quintos/>
 
 ## Summary
 
@@ -13,7 +13,7 @@ Students develop these games using QuintOS, a retro graphics system I created to
 Students will also learn how to use GitHub to share their games on [quintos.org](https://quintos.org)
 
 | <img width="160px" src="https://github.com/quinton-ashley/IntroToJS/assets/20031683/a60e0f05-49bc-4b15-b9dc-8dbf74046311"> | Hi I'm Quinton Ashley, the creator of this course. I've been a CS teacher for four years and coding for 12 years, since I was 14! Before deciding to teach full time I was a student at NYU and I worked as a Node.js Software Developer at QTUltrasound, a medical device company in the San Francisco Bay Area. I also created [p5play](https://github.com/quinton-ashley/p5play) v3, a JS game engine that has thousands of daily active users and over 500 stars on Github. |
-| --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ## Student Reviews
 

@@ -54,7 +54,7 @@ The elements inside the opening and closing tags of an element are called child 
 
 Learn more about common HTML tags by referencing this table I made:
 
-<https://quintos.org/reference.html?language=html>
+<https://quinton-ashley.github.io/quintos/web/reference.html?language=html>
 
 ---
 

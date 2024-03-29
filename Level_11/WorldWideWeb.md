@@ -4,7 +4,7 @@ Fully modify the template files `index.html` and `styles.css` to make your own w
 
 ## Instructions for Part A
 
-Examine the code of the example website to see how it was made. Use inspect to open the "Elements" tab of your browser's dev tools. Learn more about common HTML tags by referencing this table I made: <https://quintos.org/reference.html?language=html>
+Examine the code of the example website to see how it was made. Use inspect to open the "Elements" tab of your browser's dev tools. Learn more about common HTML tags by referencing this table I made: <https://quinton-ashley.github.io/quintos/web/reference.html?language=html>
 
 Start adding content to your site and don't be concerned about how it looks for now. If you chose to create a simple app, create some example results.
 
